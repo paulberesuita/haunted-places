@@ -1,3 +1,9 @@
+---
+name: design-system
+description: Load UI guidance - colors, typography, components. Usage: /design-system
+user_invokable: true
+---
+
 # Design System
 
 Tailwind CSS foundation with custom colors. No gradients.

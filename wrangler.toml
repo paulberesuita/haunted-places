@@ -1,0 +1,12 @@
+name = "spookfinder"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "haunted-places-db"
+database_id = "b32d1ccc-aac8-472b-aedb-144e08e8ff8c"
+
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "haunted-places-images"

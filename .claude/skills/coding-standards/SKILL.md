@@ -1,3 +1,9 @@
+---
+name: coding-standards
+description: Load API patterns, D1/R2 usage, security rules. Usage: /coding-standards
+user_invokable: true
+---
+
 # Coding Standards
 
 Technical patterns for Cloudflare Pages.

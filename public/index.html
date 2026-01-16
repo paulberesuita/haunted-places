@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haunted Places Directory | Discover America's Most Haunted Locations</title>
+  <meta name="description" content="Explore 204 haunted locations across Georgia, Louisiana, Massachusetts, and Pennsylvania. Ghost stories, history, and paranormal activity at every turn.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Haunted Places Directory">
+  <meta property="og:description" content="Discover America's most haunted locations. 204 places with ghost stories, history, and paranormal activity.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haunted-places.pages.dev">
+
+  <!-- Fonts & Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            'dark': '#0a0a0f',
+            'dark-card': '#141419',
+            'dark-border': '#2a2a35',
+            'accent': '#e94560',
+            'accent-hover': '#ff6b6b',
+            'muted': '#6b7280',
+            'ghost': '#9ca3af',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .ghost-glow {
+      box-shadow: 0 0 30px rgba(233, 69, 96, 0.15);
+    }
+    .state-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.2);
+    }
+    .state-card-hero {
+      min-height: 180px;
+    }
+    .state-card-hero:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.25);
+    }
+    .category-pill:hover {
+      background-color: rgba(233, 69, 96, 0.15);
+      border-color: #e94560;
+    }
+  </style>
+</head>
+<body class="bg-dark text-gray-100 min-h-screen">
+
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 relative">
+      <div class="text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          Haunted Places <span class="text-accent">Directory</span>
+        </h1>
+        <p class="text-lg md:text-xl text-ghost mb-8 max-w-2xl mx-auto">
+          Discover America's most haunted locations. Ghost stories, dark history, and paranormal activity at every turn.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="max-w-xl mx-auto">
+          <div class="relative">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search haunted places..."
+              class="w-full bg-dark-card border border-dark-border rounded-xl px-5 py-4 pl-12 text-gray-100 placeholder-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+            >
+            <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <div id="search-results" class="hidden absolute left-0 right-0 mt-2 bg-dark-card border border-dark-border rounded-xl shadow-xl max-h-96 overflow-y-auto z-50"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tagline -->
+  <section class="border-y border-dark-border bg-dark-card/50">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <p class="text-center text-lg md:text-xl text-ghost italic">
+        Every location has a story. Some refuse to stay buried.
+      </p>
+    </div>
+  </section>
+
+  <!-- Browse by State -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-8 text-center">
+      Browse by State
+    </h2>
+    <div id="states-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Loading skeleton -->
+      <div class="bg-dark-card border border-dark-border rounded-xl p-6 animate-pulse">
+        <div class="h-6 bg-dark-border rounded w-3/4 mb-3"></div>
+        <div class="h-4 bg-dark-border rounded w-1/2"></div>
+      </div>
+      <div class="bg-dark-card border border-dark-border rounded-xl p-6 animate-pulse">
+        <div class="h-6 bg-dark-border rounded w-3/4 mb-3"></div>
+        <div class="h-4 bg-dark-border rounded w-1/2"></div>
+      </div>
+      <div class="bg-dark-card border border-dark-border rounded-xl p-6 animate-pulse">
+        <div class="h-6 bg-dark-border rounded w-3/4 mb-3"></div>
+        <div class="h-4 bg-dark-border rounded w-1/2"></div>
+      </div>
+      <div class="bg-dark-card border border-dark-border rounded-xl p-6 animate-pulse">
+        <div class="h-6 bg-dark-border rounded w-3/4 mb-3"></div>
+        <div class="h-4 bg-dark-border rounded w-1/2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Places -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-2 text-center">
+      Featured Haunted Places
+    </h2>
+    <p class="text-muted text-center mb-8">Some of America's most notorious paranormal hotspots</p>
+    <div id="featured-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Loading skeleton -->
+      <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden animate-pulse">
+        <div class="h-40 bg-dark-border"></div>
+        <div class="p-5">
+          <div class="h-5 bg-dark-border rounded w-3/4 mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/2 mb-4"></div>
+          <div class="h-12 bg-dark-border rounded mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/3"></div>
+        </div>
+      </div>
+      <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden animate-pulse">
+        <div class="h-40 bg-dark-border"></div>
+        <div class="p-5">
+          <div class="h-5 bg-dark-border rounded w-3/4 mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/2 mb-4"></div>
+          <div class="h-12 bg-dark-border rounded mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/3"></div>
+        </div>
+      </div>
+      <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden animate-pulse">
+        <div class="h-40 bg-dark-border"></div>
+        <div class="p-5">
+          <div class="h-5 bg-dark-border rounded w-3/4 mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/2 mb-4"></div>
+          <div class="h-12 bg-dark-border rounded mb-3"></div>
+          <div class="h-4 bg-dark-border rounded w-1/3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-dark-border bg-dark-card/50">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="text-center">
+        <div class="text-lg font-semibold mb-2">Haunted Places Directory</div>
+        <p class="text-muted text-sm mb-4">
+          Documenting America's most haunted locations, one ghost story at a time.
+        </p>
+        <p class="text-muted text-xs">
+          Data sourced from historical records, paranormal investigators, and local legends.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Error Toast -->
+  <div id="error-toast" class="hidden fixed bottom-4 right-4 bg-red-900/90 border border-red-700 text-red-100 px-4 py-3 rounded-lg shadow-lg max-w-sm">
+    <p class="font-medium">Failed to load data</p>
+    <p class="text-sm text-red-300">Please refresh the page to try again.</p>
+  </div>
+
+  <script>
+    const API_BASE = '/api';
+
+    // State full names mapping
+    const stateNames = {
+      'CA': 'California',
+      'FL': 'Florida',
+      'GA': 'Georgia',
+      'IL': 'Illinois',
+      'LA': 'Louisiana',
+      'MA': 'Massachusetts',
+      'NY': 'New York',
+      'OH': 'Ohio',
+      'PA': 'Pennsylvania',
+      'TX': 'Texas',
+      'VA': 'Virginia'
+    };
+
+    // State hero images (for rich card display)
+    const stateHeroImages = {
+      'GA': 'places/bonaventure-cemetery.jpg'
+    };
+
+    // Category icons (using emoji for simplicity)
+    const categoryIcons = {
+      'hotel': '🏨',
+      'mansion': '🏚️',
+      'cemetery': '🪦',
+      'prison': '⛓️',
+      'hospital': '🏥',
+      'theater': '🎭',
+      'restaurant': '🍽️',
+      'battlefield': '⚔️',
+      'lighthouse': '🗼',
+      'museum': '🏛️',
+      'university': '🎓',
+      'plantation': '🌾',
+      'other': '👻'
+    };
+
+    // Featured place slugs (Georgia locations with images)
+    const featuredSlugs = [
+      'sorrel-weed-house',
+      'bonaventure-cemetery',
+      'fox-theatre',
+      'the-marshall-house',
+      'colonial-park-cemetery',
+      'the-pirates-house'
+    ];
+
+    // Show error toast
+    function showError() {
+      document.getElementById('error-toast').classList.remove('hidden');
+    }
+
+    // Fetch with error handling
+    async function fetchAPI(endpoint) {
+      try {
+        const response = await fetch(`${API_BASE}${endpoint}`);
+        if (!response.ok) throw new Error('API error');
+        return await response.json();
+      } catch (error) {
+        console.error(`Error fetching ${endpoint}:`, error);
+        throw error;
+      }
+    }
+
+    // Load states
+    async function loadStates() {
+      try {
+        const response = await fetchAPI('/states');
+        const states = response.data || response;
+        const grid = document.getElementById('states-grid');
+
+        // Map state codes to URL slugs
+        const stateUrls = {
+          'CA': 'california',
+          'FL': 'florida',
+          'GA': 'georgia',
+          'IL': 'illinois',
+          'LA': 'louisiana',
+          'MA': 'massachusetts',
+          'NY': 'new-york',
+          'OH': 'ohio',
+          'PA': 'pennsylvania',
+          'TX': 'texas',
+          'VA': 'virginia'
+        };
+
+        grid.innerHTML = states.map(state => {
+          const count = state.place_count || state.count;
+          const stateSlug = stateUrls[state.state] || state.state.toLowerCase();
+          const heroImage = stateHeroImages[state.state];
+          const stateName = stateNames[state.state] || state.state;
+
+          // Rich card with hero image
+          if (heroImage) {
+            return `
+            <a href="/states/${stateSlug}" class="state-card-hero group block relative rounded-xl overflow-hidden border border-dark-border hover:border-accent transition-all duration-300">
+              <div class="absolute inset-0">
+                <img src="/images/${heroImage}" alt="${stateName}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/30"></div>
+              </div>
+              <div class="relative h-full flex flex-col justify-between p-5">
+                <h3 class="text-xl font-semibold flex items-center gap-2">
+                  <span class="text-lg">👻</span> ${stateName}
+                </h3>
+                <p class="text-ghost text-sm">${count} haunted ${count === 1 ? 'place' : 'places'}</p>
+              </div>
+            </a>
+          `;
+          }
+
+          // Fallback card without image
+          return `
+          <a href="/states/${stateSlug}" class="state-card block bg-dark-card border border-dark-border rounded-xl p-6 hover:border-accent transition-all duration-300">
+            <h3 class="text-xl font-semibold mb-1">${stateName}</h3>
+            <p class="text-muted text-sm">${count} haunted ${count === 1 ? 'place' : 'places'}</p>
+          </a>
+        `;
+        }).join('');
+      } catch (error) {
+        document.getElementById('states-grid').innerHTML = `
+          <div class="col-span-full text-center py-8 text-muted">
+            Failed to load states. Please refresh to try again.
+          </div>
+        `;
+      }
+    }
+
+    // Load featured places
+    async function loadFeaturedPlaces() {
+      try {
+        // Fetch Georgia places (they have images)
+        const response = await fetchAPI('/places?state=GA&limit=100');
+        const places = response.data || response.places || response;
+
+        // Try to find our hand-picked featured places (with images)
+        let featured = places.filter(p => featuredSlugs.includes(p.slug) && p.image_url);
+
+        // If we don't have enough, add other GA places with images from interesting categories
+        if (featured.length < 6) {
+          const additionalPlaces = places
+            .filter(p => !featuredSlugs.includes(p.slug) && p.image_url)
+            .filter(p => ['mansion', 'cemetery', 'theater', 'hotel'].includes(p.category))
+            .slice(0, 6 - featured.length);
+          featured = [...featured, ...additionalPlaces];
+        }
+
+        // Still not enough? Take any GA places with images
+        if (featured.length < 6) {
+          const remaining = places
+            .filter(p => !featured.find(f => f.slug === p.slug) && p.image_url)
+            .slice(0, 6 - featured.length);
+          featured = [...featured, ...remaining];
+        }
+
+        const grid = document.getElementById('featured-grid');
+
+        grid.innerHTML = featured.slice(0, 6).map(place => {
+          const imageUrl = place.image_url
+            ? `https://haunted-places.pages.dev/images/${place.image_url}`
+            : null;
+          return `
+          <a href="/place/${place.slug}" class="block bg-dark-card border border-dark-border rounded-xl overflow-hidden hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+            ${imageUrl ? `
+            <div class="relative h-40 overflow-hidden">
+              <img
+                src="${imageUrl}"
+                alt="${escapeHtml(place.name)}"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=\\'h-full bg-gradient-to-br from-accent/20 to-dark-border flex items-center justify-center\\'><span class=\\'text-4xl\\'>${categoryIcons[place.category] || '👻'}</span></div>'"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-card via-transparent to-transparent"></div>
+            </div>
+            ` : `
+            <div class="h-40 bg-gradient-to-br from-accent/10 to-dark-border flex items-center justify-center">
+              <span class="text-5xl opacity-50">${categoryIcons[place.category] || '👻'}</span>
+            </div>
+            `}
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-lg font-semibold group-hover:text-accent transition-colors">${escapeHtml(place.name)}</h3>
+                <span class="text-xl ml-2">${categoryIcons[place.category] || '👻'}</span>
+              </div>
+              <p class="text-muted text-sm mb-3">${escapeHtml(place.city)}, ${stateNames[place.state] || place.state}</p>
+              <p class="text-ghost text-sm line-clamp-2">${escapeHtml(truncate(place.description, 100))}</p>
+              <div class="mt-4 flex items-center text-accent text-sm font-medium">
+                Read ghost story
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+          </a>
+        `;
+        }).join('');
+      } catch (error) {
+        document.getElementById('featured-grid').innerHTML = `
+          <div class="col-span-full text-center py-8 text-muted">
+            Failed to load featured places. Please refresh to try again.
+          </div>
+        `;
+      }
+    }
+
+    // Search functionality
+    let searchTimeout;
+    async function handleSearch(query) {
+      const resultsContainer = document.getElementById('search-results');
+
+      if (!query || query.length < 2) {
+        resultsContainer.classList.add('hidden');
+        return;
+      }
+
+      try {
+        const response = await fetchAPI('/places?limit=200');
+        const places = response.data || response.places || response;
+
+        const filtered = places.filter(p =>
+          p.name.toLowerCase().includes(query.toLowerCase()) ||
+          p.city.toLowerCase().includes(query.toLowerCase())
+        ).slice(0, 8);
+
+        if (filtered.length === 0) {
+          resultsContainer.innerHTML = `
+            <div class="p-4 text-muted text-center">No haunted places found for "${escapeHtml(query)}"</div>
+          `;
+        } else {
+          resultsContainer.innerHTML = filtered.map(place => `
+            <a href="/place/${place.slug}" class="block p-4 hover:bg-dark-border/50 border-b border-dark-border last:border-0 transition-colors">
+              <div class="font-medium">${escapeHtml(place.name)}</div>
+              <div class="text-sm text-muted">${escapeHtml(place.city)}, ${stateNames[place.state] || place.state}</div>
+            </a>
+          `).join('');
+        }
+
+        resultsContainer.classList.remove('hidden');
+      } catch (error) {
+        resultsContainer.innerHTML = `
+          <div class="p-4 text-red-400 text-center">Search failed. Please try again.</div>
+        `;
+        resultsContainer.classList.remove('hidden');
+      }
+    }
+
+    // Utility functions
+    function escapeHtml(text) {
+      if (!text) return '';
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function truncate(text, length) {
+      if (!text) return '';
+      if (text.length <= length) return text;
+      return text.substring(0, length).trim() + '...';
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      // Load all data in parallel
+      loadStates();
+      loadFeaturedPlaces();
+
+      // Setup search
+      const searchInput = document.getElementById('search-input');
+      const resultsContainer = document.getElementById('search-results');
+
+      searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => handleSearch(e.target.value), 300);
+      });
+
+      // Close search results when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
+          resultsContainer.classList.add('hidden');
+        }
+      });
+
+      // Re-show results when focusing search with existing query
+      searchInput.addEventListener('focus', () => {
+        if (searchInput.value.length >= 2) {
+          handleSearch(searchInput.value);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

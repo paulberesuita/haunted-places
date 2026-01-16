@@ -1,3 +1,9 @@
+---
+name: cloudflare-deploy
+description: Load deploy commands and setup instructions. Usage: /cloudflare-deploy
+user_invokable: true
+---
+
 # Cloudflare Deploy
 
 Setup and deploy commands for Cloudflare Pages.
