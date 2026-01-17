@@ -179,11 +179,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
   <!-- Navigation Header -->
   <header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <div class="flex items-center gap-3 text-sm">
-        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
-        <span class="text-muted">/</span>
-        <a href="/states/${stateUrl}" class="text-muted hover:text-accent transition-colors">${stateName}</a>
-      </div>
+      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
         <a href="/about" class="hover:text-accent transition-colors">About</a>
@@ -387,7 +383,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
     </div>
   </footer>
 
-</body>
+  </body>
 </html>`;
 }
 

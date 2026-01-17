@@ -285,6 +285,14 @@ function renderHomepage(places, states, baseUrl) {
       glitch.classList.remove('active');
       glitch.style.display = 'none';
 
+      // Reset glitch when returning via back button (bfcache)
+      window.addEventListener('pageshow', (e) => {
+        if (e.persisted) {
+          glitch.classList.remove('active');
+          glitch.style.display = 'none';
+        }
+      });
+
       // Check if this is a state/home navigation (should use SPA navigation)
       function isStateNavigation(path) {
         return path === '/' || path.startsWith('/states/');
@@ -342,8 +350,15 @@ function renderHomepage(places, states, baseUrl) {
           // Use SPA navigation for state/home links to keep video playing
           if (isStateNavigation(path)) {
             navigateWithoutReload(link.href);
+          } else if (path.startsWith('/place/')) {
+            // VHS glitch transition for place detail pages
+            glitch.style.display = 'block';
+            glitch.classList.add('active');
+            setTimeout(() => {
+              window.location.href = link.href;
+            }, 850);
           } else {
-            // Full page navigation for other links (place pages, etc.)
+            // Full page navigation for other links
             window.location.href = link.href;
           }
         }
