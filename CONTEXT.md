@@ -4,6 +4,21 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-17
+
+### Cloudflare Pages Project Name
+
+**CRITICAL:** The Cloudflare Pages project is named `spookfinder`, NOT `haunted-places`.
+
+Always deploy with:
+```bash
+wrangler pages deploy ./public --project-name=spookfinder
+```
+
+The custom domain `spookfinder.com` is connected to the `spookfinder` project. Deploying to `haunted-places` will NOT update the production site.
+
+---
+
 ## 2026-01-16
 
 ### MA, VA, IL, NY, OH Image Research - Wikipedia/Wikimedia Commons

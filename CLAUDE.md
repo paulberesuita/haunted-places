@@ -77,14 +77,16 @@ All skills are user-invokable with `/command`.
 
 ```bash
 # Local dev
-wrangler pages dev ./public --d1=DB=PROJECT-db --local
+wrangler pages dev ./public --d1=DB=haunted-places-db --local
 
 # Run migration
-npx wrangler d1 execute PROJECT-db --file=./migrations/XXX.sql --remote
+npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
-# Deploy
-wrangler pages deploy ./public --project-name=PROJECT
+# Deploy to production (spookfinder.com)
+wrangler pages deploy ./public --project-name=spookfinder
 ```
+
+**IMPORTANT:** The Cloudflare Pages project is named `spookfinder` (not `haunted-places`). Always deploy to `--project-name=spookfinder` for changes to appear on spookfinder.com.
 
 ## Documentation Requirements
 
