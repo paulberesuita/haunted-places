@@ -1,17 +1,31 @@
 // GET /place/:slug - Serve individual place page with server-side rendering
 
 const stateNames = {
+  'CA': 'California',
+  'FL': 'Florida',
   'GA': 'Georgia',
+  'IL': 'Illinois',
   'LA': 'Louisiana',
   'MA': 'Massachusetts',
-  'PA': 'Pennsylvania'
+  'NY': 'New York',
+  'OH': 'Ohio',
+  'PA': 'Pennsylvania',
+  'TX': 'Texas',
+  'VA': 'Virginia'
 };
 
 const stateUrls = {
+  'CA': 'california',
+  'FL': 'florida',
   'GA': 'georgia',
+  'IL': 'illinois',
   'LA': 'louisiana',
   'MA': 'massachusetts',
-  'PA': 'pennsylvania'
+  'NY': 'new-york',
+  'OH': 'ohio',
+  'PA': 'pennsylvania',
+  'TX': 'texas',
+  'VA': 'virginia'
 };
 
 const categoryIcons = {
@@ -158,24 +172,24 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       }
     }
   </script>
-  <style>
-    .ghost-glow {
-      box-shadow: 0 0 30px rgba(233, 69, 96, 0.15);
-    }
-  </style>
+  <style></style>
 </head>
 <body class="bg-dark text-gray-100 min-h-screen">
 
-  <!-- Breadcrumb -->
-  <nav class="max-w-6xl mx-auto px-4 pt-6">
-    <ol class="flex flex-wrap items-center gap-2 text-sm">
-      <li><a href="/" class="text-muted hover:text-accent transition-colors">Home</a></li>
-      <li class="text-muted">/</li>
-      <li><a href="/states/${stateUrl}" class="text-muted hover:text-accent transition-colors">${stateName}</a></li>
-      <li class="text-muted">/</li>
-      <li class="text-gray-100 truncate max-w-[200px]">${escapeHtml(place.name)}</li>
-    </ol>
-  </nav>
+  <!-- Navigation Header -->
+  <header>
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-3 text-sm">
+        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+        <span class="text-muted">/</span>
+        <a href="/states/${stateUrl}" class="text-muted hover:text-accent transition-colors">${stateName}</a>
+      </div>
+      <nav class="flex gap-6 text-sm text-ghost">
+        <a href="/states" class="hover:text-accent transition-colors">States</a>
+        <a href="/about" class="hover:text-accent transition-colors">About</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero Image -->
   ${imageUrl ? `
@@ -235,7 +249,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
 
         <!-- Ghost Story -->
         ${place.ghost_story ? `
-        <section class="bg-dark-card border border-dark-border rounded-xl p-6 md:p-8 ghost-glow">
+        <section class="bg-dark-card border border-dark-border rounded-xl p-6 md:p-8">
           <div class="flex items-center gap-3 mb-4">
             <span class="text-2xl">&#128123;</span>
             <h2 class="text-xl font-semibold text-accent">The Ghost Story</h2>
@@ -267,17 +281,21 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
 
           <p class="text-muted text-sm mb-4">${escapeHtml(place.city)}, ${stateName}</p>
 
-          ${mapUrl ? `
-          <!-- Map Link -->
-          <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="block w-full bg-dark border border-dark-border rounded-lg overflow-hidden hover:border-accent transition-colors group">
-            <div class="aspect-video bg-dark-border/30 flex items-center justify-center">
-              <div class="text-center">
-                <svg class="w-8 h-8 text-muted group-hover:text-accent transition-colors mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-                </svg>
-                <span class="text-sm text-muted group-hover:text-accent transition-colors">View on Google Maps</span>
-              </div>
-            </div>
+          ${place.latitude && place.longitude ? `
+          <!-- Embedded Map -->
+          <div class="w-full rounded-lg overflow-hidden border border-dark-border">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2000!2d${place.longitude}!3d${place.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="200"
+              style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <a href="${mapUrl}" target="_blank" rel="noopener noreferrer" class="block text-center text-sm text-muted hover:text-accent transition-colors mt-2">
+            Open in Google Maps
           </a>
           ` : ''}
         </div>
@@ -358,7 +376,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
   ${relatedHtml}
 
   <!-- Footer -->
-  <footer class="border-t border-dark-border bg-dark-card/50">
+  <footer class="bg-dark-card/50">
     <div class="max-w-6xl mx-auto px-4 py-8">
       <div class="text-center">
         <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>

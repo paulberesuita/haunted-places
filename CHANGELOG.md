@@ -7,6 +7,116 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-16
 
 ### Changed
+- **Louisiana Images Fixed with Wikipedia/Wikimedia Commons**
+  - Used Wikipedia API to source 37 authentic images for Louisiana haunted places
+  - Replaced previous Library of Congress/Unsplash images with actual Wikipedia photos of the locations
+  - Image sources: Wikipedia API (`action=query&prop=pageimages&piprop=original`) and Wikimedia Commons search
+  - **Plantations (8):** Oak Alley, Myrtles, Nottoway, Destrehan, San Francisco, Houmas House, Madewood, Woodland, Magnolia (Natchitoches)
+  - **French Quarter Hotels (7):** Hotel Monteleone, Bourbon Orleans, Omni Royal Orleans, Le Pavillon, Hotel Provincial, Place d'Armes, Andrew Jackson
+  - **French Quarter Restaurants/Bars (4):** Antoine's, Arnaud's, Old Absinthe House, Lafitte's Blacksmith Shop
+  - **French Quarter Mansions (6):** LaLaurie Mansion, Beauregard-Keyes House, Gallier House, Hermann-Grima House, Sultan's Palace, Muriel's Jackson Square
+  - **French Quarter Other (6):** Pharmacy Museum, Old Ursuline Convent, St. Louis Cemetery No. 1/2/3, Marie Laveau's House
+  - **Baton Rouge (4):** Old State Capitol, Pentagon Barracks, LSU Indian Mounds, Hilton Capitol Center
+  - **Shreveport (2):** Municipal Auditorium, Logan Mansion
+  - **Other (1):** Front Street Natchitoches, Chalmette Battlefield, Saenger Theatre
+  - All images from Wikimedia Commons (Creative Commons licensed)
+  - Coverage: 37 of 50 Louisiana places (74%) now have authentic Wikipedia images
+  - Created documentation at `scripts/update-louisiana-images-wikipedia.sql`
+
+- **California Images Phase 2 - Wikimedia Commons**
+  - Replaced 21 additional California place images with authentic Wikimedia Commons photos
+  - Previous images were generic Unsplash stock photos; new images show actual buildings
+  - Image sources: Wikimedia Commons (Creative Commons licensed)
+  - Key images updated:
+    - Los Angeles: Cecil Hotel, Hollywood Roosevelt Hotel, Comedy Store, Linda Vista Hospital, Camarillo State Hospital, Hollywood Forever Cemetery, Knickerbocker Hotel
+    - San Francisco: Queen Anne Hotel, Curran Theatre, Stow Lake
+    - Bay Area: Claremont Hotel (Berkeley), Brookdale Lodge
+    - Central California: Queen Mary (Long Beach), Mission Inn (Riverside), Leland Stanford Mansion (Sacramento), Moss Beach Distillery, Point Sur Lighthouse
+    - San Diego: Cosmopolitan Hotel
+    - Other: Mission San Juan Capistrano, Sainte Claire Hotel (San Jose), Calico Ghost Town
+  - Total California images now authentic: 36 of 49 (73%)
+  - Combined with Phase 1 (15 LOC images): 36 places have real location photos
+  - Remaining 13 places using Unsplash or generic (roads, small parks, undocumented buildings)
+
+- **Florida Images Fixed with Wikipedia/Wikimedia Commons**
+  - Used Wikipedia API to source 30 authentic images for Florida haunted places
+  - Replaced previous generic/incorrect images with actual location photos
+  - Image sources: Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+  - Places with real images (30):
+    - St. Augustine (9): Castillo de San Marcos, St. Augustine Lighthouse, Flagler College, Lightner Museum, Casa Monica Hotel, Huguenot Cemetery, Tolomato Cemetery, Spanish Military Hospital, Old Jail
+    - Tampa/St. Pete (7): Tampa Theatre, Don CeSar Hotel, Cuban Club, Plant Hall, Henry B. Plant Museum, May-Stringer House, Ybor City Museum
+    - Miami/South Florida (6): Biltmore Hotel, Vizcaya Museum, Coral Castle, Deering Estate, Stranahan House, Villa Paula
+    - Key West (2): Captain Tony's Saloon, Audubon House
+    - North Florida (5): Pensacola Lighthouse, Fort Pickens, Kingsley Plantation, Koreshan State Park, Devil's Millhopper
+  - Places without Wikipedia images (20): Smaller B&Bs, restaurants, and locations without Wikipedia coverage
+  - Coverage: 30 of 50 Florida places (60%) now have authentic Wikipedia images
+
+- **Research Images Skill Improvements**
+  - Updated image source priority to focus on location-specific photos over generic stock images
+  - New source hierarchy: Wikimedia Commons → Official websites → Google Maps → Flickr CC → Find A Grave (cemeteries) → Historical archives → TripAdvisor → Unsplash (last resort only)
+  - Added category-specific search strategies (Find A Grave for cemeteries, TripAdvisor for hotels/restaurants, etc.)
+  - Added verification checklist before downloading: must show actual building, be identifiable, have proper license
+  - Explicit guidance: skip places rather than use wrong/generic images
+  - Updated both `/research-images` skill and researcher agent with new workflow
+
+### Added
+- **Louisiana Haunted Places Images (Complete)**
+  - Downloaded and uploaded 48 images for remaining Louisiana haunted locations (2 already had images)
+  - Image sources: Library of Congress (Carol M. Highsmith Archive) and Unsplash (free commercial use)
+  - New Orleans French Quarter (25 places): Lafitte's Blacksmith Shop (LOC), Muriel's (LOC Jackson Square), St. Louis Cemetery No. 1 (LOC), Old Ursuline Convent (LOC), Sultan's Palace, Pharmacy Museum, Antoine's, Arnaud's, Hotel Monteleone, Le Pavillon, Bourbon Orleans Hotel, Andrew Jackson Hotel, Hotel Provincial, Dauphine Orleans, Place d'Armes, Omni Royal Orleans, Saenger Theatre, Marie Laveau House, Beauregard-Keyes House, Hermann-Grima House, Faulkner House (LOC), Gallier House, St. Louis Cemetery No. 2, St. Louis Cemetery No. 3, Old Absinthe House
+  - Louisiana Plantations (10 places): Oak Alley (LOC), Myrtles (LOC), Houmas House (LOC), San Francisco (LOC), Destrehan, Nottoway, Magnolia (Schriever), Magnolia (Natchitoches), Madewood, St. Maurice, Woodland
+  - Baton Rouge (6 places): Louisiana Old State Capitol (LOC), Pentagon Barracks, Hilton Capitol Center, LSU Indian Mounds, Pleasant Hall, Highland Road Confederate Ghosts
+  - Shreveport (3 places): Municipal Auditorium, Logan Mansion, Old Ellerbe Road School
+  - Lafayette (2 places): Harris Hall ULL, T'Frere's House B&B
+  - Natchitoches (1 place): Front Street
+  - Chalmette (1 place): Chalmette Battlefield
+  - All images resized to 1200px max width for web performance
+  - Created update script at `scripts/update-louisiana-images.sql`
+  - All 50 Louisiana places now have images (100% coverage)
+  - Total: 248 places now have images (49 GA + 49 CA + 50 TX + 50 FL + 50 LA)
+
+- **Florida Haunted Places Images (Complete)**
+  - Downloaded and uploaded 50 images for all Florida haunted locations
+  - Image sources: Library of Congress (Carol M. Highsmith Archive) and Unsplash (free commercial use)
+  - St. Augustine (12 places): Castillo de San Marcos (LOC), St. Augustine Lighthouse (LOC), Huguenot Cemetery, Old Jail (LOC), Spanish Military Hospital, Casa Monica Hotel, Flagler College (LOC), Lightner Museum, Casablanca Inn, Ripley's Believe It or Not!, St. Francis Inn, Tolomato Cemetery
+  - Key West (9 places): Fort East Martello, Artist House, Captain Tony's Saloon, Audubon House, La Concha Hotel, Marrero's Guest Mansion, Hard Rock Cafe, Key West Cemetery, Old Town Manor
+  - Tampa/St. Pete area (9 places): Don CeSar Hotel, Cuban Club, Tampa Theatre, Plant Hall, Henry Plant Museum, May-Stringer House, Capitol Theatre, Safety Harbor Spa, Ybor City Museum
+  - Miami/South Florida (7 places): Biltmore Hotel, Deering Estate, Coral Castle (LOC), Villa Paula, Miami River Inn, Stranahan House, Vizcaya Museum (LOC)
+  - Orlando/Cassadaga (7 places): Greenwood Cemetery, Cassadaga Hotel, Devil's Chair, Sunland Hospital Site, Ashley's Restaurant, Cassadaga Spiritualist Camp, Devil's Millhopper
+  - Pensacola/North Florida (6 places): Pensacola Lighthouse, Fort Pickens, Kingsley Plantation, Koreshan State Park, Dorr House, Seville Quarter
+  - All images resized to 1200px max width for web performance
+  - Created update script at `scripts/update-florida-images.sql`
+  - All 50 Florida places now have images (100% coverage)
+  - Total: 198 places now have images (49 GA + 49 CA + 50 TX + 50 FL)
+
+- **SSR State Page Function**
+  - Created server-side rendered state pages at `/states/[slug]` (e.g., `/states/california`)
+  - Matches new Minimal Gallery style with same design as homepage
+  - All place links pre-rendered in HTML for SEO
+  - Horizontal scrollable state filter bar with active state highlighted
+  - Card grid showing all places in the state with ghost emoji placeholders
+  - All 11 states now have SSR pages (CA, FL, GA, IL, LA, MA, NY, OH, PA, TX, VA)
+
+### Fixed
+- **Image Display Issue**
+  - Added `public/_headers` file to set correct Content-Type headers for images and API responses
+  - Images now served with `Content-Type: image/jpeg` instead of incorrect `text/html`
+  - API responses now served with `Content-Type: application/json`
+  - 148 places now display images correctly (49 GA + 49 CA + 50 TX)
+
+### Changed
+- **Homepage Redesign (Minimal Gallery Style)**
+  - Complete SSR (Server-Side Rendering) homepage for SEO — all content now in HTML, no JavaScript-loaded skeletons
+  - New design inspired by Minimal.gallery and Godly.website:
+    - Simple header with logo and minimal nav
+    - Small centered tagline: "Discover America's most haunted places"
+    - Horizontal scrollable state filter row
+    - Card grid with images + place names (4 columns desktop, 2 tablet, 1 mobile)
+  - 50 places pre-rendered in HTML for search engines
+  - All 11 state links included for crawlers
+  - Places with images prioritized at top of grid
+  - Added Virginia to state mappings
+
 - Homepage Simplification
   - Replaced stats bar (places/states/categories counts) with atmospheric tagline: "Every location has a story. Some refuse to stay buried."
   - Removed "Browse by Category" section to reduce decision fatigue — kept only "Browse by State"
@@ -15,6 +125,20 @@ What we shipped. Builder appends here after each feature.
   - Removed unused loadStats() and loadCategories() JavaScript functions
 
 ### Added
+- California Haunted Places Images (Complete)
+  - Downloaded and uploaded 49 images for all California haunted locations
+  - Image sources: Library of Congress (Carol M. Highsmith Archive) and Unsplash (free commercial use)
+  - San Francisco Bay Area (7 places): Alcatraz Island, Queen Anne Hotel, Stow Lake, Curran Theatre, The Presidio, USS Hornet Museum (Alameda), Claremont Hotel (Berkeley)
+  - Los Angeles area (7 places): Hollywood Roosevelt Hotel, Cecil Hotel, Hollywood Forever Cemetery, Knickerbocker Hotel, Pantages Theatre, Griffith Park, Linda Vista Hospital
+  - San Jose/Silicon Valley (9 places): Winchester Mystery House, Grandview Restaurant, Sainte Claire Hotel, Hicks Road, Santa Teresa Park, Quimby Road, Marsh Road (Milpitas), Great America, Santa Clara University
+  - San Diego area (5 places): Whaley House, El Campo Santo Cemetery, Cosmopolitan Hotel, Hotel del Coronado (Coronado)
+  - Central Coast (5 places): Point Sur Lighthouse (Big Sur), Monterey Hotel, Moss Beach Distillery, Hearst Castle (San Simeon), Ghost Tree 17-Mile Drive (Pebble Beach)
+  - Sacramento (2 places): Delta King Riverboat, Leland Stanford Mansion
+  - Other cities (14 places): Bodie Ghost Town, Calico Ghost Town (Yermo), Preston Castle (Ione), Brookdale Lodge, Camarillo State Hospital, Agnews State Hospital, Colorado Street Bridge (Pasadena), Mission San Juan Capistrano, Mission Inn (Riverside), Old Orange County Courthouse (Santa Ana), Ocean Street White Lady (Santa Cruz), Arana Gulch (Santa Cruz), Big Yellow House (Summerland), The Comedy Store (West Hollywood)
+  - All images resized to 1200px max width for web performance
+  - Created update script at `scripts/update-california-images.sql`
+  - All 49 California places now have images (100% coverage)
+
 - Texas Haunted Places Images (Complete)
   - Downloaded and uploaded 50 images for all Texas haunted locations
   - Image sources: Library of Congress (Carol M. Highsmith Archive, Lyda Hill Texas Collection) and Unsplash (free commercial use)

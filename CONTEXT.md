@@ -6,6 +6,412 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-16
 
+### MA, VA, IL, NY, OH Image Research - Wikipedia/Wikimedia Commons
+
+Fixed images for five states using Wikipedia API to find authentic location photos from Wikimedia Commons.
+
+**States covered:**
+- Massachusetts (MA): 15 images
+- Virginia (VA): 11 images
+- Illinois (IL): 9 images
+- New York (NY): 12 images
+- Ohio (OH): 8 images
+- **Total: 55 images**
+
+**Wikipedia API used:**
+```bash
+curl -s "https://en.wikipedia.org/w/api.php?action=query&titles=[TITLE]&prop=pageimages&piprop=original&format=json"
+```
+
+**Key images uploaded:**
+
+| State | Place | Wikipedia Source |
+|-------|-------|------------------|
+| MA | Lizzie Borden House | Lizzie_Borden_House_(Bed_Breakfast).jpg |
+| MA | Omni Parker House | Omni_Parker_House.jpg |
+| MA | House of Seven Gables | House_of_the_Seven_Gables_(front_angle).jpg |
+| MA | Hawthorne Hotel | Hawthorne_Hotel.JPG |
+| MA | Danvers State Hospital | Danvers_State_Hospital_circa_1893.jpg |
+| MA | Hoosac Tunnel | Hoosac_Tunnel_2024.jpg |
+| MA | USS Constitution | USS_Constitution_fires_a_17-gun_salute.jpg |
+| VA | Monticello | Monticello_reflected.JPG |
+| VA | Fort Monroe | Fort_Monroe_Aerial.jpg |
+| VA | Governor's Palace | Governor's_Palace_Williamsburg.jpg |
+| VA | Peyton Randolph House | Peyton_Randolph_House.jpg |
+| VA | Gadsby's Tavern | Gadsby's_Tavern_Alexandria.jpg |
+| VA | Hollywood Cemetery | Hollywood_Cemetery_01.jpg |
+| VA | Cavalier Hotel | The_Cavalier_Hotel.jpg |
+| IL | Biograph Theater | BiographTheater.jpg |
+| IL | Lincoln Home | Lincoln_Home_1.jpg |
+| IL | Drake Hotel | Drake_Hotel_Chicago_postcard_1920.jpg |
+| IL | Resurrection Cemetery | Resurrection_Cemetery_Justice_IL.jpg |
+| IL | Wrigley Field | Wrigley_Field_in_line_with_sign.jpg |
+| NY | The Dakota | The_Dakota.jpg |
+| NY | Fort Ticonderoga | Fort_Ticonderoga.jpg |
+| NY | Hotel Chelsea | Chelsea_Manhattan_Aug_2025.jpg |
+| NY | Brooklyn Bridge | Brooklyn_Bridge_Manhattan.jpg |
+| NY | Sleepy Hollow Cemetery | SleepyHollowNY-entrance.jpg |
+| NY | Merchant's House Museum | Merchant's_House_Museum.jpg |
+| OH | Ohio State Reformatory | Ohio_State_Reformatory_Mansfield.jpg |
+| OH | Franklin Castle | Hannes_Tiedemann_House_Cleveland.jpg |
+| OH | Cincinnati Music Hall | Renovated_Cincinnati_Music_Hall.jpg |
+| OH | Squire's Castle | Squire's_Castle_2.jpg |
+
+**Places skipped (no Wikipedia page images):**
+- Salem Witch House (MA) - Wikipedia title search returned no image
+- Congress Plaza Hotel (IL) - No page image
+- Bachelor's Grove Cemetery (IL) - No page image
+- Hull House (IL) - No page image
+- Morris-Jumel Mansion (NY) - Unicode title issues
+- Amityville Horror House (NY) - No page image
+- Rolling Hills Asylum (NY) - No page image
+
+**Script location:** `scripts/update-five-states-images.sql`
+
+---
+
+### Florida Image Research - Wikipedia/Wikimedia Commons (Fix)
+
+Fixed Florida haunted place images by sourcing authentic photos from Wikipedia/Wikimedia Commons API.
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (30 total):**
+
+| Place | Wikipedia Source | Description |
+|-------|------------------|-------------|
+| Castillo de San Marcos | Castillo_de_San_Marcos.jpg | Spanish fort exterior |
+| St. Augustine Lighthouse | St._Augustine_Lighthouse_1.jpg | Full tower view |
+| Lightner Museum | Alcazar_Hotel,_St._Augustine,_FL,_US_(21).jpg | Historic Alcazar Hotel building |
+| Flagler College | Ponce_de_Leon_Hotel courtyard view | Courtyard of the historic hotel |
+| Casa Monica Hotel | Casa_Monica_Hotel,_St._Augustine,_FL,_US,_2022.jpg | 2022 exterior |
+| Huguenot Cemetery | St_Aug_Huguenot_Cem01.jpg | Cemetery entrance |
+| Tolomato Cemetery | Tolomato_Cemetery_entryway_July_2012.jpg | Cemetery entryway |
+| Spanish Military Hospital | Spanish_Military_Hospital_Museum_(Oblique_View)_01.jpg | Museum building |
+| Old Jail | St_Aug_old_county_jail01.jpg | Historic jail exterior |
+| Tampa Theatre | TampaTheatre01.jpg | Theatre facade |
+| Don CeSar Hotel | Don_Cesar.jpg | Pink palace hotel |
+| Cuban Club (Circulo Cubano) | Tampa_Circulo_Cubano01.jpg | Historic social club |
+| Plant Hall / Henry B. Plant Museum | Tampa_Bay_Hotel--7022-1.jpg | Moorish Revival architecture |
+| May-Stringer House | May-Stringer_House01.jpg | Victorian mansion |
+| Ybor City Museum | Centro_Ybor,_Ybor_City,_Tampa,_Florida.jpg | Centro Ybor building |
+| Biltmore Hotel | Coral_Gables_FL_Biltmore01.jpg | Iconic hotel exterior |
+| Vizcaya Museum | Villa_Vizcaya_20110228.jpg | Italian Renaissance villa |
+| Coral Castle | Coral_Castle_1.jpg | Stone structure |
+| Deering Estate | Deering_Estates_-_Richmond_Cottage.JPG | Richmond Cottage |
+| Stranahan House | Stranahan-house.jpg | Historic house |
+| Villa Paula | Villa_Paula.jpg | Historic mansion |
+| Audubon House | Audoban_House,_Key_West,_FL,_US.jpg | Key West house |
+| Captain Tony's Saloon | Sloppy_Joe's_Bar,_Key_West,_FL,_US_(09).jpg | Original Sloppy Joe's building |
+| Devil's Millhopper | Devil's_Millhopper_-_2.jpg | Geological sinkhole |
+| Pensacola Lighthouse | Pensacolalh.JPG | Lighthouse tower |
+| Fort Pickens | Bastion_of_Fort_Pickens.jpg | Fort bastion |
+| Kingsley Plantation | KingsleyPlantationSunset2.jpg | Plantation at sunset |
+| Koreshan State Park | Koreshan_SHS_planetary_court02.jpg | Planetary court structure |
+
+**Places without Wikipedia images (20):**
+- Artist House, Ashley's Restaurant, Capitol Theatre (Clearwater)
+- Casablanca Inn, Cassadaga Hotel, Cassadaga Spiritualist Camp
+- Dorr House, Greenwood Cemetery, Hard Rock Cafe Key West
+- Key West Cemetery, La Concha Hotel, Marrero's Guest Mansion
+- Miami River Inn, Old Town Manor, Ripley's Believe It or Not!
+- Safety Harbor Spa, Seville Quarter, St. Francis Inn
+- Sunland Hospital Site, The Devil's Chair
+
+**Key learnings:**
+- Wikipedia API reliably provides main image for pages with images
+- Many smaller B&Bs, inns, and restaurants have no Wikipedia coverage
+- The Wikipedia API pattern is: `titles=Page_Title&prop=pageimages&piprop=original`
+- Some pages exist but have no images (e.g., Cassadaga Spiritualist Camp)
+
+**Script location:** `/Users/paulberesuita/Desktop/haunted-places/scripts/update-florida-images-wikipedia.sql`
+
+---
+
+### Pennsylvania Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia images for Pennsylvania haunted places, focusing on major landmarks from Philadelphia, Pittsburgh, and Gettysburg.
+
+**Sources used:**
+- Wikipedia API with proper User-Agent header to avoid rate limiting
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images replaced (25 total):**
+
+| Place | Wikipedia Source | Description |
+|-------|------------------|-------------|
+| Eastern State Penitentiary | Eastern_State_Penitentiary_aerial_crop.jpg | Aerial view of the prison |
+| Fort Mifflin | Fort_Mifflin_-_Eastman.jpg | Historic fort exterior |
+| Independence Hall | Exterior_of_the_Independence_Hall,_Aug_2019.jpg | 2019 exterior photo |
+| Betsy Ross House | Betsy_Ross_House_(53572939795).jpg | Historic house facade |
+| Carpenters Hall | Carpenters'_Hall,_Philadelphia,_U.S.,_May_2015.jpg | Colonial building |
+| City Tavern | CityTavern-Philly.png | Historic tavern exterior |
+| First Bank of the United States | First_Bank_of_the_United_States_LCCN2011633532_(edited).jpg | Historic bank building |
+| Laurel Hill Cemetery | LaurelHillCemeteryGatehouse(cropped)_HABS314296cv.jpg | Cemetery gatehouse |
+| Carnegie Library of Pittsburgh | Interior_of_Carnegie_Library_of_Pittsburgh.jpg | Library interior |
+| National Aviary | National_Aviary.jpg | Building exterior |
+| Allegheny County Jail/Courthouse | Allegheny_County_Courthouse,_2025-05-24-1.jpg | Richardson Romanesque courthouse |
+| Sachs Covered Bridge | Sachs_Bridge_-_Gettysburg.jpg | Historic covered bridge |
+| Dobbin House Tavern | Dobbin_Gettysburg_2.JPG | Colonial tavern |
+| Cashtown Inn | Cashtown_Inn_Present.JPG | Civil War-era inn |
+| Little Round Top | The_Twentieth_Maine.jpg | Battle of Gettysburg painting |
+| Devils Den | Battle_of_Gettysburg_painting | Thure de Thulstrup painting |
+| Soldiers National Museum | Gettysburg_national_cemetery_img_4164.jpg | National Cemetery |
+| Fort Hunter Mansion | Fort_Hunter,_Pennsylvania_(5656723609).jpg | Historic mansion |
+| Fulton Theatre | Fulton_Opera_House.jpg | Lancaster opera house |
+| Centralia | Old_Mine_Fire_1969.jpg | Historic mine fire photo |
+| Jean Bonnet Tavern | Jean_Bonnet_Tavern.jpg | Historic tavern |
+| Golden Plough Tavern | YorkPaGPTavern.jpg | York colonial tavern |
+| Houdini Museum | Harry_Handcuff_Houdini_Crop.jpg | Houdini portrait |
+| Pennhurst Asylum | Admin-current-pennhurst.jpg | Abandoned asylum |
+| Church Brew Works | The_Church_Brew_Works.jpg | Church converted to brewery |
+
+**Places still without images (24):**
+- AV Restaurant & Lounge, Accomac Inn, Baleroy Mansion
+- Clayton (The Frick Mansion), Congress Hall, Dead Man's Hollow
+- Doubleday Inn, Farnsworth House Inn, General Lee's Headquarters
+- Gettysburg Hotel, Green Man's Tunnel, Hill View Manor
+- Hummelbaugh House, Iverson's Pits, Jennie Wade House
+- Nemacolin Castle, Omni William Penn Hotel, Pennsylvania Hall
+- The Old Jail, The Ritz Theater, The Seven Gates of Hell
+- The Slaughter Pen, Triangular Field, Troy Hill Firehouse
+
+**Key learnings:**
+- Wikipedia API requires proper User-Agent header to avoid 429 rate limiting
+- Some Gettysburg battlefield locations have paintings rather than photos available
+- Many smaller/local places have no Wikipedia pages
+
+**Script location:** `/Users/paulberesuita/Desktop/haunted-places/scripts/update-pennsylvania-images.sql`
+
+---
+
+### California Image Research Phase 2 - Wikimedia Commons
+
+Continued the California image research, replacing 21 additional generic Unsplash images with authentic photos from Wikimedia Commons.
+
+**Sources used (in priority order):**
+1. Wikimedia Commons - Primary source for most images (Creative Commons licensed)
+2. Calisphere attempted but blocked by CloudFront WAF
+
+**Images replaced with Wikimedia Commons sources:**
+
+| Place | Wikimedia Source | Description |
+|-------|------------------|-------------|
+| Cecil Hotel | Cecil_Hotel,_L.A.jpg | 2015 exterior facade |
+| Hollywood Roosevelt Hotel | Hollywood_Roosevelt_Hotel_2015.jpg | Modern exterior view |
+| Queen Anne Hotel | 1590_Sutter_Queen_Anne_SF_CA.JPG | Victorian painted lady facade |
+| Comedy Store | The_Comedy_Store_West_Hollywood_(51017780551).jpg | Night exterior with sign |
+| Claremont Hotel | Berkeley_CA_-_Hotel_Claremont_(NBY_431525).jpg | Historic postcard view |
+| Brookdale Lodge | Brookdale_Lodge_in_Brookdale,_California.JPG | Lodge exterior |
+| Linda Vista Hospital | Santa_Fe_Coast_Lines_Hospital,_Los_Angeles.JPG | Original hospital building |
+| Camarillo State Hospital | CSUCI-camarillo_state_hospital_bell_tower | Bell tower (now CSUCI) |
+| Hollywood Forever Cemetery | 2009-0727-CA-Paramount-HollywoodForever.jpg | Cemetery entrance |
+| Knickerbocker Hotel | KnickerbockerHotel_Dec2006.jpg | Building exterior |
+| Queen Mary | RMS_Queen_Mary_Long_Beach_January_2011_view.jpg | Ship docked at Long Beach |
+| Mission Inn | Mission_Inn,_Riverside,_California_(61085).jpg | Historic hotel exterior |
+| Cosmopolitan Hotel | San_Diego_Old_Town_Cosmopolitan_Hotel.jpg | Old Town building |
+| Curran Theatre | San_Francisco_Curran_Theatre_1.jpg | Theatre entrance |
+| Sainte Claire Hotel | Hotel_Sainte_Claire,_on_a_sunny_day.JPG | Downtown San Jose landmark |
+| Leland Stanford Mansion | Leland_Stanford_House_(Sacramento,_CA).jpg | Governor's mansion |
+| Moss Beach Distillery | Moss_Beach_Distillery_08-15-2009.jpg | Coastal restaurant exterior |
+| Mission San Juan Capistrano | Mission_San_Juan_Capistrano_02.jpg | Mission ruins and bell |
+| Stow Lake | San_Francisco_Stow_Lake_Strawberry_Hill_pagoda.jpg | Lake with pagoda |
+| Point Sur Lighthouse | Point_Sur_Lighthouse_(5063098751).jpg | Lighthouse on rocks |
+| Calico Ghost Town | Calico_Mountains_and_Calico_Ghost_Town_(47).jpg | Town overview |
+
+**Images NOT found (will skip rather than use wrong image):**
+- El Campo Santo Cemetery - No good Wikimedia images (cemetery is small)
+- Monterey Hotel - No specific building photos found
+- Old Orange County Courthouse - Skipped (need specific search)
+- Big Yellow House Summerland - No documentation found
+- Various San Jose road/park locations - Generic by nature
+
+**Total California image coverage:**
+- Phase 1 (LOC): 15 images replaced
+- Phase 2 (Wikimedia): 21 images replaced
+- Total authentic images: 36 of 49 California places (73%)
+- Remaining: 13 places still using Unsplash or need research
+
+**Key learnings:**
+- Wikimedia Commons has excellent coverage of California historic buildings
+- Hotels and theaters are well-documented (tourism photos)
+- Creative Commons licensing makes these safe to use
+- Some smaller/niche locations have no documentation anywhere
+
+---
+
+### California Image Re-Research - Authentic Location Photos
+
+Re-researched and replaced 15 California haunted place images that were generic Unsplash photos with authentic location-specific photographs from the Library of Congress.
+
+**Problem addressed:**
+- Original California images were sourced from Unsplash as generic fallbacks
+- Many were "spooky atmosphere" photos that didn't show the actual locations
+- Users reported images "are not good" and looked like stock photos
+
+**Solution implemented:**
+- Searched Library of Congress HABS, HAER, and Carol M. Highsmith Archive
+- Found and downloaded authentic building/location photographs
+- Replaced 15 images with actual photos of the haunted places
+
+**Images replaced with LOC sources:**
+
+| Place | Source | Description |
+|-------|--------|-------------|
+| Winchester Mystery House | HABS CA-2107 | Color front facade photo |
+| Whaley House | HABS CA-422 | 1960 exterior photograph |
+| Colorado Street Bridge | HAER CA-58 | Overall bridge view |
+| Preston Castle | Highsmith 2012 | Reform school exterior |
+| Delta King Riverboat | Highsmith 2012 | Steamboat in Old Sacramento |
+| Santa Clara University | Highsmith 2012 | Mission church on campus |
+| The Presidio | Highsmith 2012 | Historic military buildings |
+| Hotel del Coronado | HABS CA-1958 | Historic Victorian hotel |
+| Agnews State Hospital | HABS CA-2710 | Campus overview |
+| Griffith Park/Observatory | Highsmith 2012 | Iconic observatory building |
+| Pantages Theatre | Highsmith 2012 | Art Deco theater exterior |
+| Alcatraz Island | Highsmith | Aerial island view |
+| USS Hornet Museum | HAER WA-34 | Aircraft carrier aerial |
+| Bodie Ghost Town | Highsmith 2012 | Town overview |
+| Hearst Castle | Highsmith | Aerial estate view |
+
+**Places still using Unsplash (no LOC images found):**
+- Cecil Hotel (LOC has no photos; building is historic landmark)
+- Hollywood Roosevelt Hotel (no LOC exterior photos)
+- Queen Anne Hotel (no LOC documentation)
+- Comedy Store (LOC blog mentions it, no photos)
+- Claremont Hotel Berkeley (LOC has NY Claremont, not CA)
+- Brookdale Lodge (no LOC documentation)
+- Linda Vista Hospital (no LOC documentation)
+- Camarillo State Hospital (no LOC photos; archives at CSU Channel Islands)
+- And approximately 19 other locations with road/park/generic subjects
+
+**Key learnings:**
+- HABS/HAER collections have extensive California coverage for major landmarks
+- Carol M. Highsmith's 2012 Jon B. Lovelace California Collection is excellent
+- Some locations (newer hotels, private buildings) have no LOC documentation
+- A missing image is better than a wrong image - prioritize authenticity
+
+**Script location:** `scripts/update-california-images-v2.sql`
+
+---
+
+### Louisiana Image Research - Complete Coverage
+
+Successfully sourced and uploaded images for all 50 Louisiana haunted locations using Library of Congress and Unsplash.
+
+**Key LOC sources for Louisiana:**
+- **Carol M. Highsmith Archive** has excellent Louisiana coverage (2020-2021 pandemic-era photos of plantations)
+- Oak Alley Plantation: highsm.67668 (famous live oak alley view)
+- Myrtles Plantation: highsm.66574 (manor house exterior)
+- Houmas House: highsm.66393 (mansion and grounds)
+- San Francisco Plantation: highsm.67806 (turret and cisterns)
+- Old Ursuline Convent: highsm.12641 (oldest building in Mississippi Valley)
+- Jackson Square/St. Louis Cathedral: highsm.11863, highsm.14835 (historic square and cathedral)
+- Bourbon Street: highsm.73003-73007 (2022 street scenes)
+- Louisiana Capitol Interior: highsm.67665 (Memorial Hall, Senate chambers)
+- Faulkner House/Pirate's Alley: highsm.16364 (next to St. Louis Cathedral)
+- Garden District Mansion: highsm.13244 (Grinnan Villa, 1850)
+
+**LOC URL pattern for highsm collection:**
+- `https://tile.loc.gov/storage-services/service/pnp/highsm/[XXXXX]/[id]v.jpg`
+- Example: highsm.67668 = `/highsm/67600/67668v.jpg`
+
+**Unsplash used for locations not in LOC:**
+- French Quarter hotels: Balcony and building imagery
+- Restaurants: Interior dining photos
+- Cemeteries: Above-ground tomb imagery (Metairie Cemetery photos)
+- Theaters: Ornate interior auditorium photos
+- University buildings: Gothic/historic academic architecture
+- Military barracks: Historic brick building exteriors
+- Bed & breakfasts: Victorian mansion exteriors
+- Haunted roads: Foggy road night imagery
+
+**Coverage by region:**
+- New Orleans French Quarter (25 places): 8 from LOC, 17 from Unsplash
+- Louisiana Plantations (10 places): 4 from LOC (Oak Alley, Myrtles, Houmas, San Francisco), 6 from Unsplash
+- Baton Rouge (6 places): 1 from LOC (Capitol), 5 from Unsplash
+- Shreveport (3 places): Unsplash
+- Lafayette (2 places): Unsplash
+- Natchitoches (1 place): Unsplash
+- Chalmette (1 place): Unsplash
+
+**Script location:** `scripts/update-louisiana-images.sql`
+
+---
+
+### Florida Image Research - Complete Coverage
+
+Successfully sourced and uploaded images for all 50 Florida haunted locations using Library of Congress and Unsplash.
+
+**Key LOC sources for Florida:**
+- **Carol M. Highsmith Archive** has good Florida coverage (2020 photos primarily)
+- Castillo de San Marcos: highsm.62509 (cannon view of the fort)
+- St. Augustine Lighthouse: highsm.62504 (full tower view, completed 1874)
+- Flagler College: highsm.62533 (historic Ponce de Leon Hotel building)
+- Old Jail St. Augustine: highsm.62566 (1891 jailhouse exterior)
+- Coral Castle: highsm.13681 (Edward Leedskalnin's creation)
+- Vizcaya Museum: highsm.12197 (James Deering's winter retreat)
+
+**LOC URL pattern for highsm collection:**
+- `https://tile.loc.gov/storage-services/service/pnp/highsm/[XXXXX]/[id]v.jpg`
+- Example: highsm.62509 = `/highsm/62500/62509v.jpg`
+
+**Unsplash used for locations not in LOC:**
+- Key West mansions and inns: Victorian house imagery
+- Tampa/Ybor City: Historic buildings and theaters
+- Miami hotels: Luxury resort imagery
+- Cassadaga: Spiritual/mystical atmosphere photos
+- Cemeteries: Spanish moss and tombstone imagery
+
+**Coverage by region:**
+- St. Augustine (12 places): 4 from LOC, 8 from Unsplash
+- Key West (9 places): Mostly Unsplash
+- Tampa/St. Pete area (9 places): Unsplash
+- Miami/South Florida (7 places): 2 from LOC (Coral Castle, Vizcaya), 5 from Unsplash
+- Orlando/Cassadaga (7 places): Unsplash
+- Pensacola/North Florida (6 places): Unsplash
+
+**Script location:** `scripts/update-florida-images.sql`
+
+---
+
+### California Image Research - Complete Coverage
+
+Successfully sourced and uploaded images for all 49 California haunted locations using Library of Congress and Unsplash.
+
+**Key LOC sources for California:**
+- **Carol M. Highsmith Archive** has excellent California coverage (2012-2013 photos)
+- Alcatraz Island: Multiple aerial and ground-level views available (highsm-14872)
+- Queen Mary: Two views available (highsm-11879, highsm-16513)
+- Bodie Ghost Town: Extensive coverage with 72 images (highsm-22326 through 22431)
+- Hearst Castle: Neptune Pool, Roman Pool, and exterior views (highsm-73008 through 73038)
+- Hollywood/Pantages Theatre: Multiple views (highsm-22307 through 22313)
+- Griffith Observatory: Several angles available (highsm-22252, 22255, 24222)
+- Point Sur Lighthouse: highsm-16070
+- Mission Inn Riverside: highsm-25395, 25396
+- Calico Ghost Town: highsm-22685
+
+**Unsplash used for locations not in LOC:**
+- Winchester Mystery House: Architectural photos of the mansion
+- Whaley House: Historic house imagery
+- Cecil Hotel: Downtown LA building photos
+- Hollywood Roosevelt Hotel: Hollywood landmark imagery
+- Hotels/restaurants: Generic but relevant category images
+
+**Coverage by region:**
+- San Francisco Bay Area: 7 places (Alcatraz from LOC, others mix)
+- Los Angeles area: 7 places (Pantages from LOC, Griffith from LOC)
+- San Jose/Silicon Valley: 9 places (mostly Unsplash)
+- San Diego: 5 places (Hotel del Coronado from LOC)
+- Central Coast: 5 places (Point Sur, Hearst Castle from LOC)
+- Ghost Towns: Bodie and Calico both from LOC
+
+**Script location:** `scripts/update-california-images.sql`
+
+---
+
 ### Virginia Data Research
 
 Expanded the database to include Virginia, focusing on the state's rich Colonial and Civil War haunted heritage including Colonial Williamsburg, Civil War battlefields, and historic plantations.
