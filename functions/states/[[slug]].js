@@ -249,9 +249,10 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     .place-card {
       position: relative;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transition: box-shadow 0.3s ease;
       transform-style: preserve-3d;
       overflow: hidden;
+      will-change: transform;
     }
     .place-card::after {
       content: '';
@@ -263,7 +264,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       background: linear-gradient(
         45deg,
         transparent 40%,
-        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.15) 50%,
         transparent 60%
       );
       transform: translateX(-100%);
@@ -271,11 +272,10 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       pointer-events: none;
     }
     .group {
-      perspective: 800px;
+      perspective: 1000px;
     }
     .place-card:hover {
-      transform: rotateX(-5deg) rotateY(5deg) translateZ(10px);
-      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 255, 255, 0.1);
     }
     .place-card:hover::after {
       transform: translateX(100%);
@@ -928,6 +928,52 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       closeBtn.addEventListener('click', hideScare);
       scareVideo.addEventListener('ended', hideScare);
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
+    })();
+  </script>
+
+  <!-- Dynamic Card Tilt Effect -->
+  <script>
+    (function() {
+      const cards = document.querySelectorAll('.place-card');
+      const maxTilt = 6; // Max rotation in degrees
+      const scale = 1.01; // Subtle scale on hover
+
+      cards.forEach(card => {
+        const group = card.closest('.group');
+
+        group.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const centerY = rect.top + rect.height / 2;
+
+          // Calculate mouse position relative to card center (-1 to 1)
+          const mouseX = (e.clientX - centerX) / (rect.width / 2);
+          const mouseY = (e.clientY - centerY) / (rect.height / 2);
+
+          // Calculate rotation (inverted for natural feel)
+          const rotateY = mouseX * maxTilt;
+          const rotateX = -mouseY * maxTilt;
+
+          // Apply transform
+          card.style.transform = \`perspective(1000px) rotateX(\${rotateX}deg) rotateY(\${rotateY}deg) scale3d(\${scale}, \${scale}, \${scale})\`;
+        });
+
+        group.addEventListener('mouseleave', () => {
+          // Smooth reset
+          card.style.transition = 'transform 0.5s ease-out';
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+
+          // Remove transition after reset for smooth mousemove
+          setTimeout(() => {
+            card.style.transition = 'box-shadow 0.3s ease';
+          }, 500);
+        });
+
+        group.addEventListener('mouseenter', () => {
+          // Remove transition for immediate response
+          card.style.transition = 'box-shadow 0.3s ease';
+        });
+      });
     })();
   </script>
 
