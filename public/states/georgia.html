@@ -219,7 +219,7 @@
           const count = city.place_count || city.count;
           const citySlug = city.city.toLowerCase().replace(/\s+/g, '-');
           return `
-          <a href="/states/${STATE_CODE.toLowerCase()}/${citySlug}" class="city-card block bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent transition-all duration-300">
+          <a href="/states/${STATE_CODE.toLowerCase()}/${citySlug}" class="city-card block bg-dark-card rounded-xl p-4 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
             <h3 class="font-semibold mb-1">${escapeHtml(city.city)}</h3>
             <p class="text-muted text-sm">${count} ${count === 1 ? 'place' : 'places'}</p>
           </a>

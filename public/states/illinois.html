@@ -77,7 +77,7 @@
         const response = await fetchAPI(`/cities?state=${STATE_CODE}`);
         const cities = response.data || response;
         cities.sort((a, b) => (b.place_count || b.count) - (a.place_count || a.count));
-        document.getElementById('cities-grid').innerHTML = cities.map(city => `<a href="/states/${STATE_CODE.toLowerCase()}/${city.city.toLowerCase().replace(/\s+/g, '-')}" class="city-card block bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent transition-all duration-300"><h3 class="font-semibold mb-1">${city.city}</h3><p class="text-muted text-sm">${city.place_count || city.count} places</p></a>`).join('');
+        document.getElementById('cities-grid').innerHTML = cities.map(city => `<a href="/states/${STATE_CODE.toLowerCase()}/${city.city.toLowerCase().replace(/\s+/g, '-')}" class="city-card block bg-dark-card rounded-xl p-4 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300"><h3 class="font-semibold mb-1">${city.city}</h3><p class="text-muted text-sm">${city.place_count || city.count} places</p></a>`).join('');
       } catch (error) { document.getElementById('cities-grid').innerHTML = `<div class="col-span-full text-center py-8 text-muted">Failed to load cities.</div>`; }
     }
     async function loadPlaces() {
