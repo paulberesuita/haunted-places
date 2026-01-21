@@ -71,9 +71,9 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
 
     return `
             <a href="/place/${place.slug}" class="group">
-              <div class="aspect-[4/3] rounded-lg overflow-hidden bg-dark-card mb-3 border border-dark-border">
+              <div class="place-card aspect-[4/3] rounded-lg overflow-hidden bg-dark-card mb-3">
                 ${imageUrl
-                  ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">`
+                  ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover" loading="lazy">`
                   : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
                       <span class="text-4xl opacity-30">&#128123;</span>
                     </div>`
@@ -89,8 +89,8 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haunted Places in ${stateName} | Haunted Places Directory</title>
-  <meta name="description" content="Explore ${totalPlaces} haunted locations in ${stateName}. Discover ghost stories, paranormal history, and haunted places.">
+  <title>Haunted Places in ${stateName} - ${totalPlaces} Haunted Locations | SpookFinder</title>
+  <meta name="description" content="Discover ${totalPlaces} haunted places in ${stateName}. Browse haunted hotels, cemeteries, mansions, and more with ghost stories, paranormal history, and visitor information.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Haunted Places in ${stateName}">
@@ -105,6 +105,27 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
 
   <!-- Canonical -->
   <link rel="canonical" href="${baseUrl}/states/${stateUrls[stateCode]}">
+
+  <!-- Breadcrumb Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "${baseUrl}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "${stateName}"
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonts & Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -137,8 +158,131 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    /* Mobile touch target improvements */
+    @media (max-width: 768px) {
+      nav a {
+        padding: 12px 8px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      #state-filters a {
+        padding: 12px 4px;
+        min-height: 44px;
+      }
+      /* Breadcrumb touch targets */
+      nav[aria-label="Breadcrumb"] a {
+        padding: 8px 4px;
+        min-height: 44px;
+      }
+    }
+
+    /* Glitch text effect */
+    .glitch-text {
+      position: relative;
+      animation: flicker 4s infinite;
+    }
+    .glitch-text::before,
+    .glitch-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    .glitch-text::before {
+      color: #ff0040;
+      z-index: -1;
+    }
+    .glitch-text::after {
+      color: #00ffff;
+      z-index: -2;
+    }
+    .glitch-text.glitching::before {
+      animation: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      opacity: 0.8;
+    }
+    .glitch-text.glitching::after {
+      animation: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+      opacity: 0.8;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+      95% { opacity: 0.9; }
+      96% { opacity: 1; }
+      97% { opacity: 0.7; }
+      98% { opacity: 1; }
+    }
+    @keyframes glitch-1 {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(-3px, -2px); }
+      60% { transform: translate(3px, 2px); }
+      80% { transform: translate(3px, -2px); }
+      100% { transform: translate(0); }
+    }
+    @keyframes glitch-2 {
+      0% { transform: translate(0); }
+      20% { transform: translate(3px, -2px); }
+      40% { transform: translate(3px, 2px); }
+      60% { transform: translate(-3px, -2px); }
+      80% { transform: translate(-3px, 2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Image filter - grayscale with subtle grain */
+    .place-img {
+      filter: url(#grain) grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+    .place-img:hover {
+      filter: url(#grain) grayscale(100%) sepia(20%) brightness(0.9);
+    }
+
+    /* Floating card effect */
+    .place-card {
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transform-style: preserve-3d;
+      overflow: hidden;
+    }
+    .place-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 60%
+      );
+      transform: translateX(-100%);
+      transition: transform 0.6s ease;
+      pointer-events: none;
+    }
+    .group {
+      perspective: 800px;
+    }
+    .place-card:hover {
+      transform: rotateX(-5deg) rotateY(5deg) translateZ(10px);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    .place-card:hover::after {
+      transform: translateX(100%);
+    }
+
     /* Atmospheric background */
-    .bg-video {
+    .bg-image {
       position: fixed;
       inset: 0;
       z-index: -2;
@@ -149,7 +293,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     .bg-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(10, 10, 15, 0.4);
+      background: rgba(10, 10, 15, 0.3);
       z-index: -1;
     }
     #dust-canvas {
@@ -168,9 +312,18 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
   </style>
 </head>
 <body class="bg-dark text-gray-100 min-h-screen">
-  <video class="bg-video" autoplay muted loop playsinline>
-    <source src="/bg-atmosphere.mp4" type="video/mp4">
-  </video>
+  <!-- SVG Grain Filter -->
+  <svg style="position:absolute;width:0;height:0;">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="1" result="noise"/>
+        <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" result="grainFaded"/>
+        <feBlend in="SourceGraphic" in2="grainFaded" mode="multiply"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <img src="/bg-room.png" alt="" class="bg-image">
   <div class="bg-overlay"></div>
   <canvas id="dust-canvas"></canvas>
   <canvas id="fog-canvas"></canvas>
@@ -186,9 +339,20 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     </div>
   </header>
 
+  <!-- Breadcrumbs -->
+  <nav class="max-w-7xl mx-auto px-4 pt-2 pb-4" aria-label="Breadcrumb">
+    <ol class="flex items-center gap-2 text-sm text-muted">
+      <li>
+        <a href="/" class="hover:text-accent transition-colors">Home</a>
+      </li>
+      <li class="text-dark-border">/</li>
+      <li class="text-ghost">${stateName}</li>
+    </ol>
+  </nav>
+
   <!-- Tagline -->
   <section class="py-12 text-center">
-    <h1 class="text-2xl md:text-3xl font-medium mb-2">Haunted Places in ${stateName}</h1>
+    <h1 id="glitch-headline" class="glitch-text text-2xl md:text-3xl font-medium mb-2" data-text="Haunted Places in ${stateName}">Haunted Places in ${stateName}</h1>
     <p class="text-ghost text-sm">${totalPlaces} haunted locations</p>
   </section>
 
@@ -204,7 +368,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
 
   <!-- Place Cards Grid -->
   <main class="max-w-7xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
       ${placeCardsHtml}
     </div>
   </main>
@@ -214,11 +378,19 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <p class="text-gray-300 text-sm">
-          Documenting America's most haunted locations, one ghost story at a time.
+          Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
         </p>
       </div>
     </div>
   </footer>
+
+  <!-- Donkey Scare Easter Egg -->
+  <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
+    <video id="donkey-video" style="width:100%;height:100%;object-fit:cover;" playsinline>
+      <source src="${baseUrl}/images/easter-eggs/donkey.mp4" type="video/mp4">
+    </video>
+    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;">Close</button>
+  </div>
 
   <!-- VHS Glitch Transition -->
   <div id="vhs-glitch" style="display:none;position:fixed;inset:0;z-index:9999;pointer-events:none;">
@@ -285,8 +457,36 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
   <script>
     (function() {
       const glitch = document.getElementById('vhs-glitch');
+
+      // Ensure clean state on load
       glitch.classList.remove('active');
       glitch.style.display = 'none';
+      glitch.style.opacity = '0';
+
+      function triggerGlitch(callback) {
+        // Force layout recalc to ensure animation starts fresh
+        glitch.style.display = 'block';
+        glitch.offsetHeight; // Force reflow
+        glitch.style.opacity = '1';
+        glitch.classList.add('active');
+
+        setTimeout(() => {
+          callback();
+        }, 900);
+      }
+
+      function resetGlitch() {
+        glitch.classList.remove('active');
+        glitch.style.display = 'none';
+        glitch.style.opacity = '0';
+      }
+
+      // Reset glitch when returning via back button (bfcache)
+      window.addEventListener('pageshow', (e) => {
+        if (e.persisted) {
+          resetGlitch();
+        }
+      });
 
       // Check if this is a state/home navigation (should use SPA navigation)
       function isStateNavigation(path) {
@@ -345,8 +545,13 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
           // Use SPA navigation for state/home links to keep video playing
           if (isStateNavigation(path)) {
             navigateWithoutReload(link.href);
+          } else if (path.startsWith('/place/')) {
+            // VHS glitch transition for place detail pages
+            triggerGlitch(() => {
+              window.location.href = link.href;
+            });
           } else {
-            // Full page navigation for other links (place pages, etc.)
+            // Full page navigation for other links
             window.location.href = link.href;
           }
         }
@@ -372,39 +577,42 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     })();
   </script>
 
-  <!-- Dust Particles -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script>
+  <!-- Dust Particles in Light Cone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script defer>
     (function() {
+      const isMobile = window.innerWidth < 768;
       const canvas = document.getElementById('dust-canvas');
       const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 2));
 
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       camera.position.z = 5;
 
-      // Create dust particles
-      const particleCount = 150;
+      // Reduce particles on mobile for performance
+      const particleCount = isMobile ? 80 : 200;
       const geometry = new THREE.BufferGeometry();
       const positions = new Float32Array(particleCount * 3);
       const velocities = [];
 
       for (let i = 0; i < particleCount; i++) {
-        positions[i * 3] = (Math.random() - 0.5) * 20;
-        positions[i * 3 + 1] = (Math.random() - 0.5) * 20;
-        positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+        // Spread particles randomly across the entire scene
+        positions[i * 3] = (Math.random() - 0.5) * 20;     // X: full width
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 16; // Y: full height
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // Z: depth
+
+        // Float randomly in all directions with slight variation in speed
         velocities.push({
-          x: (Math.random() - 0.5) * 0.003,
-          y: (Math.random() - 0.5) * 0.003 + 0.001,
-          z: (Math.random() - 0.5) * 0.002
+          x: (Math.random() - 0.5) * 0.006,
+          y: (Math.random() - 0.5) * 0.006,
+          z: (Math.random() - 0.5) * 0.003
         });
       }
 
       geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-      // Create soft circular particle texture
       const particleCanvas = document.createElement('canvas');
       particleCanvas.width = 32;
       particleCanvas.height = 32;
@@ -419,10 +627,10 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       const particleTexture = new THREE.CanvasTexture(particleCanvas);
 
       const material = new THREE.PointsMaterial({
-        color: 0xffffff,
-        size: 0.08,
+        color: 0xc8d8e8,
+        size: 0.06,
         transparent: true,
-        opacity: 0.6,
+        opacity: 0.5,
         sizeAttenuation: true,
         map: particleTexture,
         blending: THREE.AdditiveBlending,
@@ -441,7 +649,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
           positions[i * 3 + 1] += velocities[i].y;
           positions[i * 3 + 2] += velocities[i].z;
 
-          // Wrap around
+          // Wrap around all directions
           if (positions[i * 3] > 10) positions[i * 3] = -10;
           if (positions[i * 3] < -10) positions[i * 3] = 10;
           if (positions[i * 3 + 1] > 10) positions[i * 3 + 1] = -10;
@@ -565,9 +773,17 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       animate();
     })();
 
-    // Noise-based fog shader
+    // Noise-based fog shader (disabled on mobile for performance)
     (function() {
+      const isMobile = window.innerWidth < 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       const canvas = document.getElementById('fog-canvas');
+
+      // Skip fog animation on mobile - too CPU intensive
+      if (isMobile) {
+        canvas.style.display = 'none';
+        return;
+      }
+
       const ctx = canvas.getContext('2d');
 
       function resize() {
@@ -638,6 +854,213 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     })();
   </script>
 
+  <!-- Glitch Headline Effect -->
+  <script>
+    (function() {
+      const headline = document.getElementById('glitch-headline');
+      if (!headline) return;
+
+      function triggerGlitch() {
+        headline.classList.add('glitching');
+        setTimeout(() => {
+          headline.classList.remove('glitching');
+        }, 300);
+      }
+
+      // Random glitches every 3-8 seconds
+      function scheduleGlitch() {
+        const delay = 3000 + Math.random() * 5000;
+        setTimeout(() => {
+          triggerGlitch();
+          // Sometimes double-glitch for extra creepiness
+          if (Math.random() < 0.3) {
+            setTimeout(triggerGlitch, 150);
+          }
+          scheduleGlitch();
+        }, delay);
+      }
+
+      // Initial glitch after 1 second
+      setTimeout(triggerGlitch, 1000);
+      scheduleGlitch();
+    })();
+  </script>
+
+  <!-- Donkey Scare Script -->
+  <script>
+    (function() {
+      const scareOverlay = document.getElementById('donkey-scare');
+      const scareVideo = document.getElementById('donkey-video');
+      const closeBtn = document.getElementById('donkey-close');
+      const trigger = document.getElementById('donkey-trigger');
+
+      let idleTimer;
+      const IDLE_TIMEOUT = 60000;
+      let scarePlayed = false;
+
+      function showScare() {
+        if (scarePlayed) return;
+        scarePlayed = true;
+        scareOverlay.style.display = 'block';
+        scareVideo.currentTime = 0;
+        scareVideo.play();
+      }
+
+      function hideScare() {
+        scareOverlay.style.display = 'none';
+        scareVideo.pause();
+        scareVideo.currentTime = 0;
+      }
+
+      function resetIdleTimer() {
+        clearTimeout(idleTimer);
+        if (!scarePlayed) {
+          idleTimer = setTimeout(showScare, IDLE_TIMEOUT);
+        }
+      }
+
+      ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'].forEach(event => {
+        document.addEventListener(event, resetIdleTimer, { passive: true });
+      });
+
+      resetIdleTimer();
+      trigger.addEventListener('click', showScare);
+      closeBtn.addEventListener('click', hideScare);
+      scareVideo.addEventListener('ended', hideScare);
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
+    })();
+  </script>
+
+</body>
+</html>`;
+}
+
+// Render states index page (when no slug provided)
+function renderStatesIndexPage(states, totalPlaces, baseUrl) {
+  const statesWithData = states.map(s => ({
+    code: s.state,
+    name: stateNames[s.state] || s.state,
+    url: stateUrls[s.state] || s.state.toLowerCase(),
+    count: s.place_count
+  })).sort((a, b) => b.count - a.count);
+
+  const stateCardsHtml = statesWithData.map(state => `
+    <a href="/states/${state.url}" class="block bg-dark-card rounded-xl p-6 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-xl font-semibold group-hover:text-accent transition-colors">${state.name}</h2>
+        <span class="text-3xl">&#128123;</span>
+      </div>
+      <p class="text-ghost text-sm">${state.count} haunted ${state.count === 1 ? 'place' : 'places'}</p>
+      <div class="mt-4 flex items-center text-accent text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+        <span>Explore</span>
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+  `).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haunted Places by State - Browse All ${states.length} States | SpookFinder</title>
+  <meta name="description" content="Explore ${totalPlaces} haunted places across ${states.length} US states. Browse haunted hotels, cemeteries, mansions, and more by state.">
+  <meta property="og:title" content="Haunted Places by State | SpookFinder">
+  <meta property="og:description" content="Explore ${totalPlaces} haunted places across ${states.length} US states.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${baseUrl}/states">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Haunted Places by State | SpookFinder">
+  <link rel="canonical" href="${baseUrl}/states">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${baseUrl}"},{"@type":"ListItem","position":2,"name":"States"}]}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            'dark': '#0a0a0f',
+            'dark-card': '#141419',
+            'dark-border': '#2a2a35',
+            'accent': '#e94560',
+            'accent-hover': '#ff6b6b',
+            'muted': '#6b7280',
+            'ghost': '#9ca3af',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media (max-width: 768px) {
+      nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
+      nav[aria-label="Breadcrumb"] a { padding: 8px 4px; min-height: 44px; }
+    }
+  </style>
+</head>
+<body class="bg-dark text-gray-100 min-h-screen">
+  <header class="border-b border-dark-border">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+      <nav class="flex gap-6 text-sm text-ghost">
+        <a href="/states" class="text-white">States</a>
+        <a href="/about" class="hover:text-white transition-colors">About</a>
+      </nav>
+    </div>
+  </header>
+  <nav class="max-w-6xl mx-auto px-4 pt-4 pb-2" aria-label="Breadcrumb">
+    <ol class="flex items-center gap-2 text-sm text-muted">
+      <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
+      <li class="text-dark-border">/</li>
+      <li class="text-ghost">States</li>
+    </ol>
+  </nav>
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Haunted Places by State</h1>
+    <p class="text-ghost text-lg max-w-2xl">
+      Explore ${totalPlaces} documented haunted locations across ${states.length} US states.
+      Select a state to discover ghost stories, paranormal history, and haunted places near you.
+    </p>
+  </section>
+  <section class="max-w-6xl mx-auto px-4 pb-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-dark-card rounded-lg p-4 text-center">
+        <div class="text-2xl font-bold text-accent">${totalPlaces}</div>
+        <div class="text-sm text-ghost">Haunted Places</div>
+      </div>
+      <div class="bg-dark-card rounded-lg p-4 text-center">
+        <div class="text-2xl font-bold text-accent">${states.length}</div>
+        <div class="text-sm text-ghost">States</div>
+      </div>
+      <div class="bg-dark-card rounded-lg p-4 text-center">
+        <div class="text-2xl font-bold text-accent">${statesWithData[0]?.count || 0}</div>
+        <div class="text-sm text-ghost">Most in One State</div>
+      </div>
+      <div class="bg-dark-card rounded-lg p-4 text-center">
+        <div class="text-2xl font-bold text-accent">${Math.round(totalPlaces / states.length)}</div>
+        <div class="text-sm text-ghost">Avg per State</div>
+      </div>
+    </div>
+  </section>
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      ${stateCardsHtml}
+    </div>
+  </main>
+  <footer class="mt-16 border-t border-dark-border">
+    <div class="max-w-6xl mx-auto px-4 py-8">
+      <div class="text-center">
+        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
+        <p class="text-muted text-sm mt-2">Documenting America's most haunted locations, one ghost story at a time.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>`;
 }
@@ -649,8 +1072,28 @@ export async function onRequestGet(context) {
 
   // Get the state slug from the URL
   const slugParts = params.slug;
+
+  // If no slug, render the states index page
   if (!slugParts || slugParts.length === 0) {
-    return new Response('State not found', { status: 404 });
+    try {
+      const { results: states } = await env.DB.prepare(`
+        SELECT state, COUNT(*) as place_count
+        FROM places
+        GROUP BY state
+        ORDER BY state
+      `).all();
+      const totalPlaces = states.reduce((sum, s) => sum + s.place_count, 0);
+      const html = renderStatesIndexPage(states || [], totalPlaces, baseUrl);
+      return new Response(html, {
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+          'Cache-Control': 'public, max-age=300'
+        }
+      });
+    } catch (error) {
+      console.error('Error rendering states index:', error);
+      return new Response('Error loading states page', { status: 500 });
+    }
   }
 
   const stateSlug = slugParts[0];

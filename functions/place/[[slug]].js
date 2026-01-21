@@ -65,7 +65,7 @@ function formatParagraphs(text) {
   return text.split('\n\n').map(p => `<p class="mb-4">${escapeHtml(p.trim())}</p>`).join('');
 }
 
-function renderPlacePage(place, relatedPlaces, baseUrl) {
+function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, baseUrl) {
   const stateName = stateNames[place.state] || place.state;
   const stateUrl = stateUrls[place.state] || place.state.toLowerCase();
   const categoryIcon = categoryIcons[place.category] || categoryIcons['other'];
@@ -102,6 +102,31 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
     structuredData.image = imageUrl;
   }
 
+  // Breadcrumb structured data
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": stateName,
+        "item": `${baseUrl}/states/${stateUrl}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": place.name
+      }
+    ]
+  };
+
   const relatedHtml = relatedPlaces.length > 0 ? `
     <!-- Related Places -->
     <section class="max-w-6xl mx-auto px-4 py-12">
@@ -110,7 +135,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         ${relatedPlaces.map(related => `
-          <a href="/place/${related.slug}" class="block bg-dark-card border border-dark-border rounded-xl p-5 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+          <a href="/place/${related.slug}" class="block bg-dark-card rounded-xl p-5 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-semibold group-hover:text-accent transition-colors">${escapeHtml(related.name)}</h3>
               <span class="text-xl ml-2">${categoryIcons[related.category] || categoryIcons['other']}</span>
@@ -123,13 +148,57 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
     </section>
   ` : '';
 
+  // More places in same state (different cities)
+  const statePlacesHtml = statePlaces.length > 0 ? `
+    <section class="max-w-6xl mx-auto px-4 py-12 border-t border-dark-border">
+      <h2 class="text-2xl font-semibold tracking-tight mb-6">
+        More Haunted Places in ${stateName}
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        ${statePlaces.map(p => `
+          <a href="/place/${p.slug}" class="block bg-dark-card rounded-lg p-4 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+            <span class="text-2xl block mb-2">${categoryIcons[p.category] || categoryIcons['other']}</span>
+            <h3 class="text-sm font-medium group-hover:text-accent transition-colors line-clamp-2">${escapeHtml(p.name)}</h3>
+            <p class="text-muted text-xs mt-1">${escapeHtml(p.city)}</p>
+          </a>
+        `).join('')}
+      </div>
+      <div class="mt-6 text-center">
+        <a href="/states/${stateUrl}" class="inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors text-sm">
+          View all haunted places in ${stateName}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  ` : '';
+
+  // Similar category places from other states
+  const categoryLabel = place.category ? place.category.charAt(0).toUpperCase() + place.category.slice(1) + 's' : 'Places';
+  const categoryPlacesHtml = categoryPlaces.length > 0 ? `
+    <section class="max-w-6xl mx-auto px-4 py-12 border-t border-dark-border">
+      <h2 class="text-2xl font-semibold tracking-tight mb-6">
+        More Haunted ${categoryLabel} Across America
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        ${categoryPlaces.map(p => `
+          <a href="/place/${p.slug}" class="block bg-dark-card rounded-lg p-4 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+            <h3 class="text-sm font-medium group-hover:text-accent transition-colors line-clamp-2">${escapeHtml(p.name)}</h3>
+            <p class="text-muted text-xs mt-1">${escapeHtml(p.city)}, ${stateNames[p.state] || p.state}</p>
+          </a>
+        `).join('')}
+      </div>
+    </section>
+  ` : '';
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(place.name)} | Haunted Places Directory</title>
-  <meta name="description" content="${escapeHtml(truncate(place.description, 160))}">
+  <title>${escapeHtml(place.name)} - Haunted ${escapeHtml(place.city)}, ${stateName} | SpookFinder</title>
+  <meta name="description" content="Explore ${escapeHtml(place.name)}, a haunted ${place.category || 'location'} in ${escapeHtml(place.city)}, ${stateName}. ${escapeHtml(truncate(place.description, 120))}">
 
   <!-- Open Graph -->
   <meta property="og:title" content="${escapeHtml(place.name)} - Haunted ${escapeHtml(place.city)}, ${stateName}">
@@ -147,6 +216,11 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
   <!-- Structured Data -->
   <script type="application/ld+json">
   ${JSON.stringify(structuredData, null, 2)}
+  </script>
+
+  <!-- Breadcrumb Structured Data -->
+  <script type="application/ld+json">
+  ${JSON.stringify(breadcrumbData, null, 2)}
   </script>
 
   <!-- Fonts & Tailwind -->
@@ -172,20 +246,65 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       }
     }
   </script>
-  <style></style>
+  <style>
+    /* Transparent header that darkens on scroll */
+    .nav-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: transparent;
+      transition: background 0.3s ease;
+    }
+    .nav-header.scrolled {
+      background: rgba(10, 10, 15, 0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Mobile touch target improvements */
+    @media (max-width: 768px) {
+      nav a, .nav-header a {
+        padding: 12px 8px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      /* Breadcrumb touch targets */
+      nav[aria-label="Breadcrumb"] a {
+        padding: 8px 4px;
+        min-height: 44px;
+      }
+    }
+  </style>
 </head>
 <body class="bg-dark text-gray-100 min-h-screen">
 
   <!-- Navigation Header -->
-  <header>
+  <header class="nav-header" id="nav-header">
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
-      <nav class="flex gap-6 text-sm text-ghost">
+      <nav class="flex gap-6 text-sm text-white">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
         <a href="/about" class="hover:text-accent transition-colors">About</a>
       </nav>
     </div>
   </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="pt-16 pb-2 px-4 max-w-6xl mx-auto" aria-label="Breadcrumb">
+    <ol class="flex items-center gap-2 text-sm text-muted">
+      <li>
+        <a href="/" class="hover:text-accent transition-colors">Home</a>
+      </li>
+      <li class="text-dark-border">/</li>
+      <li>
+        <a href="/states/${stateUrl}" class="hover:text-accent transition-colors">${stateName}</a>
+      </li>
+      <li class="text-dark-border">/</li>
+      <li class="text-ghost truncate max-w-[200px]" title="${escapeHtml(place.name)}">${escapeHtml(place.name)}</li>
+    </ol>
+  </nav>
 
   <!-- Hero Image -->
   ${imageUrl ? `
@@ -193,7 +312,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
     <img
       src="${imageUrl}"
       alt="${escapeHtml(place.name)}"
-      class="w-full h-full object-cover"
+      class="place-img w-full h-full object-cover"
       loading="eager"
       onerror="this.parentElement.style.display='none'"
     >
@@ -236,7 +355,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       <div class="lg:col-span-2 space-y-8">
 
         <!-- Description -->
-        <section class="bg-dark-card border border-dark-border rounded-xl p-6 md:p-8">
+        <section class="bg-dark-card rounded-xl p-6 md:p-8">
           <h2 class="text-xl font-semibold mb-4">About This Location</h2>
           <div class="text-ghost leading-relaxed">
             ${formatParagraphs(place.description)}
@@ -245,7 +364,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
 
         <!-- Ghost Story -->
         ${place.ghost_story ? `
-        <section class="bg-dark-card border border-dark-border rounded-xl p-6 md:p-8">
+        <section class="bg-dark-card rounded-xl p-6 md:p-8">
           <div class="flex items-center gap-3 mb-4">
             <span class="text-2xl">&#128123;</span>
             <h2 class="text-xl font-semibold text-accent">The Ghost Story</h2>
@@ -262,7 +381,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       <aside class="space-y-6">
 
         <!-- Location Info -->
-        <div class="bg-dark-card border border-dark-border rounded-xl p-6">
+        <div class="bg-dark-card rounded-xl p-6">
           <h3 class="font-semibold mb-4 flex items-center gap-2">
             <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -297,7 +416,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
         </div>
 
         <!-- Quick Facts -->
-        <div class="bg-dark-card border border-dark-border rounded-xl p-6">
+        <div class="bg-dark-card rounded-xl p-6">
           <h3 class="font-semibold mb-4">Quick Facts</h3>
           <ul class="space-y-3 text-sm">
             <li class="flex items-start gap-3">
@@ -335,7 +454,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
 
         <!-- Source Attribution -->
         ${place.source_url ? `
-        <div class="bg-dark-card border border-dark-border rounded-xl p-6">
+        <div class="bg-dark-card rounded-xl p-6">
           <h3 class="font-semibold mb-3 text-sm text-muted">Source</h3>
           <a href="${escapeHtml(place.source_url)}" target="_blank" rel="noopener noreferrer" class="text-sm text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -347,7 +466,7 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
         ` : ''}
 
         <!-- Explore More -->
-        <div class="bg-dark-card border border-dark-border rounded-xl p-6">
+        <div class="bg-dark-card rounded-xl p-6">
           <h3 class="font-semibold mb-4">Explore More</h3>
           <div class="space-y-3">
             <a href="/states/${stateUrl}" class="flex items-center gap-3 text-sm text-ghost hover:text-accent transition-colors">
@@ -370,6 +489,8 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
   </main>
 
   ${relatedHtml}
+  ${statePlacesHtml}
+  ${categoryPlacesHtml}
 
   <!-- Footer -->
   <footer class="bg-dark-card/50">
@@ -377,12 +498,76 @@ function renderPlacePage(place, relatedPlaces, baseUrl) {
       <div class="text-center">
         <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
         <p class="text-muted text-sm mt-2">
-          Documenting America's most haunted locations, one ghost story at a time.
+          Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
         </p>
       </div>
     </div>
   </footer>
 
+  <!-- Donkey Scare Easter Egg -->
+  <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
+    <video id="donkey-video" style="width:100%;height:100%;object-fit:cover;" playsinline>
+      <source src="${baseUrl}/images/easter-eggs/donkey.mp4" type="video/mp4">
+    </video>
+    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;">Close</button>
+  </div>
+
+  <script>
+    // Scroll detection for nav header
+    const navHeader = document.getElementById('nav-header');
+    const scrollThreshold = 100;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > scrollThreshold) {
+        navHeader.classList.add('scrolled');
+      } else {
+        navHeader.classList.remove('scrolled');
+      }
+    });
+
+    // Donkey Scare Easter Egg
+    (function() {
+      const scareOverlay = document.getElementById('donkey-scare');
+      const scareVideo = document.getElementById('donkey-video');
+      const closeBtn = document.getElementById('donkey-close');
+      const trigger = document.getElementById('donkey-trigger');
+
+      let idleTimer;
+      const IDLE_TIMEOUT = 60000;
+      let scarePlayed = false;
+
+      function showScare() {
+        if (scarePlayed) return;
+        scarePlayed = true;
+        scareOverlay.style.display = 'block';
+        scareVideo.currentTime = 0;
+        scareVideo.play();
+      }
+
+      function hideScare() {
+        scareOverlay.style.display = 'none';
+        scareVideo.pause();
+        scareVideo.currentTime = 0;
+      }
+
+      function resetIdleTimer() {
+        clearTimeout(idleTimer);
+        if (!scarePlayed) {
+          idleTimer = setTimeout(showScare, IDLE_TIMEOUT);
+        }
+      }
+
+      ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'].forEach(event => {
+        document.addEventListener(event, resetIdleTimer, { passive: true });
+      });
+
+      resetIdleTimer();
+      trigger.addEventListener('click', showScare);
+      closeBtn.addEventListener('click', hideScare);
+      scareVideo.addEventListener('ended', hideScare);
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
+    })();
+  </script>
   </body>
 </html>`;
 }
@@ -472,8 +657,18 @@ export async function onRequestGet(context) {
       'SELECT slug, name, city, category, description FROM places WHERE city = ? AND slug != ? LIMIT 6'
     ).bind(place.city, slug).all();
 
+    // Fetch more places in same state (different city)
+    const { results: statePlaces } = await env.DB.prepare(
+      'SELECT slug, name, city, category FROM places WHERE state = ? AND city != ? ORDER BY RANDOM() LIMIT 6'
+    ).bind(place.state, place.city).all();
+
+    // Fetch similar category places (different state for variety)
+    const { results: categoryPlaces } = await env.DB.prepare(
+      'SELECT slug, name, city, state, category FROM places WHERE category = ? AND slug != ? AND state != ? ORDER BY RANDOM() LIMIT 4'
+    ).bind(place.category, slug, place.state).all();
+
     // Render the page
-    const html = renderPlacePage(place, relatedPlaces || [], baseUrl);
+    const html = renderPlacePage(place, relatedPlaces || [], statePlaces || [], categoryPlaces || [], baseUrl);
 
     return new Response(html, {
       headers: {
