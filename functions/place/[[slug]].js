@@ -133,17 +133,23 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       <h2 class="text-2xl font-semibold tracking-tight mb-6">
         More Haunted Places in ${escapeHtml(place.city)}
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${relatedPlaces.map(related => `
-          <a href="/place/${related.slug}" class="block bg-dark-card rounded-xl p-5 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
-            <div class="flex items-start justify-between mb-2">
-              <h3 class="font-semibold group-hover:text-accent transition-colors">${escapeHtml(related.name)}</h3>
-              <span class="text-xl ml-2">${categoryIcons[related.category] || categoryIcons['other']}</span>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        ${relatedPlaces.map(related => {
+          const relatedImageUrl = related.image_url ? `${baseUrl}/images/${related.image_url}` : null;
+          return `
+          <a href="/place/${related.slug}" class="group">
+            <div class="place-card aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg">
+              ${relatedImageUrl
+                ? `<img src="${relatedImageUrl}" alt="${escapeHtml(related.name)}" class="place-img w-full h-full object-cover" loading="lazy">`
+                : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                    <span class="text-4xl opacity-30">${categoryIcons[related.category] || categoryIcons['other']}</span>
+                  </div>`
+              }
             </div>
-            <p class="text-muted text-sm mb-3 capitalize">${related.category}</p>
-            <p class="text-ghost text-sm line-clamp-2">${escapeHtml(truncate(related.description, 100))}</p>
-          </a>
-        `).join('')}
+            <h3 class="text-sm font-medium group-hover:text-accent transition-colors">${escapeHtml(related.name)}</h3>
+            <p class="text-xs text-ghost capitalize">${related.category}</p>
+          </a>`;
+        }).join('')}
       </div>
     </section>
   ` : '';
@@ -254,6 +260,19 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
     }
   </script>
   <style>
+    /* Image filter - grayscale */
+    .place-img {
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+    .place-img:hover {
+      filter: grayscale(100%) sepia(20%) brightness(0.9);
+    }
+    .place-card {
+      position: relative;
+      overflow: hidden;
+    }
+
     /* Transparent header that darkens on scroll */
     .nav-header {
       position: fixed;
