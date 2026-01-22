@@ -6,6 +6,39 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-22
 
+### Cloudflare Pages Functions: Catch-All Route Priority
+
+**Problem:** Edited `functions/states/index.js` to add state icons, deployed 10+ times, but changes never appeared on the live site. New test endpoints deployed fine, but updates to the states page were ignored.
+
+**Root cause:** `functions/states/[[slug]].js` handles ALL requests under `/states`, including the bare `/states` path. When no slug is provided, it falls through to `renderStatesIndexPage()` inside `[[slug]].js`. The `index.js` file in the same directory is NEVER invoked.
+
+**Key learnings:**
+- In Cloudflare Pages Functions, `[[slug]].js` catch-all routes take priority over `index.js` for the parent path
+- The compiled Functions bundle was correct (verified with `wrangler pages functions build`), but `index.js` simply wasn't being called at runtime
+- Always check which file actually handles a route before editing — look for catch-all patterns that might override index files
+- New function endpoints deploy instantly; the issue was routing, not deployment
+
+**Fix:** Moved the icon rendering logic from `index.js` to the `renderStatesIndexPage()` function inside `[[slug]].js`.
+
+---
+
+### State Page Icons (Woodcut Etching Style)
+
+Added conditional rendering for AI-generated state icons on the /states page. States with icons show a woodcut etching illustration; others show a ghost emoji placeholder.
+
+**Art style:** Woodcut etching, white ink on pure #000000 black background, vintage horror book style. Generated with Nano Banana Pro (Google Gemini 3 Pro Image).
+
+**Prompt template:**
+```
+Woodcut etching illustration of [object], white ink on pure #000000 black background, vintage horror book style, fine line detail, no color, engraving style, centered composition with padding, 16:9 aspect ratio, clean lines
+```
+
+**Implementation:** Icons stored at `public/icons/states/[STATE_CODE].png`. The `stateIcons` array in `functions/states/[[slug]].js` controls which states show icons.
+
+**Current status:** 1/18 states done (MA = witch hat).
+
+---
+
 ### Ghost Tour Operators Research - Batch 2: Next 10 Haunted Destinations
 
 Expanded the `tour_operators` table with 50 additional ghost tour companies across 10 new cities, bringing total to 111 operators across 21 cities.

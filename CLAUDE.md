@@ -47,6 +47,49 @@ A template for building directory-style apps with Claude agents.
 └── wrangler.toml           # Cloudflare config
 ```
 
+## Routing Architecture
+
+All pages are **server-side rendered** by Cloudflare Pages Functions. There are NO static HTML pages served for main routes — the `functions/` directory generates all HTML dynamically with data from D1.
+
+### Function Routing Priority
+
+Cloudflare Pages Functions use file-based routing. **Catch-all routes (`[[slug]]`) take priority over `index.js` for the parent path.**
+
+```
+functions/
+├── index.js                    # Handles GET /
+├── states/
+│   ├── index.js                # ⚠️ NOT used for /states (overridden by [[slug]].js)
+│   └── [[slug]].js             # Handles /states AND /states/california, /states/texas, etc.
+├── place/
+│   └── [[slug]].js             # Handles /place/[slug]
+└── api/
+    ├── tour-operators/
+    │   ├── index.js             # GET /api/tour-operators
+    │   ├── [id].js              # GET /api/tour-operators/:id
+    │   └── cities.js            # GET /api/tour-operators/cities
+    └── ...
+```
+
+**CRITICAL:** When `[[slug]].js` exists, it handles BOTH:
+- `/states/california` (slug = `['california']`)
+- `/states` (slug = `[]` or undefined → renders index page as fallback)
+
+The `index.js` in the same directory is NEVER invoked. Always edit `[[slug]].js` for changes to either the index or detail pages.
+
+### Static Files in `public/states/`
+
+The `public/states/` directory contains pre-rendered HTML files for individual state pages (e.g., `california.html`). These are **legacy/unused** — the dynamic function handles all routes. Do not rely on or add to these static files.
+
+### Key Rendering Functions
+
+| File | Function | Renders |
+|------|----------|---------|
+| `functions/states/[[slug]].js` | `renderStatesIndexPage()` | /states (grid of all states) |
+| `functions/states/[[slug]].js` | `renderStatePage()` | /states/[slug] (places in a state) |
+| `functions/place/[[slug]].js` | main handler | /place/[slug] (individual place) |
+| `functions/index.js` | main handler | / (homepage) |
+
 ## Agents
 
 Agents are specialized assistants. Invoke by trigger words.
@@ -73,6 +116,16 @@ All skills are user-invokable with `/command`.
 | `/verify-data` | `/verify-data` | Check data quality, find gaps |
 | `/query-data` | `/query-data how many places in CA?` | Query the database |
 
+## Environments
+
+| Environment | URL | Purpose |
+|-------------|-----|---------|
+| **Local** | `localhost:8788` | Local development |
+| **Preview** | `spookfinder.pages.dev` | Test before production |
+| **Production** | `spookfinder.com` | Live site |
+
+**Single project:** Both Preview and Production are served by the `spookfinder` Cloudflare Pages project. One deploy updates both URLs.
+
 ## Deploy Commands
 
 ```bash
@@ -82,11 +135,13 @@ wrangler pages dev ./public --d1=DB=haunted-places-db --local
 # Run migration
 npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
-# Deploy to production (spookfinder.com)
+# Deploy (updates both spookfinder.pages.dev AND spookfinder.com)
 wrangler pages deploy ./public --project-name=spookfinder
 ```
 
-**IMPORTANT:** The Cloudflare Pages project is named `spookfinder` (not `haunted-places`). Always deploy to `--project-name=spookfinder` for changes to appear on spookfinder.com.
+**IMPORTANT:** Always deploy to `--project-name=spookfinder`. This updates both:
+- Preview: `spookfinder.pages.dev`
+- Production: `spookfinder.com`
 
 ## Documentation Requirements
 

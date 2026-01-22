@@ -429,7 +429,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
   <!-- Clown Scare Easter Egg -->
   <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
     <video id="donkey-video" style="width:100%;height:100%;object-fit:cover;" playsinline>
-      <source src="${baseUrl}/clown.mp4" type="video/mp4">
+      <source src="${baseUrl}/idle-scare.mp4" type="video/mp4">
     </video>
     <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;z-index:1;">Close</button>
   </div>
