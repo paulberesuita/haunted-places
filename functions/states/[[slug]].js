@@ -183,17 +183,12 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: 0;
+      z-index: -1;
       pointer-events: none;
     }
-    /* Content wrapper to sit above video */
-    .content-wrapper {
-      position: relative;
-      z-index: 1;
-      background: transparent;
-    }
-    body {
+    html {
       background: #0a0a0f;
+      overflow-x: hidden;
     }
 
     .hide-scrollbar::-webkit-scrollbar {
@@ -338,7 +333,6 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     </defs>
   </svg>
 
-  <div class="content-wrapper">
   <!-- Header (outside frame) -->
   <header class="max-w-7xl mx-auto px-4">
     <div class="h-14 flex items-center justify-between">
@@ -1084,7 +1078,6 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       </div>
     </div>
   </footer>
-  </div>
 </body>
 </html>`;
 }

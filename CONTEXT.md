@@ -4,6 +4,345 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-22
+
+### New Jersey Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia/Wikimedia Commons images for 35 New Jersey haunted places, focusing on lighthouses, historic mansions, prisons/asylums, and Cape May Victorian hotels.
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Wikimedia Commons search API for places without main Wikipedia page images
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (35 total):**
+
+| Place | Wikipedia/Commons Source | Description |
+|-------|--------------------------|-------------|
+| Absecon Lighthouse | ABSECON_72_500.jpg | Atlantic City lighthouse |
+| Barnegat Lighthouse | NJ_LBI_Lighthouse_04.JPG | "Old Barney" |
+| Cape May Lighthouse | Cape_May_Lighthouse_in_Cape_May...jpg | Cape May Point tower |
+| Nassau Hall | Cannon_Green_and_Nassau_Hall.jpg | Princeton University |
+| Nassau Inn | Nassau_Inn.jpg | Historic Princeton hotel |
+| Rockefeller College | Rockefeller_College_Courtyard.jpg | Princeton campus |
+| Princeton Cemetery | Princeton_Cemetery_Main_Entrance.JPG | Presidents Row |
+| Thomas Clarke House | Princeton_Battlefield_-_The_Clarke_House.jpg | Revolutionary War site |
+| Ringwood Manor | Ringwood_Manor_spring_2015.jpg | Historic iron master's mansion |
+| Ford Mansion | Ford_Mansion_Morristown_NHP_NJ2.jpg | Washington's Headquarters |
+| Emlen Physick Estate | Emlen-physick-estate.jpg | Cape May Victorian mansion |
+| The Hermitage | Hermitage-rear.jpg | Ho-Ho-Kus historic house |
+| Proprietary House | ProprietaryHousePerthAmboy.JPG | Royal Governor's mansion |
+| Smithville Mansion | Smithville_Historic_District_(31).JPG | Historic mansion |
+| Southern Mansion | The_Southern_Mansion_Cape_May_NJ.jpg | Cape May B&B |
+| Jonathan Pitney House | Dr._Jonathan_Pitney_House_2024.jpg | "Father of Atlantic City" home |
+| Spy House | Seabrook-Wilson_House.jpg | Most haunted house in NJ |
+| Burlington County Prison | Burlington_County_Prison_128_High_Street.jpg | Ghost Hunters location |
+| Greystone Park | Greystone.jpg | Kirkbride asylum |
+| Trenton Psychiatric | West_entrance_to_the_Trenton_Psychiatric_Hospital.jpg | Dr. Cotton's hospital |
+| Essex County Hospital (Overbrook) | Overbrook_Hospital_-_2017-06-27_(003).jpg | Abandoned asylum |
+| Jockey Hollow | Tempe_Wick_House_Jockey_Hollow_NJ.jpg | Revolutionary War encampment |
+| Branch Brook Park | Aerial_view_of_Branch_Brook_Park.jpg | Newark park |
+| Allaire Village | Row_Homes.jpg | Historic iron village |
+| Batsto Village | Batsto_Village_house.jpg | Pine Barrens settlement |
+| Clinton Furnace | Clinton_Road_ore_smelter.jpg | Haunted ruins |
+| Clinton Road | Clinton_Road_sign.jpg | "Most haunted road in America" |
+| Devil's Tree | The_Devil's_Tree.jpg | KKK hanging tree legend |
+| Congress Hall | Congress_Hall_A.jpg | Cape May grand hotel |
+| Chalfonte Hotel | Chalfonte_Hotel_A.jpg | Victorian Cape May hotel |
+| Hotel Macomber | Hotel_Macomber_Cape_May.jpg | Historic Cape May |
+| Flanders Hotel | Flanders_Hotel_OC_NJ.jpg | Ocean City landmark |
+| Resorts Casino Hotel | Resorts_Atlantic_City_Hotel_Towers.jpg | First Atlantic City casino |
+| Centenary University | Old_Main_Centenary_University_Hackettstown_NJ.jpg | Tillie Smith haunting |
+| Kendall Hall TCNJ | Kendall_Hall_TCNJ.jpg | Campus theater |
+
+**Places without Wikipedia/Commons images (15 places):**
+- Angel of the Sea B&B, Burnt Mill Road (Atco Ghost), Devil's Tower (Rio Vista)
+- Dios Cafe, Estell Manor, Gallows Hill Road, Inn of the Hawke
+- Leeds Point (Jersey Devil birthplace), Old Bernardsville Library, Ong's Hat Ghost Town
+- Surf City Hotel, The Barracks, The Inn at Cape May, The Publick House
+- Union Cemetery Hackettstown
+
+**Key learnings:**
+- Wikimedia Commons search API is excellent for finding Cape May Victorian architecture
+- NJ has strong coverage of lighthouses, state parks, and major landmarks
+- Smaller B&Bs, restaurants, and haunted roads often have no photo documentation
+- Pine Barrens locations (Ong's Hat, Leeds Point) are difficult to photograph authentically
+
+**Script location:** `/Users/paulberesuita/Desktop/haunted-places/scripts/update-new-jersey-images.sql`
+
+---
+
+### Kentucky Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia images for 32 Kentucky haunted places, focusing on famous landmarks like Waverly Hills Sanatorium, Bobby Mackey's Music World, and major historic sites.
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Wikimedia Commons search API for places without main Wikipedia page images
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (32 total):**
+
+| Place | Wikipedia/Commons Source | Description |
+|-------|--------------------------|-------------|
+| Waverly Hills Sanatorium | Waverlyhillssanatorium.jpg | Famous haunted hospital |
+| Bobby Mackey's Music World | Bobby_Mackey's_Wilder_KY.jpg | "Most Haunted Nightclub" |
+| Liberty Hall | Liberty_Hall_Frankfort_Kentucky.jpg | Home of the Gray Lady |
+| Mammoth Cave | Mammoth_Cave_Rotunda.jpg | World's longest cave system |
+| Buffalo Trace Distillery | Buffalo_Trace_Tower.jpg | Haunted bourbon distillery |
+| Seelbach Hilton Hotel | Seelbach_Hotel_Louisville.jpg | F. Scott Fitzgerald's Great Gatsby inspiration |
+| Mary Todd Lincoln House | Mary_Todd_Lincoln_House_Lexington.jpg | Lincoln's wife's childhood home |
+| Ashland Henry Clay Estate | Ashland_HC.JPG | Henry Clay's mansion |
+| Perryville Battlefield | Harpers-perryville-battle.jpg | Historic battle illustration |
+| Cave Hill Cemetery | Cave_hill-rework.jpg | Louisville's Victorian cemetery |
+| Old Talbott Tavern | Old_Talbott_Tavern_Bardstown.jpg | Jesse James bullet holes |
+| My Old Kentucky Home | My_Old_Kentucky_Home_Mansion.png | Stephen Foster inspiration |
+| White Hall | White_Hall_Mansion.jpg | Cassius Clay's home |
+| Belle of Louisville | Belle_of_Louisville_2.jpg | Historic steamboat |
+| Lexington Opera House | Lexington_Opera_House.jpg | Haunted theater |
+| Lexington Cemetery | LexingtonCemetery.JPG | Henry Clay's burial site |
+| Frankfort Cemetery | Frankfort_Cemetery.JPG | Daniel Boone's grave |
+| Speed Art Museum | Speed_Art_Museum_2016.jpg | Louisville art museum |
+| Lost River Cave | Lost_River_Cave_entrance.jpg | Underground river cave |
+| Shaker Village Pleasant Hill | Shakertown_Trustees_House.jpeg | Historic Shaker community |
+| Octagon Hall | Octagon_Hall_Simpson_Co_KY.jpg | Unique octagonal mansion |
+| Camp Nelson | Camp_Nelson_landscape.JPG | Civil War monument |
+| Old State Capitol | Kentucky_Old_State_Capitol.JPG | Governor assassination site |
+| Colville Covered Bridge | Colville_Bridge02.jpg | Historic covered bridge |
+| Old Fort Harrod | Old_Fort_Harrod_State_Park.jpg | First permanent settlement |
+| Conrad-Caldwell House | Conrad-Caldwell_House_Museum.jpg | Old Louisville Victorian |
+| Louisville Palace Theatre | LouisvillePalaceFullSign.jpg | Movie palace |
+| Hunt-Morgan House | Hunt-Morgan_House_Lexington.jpg | Civil War general's home |
+| Transylvania University | Old_Morrison.jpg | Famous cursed professor |
+| Bodley-Bullock House | Bodley-Bullock_House.jpg | Lexington historic home |
+| The Carneal House | Thomas_Carneal_House_Covington.jpg | Covington mansion |
+| Booth Memorial Hospital | Old_William_Booth_Memorial_Hospital.jpg | Former Salvation Army hospital |
+
+**Places without Wikipedia/Commons images (12 places):**
+- Airdrie Iron Works Ruins, DuPont Mansion B&B, Gratz Park Inn
+- Jailer's Inn B&B, Louisville Bourbon Inn, Maple Hill Manor B&B
+- Pioneer Cemetery Bardstown, Sauerkraut Cave, Springhill Winery
+- The Shinkle House, The Witches' Tree, Western Kentucky University
+
+**Key learnings:**
+- Wikimedia Commons search API is excellent for finding images when Wikipedia pages lack main images
+- Kentucky's famous haunted locations (Waverly Hills, Bobby Mackey's) have excellent photo coverage
+- Smaller B&Bs, inns, and local attractions often have no documentation
+- Historic battlefields may only have paintings/illustrations rather than photos
+
+**Script location:** `scripts/update-kentucky-images.sql`
+
+---
+
+### North Carolina Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia images for 21 North Carolina haunted places, focusing on lighthouses, historic mansions, and famous landmarks.
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (21 total):**
+
+| Place | Wikipedia Source | Description |
+|-------|------------------|-------------|
+| Biltmore Estate | Biltmore_Estate,_Asheville,_North_Carolina.jpg | America's largest home |
+| Thomas Wolfe Memorial | Thomas_Wolfe's_Home.jpg | Historic Victorian house |
+| Brown Mountain Lights | Brown_Mountain,_North_Carolina_viewed_from_Beacon_Heights.jpg | Mountain view of lights location |
+| Balsam Mountain Inn | Balsam-mountain-inn-nc1.jpg | Historic inn exterior |
+| Battleship North Carolina | USS_North_Carolina_NYNY_11306-6-46.jpg | Historic Navy photo |
+| Bellamy Mansion | Bellamy_Mansion_Wilmington_NC_front_02.jpg | Antebellum mansion |
+| Thalian Hall | City_Hall-Thalian_Hall_(Wilmington,_NC)_2.JPG | Historic theater |
+| Burgwin-Wright House | Burgwin-Wright_House,_Wilmington,_North_Carolina.jpg | Colonial-era house |
+| Cape Hatteras Lighthouse | Cape_hatteras_lighthouse_img_0529.jpg | Tallest brick lighthouse in US |
+| Currituck Beach Lighthouse | Currituck_lighthouse.jpg | Unpainted red brick tower |
+| Ocracoke Lighthouse | Ocracoke_island_lighthouse_img_0478.jpg | Second-oldest operating lighthouse |
+| Bodie Island Lighthouse | Bodie_Island_Lighthouse,_July_2007.jpg | Black and white striped tower |
+| Fort Raleigh (Roanoke Island) | Fort-Raleigh-fort.jpg | Lost Colony site |
+| Old Burying Ground Beaufort | Old_Burying_Ground,_Beaufort_NC_04.jpg | 300-year-old cemetery |
+| North Carolina State Capitol | 2015_North_Carolina_State_Capitol.JPG | Greek Revival capitol |
+| Mordecai House | Historic_Mordecai_House-Raleigh-NC-13_Sept_2010.jpeg | Oldest Raleigh house |
+| Carolina Inn | Carolina_Inn.jpg | UNC campus hotel |
+| Old Salem Single Brothers House | Old_Salem-1.jpg | Moravian historic district |
+| Korner's Folly | Korner's_Folly_Kernersville_NC_Jan_2015.jpg | "Strangest House in the World" |
+| Devil's Tramping Ground | DevilsTrampingGround.jdh.jpg | Mysterious barren circle |
+| Green Park Inn | Green_Park_Inn.jpg | Victorian resort hotel |
+
+**Places without Wikipedia images (skipped - 29 places):**
+- Omni Grove Park Inn, Helen's Bridge, Riverside Cemetery, Battery Park Apartments
+- Highland Hospital Site, Reynolds Mansion, Poplar Grove Plantation
+- Zebulon Latimer House, Maco Light Site, Price-Gause House
+- Springer's Point, Bath Historic District
+- Oakwood Cemetery, Dorothea Dix Park, Gimghoul Castle, Horace Williams House, Crybaby Lane
+- Old Salem Tavern, Salem College, Blandwood Mansion
+- Duke Mansion, Latta Plantation, Lydia's Bridge
+- Attmore-Oliver House, Christ Church Cemetery, Sandford House, Dr. Josephus Hall House
+
+**Script location:** `/Users/paulberesuita/Desktop/haunted-places/scripts/update-north-carolina-images.sql`
+
+---
+
+## 2026-01-21
+
+### New Jersey Data Research
+
+Expanded the database to include New Jersey with 50 haunted locations, focusing on the state's unique paranormal heritage including the legendary Jersey Devil, Revolutionary War sites, Victorian Cape May, and notorious haunted roads.
+
+**Research approach:**
+- Prioritized Pine Barrens region (5 locations) as home of the Jersey Devil legend, ghost towns, and abandoned settlements
+- Strong coverage of Cape May (8 locations) - one of America's most haunted Victorian resort towns with extensive ghost tour infrastructure
+- Princeton area (6 locations) featuring Revolutionary War sites, Nassau Hall, and cemetery haunts
+- Morristown/Revolutionary War sites (6 locations) including Jockey Hollow winter encampment and Washington's headquarters
+- Burlington County (2 locations) featuring the Burlington County Prison, one of NJ's most documented haunted sites
+- Atlantic City area (5 locations) including Absecon Lighthouse (featured on Ghost Hunters) and the Flanders Hotel
+- Clinton Road area (4 locations) - ranked as the most haunted road in the world by SIXT
+- Newark/North Jersey (5 locations) including Ringwood Manor and the Spy House
+- Trenton area (2 locations) featuring the notorious Trenton Psychiatric Hospital
+- Long Beach Island (3 locations) with maritime ghost legends and the Powhatan shipwreck victims
+- Other notable locations (4 locations) including Centenary University, Greystone Park Psychiatric Hospital
+
+**Key sources:**
+- Weird NJ magazine - definitive source for New Jersey paranormal locations
+- US Ghost Adventures, Haunted Rooms America for verified stories
+- Ghost Hunters/TAPS investigations (Burlington County Prison, Absecon Lighthouse, Proprietary House)
+- Forbes Magazine haunted rankings, Conde Nast Traveler
+- Princeton Magazine, Cape May MAC for local expertise
+- American Battlefield Trust for Revolutionary War sites
+
+**Categories breakdown:**
+- other: 11 (Clinton Road, Pine Barrens locations, Devil's Tree, parks)
+- mansion: 9 (Ringwood Manor, Spy House, Proprietary House, Physick Estate, etc.)
+- hotel: 8 (Cape May Victorians, Flanders Hotel, Nassau Inn, etc.)
+- hospital: 3 (Trenton Psychiatric, Greystone Park, Overbrook Asylum)
+- lighthouse: 3 (Absecon, Barnegat, Cape May)
+- museum: 3 (Burlington Prison, Allaire Village, Thomas Clarke House)
+- university: 3 (Princeton's Nassau Hall, Centenary, TCNJ)
+- cemetery: 2 (Princeton Cemetery, Union Cemetery)
+- battlefield: 1 (Jockey Hollow)
+- prison: 1 (Burlington County Prison)
+- restaurant: 2 (Publick House, Dios Cafe)
+
+**Notable ghost stories:**
+- Jersey Devil (1735) - New Jersey's most famous cryptid, born to Mother Leeds as her cursed 13th child
+- Clinton Road Ghost Boy - throws coins back at midnight visitors under Dead Man's Curve bridge
+- Burlington County Prison's Joel Clough - hanged 1833, guards heard chains rattling in his cell for years
+- Tillie Smith at Centenary (1886) - strangled by janitor, haunts campus and appears in sorority photos
+- Spy House - up to 22 documented ghosts, Forbes-ranked most haunted house in NJ
+- Dr. Henry Cotton at Trenton Psychiatric - performed barbaric surgeries without anesthesia, his ghost still walks the halls
+- Ringwood Manor's Jackson White - beaten to death for stealing food, his room generates crying and footsteps
+
+**Geographic distribution:**
+- Pine Barrens: 5 locations
+- Cape May: 8 locations
+- Princeton area: 6 locations
+- Morristown/Morris County: 6 locations
+- Burlington County: 2 locations
+- Atlantic City/Shore: 5 locations
+- Passaic County/Clinton Road: 4 locations
+- Newark/North Jersey: 5 locations
+- Trenton area: 2 locations
+- Long Beach Island: 3 locations
+- Other: 4 locations
+
+**Seed file created:** `scripts/seed-new-jersey.sql`
+
+---
+
+### Kentucky State Research Completed
+
+Added 47 haunted locations across Kentucky, focusing on the state's unique bourbon heritage, Civil War history, and some of America's most famous paranormal hotspots.
+
+**Research approach:**
+- Prioritized Louisville area (12 locations) including Waverly Hills Sanatorium (one of the most haunted buildings in America) and Old Louisville (called "America's Most Haunted Neighborhood")
+- Strong coverage of Northern Kentucky (3 locations) including Bobby Mackey's Music World ("Most Haunted Nightclub in America")
+- Lexington area (8 locations) featuring Mary Todd Lincoln House, Ashland Henry Clay Estate, and Transylvania University's famous curse
+- Bardstown as bourbon and ghost capital (5 locations) - Old Talbott Tavern, Jailer's Inn, My Old Kentucky Home
+- Frankfort (4 locations) with Liberty Hall's Gray Lady (Kentucky's most famous ghost), Old State Capitol (only governor assassination site), and Buffalo Trace Distillery
+- Mammoth Cave area (3 locations) - world's longest cave system with over 150 documented paranormal events
+- Civil War battlefields (4 locations) including Perryville (Kentucky's bloodiest battle with 7,600 casualties)
+- Regional coverage: Harrodsburg, Bowling Green, Richmond, and unique sites
+
+**Notable ghost stories:**
+- Waverly Hills Sanatorium - 63,000 deaths, "Death Tunnel," Room 502 suicide nurse, "Creeper" entity
+- Bobby Mackey's Music World - "Portal to Hell" in basement well, Pearl Bryan decapitation (1896), Carl the caretaker's EVPs
+- Liberty Hall's Gray Lady (Margaretta Varick) - Kentucky's oldest and most famous ghost since 1817
+- Transylvania University's Rafinesque Curse - professor's 1826 curse strikes every 7 years
+- Perryville Battlefield - Confederate soldier "Sam" walks in full uniform, EVPs of "Jefferson Davis"
+- Buffalo Trace Distillery - Colonel Blanton's ghost, heavy boots in Warehouse C
+- Jailer's Inn - Travel Channel's "10 Most Haunted Places," Mrs. McKay watches sleeping guests
+
+**Key sources:**
+- Ghost City Tours, US Ghost Adventures, Haunted Rooms America
+- Kentucky Tourism (official Haunted Kentucky campaign)
+- KY For KY, Kentucky Living, Kentucky Monthly
+- Ghost Hunters and Ghost Adventures episode references
+- Local ghost tour companies (Louisville Historic Tours, Bardstown Ghost Trek)
+
+**Categories breakdown:**
+- other: 10 (caves, bridges, distillery, steamboat, tree)
+- mansion: 10 (Clay estates, Old Louisville Victorian homes)
+- hotel: 7 (Seelbach, Gratz Park Inn, Jailer's Inn, etc.)
+- museum: 4 (Old State Capitol, museums)
+- cemetery: 4 (Cave Hill, Lexington, Frankfort, Pioneer)
+- battlefield: 3 (Perryville, Camp Nelson, White Hall)
+- hospital: 3 (Waverly Hills, Booth Memorial, Sauerkraut Cave/Lakeland)
+- university: 2 (Transylvania, WKU)
+- theater: 2 (Louisville Palace, Lexington Opera House)
+- prison: 1 (Jailer's Inn - converted jail)
+- restaurant: 1 (Old Talbott Tavern)
+
+**Seed file created:** `scripts/seed-kentucky.sql`
+
+---
+
+## 2026-01-20
+
+### Four New States Added: Connecticut, Maryland, South Carolina, Tennessee
+
+Expanded the database from 503 places across 11 states to **612 places across 15 states**.
+
+**New states researched:**
+- Connecticut (CT): 34 places
+- Maryland (MD): 24 places
+- South Carolina (SC): 27 places
+- Tennessee (TN): 25 places
+
+**Research approach for each state:**
+
+**Connecticut:**
+- Focus areas: Hartford (Mark Twain House, Old State House), New Haven (Grove Street Cemetery, Yale), Fairfield County (Union Cemetery White Lady, Boothe Memorial Park), New London/Mystic (lighthouses, historic inns), Litchfield Hills (Dudleytown cursed village, Lake Compounce oldest amusement park)
+- Notable: Union Cemetery's "White Lady" investigated by Ed and Lorraine Warren, Dudleytown called "most haunted place on earth" by Dan Aykroyd
+- Categories: hotels (7), cemeteries (4), museums (3), historic sites (4), theaters (3), restaurants (3), lighthouses (2), other (8)
+
+**Maryland:**
+- Focus areas: Baltimore/Fells Point (Lord Baltimore Hotel, Westminster Hall/Poe's Grave, Admiral Fell Inn), Antietam (bloodiest day in US military history), Annapolis (Maryland Inn dating to 1772), Point Lookout (most haunted lighthouse in America), Frederick (Barbara Fritchie, Schifferstadt), Eastern Shore (Furnace Town, Ocean City)
+- Notable: Westminster Hall (Poe's grave and "Poe Toaster" tradition), Lord Baltimore Hotel (Molly the ghost girl), Antietam's Bloody Lane (23,000 casualties in 12 hours)
+- Categories: hotels (6), battlefields (3), cemeteries (2), mansions (3), museums (4), lighthouses (2), other (4)
+
+**South Carolina:**
+- Focus areas: Charleston (Old Jail/Lavinia Fisher, Dock Street Theatre, Battery Carriage House), Plantations (Boone Hall, Magnolia, Hampton), Pawleys Island (Gray Man hurricane ghost), Myrtle Beach (Atalaya Castle), Columbia (Longstreet Theatre, Bull Street asylum), Upstate (Poinsett Bridge, USS Yorktown)
+- Notable: Old Charleston Jail (14,000 deaths, Lavinia Fisher legend), Pawleys Island Gray Man (warning of hurricanes since 1822), Poinsett Bridge (oldest in Southeast, named one of 30 most haunted in America)
+- Categories: mansions/plantations (8), hotels (4), cemeteries (3), historic sites (4), theaters (2), museums (2), battlefields (2), other (2)
+
+**Tennessee:**
+- Focus areas: Adams (Bell Witch Cave - only documented supernatural death in US), Nashville (Ryman Auditorium "Opry Curse", Hermitage Hotel), Franklin (Carnton Plantation - Civil War hospital with bloodstained floors), Memphis (Orpheum Theatre "Mary", Ernestine & Hazel's), Chattanooga (Read House Room 311, Chickamauga "Old Green Eyes"), Knoxville (Bijou Theatre), Murfreesboro (Stones River headless horseman)
+- Notable: Bell Witch (Tennessee only state to officially recognize supernatural death), Carnton (four dead generals laid on porch), Ryman (37 untimely performer deaths attributed to "Opry Curse")
+- Categories: battlefields/historic sites (6), theaters (4), hotels (4), mansions (6), other (3), cemeteries (1), prisons (1)
+
+**Key sources:**
+- Ghost City Tours, US Ghost Adventures, Haunted Rooms America for verified stories
+- State tourism sites and local ghost tour companies
+- Historical societies and Civil War records
+- TV show documentation (Ghost Hunters, Ghost Adventures)
+
+**Seed files created:**
+- `scripts/seed-connecticut.sql`
+- `scripts/seed-maryland.sql`
+- `scripts/seed-south-carolina.sql`
+- `scripts/seed-tennessee.sql`
+
+---
+
 ## 2026-01-17
 
 ### Cloudflare Pages Project Name
