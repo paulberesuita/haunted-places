@@ -69,6 +69,22 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
   const totalPlaces = places.length;
   const statesWithPlaces = allStates.filter(s => s.place_count > 0);
 
+  // ItemList schema for all places in this state (helps with Google carousel results)
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `Haunted Places in ${stateName}`,
+    "description": `${totalPlaces} haunted locations in ${stateName} including hotels, cemeteries, mansions, and other paranormal hotspots.`,
+    "numberOfItems": totalPlaces,
+    "itemListElement": sortedPlaces.map((place, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": place.name,
+      "url": `${baseUrl}/place/${place.slug}`,
+      "description": place.city ? `Haunted ${place.category} in ${place.city}, ${stateName}` : undefined
+    }))
+  };
+
   // Generate state filter links
   const stateFiltersHtml = statesWithPlaces.map(s => {
     const name = stateNames[s.state] || s.state;
@@ -139,6 +155,11 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       }
     ]
   }
+  </script>
+
+  <!-- ItemList Structured Data (for carousel results) -->
+  <script type="application/ld+json">
+  ${JSON.stringify(itemListSchema)}
   </script>
 
   <!-- Fonts & Tailwind -->

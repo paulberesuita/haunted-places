@@ -47,7 +47,7 @@ function escapeHtml(text) {
     .replace(/'/g, '&#039;');
 }
 
-function renderHomepage(places, states, baseUrl, selectedState = null) {
+function renderHomepage(places, states, baseUrl, selectedState = null, totalPlacesCount = 0) {
   // Sort places: those with images first
   const sortedPlaces = [...places].sort((a, b) => {
     if (a.image_url && !b.image_url) return -1;
@@ -58,6 +58,63 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
   const totalPlaces = places.length;
   const statesWithPlaces = states.filter(s => s.place_count > 0);
   const selectedStateName = selectedState ? (stateNames[selectedState] || selectedState) : null;
+
+  // Build structured data for SEO
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Spookfinder",
+    "alternateName": "Haunted Places Directory",
+    "url": baseUrl,
+    "description": `Explore ${totalPlacesCount} haunted places across ${statesWithPlaces.length} states. Discover ghost stories, paranormal history, and haunted locations.`,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${baseUrl}/?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Spookfinder",
+    "url": baseUrl,
+    "logo": `${baseUrl}/logo.png`,
+    "description": "A curated directory of America's most haunted places, featuring ghost stories, paranormal history, and visitor information.",
+    "sameAs": []
+  };
+
+  // ItemList for featured places (helps with carousel results)
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": selectedStateName ? `Haunted Places in ${selectedStateName}` : "Featured Haunted Places",
+    "description": selectedStateName
+      ? `Haunted locations in ${selectedStateName}`
+      : "America's most haunted locations",
+    "numberOfItems": sortedPlaces.length,
+    "itemListElement": sortedPlaces.slice(0, 20).map((place, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": place.name,
+      "url": `${baseUrl}/place/${place.slug}`
+    }))
+  };
+
+  const structuredDataHtml = `
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  ${JSON.stringify(websiteSchema)}
+  </script>
+  <script type="application/ld+json">
+  ${JSON.stringify(organizationSchema)}
+  </script>
+  <script type="application/ld+json">
+  ${JSON.stringify(itemListSchema)}
+  </script>`;
 
   // Generate state filter links (use query params to stay on homepage)
   const stateFiltersHtml = statesWithPlaces.map(s => {
@@ -109,6 +166,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
 
   <!-- Canonical -->
   <link rel="canonical" href="${baseUrl}/">
+  ${structuredDataHtml}
 
   <!-- Fonts & Tailwind -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -152,17 +210,12 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      z-index: 0;
+      z-index: -1;
       pointer-events: none;
     }
-    /* Content wrapper to sit above video */
-    .content-wrapper {
-      position: relative;
-      z-index: 1;
-      background: transparent;
-    }
-    body {
+    html {
       background: #0a0a0f;
+      overflow-x: hidden;
     }
     /* Hide scrollbar for state filters */
     .hide-scrollbar::-webkit-scrollbar {
@@ -323,7 +376,6 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
   <canvas id="dust-canvas"></canvas>
   <canvas id="fog-canvas"></canvas>
 
-  <div class="content-wrapper">
   <!-- Header -->
   <header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -375,7 +427,6 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
       </div>
     </div>
   </footer>
-  </div>
 
   <!-- Donkey Scare Easter Egg - TV Effect -->
   <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
@@ -979,8 +1030,11 @@ export async function onRequestGet(context) {
       ORDER BY state
     `).all();
 
+    // Calculate total places across all states
+    const totalPlacesCount = (states || []).reduce((sum, s) => sum + s.place_count, 0);
+
     // Render the homepage
-    const html = renderHomepage(places || [], states || [], baseUrl, selectedState);
+    const html = renderHomepage(places || [], states || [], baseUrl, selectedState, totalPlacesCount);
 
     return new Response(html, {
       headers: {
