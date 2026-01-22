@@ -6,6 +6,103 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-22
 
+### Ghost Tour Operators Research - Batch 2: Next 10 Haunted Destinations
+
+Expanded the `tour_operators` table with 50 additional ghost tour companies across 10 new cities, bringing total to 111 operators across 21 cities.
+
+**New cities added (Batch 2):**
+1. Boston, MA (6 operators) - Freedom Trail, colonial history, Omni Parker House
+2. Philadelphia, PA (6 operators) - Eastern State Penitentiary, Independence Hall
+3. San Francisco, CA (5 operators) - Alcatraz, Chinatown, Victorian mansions
+4. San Diego, CA (5 operators) - Whaley House, Old Town, Gaslamp Quarter
+5. Los Angeles, CA (5 operators) - Hollywood haunts, Cecil Hotel
+6. Williamsburg, VA (5 operators) - Colonial ghosts, Revolutionary War
+7. Richmond, VA (5 operators) - Civil War history, Hollywood Cemetery
+8. Baltimore, MD (5 operators) - Poe's grave, Fells Point
+9. New Haven, CT (4 operators) - Yale campus, colonial history
+10. Memphis, TN (4 operators) - Orpheum Theatre, Beale Street
+
+**Featured operators (25 total in batch 2):** 2-3 per city marked as featured based on:
+- Longevity/establishment (years in operation)
+- Awards and recognition (TripAdvisor, Best of the Bay, local awards)
+- Unique offerings (official tours, exclusive access, paranormal equipment)
+- Review quality (4.8+ star ratings)
+
+**Notable tour types added:**
+- Official Freedom Trail Lantern Tour (Boston)
+- Alcatraz Night Tours (San Francisco)
+- Whaley House Paranormal Investigations (San Diego)
+- Eastern State Penitentiary Halloween Nights (Philadelphia)
+- Colonial Williamsburg Official Ghost Tour
+- American Ghost Walks bus tours (Los Angeles)
+- Edgar Allan Poe-themed tours (Baltimore, Richmond)
+- Yale/Skull and Bones tours (New Haven)
+
+**Price ranges by tour type:**
+- Walking tours: $20-35
+- Pub crawls: $25-40
+- Bus tours: $35-75
+- Paranormal investigations: $45-85
+- Official/exclusive access tours: $30-55
+
+**Key sources:**
+- Official tour company websites (Boston Ghosts, Colonial Ghosts, Richmond Ghosts, etc.)
+- TripAdvisor, Viator for reviews, ratings, and booking info
+- Official venue websites (Whaley House, Eastern State Penitentiary, Alcatraz)
+- Local tourism boards (Visit Baltimore, Virginia.org, etc.)
+
+**Seed file:** `/Users/paulberesuita/Desktop/haunted-places/scripts/seed-tour-operators-batch2.sql`
+
+**Database totals:**
+- Total tour operators: 111
+- Total cities covered: 21
+- States represented: 13 (CA, CT, FL, GA, IL, LA, MA, MD, PA, SC, TN, TX, VA)
+
+---
+
+### Ghost Tour Operators Research - Top 10 Haunted Destinations
+
+Researched and populated the `tour_operators` table with 61 ghost tour companies across the 10 most popular haunted destinations in America.
+
+**Cities covered (by ghost tour popularity):**
+1. New Orleans, LA (8 operators) - French Quarter, cemetery, voodoo tours
+2. Savannah, GA (7 operators) - One of America's most haunted cities
+3. Salem, MA (6 operators) - Witch history, October peak season
+4. Gettysburg, PA (6 operators) - Civil War battlefield ghost tours
+5. St. Augustine, FL (6 operators) - Oldest city in America
+6. Charleston, SC (5 operators) - Historic district tours
+7. San Antonio, TX (6 operators) - Alamo area tours
+8. Key West, FL (5 operators) - Island ghost tours
+9. Chicago, IL (6 operators) - Gangster history, cemetery tours
+10. Nashville/Franklin, TN (6 operators) - Civil War history tours
+
+**Featured operators (30 total):** 2-3 per city marked as featured based on:
+- Longevity/establishment (years in operation)
+- Awards and recognition (USA Today, TripAdvisor, Conde Nast)
+- Review quality (4.8+ star ratings)
+- Unique offerings (exclusive access, equipment, investigations)
+
+**Tour types captured:**
+- Walking tours, bus/trolley tours, hearse rides, kayak tours
+- Pub crawls, cemetery tours, paranormal investigations
+- Adults-only, family-friendly, private tours
+- Themed tours: gangster, Civil War, witch trials, voodoo/vampire
+
+**Price ranges documented:**
+- Budget: $10-25 (family walking tours)
+- Mid-range: $25-40 (most walking tours and pub crawls)
+- Premium: $40-90 (bus tours, investigations, special experiences)
+
+**Key sources:**
+- Official tour company websites
+- TripAdvisor, Yelp, Viator for reviews and ratings
+- USA Today, Conde Nast Traveler, Travel Channel for awards
+- Local tourism sites (VisitSavannah, ChooseChicago, etc.)
+
+**Seed file:** `/Users/paulberesuita/Desktop/haunted-places/scripts/seed-tour-operators.sql`
+
+---
+
 ### Tennessee Image Research - Wikipedia/Wikimedia Commons
 
 Sourced and uploaded authentic Wikipedia/Wikimedia Commons images for 10 Tennessee haunted places, bringing total coverage to 23 of 25 Tennessee places (92%).
