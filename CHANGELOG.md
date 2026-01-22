@@ -6,6 +6,13 @@ What we shipped. Builder appends here after each feature.
 
 ## 2026-01-22
 
+### Added
+- **Tour Operators Database Table**
+  - Created `tour_operators` table via migration `004_create_tour_operators.sql`
+  - Columns: id, name, city, state, website, booking_url, description, price_range, tour_types, image_url, featured, created_at
+  - Indexes on state and city for efficient filtering
+  - Ready to store ghost tour operators for display on the site
+
 ### Changed
 - **Place Detail Page Navigation**
   - Moved breadcrumb from separate section into hero area (above title)
