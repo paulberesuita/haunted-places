@@ -671,7 +671,7 @@ export async function onRequestGet(context) {
 
     // Fetch related places (same city, different slug)
     const { results: relatedPlaces } = await env.DB.prepare(
-      'SELECT slug, name, city, category, description FROM places WHERE city = ? AND slug != ? LIMIT 6'
+      'SELECT slug, name, city, category, description, image_url FROM places WHERE city = ? AND slug != ? LIMIT 6'
     ).bind(place.city, slug).all();
 
     // Fetch more places in same state (different city)
