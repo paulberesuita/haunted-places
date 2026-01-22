@@ -224,7 +224,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   </script>
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -283,28 +283,13 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   <!-- Navigation Header -->
   <header class="nav-header" id="nav-header">
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+      <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-white">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
         <a href="/about" class="hover:text-accent transition-colors">About</a>
       </nav>
     </div>
   </header>
-
-  <!-- Breadcrumbs -->
-  <nav class="pt-16 pb-2 px-4 max-w-6xl mx-auto" aria-label="Breadcrumb">
-    <ol class="flex items-center gap-2 text-sm text-muted">
-      <li>
-        <a href="/" class="hover:text-accent transition-colors">Home</a>
-      </li>
-      <li class="text-dark-border">/</li>
-      <li>
-        <a href="/states/${stateUrl}" class="hover:text-accent transition-colors">${stateName}</a>
-      </li>
-      <li class="text-dark-border">/</li>
-      <li class="text-ghost truncate max-w-[200px]" title="${escapeHtml(place.name)}">${escapeHtml(place.name)}</li>
-    </ol>
-  </nav>
 
   <!-- Hero Image -->
   ${imageUrl ? `
@@ -321,27 +306,33 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   ` : ''}
 
   <!-- Hero Section -->
-  <header class="relative overflow-hidden ${imageUrl ? '-mt-24 md:-mt-32' : ''}">
+  <header class="relative overflow-hidden ${imageUrl ? '-mt-24 md:-mt-32' : 'pt-16'}">
     ${!imageUrl ? `<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>` : ''}
     <div class="max-w-6xl mx-auto px-4 py-10 md:py-14 relative">
       <div class="max-w-4xl">
-        <!-- Category Badge -->
-        <div class="flex items-center gap-3 mb-4">
+        <!-- Breadcrumb -->
+        <nav class="mb-4" aria-label="Breadcrumb">
+          <ol class="flex items-center gap-2 text-sm text-muted">
+            <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
+            <li class="text-dark-border">/</li>
+            <li><a href="/states/${stateUrl}" class="hover:text-accent transition-colors">${stateName}</a></li>
+          </ol>
+        </nav>
+
+        <!-- Place Name + Category -->
+        <div class="flex items-center gap-4 mb-4 flex-wrap">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight ${imageUrl ? 'drop-shadow-lg' : ''}">
+            ${escapeHtml(place.name)}
+          </h1>
           <span class="inline-flex items-center gap-2 bg-accent/20 text-accent px-3 py-1.5 rounded-full text-sm font-medium capitalize backdrop-blur-sm">
             <span>${categoryIcon}</span>
             ${place.category || 'haunted place'}
           </span>
-          ${place.year_established ? `<span class="text-muted text-sm">Est. ${place.year_established}</span>` : ''}
         </div>
 
-        <!-- Place Name -->
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 ${imageUrl ? 'drop-shadow-lg' : ''}">
-          ${escapeHtml(place.name)}
-        </h1>
-
-        <!-- Location -->
-        <p class="text-xl text-ghost mb-6 ${imageUrl ? 'drop-shadow-md' : ''}">
-          ${escapeHtml(place.city)}, ${stateName}
+        <!-- Location + Est Year -->
+        <p class="text-xl text-ghost ${imageUrl ? 'drop-shadow-md' : ''}">
+          ${escapeHtml(place.city)}, ${stateName}${place.year_established ? ` · Est. ${place.year_established}` : ''}
         </p>
       </div>
     </div>
@@ -496,7 +487,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   <footer class="bg-dark-card/50">
     <div class="max-w-6xl mx-auto px-4 py-8">
       <div class="text-center">
-        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
+        <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
         <p class="text-muted text-sm mt-2">
           Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
         </p>
@@ -582,7 +573,7 @@ function render404Page() {
   <meta name="robots" content="noindex">
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
