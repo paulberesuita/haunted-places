@@ -6,12 +6,24 @@ What we shipped. Builder appends here after each feature.
 
 ## 2026-01-22
 
+### Changed
+- **Place Detail Page Navigation**
+  - Moved breadcrumb from separate section into hero area (above title)
+  - Category pill now appears inline with title instead of separate row above
+  - Combined location and established year on same line ("City, State · Est. YYYY")
+  - More compact navigation area with less vertical space
+
 ### Added
 - **LLM Discoverability (llms.txt)**
   - Created `/llms.txt` - concise site overview for AI assistants
   - Created `/llms-full.txt` - dynamic function serving complete database (752 locations with full descriptions and ghost stories)
   - Helps AI assistants like ChatGPT, Claude, and Perplexity find and reference Spookfinder content
   - `llms-full.txt` generates dynamically from D1 database, always up to date
+
+- **JSON-LD Structured Data for SEO**
+  - Homepage: `WebSite` schema with SearchAction (enables Google sitelinks search box), `Organization` schema, `ItemList` for featured places
+  - State pages: `ItemList` schema for all places (can trigger Google carousel results for "haunted places in [state]")
+  - Place pages already had `TouristAttraction` and `BreadcrumbList` schemas
 
 ---
 
