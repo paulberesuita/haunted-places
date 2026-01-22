@@ -7,11 +7,24 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-22
 
 ### Added
+- **Tour Operators Data (111 operators across 21 cities)**
+  - Researched and populated ghost tour operators for top haunted destinations
+  - **Batch 1 (61 operators):** New Orleans, Savannah, Salem, Gettysburg, St. Augustine, Charleston, San Antonio, Key West, Chicago, Nashville/Franklin
+  - **Batch 2 (50 operators):** Boston, Philadelphia, San Francisco, San Diego, Los Angeles, Williamsburg, Richmond, Baltimore, New Haven, Memphis
+  - Data includes: company name, website, booking URL, description, price range, tour types, featured flag
+  - 59 operators marked as featured for homepage highlights
+  - Seed files: `scripts/seed-tour-operators.sql`, `scripts/seed-tour-operators-batch2.sql`
+
+- **Tour Operators API Endpoints**
+  - `GET /api/tour-operators` - List all operators with filters (state, city, featured, limit, offset)
+  - `GET /api/tour-operators/:id` - Get single operator by ID
+  - `GET /api/tour-operators/cities` - List cities with operator counts
+  - All endpoints include CORS headers and 5-minute cache
+
 - **Tour Operators Database Table**
   - Created `tour_operators` table via migration `004_create_tour_operators.sql`
   - Columns: id, name, city, state, website, booking_url, description, price_range, tour_types, image_url, featured, created_at
   - Indexes on state and city for efficient filtering
-  - Ready to store ghost tour operators for display on the site
 
 ### Changed
 - **Place Detail Page Navigation**

@@ -521,12 +521,11 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
     </div>
   </footer>
 
-  <!-- Donkey Scare Easter Egg -->
-  <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
-    <video id="donkey-video" style="width:100%;height:100%;object-fit:cover;" playsinline>
-      <source src="${baseUrl}/images/easter-eggs/donkey.mp4" type="video/mp4">
+  <!-- Idle Scare Easter Egg -->
+  <div id="idle-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;cursor:pointer;">
+    <video id="scare-video" style="width:100%;height:100%;object-fit:cover;" playsinline muted>
+      <source src="/idle-scare.mp4" type="video/mp4">
     </video>
-    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;">Close</button>
   </div>
 
   <script>
@@ -542,11 +541,10 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       }
     });
 
-    // Donkey Scare Easter Egg
+    // Idle Scare Easter Egg
     (function() {
-      const scareOverlay = document.getElementById('donkey-scare');
-      const scareVideo = document.getElementById('donkey-video');
-      const closeBtn = document.getElementById('donkey-close');
+      const scareOverlay = document.getElementById('idle-scare');
+      const scareVideo = document.getElementById('scare-video');
       const trigger = document.getElementById('donkey-trigger');
 
       let idleTimer;
@@ -558,7 +556,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
         scarePlayed = true;
         scareOverlay.style.display = 'block';
         scareVideo.currentTime = 0;
-        scareVideo.play();
+        scareVideo.play().catch(() => {});
       }
 
       function hideScare() {
@@ -580,7 +578,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
 
       resetIdleTimer();
       trigger.addEventListener('click', showScare);
-      closeBtn.addEventListener('click', hideScare);
+      scareOverlay.addEventListener('click', hideScare);
       scareVideo.addEventListener('ended', hideScare);
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
     })();
