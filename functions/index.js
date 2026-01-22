@@ -435,15 +435,12 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
     </div>
   </footer>
 
-  <!-- Donkey Scare Easter Egg - TV Effect -->
+  <!-- Clown Scare Easter Egg -->
   <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
-    <!-- TV image as full background -->
-    <img src="${baseUrl}/tv.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
-    <!-- Video positioned over the TV screen area -->
-    <video id="donkey-video" style="position:absolute;top:35%;left:35%;width:24%;height:28%;object-fit:cover;border-radius:4px;z-index:2;" playsinline>
-      <source src="${baseUrl}/donkey.mp4" type="video/mp4">
+    <video id="donkey-video" style="width:100%;height:100%;object-fit:cover;" playsinline>
+      <source src="${baseUrl}/clown.mp4" type="video/mp4">
     </video>
-    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;z-index:3;">Close</button>
+    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;z-index:1;">Close</button>
   </div>
 
   <!-- VHS Glitch Transition -->
