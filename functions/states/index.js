@@ -2,28 +2,36 @@
 
 const stateNames = {
   'CA': 'California',
+  'CT': 'Connecticut',
   'FL': 'Florida',
   'GA': 'Georgia',
   'IL': 'Illinois',
   'LA': 'Louisiana',
   'MA': 'Massachusetts',
+  'MD': 'Maryland',
   'NY': 'New York',
   'OH': 'Ohio',
   'PA': 'Pennsylvania',
+  'SC': 'South Carolina',
+  'TN': 'Tennessee',
   'TX': 'Texas',
   'VA': 'Virginia'
 };
 
 const stateUrls = {
   'CA': 'california',
+  'CT': 'connecticut',
   'FL': 'florida',
   'GA': 'georgia',
   'IL': 'illinois',
   'LA': 'louisiana',
   'MA': 'massachusetts',
+  'MD': 'maryland',
   'NY': 'new-york',
   'OH': 'ohio',
   'PA': 'pennsylvania',
+  'SC': 'south-carolina',
+  'TN': 'tennessee',
   'TX': 'texas',
   'VA': 'virginia'
 };
@@ -96,7 +104,7 @@ function renderStatesPage(states, totalPlaces, baseUrl) {
   </script>
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -119,6 +127,16 @@ function renderStatesPage(states, totalPlaces, baseUrl) {
     }
   </script>
   <style>
+    /* Subtle grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+    }
     /* Mobile touch target improvements */
     @media (max-width: 768px) {
       nav a {
@@ -139,7 +157,7 @@ function renderStatesPage(states, totalPlaces, baseUrl) {
   <!-- Header -->
   <header class="border-b border-dark-border">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+      <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
@@ -200,7 +218,7 @@ function renderStatesPage(states, totalPlaces, baseUrl) {
   <footer class="mt-16 border-t border-dark-border">
     <div class="max-w-6xl mx-auto px-4 py-8">
       <div class="text-center">
-        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
+        <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
         <p class="text-muted text-sm mt-2">
           Documenting America's most haunted locations, one ghost story at a time.
         </p>

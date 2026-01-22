@@ -3,28 +3,36 @@
 
 const stateNames = {
   'CA': 'California',
+  'CT': 'Connecticut',
   'FL': 'Florida',
   'GA': 'Georgia',
   'IL': 'Illinois',
   'LA': 'Louisiana',
   'MA': 'Massachusetts',
+  'MD': 'Maryland',
   'NY': 'New York',
   'OH': 'Ohio',
   'PA': 'Pennsylvania',
+  'SC': 'South Carolina',
+  'TN': 'Tennessee',
   'TX': 'Texas',
   'VA': 'Virginia'
 };
 
 const stateUrls = {
   'CA': 'california',
+  'CT': 'connecticut',
   'FL': 'florida',
   'GA': 'georgia',
   'IL': 'illinois',
   'LA': 'louisiana',
   'MA': 'massachusetts',
+  'MD': 'maryland',
   'NY': 'new-york',
   'OH': 'ohio',
   'PA': 'pennsylvania',
+  'SC': 'south-carolina',
+  'TN': 'tennessee',
   'TX': 'texas',
   'VA': 'virginia'
 };
@@ -71,7 +79,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
 
     return `
             <a href="/place/${place.slug}" class="group">
-              <div class="place-card aspect-[4/3] rounded-lg overflow-hidden bg-dark-card mb-3">
+              <div class="place-card aspect-[4/3] overflow-hidden bg-dark-card mb-3">
                 ${imageUrl
                   ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover" loading="lazy">`
                   : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
@@ -128,7 +136,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
   </script>
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -151,6 +159,17 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     }
   </script>
   <style>
+    /* Subtle grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+    }
+
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -236,76 +255,39 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       100% { transform: translate(0); }
     }
 
-    /* Image filter - grayscale with subtle grain */
+    /* Image filter - ghostly desaturated look */
     .place-img {
-      filter: url(#grain) grayscale(100%);
+      filter: url(#grain) saturate(0.3) contrast(1.1);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: url(#grain) grayscale(100%) sepia(20%) brightness(0.9);
+      filter: url(#grain) saturate(0.5) contrast(1.15) brightness(1.05);
     }
 
-    /* Floating card effect */
+    /* Simple card */
     .place-card {
       position: relative;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      transition: box-shadow 0.3s ease;
-      transform-style: preserve-3d;
       overflow: hidden;
-      will-change: transform;
-    }
-    .place-card::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        45deg,
-        transparent 40%,
-        rgba(255, 255, 255, 0.15) 50%,
-        transparent 60%
-      );
-      transform: translateX(-100%);
-      transition: transform 0.6s ease;
-      pointer-events: none;
-    }
-    .group {
-      perspective: 1000px;
-    }
-    .place-card:hover {
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 255, 255, 0.1);
-    }
-    .place-card:hover::after {
-      transform: translateX(100%);
     }
 
-    /* Atmospheric background */
-    .bg-image {
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+    /* Content container - no frame */
+    .frame-container {
+      position: relative;
     }
-    .bg-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(10, 10, 15, 0.3);
-      z-index: -1;
+    .frame-content {
+      position: relative;
+      min-height: 80vh;
     }
     #dust-canvas {
-      position: fixed;
+      position: absolute;
       inset: 0;
-      z-index: 0;
+      z-index: 3;
       pointer-events: none;
     }
     #fog-canvas {
-      position: fixed;
+      position: absolute;
       inset: 0;
-      z-index: 1;
+      z-index: 4;
       pointer-events: none;
       opacity: 0.3;
     }
@@ -323,15 +305,10 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     </defs>
   </svg>
 
-  <img src="/bg-room.png" alt="" class="bg-image">
-  <div class="bg-overlay"></div>
-  <canvas id="dust-canvas"></canvas>
-  <canvas id="fog-canvas"></canvas>
-
-  <!-- Header -->
-  <header>
-    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold">Haunted Places</a>
+  <!-- Header (outside frame) -->
+  <header class="max-w-7xl mx-auto px-4">
+    <div class="h-14 flex items-center justify-between">
+      <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
@@ -339,50 +316,59 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="max-w-7xl mx-auto px-4 pt-2 pb-4" aria-label="Breadcrumb">
-    <ol class="flex items-center gap-2 text-sm text-muted">
-      <li>
-        <a href="/" class="hover:text-accent transition-colors">Home</a>
-      </li>
-      <li class="text-dark-border">/</li>
-      <li class="text-ghost">${stateName}</li>
-    </ol>
-  </nav>
+  <!-- Framed Container -->
+  <div class="frame-container">
+    <canvas id="dust-canvas"></canvas>
+    <canvas id="fog-canvas"></canvas>
 
-  <!-- Tagline -->
-  <section class="py-12 text-center">
-    <h1 id="glitch-headline" class="glitch-text text-2xl md:text-3xl font-medium mb-2" data-text="Haunted Places in ${stateName}">Haunted Places in ${stateName}</h1>
-    <p class="text-ghost text-sm">${totalPlaces} haunted locations</p>
-  </section>
+    <div class="frame-content">
+      <!-- Breadcrumbs -->
+      <nav class="max-w-7xl mx-auto px-4 pt-4 pb-4" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm text-muted">
+          <li>
+            <a href="/" class="hover:text-accent transition-colors">Home</a>
+          </li>
+          <li class="text-dark-border">/</li>
+          <li class="text-ghost">${stateName}</li>
+        </ol>
+      </nav>
 
-  <!-- State Filters -->
-  <div id="state-filters" class="sticky top-0 z-40 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex gap-8 py-4 text-base font-light overflow-x-auto hide-scrollbar">
-        <a href="/" class="text-ghost hover:text-white transition-colors whitespace-nowrap">Featured</a>
-        ${stateFiltersHtml}
+      <!-- Tagline -->
+      <section class="py-12 text-center">
+        <h1 id="glitch-headline" class="glitch-text text-3xl md:text-4xl lg:text-5xl mb-2" style="font-family: 'Creepster', cursive;" data-text="Haunted Places in ${stateName}">Haunted Places in ${stateName}</h1>
+        <p class="text-ghost text-sm">${totalPlaces} haunted locations</p>
+      </section>
+
+      <!-- State Filters -->
+      <div id="state-filters" class="sticky top-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex gap-8 py-4 text-base font-light overflow-x-auto hide-scrollbar">
+            <a href="/" class="text-ghost hover:text-white transition-colors whitespace-nowrap">Featured</a>
+            ${stateFiltersHtml}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Place Cards Grid -->
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
-      ${placeCardsHtml}
-    </div>
-  </main>
+      <!-- Place Cards Grid -->
+      <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+          ${placeCardsHtml}
+        </div>
+      </main>
 
-  <!-- Footer -->
-  <footer class="mt-16">
-    <div class="max-w-7xl mx-auto px-4 py-8">
-      <div class="text-center">
-        <p class="text-gray-300 text-sm">
-          Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
-        </p>
-      </div>
-    </div>
-  </footer>
+      <!-- Footer -->
+      <footer class="mt-8 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center">
+            <p class="text-gray-400 text-sm">
+              Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /frame-content -->
+  </div><!-- /frame-container -->
 
   <!-- Donkey Scare Easter Egg -->
   <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
@@ -931,52 +917,6 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     })();
   </script>
 
-  <!-- Dynamic Card Tilt Effect -->
-  <script>
-    (function() {
-      const cards = document.querySelectorAll('.place-card');
-      const maxTilt = 6; // Max rotation in degrees
-      const scale = 1.01; // Subtle scale on hover
-
-      cards.forEach(card => {
-        const group = card.closest('.group');
-
-        group.addEventListener('mousemove', (e) => {
-          const rect = card.getBoundingClientRect();
-          const centerX = rect.left + rect.width / 2;
-          const centerY = rect.top + rect.height / 2;
-
-          // Calculate mouse position relative to card center (-1 to 1)
-          const mouseX = (e.clientX - centerX) / (rect.width / 2);
-          const mouseY = (e.clientY - centerY) / (rect.height / 2);
-
-          // Calculate rotation (inverted for natural feel)
-          const rotateY = mouseX * maxTilt;
-          const rotateX = -mouseY * maxTilt;
-
-          // Apply transform
-          card.style.transform = \`perspective(1000px) rotateX(\${rotateX}deg) rotateY(\${rotateY}deg) scale3d(\${scale}, \${scale}, \${scale})\`;
-        });
-
-        group.addEventListener('mouseleave', () => {
-          // Smooth reset
-          card.style.transition = 'transform 0.5s ease-out';
-          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-
-          // Remove transition after reset for smooth mousemove
-          setTimeout(() => {
-            card.style.transition = 'box-shadow 0.3s ease';
-          }, 500);
-        });
-
-        group.addEventListener('mouseenter', () => {
-          // Remove transition for immediate response
-          card.style.transition = 'box-shadow 0.3s ease';
-        });
-      });
-    })();
-  </script>
-
 </body>
 </html>`;
 }
@@ -1023,7 +963,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${baseUrl}"},{"@type":"ListItem","position":2,"name":"States"}]}
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -1053,7 +993,10 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
 <body class="bg-dark text-gray-100 min-h-screen">
   <header class="border-b border-dark-border">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+      <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+        <img src="/logo-ghost.png" alt="SpookFinder" class="w-10 h-10">
+        <span class="text-lg font-semibold">SpookFinder</span>
+      </a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>

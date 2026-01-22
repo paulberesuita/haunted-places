@@ -3,28 +3,36 @@
 
 const stateNames = {
   'CA': 'California',
+  'CT': 'Connecticut',
   'FL': 'Florida',
   'GA': 'Georgia',
   'IL': 'Illinois',
   'LA': 'Louisiana',
   'MA': 'Massachusetts',
+  'MD': 'Maryland',
   'NY': 'New York',
   'OH': 'Ohio',
   'PA': 'Pennsylvania',
+  'SC': 'South Carolina',
+  'TN': 'Tennessee',
   'TX': 'Texas',
   'VA': 'Virginia'
 };
 
 const stateUrls = {
   'CA': 'california',
+  'CT': 'connecticut',
   'FL': 'florida',
   'GA': 'georgia',
   'IL': 'illinois',
   'LA': 'louisiana',
   'MA': 'massachusetts',
+  'MD': 'maryland',
   'NY': 'new-york',
   'OH': 'ohio',
   'PA': 'pennsylvania',
+  'SC': 'south-carolina',
+  'TN': 'tennessee',
   'TX': 'texas',
   'VA': 'virginia'
 };
@@ -39,7 +47,7 @@ function escapeHtml(text) {
     .replace(/'/g, '&#039;');
 }
 
-function renderHomepage(places, states, baseUrl) {
+function renderHomepage(places, states, baseUrl, selectedState = null) {
   // Sort places: those with images first
   const sortedPlaces = [...places].sort((a, b) => {
     if (a.image_url && !b.image_url) return -1;
@@ -49,12 +57,13 @@ function renderHomepage(places, states, baseUrl) {
 
   const totalPlaces = places.length;
   const statesWithPlaces = states.filter(s => s.place_count > 0);
+  const selectedStateName = selectedState ? (stateNames[selectedState] || selectedState) : null;
 
-  // Generate state filter links
+  // Generate state filter links (use query params to stay on homepage)
   const stateFiltersHtml = statesWithPlaces.map(s => {
     const stateName = stateNames[s.state] || s.state;
-    const stateUrl = stateUrls[s.state] || s.state.toLowerCase();
-    return `<a href="/states/${stateUrl}" class="text-ghost hover:text-white transition-colors whitespace-nowrap">${stateName}</a>`;
+    const isActive = s.state === selectedState;
+    return `<a href="/?state=${s.state}" class="${isActive ? 'text-white' : 'text-ghost hover:text-white'} transition-colors whitespace-nowrap">${stateName}</a>`;
   }).join('\n              ');
 
   // Generate place cards (show all featured)
@@ -66,9 +75,9 @@ function renderHomepage(places, states, baseUrl) {
 
     return `
             <a href="/place/${place.slug}" class="group">
-              <div class="aspect-[4/3] rounded-lg overflow-hidden bg-dark-card mb-3 border border-dark-border">
+              <div class="place-card aspect-[4/3] overflow-hidden bg-dark-card mb-3">
                 ${imageUrl
-                  ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">`
+                  ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover" loading="lazy">`
                   : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
                       <span class="text-4xl opacity-30">&#128123;</span>
                     </div>`
@@ -102,7 +111,7 @@ function renderHomepage(places, states, baseUrl) {
   <link rel="canonical" href="${baseUrl}/">
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -125,6 +134,16 @@ function renderHomepage(places, states, baseUrl) {
     }
   </script>
   <style>
+    /* Subtle grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+    }
     /* Hide scrollbar for state filters */
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
@@ -133,8 +152,98 @@ function renderHomepage(places, states, baseUrl) {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    /* Mobile touch target improvements */
+    @media (max-width: 768px) {
+      /* Ensure nav links have adequate touch targets (44px min) */
+      nav a {
+        padding: 12px 8px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      /* State filter links need larger tap areas */
+      #state-filters a {
+        padding: 12px 4px;
+        min-height: 44px;
+      }
+    }
+
+    /* Glitch text effect */
+    .glitch-text {
+      position: relative;
+      animation: flicker 4s infinite;
+    }
+    .glitch-text::before,
+    .glitch-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    .glitch-text::before {
+      color: #ff0040;
+      z-index: -1;
+    }
+    .glitch-text::after {
+      color: #00ffff;
+      z-index: -2;
+    }
+    .glitch-text.glitching::before {
+      animation: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      opacity: 0.8;
+    }
+    .glitch-text.glitching::after {
+      animation: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+      opacity: 0.8;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+      95% { opacity: 0.9; }
+      96% { opacity: 1; }
+      97% { opacity: 0.7; }
+      98% { opacity: 1; }
+    }
+    @keyframes glitch-1 {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(-3px, -2px); }
+      60% { transform: translate(3px, 2px); }
+      80% { transform: translate(3px, -2px); }
+      100% { transform: translate(0); }
+    }
+    @keyframes glitch-2 {
+      0% { transform: translate(0); }
+      20% { transform: translate(3px, -2px); }
+      40% { transform: translate(3px, 2px); }
+      60% { transform: translate(-3px, -2px); }
+      80% { transform: translate(-3px, 2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Image filter - grayscale with subtle grain */
+    .place-img {
+      filter: url(#grain) grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+    .place-img:hover {
+      filter: url(#grain) grayscale(100%) sepia(20%) brightness(0.9);
+    }
+
+    /* Simple card */
+    .place-card {
+      position: relative;
+      overflow: hidden;
+    }
+
     /* Atmospheric background */
-    .bg-video {
+    .bg-image {
       position: fixed;
       inset: 0;
       z-index: -2;
@@ -145,7 +254,7 @@ function renderHomepage(places, states, baseUrl) {
     .bg-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(10, 10, 15, 0.4);
+      background: rgba(10, 10, 15, 0.3);
       z-index: -1;
     }
     #dust-canvas {
@@ -161,20 +270,36 @@ function renderHomepage(places, states, baseUrl) {
       pointer-events: none;
       opacity: 0.3;
     }
+
+    /* Content container - no frame */
+    .frame-container {
+      position: relative;
+    }
+    .frame-content {
+      position: relative;
+      min-height: 80vh;
+    }
   </style>
 </head>
 <body class="bg-dark text-gray-100 min-h-screen">
-  <video class="bg-video" autoplay muted loop playsinline>
-    <source src="/bg-atmosphere.mp4" type="video/mp4">
-  </video>
-  <div class="bg-overlay"></div>
+  <!-- SVG Grain Filter -->
+  <svg style="position:absolute;width:0;height:0;">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="1" result="noise"/>
+        <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" result="grainFaded"/>
+        <feBlend in="SourceGraphic" in2="grainFaded" mode="multiply"/>
+      </filter>
+    </defs>
+  </svg>
+
   <canvas id="dust-canvas"></canvas>
   <canvas id="fog-canvas"></canvas>
 
   <!-- Header -->
   <header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold">Haunted Places</a>
+      <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
@@ -182,40 +307,57 @@ function renderHomepage(places, states, baseUrl) {
     </div>
   </header>
 
-  <!-- Tagline -->
-  <section class="py-12 text-center">
-    <h1 class="text-2xl md:text-3xl font-medium mb-2">Discover America's most haunted places</h1>
-    <p class="text-ghost text-sm">Featuring the scariest locations across ${statesWithPlaces.length} states</p>
-  </section>
+  <!-- Framed Container -->
+  <div class="frame-container">
+    <div class="frame-content">
 
-  <!-- State Filters -->
-  <div id="state-filters" class="sticky top-0 z-40 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex gap-8 py-4 text-base font-light overflow-x-auto hide-scrollbar">
-        <a href="/" class="text-white whitespace-nowrap">Featured</a>
-        ${stateFiltersHtml}
+      <!-- Tagline -->
+      <section class="py-12 text-center">
+        <h1 id="glitch-headline" class="glitch-text text-3xl md:text-4xl lg:text-5xl" style="font-family: 'Creepster', cursive;" data-text="${selectedStateName ? `Haunted Places in ${selectedStateName}` : "America's most haunted places"}">${selectedStateName ? `Haunted Places in ${selectedStateName}` : "America's most haunted places"}</h1>
+        ${selectedStateName ? `<p class="text-ghost text-sm mt-2">${totalPlaces} haunted locations</p>` : ''}
+      </section>
+
+      <!-- State Filters -->
+      <div id="state-filters" class="sticky top-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex gap-8 py-4 text-base font-light overflow-x-auto hide-scrollbar">
+            <a href="/" class="${selectedState ? 'text-ghost hover:text-white' : 'text-white'} whitespace-nowrap">Featured</a>
+            ${stateFiltersHtml}
+          </div>
+        </div>
       </div>
+
+      <!-- Place Cards Grid -->
+      <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+          ${placeCardsHtml}
+        </div>
+      </main>
+
     </div>
   </div>
-
-  <!-- Place Cards Grid -->
-  <main class="max-w-7xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
-      ${placeCardsHtml}
-    </div>
-
-  </main>
 
   <!-- Footer -->
   <footer class="mt-16">
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <p class="text-gray-300 text-sm">
-          Documenting America's most haunted locations, one ghost story at a time.
+          Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
         </p>
       </div>
     </div>
   </footer>
+
+  <!-- Donkey Scare Easter Egg - TV Effect -->
+  <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
+    <!-- TV image as full background -->
+    <img src="${baseUrl}/tv.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+    <!-- Video positioned over the TV screen area -->
+    <video id="donkey-video" style="position:absolute;top:35%;left:35%;width:24%;height:28%;object-fit:cover;border-radius:4px;z-index:2;" playsinline>
+      <source src="${baseUrl}/donkey.mp4" type="video/mp4">
+    </video>
+    <button id="donkey-close" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);border:none;color:#fff;padding:10px 20px;cursor:pointer;font-size:14px;border-radius:4px;z-index:3;">Close</button>
+  </div>
 
   <!-- VHS Glitch Transition -->
   <div id="vhs-glitch" style="display:none;position:fixed;inset:0;z-index:9999;pointer-events:none;">
@@ -282,14 +424,34 @@ function renderHomepage(places, states, baseUrl) {
   <script>
     (function() {
       const glitch = document.getElementById('vhs-glitch');
+
+      // Ensure clean state on load
       glitch.classList.remove('active');
       glitch.style.display = 'none';
+      glitch.style.opacity = '0';
+
+      function triggerGlitch(callback) {
+        // Force layout recalc to ensure animation starts fresh
+        glitch.style.display = 'block';
+        glitch.offsetHeight; // Force reflow
+        glitch.style.opacity = '1';
+        glitch.classList.add('active');
+
+        setTimeout(() => {
+          callback();
+        }, 900);
+      }
+
+      function resetGlitch() {
+        glitch.classList.remove('active');
+        glitch.style.display = 'none';
+        glitch.style.opacity = '0';
+      }
 
       // Reset glitch when returning via back button (bfcache)
       window.addEventListener('pageshow', (e) => {
         if (e.persisted) {
-          glitch.classList.remove('active');
-          glitch.style.display = 'none';
+          resetGlitch();
         }
       });
 
@@ -352,11 +514,9 @@ function renderHomepage(places, states, baseUrl) {
             navigateWithoutReload(link.href);
           } else if (path.startsWith('/place/')) {
             // VHS glitch transition for place detail pages
-            glitch.style.display = 'block';
-            glitch.classList.add('active');
-            setTimeout(() => {
+            triggerGlitch(() => {
               window.location.href = link.href;
-            }, 850);
+            });
           } else {
             // Full page navigation for other links
             window.location.href = link.href;
@@ -384,33 +544,37 @@ function renderHomepage(places, states, baseUrl) {
     })();
   </script>
 
-  <!-- Dust Particles -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script>
+  <!-- Dust Particles in Light Cone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script defer>
     (function() {
+      const isMobile = window.innerWidth < 768;
       const canvas = document.getElementById('dust-canvas');
       const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 2));
 
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       camera.position.z = 5;
 
-      // Create dust particles
-      const particleCount = 150;
+      // Reduce particles on mobile for performance
+      const particleCount = isMobile ? 80 : 200;
       const geometry = new THREE.BufferGeometry();
       const positions = new Float32Array(particleCount * 3);
       const velocities = [];
 
       for (let i = 0; i < particleCount; i++) {
-        positions[i * 3] = (Math.random() - 0.5) * 20;
-        positions[i * 3 + 1] = (Math.random() - 0.5) * 20;
-        positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+        // Spread particles randomly across the entire scene
+        positions[i * 3] = (Math.random() - 0.5) * 20;     // X: full width
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 16; // Y: full height
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // Z: depth
+
+        // Float randomly in all directions with slight variation in speed
         velocities.push({
-          x: (Math.random() - 0.5) * 0.003,
-          y: (Math.random() - 0.5) * 0.003 + 0.001,
-          z: (Math.random() - 0.5) * 0.002
+          x: (Math.random() - 0.5) * 0.006,
+          y: (Math.random() - 0.5) * 0.006,
+          z: (Math.random() - 0.5) * 0.003
         });
       }
 
@@ -431,10 +595,10 @@ function renderHomepage(places, states, baseUrl) {
       const particleTexture = new THREE.CanvasTexture(particleCanvas);
 
       const material = new THREE.PointsMaterial({
-        color: 0xffffff,
-        size: 0.08,
+        color: 0xc8d8e8,
+        size: 0.06,
         transparent: true,
-        opacity: 0.6,
+        opacity: 0.5,
         sizeAttenuation: true,
         map: particleTexture,
         blending: THREE.AdditiveBlending,
@@ -453,7 +617,7 @@ function renderHomepage(places, states, baseUrl) {
           positions[i * 3 + 1] += velocities[i].y;
           positions[i * 3 + 2] += velocities[i].z;
 
-          // Wrap around
+          // Wrap around all directions
           if (positions[i * 3] > 10) positions[i * 3] = -10;
           if (positions[i * 3] < -10) positions[i * 3] = 10;
           if (positions[i * 3 + 1] > 10) positions[i * 3 + 1] = -10;
@@ -577,9 +741,17 @@ function renderHomepage(places, states, baseUrl) {
       animate();
     })();
 
-    // Noise-based fog shader
+    // Noise-based fog shader (disabled on mobile for performance)
     (function() {
+      const isMobile = window.innerWidth < 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       const canvas = document.getElementById('fog-canvas');
+
+      // Skip fog animation on mobile - too CPU intensive
+      if (isMobile) {
+        canvas.style.display = 'none';
+        return;
+      }
+
       const ctx = canvas.getContext('2d');
 
       function resize() {
@@ -650,6 +822,92 @@ function renderHomepage(places, states, baseUrl) {
     })();
   </script>
 
+  <!-- Glitch Headline Effect -->
+  <script>
+    (function() {
+      const headline = document.getElementById('glitch-headline');
+      if (!headline) return;
+
+      function triggerGlitch() {
+        headline.classList.add('glitching');
+        setTimeout(() => {
+          headline.classList.remove('glitching');
+        }, 300);
+      }
+
+      function scheduleGlitch() {
+        const delay = 3000 + Math.random() * 5000;
+        setTimeout(() => {
+          triggerGlitch();
+          if (Math.random() < 0.3) {
+            setTimeout(triggerGlitch, 150);
+          }
+          scheduleGlitch();
+        }, delay);
+      }
+
+      setTimeout(triggerGlitch, 1000);
+      scheduleGlitch();
+    })();
+  </script>
+
+  <!-- Donkey Scare Script -->
+  <script>
+    (function() {
+      const scareOverlay = document.getElementById('donkey-scare');
+      const scareVideo = document.getElementById('donkey-video');
+      const closeBtn = document.getElementById('donkey-close');
+      const trigger = document.getElementById('donkey-trigger');
+
+      let idleTimer;
+      const IDLE_TIMEOUT = 60000; // 60 seconds
+      let scarePlayed = false;
+
+      function showScare() {
+        if (scarePlayed) return;
+        scarePlayed = true;
+        scareOverlay.style.display = 'block';
+        scareVideo.currentTime = 0;
+        scareVideo.play();
+      }
+
+      function hideScare() {
+        scareOverlay.style.display = 'none';
+        scareVideo.pause();
+        scareVideo.currentTime = 0;
+      }
+
+      function resetIdleTimer() {
+        clearTimeout(idleTimer);
+        if (!scarePlayed) {
+          idleTimer = setTimeout(showScare, IDLE_TIMEOUT);
+        }
+      }
+
+      // Reset timer on user activity
+      ['mousemove', 'mousedown', 'keypress', 'scroll', 'touchstart'].forEach(event => {
+        document.addEventListener(event, resetIdleTimer, { passive: true });
+      });
+
+      // Start idle timer
+      resetIdleTimer();
+
+      // Footer trigger (the period at the end)
+      trigger.addEventListener('click', showScare);
+
+      // Close button
+      closeBtn.addEventListener('click', hideScare);
+
+      // Close when video ends
+      scareVideo.addEventListener('ended', hideScare);
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') hideScare();
+      });
+    })();
+  </script>
+
 </body>
 </html>`;
 }
@@ -658,16 +916,31 @@ export async function onRequestGet(context) {
   const { env, request } = context;
   const url = new URL(request.url);
   const baseUrl = `${url.protocol}//${url.host}`;
+  const selectedState = url.searchParams.get('state');
 
   try {
-    // Fetch featured places (top 20 scariest)
-    const { results: places } = await env.DB.prepare(`
-      SELECT slug, name, city, state, category, image_url
-      FROM places
-      WHERE featured = 1
-      ORDER BY RANDOM()
-      LIMIT 20
-    `).all();
+    let places;
+
+    if (selectedState) {
+      // Fetch places for the selected state
+      const { results } = await env.DB.prepare(`
+        SELECT slug, name, city, state, category, image_url
+        FROM places
+        WHERE state = ?
+        ORDER BY name
+      `).bind(selectedState).all();
+      places = results;
+    } else {
+      // Fetch featured places (top 20 scariest)
+      const { results } = await env.DB.prepare(`
+        SELECT slug, name, city, state, category, image_url
+        FROM places
+        WHERE featured = 1
+        ORDER BY RANDOM()
+        LIMIT 20
+      `).all();
+      places = results;
+    }
 
     // Fetch state counts
     const { results: states } = await env.DB.prepare(`
@@ -678,7 +951,7 @@ export async function onRequestGet(context) {
     `).all();
 
     // Render the homepage
-    const html = renderHomepage(places || [], states || [], baseUrl);
+    const html = renderHomepage(places || [], states || [], baseUrl, selectedState);
 
     return new Response(html, {
       headers: {
