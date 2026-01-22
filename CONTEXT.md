@@ -6,6 +6,76 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-22
 
+### Tennessee Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia/Wikimedia Commons images for 10 Tennessee haunted places, bringing total coverage to 23 of 25 Tennessee places (92%).
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Wikimedia Commons category API for battlefield and historic site images
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (10 total):**
+
+| Place | Wikipedia/Commons Source | Description |
+|-------|--------------------------|-------------|
+| Bell Witch Cave (Bell Farm) | Bell_Witch_Cave.JPG | Famous cave entrance, Adams TN |
+| Union Station Hotel | WTN_PeepHoles_156.JPG | Nashville's historic train station hotel |
+| Hunt-Phelan Home | Hunt-Phelan_home_533_Beale_St_Memphis_TN_03.jpg | Memphis Civil War mansion on Beale St |
+| Read House Hotel | ReadHouseChattanooga.jpg | Chattanooga's haunted Room 311 hotel |
+| Stone Bridge at Chickamauga | Cannons_monument_and_cabin_LOC_npcc.00041.jpg | Chickamauga NMP with cannons and cabin |
+| Bijou Theatre | Bijou-theater-lamar-house-tn1.jpg | Knoxville's historic Lamar House theater |
+| Stones River National Battlefield | Hazen_brigade_1863_monument.jpg | Oldest intact Civil War monument |
+| Oaklands Mansion | Oaklands_Mansion_03-2023.jpg | Murfreesboro Italianate mansion |
+| Sam Davis Home | Sam_Davis_House.jpg | Smyrna Greek Revival house |
+| Exchange Place | Prestonfarm.jpg | Kingsport's Preston Farm living history |
+
+**Places without Wikipedia/Commons images (2 places):**
+- Ernestine & Hazel's, Memphis (dive bar/former brothel, no Wikimedia documentation)
+- Rotherwood Mansion, Kingsport (private antebellum mansion, no Wikimedia coverage)
+
+**Key learnings:**
+- Tennessee Civil War sites have excellent Wikimedia coverage (battlefields, monuments)
+- Historic mansions with National Register status generally have Wikipedia images
+- Smaller bars, restaurants, and private residences often lack documentation
+- Exchange Place is documented under its NRHP name "Preston Farm"
+
+---
+
+### Maryland Image Research - Wikipedia/Wikimedia Commons
+
+Sourced and uploaded authentic Wikipedia/Wikimedia Commons images for 5 additional Maryland haunted places, bringing total coverage to 19 of 24 places (79%).
+
+**Sources used:**
+- Wikipedia API (`action=query&prop=pageimages&piprop=original`)
+- Wikimedia Commons search API for places without main Wikipedia page images
+- Images from Wikimedia Commons (Creative Commons licensed)
+
+**Images uploaded (5 total):**
+
+| Place | Wikimedia Commons Source | Description |
+|-------|--------------------------|-------------|
+| The Horse You Came In On Saloon | The_Horse_You_Came_In_On_Saloon_(54547675099).jpg | Baltimore's oldest saloon, Poe's last stop |
+| Antietam National Cemetery | Antietam_National_Cemetery_entrance_and_lodge_MD1.jpg | Civil War cemetery entrance and lodge |
+| Pry House Field Hospital | Pry_House_Antietam_MD1.jpg | McClellan's headquarters at Antietam |
+| Furnace Town | Nassawango_Iron_Furnace.jpg | 19th century iron furnace |
+| Rackliffe House | Rackliffe_House_MD1.jpg | 1740s coastal plantation house |
+
+**Places without Wikipedia/Commons images (5 places):**
+- Max's Taphouse (Fells Point bar, no building exterior photo)
+- St. Paul Episcopal Church, Sharpsburg (no Wikimedia category for this church)
+- Governor Calvert House (no building exterior on Wikimedia)
+- Reynolds Tavern (only a plaque photo exists, not building exterior)
+- Shoreham Hotel, Ocean City (no Wikimedia images)
+
+**Key learnings:**
+- Maryland has good Wikimedia coverage for Civil War sites (Antietam area)
+- Smaller taverns, hotels, and restaurants in historic areas often lack documentation
+- Fells Point in Baltimore has neighborhood photos but not specific building documentation
+- Historic Annapolis buildings have limited Wikimedia coverage despite tourism importance
+
+---
+
 ### New Jersey Image Research - Wikipedia/Wikimedia Commons
 
 Sourced and uploaded authentic Wikipedia/Wikimedia Commons images for 35 New Jersey haunted places, focusing on lighthouses, historic mansions, prisons/asylums, and Cape May Victorian hotels.
