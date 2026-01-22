@@ -61,6 +61,7 @@ function renderStatesPage(states, totalPlaces, baseUrl) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haunted Places by State - Browse All ${states.length} States | SpookFinder</title>
   <meta name="description" content="Explore ${totalPlaces} haunted places across ${states.length} US states. Browse haunted hotels, cemeteries, mansions, and more by state.">
+  <!-- DEPLOY_MARKER_20260122_1335 -->
 
   <!-- Open Graph -->
   <meta property="og:title" content="Haunted Places by State | SpookFinder">

@@ -987,18 +987,12 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   })).sort((a, b) => b.count - a.count);
 
   const stateCardsHtml = statesWithData.map(state => `
-    <a href="/states/${state.url}" class="block bg-dark-card rounded-xl p-6 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
-      <div class="flex items-center justify-between mb-3">
-        <h2 class="text-xl font-semibold group-hover:text-accent transition-colors">${state.name}</h2>
-        <span class="text-3xl">&#128123;</span>
+    <a href="/states/${state.url}" class="group">
+      <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 flex items-center justify-center">
+        <span class="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">&#128123;</span>
       </div>
-      <p class="text-ghost text-sm">${state.count} haunted ${state.count === 1 ? 'place' : 'places'}</p>
-      <div class="mt-4 flex items-center text-accent text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-        <span>Explore</span>
-        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-      </div>
+      <h3 class="text-sm font-medium group-hover:text-accent transition-colors">${state.name}</h3>
+      <p class="text-xs text-ghost">${state.count} haunted ${state.count === 1 ? 'place' : 'places'}</p>
     </a>
   `).join('\n');
 
@@ -1019,6 +1013,8 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${baseUrl}"},{"@type":"ListItem","position":2,"name":"States"}]}
   </script>
+  <script async src="https://plausible.io/js/pa-U75YbwDcDaK8C53IH8RVe.js"></script>
+  <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -1040,72 +1036,188 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     }
   </script>
   <style>
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      pointer-events: none;
+    }
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+    html { background: #0a0a0f; overflow-x: hidden; }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
-      nav[aria-label="Breadcrumb"] a { padding: 8px 4px; min-height: 44px; }
     }
+    .glitch-text {
+      position: relative;
+      animation: flicker 4s infinite;
+    }
+    .glitch-text::before, .glitch-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    .glitch-text::before { color: #ff0040; z-index: -1; }
+    .glitch-text::after { color: #00ffff; z-index: -2; }
+    .glitch-text.glitching::before {
+      animation: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      opacity: 0.8;
+    }
+    .glitch-text.glitching::after {
+      animation: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+      opacity: 0.8;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+      95% { opacity: 0.9; }
+      96% { opacity: 1; }
+      97% { opacity: 0.7; }
+      98% { opacity: 1; }
+    }
+    @keyframes glitch-1 {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(-3px, -2px); }
+      60% { transform: translate(3px, 2px); }
+      80% { transform: translate(3px, -2px); }
+      100% { transform: translate(0); }
+    }
+    @keyframes glitch-2 {
+      0% { transform: translate(0); }
+      20% { transform: translate(3px, -2px); }
+      40% { transform: translate(3px, 2px); }
+      60% { transform: translate(-3px, -2px); }
+      80% { transform: translate(-3px, 2px); }
+      100% { transform: translate(0); }
+    }
+    #dust-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+    #fog-canvas { position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.3; }
   </style>
 </head>
 <body class="text-gray-100 min-h-screen">
-  <header class="border-b border-dark-border">
-    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-        <img src="/logo-ghost.png" alt="SpookFinder" class="w-10 h-10">
-        <span class="text-lg font-semibold">SpookFinder</span>
-      </a>
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+  <svg style="position:absolute;width:0;height:0;">
+    <defs>
+      <filter id="grain" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="1" result="noise"/>
+        <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.08 0" result="grainFaded"/>
+        <feBlend in="SourceGraphic" in2="grainFaded" mode="multiply"/>
+      </filter>
+    </defs>
+  </svg>
+  <canvas id="dust-canvas"></canvas>
+  <canvas id="fog-canvas"></canvas>
+  <header>
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
   </header>
-  <nav class="max-w-6xl mx-auto px-4 pt-4 pb-2" aria-label="Breadcrumb">
-    <ol class="flex items-center gap-2 text-sm text-muted">
-      <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
-      <li class="text-dark-border">/</li>
-      <li class="text-ghost">States</li>
-    </ol>
-  </nav>
-  <section class="max-w-6xl mx-auto px-4 py-12">
-    <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Haunted Places by State</h1>
-    <p class="text-ghost text-lg max-w-2xl">
-      Explore ${totalPlaces} documented haunted locations across ${states.length} US states.
-      Select a state to discover ghost stories, paranormal history, and haunted places near you.
-    </p>
+  <section class="py-12 text-center">
+    <h1 id="glitch-headline" class="glitch-text text-3xl md:text-4xl lg:text-5xl" style="font-family: 'Creepster', cursive;" data-text="Browse by State">Browse by State</h1>
+    <p class="text-ghost text-sm mt-2">${totalPlaces} haunted locations across ${states.length} states</p>
   </section>
-  <section class="max-w-6xl mx-auto px-4 pb-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-dark-card rounded-lg p-4 text-center">
-        <div class="text-2xl font-bold text-accent">${totalPlaces}</div>
-        <div class="text-sm text-ghost">Haunted Places</div>
-      </div>
-      <div class="bg-dark-card rounded-lg p-4 text-center">
-        <div class="text-2xl font-bold text-accent">${states.length}</div>
-        <div class="text-sm text-ghost">States</div>
-      </div>
-      <div class="bg-dark-card rounded-lg p-4 text-center">
-        <div class="text-2xl font-bold text-accent">${statesWithData[0]?.count || 0}</div>
-        <div class="text-sm text-ghost">Most in One State</div>
-      </div>
-      <div class="bg-dark-card rounded-lg p-4 text-center">
-        <div class="text-2xl font-bold text-accent">${Math.round(totalPlaces / states.length)}</div>
-        <div class="text-sm text-ghost">Avg per State</div>
-      </div>
-    </div>
-  </section>
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
       ${stateCardsHtml}
     </div>
   </main>
-  <footer class="mt-16 border-t border-dark-border">
-    <div class="max-w-6xl mx-auto px-4 py-8">
+  <footer class="mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
-        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
-        <p class="text-muted text-sm mt-2">Documenting America's most haunted locations, one ghost story at a time.</p>
+        <p class="text-gray-300 text-sm">Documenting America's most haunted locations, one ghost story at a time.</p>
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script defer>
+    (function() {
+      const isMobile = window.innerWidth < 768;
+      const canvas = document.getElementById('dust-canvas');
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 2));
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.z = 5;
+      const particleCount = isMobile ? 80 : 200;
+      const geometry = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      const velocities = [];
+      for (let i = 0; i < particleCount; i++) {
+        positions[i * 3] = (Math.random() - 0.5) * 20;
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 16;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
+        velocities.push({ x: (Math.random() - 0.5) * 0.006, y: (Math.random() - 0.5) * 0.006, z: (Math.random() - 0.5) * 0.003 });
+      }
+      geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      const particleCanvas = document.createElement('canvas');
+      particleCanvas.width = 32; particleCanvas.height = 32;
+      const pCtx = particleCanvas.getContext('2d');
+      const gradient = pCtx.createRadialGradient(16, 16, 0, 16, 16, 16);
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+      gradient.addColorStop(0.3, 'rgba(255, 255, 255, 0.8)');
+      gradient.addColorStop(0.7, 'rgba(255, 255, 255, 0.3)');
+      gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+      pCtx.fillStyle = gradient; pCtx.fillRect(0, 0, 32, 32);
+      const particleTexture = new THREE.CanvasTexture(particleCanvas);
+      const material = new THREE.PointsMaterial({ color: 0xc8d8e8, size: 0.06, transparent: true, opacity: 0.5, sizeAttenuation: true, map: particleTexture, blending: THREE.AdditiveBlending, depthWrite: false });
+      const particles = new THREE.Points(geometry, material);
+      scene.add(particles);
+      function animate() {
+        requestAnimationFrame(animate);
+        const positions = particles.geometry.attributes.position.array;
+        for (let i = 0; i < particleCount; i++) {
+          positions[i * 3] += velocities[i].x;
+          positions[i * 3 + 1] += velocities[i].y;
+          positions[i * 3 + 2] += velocities[i].z;
+          if (positions[i * 3] > 10) positions[i * 3] = -10;
+          if (positions[i * 3] < -10) positions[i * 3] = 10;
+          if (positions[i * 3 + 1] > 10) positions[i * 3 + 1] = -10;
+          if (positions[i * 3 + 1] < -10) positions[i * 3 + 1] = 10;
+          if (positions[i * 3 + 2] > 5) positions[i * 3 + 2] = -5;
+          if (positions[i * 3 + 2] < -5) positions[i * 3 + 2] = 5;
+        }
+        particles.geometry.attributes.position.needsUpdate = true;
+        renderer.render(scene, camera);
+      }
+      animate();
+      window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); });
+    })();
+  </script>
+  <script>
+    (function() {
+      const headline = document.getElementById('glitch-headline');
+      if (!headline) return;
+      function triggerGlitch() { headline.classList.add('glitching'); setTimeout(() => { headline.classList.remove('glitching'); }, 300); }
+      function scheduleGlitch() { const delay = 3000 + Math.random() * 5000; setTimeout(() => { triggerGlitch(); if (Math.random() < 0.3) { setTimeout(triggerGlitch, 150); } scheduleGlitch(); }, delay); }
+      setTimeout(triggerGlitch, 1000);
+      scheduleGlitch();
+    })();
+  </script>
 </body>
 </html>`;
 }
