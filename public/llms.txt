@@ -1,0 +1,57 @@
+# Spookfinder
+
+> A directory of America's most haunted places
+
+Spookfinder is a curated database of haunted locations across the United States. Each entry includes the location's history, documented ghost stories, and visitor information.
+
+## Quick Facts
+
+- 752 haunted locations
+- 18 US states covered
+- Categories: hotels, restaurants, cemeteries, hospitals, theaters, museums, and more
+
+## States Covered
+
+California, Connecticut, Florida, Georgia, Illinois, Kentucky, Louisiana, Maryland, Massachusetts, New Jersey, New York, North Carolina, Ohio, Pennsylvania, South Carolina, Tennessee, Texas, Virginia
+
+## How to Navigate
+
+- Browse by state: https://spookfinder.com/states/{state-name}
+- View a location: https://spookfinder.com/place/{slug}
+- API access: https://spookfinder.com/api/places
+
+## Example State URLs
+
+- https://spookfinder.com/states/california
+- https://spookfinder.com/states/texas
+- https://spookfinder.com/states/new-york
+- https://spookfinder.com/states/louisiana
+
+## API
+
+The JSON API returns location data including:
+- Name, city, state, address
+- Category (hotel, cemetery, hospital, etc.)
+- Historical description
+- Ghost stories and paranormal accounts
+- GPS coordinates
+- Source URLs
+
+```
+GET /api/places - All locations (paginated)
+GET /api/places?state=CA - Filter by state
+GET /api/places/{slug} - Single location
+```
+
+## Full Content
+
+For complete location data including all descriptions and ghost stories, see:
+https://spookfinder.com/llms-full.txt
+
+## About
+
+Spookfinder researches and documents haunted locations with verified historical accounts, documented paranormal activity, and visitor accessibility. Each location includes source citations.
+
+## Contact
+
+Website: https://spookfinder.com
