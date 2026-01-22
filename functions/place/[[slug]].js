@@ -129,7 +129,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
 
   const relatedHtml = relatedPlaces.length > 0 ? `
     <!-- Related Places -->
-    <section class="max-w-6xl mx-auto px-4 py-12">
+    <section class="max-w-7xl mx-auto px-4 py-12">
       <h2 class="text-2xl font-semibold tracking-tight mb-6">
         More Haunted Places in ${escapeHtml(place.city)}
       </h2>
@@ -150,7 +150,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
 
   // More places in same state (different cities)
   const statePlacesHtml = statePlaces.length > 0 ? `
-    <section class="max-w-6xl mx-auto px-4 py-12 border-t border-dark-border">
+    <section class="max-w-7xl mx-auto px-4 py-12 border-t border-dark-border">
       <h2 class="text-2xl font-semibold tracking-tight mb-6">
         More Haunted Places in ${stateName}
       </h2>
@@ -177,7 +177,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   // Similar category places from other states
   const categoryLabel = place.category ? place.category.charAt(0).toUpperCase() + place.category.slice(1) + 's' : 'Places';
   const categoryPlacesHtml = categoryPlaces.length > 0 ? `
-    <section class="max-w-6xl mx-auto px-4 py-12 border-t border-dark-border">
+    <section class="max-w-7xl mx-auto px-4 py-12 border-t border-dark-border">
       <h2 class="text-2xl font-semibold tracking-tight mb-6">
         More Haunted ${categoryLabel} Across America
       </h2>
@@ -315,7 +315,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   <!-- Hero Section -->
   <header class="relative overflow-hidden ${imageUrl ? '-mt-24 md:-mt-32' : 'pt-16'}">
     ${!imageUrl ? `<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent"></div>` : ''}
-    <div class="max-w-6xl mx-auto px-4 py-10 md:py-14 relative">
+    <div class="max-w-7xl mx-auto px-4 py-10 md:py-14 relative">
       <div class="max-w-4xl">
         <!-- Breadcrumb -->
         <nav class="mb-4" aria-label="Breadcrumb">
@@ -346,7 +346,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-6xl mx-auto px-4 pb-16">
+  <main class="max-w-7xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
       <!-- Content Column -->
@@ -492,7 +492,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
 
   <!-- Footer -->
   <footer class="bg-dark-card/50">
-    <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
         <p class="text-muted text-sm mt-2">
