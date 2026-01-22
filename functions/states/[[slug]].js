@@ -7,9 +7,12 @@ const stateNames = {
   'FL': 'Florida',
   'GA': 'Georgia',
   'IL': 'Illinois',
+  'KY': 'Kentucky',
   'LA': 'Louisiana',
   'MA': 'Massachusetts',
   'MD': 'Maryland',
+  'NC': 'North Carolina',
+  'NJ': 'New Jersey',
   'NY': 'New York',
   'OH': 'Ohio',
   'PA': 'Pennsylvania',
@@ -25,9 +28,12 @@ const stateUrls = {
   'FL': 'florida',
   'GA': 'georgia',
   'IL': 'illinois',
+  'KY': 'kentucky',
   'LA': 'louisiana',
   'MA': 'massachusetts',
   'MD': 'maryland',
+  'NC': 'north-carolina',
+  'NJ': 'new-jersey',
   'NY': 'new-york',
   'OH': 'ohio',
   'PA': 'pennsylvania',
@@ -169,6 +175,26 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       opacity: 0.03;
       pointer-events: none;
     }
+    /* Smoke background video */
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* Content wrapper to sit above video */
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      background: transparent;
+    }
+    body {
+      background: #0a0a0f;
+    }
 
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
@@ -264,12 +290,14 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       filter: url(#grain) saturate(0.5) contrast(1.15) brightness(1.05);
     }
 
-    /* Simple card */
+    /* Card with animated smoke effect */
     .place-card {
       position: relative;
       overflow: hidden;
     }
-
+    .group {
+      position: relative;
+    }
     /* Content container - no frame */
     .frame-container {
       position: relative;
@@ -293,7 +321,12 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen">
+<body class="text-gray-100 min-h-screen">
+  <!-- Smoke Background Video -->
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+
   <!-- SVG Grain Filter -->
   <svg style="position:absolute;width:0;height:0;">
     <defs>
@@ -305,6 +338,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
     </defs>
   </svg>
 
+  <div class="content-wrapper">
   <!-- Header (outside frame) -->
   <header class="max-w-7xl mx-auto px-4">
     <div class="h-14 flex items-center justify-between">
@@ -990,7 +1024,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen">
+<body class="text-gray-100 min-h-screen">
   <header class="border-b border-dark-border">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
@@ -1050,6 +1084,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       </div>
     </div>
   </footer>
+  </div>
 </body>
 </html>`;
 }

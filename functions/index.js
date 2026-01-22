@@ -144,6 +144,26 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
       opacity: 0.03;
       pointer-events: none;
     }
+    /* Smoke background video */
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+    }
+    /* Content wrapper to sit above video */
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      background: transparent;
+    }
+    body {
+      background: #0a0a0f;
+    }
     /* Hide scrollbar for state filters */
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
@@ -236,12 +256,14 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
       filter: url(#grain) grayscale(100%) sepia(20%) brightness(0.9);
     }
 
-    /* Simple card */
+    /* Card with animated smoke effect */
     .place-card {
       position: relative;
       overflow: hidden;
     }
-
+    .group {
+      position: relative;
+    }
     /* Atmospheric background */
     .bg-image {
       position: fixed;
@@ -281,7 +303,12 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen">
+<body class="text-gray-100 min-h-screen">
+  <!-- Smoke Background Video -->
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+
   <!-- SVG Grain Filter -->
   <svg style="position:absolute;width:0;height:0;">
     <defs>
@@ -296,6 +323,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
   <canvas id="dust-canvas"></canvas>
   <canvas id="fog-canvas"></canvas>
 
+  <div class="content-wrapper">
   <!-- Header -->
   <header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -347,6 +375,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null) {
       </div>
     </div>
   </footer>
+  </div>
 
   <!-- Donkey Scare Easter Egg - TV Effect -->
   <div id="donkey-scare" style="display:none;position:fixed;inset:0;z-index:99999;background:#000;">
