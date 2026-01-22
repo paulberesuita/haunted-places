@@ -4,6 +4,312 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-22
+
+### Added
+- **LLM Discoverability (llms.txt)**
+  - Created `/llms.txt` - concise site overview for AI assistants
+  - Created `/llms-full.txt` - dynamic function serving complete database (752 locations with full descriptions and ghost stories)
+  - Helps AI assistants like ChatGPT, Claude, and Perplexity find and reference Spookfinder content
+  - `llms-full.txt` generates dynamically from D1 database, always up to date
+
+---
+
+## 2026-01-21
+
+### Added
+- **Four-State Image Research (19 images total)**
+  - Image source: Library of Congress (Carol M. Highsmith Archive, HABS, Detroit Publishing, Bain News Service)
+  - **Virginia (10 new images, 40/50 places - 80% coverage):**
+    - Alexandria: Lee-Fendall House, Alexandria Lyceum, Ramsey House
+    - Fredericksburg: Rising Sun Tavern, Mary Washington House
+    - Lexington: Virginia Military Institute
+    - Williamsburg: College of William & Mary, George Wythe House
+    - Richmond: Linden Row Inn, Edgar Allan Poe Museum
+  - **Pennsylvania (4 new images, 35/49 places - 71% coverage):**
+    - Gettysburg: Jennie Wade House, Pennsylvania Hall, General Lee's Headquarters
+    - Brownsville: Nemacolin Castle (Bowman's Castle)
+  - **Connecticut (2 new images, 21/34 places - 62% coverage):**
+    - New Haven: Skull and Bones Tomb (Yale)
+    - Bridgeport: Remington Arms Factory
+  - **South Carolina (3 new images, 16/27 places - 59% coverage):**
+    - Charleston: Old Charleston Jail
+    - Charleston: Magnolia Plantation and Gardens
+    - Columbia: Hampton-Preston Mansion
+  - All images from Library of Congress (public domain)
+
+---
+
+## 2026-01-20
+
+### Added
+- **Pennsylvania Images (6 images)**
+  - **Pennsylvania (31/49 places - 63% coverage, +6 new):**
+    - Pittsburgh: Omni William Penn Hotel, Clayton (The Frick Mansion)
+    - Philadelphia: Congress Hall
+    - Scranton: The Ritz Theater (Scranton Cultural Center)
+    - Gettysburg: The Slaughter Pen (battlefield)
+    - Hellam: Seven Gates of Hell
+  - Image sources: Wikipedia API, Wikimedia Commons (Creative Commons licensed)
+
+- **Virginia & Ohio Images (29 images)**
+  - **Virginia (30/50 places - 60% coverage, +19 new):**
+    - Richmond: Agecroft Hall, Byrd Theatre, Church Hill Tunnel, Maymont Mansion, Old City Hall, Edgar Allan Poe Museum area
+    - Fredericksburg: Chatham Manor, Fredericksburg Battlefield, St. George's Episcopal Church
+    - Alexandria: Carlyle House
+    - Virginia Beach: Cape Henry Lighthouse, Ferry Plantation House, First Landing State Park
+    - Charlottesville: University of Virginia (Rotunda), Michie Tavern
+    - Middletown: Belle Grove Plantation
+    - Lexington: Stonewall Jackson House
+    - Hampton: The Chamberlin Hotel
+    - Norfolk: Elmwood Cemetery, Norfolk Naval Shipyard
+  - **Ohio (18/29 places - 62% coverage, +10 new):**
+    - Toledo: Collingwood Arts Center, Woodlawn Cemetery
+    - Columbus: Schmidt's Sausage Haus
+    - Cincinnati: Hilton Netherland Plaza (Carew Tower)
+    - Dayton: Victoria Theatre, Woodland Cemetery
+    - Other: Malabar Farm (Lucas), Prospect Place (Trinway), Moonville Tunnel (Zaleski), Punderson Manor (Newbury Township)
+  - Image sources: Wikipedia API, Wikimedia Commons (Creative Commons licensed)
+
+- **South Carolina & Tennessee Images (26 images)**
+  - **South Carolina (13/27 places - 48% coverage):**
+    - Charleston: Dock Street Theatre, Powder Magazine, White Point Gardens
+    - Plantations: Boone Hall Plantation, Hampton Plantation
+    - Columbia: Robert Mills House, South Carolina State Hospital
+    - Upstate: Poinsett Bridge, USS Yorktown, Kings Mountain National Military Park, Cowpens National Battlefield
+    - Other: Pawleys Island (Gray Man), Old Sheldon Church Ruins
+  - **Tennessee (13/25 places - 52% coverage):**
+    - Nashville: Ryman Auditorium, Hermitage Hotel, Tennessee State Capitol, Travellers Rest Plantation
+    - Franklin: Carnton Plantation, Carter House, Lotz House
+    - Memphis: Orpheum Theatre Memphis, Woodruff-Fontaine House
+    - Chattanooga: Chickamauga Battlefield
+    - Other: Brushy Mountain State Penitentiary, Bell Witch Cave, Andrew Johnson Birthplace
+  - Image sources: Wikipedia API, Wikimedia Commons (Creative Commons licensed)
+
+- **Connecticut & Maryland Images (33 images)**
+  - **Connecticut (19/34 places - 56% coverage):**
+    - Hartford: Mark Twain House, Old State House, Hartford Elks Lodge
+    - New Haven: Grove Street Cemetery, New Haven Green, Fort Nathan Hale, Vanderbilt Hall (Yale)
+    - Fairfield County: Union Cemetery, Sheffield Island Lighthouse, Boothe Memorial Park, Fairfield Hills State Hospital
+    - New London/Mystic: Lighthouse Inn, Whitehall Mansion, Garde Arts Center
+    - Litchfield Hills: Lake Compounce, Devil's Hopyard State Park
+    - Other: Sterling Opera House, Yankee Pedlar Inn, Palace & Majestic Theaters
+  - **Maryland (14/24 places - 58% coverage):**
+    - Baltimore: Westminster Hall (Poe's Grave), Lord Baltimore Hotel, Fort McHenry, Admiral Fell Inn
+    - Antietam: Antietam National Battlefield
+    - Point Lookout: Point Lookout Lighthouse, Point Lookout State Park
+    - Frederick: Barbara Fritchie House, Schifferstadt Museum
+    - Other: Glenn Dale Hospital, Poplar Hill Mansion, Ocean City Life-Saving Station, National Road Inn, Maryland Inn (Annapolis)
+  - Image sources: Wikipedia API, Wikimedia Commons (Creative Commons licensed)
+
+- **Four New States: Connecticut, Maryland, South Carolina, Tennessee (110 places)**
+  - Expanded database from 503 places across 11 states to **612 places across 15 states**
+  - **Connecticut (34 places):**
+    - Hartford: Mark Twain House, Old State House, Hartford Elks Lodge
+    - New Haven: Grove Street Cemetery, New Haven Green (5,000 buried beneath), Evergreen Cemetery (Midnight Mary), Yale's Vanderbilt Hall and Skull & Bones Tomb
+    - Fairfield County: Union Cemetery (White Lady), Sheffield Island Lighthouse, Boothe Memorial Park, Remington Arms Factory, Sterling Opera House
+    - New London/Mystic: Captain Grant's 1754 Inn, Lighthouse Inn, Griswold Inn, Captain Daniel Packer Inne
+    - Litchfield Hills: Dudleytown (cursed ghost town), Curtis House Inn, Lake Compounce, Devil's Hopyard State Park
+    - Other: Fairfield Hills State Hospital, Seaside Sanatorium, Yankee Pedlar Inn
+  - **Maryland (24 places):**
+    - Baltimore/Fells Point: Westminster Hall (Poe's Grave), Lord Baltimore Hotel (Molly), Admiral Fell Inn, Horse You Came In On Saloon, Max's Taphouse, Fort McHenry
+    - Antietam/Sharpsburg: Antietam National Battlefield (bloodiest day in US history), Pry House Field Hospital, St. Paul Episcopal Church, Antietam National Cemetery
+    - Annapolis: Maryland Inn (longest-running US hotel), Governor Calvert House, Reynolds Tavern
+    - Point Lookout: Point Lookout Lighthouse (most haunted in US), Point Lookout State Park (Civil War prison camp)
+    - Frederick: Barbara Fritchie House, Schifferstadt Museum
+    - Eastern Shore: Furnace Town, Poplar Hill Mansion, Ocean City Life-Saving Station, Rackliffe House, Shoreham Hotel
+    - Glenn Dale: Glenn Dale Hospital (Goatman legend)
+  - **South Carolina (27 places):**
+    - Charleston: Old Charleston Jail (Lavinia Fisher), Dock Street Theatre, Unitarian Church Cemetery, Battery Carriage House Inn, Powder Magazine, White Point Gardens, Old Exchange/Provost Dungeon
+    - Plantations: Boone Hall, Magnolia Plantation, Hampton Plantation, Wampee House
+    - Pawleys Island/Myrtle Beach: Gray Man (hurricane ghost), All Saints Cemetery (Alice Flagg), Atalaya Castle, Brentwood Restaurant, The Bowery, Murrells Inlet ghost ship
+    - Beaufort: Old Sheldon Church Ruins, Rhett House Inn
+    - Columbia: Longstreet Theatre (Civil War hospital/morgue), South Carolina State Hospital (Bull Street), Hampton-Preston Mansion, Robert Mills House
+    - Upstate: Poinsett Bridge, USS Yorktown, Kings Mountain National Military Park, Cowpens National Battlefield
+  - **Tennessee (25 places):**
+    - Adams: Bell Witch Cave (only US state-recognized supernatural death), Bell Farm Historic Site
+    - Nashville: Ryman Auditorium (Opry Curse, 37 deaths), Hermitage Hotel, Union Station Hotel, Tennessee State Capitol, Travellers Rest Plantation
+    - Franklin: Carnton Plantation (bloodstained floors, 4 dead generals), Carter House (1,000 bullet holes), Lotz House
+    - Memphis: Orpheum Theatre (Mary in seat C5), Ernestine & Hazel's (former brothel), Woodruff-Fontaine House, Hunt-Phelan Home
+    - Chattanooga: Read House Hotel (Room 311), Chickamauga Battlefield (Old Green Eyes), Stone Bridge
+    - Knoxville: Bijou Theatre, Brushy Mountain State Penitentiary
+    - Murfreesboro: Stones River National Battlefield (headless horseman), Oaklands Mansion, Sam Davis Home
+    - East Tennessee: Rotherwood Mansion, Exchange Place, Andrew Johnson Birthplace
+  - Created seed scripts: `seed-connecticut.sql`, `seed-maryland.sql`, `seed-south-carolina.sql`, `seed-tennessee.sql`
+  - All places include coordinates, descriptions, ghost stories, year established, and source URLs
+
+---
+
+## 2026-01-18
+
+### Added
+- **Massachusetts Images - 49 Places (89% Coverage)**
+  - Found and uploaded images for 49 Massachusetts places (13 new + 36 previous)
+  - Image sources: Library of Congress, Find A Grave, History of Massachusetts blog, NPS, Salem Haunted Adventures, Emerson Theatres, Digital Commonwealth
+  - **Salem (14 places):**
+    - Joshua Ward House - Library of Congress HABS collection
+    - Old Burying Point Cemetery - Find A Grave
+    - Proctor's Ledge Memorial - History of Massachusetts
+    - Salem Witch Museum - History of Massachusetts
+    - Ropes Mansion - History of Massachusetts (circa 1933)
+    - Lyceum Hall - History of Massachusetts
+    - Gallows Hill Park - History of Massachusetts
+    - Howard Street Cemetery - History of Massachusetts
+    - The Salem Inn - Salem Haunted Adventures
+    - Pickering Wharf - Salem Haunted Adventures
+    - Derby Wharf - NPS (with lighthouse)
+    - Daniels House - Salem Haunted Adventures
+  - **Boston (10 places):**
+    - Granary Burying Ground - Find A Grave
+    - Boston Common - NPS (Olmsted Archives)
+    - Central Burying Ground - Find A Grave
+    - King's Chapel Burying Ground - Find A Grave
+    - Copp's Hill Burying Ground - Find A Grave
+    - Cutler Majestic Theatre - Emerson Theatres
+    - Boston Massacre Site - NPS
+    - Charlesgate Hotel - Library of Congress
+    - Boston Athenaeum - Library of Congress (circa 1906)
+  - **Cambridge (4 places):**
+    - Mount Auburn Cemetery - Find A Grave
+    - Old Burying Ground - Find A Grave
+    - Harvard Porcellian Club - Digital Commonwealth/Boston Public Library
+    - Harvard Yard - Library of Congress (circa 1913-1920)
+  - **Concord (2 places):**
+    - Orchard House (Louisa May Alcott) - Library of Congress (circa 1900)
+    - Old Hill Burying Ground - Find A Grave
+  - **Plymouth (3 places):**
+    - Burial Hill - Find A Grave
+    - Cole's Hill - Find A Grave
+    - Pilgrim Hall Museum - Library of Congress (stereograph)
+  - **Other (4 places):**
+    - Taunton State Hospital - Library of Congress HABS
+    - Hammond Castle (Gloucester) - History of Massachusetts
+    - Spider Gates Cemetery (Leicester) - Find A Grave
+  - Massachusetts now has 49 of 55 places with images (89% coverage)
+  - Remaining 6 places without images: Witch Dungeon Museum, Murphy Funeral Home, Sparrow House, Freetown State Forest, S.S. Pierce Building, Dogtown Common (limited free image sources available)
+
+- **New York Images - 20 Places (100% Coverage)**
+  - Found and uploaded images for all 20 New York places that were missing images
+  - Image sources: Library of Congress, I Love NY tourism, Historic Hotels, APA Foundation, NY Ghosts, Old House Calling, Pomeroy Foundation
+  - Previously completed (13 places):
+    - **Morris-Jumel Mansion** (Manhattan) - Library of Congress (1952 photo)
+    - **Rolling Hills Asylum** (East Bethany) - I Love NY
+    - **Canfield Casino** (Saratoga Springs) - City of Saratoga Springs
+    - **Fort William Henry Museum** (Lake George) - I Love NY
+    - **Sagamore Resort** (Bolton Landing) - Historic Hotels
+    - **Landmark Theatre** (Syracuse) - Library of Congress
+    - **Conference House** (Staten Island) - Library of Congress (Carol M. Highsmith)
+    - **Montauk Manor** (Montauk) - Oyster.com
+    - **House of Death** (Manhattan) - Village Preservation
+    - **Utica State Hospital** (Utica) - APA Foundation
+    - **Burn Brae Mansion** (Glen Spey) - I Love NY
+    - **Elmira Civil War Prison Camp** (Elmira) - Library of Congress
+    - **One If by Land, Two If by Sea** (Manhattan) - NY Ghosts
+  - Newly completed (7 places):
+    - **Shanley Hotel** (Napanoch) - I Love NY (exterior photo)
+    - **Lake Ronkonkoma** (Ronkonkoma) - Discover Long Island (fall scenic)
+    - **Fainting Goat Island Inn** (Nichols) - I Love NY (riverside exterior)
+    - **Nyack Haunted House** (Nyack) - Old House Calling (1890 Queen Anne Victorian)
+    - **Enslin Mansion** (Troy) - Townsquare Media (1890 haunted house)
+    - **Spook Rock Road** (Hudson/Claverack) - Pomeroy Foundation (historic marker)
+    - **Amityville Horror House** (Amityville) - 1973 historic photo
+  - New York now has 32 of 32 places with images (100% coverage)
+
+- **Florida Images - 20 Places** (continued from earlier session + new session)
+  - Found and uploaded images for all 20 Florida places that were missing images
+  - Image sources: Visit Florida, Visit St. Augustine, Visit Pensacola, Historic Pensacola, official hotel/restaurant websites, travel blogs
+  - Previously completed (4 places):
+    - **Artist House** (Key West) - artisthousekeywest.com
+    - **Capitol Theatre** (Clearwater) - Florida Trust for Historic Preservation
+    - **Cassadaga Hotel** (Cassadaga) - hotelcassadaga.com
+    - **La Concha Hotel** (Key West) - Marriott CDN
+  - Newly completed (16 places):
+    - **Dorr House** (Pensacola) - Historic Pensacola (Greek Revival house from 1871)
+    - **Greenwood Cemetery** (Orlando) - City of Orlando (angel statue)
+    - **Devil's Chair** (Cassadaga) - Orlando Haunts (brick mourning bench)
+    - **Cassadaga Spiritualist Camp** (Cassadaga) - Orlando Haunts (camp entrance)
+    - **Casablanca Inn** (St. Augustine) - Visit St. Augustine (Mediterranean Revival)
+    - **Miami River Inn** (Miami) - River Inn Miami (pastel bungalows from 1908)
+    - **St. Francis Inn** (St. Augustine) - Visit St. Augustine (oldest inn from 1791)
+    - **Hard Rock Cafe Key West** (Key West) - Enjoy Florida (Victorian mansion)
+    - **Marrero's Guest Mansion** (Key West) - Visit Florida (Victorian from 1889)
+    - **Safety Harbor Resort** (Safety Harbor) - Historic Hotels (Spanish-style from 1925)
+    - **Seville Quarter** (Pensacola) - Visit Pensacola (1870s warehouse complex)
+    - **Sunland Hospital Site** (Orlando) - Orlando Haunts (historic asylum exterior)
+    - **Ashley's Restaurant** (Rockledge) - Florida Haunted Houses (Tudor-style from 1932)
+    - **Old Town Manor** (Key West) - Oyster.com (Victorian mansion from 1886)
+    - **Ripley's Believe It or Not** (St. Augustine) - Visit St. Augustine (Castle Warden from 1887)
+    - **Key West Cemetery** (Key West) - The Marker Key West (historic cemetery from 1847)
+  - Florida now has 50 of 50 places with images (100% coverage)
+
+- **Illinois Images - 16 Places with Wikimedia Commons**
+  - Found and uploaded images for 16 Illinois places using Wikipedia API
+  - Image sources: Wikimedia Commons (Creative Commons licensed)
+  - Places with new images:
+    - **Congress Plaza Hotel** (Chicago) - Historic hotel exterior
+    - **Jane Addams Hull-House Museum** (Chicago) - Historic building from LOC
+    - **Bachelor's Grove Cemetery** (Midlothian) - Famous haunted cemetery
+    - **Lincoln Park Zoo** (Chicago) - Zoo entrance
+    - **Iroquois Theatre Site** (Chicago) - Historic theater photo
+    - **Old Joliet Prison** (Joliet) - Prison exterior
+    - **Two Brothers Roundhouse** (Aurora) - Historic roundhouse building
+    - **McPike Mansion** (Alton) - Victorian mansion
+    - **Ruebel Hotel** (Grafton) - Historic hotel building
+    - **Lincoln's Tomb** (Springfield) - Monument exterior
+    - **Illinois Executive Mansion** (Springfield) - Governor's residence
+    - **Peoria State Hospital** (Bartonville) - Historic asylum
+    - **Elgin State Hospital** (Elgin) - Mental health center
+    - **Hotel Baker** (St. Charles) - Art Deco hotel
+    - **St. Valentine's Day Massacre Site** (Chicago) - Historic photo
+    - **Turner Hall** (Galena) - Historic district building
+  - Illinois now has 25 of 40 places with images (62.5% coverage)
+  - Remaining 15 places are smaller local establishments without Wikipedia pages
+
+- **Illinois Images - Final 15 Places (100% Complete)**
+  - Found and uploaded images for all remaining 15 Illinois places
+  - Image sources: Official restaurant/bar websites, historical markers, tourism sites, news archives
+  - Places with new images:
+    - **H.H. Holmes Murder Castle Site** (Chicago) - Clio (Englewood Post Office, 1938)
+    - **Red Lion Pub** (Chicago) - Official website (Lincoln Park establishment)
+    - **The Golden Dagger** (Chicago) - Block Club Chicago (2447 N. Halsted, 1894 building)
+    - **Hooters River North** (Chicago) - CBS Chicago (660 N. Wells St exterior)
+    - **Mineral Springs Hotel** (Alton) - Rivers and Routes tourism site
+    - **First Unitarian Church** (Alton) - Harvard Divinity School Library
+    - **Springfield Theatre Centre** - Visit Springfield (Muni Opera building)
+    - **DeSoto House Hotel** (Galena) - Visit Galena (1855 historic hotel)
+    - **Ryan Mansion** (Galena) - Library of Congress (Carol M. Highsmith)
+    - **Greenwood Cemetery** (Decatur) - Find A Grave (Greenwood Memorial Park)
+    - **Avon Theatre** (Decatur) - Cinema Treasures (1916 theater)
+    - **Raven's Grin Inn** (Mount Carroll) - Roadside America (haunted house attraction)
+    - **The Great Escape Restaurant** (Schiller Park) - Tagvenue (1889 building)
+    - **Fireside Restaurant and Lounge** (Chicago) - Official website
+    - **The Irish Legend** (Willow Springs) - Official website (Archer Ave)
+  - **Illinois now has 40 of 40 places with images (100% coverage)**
+
+- **California Images - Final 11 Places**
+  - Found and uploaded images for 11 California places that were missing images
+  - Image sources: Library of Congress, Wikimedia Commons, official websites, local blogs
+  - Places with new images:
+    - **Agnews State Hospital Site** (Santa Clara) - LOC Historic American Buildings Survey
+    - **Ghost Tree 17-Mile Drive** (Pebble Beach) - Pebble Beach official site
+    - **Old Orange County Courthouse** (Santa Ana) - OC Parks
+    - **Big Yellow House** (Summerland) - Weird California
+    - **Arana Gulch** (Santa Cruz) - City of Santa Cruz
+    - **California's Great America** (Santa Clara) - Six Flags official site
+    - **Monterey Hotel** (Monterey) - California Through My Lens blog
+    - **Grandview Restaurant** (San Jose) - Content Magazine
+    - **Santa Teresa County Park** (San Jose) - Local hiking website
+    - **Hicks Road** (San Jose) - WisdomPortal (showing characteristic oak trees)
+    - **Quimby Road** (San Jose) - Alameda Post (Halls Valley views)
+  - **Marsh Road** (Milpitas) - Tom Mangan blog (actual road landscape)
+  - **Ocean Street (The White Lady)** (Santa Cruz) - Visit Santa Cruz / Garrick Ramirez (Walnut Ave Victorians)
+  - California now has 49 of 49 places with images (100% coverage)
+
+### Fixed
+- **Santa Clara University** - Replaced corrupted 90-byte image with proper Mission Santa Clara photo from California Mission Guide
+
+---
+
 ## 2026-01-16
 
 ### Changed
