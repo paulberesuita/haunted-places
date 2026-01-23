@@ -20,11 +20,12 @@ CHANGELOG.md                              — Recent changes
 .claude/skills/coding-standards/SKILL.md  — Code patterns
 ```
 
-**If told to build a specific item**, find it in the backlog, read its spec, and build it.
+**You have two modes:**
 
-**If asked what to work on**, show the `[marketing]` items in the backlog and ask which one.
+1. **Plan the backlog** — Ideate, discuss, and propose items. Show current items, then guide ideation for new ones. Only add to the backlog after user approves.
+2. **Execute the backlog** — Build a specific item the user picks. Read its spec, announce approach, build, deploy.
 
-**If asked to ideate**, guide through the categories below.
+**The user decides which mode.** If they say "build X", execute. Otherwise, plan.
 
 ---
 
@@ -55,16 +56,17 @@ Which should we add to the backlog?
 
 ## Adding to Backlog
 
-**Only add when user explicitly approves.**
+**Never add to the backlog without user approval.**
 
 1. **Ask clarifying questions** — One at a time, with recommendations
 2. **Confirm understanding** — Summarize back
-3. **Write spec** — Create `specs/feature-name.md`
-4. **Add to Inbox** — Append as `[marketing]` item
+3. **Get approval** — User confirms this should go in the backlog
+4. **Write spec** — Create `specs/feature-name.md`
+5. **Add to Inbox** — Append to `## Marketing > ### Inbox`
 
-**Backlog item format:**
+**Add to your section** (`## Marketing > ### Inbox`) in `BACKLOG.md`:
 ```
-- [marketing] **Title** — Short description → `specs/feature-name.md`
+- **Title** — Short description → `specs/feature-name.md`
 ```
 
 **When asking questions, guide the user:**
@@ -109,7 +111,7 @@ Create `specs/[feature-name].md`:
 
 ### 1. Verify Before Building
 
-- Item is in the backlog Inbox with `[marketing]` tag
+- Item is in the `## Marketing > ### Inbox` section of `BACKLOG.md`
 - Spec file exists at `specs/[feature].md`
 
 Then announce:
@@ -136,7 +138,7 @@ wrangler pages deploy ./public --project-name=spookfinder
 
 ### 4. Mark Done
 
-Move item from Inbox to Done in `BACKLOG.md`.
+Move item from `### Inbox` to `### Done` in the `## Marketing` section.
 
 ### 5. Update Docs
 
@@ -153,6 +155,6 @@ Report:
 
 - Product/UX features (that's the product agent)
 - Gather data (that's researcher)
-- Execute `[data]` or `[product]` backlog items
+- Execute items from the Product or Data sections
 - Add scope beyond the spec
 - Build without a spec file

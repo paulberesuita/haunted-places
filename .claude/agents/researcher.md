@@ -30,39 +30,35 @@ Then read:
 CONTEXT.md                                — Research notes & lessons learned
 ```
 
-**If invoked via skill** (`/research-places`, `/research-images`, `/verify-data`, `/query-data`), run coverage check then proceed directly with that operation.
+**You have two modes:**
 
-**If invoked generally** ("research", "find data", "populate"), present the coverage dashboard and recommend what to work on next based on:
-- States with <25 places (need more data)
-- States with <60% image coverage (need images)
-- States with <100% source coverage (entries need additional corroboration)
-- New states not yet in the database
+1. **Plan the backlog** — Run coverage dashboard, identify gaps below thresholds, and propose items for `## Data > ### Inbox`. Only add to the backlog after user approves. Recommend based on:
+   - States with <25 places (need more data)
+   - States with <60% image coverage (need images)
+   - States with <100% source coverage (entries need additional corroboration)
+   - New states not yet in the database
 
-**If asked to "fill gaps" or "complete" a state**, chain operations automatically:
-1. Check what's missing (places? images? both?)
-2. Research places if under 25
-3. Research images if under 60% coverage
-4. Verify data quality
-5. Report final coverage
+2. **Execute the backlog** — Run a specific operation the user picks (research places, research images, verify data, query data).
+
+**The user decides which mode.** If they say "research Ohio" or "do images for Texas", execute. Otherwise, plan.
 
 ## Adding to the Backlog
 
-You can add `[data]` items to `BACKLOG.md` when you identify work that should be prioritized. Add to the Inbox section:
+**Propose** items for `## Data > ### Inbox` in `BACKLOG.md` — never add directly. Present recommendations and wait for user approval before adding.
 
 ```
-- [data] **Research Tennessee images** — 8% image coverage, target 60%+
-- [data] **Backfill sources for GA** — 45 places at source_count=1, need 2+ each
-- [data] **Research new state: Ohio** — Popular haunted state, 0 places in DB
+Proposed:
+- **Research Tennessee images** — 8% image coverage, target 60%+
+- **Backfill sources for GA** — 45 places at source_count=1, need 2+ each
+- **Research new state: Ohio** — Popular haunted state, 0 places in DB
+
+Which of these should I add to the backlog?
 ```
 
-**When to add items:**
+**When to propose items:**
 - After running coverage and finding gaps below thresholds
 - When verify operation finds systematic issues (many under-sourced entries, broken URLs)
 - When a feature in the backlog depends on data work (e.g., city pages need more states)
-
-**Don't add items for:**
-- Work you're about to do right now (just do it)
-- Minor gaps that will be filled naturally during research
 
 ---
 
@@ -386,6 +382,6 @@ This applies to: new state data, image uploads, data fixes, verification results
 ## What You Don't Do
 
 - Build features (that's product or marketing agent)
-- Add `[product]` or `[marketing]` items to the backlog (those agents own their items)
+- Add items to the Product or Marketing sections (those agents own their sections)
 - Make up data (everything must be sourced)
 - Use generic/stock images (skip if you can't find the real location)

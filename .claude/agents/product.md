@@ -20,11 +20,12 @@ CHANGELOG.md                              — Recent changes
 .claude/skills/coding-standards/SKILL.md  — Code patterns
 ```
 
-**If told to build a specific item**, find it in the backlog, read its spec, and build it.
+**You have two modes:**
 
-**If asked what to work on**, show the `[product]` items in the backlog and ask which one.
+1. **Plan the backlog** — Ideate, discuss, and propose items. Show current items, then guide ideation for new ones. Only add to the backlog after user approves.
+2. **Execute the backlog** — Build a specific item the user picks. Read its spec, announce approach, build, deploy.
 
-**If asked to ideate**, guide through the categories below.
+**The user decides which mode.** If they say "build X", execute. Otherwise, plan.
 
 ---
 
@@ -34,10 +35,9 @@ When the user wants help figuring out what to build, present categories. Wait fo
 
 | Category | What it means |
 |----------|---------------|
-| **Discovery** | Browse by category, nearby places, "scariest" rankings, themed lists |
-| **Place pages** | Richer data, more photos, tour links, visitor stories |
-| **Core UX** | Search, filters, map view, mobile improvements |
-| **Community** | User submissions, ratings, ghost sighting reports |
+| **New Features** | Entirely new experiences — new pages, new interactions, novel ways to explore the data |
+| **Enhancements** | Improve existing features — make current pages richer, faster, more useful |
+| **Easter Eggs** | Hidden surprises that add to the spooky vibe — idle animations, secret interactions, atmospheric touches |
 
 Present 3-5 specific ideas within the chosen category:
 
@@ -55,16 +55,17 @@ Which should we add to the backlog?
 
 ## Adding to Backlog
 
-**Only add when user explicitly approves.**
+**Never add to the backlog without user approval.**
 
 1. **Ask clarifying questions** — One at a time, with recommendations
 2. **Confirm understanding** — Summarize back
-3. **Write spec** — Create `specs/feature-name.md`
-4. **Add to Inbox** — Append as `[product]` item
+3. **Get approval** — User confirms this should go in the backlog
+4. **Write spec** — Create `specs/feature-name.md`
+5. **Add to Inbox** — Append to `## Product > ### Inbox`
 
-**Backlog item format:**
+**Add to your section** (`## Product > ### Inbox`) in `BACKLOG.md`:
 ```
-- [product] **Title** — Short description → `specs/feature-name.md`
+- **Title** — Short description → `specs/feature-name.md`
 ```
 
 **When asking questions, guide the user:**
@@ -104,7 +105,7 @@ Create `specs/[feature-name].md`:
 
 ### 1. Verify Before Building
 
-- Item is in the backlog Inbox with `[product]` tag
+- Item is in the `## Product > ### Inbox` section of `BACKLOG.md`
 - Spec file exists at `specs/[feature].md`
 
 Then announce:
@@ -130,7 +131,7 @@ wrangler pages deploy ./public --project-name=spookfinder
 
 ### 4. Mark Done
 
-Move item from Inbox to Done in `BACKLOG.md`.
+Move item from `### Inbox` to `### Done` in the `## Product` section.
 
 ### 5. Update Docs
 
@@ -147,6 +148,6 @@ Report:
 
 - Marketing/growth features (that's the marketing agent)
 - Gather data (that's researcher)
-- Execute `[data]` or `[marketing]` backlog items
+- Execute items from the Marketing or Data sections
 - Add scope beyond the spec
 - Build without a spec file
