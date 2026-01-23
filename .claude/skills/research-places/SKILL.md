@@ -63,6 +63,8 @@ Follow the "Operation: Research Places" workflow from your agent definition:
 ## Remember
 
 - Don't make up data — everything must be sourced
+- **Minimum 2 independent sources per place** — skip any place that can't be corroborated
+- Track all source URLs per place in the `sources` JSON array and set `source_count`
 - Write detailed ghost_story with specific names, dates, paranormal claims
 - Use established categories only
 - Update both CONTEXT.md and CHANGELOG.md when done

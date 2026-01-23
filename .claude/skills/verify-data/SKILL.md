@@ -36,6 +36,9 @@ Follow the "Operation: Verify Data" workflow from your agent definition:
 
    # Image coverage
    npx wrangler d1 execute haunted-places-db --remote --command "SELECT state, COUNT(*) as total, SUM(CASE WHEN image_url IS NOT NULL AND image_url != '' THEN 1 ELSE 0 END) as with_images FROM places GROUP BY state;"
+
+   # Under-sourced entries (need additional corroboration)
+   npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name, state, source_count FROM places WHERE source_count < 2 OR source_count IS NULL ORDER BY state;"
    ```
 
 2. **Report findings** — Summarize issues found
@@ -53,6 +56,7 @@ Follow the "Operation: Verify Data" workflow from your agent definition:
 - **Missing addresses** — address is NULL
 - **Category typos** — Not using established categories
 - **Image coverage** — Places without images
+- **Under-sourced entries** — source_count < 2 (need additional corroboration)
 
 ## Remember
 
