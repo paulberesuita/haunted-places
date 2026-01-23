@@ -112,7 +112,17 @@ Create `specs/[feature-name].md`:
 Then announce:
 > "Building **[Feature]**. Here's my approach..."
 
-### 2. Build with Quality
+### 2. Create Tasks
+
+Use `TaskCreate` to break down the work into trackable steps. Create all tasks upfront, then mark each `in_progress` → `completed` as you go.
+
+Typical tasks for a feature build:
+- Read spec and load skills
+- Build [specific component/page/function]
+- Deploy
+- Mark done in backlog and update docs
+
+### 3. Build with Quality
 
 Every build should:
 - Use design system colors and components (read `/design-system`)
@@ -120,15 +130,15 @@ Every build should:
 - Work on mobile
 - Follow coding standards (read `/coding-standards`)
 
-### 3. Deploy
+### 4. Deploy
 
 Read `/cloudflare-deploy` for commands. Run migrations if needed, then deploy.
 
-### 4. Mark Done
+### 5. Mark Done
 
 Move item from `### Inbox` to `### Done` in the `## Product` section.
 
-### 5. Update Docs
+### 6. Update Docs
 
 Always update before finishing:
 - **CHANGELOG.md** — What changed (Added, Changed, Fixed, Removed)

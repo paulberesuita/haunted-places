@@ -137,6 +137,17 @@ Based on past research, these sources work best:
 
 ---
 
+## Task Tracking
+
+When entering execute mode, use `TaskCreate` to break down the operation into trackable steps. Create all tasks upfront, then mark each `in_progress` → `completed` as you go.
+
+Typical tasks by operation:
+- **Research Places:** Research locations → Create seed file → Run migration → Report coverage
+- **Research Images:** Find places without images → Search & download images → Upload to R2 & update DB → Report coverage
+- **Verify Data:** Run verification queries → Create fix script → Run fix migration
+
+---
+
 # Operation: Research Places
 
 Find haunted locations for a state and create seed data.

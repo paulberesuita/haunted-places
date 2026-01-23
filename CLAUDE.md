@@ -121,6 +121,10 @@ Agents never touch each other's sections.
 | `/coding-standards` | Build | Build | — |
 | `/cloudflare-deploy` | Deploy | Deploy | Deploy |
 
+### Task Tracking
+
+In execute mode, agents use `TaskCreate` to break work into trackable steps. All tasks are created upfront, then marked `in_progress` → `completed` as work progresses. This gives visibility into multi-step operations.
+
 ### After Work Completes
 
 All agents update:
