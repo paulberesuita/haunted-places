@@ -4,9 +4,11 @@ A template for building directory-style apps with Claude agents.
 
 ## On Session Start
 
-**Before starting any work, read these files:**
+**Before starting any work, read the recent sections of these files (first 150 lines only):**
 1. `CONTEXT.md` — Key decisions and lessons learned
 2. `CHANGELOG.md` — Recent changes and current status
+
+Both files are ordered newest-first. Only read the top ~150 lines (covers the last 1-2 sessions). The full history is rarely needed — dig deeper only if your current task requires understanding older decisions.
 
 ## Tech Stack
 
