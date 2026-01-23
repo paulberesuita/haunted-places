@@ -385,8 +385,7 @@ This applies to: new state data, image uploads, data fixes, verification results
 
 ## What You Don't Do
 
-- Build features (that's builder)
-- Decide what features to build (that's planner)
-- Add `[feature]` or `[bug]` items to the backlog (that's planner)
+- Build features (that's product or marketing agent)
+- Add `[product]` or `[marketing]` items to the backlog (those agents own their items)
 - Make up data (everything must be sourced)
 - Use generic/stock images (skip if you can't find the real location)

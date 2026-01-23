@@ -30,8 +30,8 @@ A template for building directory-style apps with Claude agents.
 ├── examples/               # Starter templates to copy from
 ├── .claude/
 │   ├── agents/             # Agent definitions
-│   │   ├── planner.md      # Plans features, maintains backlog
-│   │   ├── builder.md      # Builds from backlog, deploys
+│   │   ├── product.md      # Product features: ideate, spec, build, deploy
+│   │   ├── marketing.md    # Marketing features: ideate, spec, build, deploy
 │   │   └── researcher.md   # Gathers data, stores in D1/R2
 │   └── skills/
 │       ├── design-system/      # /design-system
@@ -96,8 +96,8 @@ Agents are specialized assistants. Invoke by trigger words.
 
 | Agent | Purpose | Triggers |
 |-------|---------|----------|
-| **planner** | Plans features, maintains backlog | "plan", "backlog", "prioritize" |
-| **builder** | Builds from backlog, deploys | "build", "implement", "ship" |
+| **product** | Product features end-to-end: ideate, spec, build, deploy | "product", "build", "implement", "ship" |
+| **marketing** | Marketing features end-to-end: ideate, spec, build, deploy | "marketing", "seo", "growth", "traffic" |
 | **researcher** | Gathers data, stores in D1/R2 | "research", "find data", "populate" |
 
 **Agents read skills for reference** — design-system, coding-standards, cloudflare-deploy.
