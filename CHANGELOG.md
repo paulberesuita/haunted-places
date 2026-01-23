@@ -7,6 +7,18 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-23
 
 ### Added
+- **Multi-Source Tracking for Data Trust** — New `sources` (JSON array) and `source_count` columns on places table
+  - Migration `005_add_sources.sql` adds columns and backfills existing entries from `source_url`
+  - Researcher agent now requires minimum 2 independent sources before including a place
+  - Coverage dashboard tracks source coverage percentage per state
+  - Verify operation flags under-sourced entries (source_count < 2)
+
+### Changed
+- **Researcher Agent** — Updated to collect and store multiple source URLs per place
+  - New seed file template includes `sources` and `source_count` fields
+  - Quality thresholds now require `source_count >= 2` for completeness
+  - Coverage dashboard shows `well_sourced` and `source_pct` columns
+
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)
   - Ghost SVG icon markers with Leaflet.markercluster for clustering

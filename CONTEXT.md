@@ -6,6 +6,22 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### Multi-Source Tracking for Data Trust
+
+Added `sources` and `source_count` columns to improve confidence in the data. The researcher agent uses LLM-powered web searches to compile entries, which creates two trust problems: (1) does the place actually exist? and (2) is the ghost story real folklore or hallucinated? Multiple independent sources corroborating the same claims filters out both.
+
+**Key decisions:**
+- **JSON array on existing table** — Chose `sources TEXT` (JSON array) over a separate `sources` table. Simpler schema, no joins, and the researcher agent just collects URLs as it goes.
+- **Minimum 2-source rule** — New places must be corroborated by 2+ independent sources before inclusion. Single-source entries are skipped.
+- **Kept `source_url` for backwards compatibility** — Still populated as the "primary" source. New `sources` array contains all URLs including the primary.
+- **`source_count` as denormalized field** — Could be derived from JSON array length, but having it as a column makes coverage queries fast without JSON parsing in SQLite.
+
+**Backfill strategy:** Existing 753 entries set to `source_count = 1` with their `source_url` wrapped in a JSON array. The verify operation flags these for additional corroboration over time.
+
+**What this doesn't solve:** The agent could still save a valid URL that doesn't actually support specific claims in the ghost_story. Source count helps with existence verification but not claim-level accuracy.
+
+---
+
 ### Boo Map Feature Planning
 
 Planned an interactive map feature ("Boo Map") as a free marketing tool to attract visitors via "haunted places near me" and visual browsing.
