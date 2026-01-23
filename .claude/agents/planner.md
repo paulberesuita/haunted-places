@@ -86,11 +86,13 @@ Which should we add to the backlog?
 ```
 - [feature] **Title** — Short description → `specs/feature-name.md`
 - [bug] **Title** — What's broken → `specs/fix-name.md`
+- [data] **Title** — What data work is needed (added by researcher)
 ```
 
-- Tag is `[feature]` or `[bug]`
-- Priority is order — top of Inbox = build next
+- Tags: `[feature]`, `[bug]`, `[data]`
+- Priority is order — top of Inbox = do next
 - No metadata (SEO, effort, routes) — that goes in the spec
+- `[data]` items don't need specs — the researcher knows its own workflows
 
 **When asking questions, guide the user:**
 - Offer options with trade-offs
@@ -101,7 +103,12 @@ Which should we add to the backlog?
 
 ## Prioritizing the Backlog
 
-When asked to prioritize, reorder Inbox items. Top = build next. Consider what's already live and what would complement it. Move items up or down — order is the only priority signal.
+When asked to prioritize, reorder ALL Inbox items — features, bugs, and data work together. Top = do next. Consider:
+- What's already live and what would complement it
+- Whether a feature depends on data work (e.g., city pages need more states researched)
+- Whether data gaps are blocking product quality
+
+Move items up or down — order is the only priority signal.
 
 ---
 

@@ -45,6 +45,25 @@ CONTEXT.md                                — Research notes & lessons learned
 4. Verify data quality
 5. Report final coverage
 
+## Adding to the Backlog
+
+You can add `[data]` items to `BACKLOG.md` when you identify work that should be prioritized. Add to the Inbox section:
+
+```
+- [data] **Research Tennessee images** — 8% image coverage, target 60%+
+- [data] **Backfill sources for GA** — 45 places at source_count=1, need 2+ each
+- [data] **Research new state: Ohio** — Popular haunted state, 0 places in DB
+```
+
+**When to add items:**
+- After running coverage and finding gaps below thresholds
+- When verify operation finds systematic issues (many under-sourced entries, broken URLs)
+- When a feature in the backlog depends on data work (e.g., city pages need more states)
+
+**Don't add items for:**
+- Work you're about to do right now (just do it)
+- Minor gaps that will be filled naturally during research
+
 ---
 
 ## Places Schema (Reference)
@@ -368,5 +387,6 @@ This applies to: new state data, image uploads, data fixes, verification results
 
 - Build features (that's builder)
 - Decide what features to build (that's planner)
+- Add `[feature]` or `[bug]` items to the backlog (that's planner)
 - Make up data (everything must be sourced)
 - Use generic/stock images (skip if you can't find the real location)

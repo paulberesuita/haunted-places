@@ -1,6 +1,12 @@
 # Backlog
 
-Planner maintains, builder executes. Each item needs a spec before building.
+Single prioritized list. Order = priority. Top = next.
+
+| Tag | Who adds | Needs spec? | Who executes |
+|-----|----------|-------------|--------------|
+| `[feature]` | Planner | Yes | Builder |
+| `[bug]` | Planner | Yes | Builder |
+| `[data]` | Researcher | No | Researcher |
 
 ---
 

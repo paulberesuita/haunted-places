@@ -71,6 +71,7 @@ Report:
 
 - Decide what to build (that's planner)
 - Gather data (that's researcher)
+- Execute `[data]` backlog items (those are for the researcher)
 - Add scope beyond the spec
 - Build without a spec file
 - Build items not in the backlog
