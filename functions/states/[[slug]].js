@@ -181,7 +181,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
           },
           colors: {
             'dark': '#0a0a0f',
-            'dark-card': '#141419',
+            'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
@@ -208,8 +208,9 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
       object-fit: cover;
       z-index: -1;
       pointer-events: none;
@@ -1032,7 +1033,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
           colors: {
             'dark': '#0a0a0f',
-            'dark-card': '#141419',
+            'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
@@ -1057,13 +1058,17 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
       object-fit: cover;
       z-index: -1;
       pointer-events: none;
     }
-    html { background: #0a0a0f; overflow-x: hidden; }
+    html {
+      background: #0a0a0f;
+      overflow-x: hidden;
+    }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
     }

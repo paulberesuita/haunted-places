@@ -41,29 +41,91 @@ Show the user which states need images:
 
 ## Process
 
-Follow the "Operation: Research Images" workflow from your agent definition:
+**CRITICAL: Each image must be downloaded fresh, uploaded to R2, and database updated IMMEDIATELY — do not batch or defer.**
 
-1. **Find places without images**
-   ```bash
-   npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name, city FROM places WHERE state = '[STATE]' AND (image_url IS NULL OR image_url = '') LIMIT 20;"
-   ```
+### Step 1: Find places needing images
+```bash
+npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name, city FROM places WHERE state = '[STATE]' AND (image_url IS NULL OR image_url = '') LIMIT 20;"
+```
 
-2. **For each place:**
-   - Search WebSearch: "[place name] [city] wikimedia commons" or "[place name] photo"
-   - Prefer: Wikimedia Commons > Official sites > Public domain
-   - Download to `temp/[slug].jpg`
-   - Upload to R2: `wrangler r2 object put haunted-places-images/[slug].jpg --file=./temp/[slug].jpg --remote`
-   - Update DB with image_url
+### Step 2: For EACH place (do all 3 steps before moving to next place):
 
-3. **Update CHANGELOG.md** — Document images added
+**A. Find the actual image URL**
+- Use WebSearch/WebFetch to find a photo of the ACTUAL building
+- Get the direct image URL (ending in .jpg, .png, etc.)
+- VERIFY it shows the real location before proceeding
 
-4. **Handoff** — Report how many images uploaded, how many still missing
+**B. Download, upload to R2, update DB — ALL IN ONE GO:**
+```bash
+# Download fresh (use unique timestamp to avoid cached files)
+curl -L "[IMAGE_URL]" -o temp/[slug]-new.jpg
+
+# Upload to R2 IMMEDIATELY
+npx wrangler r2 object put haunted-places-images/places/[slug].jpg --file=./temp/[slug]-new.jpg --remote
+
+# Update database IMMEDIATELY
+npx wrangler d1 execute haunted-places-db --remote --command "UPDATE places SET image_url = 'places/[slug].jpg' WHERE slug = '[slug]';"
+```
+
+**C. Verify the upload worked:**
+```bash
+curl -sI "https://spookfinder.pages.dev/images/places/[slug].jpg" | head -3
+```
+
+### Step 3: Update CHANGELOG.md — Document images added
+
+### Step 4: Deploy to both environments
+
+**Always deploy after adding images:**
+
+```bash
+# Deploy to production (spookfinder.com)
+wrangler pages deploy ./public --project-name=spookfinder
+```
+
+Note: R2 images and D1 database changes are already live (using `--remote`). This deploy ensures any frontend changes are synced.
+
+### Step 5: Handoff — Report results with verification URLs
+
+Include both URLs for verification:
+- **Preview:** `https://spookfinder.pages.dev/images/places/[slug].jpg`
+- **Production:** `https://spookfinder.com/images/places/[slug].jpg`
+
+## Search Strategy
+
+**Use specific search terms to find the actual location:**
+
+```
+"[exact place name]" [city] [state] building
+"[exact place name]" [city] exterior photo
+"[exact place name]" wikimedia commons
+"[exact place name]" flickr creative commons
+```
+
+**For specific categories:**
+- **Cemeteries:** Search Find A Grave for the cemetery name
+- **Hotels/Restaurants:** Check their official website, Facebook, or TripAdvisor
+- **Historic sites:** Search "[name] national register historic places"
+- **Mansions/Museums:** Search "[name] historic house" or "[name] museum"
 
 ## Image Sources (Priority Order)
 
-1. **Wikimedia Commons** — Creative Commons licensed, safest
-2. **Official site images** — From the place's own website
-3. **Public domain historical photos** — Library of Congress, state archives
+**IMPORTANT: We want photos of the ACTUAL location, not generic atmosphere shots.**
+
+1. **Wikimedia Commons** — Creative Commons licensed, safest. Search: `site:commons.wikimedia.org "[place name]"`
+2. **Official website/social media** — The venue's own site, Facebook page, or Google Business listing
+3. **Google Maps/Street View** — Screenshot of the actual building (if no better option)
+4. **Flickr Creative Commons** — Search with license filter: `site:flickr.com "[place name]" creative commons`
+5. **Find A Grave** — For cemeteries specifically: `site:findagrave.com "[cemetery name]"`
+6. **State/local historical societies** — Often have archival photos
+7. **TripAdvisor/Yelp user photos** — Real photos from visitors
+8. **Library of Congress / state archives** — Historical photos in public domain
+
+## Last Resort Only
+
+9. **Unsplash** — ONLY use if all above sources fail AND you can find a photo that's clearly labeled as that specific location (not just a generic spooky building)
+
+**If you cannot find an image of the actual place, skip it and note it in the handoff.** A missing image is better than a wrong image.
 
 ## Remember
 

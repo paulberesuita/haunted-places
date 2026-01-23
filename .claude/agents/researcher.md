@@ -140,51 +140,80 @@ Add entry with research approach, sources, category breakdown, notable stories.
 
 Find and upload images for existing places that don't have them.
 
+**CRITICAL: We want photos of the ACTUAL location, not generic stock/atmosphere photos.**
+
 ## 1. Find Places Without Images
 
 ```bash
 # Query places missing images for a state
-npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name, city FROM places WHERE state = 'XX' AND (image_url IS NULL OR image_url = '') LIMIT 20;"
+npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name, city, category FROM places WHERE state = 'XX' AND (image_url IS NULL OR image_url = '') LIMIT 20;"
 ```
 
-## 2. For Each Place
+## 2. Search Strategy
 
-### Search for Images
-Use WebSearch: "[place name] [city] photo" or "[place name] wikimedia commons"
+**Use specific search terms to find the actual building/location:**
 
-**Preferred sources (in order):**
-1. Wikimedia Commons (Creative Commons licensed)
-2. Official site images
-3. Public domain historical photos
+```
+"[exact place name]" [city] [state] building
+"[exact place name]" [city] exterior photo
+"[exact place name]" wikimedia commons
+"[exact place name]" flickr creative commons
+```
 
-### Download Image
+**Category-specific searches:**
+- **Cemeteries:** `site:findagrave.com "[cemetery name]"`
+- **Hotels/Restaurants:** Check official website, Facebook, TripAdvisor
+- **Historic sites:** `"[name]" national register historic places`
+- **Mansions/Museums:** `"[name]" historic house` or `"[name]" museum`
+
+## 3. Image Sources (Priority Order)
+
+1. **Wikimedia Commons** — `site:commons.wikimedia.org "[place name]"`
+2. **Official website/social media** — Venue's own site, Facebook, Google Business
+3. **Google Maps/Street View** — Screenshot of actual building
+4. **Flickr Creative Commons** — `site:flickr.com "[place name]" creative commons`
+5. **Find A Grave** — For cemeteries: `site:findagrave.com "[cemetery name]"`
+6. **State/local historical societies** — Archival photos
+7. **TripAdvisor/Yelp** — Real visitor photos
+8. **Library of Congress / state archives** — Public domain historical
+
+### Last Resort Only
+9. **Unsplash** — ONLY if all above fail AND the photo is clearly labeled as that specific location
+
+**If you cannot find an image of the actual place, SKIP IT.** A missing image is better than a wrong image.
+
+## 4. Verify Before Downloading
+
+Before downloading any image, verify:
+- [ ] Image shows the **actual building/location** (not a generic spooky photo)
+- [ ] Image is clearly identifiable as that specific place
+- [ ] License allows use (Creative Commons, public domain, or fair use)
+
+## 5. Download, Upload, and Update — ALL IN ONE GO
+
+**CRITICAL: Do NOT batch. For each place, complete all steps before moving to the next.**
+
 ```bash
-curl -L "[image_url]" -o temp/[slug].jpg
+# 1. Download fresh image (use -new suffix to avoid cached files)
+curl -L "[ACTUAL_IMAGE_URL]" -o temp/[slug]-new.jpg
+
+# 2. Upload to R2 IMMEDIATELY
+npx wrangler r2 object put haunted-places-images/places/[slug].jpg --file=./temp/[slug]-new.jpg --remote
+
+# 3. Update database IMMEDIATELY
+npx wrangler d1 execute haunted-places-db --remote --command "UPDATE places SET image_url = 'places/[slug].jpg' WHERE slug = '[slug]';"
+
+# 4. Verify it's live
+curl -sI "https://spookfinder.pages.dev/images/places/[slug].jpg" | head -3
 ```
 
-### Upload to R2
-```bash
-npx wrangler r2 object put haunted-places-images/[slug].jpg --file=./temp/[slug].jpg --remote
-```
+**Why no batching?** Batching causes errors — old cached files get uploaded instead of new ones, SQL scripts reference wrong files, etc. Do each place end-to-end before starting the next.
 
-### Update Database
-```bash
-npx wrangler d1 execute haunted-places-db --remote --command "UPDATE places SET image_url = '[slug].jpg' WHERE slug = '[slug]';"
-```
+## 7. Handoff
 
-## 3. Batch Approach
+> "Images ready. [X] images uploaded for [State]. [Y] places skipped (couldn't find actual location photos)."
 
-For efficiency, collect multiple images then create a single SQL update script:
-
-```sql
--- scripts/update-images-[state].sql
-UPDATE places SET image_url = 'place-1.jpg' WHERE slug = 'place-1';
-UPDATE places SET image_url = 'place-2.jpg' WHERE slug = 'place-2';
-```
-
-## 4. Handoff
-
-> "Images ready. [X] images uploaded for [State]. [Y] places still need images (couldn't find good sources)."
+List the skipped places so user knows which ones still need attention.
 
 ---
 
@@ -244,9 +273,12 @@ npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name,
 ## R2 Image Reference
 
 **Bucket:** `haunted-places-images`
-**Pattern:** `[slug].jpg`
-**Frontend URL:** `https://haunted-places.pages.dev/images/[slug].jpg`
-**Important:** Always use `--remote` flag
+**Pattern:** `places/[slug].jpg`
+**URLs:**
+- Preview: `https://spookfinder.pages.dev/images/places/[slug].jpg`
+- Production: `https://spookfinder.com/images/places/[slug].jpg`
+
+**Important:** Always use `--remote` flag for R2 and D1 commands.
 
 ---
 

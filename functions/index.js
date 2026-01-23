@@ -187,7 +187,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
           },
           colors: {
             'dark': '#0a0a0f',
-            'dark-card': '#141419',
+            'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
@@ -214,8 +214,9 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
       object-fit: cover;
       z-index: -1;
       pointer-events: none;
@@ -309,11 +310,11 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
 
     /* Image filter - grayscale with subtle grain */
     .place-img {
-      filter: url(#grain) grayscale(100%);
+      filter: url(#grain) grayscale(50%);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: url(#grain) grayscale(100%) sepia(20%) brightness(0.9);
+      filter: url(#grain) grayscale(50%) sepia(20%) brightness(0.9);
     }
 
     /* Card with animated smoke effect */
