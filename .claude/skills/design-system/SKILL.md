@@ -6,14 +6,14 @@ user_invokable: true
 
 # Design System
 
-Tailwind CSS foundation with custom colors. No gradients.
+Dark, spooky but modern aesthetic. Tailwind CSS CDN with custom colors. No gradients.
 
 ## Setup
 
-Add to `<head>`:
+Add to `<head>` in every SSR function:
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -23,13 +23,13 @@ Add to `<head>`:
           sans: ['Inter', 'system-ui', 'sans-serif'],
         },
         colors: {
-          'accent': '#1c1917',
-          'accent-hover': '#292524',
-          'muted': '#78716c',
-          'error': '#dc2626',
-          'error-bg': '#fef2f2',
-          'success': '#16a34a',
-          'success-bg': '#f0fdf4',
+          'dark': '#0a0a0f',
+          'dark-card': '#1a1a2e',
+          'dark-border': '#2a2a35',
+          'accent': '#e94560',
+          'accent-hover': '#ff6b6b',
+          'muted': '#6b7280',
+          'ghost': '#9ca3af',
         }
       }
     }
@@ -37,88 +37,118 @@ Add to `<head>`:
 </script>
 ```
 
+## Color Palette
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `dark` | `#0a0a0f` | Page background (`bg-dark`) |
+| `dark-card` | `#1a1a2e` | Card/section backgrounds |
+| `dark-border` | `#2a2a35` | Borders, dividers |
+| `accent` | `#e94560` | Primary action, links, highlights |
+| `accent-hover` | `#ff6b6b` | Hover state for accent |
+| `muted` | `#6b7280` | Secondary text, labels |
+| `ghost` | `#9ca3af` | Tertiary text, navigation links |
+
+**Note:** `dark-card` varies slightly between pages (`#1a1a2e` on homepage/states, `#141419` on place pages). Use `#1a1a2e` for new pages.
+
 ## Typography
 
-| Element | Classes |
-|---------|---------|
-| H1 | `text-3xl font-semibold tracking-tight` |
-| H2 | `text-2xl font-semibold tracking-tight` |
-| H3 | `text-xl font-semibold` |
-| Body | `text-base` |
-| Helper | `text-sm text-muted` |
+| Element | Classes | Font |
+|---------|---------|------|
+| Site name | `font-['Creepster'] text-2xl text-accent` | Creepster |
+| H1 (hero) | `font-['Bebas_Neue'] text-5xl md:text-7xl text-white` | Bebas Neue |
+| H2 | `text-2xl font-semibold text-white` | Inter |
+| H3 | `text-xl font-semibold text-white` | Inter |
+| Body | `text-base text-ghost` | Inter |
+| Helper | `text-sm text-muted` | Inter |
+
+## Page Layout
+
+All pages use a dark background with white/ghost text:
+
+```html
+<body class="bg-dark text-ghost min-h-screen font-sans">
+  <!-- Header -->
+  <header class="border-b border-dark-border">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="font-['Creepster'] text-2xl text-accent hover:text-accent-hover">Spookfinder</a>
+      <nav class="flex gap-6 text-sm text-ghost">
+        <a href="/states" class="hover:text-white">States</a>
+        <a href="/about" class="hover:text-white">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    ...
+  </main>
+</body>
+```
 
 ## Components
 
-### Button
+### Place Card
 
 ```html
-<!-- Primary -->
-<button class="bg-accent hover:bg-accent-hover text-white font-medium px-4 py-2 rounded-lg transition-all">
-  Button
-</button>
-
-<!-- Secondary -->
-<button class="border border-stone-300 hover:border-stone-400 text-stone-700 font-medium px-4 py-2 rounded-lg">
-  Button
-</button>
-
-<!-- Loading -->
-<button class="bg-accent text-white font-medium px-4 py-2 rounded-lg opacity-75 cursor-wait" disabled>
-  Loading...
-</button>
+<a href="/place/${slug}" class="group block bg-dark-card border border-dark-border rounded-xl overflow-hidden hover:border-accent/50 transition-all">
+  <!-- Image -->
+  <div class="aspect-[4/3] overflow-hidden">
+    <img src="/images/${image_url}" alt="${name}"
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+  </div>
+  <!-- Info -->
+  <div class="p-4">
+    <h3 class="font-semibold text-white group-hover:text-accent transition-colors">${name}</h3>
+    <p class="text-sm text-muted mt-1">${city}, ${state}</p>
+  </div>
+</a>
 ```
 
-### Card
+### Category Pill
 
 ```html
-<div class="bg-white border border-stone-200 rounded-xl p-5">
-  <h3 class="font-semibold">Title</h3>
-  <p class="text-muted mt-2">Content</p>
+<span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+  ${category}
+</span>
+```
+
+### State Filter Bar
+
+```html
+<div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
+  <a href="/states/${url}" class="text-ghost hover:text-white transition-colors whitespace-nowrap">
+    ${stateName}
+  </a>
+  <!-- Active state -->
+  <a href="/states/${url}" class="text-white transition-colors whitespace-nowrap">
+    ${activeStateName}
+  </a>
 </div>
 ```
 
-### Input
+### Ghost Emoji Placeholder (no image)
 
 ```html
-<div class="flex flex-col gap-1.5">
-  <label class="text-sm font-medium">Label</label>
-  <input type="text" placeholder="Placeholder"
-    class="border border-stone-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent" />
-  <span class="text-sm text-muted">Helper text</span>
+<div class="aspect-[4/3] bg-dark-border/30 flex items-center justify-center">
+  <span class="text-4xl opacity-50">👻</span>
 </div>
 ```
 
-### Alert
+## Images
 
-```html
-<!-- Error -->
-<div class="p-4 bg-error-bg border border-error/20 rounded-lg">
-  <p class="font-medium text-error">Something went wrong</p>
-</div>
-
-<!-- Success -->
-<div class="p-4 bg-success-bg border border-success/20 rounded-lg">
-  <p class="font-medium text-success">Saved successfully</p>
-</div>
-```
-
-### Empty State
-
-```html
-<div class="flex flex-col items-center justify-center py-16 text-center">
-  <h3 class="text-lg font-semibold mb-1">No items yet</h3>
-  <p class="text-muted mb-6">Create your first item to get started.</p>
-  <button class="bg-accent hover:bg-accent-hover text-white font-medium px-4 py-2 rounded-lg">
-    Create Item
-  </button>
-</div>
-```
+- Served from R2 via `/images/places/[slug].jpg`
+- Cards use `aspect-[4/3]` with `object-cover`
+- Hero images use full-width with dark gradient overlay for text readability
+- Lazy loading: `loading="lazy"` on card images
+- Error handling: hide broken images gracefully
 
 ## Rules
 
-1. **Use custom colors** — `accent`, `muted`, `error`, `success`
-2. **No gradients** — Solid colors only
-3. **Every list needs an empty state**
-4. **Every form needs error handling**
-5. **Every async action needs loading state**
-6. **Mobile-first** — Base is mobile, `md:` for desktop
+1. **Dark theme only** — `bg-dark` page background, light text
+2. **No gradients** — Solid colors only (except image overlays for readability)
+3. **Use custom color tokens** — `accent`, `ghost`, `muted`, `dark-card`, `dark-border`
+4. **Mobile-first** — Base is mobile, `md:` for desktop
+5. **Every list needs a ghost emoji placeholder** for items without images
+6. **SSR everything** — All content in HTML, no client-side skeleton loaders
+7. **Images first** — Sort lists to show places with images before those without

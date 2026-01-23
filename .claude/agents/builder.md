@@ -46,10 +46,10 @@ Every build should:
 
 ```bash
 # Run migrations if needed
-npx wrangler d1 execute PROJECT-db --file=./migrations/XXX.sql --remote
+npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
-# Deploy
-wrangler pages deploy ./public --project-name=PROJECT
+# Deploy (updates both spookfinder.pages.dev AND spookfinder.com)
+wrangler pages deploy ./public --project-name=spookfinder
 ```
 
 ### 3. Mark Done
