@@ -32,10 +32,12 @@ What we shipped. Builder appends here after each feature.
 
 - **Builder Agent** — Updated "Mark Done" step; knows to skip `[data]` items
 
-- **Backlog as Single Priority List** — Added `[data]` tag for researcher work alongside `[feature]`/`[bug]`
-  - Researcher can add `[data]` items based on coverage gaps
-  - Planner prioritizes all item types together
-  - Builder skips `[data]` items (researcher executes those)
+- **Agent Restructure** — Replaced planner + builder with product + marketing agents
+  - Each agent owns full lifecycle: ideate → spec → build → deploy
+  - Backlog tags: `[product]`, `[marketing]`, `[data]`
+  - Product agent: discovery, place pages, core UX, community
+  - Marketing agent: programmatic SEO, free tools, seasonal, social/viral
+  - Researcher unchanged, adds `[data]` items based on coverage gaps
 
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)

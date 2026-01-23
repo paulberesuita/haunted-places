@@ -6,6 +6,24 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### Agent Restructure — Product + Marketing Replace Planner + Builder
+
+The planner→builder handoff model had a context gap: the planner decided what to build but the builder had to re-learn the "why" from the spec. Also, product and marketing are genuinely different mindsets — one optimizes for people already on the site, the other brings new people in.
+
+**Decision:** Kill both planner and builder. Create product and marketing agents that each own their full lifecycle (ideate → spec → build → deploy).
+
+**Why this works:**
+- No handoff = no context loss
+- Each agent understands its domain deeply (product knows UX, marketing knows SEO)
+- The builder was just "follow the spec" — not enough specialized value for a separate agent
+- The planner's ideation categories split naturally into product vs marketing
+
+**Backlog tags changed:** `[feature]`/`[bug]` → `[product]`/`[marketing]`/`[data]`. Each agent only works on items with their tag. User owns priority order.
+
+**Specs still required:** The spec is the checkpoint before building. Agent proposes spec, user approves, then agent builds. No building without approval.
+
+---
+
 ### Backlog as Single Priority List
 
 The backlog was feature/bug only (planner→builder pipeline). Data work (researcher) was tracked separately via coverage dashboards. Problem: Paul had to check two places to know "what's next."
