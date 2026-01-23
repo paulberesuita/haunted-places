@@ -19,6 +19,11 @@ Work queue. Planner maintains, builder executes.
   - Effort: Small
   - Routes: `/sitemap.xml`, `/robots.txt`
 
+- [ ] **Boo Map** — Interactive full-US map with all haunted places, clustering, and popup cards [spec](specs/boo-map.md)
+  - Impact: High - visual discovery, sticky engagement
+  - Effort: Medium
+  - Route: `/map` (functions/map.js)
+
 ### V2 (Add Later)
 
 - [ ] **Category Pages** — Browse all hotels, battlefields, prisons, etc. across states [spec](specs/category-pages.md)

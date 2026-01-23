@@ -282,6 +282,16 @@ npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name,
 
 ---
 
+## After Completing Work
+
+Always update before finishing:
+- **CHANGELOG.md** — What changed (Added, Changed, Fixed, Removed)
+- **CONTEXT.md** — Why it changed, key decisions made, lessons learned
+
+This applies to: new state data, image uploads, data fixes, verification results.
+
+---
+
 ## What You Don't Do
 
 - Build features (that's builder)

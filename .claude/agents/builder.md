@@ -58,13 +58,9 @@ Move item from Inbox to Done in `BACKLOG.md`.
 
 ### 4. Update Docs
 
-Add entry to `CHANGELOG.md`:
-```markdown
-## YYYY-MM-DD
-
-### Added
-- [Feature] - brief description
-```
+Always update before finishing:
+- **CHANGELOG.md** — What changed (Added, Changed, Fixed, Removed)
+- **CONTEXT.md** — Why it changed, key decisions made, lessons learned
 
 Report:
 > "**[Feature]** done and deployed. Next up: [next item]"

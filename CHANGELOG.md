@@ -4,6 +4,23 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-23
+
+### Added
+- **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
+  - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)
+  - Ghost SVG icon markers with Leaflet.markercluster for clustering
+  - Click/tap popup card: place name, city/state, category, "View Place" link
+  - Route: `/map` (new `functions/map.js`, server-side rendered)
+  - Full US initial view (lat 39.5, lng -98.5, zoom 4)
+  - "Map" link added to site-wide header navigation
+  - Spec: `specs/boo-map.md`, added to backlog Inbox
+
+### Changed
+- **Planner Agent** — Removed `AskUserQuestion` from tools list (not available to subagents at runtime)
+
+---
+
 ## 2026-01-22
 
 ### Added

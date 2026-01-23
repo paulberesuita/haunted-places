@@ -4,7 +4,73 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-23
+
+### Boo Map Feature Planning
+
+Planned an interactive map feature ("Boo Map") as a free marketing tool to attract visitors via "haunted places near me" and visual browsing.
+
+**Key decisions:**
+- **Map provider: Leaflet + OpenStreetMap** — Zero cost at any scale, no API key management, ghost-icon markers are native, keeps stack simple (CDN-loaded like Tailwind). Mapbox rejected due to cost beyond free tier; Google Maps rejected due to billing requirement.
+- **Tile provider: CartoDB Dark Matter** — Free dark-themed tiles that give spooky vibe without needing custom Mapbox styles.
+- **Marker interaction: Popup card** — Standard map UX, fast to build, drives clicks to existing place pages. Rejected side panel (more effort) and inline detail (high effort, duplicates place page).
+- **Initial view: Full US with clustering** — Shows all 612+ places immediately for "wow" factor. Leaflet.markercluster handles density. Rejected state-level entry (extra click) and geolocation (needs permission).
+- **Ghost icon: Simple SVG** — Not woodcut etching style. Keep it lightweight for V1, can upgrade later.
+- **Data loading: Server-side JSON embed** — All places queried from D1 in the function, embedded as `<script>` JSON blob. No additional API calls after page load.
+
+**Spec:** `specs/boo-map.md`
+
+---
+
+### AskUserQuestion Not Available to Subagents
+
+Discovered that the `AskUserQuestion` tool listed in agent frontmatter is not actually provisioned to spawned subagents at runtime. The planner agent explicitly reported it doesn't have access.
+
+**Workaround:** The planner asks questions via text output, the parent agent relays to the user, then resumes the planner with the answer. Works fine for conversational planning.
+
+**Fix:** Removed `AskUserQuestion` from planner's tools list to avoid confusion.
+
+---
+
 ## 2026-01-22
+
+### Tour Operators Data Research
+
+Populated the new `tour_operators` table with 47 ghost tour operators across 10 major haunted destinations in the US. All data verified through official websites and booking platforms.
+
+**Cities covered (operators per city):**
+- New Orleans, LA: 5 operators (2 featured)
+- Savannah, GA: 5 operators (4 featured)
+- Salem, MA: 5 operators (3 featured)
+- St. Augustine, FL: 5 operators (3 featured)
+- Charleston, SC: 5 operators (4 featured)
+- Gettysburg, PA: 5 operators (3 featured)
+- San Antonio, TX: 5 operators (3 featured)
+- Key West, FL: 4 operators (2 featured)
+- Chicago, IL: 4 operators (2 featured)
+- Nashville/Franklin, TN: 4 operators (3 featured)
+
+**Featured operators criteria:**
+- Established companies with 10+ years of operation
+- Award-winning (USA Today, TripAdvisor, etc.)
+- Unique access (exclusive locations, paranormal equipment)
+- Strong online presence with verified booking systems
+
+**Key sources:**
+- Official company websites for pricing and tour details
+- TripAdvisor for ratings and reviews
+- USA Today "10 Best" rankings
+- Viator/GetYourGuide for pricing verification
+- VisitSavannah.com, VisitStAugustine.com, NewOrleans.com official tourism sites
+
+**Price ranges observed:**
+- Budget: $7-20 (Ghost City Tours, Spellbound Tours)
+- Mid-range: $20-40 (most walking tours)
+- Premium: $40-89 (bus tours, paranormal investigations, dinner tours)
+
+**Seed file:** `scripts/seed-tour-operators.sql`
+
+---
 
 ### Cloudflare Pages Functions: Catch-All Route Priority
 
