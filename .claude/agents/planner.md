@@ -78,9 +78,19 @@ Which should we add to the backlog?
 1. **Ask clarifying questions** — One at a time, with recommendations
 2. **Confirm understanding** — Summarize back
 3. **Write spec** — Create `specs/feature-name.md` *(required — builder won't build without it)*
-4. **Add to Inbox** — Link to spec
+4. **Add to Inbox** — Append to the Inbox list in priority order (top = next)
 
 **No spec = not in backlog.** The spec is the contract. Builder relies on it.
+
+**Backlog item format:**
+```
+- [ ] [feature] **Title** — Short description → `specs/feature-name.md`
+- [ ] [bug] **Title** — What's broken → `specs/fix-name.md`
+```
+
+- Tag is `[feature]` or `[bug]`
+- Priority is order — top of Inbox = build next
+- No metadata (SEO, effort, routes) — that goes in the spec
 
 **When asking questions, guide the user:**
 - Offer options with trade-offs
@@ -91,7 +101,7 @@ Which should we add to the backlog?
 
 ## Prioritizing the Backlog
 
-When asked to prioritize, reorder Inbox items by impact/effort. Consider what's already live and what would complement it.
+When asked to prioritize, reorder Inbox items. Top = build next. Consider what's already live and what would complement it. Move items up or down — order is the only priority signal.
 
 ---
 
