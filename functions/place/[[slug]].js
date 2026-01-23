@@ -313,7 +313,9 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       pointer-events: none;
       z-index: 40;
       opacity: 0;
-      transition: opacity 1.5s ease;
+      transition: opacity 2.5s ease;
+      white-space: nowrap;
+      overflow: visible;
     }
     .watcher-eyes.visible {
       opacity: 1;
@@ -322,14 +324,14 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       transform: scaleY(0);
     }
     .watcher-eye {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       background: #e94560;
-      opacity: 0.4;
-      box-shadow: 0 0 8px 3px rgba(233, 69, 96, 0.3);
+      opacity: 0.6;
+      box-shadow: 0 0 12px 4px rgba(233, 69, 96, 0.4);
       display: inline-block;
-      margin: 0 6px;
+      margin: 0 7px;
       transition: transform 0.15s ease;
     }
     @media (max-width: 768px) {
@@ -652,18 +654,18 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       var fleeing = false;
       var visible = false;
       var LERP = 0.02;
-      var FLEE_DIST = 120;
+      var FLEE_DIST = 50;
       var IDLE_BLINK = 5000;
 
       function randomMarginPos() {
-        var side = Math.floor(Math.random() * 4);
+        var side = Math.floor(Math.random() * 2); // left or right only
         var vw = window.innerWidth;
         var vh = window.innerHeight;
         var x, y;
-        if (side === 0) { x = Math.random() * 60 + 10; y = Math.random() * (vh - 100) + 50; }
-        else if (side === 1) { x = vw - (Math.random() * 60 + 30); y = Math.random() * (vh - 100) + 50; }
-        else if (side === 2) { x = Math.random() * (vw - 100) + 50; y = Math.random() * 60 + 10; }
-        else { x = Math.random() * (vw - 100) + 50; y = vh - (Math.random() * 60 + 30); }
+        // Keep eyes in lower 60% of viewport (below hero image) and in the side margins
+        var minY = vh * 0.4;
+        if (side === 0) { x = Math.random() * 40 + 15; y = minY + Math.random() * (vh - minY - 80); }
+        else { x = vw - (Math.random() * 40 + 35); y = minY + Math.random() * (vh - minY - 80); }
         return { x: x, y: y };
       }
 
@@ -684,12 +686,14 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       function hideAndReappear() {
         if (fleeing) return;
         fleeing = true;
+        eyes.style.transition = 'opacity 0.8s ease';
         eyes.classList.remove('visible');
         setTimeout(function() {
+          eyes.style.transition = 'opacity 2.5s ease';
           placeEyes();
           eyes.classList.add('visible');
           fleeing = false;
-        }, 1500 + Math.random() * 2000);
+        }, 15000 + Math.random() * 15000);
       }
 
       function dist(x1, y1, x2, y2) {
@@ -741,7 +745,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       }, { passive: true });
 
       // Delay initial appearance
-      setTimeout(showEyes, 4000 + Math.random() * 3000);
+      setTimeout(showEyes, 5000 + Math.random() * 2000);
       requestAnimationFrame(tick);
     })();
   </script>
