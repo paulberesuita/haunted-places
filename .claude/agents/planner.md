@@ -84,8 +84,8 @@ Which should we add to the backlog?
 
 **Backlog item format:**
 ```
-- [ ] [feature] **Title** — Short description → `specs/feature-name.md`
-- [ ] [bug] **Title** — What's broken → `specs/fix-name.md`
+- [feature] **Title** — Short description → `specs/feature-name.md`
+- [bug] **Title** — What's broken → `specs/fix-name.md`
 ```
 
 - Tag is `[feature]` or `[bug]`

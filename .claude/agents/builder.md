@@ -54,7 +54,7 @@ wrangler pages deploy ./public --project-name=spookfinder
 
 ### 3. Mark Done
 
-Move item from Inbox to Done in `BACKLOG.md`. Check the box: `- [ ]` → `- [x]`.
+Move item from Inbox to Done in `BACKLOG.md`.
 
 ### 4. Update Docs
 
