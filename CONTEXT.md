@@ -6,6 +6,26 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### Skills Overhaul — Template Defaults to Project-Specific
+
+The three builder skills (design-system, coding-standards, cloudflare-deploy) were still using generic template defaults from when the project was scaffolded. The builder agent was working from wrong colors, wrong patterns, and placeholder project names.
+
+**What was wrong:**
+- Design system had light-mode stone colors (`#1c1917`) instead of dark theme (`#e94560`)
+- Coding standards showed generic `items` table patterns instead of SSR with `places`
+- Deploy skill used `PROJECT_NAME` placeholders everywhere
+- Builder agent's deploy commands referenced `PROJECT-db` and `PROJECT`
+
+**Key decisions:**
+- **Updated skills to document what IS, not what should be** — extracted patterns from actual functions files rather than designing idealized patterns
+- **Noted the `dark-card` inconsistency** — homepage uses `#1a1a2e`, place pages use `#141419`. Documented rather than fixed, since both work fine.
+- **Included the routing gotcha** in coding standards — this cost multiple deploys to debug originally, so it's now front and center
+- **Added Common Issues table** to deploy skill — captures hard-won lessons about auth errors, wrong project names, and state mapping updates
+
+**Impact:** The builder agent can now produce consistent output that matches the existing site instead of building light-themed generic pages.
+
+---
+
 ### Multi-Source Tracking for Data Trust
 
 Added `sources` and `source_count` columns to improve confidence in the data. The researcher agent uses LLM-powered web searches to compile entries, which creates two trust problems: (1) does the place actually exist? and (2) is the ghost story real folklore or hallucinated? Multiple independent sources corroborating the same claims filters out both.

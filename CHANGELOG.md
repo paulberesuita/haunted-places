@@ -19,6 +19,13 @@ What we shipped. Builder appends here after each feature.
   - Quality thresholds now require `source_count >= 2` for completeness
   - Coverage dashboard shows `well_sourced` and `source_pct` columns
 
+- **Skills Overhaul** — Updated all three builder skills from generic templates to match actual project
+  - `design-system`: Dark theme with `#e94560` accent, Creepster/Bebas Neue fonts, place cards, ghost placeholders
+  - `coding-standards`: SSR page pattern, actual bindings (`env.DB`, `env.IMAGES`), `[[slug]].js` routing gotcha, `escapeHtml`
+  - `cloudflare-deploy`: Actual project names (`spookfinder`, `haunted-places-db`), migration list, common issues
+
+- **Builder Agent** — Fixed deploy commands from generic `PROJECT` placeholders to `spookfinder`/`haunted-places-db`
+
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)
   - Ghost SVG icon markers with Leaflet.markercluster for clustering
