@@ -186,11 +186,11 @@ function renderToursIndexPage(cities, baseUrl) {
   </script>
   <style>
     .place-img {
-      filter: grayscale(100%);
+      filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: grayscale(100%) sepia(20%) brightness(0.9);
+      filter: grayscale(70%) sepia(20%) brightness(0.9);
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
@@ -330,11 +330,11 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
   ${operatorSchemas.map(schema => `<script type="application/ld+json">\n  ${JSON.stringify(schema)}\n  </script>`).join('\n  ')}
   <style>
     .place-img {
-      filter: grayscale(100%);
+      filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
     .place-card:hover .place-img {
-      filter: grayscale(100%) sepia(20%) brightness(0.9);
+      filter: grayscale(70%) sepia(20%) brightness(0.9);
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }

@@ -145,11 +145,11 @@ No borders on cards. Use background color contrast and shadow glow on hover.
 - **Grayscale filter** on all place images (adds to spooky vibe):
   ```css
   .place-img {
-    filter: grayscale(100%);
+    filter: grayscale(70%);
     transition: filter 0.5s ease;
   }
   .place-img:hover, .place-card:hover .place-img {
-    filter: grayscale(100%) sepia(20%) brightness(0.9);
+    filter: grayscale(70%) sepia(20%) brightness(0.9);
   }
   ```
 - Hero images use full-width with dark gradient overlay for text readability

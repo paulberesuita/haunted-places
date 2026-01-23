@@ -192,11 +192,11 @@ function renderHotelsPage(hotels, states, baseUrl) {
   ${renderHead(title, description, canonicalUrl, baseUrl, hotelCount)}
   <style>
     .place-img {
-      filter: grayscale(100%);
+      filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
     .group:hover .place-img {
-      filter: grayscale(100%) sepia(20%) brightness(0.9);
+      filter: grayscale(70%) sepia(20%) brightness(0.9);
     }
     .line-clamp-2 {
       display: -webkit-box;

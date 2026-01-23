@@ -266,11 +266,11 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   <style>
     /* Image filter - grayscale */
     .place-img {
-      filter: grayscale(100%);
+      filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: grayscale(100%) sepia(20%) brightness(0.9);
+      filter: grayscale(70%) sepia(20%) brightness(0.9);
     }
     .place-card {
       position: relative;

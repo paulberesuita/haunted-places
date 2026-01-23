@@ -310,11 +310,11 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
 
     /* Image filter - grayscale with subtle grain */
     .place-img {
-      filter: url(#grain) grayscale(50%);
+      filter: url(#grain) grayscale(70%);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: url(#grain) grayscale(50%) sepia(20%) brightness(0.9);
+      filter: url(#grain) grayscale(70%) sepia(20%) brightness(0.9);
     }
 
     /* Card with animated smoke effect */
