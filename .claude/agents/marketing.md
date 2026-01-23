@@ -18,6 +18,7 @@ CONTEXT.md                                — Key decisions and insights
 CHANGELOG.md                              — Recent changes
 .claude/skills/design-system/SKILL.md     — Colors, components
 .claude/skills/coding-standards/SKILL.md  — Code patterns
+.claude/skills/cloudflare-deploy/SKILL.md — Deploy commands, environments
 ```
 
 **You have two modes:**
@@ -128,13 +129,7 @@ Every build should:
 
 ### 3. Deploy
 
-```bash
-# Run migrations if needed
-npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
-
-# Deploy (updates both spookfinder.pages.dev AND spookfinder.com)
-wrangler pages deploy ./public --project-name=spookfinder
-```
+Read `/cloudflare-deploy` for commands. Run migrations if needed, then deploy.
 
 ### 4. Mark Done
 

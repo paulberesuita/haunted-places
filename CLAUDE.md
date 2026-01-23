@@ -92,15 +92,40 @@ The `public/states/` directory contains pre-rendered HTML files for individual s
 
 ## Agents
 
-Agents are specialized assistants. Invoke by trigger words.
+Agents are specialized assistants that own their domain end-to-end. Invoke by trigger words.
 
 | Agent | Purpose | Triggers |
 |-------|---------|----------|
-| **product** | Product features end-to-end: ideate, spec, build, deploy | "product", "build", "implement", "ship" |
-| **marketing** | Marketing features end-to-end: ideate, spec, build, deploy | "marketing", "seo", "growth", "traffic" |
-| **researcher** | Gathers data, stores in D1/R2 | "research", "find data", "populate" |
+| **product** | Product features: ideate, spec, build, deploy | "product", "build", "implement", "ship" |
+| **marketing** | Marketing features: ideate, spec, build, deploy | "marketing", "seo", "growth", "traffic" |
+| **researcher** | Data completeness: research places, images, verify quality | "researcher", "research", "find data", "populate" |
 
-**Agents read skills for reference** — design-system, coding-standards, cloudflare-deploy.
+### How Agents Work
+
+**Two modes** — the user decides which:
+1. **Plan** — Ideate, discuss, propose backlog items. Nothing gets added without user approval.
+2. **Execute** — Build/run a specific item. Read the spec, announce approach, do the work, deploy.
+
+**Backlog ownership** — each agent owns a section of `BACKLOG.md`:
+- Product → `## Product > ### Inbox`
+- Marketing → `## Marketing > ### Inbox`
+- Researcher → `## Data > ### Inbox`
+
+Agents never touch each other's sections.
+
+### Skills Used by Agents
+
+| Skill | Product | Marketing | Researcher |
+|-------|---------|-----------|------------|
+| `/design-system` | Build | Build | — |
+| `/coding-standards` | Build | Build | — |
+| `/cloudflare-deploy` | Deploy | Deploy | Deploy |
+
+### After Work Completes
+
+All agents update:
+- **CHANGELOG.md** — What changed
+- **CONTEXT.md** — Why, lessons learned
 
 ## Skills
 
