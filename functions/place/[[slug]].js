@@ -306,6 +306,35 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
         min-height: 44px;
       }
     }
+
+    /* The Watcher - Easter Egg */
+    .watcher-eyes {
+      position: fixed;
+      pointer-events: none;
+      z-index: 40;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+    .watcher-eyes.visible {
+      opacity: 1;
+    }
+    .watcher-eyes.blink .watcher-eye {
+      transform: scaleY(0);
+    }
+    .watcher-eye {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #e94560;
+      opacity: 0.4;
+      box-shadow: 0 0 8px 3px rgba(233, 69, 96, 0.3);
+      display: inline-block;
+      margin: 0 6px;
+      transition: transform 0.15s ease;
+    }
+    @media (max-width: 768px) {
+      .watcher-eyes { display: none !important; }
+    }
   </style>
 </head>
 <body class="bg-dark text-gray-100 min-h-screen">
@@ -604,6 +633,116 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       scareOverlay.addEventListener('click', hideScare);
       scareVideo.addEventListener('ended', hideScare);
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
+    })();
+
+    // The Watcher Easter Egg
+    (function() {
+      if (window.innerWidth <= 768) return;
+
+      var eyes = document.createElement('div');
+      eyes.className = 'watcher-eyes';
+      eyes.innerHTML = '<span class="watcher-eye"></span><span class="watcher-eye"></span>';
+      document.body.appendChild(eyes);
+
+      var posX = 0, posY = 0;
+      var targetX = 0, targetY = 0;
+      var mouseX = 0, mouseY = 0;
+      var lastMoveTime = Date.now();
+      var blinking = false;
+      var fleeing = false;
+      var visible = false;
+      var LERP = 0.02;
+      var FLEE_DIST = 120;
+      var IDLE_BLINK = 5000;
+
+      function randomMarginPos() {
+        var side = Math.floor(Math.random() * 4);
+        var vw = window.innerWidth;
+        var vh = window.innerHeight;
+        var x, y;
+        if (side === 0) { x = Math.random() * 60 + 10; y = Math.random() * (vh - 100) + 50; }
+        else if (side === 1) { x = vw - (Math.random() * 60 + 30); y = Math.random() * (vh - 100) + 50; }
+        else if (side === 2) { x = Math.random() * (vw - 100) + 50; y = Math.random() * 60 + 10; }
+        else { x = Math.random() * (vw - 100) + 50; y = vh - (Math.random() * 60 + 30); }
+        return { x: x, y: y };
+      }
+
+      function placeEyes() {
+        var p = randomMarginPos();
+        posX = p.x; posY = p.y;
+        targetX = p.x; targetY = p.y;
+        eyes.style.left = posX + 'px';
+        eyes.style.top = posY + 'px';
+      }
+
+      function showEyes() {
+        placeEyes();
+        visible = true;
+        eyes.classList.add('visible');
+      }
+
+      function hideAndReappear() {
+        if (fleeing) return;
+        fleeing = true;
+        eyes.classList.remove('visible');
+        setTimeout(function() {
+          placeEyes();
+          eyes.classList.add('visible');
+          fleeing = false;
+        }, 1500 + Math.random() * 2000);
+      }
+
+      function dist(x1, y1, x2, y2) {
+        var dx = x1 - x2, dy = y1 - y2;
+        return Math.sqrt(dx * dx + dy * dy);
+      }
+
+      function tick() {
+        if (!visible || fleeing) { requestAnimationFrame(tick); return; }
+
+        // Lerp toward a point offset by cursor direction
+        var dx = mouseX - posX;
+        var dy = mouseY - posY;
+        var d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var offsetMag = Math.min(d * 0.08, 20);
+        targetX = posX + (dx / d) * offsetMag;
+        targetY = posY + (dy / d) * offsetMag;
+
+        var curX = parseFloat(eyes.style.left) || posX;
+        var curY = parseFloat(eyes.style.top) || posY;
+        var newX = curX + (targetX - curX) * LERP;
+        var newY = curY + (targetY - curY) * LERP;
+        eyes.style.left = newX + 'px';
+        eyes.style.top = newY + 'px';
+
+        // Flee if cursor approaches
+        if (dist(mouseX, mouseY, newX, newY) < FLEE_DIST) {
+          hideAndReappear();
+        }
+
+        // Blink after idle
+        var idle = Date.now() - lastMoveTime;
+        if (idle > IDLE_BLINK && !blinking) {
+          blinking = true;
+          eyes.classList.add('blink');
+          setTimeout(function() {
+            eyes.classList.remove('blink');
+            blinking = false;
+          }, 200);
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        lastMoveTime = Date.now();
+      }, { passive: true });
+
+      // Delay initial appearance
+      setTimeout(showEyes, 4000 + Math.random() * 3000);
+      requestAnimationFrame(tick);
     })();
   </script>
   </body>

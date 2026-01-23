@@ -6,6 +6,91 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### The Watcher Easter Egg — Build Decisions
+
+Added subtle glowing eyes that track cursor movement on place detail pages.
+
+**Implementation approach:**
+- All CSS and JS added inline in `functions/place/[[slug]].js` (no external files)
+- Eyes are a fixed-position div with two span elements (left/right eye)
+- Used `requestAnimationFrame` loop with lerp factor of 0.02 for smooth, slow tracking
+- Eyes track a point that is offset toward the cursor direction (not snapping to cursor position)
+- This creates the effect of eyes "looking at" the cursor from a distance
+
+**Key design decisions:**
+- Opacity set to 15% via CSS on the eye elements themselves (not the container) so they feel ambient, not distracting
+- Box-shadow glow matches the eye color at same 15% opacity for a subtle red glow effect
+- Container uses `opacity: 0` with `transition: opacity 1.5s ease` for fade-in/out (class toggle)
+- Blink uses `transform: scaleY(0)` with 0.15s transition for a quick, natural blink feel
+- Flee distance is 120px — far enough to not feel like you can "catch" them easily
+
+**Positioning strategy:**
+- `randomMarginPos()` picks one of 4 sides (left, right, top, bottom margin)
+- Each side constrains the position to the outer 60px of the viewport
+- This keeps eyes in the periphery where they are unsettling but not blocking content
+
+**Coexistence with idle scare:**
+- The Watcher uses z-index 40, idle scare uses z-index 99999
+- Both use independent IIFEs with no shared state
+- The Watcher is purely visual/ambient; idle scare is an overlay event
+- No timing conflicts — Watcher appears at 4-7s, idle scare at 60s of true inactivity
+
+**Mobile handling:**
+- Early return in JS if `window.innerWidth <= 768` (skips DOM creation entirely)
+- CSS backup: `display: none !important` on `.watcher-eyes` at max-width 768px
+
+---
+
+### Data Expansion — MD, TN, SC to 40 Places Each
+
+Researched and added 44 new haunted places across 3 states to reach the 40-place launch threshold.
+
+**Research approach:**
+- Used WebSearch with state-specific ghost tour sites, tourism boards, and paranormal directories
+- Cross-referenced each place with 2+ independent sources before including
+- Prioritized places with documented ghost stories (specific names, dates, reported activity)
+- Focused on geographic diversity within each state (not just the major city)
+
+**Source quality notes:**
+- State tourism sites (tnvacation.com, discoversouthcarolina.com, visitmaryland.org) are excellent for verification
+- Ghost tour company sites (Chesapeake Ghost Tours, Gatlinburg Haunts, US Ghost Adventures) have detailed stories
+- hauntedplaces.org and southcarolinahauntedhouses.com are useful but entries are brief
+- CNN/Travel Channel "most haunted" lists help identify well-documented locations
+
+**Batch file naming:** Used `seed-[state]-batch2.sql` pattern to distinguish from original seed files.
+
+### Image Research — MD, TN, SC
+
+Uploaded 39 images total across 4 batches. Final coverage: TN 98%, MD 83%, SC 80%.
+
+**Image search strategy (order of priority):**
+1. Wikipedia API (`action=query&prop=pageimages&piprop=original`) — fastest, checks if article has lead image
+2. Wikimedia Commons search API (`action=query&list=search&srnamespace=6`) — finds photos by keywords even without Wikipedia article
+3. **Website fallback** — WebSearch for the place's official site, then WebFetch to extract hero/primary image URL from their homepage
+4. Alternate sources — Library of Congress, SC Picture Project, tourism board listings (Visit Annapolis, Kingsport Greenbelt)
+
+**Processing pipeline:** `curl` download → `sips --resampleWidth 1200` → `wrangler r2 object put` → D1 `UPDATE`
+
+**Website fallback results (7 images found):**
+- Greenbrier Restaurant (greenbrierrestaurant.com — schema `primaryImageOfPage`)
+- Wayside Inn (waysideinnmd.com — schema primary image)
+- Rotherwood Mansion (kingsportgreenbelt.com — CDN-hosted attraction photo)
+- Max's Taphouse (maxs.com — schema primary image)
+- Reynolds Tavern (visitannapolis.org — listing photo via Simpleview CMS)
+- The Hermitage (scpictureproject.org — dedicated SC landmarks photo site)
+- Denton Old Jail (loc.gov — HABS survey photograph)
+
+**What still doesn't have images (16 remaining):**
+- Dynamically-loaded websites that WebFetch can't parse (The Bowery, Old Brick Inn, Brentwood Restaurant)
+- 403-blocked sites (Governor Calvert House via historicinnsofannapolis.com, Colliers for Hotel Aiken)
+- Demolished buildings (Greenville TB Hospital — burned 2001, now a playground)
+- Abstract phenomena (Summerville Light, High Street Cambridge)
+- Some cemeteries without distinctive photos (Graniteville, Quaker Cemetery)
+
+**Lesson:** The website fallback (WebSearch → WebFetch for hero image) is very effective for hotels, restaurants, and tourist attractions. Schema.org markup (`primaryImageOfPage`, `image` in structured data) is the most reliable way to extract the main image. Tourism listing sites (Visit Annapolis, state tourism boards) serve images from CDNs with predictable URL patterns.
+
+---
+
 ### Haunted Hotels Guide — Build Decisions
 
 Built the haunted hotels guide at `/hotels` as a dedicated vertical for bookable haunted lodging.

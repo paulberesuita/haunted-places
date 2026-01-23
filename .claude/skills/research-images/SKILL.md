@@ -50,9 +50,29 @@ npx wrangler d1 execute haunted-places-db --remote --command "SELECT slug, name,
 
 ### Step 2: For EACH place (do all 3 steps before moving to next place):
 
-**A. Find the actual image URL**
-- Use WebSearch/WebFetch to find a photo of the ACTUAL building
-- Get the direct image URL (ending in .jpg, .png, etc.)
+**A. Find the actual image URL (try in order, stop when found):**
+
+1. **Wikipedia API** — Check if the place has a Wikipedia article with a lead image:
+   ```bash
+   curl -s "https://en.wikipedia.org/w/api.php?action=query&titles=[Article_Name]&prop=pageimages&piprop=original&format=json"
+   ```
+
+2. **Wikimedia Commons search** — Search for photos even without a Wikipedia article:
+   ```bash
+   curl -s "https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=[Place+Name+City+State]&srnamespace=6&format=json"
+   ```
+   Then get the URL: `action=query&titles=File:[filename]&prop=imageinfo&iiprop=url&format=json`
+
+3. **Place's own website** — WebSearch for the place, then WebFetch their homepage to find an image:
+   ```
+   WebSearch: "[place name]" [city] [state] official site
+   WebFetch: [url] → "Find the main hero image or exterior photo URL on this page. Return just the direct image URL (ending in .jpg, .png, .webp)."
+   ```
+   This works well for hotels, restaurants, museums, and historic sites that have their own web presence.
+
+4. **Other sources** — Flickr CC, Find A Grave (cemeteries), state historical societies, Library of Congress
+
+- Get the direct image URL (ending in .jpg, .png, .webp, etc.)
 - VERIFY it shows the real location before proceeding
 
 **B. Download, upload to R2, update DB — ALL IN ONE GO:**

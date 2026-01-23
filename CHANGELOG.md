@@ -7,6 +7,33 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-23
 
 ### Added
+- **[Easter Egg] The Watcher** — Glowing red eyes that follow your cursor on place detail pages
+  - Eyes appear 4-7 seconds after page load at a random margin position
+  - Track cursor with slow lerp-based easing (not instant snapping)
+  - If cursor idles for 5+ seconds, eyes blink (scaleY 0 for 200ms)
+  - If cursor approaches within 120px, eyes vanish and reappear at a new position after 1.5-3.5s
+  - Eye styling: #e94560 at 15% opacity with matching box-shadow glow
+  - Positioned in page margins (edges) using fixed positioning
+  - pointer-events: none so page interaction is unaffected
+  - Hidden on mobile (no cursor on touch devices)
+  - Does not interfere with existing idle scare easter egg
+  - All CSS and JS are inline in the place page function (no external files)
+
+- **Expanded MD, TN, SC to 40 places each** — Researched and seeded new haunted locations
+  - Maryland: +16 places (Ellicott City, Hagerstown, Clinton, Havre de Grace, Eastern Shore)
+  - Tennessee: +15 places (Red Boiling Springs, Knoxville, Chattanooga, Gatlinburg, Nashville, Jonesborough)
+  - South Carolina: +13 places (Georgetown, Greenville, Spartanburg, Aiken, Camden, Summerville)
+  - All new entries have 2+ independent sources per the minimum source requirement
+  - Total database now at ~814 places across 18 states
+
+- **Image research for MD, TN, SC new places** — Found and uploaded 39 images total
+  - Tennessee: 39/40 (98%) coverage
+  - Maryland: 33/40 (83%) coverage
+  - South Carolina: 32/40 (80%) coverage
+  - Sources: Wikipedia API, Wikimedia Commons search, then official website fallback (WebSearch → WebFetch for hero images)
+  - Website fallback found 7 images that Wikimedia didn't have (Greenbrier Restaurant, Wayside Inn, The Hermitage, Max's Taphouse, Rotherwood Mansion, Denton Old Jail, Reynolds Tavern)
+  - Pipeline: download → resize to 1200px width (sips) → upload to R2 → update D1 image_url
+
 - **Haunted Hotels Guide** — New `/hotels` route for browsing haunted lodging
   - Queries all places with category: Hotel, Inn, Bed and Breakfast, Resort, Motel, Lodge
   - Hero section with "Sleep With Ghosts" tagline and count of haunted hotels
