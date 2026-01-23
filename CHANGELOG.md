@@ -34,10 +34,12 @@ What we shipped. Builder appends here after each feature.
 
 - **Agent Restructure** — Replaced planner + builder with product + marketing agents
   - Each agent owns full lifecycle: ideate → spec → build → deploy
-  - Backlog tags: `[product]`, `[marketing]`, `[data]`
-  - Product agent: discovery, place pages, core UX, community
-  - Marketing agent: programmatic SEO, free tools, seasonal, social/viral
-  - Researcher unchanged, adds `[data]` items based on coverage gaps
+  - All agents have two explicit modes: **plan** (propose backlog items) and **execute** (build when told)
+  - Backlog split into per-agent sections (Product, Marketing, Data) — no more tags
+  - All agents require user approval before adding items to the backlog
+  - Product ideation categories: New Features, Enhancements, Easter Eggs
+  - Marketing ideation categories: Programmatic SEO, Free Tools, Seasonal, Social/Viral
+  - Researcher proposes data gaps, waits for approval before adding to backlog
 
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)

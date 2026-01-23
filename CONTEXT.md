@@ -6,35 +6,50 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
-### Agent Restructure — Product + Marketing Replace Planner + Builder
+### Agent Restructure — Plan/Execute Modes + Sectioned Backlog
 
-The planner→builder handoff model had a context gap: the planner decided what to build but the builder had to re-learn the "why" from the spec. Also, product and marketing are genuinely different mindsets — one optimizes for people already on the site, the other brings new people in.
+Each agent (product, marketing, researcher) has two explicit modes:
+1. **Plan** — Ideate, discuss, propose items for the backlog. Never add without user approval.
+2. **Execute** — Build a specific item the user picks from the backlog.
 
-**Decision:** Kill both planner and builder. Create product and marketing agents that each own their full lifecycle (ideate → spec → build → deploy).
+The user drives which mode by what they say. "Build X" = execute. Anything else = plan.
 
-**Why this works:**
-- No handoff = no context loss
-- Each agent understands its domain deeply (product knows UX, marketing knows SEO)
-- The builder was just "follow the spec" — not enough specialized value for a separate agent
-- The planner's ideation categories split naturally into product vs marketing
+**Backlog restructured:** Replaced tag-based system (`[product]`, `[marketing]`, `[data]`) with per-agent sections. Each agent owns their own `## Section > ### Inbox / ### Done`. Cleaner separation, no tag parsing needed.
 
-**Backlog tags changed:** `[feature]`/`[bug]` → `[product]`/`[marketing]`/`[data]`. Each agent only works on items with their tag. User owns priority order.
+**Product ideation categories:**
+- **New Features** — entirely new experiences, pages, interactions
+- **Enhancements** — improve existing features
+- **Easter Eggs** — hidden spooky surprises (idle animations, secret interactions)
 
-**Specs still required:** The spec is the checkpoint before building. Agent proposes spec, user approves, then agent builds. No building without approval.
+**Marketing ideation categories:** Programmatic SEO, Free Tools, Seasonal, Social/Viral (unchanged).
+
+**Approval gate:** All agents propose items and wait for user approval before writing to the backlog. The flow is: ideate → propose → user approves → write spec → add to backlog.
+
+**Specs still required:** The spec is the checkpoint before building. No building without a spec file.
 
 ---
 
-### Backlog as Single Priority List
+### Backlog as Sectioned Priority List
 
-The backlog was feature/bug only (planner→builder pipeline). Data work (researcher) was tracked separately via coverage dashboards. Problem: Paul had to check two places to know "what's next."
+The backlog has three sections, one per agent. Each agent reads/writes only their own section. Order within a section = priority.
 
-**Decision:** Added `[data]` tag. The researcher adds items based on coverage gaps, the planner prioritizes the full list. This makes dependencies visible — e.g., "city pages need more states researched" shows up as a `[data]` item above the `[feature]` item.
+**Structure:**
+```
+## Product
+### Inbox / ### Done
+
+## Marketing
+### Inbox / ### Done
+
+## Data
+### Inbox / ### Done
+```
 
 **Rules:**
-- `[data]` items don't need specs (researcher knows its own workflows)
-- Researcher only adds `[data]` items, never `[feature]`/`[bug]`
-- Builder skips `[data]` items
-- Planner owns priority order across all types
+- Product specs required before building
+- Marketing specs required before building
+- Data items don't need formal specs (researcher knows its own workflows)
+- Each agent proposes items, user approves, then they get added
 
 ---
 
