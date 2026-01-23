@@ -26,6 +26,12 @@ What we shipped. Builder appends here after each feature.
 
 - **Builder Agent** — Fixed deploy commands from generic `PROJECT` placeholders to `spookfinder`/`haunted-places-db`
 
+- **Backlog Format** — Simplified to: tag (`[feature]`/`[bug]`), title, description, spec path. Removed separate Bugs section, SEO/Effort metadata, and MVP/V2 groupings. Priority is now just order.
+
+- **Planner Agent** — Updated to use new backlog item format and order-based prioritization
+
+- **Builder Agent** — Updated "Mark Done" step to check the box rather than move between sections
+
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)
   - Ghost SVG icon markers with Leaflet.markercluster for clustering
