@@ -21,9 +21,12 @@ const stateUrls = {
   'VA': 'virginia'
 };
 
+function makeCitySlug(city, state) {
+  return city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '-' + state.toLowerCase();
+}
+
 export async function onRequestGet(context) {
   const { env, request } = context;
-  const url = new URL(request.url);
   const baseUrl = 'https://spookfinder.com';
 
   try {
@@ -41,6 +44,13 @@ export async function onRequestGet(context) {
       ORDER BY state
     `).all();
 
+    // Get tour operator cities
+    const { results: tourCities } = await env.DB.prepare(`
+      SELECT DISTINCT city, state
+      FROM tour_operators
+      ORDER BY city
+    `).all();
+
     const today = new Date().toISOString().split('T')[0];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -53,10 +63,35 @@ export async function onRequestGet(context) {
     <priority>1.0</priority>
   </url>
 
+  <!-- Static Pages -->
+  <url>
+    <loc>${baseUrl}/states</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/tours</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/hotels</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/about</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
   <!-- State Pages -->
 `;
 
-    // Add state pages
     for (const { state } of states) {
       const stateUrl = stateUrls[state] || state.toLowerCase();
       xml += `  <url>
@@ -69,10 +104,24 @@ export async function onRequestGet(context) {
     }
 
     xml += `
+  <!-- Tour City Pages -->
+`;
+
+    for (const { city, state } of tourCities) {
+      const citySlug = makeCitySlug(city, state);
+      xml += `  <url>
+    <loc>${baseUrl}/tours/${citySlug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+`;
+    }
+
+    xml += `
   <!-- Place Pages -->
 `;
 
-    // Add individual place pages
     for (const place of places) {
       const lastmod = place.created_at
         ? new Date(place.created_at).toISOString().split('T')[0]
