@@ -58,7 +58,11 @@ function escapeHtml(text) {
     .replace(/'/g, '&#039;');
 }
 
-function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
+function makeCitySlug(city, state) {
+  return city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '-' + state.toLowerCase();
+}
+
+function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourCities = []) {
   // Sort places: those with images first
   const sortedPlaces = [...places].sort((a, b) => {
     if (a.image_url && !b.image_url) return -1;
@@ -368,6 +372,8 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
+        <a href="/tours" class="hover:text-white transition-colors">Tours</a>
+        <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -412,6 +418,26 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl) {
           ${placeCardsHtml}
         </div>
       </main>
+
+      ${tourCities.length > 0 ? `
+      <!-- Ghost Tours Section -->
+      <section class="max-w-7xl mx-auto px-4 py-8">
+        <h2 class="text-2xl font-semibold text-white mb-6">Ghost Tours in ${stateName}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          ${tourCities.map(tc => `
+          <a href="/tours/${makeCitySlug(tc.city, stateCode)}" class="flex items-center justify-between bg-dark-card border border-dark-border rounded-lg p-4 hover:border-accent/50 transition-all group">
+            <div>
+              <span class="text-white font-medium group-hover:text-accent transition-colors">${escapeHtml(tc.city)}</span>
+              <span class="text-sm text-muted ml-2">${tc.operator_count} ${tc.operator_count === 1 ? 'tour' : 'tours'}</span>
+            </div>
+            <svg class="w-4 h-4 text-muted group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+          `).join('')}
+        </div>
+      </section>
+      ` : ''}
 
       <!-- Footer -->
       <footer class="mt-8 pb-8">
@@ -1145,6 +1171,8 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
+        <a href="/tours" class="hover:text-white transition-colors">Tours</a>
+        <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -1292,8 +1320,17 @@ export async function onRequestGet(context) {
       ORDER BY state
     `).all();
 
+    // Fetch tour operator cities for this state
+    const { results: tourCities } = await env.DB.prepare(`
+      SELECT city, COUNT(*) as operator_count
+      FROM tour_operators
+      WHERE state = ?
+      GROUP BY city
+      ORDER BY city
+    `).bind(stateCode).all();
+
     // Render the state page
-    const html = renderStatePage(stateCode, stateName, places || [], states || [], baseUrl);
+    const html = renderStatePage(stateCode, stateName, places || [], states || [], baseUrl, tourCities || []);
 
     return new Response(html, {
       headers: {

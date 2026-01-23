@@ -6,6 +6,82 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### Haunted Hotels Guide — Build Decisions
+
+Built the haunted hotels guide at `/hotels` as a dedicated vertical for bookable haunted lodging.
+
+**Routing:**
+- Used `functions/hotels.js` (simple single-page route, no sub-pages needed)
+- No [[slug]] pattern needed since there's only one page with client-side filtering
+
+**Category matching:**
+- Query uses `LOWER(category) IN ('hotel', 'inn', 'bed and breakfast', 'resort', 'motel', 'lodge')` to catch all lodging types
+- Case-insensitive matching handles any inconsistencies in the data
+
+**Scariest detail extraction:**
+- Simple keyword-based sentence extraction from ghost_story field
+- Keywords: room, floor, suite, wing, corridor, basement, attic
+- Splits on sentence boundaries (`(?<=[.!?])\s+`), takes first matching sentence
+- Returns null if no match, card simply omits the pull-quote section
+
+**Client-side filtering approach:**
+- All hotels are loaded in the SSR HTML (no pagination/lazy-loading needed for current data size)
+- JavaScript toggles `display:none` on cards based on `data-state` attributes
+- Sort re-orders DOM elements via `appendChild` (reads `data-state` and `data-name` attributes)
+- Results count updates dynamically
+
+**Design system compliance:**
+- dark-card: #141419 (correct value)
+- body: text-gray-100 (not text-ghost)
+- No borders on cards, uses bg-dark-card on bg-dark for contrast
+- Cards hover: hover:shadow-lg hover:shadow-accent/10
+- Category pills: bg-accent/10 text-accent (no border)
+- Images: grayscale filter with group-hover sepia effect
+- Footer: bg-dark-card/50
+
+**Navigation update:**
+- Added "Hotels" to all 5 page functions (index.js, states/[[slug]].js, place/[[slug]].js, tours/[[slug]].js, about.js)
+- Hotels link positioned between Tours and About in the nav order
+
+---
+
+### Ghost Tours Directory — Build Decisions
+
+Built the ghost tours directory feature at `/tours` and `/tours/[city-slug]`.
+
+**Routing:**
+- Used `functions/tours/[[slug]].js` following the established catch-all pattern
+- City slug format: `city-name-st` (e.g., `new-orleans-la`, `st-augustine-fl`)
+- Slug parsing: state code is always the last 2 characters after final hyphen, then match city by regenerating slug from DB city names
+- This avoids storing slugs in the DB and handles cities with special characters
+
+**City matching approach:**
+- Query all operators in the state (from URL slug's state code)
+- Generate slugs from each city name in the results
+- Match against the URL slug to find the actual city name
+- This handles cities like "St. Augustine" correctly without needing a slug column in the DB
+
+**Navigation update:**
+- Added "Tours" link to all 4 page functions: index.js, states/[[slug]].js, place/[[slug]].js, about.js
+- On place pages, the nav style uses `hover:text-accent` (white text on dark), consistent with existing style
+- On other pages, uses `hover:text-white` (ghost text on dark)
+
+**Cross-linking:**
+- Place detail pages: query `tour_operators` by city + state, show callout in sidebar with link to city tours page
+- State pages: query `tour_operators` grouped by city for the state, show section with city links below place grid
+- City tours pages: query `places` by city + state, show grid below operators
+
+**Tour operators in DB:**
+- Only 11 cities currently have data (first seed batch of 47 operators)
+- The batch 2 seed (scripts/seed-tour-operators-batch2.sql) with 50+ more operators across 10 additional cities has not been run against remote DB yet
+- Feature works with whatever data exists; empty states/cities simply show no tours section
+
+**Structured data:**
+- LocalBusiness schema for each operator on city pages (name, description, address, URL, priceRange)
+- BreadcrumbList on both index and city pages
+
+---
+
 ### Agent Restructure — Plan/Execute Modes + Sectioned Backlog
 
 Each agent (product, marketing, researcher) has two explicit modes:
@@ -112,6 +188,28 @@ Discovered that the `AskUserQuestion` tool listed in agent frontmatter is not ac
 **Workaround:** The planner asks questions via text output, the parent agent relays to the user, then resumes the planner with the answer. Works fine for conversational planning.
 
 **Fix:** Removed `AskUserQuestion` from planner's tools list to avoid confusion.
+
+---
+
+### Data Audit Findings
+
+Ran comprehensive data quality audit across all 752 places in 18 states.
+
+**Key findings:**
+- **Source coverage is 0%** — All entries have `source_count=1`. The multi-source columns exist but nothing backfilled yet. Largest quality gap.
+- **Category drift** — 25 entries use non-standard categories (`lighthouse` x13, `historic_site` x4, `park` x4, `church` x3, `asylum` x1). Another 26 are `other` but clearly belong to real categories. Decision needed: add `lighthouse` as official category (13 entries justify it) or normalize to existing 12.
+- **VA ghost stories are thin** — Average 295 chars vs. OH at 809 chars. Rich Civil War/colonial history available to expand.
+- **Tour operators gap** — 47 operators in DB across 11 cities, but 8 cities with 8+ places have zero operators (Boston, NYC, Philadelphia, etc.).
+- **Stray `aircraft` table** — Leftover from another project, needs dropping.
+- **Plant Hall / Plant Museum duplicate** — Same building at same Tampa address, two entries.
+- **Regional coverage lopsided** — Midwest (only IL, OH) and West (only CA) are nearly empty. 20+ states missing from those regions.
+- **Geographic concentration** — LA is 53% New Orleans, MA is 60% Salem/Boston. Natural for famous haunted cities but limits state page variety.
+
+**Clean areas (no action needed):**
+- All required fields populated (0 nulls in address, coords, description, ghost_story, category, year_established)
+- Descriptions are distinct from ghost stories (not duplicated)
+- No real duplicate entries (shared names are all different locations with disambiguated slugs)
+- Coordinates all within valid continental US bounds
 
 ---
 

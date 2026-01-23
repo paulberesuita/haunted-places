@@ -61,8 +61,10 @@ Which should we add to the backlog?
 1. **Ask clarifying questions** — One at a time, with recommendations
 2. **Confirm understanding** — Summarize back
 3. **Get approval** — User confirms this should go in the backlog
-4. **Write spec** — Create `specs/feature-name.md`
+4. **Write spec** — Create `specs/feature-name.md` (DO THIS IMMEDIATELY — no spec = not in backlog)
 5. **Add to Inbox** — Append to `## Product > ### Inbox`
+
+**IMPORTANT:** Steps 4 and 5 happen together in the same action. Never add to the backlog without also writing the spec file. The spec is the contract.
 
 **Add to your section** (`## Product > ### Inbox`) in `BACKLOG.md`:
 ```

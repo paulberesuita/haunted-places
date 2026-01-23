@@ -60,12 +60,16 @@ function truncate(text, length) {
   return text.substring(0, length).trim() + '...';
 }
 
+function makeCitySlug(city, state) {
+  return city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '-' + state.toLowerCase();
+}
+
 function formatParagraphs(text) {
   if (!text) return '';
   return text.split('\n\n').map(p => `<p class="mb-4">${escapeHtml(p.trim())}</p>`).join('');
 }
 
-function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, baseUrl) {
+function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, baseUrl, tourCount = 0) {
   const stateName = stateNames[place.state] || place.state;
   const stateUrl = stateUrls[place.state] || place.state.toLowerCase();
   const categoryIcon = categoryIcons[place.category] || categoryIcons['other'];
@@ -312,6 +316,8 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-white">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
+        <a href="/tours" class="hover:text-accent transition-colors">Tours</a>
+        <a href="/hotels" class="hover:text-accent transition-colors">Hotels</a>
         <a href="/about" class="hover:text-accent transition-colors">About</a>
       </nav>
     </div>
@@ -478,6 +484,23 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
             </svg>
             View original source
+          </a>
+        </div>
+        ` : ''}
+
+        <!-- Ghost Tours Callout -->
+        ${tourCount > 0 ? `
+        <div class="bg-dark-card rounded-xl p-6 border border-accent/20">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="text-2xl">&#128123;</span>
+            <h3 class="font-semibold text-accent">Ghost Tours in ${escapeHtml(place.city)}</h3>
+          </div>
+          <p class="text-sm text-ghost mb-4">${tourCount} ghost tour ${tourCount === 1 ? 'operator' : 'operators'} in ${escapeHtml(place.city)} with booking links and prices.</p>
+          <a href="/tours/${makeCitySlug(place.city, place.state)}" class="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover transition-colors font-medium">
+            View Ghost Tours
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
         ` : ''}
@@ -667,6 +690,12 @@ export async function onRequestGet(context) {
       });
     }
 
+    // Fetch tour operators in the same city
+    const { results: tourOperators } = await env.DB.prepare(
+      'SELECT COUNT(*) as count FROM tour_operators WHERE city = ? AND state = ?'
+    ).bind(place.city, place.state).all();
+    const tourCount = tourOperators && tourOperators[0] ? tourOperators[0].count : 0;
+
     // Fetch related places (same city, different slug)
     const { results: relatedPlaces } = await env.DB.prepare(
       'SELECT slug, name, city, category, description, image_url FROM places WHERE city = ? AND slug != ? LIMIT 6'
@@ -683,7 +712,7 @@ export async function onRequestGet(context) {
     ).bind(place.category, slug, place.state).all();
 
     // Render the page
-    const html = renderPlacePage(place, relatedPlaces || [], statePlaces || [], categoryPlaces || [], baseUrl);
+    const html = renderPlacePage(place, relatedPlaces || [], statePlaces || [], categoryPlaces || [], baseUrl, tourCount);
 
     return new Response(html, {
       headers: {

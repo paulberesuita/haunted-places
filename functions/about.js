@@ -108,6 +108,8 @@ function renderAboutPage(stats, baseUrl) {
       <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
+        <a href="/tours" class="hover:text-white transition-colors">Tours</a>
+        <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
         <a href="/about" class="text-white">About</a>
       </nav>
     </div>

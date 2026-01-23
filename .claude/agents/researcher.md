@@ -30,17 +30,22 @@ Then read:
 CONTEXT.md                                — Research notes & lessons learned
 ```
 
-**You have two modes:**
+**You have two modes — always ask the user which one:**
 
-1. **Plan the backlog** — Run coverage dashboard, identify gaps below thresholds, and propose items for `## Data > ### Inbox`. Only add to the backlog after user approves. Recommend based on:
-   - States with <25 places (need more data)
-   - States with <60% image coverage (need images)
-   - States with <100% source coverage (entries need additional corroboration)
-   - New states not yet in the database
+1. **Plan** — Discover gaps and propose backlog items:
+   - Run the coverage query above
+   - Identify states below thresholds (places, images, sources)
+   - Highlight the highest-impact next actions
+   - Present recommendations ranked by priority
+   - Add approved items to `## Data > ### Inbox` in `BACKLOG.md`
 
-2. **Execute the backlog** — Run a specific operation the user picks (research places, research images, verify data, query data).
+2. **Execute** — Pick an item from `## Data` in `BACKLOG.md` and do the work:
+   - Show the current data backlog items
+   - Ask the user which one to work on
+   - Run the appropriate operation (research places, research images, verify data, query data)
+   - Move the item to Done when finished
 
-**The user decides which mode.** If they say "research Ohio" or "do images for Texas", execute. Otherwise, plan.
+**Always ask:** "Do you want to plan (I'll check coverage and suggest backlog items) or execute (pick from the backlog)?"
 
 ## Adding to the Backlog
 

@@ -7,11 +7,50 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-23
 
 ### Added
+- **Haunted Hotels Guide** — New `/hotels` route for browsing haunted lodging
+  - Queries all places with category: Hotel, Inn, Bed and Breakfast, Resort, Motel, Lodge
+  - Hero section with "Sleep With Ghosts" tagline and count of haunted hotels
+  - State filter dropdown (client-side JS filtering, all hotels loaded via SSR)
+  - Sort options: by state (A-Z) or by name (A-Z)
+  - Hotel cards with: name, city/state, image (grayscale), category badge, ghost_story excerpt (150 chars), and "scariest detail" pull-quote
+  - Scariest detail extraction: finds first sentence containing room/floor/suite/wing/corridor/basement/attic keywords
+  - Empty state handling when filtering yields no results
+  - Mobile responsive grid (1 col mobile, 2 col tablet, 3 col desktop)
+  - SEO: title, meta description, JSON-LD (BreadcrumbList + ItemList schemas)
+  - Breadcrumb navigation
+  - "Hotels" link added to site-wide navigation in all 5 page functions (index.js, states, place, tours, about)
+  - Route: `functions/hotels.js` handling GET /hotels
+
+- **Ghost Tours Directory** — New `/tours` route with index and city pages
+  - Index page at `/tours` shows 11 cities with ghost tour operators as a card grid
+  - City pages at `/tours/[city-slug]` show operators with descriptions, price ranges, tour type badges, and "Book Now" buttons
+  - Nearby haunted places section below operators on city pages (queries places table by city + state match)
+  - JSON-LD LocalBusiness structured data for each operator on city pages
+  - BreadcrumbList structured data on both index and city pages
+  - SEO meta tags (title, description, OG, Twitter) for all pages
+  - 404 page for non-existent city slugs
+  - Mobile responsive card grid (1 col mobile, 2 col tablet, 3 col desktop)
+  - "Tours" link added to site-wide header navigation (homepage, states, place pages, about page)
+  - "Ghost Tours in [City]" callout in place detail page sidebar when operators exist in same city
+  - "Ghost Tours in [State]" section on state pages when operators exist in that state
+  - Route: `functions/tours/[[slug]].js` handling both index and city detail pages
+
 - **Multi-Source Tracking for Data Trust** — New `sources` (JSON array) and `source_count` columns on places table
   - Migration `005_add_sources.sql` adds columns and backfills existing entries from `source_url`
   - Researcher agent now requires minimum 2 independent sources before including a place
   - Coverage dashboard tracks source coverage percentage per state
   - Verify operation flags under-sourced entries (source_count < 2)
+
+- **Data Backlog (9 items)** — Comprehensive audit identified gaps and added to backlog:
+  - Expand 6 states below 40 places (MD, SC, TN, OH, NY, CT)
+  - Fill image gaps (KY 73%, CT 79%, MD 79%)
+  - Add new states (WI, MO, IN)
+  - Backfill sources (all 752 entries at source_count=1)
+  - Fix category inconsistencies (51 entries with wrong/non-standard categories)
+  - Enrich VA ghost stories (thinnest content at avg 295 chars)
+  - Drop stray `aircraft` table
+  - Expand tour operators (8 cities with 8+ places but 0 operators)
+  - Deduplicate Plant Hall / Plant Museum (same building, same address)
 
 ### Changed
 - **Researcher Agent** — Updated to collect and store multiple source URLs per place

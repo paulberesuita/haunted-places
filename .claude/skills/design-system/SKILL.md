@@ -24,7 +24,7 @@ Add to `<head>` in every SSR function:
         },
         colors: {
           'dark': '#0a0a0f',
-          'dark-card': '#1a1a2e',
+          'dark-card': '#141419',
           'dark-border': '#2a2a35',
           'accent': '#e94560',
           'accent-hover': '#ff6b6b',
@@ -42,20 +42,20 @@ Add to `<head>` in every SSR function:
 | Token | Hex | Usage |
 |-------|-----|-------|
 | `dark` | `#0a0a0f` | Page background (`bg-dark`) |
-| `dark-card` | `#1a1a2e` | Card/section backgrounds |
+| `dark-card` | `#141419` | Card/section backgrounds |
 | `dark-border` | `#2a2a35` | Borders, dividers |
 | `accent` | `#e94560` | Primary action, links, highlights |
 | `accent-hover` | `#ff6b6b` | Hover state for accent |
 | `muted` | `#6b7280` | Secondary text, labels |
 | `ghost` | `#9ca3af` | Tertiary text, navigation links |
 
-**Note:** `dark-card` varies slightly between pages (`#1a1a2e` on homepage/states, `#141419` on place pages). Use `#1a1a2e` for new pages.
+**Note:** Use `#141419` for `dark-card` on all new pages (matches place detail pages).
 
 ## Typography
 
 | Element | Classes | Font |
 |---------|---------|------|
-| Site name | `font-['Creepster'] text-2xl text-accent` | Creepster |
+| Site name | `text-2xl tracking-widest` + `font-family: 'Bebas Neue'` | Bebas Neue |
 | H1 (hero) | `font-['Bebas_Neue'] text-5xl md:text-7xl text-white` | Bebas Neue |
 | H2 | `text-2xl font-semibold text-white` | Inter |
 | H3 | `text-xl font-semibold text-white` | Inter |
@@ -67,14 +67,15 @@ Add to `<head>` in every SSR function:
 All pages use a dark background with white/ghost text:
 
 ```html
-<body class="bg-dark text-ghost min-h-screen font-sans">
+<body class="bg-dark text-gray-100 min-h-screen font-sans">
   <!-- Header -->
   <header class="border-b border-dark-border">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/" class="font-['Creepster'] text-2xl text-accent hover:text-accent-hover">Spookfinder</a>
+      <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
-        <a href="/states" class="hover:text-white">States</a>
-        <a href="/about" class="hover:text-white">About</a>
+        <a href="/states" class="hover:text-white transition-colors">States</a>
+        <a href="/tours" class="hover:text-white transition-colors">Tours</a>
+        <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
   </header>
@@ -90,12 +91,14 @@ All pages use a dark background with white/ghost text:
 
 ### Place Card
 
+No borders on cards. Use background color contrast and shadow glow on hover.
+
 ```html
-<a href="/place/${slug}" class="group block bg-dark-card border border-dark-border rounded-xl overflow-hidden hover:border-accent/50 transition-all">
-  <!-- Image -->
+<a href="/place/${slug}" class="group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
+  <!-- Image (grayscale filter) -->
   <div class="aspect-[4/3] overflow-hidden">
     <img src="/images/${image_url}" alt="${name}"
-      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
   </div>
   <!-- Info -->
   <div class="p-4">
@@ -108,7 +111,7 @@ All pages use a dark background with white/ghost text:
 ### Category Pill
 
 ```html
-<span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent border border-accent/20">
+<span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent">
   ${category}
 </span>
 ```
@@ -130,8 +133,8 @@ All pages use a dark background with white/ghost text:
 ### Ghost Emoji Placeholder (no image)
 
 ```html
-<div class="aspect-[4/3] bg-dark-border/30 flex items-center justify-center">
-  <span class="text-4xl opacity-50">👻</span>
+<div class="aspect-[4/3] bg-gradient-to-br from-dark-card to-dark flex items-center justify-center">
+  <span class="text-4xl opacity-30">👻</span>
 </div>
 ```
 
@@ -139,16 +142,28 @@ All pages use a dark background with white/ghost text:
 
 - Served from R2 via `/images/places/[slug].jpg`
 - Cards use `aspect-[4/3]` with `object-cover`
+- **Grayscale filter** on all place images (adds to spooky vibe):
+  ```css
+  .place-img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+  }
+  .place-img:hover, .place-card:hover .place-img {
+    filter: grayscale(100%) sepia(20%) brightness(0.9);
+  }
+  ```
 - Hero images use full-width with dark gradient overlay for text readability
 - Lazy loading: `loading="lazy"` on card images
 - Error handling: hide broken images gracefully
 
 ## Rules
 
-1. **Dark theme only** — `bg-dark` page background, light text
-2. **No gradients** — Solid colors only (except image overlays for readability)
-3. **Use custom color tokens** — `accent`, `ghost`, `muted`, `dark-card`, `dark-border`
-4. **Mobile-first** — Base is mobile, `md:` for desktop
-5. **Every list needs a ghost emoji placeholder** for items without images
-6. **SSR everything** — All content in HTML, no client-side skeleton loaders
-7. **Images first** — Sort lists to show places with images before those without
+1. **Dark theme only** — `bg-dark` page background, `text-gray-100` body text
+2. **No borders on cards** — Use background color contrast (`bg-dark-card` on `bg-dark`) and `hover:shadow-lg hover:shadow-accent/10` for depth
+3. **Grayscale images** — All place images use `place-img` class with grayscale filter
+4. **Use custom color tokens** — `accent`, `ghost`, `muted`, `dark-card`, `dark-border`
+5. **Mobile-first** — Base is mobile, `md:` for desktop
+6. **Every list needs a ghost emoji placeholder** for items without images
+7. **SSR everything** — All content in HTML, no client-side skeleton loaders
+8. **Images first** — Sort lists to show places with images before those without
+9. **Gradients only for overlays** — Image gradient overlays for text readability are fine, no decorative background gradients
