@@ -30,7 +30,12 @@ What we shipped. Builder appends here after each feature.
 
 - **Planner Agent** — Updated to use new backlog item format and order-based prioritization
 
-- **Builder Agent** — Updated "Mark Done" step to check the box rather than move between sections
+- **Builder Agent** — Updated "Mark Done" step; knows to skip `[data]` items
+
+- **Backlog as Single Priority List** — Added `[data]` tag for researcher work alongside `[feature]`/`[bug]`
+  - Researcher can add `[data]` items based on coverage gaps
+  - Planner prioritizes all item types together
+  - Builder skips `[data]` items (researcher executes those)
 
 - **Boo Map Feature Spec** — Interactive map showing all 612+ haunted places across America
   - Leaflet + OpenStreetMap with CartoDB Dark Matter tiles (free, dark/spooky)

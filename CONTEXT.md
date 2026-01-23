@@ -6,6 +6,20 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-23
 
+### Backlog as Single Priority List
+
+The backlog was feature/bug only (planner→builder pipeline). Data work (researcher) was tracked separately via coverage dashboards. Problem: Paul had to check two places to know "what's next."
+
+**Decision:** Added `[data]` tag. The researcher adds items based on coverage gaps, the planner prioritizes the full list. This makes dependencies visible — e.g., "city pages need more states researched" shows up as a `[data]` item above the `[feature]` item.
+
+**Rules:**
+- `[data]` items don't need specs (researcher knows its own workflows)
+- Researcher only adds `[data]` items, never `[feature]`/`[bug]`
+- Builder skips `[data]` items
+- Planner owns priority order across all types
+
+---
+
 ### Skills Overhaul — Template Defaults to Project-Specific
 
 The three builder skills (design-system, coding-standards, cloudflare-deploy) were still using generic template defaults from when the project was scaffolded. The builder agent was working from wrong colors, wrong patterns, and placeholder project names.
