@@ -19,6 +19,13 @@ What we shipped. Builder appends here after each feature.
   - Does not interfere with existing idle scare easter egg
   - All CSS and JS are inline in the place page function (no external files)
 
+- **Expanded OH, NY, CT to 40 places each** — Researched and seeded new haunted locations
+  - Ohio: +11 places (Akron, Youngstown, Marietta, Sandusky, Fremont, Peninsula, Hamilton, Lakemore, Athens, Painesville, Oxford)
+  - New York: +8 places (Rochester x2, Geneva, New Paltz, Binghamton, Lily Dale, Poughkeepsie, Garrison)
+  - Connecticut: +6 places (Pomfret, Danbury, Naugatuck, Stamford, Middlebury, Norwich)
+  - All new entries have 2+ independent sources per the minimum source requirement
+  - Total database now at 821 places across 18 states
+
 - **Expanded MD, TN, SC to 40 places each** — Researched and seeded new haunted locations
   - Maryland: +16 places (Ellicott City, Hagerstown, Clinton, Havre de Grace, Eastern Shore)
   - Tennessee: +15 places (Red Boiling Springs, Knoxville, Chattanooga, Gatlinburg, Nashville, Jonesborough)

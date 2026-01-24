@@ -42,8 +42,7 @@ Each agent owns their section. Order = priority. Top = next.
 ## Data
 
 ### Inbox
-- **Expand states below 40 places** — OH (29), NY (32), CT (34) still need more places to reach launch threshold
-- **Fill image gaps** — KY (73%), CT (79%) need image research to reach 80%+ coverage
+- **Fill image gaps** — OH, NY, CT new places need images; KY (73%) still below 80% threshold
 - **Add new states** — WI, MO, IN are strong candidates with well-known haunted locations
 - **Backfill sources** — All 752 entries at source_count=1, need 2+ independent sources each
 - **Fix category inconsistencies** — 25 non-standard categories + 26 miscategorized `other` entries + 2 bad year_established values. Decide on `lighthouse` as official category.
@@ -53,5 +52,6 @@ Each agent owns their section. Order = priority. Top = next.
 - **Deduplicate Plant Hall / Plant Museum** — Same building, same address in Tampa. Consolidate into one entry with richer ghost story.
 
 ### Done
+- **Expand OH, NY, CT to 40 places** — OH +11, NY +8, CT +6. All states now at 40+ (2026-01-23)
 - **Image research for MD, TN, SC** — 39 images uploaded (Wikimedia + website fallback). TN 98%, MD 83%, SC 80% (2026-01-23)
 - **Expand MD, TN, SC to 40 places** — MD +16, TN +15, SC +13 (2026-01-23)

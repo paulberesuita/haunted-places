@@ -59,6 +59,26 @@ Researched and added 44 new haunted places across 3 states to reach the 40-place
 
 **Batch file naming:** Used `seed-[state]-batch2.sql` pattern to distinguish from original seed files.
 
+### Data Expansion — OH, NY, CT to 40 Places Each
+
+Researched and added 25 new haunted places across 3 states to bring all states to the 40-place launch threshold.
+
+**State-specific research approach:**
+- Ohio (+11): Targeted geographic gaps outside Columbus/Cleveland/Cincinnati — added Akron, Youngstown, Marietta, Sandusky, Fremont, Peninsula, Hamilton, Lakemore, Athens, Painesville, Oxford
+- New York (+8): Filled Rochester (0→2), Finger Lakes (0→1), Hudson Valley south (0→3), Southern Tier (0→1), Western NY (0→1). Avoided adding more NYC entries (already 9).
+- Connecticut (+6): Filled NE CT (Pomfret), W CT (Danbury), Central CT (Naugatuck, Middlebury), SW CT (Stamford), E CT (Norwich). Avoided adding more New Haven entries (already 6).
+
+**Research sources by quality:**
+- Haunted History Trail of New York State (hauntedhistorytrail.com) — excellent for NY, detailed stories with specific claims
+- Damned Connecticut (damnedct.com) — well-researched CT-specific paranormal history
+- Atlas Obscura — strong for unusual/obscure locations with historical context
+- Ohio Exploration Society, hauntedplaces.org — useful for initial discovery, cross-referenced with other sources
+- CTvisit, visitbinghamton.org — tourism board sites with verified location details
+
+**Database milestone:** 821 total places across 18 states. All states now at 40+.
+
+---
+
 ### Image Research — MD, TN, SC
 
 Uploaded 39 images total across 4 batches. Final coverage: TN 98%, MD 83%, SC 80%.
