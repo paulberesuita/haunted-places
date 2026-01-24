@@ -110,6 +110,7 @@ function renderAboutPage(stats, baseUrl) {
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
         <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
+        <a href="/radio" class="hover:text-white transition-colors">Radio</a>
         <a href="/about" class="text-white">About</a>
       </nav>
     </div>
@@ -262,6 +263,7 @@ function renderAboutPage(stats, baseUrl) {
     </div>
   </footer>
 
+  <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
 </body>
 </html>`;
 }

@@ -8,16 +8,16 @@ Each agent owns their section. Order = priority. Top = next.
 
 ### Inbox
 - **[Feature] Boo Map** — Interactive full-US map with clustering and popup cards → `specs/boo-map.md`
-- **[Feature] Ghost Story Radio** — Ambient "lo-fi haunts" page with TTS narration, atmospheric audio, and image slideshow → `specs/ghost-story-radio.md`
 - **[Feature] The Dead Map** — "What's haunted near me?" geolocation-based ranked list of closest places → `specs/the-dead-map.md`
 - **[Feature] Phantom Timeline** — Scrollable vertical timeline of hauntings by year with era groupings → `specs/phantom-timeline.md`
-- **[Easter Egg] Ghost in the Console** — Spooky styled messages in browser DevTools console → `specs/easter-egg-console-ghost.md`
 - **[Easter Egg] Gravestone 404** — CSS tombstone with URL slug as epitaph on 404 pages → `specs/easter-egg-gravestone-404.md`
 - **[Easter Egg] The Flickering Favicon** — Tab icon briefly flickers to a skull at random intervals → `specs/easter-egg-flickering-favicon.md`
 - **[Easter Egg] Cold Spot** — Invisible frost zone on place pages that reveals when cursor passes through → `specs/easter-egg-cold-spot.md`
 - **[Easter Egg] The Follower** — Dark silhouette that grows more visible with each place page visit → `specs/easter-egg-the-follower.md`
 
 ### Done
+- **[Feature] Ghost Story Radio** — Ambient "lo-fi haunts" page with TTS narration, atmospheric audio, and image slideshow → `specs/ghost-story-radio.md`
+- **[Easter Egg] Ghost in the Console** — Spooky styled messages in browser DevTools console → `specs/easter-egg-console-ghost.md`
 - **[Easter Egg] The Watcher** — Glowing red eyes in page margins that track your cursor → `specs/easter-egg-the-watcher.md`
 - **Haunted Hotels Guide** — Dedicated vertical for haunted hotels with state filters and scariest-room highlights from ghost stories → `specs/haunted-hotels-guide.md`
 - **Ghost Tours Directory** — City pages surfacing tour operators with prices, booking links, and nearby haunted places → `specs/ghost-tours-directory.md`

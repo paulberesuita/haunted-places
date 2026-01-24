@@ -4,6 +4,32 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-24
+
+### Added
+- **[Easter Egg] Ghost in the Console** — ASCII art ghost in browser console on all pages
+  - Displays ASCII ghost figure with "You shouldn't be here." after 3s delay
+  - Styled with %c (red #e94560, monospace, 14px)
+  - Fires once per session via sessionStorage `_gh` flag
+  - Inlined directly in HTML (external JS blocked by ad blockers)
+
+- **[Feature] Ghost Story Radio** — Vinyl turntable ghost story narration at `/radio`
+  - ElevenLabs TTS (Callum voice, eleven_multilingual_v2) with eerie settings (stability=0.3, similarity_boost=0.5, style=0.7)
+  - TTS endpoint at `/api/tts/[slug]` generates once per story, serves from R2 cache thereafter
+  - 3 pre-generated stories cached in R2: thomas-house-hotel, lilburn-mansion, historic-licking-county-jail
+  - 3 ambient audio loops (rain, wind, creak) hosted on R2 and mixed underneath narration
+  - CSS-only vinyl record (radial-gradient grooves, conic-gradient texture, spin animation)
+  - Vinyl label center shows cover image of current story (70% grayscale, fade-in transition)
+  - First story image/info shown on page load (ready to play)
+  - Fire video background (`fire-bg.mp4`) — unique to radio page, other pages keep `smoke-bg.mp4`
+  - Click vinyl to play/stop, auto-advances to next story after 3s pause
+  - Retry logic for TTS (2 retries with 5s delay for rate-limited free tier)
+  - Stories prioritize pre-cached ones first, then random order
+  - "Radio" nav link added to all pages
+  - Audio serving function at `functions/audio/[[path]].js`
+
+---
+
 ## 2026-01-23
 
 ### Added

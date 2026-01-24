@@ -4,6 +4,64 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-24
+
+### Ghost Story Radio — Build Decisions
+
+**Architecture:**
+- Single SSR function at `functions/radio.js` — queries D1 for all places with both `ghost_story` and `image_url`
+- Places JSON embedded directly in the page (includes image URLs as full paths)
+- TTS via ElevenLabs `eleven_multilingual_v2` model with Callum voice (`N2lVS1w4EtoT3dr4eOWO`)
+- TTS function at `functions/api/tts/[slug].js` — on-demand generation + R2 cache (`tts/[slug].mp3` keys)
+- API key stored as Cloudflare Pages secret `ELEVENLABS_API_KEY`
+- Ambient audio served via `functions/audio/[[path]].js` from R2 bucket (same bucket as images, `audio/` key prefix)
+
+**Voice selection (Callum):**
+- Tested George, Brian, Callum, and Daniel with various settings
+- Callum ("husky trickster") chosen for eerie quality
+- Settings: stability=0.3 (very expressive), similarity_boost=0.5, style=0.7
+- These low-stability settings create variation between reads — good for storytelling
+
+**Pre-generated stories:**
+- 3 stories pre-generated and stored in R2 to avoid rate limiting on free tier
+- Slugs: thomas-house-hotel, lilburn-mansion, historic-licking-county-jail
+- SQL query prioritizes these 3 first (CASE WHEN slug IN (...) THEN 0 ELSE 1 END), then RANDOM()
+- Remaining stories generate on-demand when played, then cache in R2
+
+**Audio approach:**
+- Generated synthetic ambient loops using ffmpeg `anoisesrc` filter (pink noise for rain, brown noise for wind, white noise for creak)
+- 30-second loops at 128kbps MP3, ~470KB each
+- Volume mixing: rain at 100%, wind at 60%, creak at 30% — layered for depth
+- Fade in/out using `setInterval` with 0.01-0.02 increments every 50ms
+
+**ElevenLabs TTS notes:**
+- `eleven_monolingual_v1` is deprecated on free tier — must use `eleven_multilingual_v2`
+- Free tier has strict rate limits (few requests/minute) — client-side retry logic handles 502s
+- First request per story takes 3-8 seconds (API generation); subsequent requests serve from R2 in ~250ms
+- Audio stored at R2 key `tts/[slug].mp3`
+- Client uses `<audio>` element with `/api/tts/[slug]` src — shows "Loading..." until `canplay` event
+
+**UI — Vinyl Turntable:**
+- CSS-only vinyl record: radial-gradient for grooves, conic-gradient for texture
+- Spin animation (3s linear infinite), paused when stopped
+- Label center shows cover image of current story (img with object-fit: cover, 70% grayscale, border-radius: 50%)
+- First story image shown on page load via `showPlace(0)` in init
+- Click anywhere on turntable to toggle play/stop
+- Fire video background (`fire-bg.mp4`) — separate from other pages' `smoke-bg.mp4`
+
+**R2 audio serving:**
+- `wrangler r2 object put` defaults to LOCAL unless `--remote` flag is passed
+- Audio function uses same IMAGES binding as image function, just with `audio/` prefix in key path
+
+### Ghost in the Console — Lessons
+
+- External JS file (`/js/console-ghost.js`) was blocked by ad blockers (ERR_BLOCKED_BY_CLIENT)
+- Fixed by inlining the script directly in the HTML template — can't be blocked
+- Changed from 3-message sequence to single ASCII art ghost with "You shouldn't be here."
+- Uses `_gh` sessionStorage key (short name to avoid ad blocker heuristics)
+
+---
+
 ## 2026-01-23
 
 ### The Watcher Easter Egg — Build Decisions
