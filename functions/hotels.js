@@ -114,13 +114,14 @@ function renderHead(title, description, canonicalUrl, baseUrl, hotelCount) {
 }
 
 function renderHeader() {
-  return `<header class="border-b border-dark-border">
+  return `<header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
         <a href="/hotels" class="text-white">Hotels</a>
+        <a href="/radio" class="hover:text-white transition-colors">Radio</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -128,7 +129,7 @@ function renderHeader() {
 }
 
 function renderFooter() {
-  return `<footer class="mt-16 bg-dark-card/50">
+  return `<footer class="mt-16">
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
@@ -191,6 +192,18 @@ function renderHotelsPage(hotels, states, baseUrl) {
 <head>
   ${renderHead(title, description, canonicalUrl, baseUrl, hotelCount)}
   <style>
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+    html { background: #0a0a0f; }
     .place-img {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
@@ -215,7 +228,11 @@ function renderHotelsPage(hotels, states, baseUrl) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen font-sans">
+<body class="text-gray-100 min-h-screen font-sans">
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+
   ${renderHeader()}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
@@ -318,6 +335,7 @@ function renderHotelsPage(hotels, states, baseUrl) {
       window.filterHotels = filterHotels;
     })();
   </script>
+  <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
 </body>
 </html>`;
 }

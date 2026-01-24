@@ -112,13 +112,14 @@ function renderHead(title, description, canonicalUrl, baseUrl) {
 }
 
 function renderHeader(activePage) {
-  return `<header class="border-b border-dark-border">
+  return `<header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="${activePage === 'states' ? 'text-white' : 'hover:text-white transition-colors'}">States</a>
         <a href="/tours" class="${activePage === 'tours' ? 'text-white' : 'hover:text-white transition-colors'}">Tours</a>
         <a href="/hotels" class="${activePage === 'hotels' ? 'text-white' : 'hover:text-white transition-colors'}">Hotels</a>
+        <a href="/radio" class="${activePage === 'radio' ? 'text-white' : 'hover:text-white transition-colors'}">Radio</a>
         <a href="/about" class="${activePage === 'about' ? 'text-white' : 'hover:text-white transition-colors'}">About</a>
       </nav>
     </div>
@@ -126,7 +127,7 @@ function renderHeader(activePage) {
 }
 
 function renderFooter() {
-  return `<footer class="mt-16 bg-dark-card/50">
+  return `<footer class="mt-16">
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
@@ -185,6 +186,18 @@ function renderToursIndexPage(cities, baseUrl) {
   ${JSON.stringify(breadcrumbSchema)}
   </script>
   <style>
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+    html { background: #0a0a0f; }
     .place-img {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
@@ -197,7 +210,11 @@ function renderToursIndexPage(cities, baseUrl) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen font-sans">
+<body class="text-gray-100 min-h-screen font-sans">
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+
   ${renderHeader('tours')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
@@ -226,6 +243,7 @@ function renderToursIndexPage(cities, baseUrl) {
     </main>
 
   ${renderFooter()}
+  <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
 </body>
 </html>`;
 }
@@ -264,21 +282,14 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
 
   const operatorCardsHtml = operators.map(op => {
     const bookingLink = op.booking_url || op.website;
-    const tourTypes = op.tour_types ? op.tour_types.split(',').map(t => t.trim()) : [];
 
     return `
       <div class="bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
         <div class="p-6">
-          <div class="flex items-start justify-between mb-3">
+          <div class="mb-3">
             <h3 class="text-lg font-semibold text-white">${escapeHtml(op.name)}</h3>
-            ${op.price_range ? `<span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent whitespace-nowrap">${escapeHtml(op.price_range)}</span>` : ''}
           </div>
           ${op.description ? `<p class="text-sm text-ghost mb-4">${escapeHtml(truncate(op.description, 200))}</p>` : ''}
-          ${tourTypes.length > 0 ? `
-          <div class="flex flex-wrap gap-2 mb-4">
-            ${tourTypes.map(t => `<span class="text-xs px-2 py-1 rounded-full bg-dark-border text-ghost">${escapeHtml(t)}</span>`).join('')}
-          </div>
-          ` : ''}
           ${bookingLink ? `
           <a href="${escapeHtml(bookingLink)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
             Book Now
@@ -329,6 +340,18 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
   </script>
   ${operatorSchemas.map(schema => `<script type="application/ld+json">\n  ${JSON.stringify(schema)}\n  </script>`).join('\n  ')}
   <style>
+    .smoke-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+    html { background: #0a0a0f; }
     .place-img {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
@@ -341,7 +364,11 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen font-sans">
+<body class="text-gray-100 min-h-screen font-sans">
+  <video class="smoke-video" autoplay muted loop playsinline>
+    <source src="/smoke-bg.mp4" type="video/mp4">
+  </video>
+
   ${renderHeader('tours')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
@@ -375,6 +402,7 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
     </main>
 
   ${renderFooter()}
+  <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
 </body>
 </html>`;
 }
