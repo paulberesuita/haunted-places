@@ -4,13 +4,85 @@ A directory of haunted places across America. Browse by state, explore ghost sto
 
 **Live:** [spookfinder.com](https://spookfinder.com)
 
+---
+
 ## On Session Start
 
-**Before starting any work, read the recent sections of these files (first 150 lines only):**
+**Read the recent sections of these files (first 150 lines):**
 1. `CONTEXT.md` — Key decisions and lessons learned
 2. `CHANGELOG.md` — Recent changes and current status
 
-Both files are ordered newest-first. Only read the top ~150 lines (covers the last 1-2 sessions). The full history is rarely needed — dig deeper only if your current task requires understanding older decisions.
+Both are ordered newest-first. Only read ~150 lines (last 1-2 sessions).
+
+---
+
+## How We Work
+
+### Agents = What to do
+
+Agents are **advisors that execute**. They check state, recommend actions, and when you say "build it", they build.
+
+| Agent | Focus | Triggers |
+|-------|-------|----------|
+| **product** | UX features for users on the site | "product", "build", "ship" |
+| **seo** | Data + content + SEO pages | "seo", "research", "data" |
+| **mini-apps** | Fun interactive tools | "mini-apps", "quiz", "tool" |
+| **outreach** | Campaigns, backlinks, partnerships | "outreach", "backlinks" |
+
+**Advisor mode flow:**
+```
+User: "seo"
+    ↓
+Agent checks state (runs queries, checks files)
+    ↓
+Agent recommends: "Savannah has 12 places. Build city page?"
+    ↓
+User: "build it" or "add to backlog"
+    ↓
+Agent executes (or writes spec for later)
+    ↓
+Agent reports results, recommends next
+```
+
+### Skills = How to do it
+
+Skills are **detailed instructions** for specific tasks. Agents invoke skills when executing.
+
+**Shared skills (all agents use):**
+| Skill | What it does |
+|-------|--------------|
+| `/design-system` | Colors, typography, components |
+| `/coding-standards` | API patterns, D1/R2 usage |
+| `/cloudflare-deploy` | Deploy commands |
+| `/add-to-backlog` | Write spec + add to backlog |
+
+**Agent-owned skills:**
+| Agent | Skills |
+|-------|--------|
+| **seo** | `/research-places`, `/research-images`, `/verify-data`, `/query-data`, `/build-seo-page`, `/optimize-seo` |
+| **mini-apps** | `/build-tool` |
+| **outreach** | `/cold-campaign` |
+| **product** | *(builds directly, no special skills)* |
+
+### Backlog = What's planned
+
+Each agent owns a section of `BACKLOG.md`:
+- `## Product > ### Inbox` — Product agent
+- `## SEO > ### Inbox` — SEO agent
+- `## Mini-Apps > ### Inbox` — Mini-Apps agent
+- `## Outreach > ### Inbox` — Outreach agent
+
+Agents never touch each other's sections.
+
+**Backlog items always have specs:** When adding to backlog, agents invoke `/add-to-backlog` which writes a full spec to `specs/[name].md`.
+
+### Documentation = What happened
+
+After work completes, always update:
+- **CHANGELOG.md** — What changed (Added, Changed, Fixed, Removed)
+- **CONTEXT.md** — Why it changed, lessons learned
+
+---
 
 ## Tech Stack
 
@@ -18,160 +90,88 @@ Both files are ordered newest-first. Only read the top ~150 lines (covers the la
 |-------|------------|
 | Frontend | Vanilla HTML/JS + Tailwind CDN |
 | Hosting | Cloudflare Pages |
-| Functions | Cloudflare Pages Functions |
+| Functions | Cloudflare Pages Functions (SSR) |
 | Database | Cloudflare D1 (SQLite) |
 | Storage | Cloudflare R2 |
+
+---
 
 ## Project Structure
 
 ```
 /
-├── public/                 # Static assets (HTML, CSS, JS)
-├── functions/              # Cloudflare Pages Functions
+├── public/                 # Static assets
+├── functions/              # Cloudflare Pages Functions (SSR)
 ├── migrations/             # SQL migrations
 ├── scripts/                # Seed scripts
 ├── specs/                  # Feature specifications
-├── examples/               # Starter templates to copy from
 ├── .claude/
-│   ├── agents/             # Agent definitions
-│   │   ├── product.md      # UX features for people on the site
-│   │   ├── seo.md          # Data, content, SEO pages, technical SEO
-│   │   ├── mini-apps.md    # Fun interactive tools
-│   │   └── outreach.md     # Cold campaigns, backlinks, partnerships
-│   └── skills/
-│       ├── design-system/      # /design-system
-│       ├── coding-standards/   # /coding-standards
-│       ├── cloudflare-deploy/  # /cloudflare-deploy
-│       ├── build-seo-page/     # /build-seo-page (workflow)
-│       ├── build-tool/         # /build-tool (workflow)
-│       ├── cold-campaign/      # /cold-campaign (workflow)
-│       ├── optimize-seo/       # /optimize-seo (workflow)
-│       ├── add-to-backlog/     # internal: adds specs to backlog
-│       ├── research-places/    # internal operation
-│       ├── research-images/    # internal operation
-│       ├── verify-data/        # internal operation
-│       └── query-data/         # internal operation
+│   ├── agents/             # Agent definitions (what to do)
+│   │   ├── product.md
+│   │   ├── seo.md
+│   │   ├── mini-apps.md
+│   │   └── outreach.md
+│   └── skills/             # Skill definitions (how to do it)
+│       ├── design-system/
+│       ├── coding-standards/
+│       ├── cloudflare-deploy/
+│       ├── add-to-backlog/
+│       ├── build-seo-page/
+│       ├── build-tool/
+│       ├── cold-campaign/
+│       ├── optimize-seo/
+│       ├── research-places/
+│       ├── research-images/
+│       ├── verify-data/
+│       └── query-data/
 ├── BACKLOG.md              # Work queue (Inbox → Done)
 ├── CHANGELOG.md            # Record of changes
-├── CONTEXT.md              # Key decisions & lessons learned
+├── CONTEXT.md              # Key decisions & lessons
 └── wrangler.toml           # Cloudflare config
 ```
 
+---
+
 ## Routing Architecture
 
-All pages are **server-side rendered** by Cloudflare Pages Functions. There are NO static HTML pages served for main routes — the `functions/` directory generates all HTML dynamically with data from D1.
+All pages are **server-side rendered** by Cloudflare Pages Functions.
 
-### Function Routing Priority
-
-Cloudflare Pages Functions use file-based routing. **Catch-all routes (`[[slug]]`) take priority over `index.js` for the parent path.**
+### Function Routing
 
 ```
 functions/
-├── index.js                    # Handles GET /
+├── index.js                    # GET /
 ├── states/
-│   ├── index.js                # ⚠️ NOT used for /states (overridden by [[slug]].js)
-│   └── [[slug]].js             # Handles /states AND /states/california, /states/texas, etc.
+│   └── [[slug]].js             # GET /states AND /states/[state]
 ├── place/
-│   └── [[slug]].js             # Handles /place/[slug]
+│   └── [[slug]].js             # GET /place/[slug]
 └── api/
-    ├── tour-operators/
-    │   ├── index.js             # GET /api/tour-operators
-    │   ├── [id].js              # GET /api/tour-operators/:id
-    │   └── cities.js            # GET /api/tour-operators/cities
     └── ...
 ```
 
-**CRITICAL:** When `[[slug]].js` exists, it handles BOTH:
-- `/states/california` (slug = `['california']`)
-- `/states` (slug = `[]` or undefined → renders index page as fallback)
-
-The `index.js` in the same directory is NEVER invoked. Always edit `[[slug]].js` for changes to either the index or detail pages.
-
-### Static Files in `public/states/`
-
-The `public/states/` directory contains pre-rendered HTML files for individual state pages (e.g., `california.html`). These are **legacy/unused** — the dynamic function handles all routes. Do not rely on or add to these static files.
+**CRITICAL:** `[[slug]].js` handles both index and detail pages. Don't create `index.js` in the same directory.
 
 ### Key Rendering Functions
 
-| File | Function | Renders |
-|------|----------|---------|
-| `functions/states/[[slug]].js` | `renderStatesIndexPage()` | /states (grid of all states) |
-| `functions/states/[[slug]].js` | `renderStatePage()` | /states/[slug] (places in a state) |
-| `functions/place/[[slug]].js` | main handler | /place/[slug] (individual place) |
-| `functions/index.js` | main handler | / (homepage) |
+| File | Renders |
+|------|---------|
+| `functions/index.js` | Homepage |
+| `functions/states/[[slug]].js` | /states and /states/[state] |
+| `functions/place/[[slug]].js` | /place/[slug] |
 
-## Agents
-
-Agents are **state-aware, goal-tracking, and recommending**. They check current state, compare to goals, and recommend high-impact actions. Invoke by trigger words.
-
-| Agent | Purpose | Triggers |
-|-------|---------|----------|
-| **product** | UX features for people on the site | "product", "build", "implement", "ship" |
-| **seo** | Data research, content, SEO pages | "seo", "research", "data", "city pages", "sitemap" |
-| **mini-apps** | Fun interactive tools | "mini-apps", "build tool", "interactive", "quiz" |
-| **outreach** | Cold campaigns, backlinks, partnerships | "outreach", "cold campaign", "backlinks", "partnerships" |
-
-### How Agents Work (Advisor Mode)
-
-```
-User invokes agent ("growth")
-         ↓
-Agent checks current state (queries D1, checks files)
-         ↓
-Agent compares to goals, recommends actions
-         ↓
-User picks: "build it" or "add to backlog"
-         ↓
-Agent executes (or writes spec to backlog)
-         ↓
-Agent reports results, recommends next action
-```
-
-**Agents don't ask "plan or execute?"** — they assess state, recommend, and when you say "build it", they build.
-
-**Backlog ownership** — each agent owns a section of `BACKLOG.md`:
-- Product → `## Product > ### Inbox`
-- SEO → `## SEO > ### Inbox`
-- Mini-Apps → `## Mini-Apps > ### Inbox`
-- Outreach → `## Outreach > ### Inbox`
-
-Agents never touch each other's sections.
-
-### Task Tracking
-
-When executing, agents use `TaskCreate` to break work into trackable steps. All tasks are created upfront, then marked `in_progress` → `completed` as work progresses.
-
-### After Work Completes
-
-All agents update:
-- **CHANGELOG.md** — What changed
-- **CONTEXT.md** — Why, lessons learned
-
-Then recommend the next action based on updated state.
-
-## Skills
-
-User-invokable skills with `/command`:
-
-| Skill | Usage | What it does |
-|-------|-------|--------------|
-| `/design-system` | `/design-system` | Load UI guidance, colors, components |
-| `/coding-standards` | `/coding-standards` | Load API patterns, D1/R2 usage |
-| `/cloudflare-deploy` | `/cloudflare-deploy` | Load deploy commands |
-| `/build-seo-page` | `/build-seo-page` | Build programmatic SEO pages from data |
-| `/build-tool` | `/build-tool` | Build fun, interactive mini-tools |
-| `/cold-campaign` | `/cold-campaign` | Run outreach campaigns for links/partnerships |
-| `/optimize-seo` | `/optimize-seo` | Improve technical SEO and on-page optimization |
+---
 
 ## Environments
 
-| Environment | URL | Purpose |
-|-------------|-----|---------|
-| **Local** | `localhost:8788` | Local development |
-| **Preview** | `spookfinder.pages.dev` | Test before production |
-| **Production** | `spookfinder.com` | Live site |
+| Environment | URL |
+|-------------|-----|
+| Local | `localhost:8788` |
+| Preview | `spookfinder.pages.dev` |
+| Production | `spookfinder.com` |
 
-**Single project:** Both Preview and Production are served by the `spookfinder` Cloudflare Pages project. One deploy updates both URLs.
+**Single deploy** updates both Preview and Production.
+
+---
 
 ## Deploy Commands
 
@@ -182,17 +182,6 @@ wrangler pages dev ./public --d1=DB=haunted-places-db --local
 # Run migration
 npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
-# Deploy (updates both spookfinder.pages.dev AND spookfinder.com)
+# Deploy
 wrangler pages deploy ./public --project-name=spookfinder
 ```
-
-**IMPORTANT:** Always deploy to `--project-name=spookfinder`. This updates both:
-- Preview: `spookfinder.pages.dev`
-- Production: `spookfinder.com`
-
-## Documentation Requirements
-
-**After making changes, update:**
-
-1. **CHANGELOG.md** — What changed (use: Added, Changed, Fixed, Removed)
-2. **CONTEXT.md** — Why it changed, lessons learned
