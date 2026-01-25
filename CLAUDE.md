@@ -1,6 +1,8 @@
-# Directory Template
+# SpookFinder
 
-A template for building directory-style apps with Claude agents.
+A directory of haunted places across America. Browse by state, explore ghost stories, find haunted hotels, discover ghost tours, and enjoy spooky mini-apps.
+
+**Live:** [spookfinder.com](https://spookfinder.com)
 
 ## On Session Start
 
@@ -32,17 +34,23 @@ Both files are ordered newest-first. Only read the top ~150 lines (covers the la
 ├── examples/               # Starter templates to copy from
 ├── .claude/
 │   ├── agents/             # Agent definitions
-│   │   ├── product.md      # Product features: ideate, spec, build, deploy
-│   │   ├── marketing.md    # Marketing features: ideate, spec, build, deploy
-│   │   └── researcher.md   # Gathers data, stores in D1/R2
+│   │   ├── product.md      # UX features for people on the site
+│   │   ├── seo.md          # Data, content, SEO pages, technical SEO
+│   │   ├── mini-apps.md    # Fun interactive tools
+│   │   └── outreach.md     # Cold campaigns, backlinks, partnerships
 │   └── skills/
 │       ├── design-system/      # /design-system
 │       ├── coding-standards/   # /coding-standards
 │       ├── cloudflare-deploy/  # /cloudflare-deploy
-│       ├── research-places/    # /research-places [state]
-│       ├── research-images/    # /research-images [state]
-│       ├── verify-data/        # /verify-data [state?]
-│       └── query-data/         # /query-data [question]
+│       ├── build-seo-page/     # /build-seo-page (workflow)
+│       ├── build-tool/         # /build-tool (workflow)
+│       ├── cold-campaign/      # /cold-campaign (workflow)
+│       ├── optimize-seo/       # /optimize-seo (workflow)
+│       ├── add-to-backlog/     # internal: adds specs to backlog
+│       ├── research-places/    # internal operation
+│       ├── research-images/    # internal operation
+│       ├── verify-data/        # internal operation
+│       └── query-data/         # internal operation
 ├── BACKLOG.md              # Work queue (Inbox → Done)
 ├── CHANGELOG.md            # Record of changes
 ├── CONTEXT.md              # Key decisions & lessons learned
@@ -94,38 +102,44 @@ The `public/states/` directory contains pre-rendered HTML files for individual s
 
 ## Agents
 
-Agents are specialized assistants that own their domain end-to-end. Invoke by trigger words.
+Agents are **state-aware, goal-tracking, and recommending**. They check current state, compare to goals, and recommend high-impact actions. Invoke by trigger words.
 
 | Agent | Purpose | Triggers |
 |-------|---------|----------|
-| **product** | Product features: ideate, spec, build, deploy | "product", "build", "implement", "ship" |
-| **marketing** | Marketing features: ideate, spec, build, deploy | "marketing", "seo", "growth", "traffic" |
-| **researcher** | Data completeness: research places, images, verify quality | "researcher", "research", "find data", "populate" |
+| **product** | UX features for people on the site | "product", "build", "implement", "ship" |
+| **seo** | Data research, content, SEO pages | "seo", "research", "data", "city pages", "sitemap" |
+| **mini-apps** | Fun interactive tools | "mini-apps", "build tool", "interactive", "quiz" |
+| **outreach** | Cold campaigns, backlinks, partnerships | "outreach", "cold campaign", "backlinks", "partnerships" |
 
-### How Agents Work
+### How Agents Work (Advisor Mode)
 
-**Two modes** — the user decides which:
-1. **Plan** — Ideate, discuss, propose backlog items. Nothing gets added without user approval.
-2. **Execute** — Build/run a specific item. Read the spec, announce approach, do the work, deploy.
+```
+User invokes agent ("growth")
+         ↓
+Agent checks current state (queries D1, checks files)
+         ↓
+Agent compares to goals, recommends actions
+         ↓
+User picks: "build it" or "add to backlog"
+         ↓
+Agent executes (or writes spec to backlog)
+         ↓
+Agent reports results, recommends next action
+```
+
+**Agents don't ask "plan or execute?"** — they assess state, recommend, and when you say "build it", they build.
 
 **Backlog ownership** — each agent owns a section of `BACKLOG.md`:
 - Product → `## Product > ### Inbox`
-- Marketing → `## Marketing > ### Inbox`
-- Researcher → `## Data > ### Inbox`
+- SEO → `## SEO > ### Inbox`
+- Mini-Apps → `## Mini-Apps > ### Inbox`
+- Outreach → `## Outreach > ### Inbox`
 
 Agents never touch each other's sections.
 
-### Skills Used by Agents
-
-| Skill | Product | Marketing | Researcher |
-|-------|---------|-----------|------------|
-| `/design-system` | Build | Build | — |
-| `/coding-standards` | Build | Build | — |
-| `/cloudflare-deploy` | Deploy | Deploy | Deploy |
-
 ### Task Tracking
 
-In execute mode, agents use `TaskCreate` to break work into trackable steps. All tasks are created upfront, then marked `in_progress` → `completed` as work progresses. This gives visibility into multi-step operations.
+When executing, agents use `TaskCreate` to break work into trackable steps. All tasks are created upfront, then marked `in_progress` → `completed` as work progresses.
 
 ### After Work Completes
 
@@ -133,19 +147,21 @@ All agents update:
 - **CHANGELOG.md** — What changed
 - **CONTEXT.md** — Why, lessons learned
 
+Then recommend the next action based on updated state.
+
 ## Skills
 
-All skills are user-invokable with `/command`.
+User-invokable skills with `/command`:
 
 | Skill | Usage | What it does |
 |-------|-------|--------------|
 | `/design-system` | `/design-system` | Load UI guidance, colors, components |
 | `/coding-standards` | `/coding-standards` | Load API patterns, D1/R2 usage |
 | `/cloudflare-deploy` | `/cloudflare-deploy` | Load deploy commands |
-| `/research-places` | `/research-places georgia` | Research haunted locations for a state |
-| `/research-images` | `/research-images texas` | Find and upload images for existing places |
-| `/verify-data` | `/verify-data` | Check data quality, find gaps |
-| `/query-data` | `/query-data how many places in CA?` | Query the database |
+| `/build-seo-page` | `/build-seo-page` | Build programmatic SEO pages from data |
+| `/build-tool` | `/build-tool` | Build fun, interactive mini-tools |
+| `/cold-campaign` | `/cold-campaign` | Run outreach campaigns for links/partnerships |
+| `/optimize-seo` | `/optimize-seo` | Improve technical SEO and on-page optimization |
 
 ## Environments
 

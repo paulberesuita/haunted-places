@@ -4,6 +4,46 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-25
+
+### Added
+- **Outreach Agent** — Focused agent for cold campaigns, backlinks, and partnerships
+  - Triggers: "outreach", "cold campaign", "backlinks", "partnerships"
+  - Owns `/cold-campaign` skill
+  - Has own backlog section: `## Outreach`
+
+- **Mini-Apps Agent** — Specialized agent for building fun, interactive tools related to the haunted theme
+  - Triggers: "mini-apps", "build tool", "interactive", "quiz", "fun tool"
+  - Focus: Fun first, but shareable (which drives traffic too)
+  - Owns `/build-tool` skill
+  - Has own backlog section: `## Mini-Apps`
+
+- **Add-to-Backlog Skill** — Internal skill for agents to properly add work to backlog
+  - Writes full spec to `specs/[name].md`
+  - Adds entry to correct agent's backlog section
+  - Ensures backlog items have enough detail to execute later
+
+### Changed
+- **SEO Agent Expanded** — Now owns data research + content + SEO pages
+  - Triggers: "seo", "research", "data", "city pages", "sitemap"
+  - Goals: Data coverage (40+ places/state), image coverage (80%+), technical SEO, programmatic pages
+  - Owns: /research-places, /research-images, /verify-data, /query-data, /build-seo-page, /optimize-seo
+  - Can research data as part of building pages (no need to switch agents)
+
+- **Smart Agent Architecture** — Redesigned agents to be state-aware, goal-tracking, and recommending
+  - Agents check current state on every invocation (run D1 queries, check files)
+  - Agents compare state to measurable goals and recommend high-impact actions
+  - No more "plan vs execute" question — agents assess and recommend
+  - "Advisor mode" — agents recommend, user picks "build it" or "add to backlog"
+  - Product agent tracks: core UX completeness, mobile-friendliness, accessibility, reported issues
+
+### Removed
+- **Growth Agent** — Responsibilities split between SEO (data research) and Outreach (campaigns)
+  - Data research skills moved to SEO agent
+  - Cold campaign skill moved to Outreach agent
+
+---
+
 ## 2026-01-24
 
 ### Added

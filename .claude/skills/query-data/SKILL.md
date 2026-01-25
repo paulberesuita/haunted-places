@@ -1,8 +1,8 @@
 ---
 name: query-data
 description: Query the database to answer questions. Usage: /query-data [question]
-user_invokable: true
-agent: researcher
+user_invokable: false
+agent: seo
 ---
 
 # Query Data

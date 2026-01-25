@@ -27,31 +27,57 @@ Each agent owns their section. Order = priority. Top = next.
 
 ---
 
-## Marketing
+## SEO
 
 ### Inbox
-- **City Pages** — All haunted places in a city, grouped by category → `specs/city-pages.md`
-- **Sitemap and Robots.txt** — Dynamic sitemap for Google indexing → `specs/sitemap-robots.md`
-- **Category Pages** — Browse all hotels, battlefields, prisons across states → `specs/category-pages.md`
+
+**Pages**
+- **[Page] City Pages** — All haunted places in a city, grouped by category → `specs/city-pages.md`
+- **[Page] Category Pages** — Browse all hotels, battlefields, prisons across states → `specs/category-pages.md`
+
+**Technical**
+- **[Technical] Sitemap and Robots.txt** — Dynamic sitemap for Google indexing → `specs/sitemap-robots.md`
+
+**Data**
+- **[Data] Fill image gaps** — OH, NY, CT new places need images; KY (73%) still below 80% threshold
+- **[Data] Add new states** — WI, MO, IN are strong candidates with well-known haunted locations
+- **[Data] Backfill sources** — All 752 entries at source_count=1, need 2+ independent sources each
+- **[Data] Fix category inconsistencies** — 25 non-standard categories + 26 miscategorized `other` entries + 2 bad year_established values
+- **[Data] Enrich VA ghost stories** — 50 places averaging 295 chars (thinnest state). Expand to 500+ chars
+- **[Data] Drop aircraft table** — Leftover from another project, 14 rows of airplane data
+- **[Data] Expand tour operators** — Boston, NYC, Philadelphia, Williamsburg, Asheville, Richmond, Louisville, Lexington all have 8+ places but zero tour operators
+- **[Data] Deduplicate Plant Hall / Plant Museum** — Same building, same address in Tampa
 
 ### Done
+
+**Pages**
 - **State Landing Pages** — Programmatic pages for each state with city listings → `specs/state-landing-pages.md`
 
----
-
-## Data
-
-### Inbox
-- **Fill image gaps** — OH, NY, CT new places need images; KY (73%) still below 80% threshold
-- **Add new states** — WI, MO, IN are strong candidates with well-known haunted locations
-- **Backfill sources** — All 752 entries at source_count=1, need 2+ independent sources each
-- **Fix category inconsistencies** — 25 non-standard categories + 26 miscategorized `other` entries + 2 bad year_established values. Decide on `lighthouse` as official category.
-- **Enrich VA ghost stories** — 50 places averaging 295 chars (thinnest state). Expand to 500+ chars with specific names, dates, paranormal claims.
-- **Drop aircraft table** — Leftover from another project, 14 rows of airplane data. One SQL command cleanup.
-- **Expand tour operators** — Boston, NYC, Philadelphia, Williamsburg, Asheville, Richmond, Louisville, Lexington all have 8+ places but zero tour operators.
-- **Deduplicate Plant Hall / Plant Museum** — Same building, same address in Tampa. Consolidate into one entry with richer ghost story.
-
-### Done
+**Data**
 - **Expand OH, NY, CT to 40 places** — OH +11, NY +8, CT +6. All states now at 40+ (2026-01-23)
 - **Image research for MD, TN, SC** — 39 images uploaded (Wikimedia + website fallback). TN 98%, MD 83%, SC 80% (2026-01-23)
 - **Expand MD, TN, SC to 40 places** — MD +16, TN +15, SC +13 (2026-01-23)
+
+---
+
+## Outreach
+
+### Inbox
+
+*Empty — run `outreach` agent to find campaign opportunities*
+
+### Done
+
+*Nothing yet*
+
+---
+
+## Mini-Apps
+
+### Inbox
+
+*Empty — run `mini-apps` agent to brainstorm ideas*
+
+### Done
+
+*Nothing yet*

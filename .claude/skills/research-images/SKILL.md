@@ -1,8 +1,8 @@
 ---
 name: research-images
 description: Find and upload images for existing places. Usage: /research-images [state]
-user_invokable: true
-agent: researcher
+user_invokable: false
+agent: seo
 ---
 
 # Research Images

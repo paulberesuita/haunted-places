@@ -4,6 +4,180 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-25
+
+### Growth Agent Removed — Design Decision
+
+**Problem solved:**
+Growth agent was a catch-all that created friction. To build a city page, SEO agent needed data — but data research was owned by Growth. User had to bounce between agents.
+
+**Solution:**
+Removed Growth agent. Split responsibilities:
+- **SEO agent** absorbs data research (places, images, verification) — can now research data as part of building pages
+- **Outreach agent** takes cold campaigns — focused on backlinks and partnerships
+
+**New agent lineup:**
+| Agent | Focus |
+|-------|-------|
+| Product | UX features for people on the site |
+| SEO | Data + content + SEO pages |
+| Mini-Apps | Fun interactive tools |
+| Outreach | Cold campaigns, partnerships |
+
+**Why this is better:**
+- SEO agent can say "Savannah needs images" → research them → build page (no context switching)
+- Outreach is distinct enough to warrant its own agent (different mindset: relationship building vs. building pages)
+- Fewer agents = simpler mental model
+
+**Skill ownership after change:**
+| Agent | Skills |
+|-------|--------|
+| SEO | /research-places, /research-images, /verify-data, /query-data, /build-seo-page, /optimize-seo |
+| Mini-Apps | /build-tool |
+| Outreach | /cold-campaign |
+| Product | (builds directly) |
+| Shared | /design-system, /coding-standards, /cloudflare-deploy, /add-to-backlog |
+
+---
+
+### Mini-Apps Agent — Design Decision
+
+**Problem solved:**
+Growth agent was becoming a catch-all — data research, image research, SEO, tools, campaigns. Tool-building is a different mindset: it's about building fun, interactive experiences, not just driving metrics.
+
+**Solution:**
+Created dedicated Mini-Apps agent for building fun interactive tools:
+- Quizzes, calculators, planners, generators
+- Related to the haunted/spooky theme
+- Fun first, but shareable (which drives traffic too)
+
+**Key differences from other agents:**
+| Agent | Focus | Output |
+|-------|-------|--------|
+| Product | Core UX features | App functionality |
+| Growth | Data and outreach | Researched places, campaigns |
+| SEO | Pages and infrastructure | Deployed programmatic pages |
+| Mini-Apps | Fun interactive tools | Standalone mini-experiences |
+
+**Philosophy:**
+- Fun first — would someone enjoy using this for 2 minutes?
+- On-theme — related to haunted/spooky
+- Self-contained — works without the main app
+- Quick to build — hours, not days
+- Shareable (bonus) — if results are fun, make them easy to share
+
+**Advisor mode for all agents:**
+Simplified agent flow — agents check state, recommend, and when user says "build it", they just build. Removed extra "Proceed?" confirmation gate since user already approved by choosing the action.
+
+---
+
+### Add-to-Backlog Skill — Design Decision
+
+**Problem solved:**
+When agents add items to backlog, they were just adding one-liners. When you come back later, there's not enough detail to execute without re-researching.
+
+**Solution:**
+Created `/add-to-backlog` skill that:
+1. Writes a full spec to `specs/[name].md` with requirements, implementation notes, user flow
+2. Adds a backlog entry that links to the spec
+3. Ensures backlog items are executable later
+
+**Principle:** Backlog items should have enough detail that anyone can pick them up and build without re-researching.
+
+---
+
+### SEO Agent Split — Design Decision
+
+**Problem solved:**
+Growth agent was doing too much — data research, image research, SEO pages, tools, campaigns. SEO is fundamentally different: it requires writing code and deploying, not just recommending.
+
+**Solution:**
+Created dedicated SEO agent that BUILDS rather than recommends:
+- Technical SEO: sitemap.xml, robots.txt, structured data
+- Programmatic pages: city pages, category pages
+- On-page SEO: meta tags, OG tags in templates
+
+**Key differences from Growth:**
+| Agent | Focus | Output |
+|-------|-------|--------|
+| Growth | Data and outreach | Researched places, images, campaigns |
+| SEO | Pages and infrastructure | Deployed Cloudflare Functions |
+
+**SEO agent goals:**
+| Goal | Target |
+|------|--------|
+| Technical SEO | 100% complete (sitemap, robots.txt, JSON-LD) |
+| Meta coverage | 100% (all pages have title/desc/OG) |
+| City pages | Every city with 5+ places |
+| Category pages | Every category with 10+ places |
+
+**Priority order:**
+1. No sitemap? → Build sitemap.xml first
+2. No robots.txt? → Build robots.txt
+3. Pages missing structured data? → Add JSON-LD
+4. City opportunity? → Build city page
+5. Category opportunity? → Build category page
+
+**Workflow:**
+```
+State check → Identify gap → Get approval → Read skills → Build → Deploy → Verify → Report
+```
+
+---
+
+### Smart Agent Architecture — Design Decisions
+
+**Problem solved:**
+Previous agent design asked "plan or execute?" on every invocation. This was friction — the user had to choose a mode before getting value. Also, agents didn't track goals or understand state vs targets.
+
+**New architecture:**
+```
+Invoke agent → Check state → Compare to goals → Recommend → Execute → Report updated state
+```
+
+**Key principles:**
+1. **Agents know state** — Run queries, check coverage, know what exists
+2. **Agents have goals** — Measurable targets they track toward (40+ places, 80% images, etc.)
+3. **Agents recommend** — Present options ranked by impact, not just list capabilities
+4. **Agents orchestrate** — Handle dependencies (need images before page? research first)
+5. **Skills execute** — Pure "how to do X" instructions, no decision-making
+
+**Growth agent goals:**
+| Goal | Target |
+|------|--------|
+| Data coverage | 40+ places per state |
+| Image coverage | 80%+ per state |
+| SEO baseline | Sitemap, structured data, meta tags |
+| City pages | Every city with 5+ places |
+
+**Recommendation priority (Growth):**
+1. SEO baseline missing → `/optimize-seo` first (foundational)
+2. City with 5+ places but no page → `/build-seo-page`
+3. State below 80% images → image research
+4. State below 40 places → place research
+5. All baselines met → `/build-tool`, `/cold-campaign`
+
+**Product agent goals:**
+| Goal | Target |
+|------|--------|
+| Core UX complete | Navigation, search, filters working |
+| Mobile-friendly | All pages responsive |
+| Accessibility | Semantic HTML, alt text, keyboard nav |
+| No broken experiences | Zero reported issues |
+
+**Dependencies matter:**
+- Don't recommend city page if <60% images for that city
+- Research images before building pages for a location
+- Fix bugs before adding features
+
+**Skills are self-contained:**
+Skills contain full execution details. They don't reference back to the agent — no circular dependencies.
+
+**Agent slimmed down:**
+Growth agent went from ~440 lines to ~200 lines by removing execution details that duplicated skills. Agent now focuses on orchestration: goals, state checks, recommendations, delegation. Skills handle the "how."
+
+---
+
 ## 2026-01-24
 
 ### Ghost Story Radio — Build Decisions
