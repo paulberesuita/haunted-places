@@ -25,6 +25,23 @@ function makeCitySlug(city, state) {
   return city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '-' + state.toLowerCase();
 }
 
+// Category URL slugs mapping
+const categoryConfig = {
+  'mansion': 'haunted-mansions',
+  'hotel': 'haunted-hotels',
+  'cemetery': 'haunted-cemeteries',
+  'museum': 'haunted-museums',
+  'restaurant': 'haunted-restaurants',
+  'theater': 'haunted-theaters',
+  'hospital': 'haunted-hospitals',
+  'battlefield': 'haunted-battlefields',
+  'prison': 'haunted-prisons',
+  'lighthouse': 'haunted-lighthouses',
+  'university': 'haunted-universities',
+  'plantation': 'haunted-plantations',
+  'other': 'other-haunted-places'
+};
+
 export async function onRequestGet(context) {
   const { env, request } = context;
   const baseUrl = 'https://spookfinder.com';
@@ -49,6 +66,24 @@ export async function onRequestGet(context) {
       SELECT DISTINCT city, state
       FROM tour_operators
       ORDER BY city
+    `).all();
+
+    // Get cities with 5+ places (for city pages)
+    const { results: hauntedCities } = await env.DB.prepare(`
+      SELECT city, state, COUNT(*) as place_count
+      FROM places
+      GROUP BY city, state
+      HAVING place_count >= 5
+      ORDER BY place_count DESC, city
+    `).all();
+
+    // Get categories with 10+ places (for category pages)
+    const { results: categories } = await env.DB.prepare(`
+      SELECT category, COUNT(*) as place_count
+      FROM places
+      GROUP BY category
+      HAVING place_count >= 10
+      ORDER BY place_count DESC
     `).all();
 
     const today = new Date().toISOString().split('T')[0];
@@ -83,6 +118,18 @@ export async function onRequestGet(context) {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>${baseUrl}/cities</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/category</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>${baseUrl}/about</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
@@ -99,6 +146,36 @@ export async function onRequestGet(context) {
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+`;
+    }
+
+    xml += `
+  <!-- Haunted City Pages -->
+`;
+
+    for (const { city, state } of hauntedCities) {
+      const citySlug = makeCitySlug(city, state);
+      xml += `  <url>
+    <loc>${baseUrl}/cities/${citySlug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+`;
+    }
+
+    xml += `
+  <!-- Category Pages -->
+`;
+
+    for (const { category } of categories) {
+      const categorySlug = categoryConfig[category] || category;
+      xml += `  <url>
+    <loc>${baseUrl}/category/${categorySlug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 `;
     }

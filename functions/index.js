@@ -390,6 +390,8 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
+        <a href="/cities" class="hover:text-white transition-colors">Cities</a>
+        <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
         <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
         <a href="/radio" class="hover:text-white transition-colors">Radio</a>

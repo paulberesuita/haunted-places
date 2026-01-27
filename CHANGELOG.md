@@ -4,6 +4,53 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-27
+
+### Added
+- **Image Research for 5 States** — Added 28 images to bring states above 80% image coverage
+  - **Maryland (3 images):** Burnside Bridge, Middleton Tavern, B&O Railroad Station Museum
+  - **South Carolina (5 images):** Brookgreen Gardens, Falls Park on the Reedy, Christ Church Episcopal, South Caroliniana Library, Hobkirk Hill Battlefield
+  - **Ohio (6 images):** Akron Civic Theatre, Taft Museum of Art, Butler County Courthouse, Collingwood Arts Center, Lafayette Hotel, Everett Covered Bridge
+  - **Kentucky (7 images):** Wickland Mansion, Cathedral Basilica (Covington), Roebling Suspension Bridge, Old Governor's Mansion, Western Kentucky University, Gratz Park Inn, Airdrie Iron Works
+  - **Connecticut (7 images):** Harriet Beecher Stowe Center, Wadsworth Atheneum, Hearthstone Castle, Norwich State Hospital, Palace Theatre (Stamford), Gunntown Cemetery, Dudleytown
+  - Sources: Wikipedia API, Wikimedia Commons, KET Kentucky Life
+  - Final coverage: CT 81%, KY 81%, MD 81%, OH 81%, SC 82%
+
+- **Category Pages Infrastructure** — Programmatic SEO pages for haunted place categories
+  - Index page at `/category` lists 13 categories with 10+ places, sorted by place count
+  - Category detail pages at `/category/[slug]` (e.g., `/category/haunted-hotels`) show all places in that category
+  - Category slugs: mansion -> haunted-mansions, hotel -> haunted-hotels, cemetery -> haunted-cemeteries, etc.
+  - Each category card shows sample image and descriptive text about that type of haunting
+  - Place cards on detail pages show image, name, city/state, ghost story excerpt
+  - State filter dropdown on detail pages to filter places by state
+  - Full SEO: unique title/description, OG/Twitter tags, JSON-LD (BreadcrumbList + ItemList schemas)
+  - 404 handling for invalid category slugs with friendly message
+  - Added "Categories" link to site navigation on all pages
+  - Added all 13 category pages + index to sitemap.xml
+  - Route: `functions/category/[[slug]].js` handles both index and detail pages
+
+- **City Pages Infrastructure** — Programmatic SEO pages for haunted cities
+  - Index page at `/cities` lists 74 cities with 5+ haunted places, sorted by place count
+  - City detail pages at `/cities/[city-slug]` (e.g., `/cities/new-orleans-la`) show all places in that city
+  - City slug format: `city-name-state` (lowercase, hyphenated)
+  - Each city card shows sample image from one of its places
+  - Place cards on detail pages show image, name, category badge, ghost story excerpt
+  - Full SEO: unique title/description, OG/Twitter tags, JSON-LD (BreadcrumbList + ItemList schemas)
+  - 404 handling for invalid city slugs with friendly message
+  - Added "Cities" link to site navigation on all pages (index, states, place, tours, hotels, radio, about)
+  - Added all 74 city pages to sitemap.xml
+  - Route: `functions/cities/[[slug]].js` handles both index and detail pages
+
+- **Expanded 37 Cities to 5+ Places** — Major data expansion for city page eligibility
+  - Phase 1 (cities with 4 places, added 1 each): Miami FL, Atlanta GA, Marietta GA, Bardstown KY, Frankfort KY, Plymouth MA, Annapolis MD, Ellicott City MD, Cincinnati OH, Columbia SC, Memphis TN, Franklin TN, Austin TX, Dallas TX, Waco TX, Virginia Beach VA
+  - Phase 2 (cities with 3 places, added 2 each): San Diego CA, Santa Clara CA, Hartford CT, Cassadaga FL, Pensacola FL, Alton IL, Galena IL, Covington KY, Natchitoches LA, Shreveport LA, Concord MA, Sharpsburg MD, Chapel Hill NC, Winston-Salem NC, Toledo OH, Scranton PA, Greenville SC, Murrells Inlet SC, Gatlinburg TN, Knoxville TN, El Paso TX
+  - All 58 new entries have 2+ independent sources per minimum requirement
+  - Notable additions: Winchester Mystery House, Hotel del Coronado, Biltmore Hotel (Miami), Bijou Theatre, Alice Flagg's cemetery, Burnside Bridge, Sleepy Hollow Cemetery
+  - Migration file: `migrations/006_expand_cities.sql`
+  - Total database now at 876 places across 18 states, 75 cities with 5+ places
+
+---
+
 ## 2026-01-25
 
 ### Added

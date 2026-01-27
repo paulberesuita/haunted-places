@@ -4,6 +4,116 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-27
+
+### Category Pages Infrastructure — SEO Decision
+
+**Problem solved:**
+Users searching for specific types of haunted places ("haunted hotels in America", "haunted cemeteries to visit", "haunted prisons near me") need category-specific landing pages to rank. The existing Hotels page only covers one category.
+
+**Solution:**
+Built programmatic category pages at `/category` and `/category/[slug]`:
+- Index page shows 13 categories with 10+ places each
+- Detail pages show all places in a category across all states
+- State filter on detail pages lets users drill down by location
+
+**Key implementation decisions:**
+1. **10+ place threshold** - Higher than cities (5+) since categories span the whole country
+2. **Custom URL slugs** - `hotel` -> `haunted-hotels` for SEO-friendly, descriptive URLs
+3. **Custom descriptions per category** - Each category has a unique description (e.g., "Graveyards with wandering apparitions")
+4. **State filter on detail pages** - Since categories span many states, users need to filter
+5. **Images sorted first** - Places with images appear before those without
+6. **Follows existing patterns** - Same `[[slug]].js` architecture as cities/tours/states
+
+**Categories launched (13 total):**
+- other (191 places), mansion (138), hotel (148), cemetery (104), museum (78)
+- restaurant (49), theater (45), hospital (35), battlefield (21)
+- university (15), prison (14), plantation (11), lighthouse (11)
+
+**Navigation update:**
+Added "Categories" link to all page functions. Placed after Cities in nav order.
+
+**SEO metrics:**
+- 13 new category detail pages + 1 index = 14 new URLs
+- All added to sitemap.xml with proper priority
+- Each page has unique title, meta description, OG tags, and JSON-LD schemas
+
+**Live URLs:**
+- Index: https://spookfinder.com/category
+- Example: https://spookfinder.com/category/haunted-hotels (148 places)
+
+---
+
+### City Pages Infrastructure — SEO Decision
+
+**Problem solved:**
+State pages have good SEO but cities are where people actually visit. Search queries like "haunted places in New Orleans" or "ghosts in Savannah" need dedicated landing pages to rank.
+
+**Solution:**
+Built programmatic city pages at `/cities` and `/cities/[city-slug]`:
+- Index page shows 74 cities with 5+ places, sorted by place count (most haunted first)
+- Detail pages show all places in a city with images, categories, and ghost story excerpts
+- Slug format: `city-name-state` (e.g., `new-orleans-la`) for unique URLs
+
+**Key implementation decisions:**
+1. **5+ place threshold** - Prevents thin content pages, ensures each city has enough value
+2. **Sample image on index cards** - Uses subquery to grab one image per city, makes index visually appealing
+3. **Sort by images first on detail pages** - Places with images appear first (better UX)
+4. **Single file handles both routes** - `[[slug]].js` pattern matches existing tours/states architecture
+5. **Full JSON-LD schemas** - BreadcrumbList + ItemList for both index and detail pages
+
+**Navigation update:**
+Added "Cities" link to all 7 page functions (index, states, place, tours, hotels, radio, about). Placed between States and Tours in the nav order.
+
+**SEO metrics:**
+- 74 new indexable city pages + 1 index page = 75 new URLs
+- All added to sitemap.xml
+- Each page has unique title, description, OG tags, and structured data
+
+**Live URLs:**
+- Index: https://spookfinder.com/cities
+- Example detail: https://spookfinder.com/cities/new-orleans-la
+
+---
+
+### City Page Threshold Expansion — Data Decision
+
+**Problem solved:**
+Many notable cities were just below the 5-place threshold needed for city pages. These cities have strong SEO potential (Winchester Mystery House in Santa Clara, Hotel del Coronado in San Diego, Antietam in Sharpsburg) but couldn't have dedicated pages.
+
+**Solution:**
+Systematic research of 37 cities across 17 states:
+- Phase 1: 16 cities with 4 places (added 1 each)
+- Phase 2: 21 cities with 3 places (added 2 each)
+- Total: 58 new haunted places, all with 2+ independent sources
+
+**Key research sources:**
+- Ghost tour operators (US Ghost Adventures, Ghost City Tours) - verified commercial locations
+- Official tourism sites (Visit[State], local CVBs)
+- Paranormal investigation sites (Haunted Rooms America, HauntedPlaces.org)
+- Wikipedia for historical verification
+- News articles documenting ghost tours and investigations
+
+**Notable locations added:**
+| Location | City | Why Notable |
+|----------|------|-------------|
+| Winchester Mystery House | Santa Clara, CA | America's most famous haunted house |
+| Hotel del Coronado | San Diego, CA | Kate Morgan ghost, Historic Hotels 2024 list |
+| Biltmore Hotel | Miami, FL | Fatty Walsh murder, WWII hospital |
+| Sleepy Hollow Cemetery | Concord, MA | Author's Ridge - Emerson, Alcott, Thoreau |
+| Burnside Bridge | Sharpsburg, MD | Most haunted spot at Antietam |
+| Bijou Theatre | Knoxville, TN | Civil War hospital, General Sanders ghost |
+
+**Database state after expansion:**
+- Total places: 876 (up from 821)
+- Cities with 5+ places: 75 (enables city pages)
+- All new entries have source_count >= 2
+
+**Next opportunity:**
+Build city pages for these 37 newly-eligible cities. Highest SEO value targets: Santa Clara (Winchester), San Diego (Hotel del Coronado), Sharpsburg (Antietam).
+
+---
+
 ## 2026-01-25
 
 ### Growth Agent Removed — Design Decision

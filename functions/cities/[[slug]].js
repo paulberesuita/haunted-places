@@ -1,5 +1,5 @@
-// GET /tours and /tours/[city-slug] - Ghost Tours Directory
-// Handles both index (all cities) and city detail pages (operators in a city)
+// GET /cities and /cities/[city-slug] - City Pages Directory
+// Handles both index (all cities with 5+ places) and city detail pages
 
 const stateNames = {
   'CA': 'California',
@@ -20,27 +20,6 @@ const stateNames = {
   'TN': 'Tennessee',
   'TX': 'Texas',
   'VA': 'Virginia'
-};
-
-const stateAbbrevs = {
-  'California': 'CA',
-  'Connecticut': 'CT',
-  'Florida': 'FL',
-  'Georgia': 'GA',
-  'Illinois': 'IL',
-  'Kentucky': 'KY',
-  'Louisiana': 'LA',
-  'Massachusetts': 'MA',
-  'Maryland': 'MD',
-  'North Carolina': 'NC',
-  'New Jersey': 'NJ',
-  'New York': 'NY',
-  'Ohio': 'OH',
-  'Pennsylvania': 'PA',
-  'South Carolina': 'SC',
-  'Tennessee': 'TN',
-  'Texas': 'TX',
-  'Virginia': 'VA'
 };
 
 function escapeHtml(text) {
@@ -64,7 +43,7 @@ function makeCitySlug(city, state) {
   return city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '-' + state.toLowerCase();
 }
 
-// Parse city slug back to city and state: "new-orleans-la" -> { city pattern, state }
+// Parse city slug back to state code: "new-orleans-la" -> { stateCode: "LA" }
 function parseCitySlug(slug) {
   // State abbreviation is always the last 2 chars after the final hyphen
   const lastHyphen = slug.lastIndexOf('-');
@@ -77,7 +56,7 @@ function parseCitySlug(slug) {
 function renderHead(title, description, canonicalUrl, baseUrl) {
   return `<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${escapeHtml(title)} | Spookfinder</title>
+  <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
@@ -139,43 +118,59 @@ function renderFooter() {
   </footer>`;
 }
 
-function renderToursIndexPage(cities, baseUrl) {
-  const totalOperators = cities.reduce((sum, c) => sum + c.operator_count, 0);
-  const title = `Ghost Tours Directory - ${cities.length} Cities with Ghost Tours`;
-  const description = `Find ghost tours in ${cities.length} haunted cities across America. Browse ${totalOperators} tour operators with prices, reviews, and booking links.`;
-  const canonicalUrl = `${baseUrl}/tours`;
+function renderCitiesIndexPage(cities, baseUrl) {
+  const totalCities = cities.length;
+  const totalPlaces = cities.reduce((sum, c) => sum + c.place_count, 0);
+  const title = `Haunted Cities - ${totalCities} Most Haunted Cities in America | SpookFinder`;
+  const description = `Explore ${totalCities} haunted cities across America with ${totalPlaces} paranormal locations. From New Orleans to Salem, discover ghost stories and haunted places by city.`;
+  const canonicalUrl = `${baseUrl}/cities`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
-      { "@type": "ListItem", "position": 2, "name": "Ghost Tours" }
+      { "@type": "ListItem", "position": 2, "name": "Cities" }
     ]
+  };
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Most Haunted Cities in America",
+    "description": `${totalCities} cities with significant paranormal activity and haunted locations.`,
+    "numberOfItems": totalCities,
+    "itemListElement": cities.slice(0, 50).map((city, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": `${city.city}, ${stateNames[city.state] || city.state}`,
+      "url": `${baseUrl}/cities/${makeCitySlug(city.city, city.state)}`
+    }))
   };
 
   const cityCardsHtml = cities.map(city => {
     const slug = makeCitySlug(city.city, city.state);
     const stateName = stateNames[city.state] || city.state;
+    const imageUrl = city.sample_image ? `${baseUrl}/images/${city.sample_image}` : null;
+
     return `
-      <a href="/tours/${slug}" class="group block bg-dark-card rounded-xl p-6 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
-        <div class="flex items-start justify-between mb-3">
-          <div>
-            <h3 class="text-lg font-semibold text-white group-hover:text-accent transition-colors">${escapeHtml(city.city)}</h3>
-            <p class="text-sm text-muted">${stateName}</p>
-          </div>
-          <span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent">
-            ${city.operator_count} ${city.operator_count === 1 ? 'tour' : 'tours'}
-          </span>
+      <a href="/cities/${slug}" class="group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          ${imageUrl
+            ? `<img src="${imageUrl}" alt="Haunted places in ${escapeHtml(city.city)}" class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
+            : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                <span class="text-4xl opacity-30">&#128123;</span>
+              </div>`
+          }
         </div>
-        <p class="text-sm text-ghost">
-          Explore ghost tours in ${escapeHtml(city.city)} with prices and booking links.
-        </p>
-        <div class="mt-4 text-sm text-accent group-hover:text-accent-hover transition-colors flex items-center gap-1">
-          View Tours
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-2 mb-1">
+            <h3 class="font-semibold text-white group-hover:text-accent transition-colors">${escapeHtml(city.city)}</h3>
+            <span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent whitespace-nowrap flex-shrink-0">
+              ${city.place_count} ${city.place_count === 1 ? 'place' : 'places'}
+            </span>
+          </div>
+          <p class="text-sm text-muted">${stateName}</p>
         </div>
       </a>`;
   }).join('\n');
@@ -187,6 +182,9 @@ function renderToursIndexPage(cities, baseUrl) {
   <script type="application/ld+json">
   ${JSON.stringify(breadcrumbSchema)}
   </script>
+  <script type="application/ld+json">
+  ${JSON.stringify(itemListSchema)}
+  </script>
   <style>
     .smoke-video {
       position: fixed;
@@ -204,7 +202,7 @@ function renderToursIndexPage(cities, baseUrl) {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
-    .place-img:hover {
+    .group:hover .place-img {
       filter: grayscale(70%) sepia(20%) brightness(0.9);
     }
     @media (max-width: 768px) {
@@ -217,32 +215,29 @@ function renderToursIndexPage(cities, baseUrl) {
     <source src="/smoke-bg.mp4" type="video/mp4">
   </video>
 
-  ${renderHeader('tours')}
+  ${renderHeader('cities')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
-      <!-- Breadcrumbs -->
-      <nav class="mb-6" aria-label="Breadcrumb">
-        <ol class="flex items-center gap-2 text-sm text-muted">
-          <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
-          <li class="text-dark-border">/</li>
-          <li class="text-ghost">Ghost Tours</li>
-        </ol>
-      </nav>
+    <!-- Breadcrumbs -->
+    <nav class="mb-6" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-muted">
+        <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
+        <li class="text-dark-border">/</li>
+        <li class="text-ghost">Cities</li>
+      </ol>
+    </nav>
 
-      <!-- Page Header -->
-      <div class="mb-10">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-3xl">&#128123;</span>
-          <h1 class="text-3xl md:text-4xl font-bold text-white">Ghost Tours Directory</h1>
-        </div>
-        <p class="text-ghost text-lg">${totalOperators} tour operators across ${cities.length} haunted cities</p>
-      </div>
+    <!-- Hero Section -->
+    <div class="mb-10">
+      <h1 class="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-3">Most Haunted Cities</h1>
+      <p class="text-ghost text-lg">${totalPlaces} haunted places across ${totalCities} cities</p>
+    </div>
 
-      <!-- City Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${cityCardsHtml}
-      </div>
-    </main>
+    <!-- City Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      ${cityCardsHtml}
+    </div>
+  </main>
 
   ${renderFooter()}
   <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
@@ -250,88 +245,73 @@ function renderToursIndexPage(cities, baseUrl) {
 </html>`;
 }
 
-function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
+function renderCityDetailPage(city, state, places, baseUrl) {
   const stateName = stateNames[state] || state;
   const citySlug = makeCitySlug(city, state);
-  const title = `Ghost Tours in ${city}, ${stateName} - ${operators.length} Tour Operators`;
-  const description = `Find the best ghost tours in ${city}, ${stateName}. Compare ${operators.length} tour operators with prices, descriptions, and booking links. Discover haunted places nearby.`;
-  const canonicalUrl = `${baseUrl}/tours/${citySlug}`;
+  const placeCount = places.length;
+
+  // Get sample place names for meta description
+  const sampleNames = places.slice(0, 3).map(p => p.name).join(', ');
+
+  const title = `Haunted Places in ${city}, ${stateName} | SpookFinder`;
+  const description = `Discover ${placeCount} haunted places in ${city}, ${stateName}. Explore ghost stories, paranormal history, and haunted locations including ${sampleNames}.`;
+  const canonicalUrl = `${baseUrl}/cities/${citySlug}`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
-      { "@type": "ListItem", "position": 2, "name": "Ghost Tours", "item": `${baseUrl}/tours` },
+      { "@type": "ListItem", "position": 2, "name": "Cities", "item": `${baseUrl}/cities` },
       { "@type": "ListItem", "position": 3, "name": `${city}, ${stateName}` }
     ]
   };
 
-  // JSON-LD LocalBusiness for each operator
-  const operatorSchemas = operators.map(op => ({
+  const itemListSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": op.name,
-    "description": op.description || `Ghost tour operator in ${city}, ${stateName}`,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": city,
-      "addressRegion": stateName
-    },
-    "url": op.website || op.booking_url || undefined,
-    "priceRange": op.price_range || undefined
-  }));
+    "@type": "ItemList",
+    "name": `Haunted Places in ${city}, ${stateName}`,
+    "description": `${placeCount} haunted locations in ${city}, ${stateName}.`,
+    "numberOfItems": placeCount,
+    "itemListElement": places.map((place, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": place.name,
+      "url": `${baseUrl}/place/${place.slug}`,
+      "description": place.category ? `Haunted ${place.category} in ${city}, ${stateName}` : undefined
+    }))
+  };
 
-  const operatorCardsHtml = operators.map(op => {
-    const bookingLink = op.booking_url || op.website;
+  // Sort places: those with images first
+  const sortedPlaces = [...places].sort((a, b) => {
+    if (a.image_url && !b.image_url) return -1;
+    if (!a.image_url && b.image_url) return 1;
+    return a.name.localeCompare(b.name);
+  });
+
+  const placeCardsHtml = sortedPlaces.map(place => {
+    const imageUrl = place.image_url ? `${baseUrl}/images/${place.image_url}` : null;
+    const excerpt = truncate(place.ghost_story || place.description, 120);
 
     return `
-      <div class="bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
-        <div class="p-6">
-          <div class="mb-3">
-            <h3 class="text-lg font-semibold text-white">${escapeHtml(op.name)}</h3>
-          </div>
-          ${op.description ? `<p class="text-sm text-ghost mb-4">${escapeHtml(truncate(op.description, 200))}</p>` : ''}
-          ${bookingLink ? `
-          <a href="${escapeHtml(bookingLink)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors">
-            Book Now
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-            </svg>
-          </a>
-          ` : ''}
+      <a href="/place/${place.slug}" class="group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          ${imageUrl
+            ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
+            : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                <span class="text-4xl opacity-30">&#128123;</span>
+              </div>`
+          }
         </div>
-      </div>`;
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-semibold text-white group-hover:text-accent transition-colors line-clamp-2">${escapeHtml(place.name)}</h3>
+            ${place.category ? `<span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent whitespace-nowrap flex-shrink-0 capitalize">${escapeHtml(place.category)}</span>` : ''}
+          </div>
+          ${excerpt ? `<p class="text-sm text-ghost line-clamp-3">${escapeHtml(excerpt)}</p>` : ''}
+        </div>
+      </a>`;
   }).join('\n');
-
-  const nearbyPlacesHtml = nearbyPlaces.length > 0 ? `
-    <section class="mt-12">
-      <div class="flex items-center gap-3 mb-6">
-        <span class="text-2xl">&#128126;</span>
-        <h2 class="text-2xl font-semibold text-accent">Haunted Places in ${escapeHtml(city)}</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        ${nearbyPlaces.map(place => {
-          const imageUrl = place.image_url ? `${baseUrl}/images/${place.image_url}` : null;
-          return `
-          <a href="/place/${place.slug}" class="place-card group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
-            <div class="aspect-[4/3] overflow-hidden">
-              ${imageUrl
-                ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">`
-                : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
-                    <span class="text-4xl opacity-30">&#128123;</span>
-                  </div>`
-              }
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold text-white group-hover:text-accent transition-colors">${escapeHtml(place.name)}</h3>
-              <p class="text-sm text-muted mt-1 capitalize">${place.category || 'haunted place'}</p>
-            </div>
-          </a>`;
-        }).join('')}
-      </div>
-    </section>
-  ` : '';
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -340,7 +320,9 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
   <script type="application/ld+json">
   ${JSON.stringify(breadcrumbSchema)}
   </script>
-  ${operatorSchemas.map(schema => `<script type="application/ld+json">\n  ${JSON.stringify(schema)}\n  </script>`).join('\n  ')}
+  <script type="application/ld+json">
+  ${JSON.stringify(itemListSchema)}
+  </script>
   <style>
     .smoke-video {
       position: fixed;
@@ -358,8 +340,20 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
     }
-    .place-card:hover .place-img {
+    .group:hover .place-img {
       filter: grayscale(70%) sepia(20%) brightness(0.9);
+    }
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
@@ -371,37 +365,31 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
     <source src="/smoke-bg.mp4" type="video/mp4">
   </video>
 
-  ${renderHeader('tours')}
+  ${renderHeader('cities')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
-      <!-- Breadcrumbs -->
-      <nav class="mb-6" aria-label="Breadcrumb">
-        <ol class="flex items-center gap-2 text-sm text-muted">
-          <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
-          <li class="text-dark-border">/</li>
-          <li><a href="/tours" class="hover:text-accent transition-colors">Ghost Tours</a></li>
-          <li class="text-dark-border">/</li>
-          <li class="text-ghost">${escapeHtml(city)}, ${stateName}</li>
-        </ol>
-      </nav>
+    <!-- Breadcrumbs -->
+    <nav class="mb-6" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-muted">
+        <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
+        <li class="text-dark-border">/</li>
+        <li><a href="/cities" class="hover:text-accent transition-colors">Cities</a></li>
+        <li class="text-dark-border">/</li>
+        <li class="text-ghost">${escapeHtml(city)}, ${stateName}</li>
+      </ol>
+    </nav>
 
-      <!-- Page Header -->
-      <div class="mb-10">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-3xl">&#128123;</span>
-          <h1 class="text-3xl md:text-4xl font-bold text-white">Ghost Tours in ${escapeHtml(city)}, ${stateName}</h1>
-        </div>
-        <p class="text-ghost text-lg">${operators.length} tour ${operators.length === 1 ? 'operator' : 'operators'} offering haunted experiences</p>
-      </div>
+    <!-- Hero Section -->
+    <div class="mb-10">
+      <h1 class="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-3">Haunted ${escapeHtml(city)}</h1>
+      <p class="text-ghost text-lg">${placeCount} haunted ${placeCount === 1 ? 'place' : 'places'} in ${escapeHtml(city)}, ${stateName}</p>
+    </div>
 
-      <!-- Operator Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${operatorCardsHtml}
-      </div>
-
-      <!-- Nearby Haunted Places -->
-      ${nearbyPlacesHtml}
-    </main>
+    <!-- Place Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      ${placeCardsHtml}
+    </div>
+  </main>
 
   ${renderFooter()}
   <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
@@ -415,7 +403,7 @@ function render404() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tours Not Found | Spookfinder</title>
+  <title>City Not Found | SpookFinder</title>
   <meta name="robots" content="noindex">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -441,11 +429,11 @@ function render404() {
 <body class="bg-dark text-gray-100 min-h-screen flex items-center justify-center font-sans">
   <div class="text-center px-4">
     <div class="text-6xl mb-6">&#128123;</div>
-    <h1 class="text-3xl font-bold mb-4">No ghost tours found here...</h1>
+    <h1 class="text-3xl font-bold mb-4">No ghosts found in this city...</h1>
     <p class="text-ghost mb-8 max-w-md mx-auto">
-      We don't have ghost tour listings for this city yet. Try browsing our directory.
+      We don't have enough haunted places for this city yet, or the city doesn't exist in our database.
     </p>
-    <a href="/tours" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors">
+    <a href="/cities" class="inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors">
       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
       </svg>
@@ -463,17 +451,26 @@ export async function onRequestGet(context) {
 
   const slugParts = params.slug;
 
-  // If no slug, render the tours index page
+  // If no slug, render the cities index page
   if (!slugParts || slugParts.length === 0) {
     try {
+      // Get all cities with 5+ places, including a sample image
       const { results: cities } = await env.DB.prepare(`
-        SELECT city, state, COUNT(*) as operator_count
-        FROM tour_operators
+        SELECT
+          city,
+          state,
+          COUNT(*) as place_count,
+          (SELECT image_url FROM places p2
+           WHERE p2.city = places.city AND p2.state = places.state
+           AND p2.image_url IS NOT NULL AND p2.image_url != ''
+           LIMIT 1) as sample_image
+        FROM places
         GROUP BY city, state
-        ORDER BY city
+        HAVING place_count >= 5
+        ORDER BY place_count DESC, city
       `).all();
 
-      const html = renderToursIndexPage(cities || [], baseUrl);
+      const html = renderCitiesIndexPage(cities || [], baseUrl);
       return new Response(html, {
         headers: {
           'Content-Type': 'text/html; charset=utf-8',
@@ -481,8 +478,8 @@ export async function onRequestGet(context) {
         }
       });
     } catch (error) {
-      console.error('Error rendering tours index:', error);
-      return new Response('Error loading tours page', { status: 500 });
+      console.error('Error rendering cities index:', error);
+      return new Response('Error loading cities page', { status: 500 });
     }
   }
 
@@ -500,14 +497,16 @@ export async function onRequestGet(context) {
   const { stateCode } = parsed;
 
   try {
-    // Get all operators in this state, then filter by slug match
-    const { results: allOperators } = await env.DB.prepare(`
-      SELECT * FROM tour_operators
+    // Get all cities in this state that have 5+ places
+    const { results: citiesInState } = await env.DB.prepare(`
+      SELECT city, COUNT(*) as place_count
+      FROM places
       WHERE state = ?
-      ORDER BY featured DESC, name
+      GROUP BY city
+      HAVING place_count >= 5
     `).bind(stateCode).all();
 
-    if (!allOperators || allOperators.length === 0) {
+    if (!citiesInState || citiesInState.length === 0) {
       return new Response(render404(), {
         status: 404,
         headers: { 'Content-Type': 'text/html; charset=utf-8' }
@@ -515,8 +514,7 @@ export async function onRequestGet(context) {
     }
 
     // Find which city matches the slug
-    const citiesInState = [...new Set(allOperators.map(op => op.city))];
-    const matchedCity = citiesInState.find(c => makeCitySlug(c, stateCode) === citySlug);
+    const matchedCity = citiesInState.find(c => makeCitySlug(c.city, stateCode) === citySlug);
 
     if (!matchedCity) {
       return new Response(render404(), {
@@ -525,19 +523,15 @@ export async function onRequestGet(context) {
       });
     }
 
-    // Filter operators for this city
-    const operators = allOperators.filter(op => op.city === matchedCity);
-
-    // Get nearby haunted places (same city and state)
-    const { results: nearbyPlaces } = await env.DB.prepare(`
-      SELECT slug, name, city, category, image_url
+    // Get all places in this city
+    const { results: places } = await env.DB.prepare(`
+      SELECT slug, name, city, state, category, description, ghost_story, image_url
       FROM places
       WHERE city = ? AND state = ?
-      ORDER BY image_url IS NULL, name
-      LIMIT 9
-    `).bind(matchedCity, stateCode).all();
+      ORDER BY name
+    `).bind(matchedCity.city, stateCode).all();
 
-    const html = renderCityPage(matchedCity, stateCode, operators, nearbyPlaces || [], baseUrl);
+    const html = renderCityDetailPage(matchedCity.city, stateCode, places || [], baseUrl);
     return new Response(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
@@ -545,8 +539,8 @@ export async function onRequestGet(context) {
       }
     });
   } catch (error) {
-    console.error('Error rendering city tours page:', error);
-    return new Response('Error loading tours page', {
+    console.error('Error rendering city page:', error);
+    return new Response('Error loading city page', {
       status: 500,
       headers: { 'Content-Type': 'text/plain' }
     });

@@ -347,6 +347,8 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-white">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
+        <a href="/cities" class="hover:text-accent transition-colors">Cities</a>
+        <a href="/category" class="hover:text-accent transition-colors">Categories</a>
         <a href="/tours" class="hover:text-accent transition-colors">Tours</a>
         <a href="/hotels" class="hover:text-accent transition-colors">Hotels</a>
         <a href="/radio" class="hover:text-accent transition-colors">Radio</a>
