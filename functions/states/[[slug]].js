@@ -122,6 +122,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haunted Places in ${stateName} - ${totalPlaces} Haunted Locations | SpookFinder</title>
   <meta name="description" content="Discover ${totalPlaces} haunted places in ${stateName}. Browse haunted hotels, cemeteries, mansions, and more with ghost stories, paranormal history, and visitor information.">
@@ -1037,6 +1038,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haunted Places by State - Browse All ${states.length} States | SpookFinder</title>
   <meta name="description" content="Explore ${totalPlaces} haunted places across ${states.length} US states. Browse haunted hotels, cemeteries, mansions, and more by state.">

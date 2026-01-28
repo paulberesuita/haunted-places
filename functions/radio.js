@@ -44,6 +44,7 @@ function renderRadioPage(places, baseUrl) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ghost Story Radio - Haunted Tales on Demand | Spookfinder</title>
   <meta name="description" content="Listen to ghost stories narrated over atmospheric ambient audio. A lo-fi haunts experience with rain, wind, and real paranormal tales from across America.">

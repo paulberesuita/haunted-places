@@ -155,6 +155,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haunted Places Directory | Discover America's Most Haunted Locations</title>
   <meta name="description" content="Explore ${totalPlaces} haunted places across ${statesWithPlaces.length} states. Discover ghost stories, paranormal history, and haunted locations near you.">

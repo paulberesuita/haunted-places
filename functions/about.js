@@ -5,6 +5,7 @@ function renderAboutPage(stats, baseUrl) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About SpookFinder - America's Haunted Places Directory</title>
   <meta name="description" content="SpookFinder is a comprehensive directory of haunted places across America. Learn about our mission to document ghost stories, paranormal history, and haunted locations.">

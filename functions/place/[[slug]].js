@@ -206,6 +206,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(place.name)} - Haunted ${escapeHtml(place.city)}, ${stateName} | SpookFinder</title>
   <meta name="description" content="Explore ${escapeHtml(place.name)}, a haunted ${place.category || 'location'} in ${escapeHtml(place.city)}, ${stateName}. ${escapeHtml(truncate(place.description, 120))}">
@@ -760,6 +761,7 @@ function render404Page() {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Place Not Found | Haunted Places Directory</title>
   <meta name="robots" content="noindex">
