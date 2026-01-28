@@ -257,11 +257,8 @@ function renderRadioPage(places, baseUrl) {
       <a href="/" class="logo">SPOOKFINDER</a>
       <div class="nav-links">
         <a href="/states">States</a>
-        <a href="/cities">Cities</a>
         <a href="/category">Categories</a>
         <a href="/tours">Tours</a>
-        <a href="/hotels">Hotels</a>
-        <a href="/radio" style="color:white;">Radio</a>
         <a href="/about">About</a>
       </div>
     </nav>

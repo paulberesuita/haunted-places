@@ -6,6 +6,40 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ## 2026-01-27
 
+### Image Research Batch 2 — Process Optimization
+
+**Problem solved:**
+118 places were missing images across 18 states. Previous batch added 28 images. This session tackled the remaining 118 to push overall coverage above 90%.
+
+**Efficient workflow:**
+1. **Wikipedia API first** - Query `action=query&prop=pageimages` to check if Wikipedia has an image
+2. **Wikimedia Commons search** - If Wikipedia fails, search Commons with `action=query&list=search&srnamespace=6`
+3. **Get direct URL** - Use `action=query&prop=imageinfo&iiprop=url` to get the actual image URL
+4. **Download, resize, upload** - `curl` -> `sips --resampleWidth 1200` -> `wrangler r2 object put`
+5. **Update D1** - Single UPDATE statement per place
+
+**Key findings:**
+- Wikipedia API is fastest for well-known landmarks (hotels, theaters, historic sites)
+- Wikimedia Commons search finds images for places Wikipedia doesn't have articles on
+- Many places have multiple images in Commons - search results are sorted by relevance
+- Slug matching is critical - always verify the slug in D1 before uploading
+
+**Slug issues encountered:**
+- `bijou-theatre-knoxville` vs `bijou-theatre` - need to check D1 first
+- `willcox-hotel-aiken` vs `hotel-aiken` - DB name was "Hotel Aiken", not "Willcox Hotel"
+
+**Results:**
+- Added 41 images in one session
+- Coverage: 86.5% -> 91.2% (799/876)
+- 77 places still missing images (mostly obscure local attractions)
+
+**For future image research:**
+- Focus on the 77 remaining places that have no Wikipedia/Wikimedia coverage
+- Consider official tourism websites for these harder-to-find images
+- WebSearch fallback for places with official websites
+
+---
+
 ### Category Pages Infrastructure — SEO Decision
 
 **Problem solved:**

@@ -7,6 +7,25 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-27
 
 ### Added
+- **Image Research Batch 2** — Added 41 images from Wikipedia/Wikimedia Commons for places missing images
+  - **California (4):** Winchester Mystery House, Hotel del Coronado, Star of India Ship, Mission Santa Clara
+  - **Florida (4):** Biltmore Hotel, Colby Memorial Temple, Old Christ Church Pensacola, Tivoli High House
+  - **Georgia (1):** Wren's Nest Atlanta
+  - **Illinois (1):** Dowling House Galena
+  - **Kentucky (0):** (most already had images from earlier batch)
+  - **Louisiana (2):** Strand Theatre Shreveport, Oakland Plantation Natchitoches
+  - **Maryland (1):** Pry House Field Hospital
+  - **Massachusetts (2):** Sleepy Hollow Cemetery Concord, The Wayside Concord
+  - **New York (8):** Lily Dale Assembly, Belhurst Castle, George Eastman Museum, Hudson River State Hospital, Durand Eastman Park, Historic Huguenot Street, Phelps Mansion, Bird and Bottle Inn
+  - **North Carolina (4):** Carolina Inn, PlayMakers Theatre, Korner's Folly, Zevely House
+  - **Ohio (2):** Sandusky State Theater, (others already had images)
+  - **Pennsylvania (2):** Scranton Public Library, Catlin House
+  - **South Carolina (2):** All Saints Church Pawleys, Hotel Aiken
+  - **Tennessee (5):** Tennessee Theatre, Old Gray Cemetery, Rippavilla Plantation, Bijou Theatre, Roaring Fork Motor Trail
+  - **Texas (3):** Littlefield House, Millermore Mansion, El Paso High School, El Paso Main Library, Armstrong Browning Library
+  - Total image coverage: 91.2% (799/876 places)
+  - Sources: Wikipedia API, Wikimedia Commons (all CC-licensed or public domain)
+
 - **Image Research for 5 States** — Added 28 images to bring states above 80% image coverage
   - **Maryland (3 images):** Burnside Bridge, Middleton Tavern, B&O Railroad Station Museum
   - **South Carolina (5 images):** Brookgreen Gardens, Falls Park on the Reedy, Christ Church Episcopal, South Caroliniana Library, Hobkirk Hill Battlefield

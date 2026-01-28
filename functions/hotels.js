@@ -119,11 +119,8 @@ function renderHeader() {
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
-        <a href="/cities" class="hover:text-white transition-colors">Cities</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
-        <a href="/hotels" class="text-white">Hotels</a>
-        <a href="/radio" class="hover:text-white transition-colors">Radio</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -135,6 +132,7 @@ function renderFooter() {
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
         <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
+        <a href="/radio" class="block text-ghost hover:text-white text-sm transition-colors mt-2">Ghost Story Radio</a>
         <p class="text-muted text-sm mt-2">Documenting America's most haunted locations, one ghost story at a time.</p>
       </div>
     </div>

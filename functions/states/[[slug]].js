@@ -372,11 +372,8 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
-        <a href="/cities" class="hover:text-white transition-colors">Cities</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
-        <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
-        <a href="/radio" class="hover:text-white transition-colors">Radio</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -446,7 +443,8 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
       <footer class="mt-8 pb-8">
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center">
-            <p class="text-gray-400 text-sm">
+            <a href="/radio" class="text-ghost hover:text-white text-sm transition-colors">Ghost Story Radio</a>
+            <p class="text-gray-400 text-sm mt-2">
               Documenting America's most haunted locations, one ghost story at a time<span id="donkey-trigger" class="cursor-pointer select-none" title="...">.</span>
             </p>
           </div>
@@ -1175,11 +1173,8 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
-        <a href="/cities" class="hover:text-white transition-colors">Cities</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
-        <a href="/hotels" class="hover:text-white transition-colors">Hotels</a>
-        <a href="/radio" class="hover:text-white transition-colors">Radio</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
     </div>
@@ -1196,7 +1191,8 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   <footer class="mt-16">
     <div class="max-w-7xl mx-auto px-4 py-8">
       <div class="text-center">
-        <p class="text-gray-300 text-sm">Documenting America's most haunted locations, one ghost story at a time.</p>
+        <a href="/radio" class="text-ghost hover:text-white text-sm transition-colors">Ghost Story Radio</a>
+        <p class="text-gray-300 text-sm mt-2">Documenting America's most haunted locations, one ghost story at a time.</p>
       </div>
     </div>
   </footer>
