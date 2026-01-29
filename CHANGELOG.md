@@ -6,6 +6,49 @@ What we shipped. Builder appends here after each feature.
 
 ## 2026-01-29
 
+### Changed
+- **Deep Research: Preston Castle** (Ione, CA) — Expanded ghost story from 936 to 4,404 characters with 12 verified sources
+  - Added brutal reform school history: 1894-1960, children as young as 8, public lashings, starvation, isolation
+  - Documented cemetery with 17+ ward graves including Samuel Goins (shot 1918), Grant Walker (age 8), Nicholas Hamilton (age 20)
+  - Notable inmates: Merle Haggard (1953, labeled "incorrigible," escaped within 6 months, has "PSoI" tattoo), Neal Cassady, Rory Calhoun, Edward Bunker
+  - Anna Corbin murder details: February 23, 1950, found wrapped in rug with rope around neck, suspect Eugene Monroe acquitted after 3 trials
+  - Ghost Adventures (2009) EVPs: "I don't know," "get out of here," "never again"; Aaron received 3 scratches; Zak suspected possessed
+  - Ghost Hunters TAPS (2010): voices saying "Grant's" name, screams, confirmed footsteps/doors in basement, thermal evidence
+  - Docent accounts: Donna Jackson's 2012 EVP, foundation president Karl Knobelauch heard his name called
+  - Sources: prestoncastle.org, Ghost Adventures Wiki, Hauntpedia, The Line-Up, CJCJ, SF Gate, 209 Magazine, Syfy Ghost Hunters
+
+- **Deep Research: USS Hornet Museum** (Alameda, CA) — Expanded ghost story from 650 to 3,125 characters with 7 sources
+  - Added historical context: commissioned 1943, 668 Japanese planes shot down, Apollo 11/12 recovery
+  - Documented 300+ deaths during service, highest suicide rate in Navy history
+  - Named ghosts: "Dress Whites Ghost" (passageways below hangar deck)
+  - Specific witness accounts: Bob Eiess (Feb 2009), Steve Jackson, Ryan Garrett, BM1 Chris Bartlett (1995), Steven Shirk (July 4, 2006 photo)
+  - TAPS Ghost Hunters investigation (2008): EVP "help me" in service tunnels
+  - Sources: KQED, East Bay Times, Caltech ghost stories, USS Hornet Museum, Ghost Hunters Wiki
+
+- **Deep Research: Bodie State Historic Park** (Bodie, CA) — Expanded ghost story from 900 to 3,304 characters with 7 sources
+  - Added historical violence: 31 killings 1877-1882 in population of 2,712; "601" vigilantes
+  - Named ghosts: Chinese maid (J.S. Cain House), Angel of Bodie (Evelyn Myers, 1897), Gregory House knitter, Mrs. Mendocini, White Mule
+  - Curse of Bodie origin revealed: invented by ranger, now receives curse letters weekly
+  - Specific quotes from park interpreter Catherine Jones and actual curse letters
+  - Murder victim haunting: apparition visited his three killers, all died of unexplained illness
+  - Sources: KQED, SF Ghosts, Amy's Crypt, HauntedUS, Bodie History
+
+- **Deep Research: Point Sur Lighthouse** — Expanded ghost story from 936 to 3,007 characters with 10 verified sources
+  - Added USS Macon disaster eyewitness account — Lightkeeper Thomas Henderson's 1935 testimony watching America's largest airship crash offshore
+  - Documented named spirits: Ruth (kitchen), Catherine Ingersoll ("Pokey, go to bed" EVP), Tom Henderson (card-playing keeper)
+  - Added Sheila Fraser's apparition sighting of a woman in turn-of-the-century dress
+  - Included Ghost Adventures (2012) findings: EVPs "careful," "Michael," "Admiral," "I'm sick" and dark-suited figure
+  - Historical context: 1894 SS Los Angeles wreck, automation in 1972, last families departed 1974
+  - Sources expanded from 1 to 10 (KQED, Ghost Adventures Wiki, Monterey County Now, US Lighthouse Society)
+
+- **Deep Research: Claremont Club & Spa** — Expanded ghost story from 1,090 to 3,168 characters with 12 verified sources
+  - Added historical context about William Thornburgh's 1850s estate and the devastating July 14, 1901 fire
+  - Detailed three named spirits: the 6-year-old girl (Room 422), Mrs. Thornburgh (Victorian woman), and the jilted bride
+  - Added bellman Earl Van Dyke's firsthand account describing the gentle nature of the spirits
+  - Documented the famous March 2014 Tim Duncan/Jeff Ayres incident with direct quotes
+  - Noted Historic Hotels of America "Most Haunted" designation (2021, 2024)
+  - Sources expanded from 1 to 12 (local history, news articles, paranormal sites, sports media)
+
 ### Added
 - **Image Research Batch 3** — Added 21 images from multiple sources
   - **From Wikimedia Commons (12):**
