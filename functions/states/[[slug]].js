@@ -1025,7 +1025,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     <a href="/states/${state.url}" class="group">
       <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg ${hasImage ? '' : 'flex items-center justify-center'}">
         ${hasImage
-          ? `<img src="/images/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
+          ? `<img src="/assets/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
           : `<span class="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">&#128123;</span>`
         }
       </div>
