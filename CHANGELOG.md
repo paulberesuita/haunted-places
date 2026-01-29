@@ -7,6 +7,41 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-29
 
 ### Changed
+- **Deep Research: Whaley House** (San Diego, CA) — Expanded ghost story from 820 to 3,218 characters with 6 sources
+  - Yankee Jim Robinson execution: September 18, 1852, botched hanging, 45 minutes strangling to death
+  - Thomas Whaley's 1860 journal documenting "eerie footsteps"
+  - Violet's full tragedy: married con artist January 5, 1882, abandoned 2 weeks into honeymoon, suicide August 19, 1885, note quoted "Bridge of Sighs"
+  - Named ghosts: Anna (French perfume), Thomas (blows smoke in faces), Violet (weeping on 2nd floor), Thomas Jr. (children laughing)
+  - The Holzer Files (2019): Dave Schrader "knocked on my butt" by invisible force
+  - Hans Holzer 1965: declared "most haunted house in America"
+  - Sources: Ghost City Tours, Whaley House official, SD Union-Tribune, US Ghost Adventures
+
+- **Deep Research: Stow Lake (The White Lady)** (San Francisco, CA) — Expanded ghost story from 582 to 4,577 characters with 10 verified sources
+  - First documented sighting: January 6, 1908 Chronicle front page, Arthur Pigeon and automobile party
+  - Arthur Pigeon quote: "It was a thin, tall figure in white, and it seemed to shine. It had long, fair hair and was barefooted"
+  - Captain Gleeson ordered ghost "arrested on sight" — humorously noted difficulty of handcuffing a specter
+  - Legend origin: Pre-1906 mother lost baby carriage to lake, dove in after child, neither recovered
+  - 1906 earthquake destroyed police/coroner records — no official drowning record exists
+  - Park suicide history: 1 in 12 SF suicides occurred in Golden Gate Park 1890-1900 (SF Call "The Park Suicides" article)
+  - Summoning ritual: "White Lady, White Lady, I have your baby" three times — no right answer to her question
+  - Pioneer Mother statue (1914): head reportedly moves at night, depicts 3 children instead of 2
+  - Tommy Netzband/SF Ghost Society investigation: EMF devices, theorizes residual haunting
+  - Phantom police officer: deceased cop issues tickets, dead over a decade, citations not in records
+  - **Image replaced:** Wrong image (Alps mountains) → actual Stow Lake boathouse (Wikimedia Commons)
+  - Sources: SFGate, SF Ghosts, Weird CA, Richmond SF Blog, KQED, ABC7, CrawlSF, Freak Lore
+
+- **Deep Research: Colorado Street Bridge** (Pasadena, CA) — Expanded ghost story from 745 to 4,251 characters with 10 verified sources
+  - Added construction history: Waddell & Harrington design, opened December 13, 1913, $191,000, highest concrete bridge in world
+  - Construction worker legend: fell into wet concrete, left entombed, spirit draws troubled souls
+  - Suicide statistics: first November 16, 1919; 87 by 1937; ~50 during Great Depression; 150+ total; 28 between 2006-2016
+  - Myrtle Ward (May 1, 1937): threw 3-year-old Jeanette off bridge, then jumped; Jeanette survived (trees broke fall)
+  - Jeanette's 1984 quote: "She thought there was no hope and she didn't want to leave her child to suffer"
+  - Named apparitions: woman in flowing robe (leaps and vanishes), man in wire-rimmed glasses, headless figure in black
+  - Specter whispers "It's her fault" to visitors, never explains who "she" is
+  - EVPs: female voice "It's a bridge, it's the perfect place to go"; whispers of "jump," "do it," "save me"
+  - Pop culture: Charlie Chaplin's "The Kid" (1921), "La La Land" (2016), Lana Del Rey "Summertime Sadness"
+  - Sources: Legends of America, Wikipedia, HauntedPlaces.org, Weird California, Pasadena Star News, NPS
+
 - **Deep Research: Curran Theatre** (San Francisco, CA) — Expanded ghost story from 552 to 3,533 characters with 9 verified sources
   - Added full history: 1922 opening, Homer Curran's background, Alfred Henry Jacobs architecture, Arthur Matthews murals
   - Hewlett Tarr murder: November 28, 1933, 7:30pm, shot through box office grillwork during Show Boat
@@ -17,6 +52,20 @@ What we shipped. Builder appends here after each feature.
   - Manager Tess Collins (20 years) confirmed sightings; psychic assessment: "more than 300 ghostly playgoers"
   - Second ghost: little girl killed by car across street in 1950s (documented on "America's Scariest Places")
   - Sources: Cinema Treasures, SF Ghost Hunt, Amy's Crypt, Weird California, KDFC, BroadwaySF Magazine
+
+- **Deep Research: Stow Lake (The White Lady)** (San Francisco, CA) — Expanded ghost story from 582 to 4,004 characters with 10 verified sources
+  - Added first documented sighting: January 6, 1908 SF Chronicle front page "Park Ghost Holds Up Automobile Party"
+  - Arthur Pigeon's account: "It was a thin, tall figure in white... it seemed to shine. It had long, fair hair and was barefooted"
+  - Captain Gleeson ordered "any ghost answering this description is to be arrested on sight"
+  - Historical context: 1 in 12 San Francisco suicides (1890-1900) occurred in Golden Gate Park, four unidentified women
+  - July 1906: Mary Cook and Nellie Gillighan (12-year-old earthquake refugees) reported baby body in Lloyd Lake
+  - Legend ritual: Chant "White lady, white lady, I have your baby" three times — answer "yes" = haunted forever, "no" = death
+  - Pioneer Mother statue: head moves, cracks appear, third child sometimes visible alongside two carved children
+  - Ghost Cop: phantom police officer issues tickets that don't exist — he died over a decade ago
+  - Tommy Netzband (SF Ghost Society) investigation: concluded residual haunting, energetic imprint replaying
+  - Lake renamed Blue Heron Lake in January 2024
+  - **Image replaced:** Wrong image (snow-capped mountains) → actual Stow Lake boathouse (Wikimedia Commons)
+  - Sources: SFGate, ABC7, KQED, Weird California, SF Ghosts, Richmond SF Blog, CrawlSF
 
 - **Deep Research: Sainte Claire Hotel** (San Jose, CA) — Expanded ghost story from 550 to 2,414 characters with 6 sources
   - Added historical context: "Million Dollar Hotel" opened 1926, built on Eagle Brewery site (closed 1918 Prohibition)

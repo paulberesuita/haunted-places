@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 16 | 876 |
+| 19 | 876 |
 
 ---
 
@@ -22,6 +22,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Queen Anne Hotel](https://spookfinder.com/place/queen-anne-hotel) | San Francisco | 4,805 chars | 10 |
 | [Preston Castle](https://spookfinder.com/place/preston-castle) | Ione | 4,404 chars | 12 |
 | [Brookdale Lodge](https://spookfinder.com/place/brookdale-lodge) | Brookdale | 4,511 chars | 10 |
+| [Stow Lake (The White Lady)](https://spookfinder.com/place/stow-lake-white-lady) | San Francisco | 4,577 chars | 10 |
 | [RMS Queen Mary](https://spookfinder.com/place/queen-mary) | Long Beach | 3,884 chars | 12 |
 | [Moss Beach Distillery](https://spookfinder.com/place/moss-beach-distillery) | Moss Beach | 3,871 chars | 11 |
 | [Bodie State Historic Park](https://spookfinder.com/place/bodie-ghost-town) | Bodie | 3,304 chars | 7 |
@@ -33,6 +34,8 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Quimby Road](https://spookfinder.com/place/quimby-road-jogger) | San Jose | 2,577 chars | 11 |
 | [Sainte Claire Hotel](https://spookfinder.com/place/sainte-claire-hotel) | San Jose | 2,414 chars | 6 |
 | [California's Great America](https://spookfinder.com/place/great-america-ghosts) | Santa Clara | 4,305 chars | 9 |
+| [Colorado Street Bridge](https://spookfinder.com/place/colorado-street-bridge) | Pasadena | 4,251 chars | 10 |
+| [Whaley House](https://spookfinder.com/place/whaley-house) | San Diego | 3,218 chars | 6 |
 
 ### Virginia
 
