@@ -37,13 +37,18 @@ Show places that need content expansion:
 
 ## Process
 
-### Step 1: Find the Place
+### Step 1: Find the Place & Check Verification Status
 
 ```bash
 npx wrangler d1 execute haunted-places-db --remote --command "SELECT * FROM places WHERE slug = '[slug]' OR name LIKE '%[search]%' LIMIT 5;"
 ```
 
 Show current data and confirm which place to research.
+
+**Check if already verified:** Read `VERIFIED.md` and check if the place is already listed.
+
+- If **already verified** (5+ sources): Ask user if they want to re-research or pick a different place
+- If **not verified**: Proceed with research
 
 ### Step 2: Research from Multiple Sources
 
@@ -238,6 +243,30 @@ Add an entry under the current date's `### Changed` section (or create the date 
 - Expanded ghost story for Eastern State Penitentiary (Philadelphia, PA) — 280 → 2,100 chars, 5 sources
 ```
 
+### Step 8: Update VERIFIED.md (if 5+ sources)
+
+**If the place now has 5+ sources, add it to VERIFIED.md.**
+
+1. Read `VERIFIED.md` to find the correct state section
+2. Add the place to the appropriate state table (create section if needed)
+3. Keep tables sorted alphabetically by city within each state
+
+**Format:**
+```markdown
+| [Place Name](https://spookfinder.com/place/[slug]) | [City] | [X] chars | [N] |
+```
+
+**If the place was already in VERIFIED.md:** Update the story length and source count.
+
+**If the state section doesn't exist:** Add it in alphabetical order:
+```markdown
+### [State Name]
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Place entry] |
+```
+
 ## Research Tips
 
 **DO:**
@@ -273,3 +302,4 @@ Add an entry under the current date's `### Changed` section (or create the date 
 - The goal is to make visitors want to read AND visit
 - **Always verify the image** — the photo should match and enhance the story
 - **Always update CHANGELOG.md** — keep a record of content improvements
+- **Always update VERIFIED.md** — add places with 5+ sources to the verified list
