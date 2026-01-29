@@ -7,6 +7,52 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-29
 
 ### Changed
+- **Deep Research: Curran Theatre** (San Francisco, CA) — Expanded ghost story from 552 to 3,533 characters with 9 verified sources
+  - Added full history: 1922 opening, Homer Curran's background, Alfred Henry Jacobs architecture, Arthur Matthews murals
+  - Hewlett Tarr murder: November 28, 1933, 7:30pm, shot through box office grillwork during Show Boat
+  - Victim details: 25, Lowell High grad, 7-year employee supporting mother, engaged to Dorothy Reade (23) of Sutter Street
+  - Tarr's last words: "My God! I've been shot!" — Dorothy arrived minutes later, wept over his body
+  - Killer Eddie Anderson: $14/week electrician, crime spree to impress "girlfriend," later robbed bank, shot policeman
+  - SF Chronicle headline: "CURRAN KILLER MUST HANG!" — 7-hour jury verdict (fastest in SF history), hanged Feb 15, 1935
+  - Manager Tess Collins (20 years) confirmed sightings; psychic assessment: "more than 300 ghostly playgoers"
+  - Second ghost: little girl killed by car across street in 1950s (documented on "America's Scariest Places")
+  - Sources: Cinema Treasures, SF Ghost Hunt, Amy's Crypt, Weird California, KDFC, BroadwaySF Magazine
+
+- **Deep Research: Sainte Claire Hotel** (San Jose, CA) — Expanded ghost story from 550 to 2,414 characters with 6 sources
+  - Added historical context: "Million Dollar Hotel" opened 1926, built on Eagle Brewery site (closed 1918 Prohibition)
+  - Notable guests: Judy Garland, Clark Gable, Roosevelt, Kennedy, DiMaggio, Bob Hope
+  - Julia's story: 1930s bride abandoned at altar, took her own life in basement that night
+  - High heels clicking on carpeted floors, wedding dress train captured in Palm Room photograph
+  - Smoking Ghost on 2nd and 6th floors, poltergeist activity in lobby
+  - Eagle Brewery workers' deaths from "heinous working conditions"
+  - **Image replaced:** Wrong image (tropical resort) → actual hotel exterior from Wikimedia Commons
+  - Sources: US Ghost Adventures, NBC News, OC Register, Backpackerverse, Historic Hotels
+
+- **Deep Research: The Comedy Store** (West Hollywood, CA) — Expanded ghost story from 717 to 5,528 characters with 12 verified sources
+  - Added Ciro's nightclub history: William Wilkerson opened 1940, Hollywood royalty (Marilyn Monroe, Frank Sinatra, Bogart)
+  - Documented mob operations: Mickey Cohen's "base of operations," Bugsy Siegel, basement torture/killings, "Sunset Wars" 1947
+  - Illegal abortion clinic in basement — at least one woman died (per LA Public Library records)
+  - Named ghosts: "Gus" (enforcer in black suit/fedora), "Anthony" (doorman), bomber jacket victim
+  - Blake Clark's experiences: 20-foot sliding chair, 40 chairs stacked in seconds, 7-foot black entity in basement, cardboard with his name
+  - Joey Gaynor: ashtray levitated and hurled at his head, chairs mysteriously stacked
+  - Dr. Barry Taff/UCLA (1982): collapsed from leg pain in basement (psychically experiencing torture), saw 3 men in 1940s suits vanish
+  - Sam Kinison's ghost in Belly Room — distinctive laugh heard, presence felt when comedians struggle
+  - Other witnesses: Mike Schmidt (ghosts through tables), Argus Hamilton (phantom movement), Ouija board door incident
+  - Ghost Adventures investigation (January 2021): Jeff Ross, Jay Mohr participated; Jeff Scott saw human-shaped mist
+  - Sources: Unsolved Mysteries Wiki, Daily Bruin, Wikipedia (Ciro's), IMDB, Haunted Places, LA Ghost Tour, Grunge
+
+- **Deep Research: Moss Beach Distillery** (Moss Beach, CA) — Expanded ghost story from 673 to 3,871 characters with 11 verified sources
+  - Added Prohibition history: Frank Torres built "Frank's Place" speakeasy 1927, rum-runners landed whiskey on beach below
+  - Famous patrons: Fatty Arbuckle, Governor of California, Dashiell Hammett (used location in detective fiction)
+  - Blue Lady legend: Woman in blue killed on beach after affair with pianist discovered by jealous husband
+  - Mary Ellen Morley identification: Sylvia Browne's 1992 psychic visit, employees found death record (November 6, 1919 car accident)
+  - Patricia Andrews witnessed checkbook levitate and float in circle around room, return when commanded
+  - Ghost Hunters expose (June 2008): Hidden speaker, two-way mirror with blue head, pneumatic chandelier actuators
+  - Daryn Coleman (former Disney employee) admitted building effects; chef failed to notify investigators
+  - Loyd Auerbach defense: Reports date to 1930s, heard "unfamiliar female voice say hello" during 1990s investigation
+  - TV: Unsolved Mysteries (October 28, 1992), Ghost Hunters, Scariest Places on Earth
+  - Sources: Official site, Unsolved Mysteries Wiki, SFGate, Half Moon Bay Memories, SM Daily Journal, FrightFind
+
 - **Deep Research: Queen Anne Hotel** (San Francisco, CA) — Expanded ghost story from 560 to 4,805 characters with 10 verified sources
   - Added complete history: Senator James "Slippery Jim" Fair funded 1890 mansion for Miss Mary Lake's School for Girls
   - Documented scandal: Chronicle's "Cupid and Mr. Fair" article, secret marriage rumors, Mary's denial
@@ -59,6 +105,16 @@ What we shipped. Builder appends here after each feature.
   - Hotel Camarillo documentary (2014): decade of investigations, Unit 44 most active location
   - Sources: Weird California, HauntedPlaces.org, Dread Central, CI View, Mental Policies, API Reloaded, CSUCI Library
   - **Image replaced:** Generic coronavirus image → actual bell tower exterior (Wikimedia Commons)
+
+- **Deep Research: Quimby Road** (San Jose, CA) — Expanded ghost story from 549 to 2,577 characters with 11 verified sources
+  - Added historical context: Road named after John Alonzo Quimby (San Jose Mayor 1863-1869), built in 1860s
+  - Location pinpointed: 3799 Quimby Road in Evergreen foothills
+  - Named witnesses: Dilea (childhood sighting, jogger vanished by tree), Michelle Bayquen (January 2023, dark shorts, gold necklace)
+  - San Hauntse podcast Episode 15 investigation: "surprisingly difficult to research"
+  - Elizabeth Kile included in "Haunted San Jose" book (2022)
+  - Additional phenomena: elegantly dressed woman in period clothing, objects thrown by unseen hands
+  - Behavior documented: jogger stops, stares at drivers, continues running, then vanishes into hills
+  - Sources: HauntedPlaces.org, SJToday, Mercury News, San Hauntse podcast, Map Spirits, Visit San Jose, CBS SF
 
 - **Deep Research: Brookdale Lodge** (Brookdale, CA) — Expanded ghost story from 1,057 to 4,511 characters with 10 verified sources
   - Added comprehensive Sarah Logan legend with skeptical notes (no death record found, brook installed later by Dr. Camp)
