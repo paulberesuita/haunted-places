@@ -152,7 +152,40 @@ WHERE slug = '[slug]';"
 - Preserve existing sources, add new ones
 - `source_count` must match the actual number of URLs in the `sources` array
 
-### Step 5: Verify and Report
+### Step 5: Verify Image
+
+**Always check if the current image is the best representation for the expanded story.**
+
+1. **Get current image:**
+   ```bash
+   npx wrangler d1 execute haunted-places-db --remote --command "SELECT image_url FROM places WHERE slug = '[slug]';"
+   ```
+
+2. **Download and view the image:**
+   ```bash
+   curl -sL "https://spookfinder.com/images/[image_url]" -o /tmp/[slug].jpg
+   ```
+   Then use the Read tool to visually inspect the image.
+
+3. **Evaluate the image against these criteria:**
+   - **Correct location?** — Is this actually the place, not a generic photo?
+   - **Matches the story?** — Does it connect to the historical era or haunting?
+   - **Quality?** — Good resolution, composition, not blurry or cropped poorly?
+   - **Evocative?** — Does it set the right mood for a haunted place?
+
+4. **If the image needs replacement:**
+   - Search for better alternatives (Wikimedia Commons, official site, historical archives)
+   - Prefer: Historical photos for places with wartime/era-specific hauntings
+   - Prefer: Exterior shots that show the actual building/location
+   - Follow the `/research-images` skill process to upload the new image
+
+5. **Report image status:**
+   ```
+   **Image:** [Keep current / Replaced with better image]
+   - [Reason for decision]
+   ```
+
+### Step 6: Verify and Report
 
 ```bash
 npx wrangler d1 execute haunted-places-db --remote --command "SELECT name, LENGTH(ghost_story) as new_length, source_count FROM places WHERE slug = '[slug]';"
@@ -173,6 +206,9 @@ Report:
 ### New Sources Added:
 - [source 1]
 - [source 2]
+
+### Image:
+- [Status and reasoning]
 ```
 
 ## Research Tips
@@ -208,4 +244,5 @@ Report:
 - Quality over quantity — one well-researched place is better than many thin updates
 - Always verify claims with at least 2 sources before including
 - The goal is to make visitors want to read AND visit
+- **Always verify the image** — the photo should match and enhance the story
 - Update CHANGELOG.md when done with significant research
