@@ -185,7 +185,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -221,7 +221,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
       pointer-events: none;
     }
     html {
-      background: #0a0a0f;
+      background: #0a0c12;
       overflow-x: hidden;
     }
 
@@ -471,7 +471,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
     #vhs-glitch .glitch-overlay {
       position: absolute;
       inset: 0;
-      background: #0a0a0f;
+      background: #0a0c12;
     }
     #vhs-glitch.active {
       display: block !important;
@@ -1017,7 +1017,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   })).sort((a, b) => b.count - a.count);
 
   // States with woodcut etching icons
-  const stateIcons = ['MA'];
+  const stateIcons = ['CA', 'FL', 'GA', 'LA', 'MA', 'NC', 'PA', 'TX', 'VA'];
 
   const stateCardsHtml = statesWithData.map(state => {
     const hasIcon = stateIcons.includes(state.code);
@@ -1025,7 +1025,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     <a href="/states/${state.url}" class="group">
       <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg ${hasIcon ? '' : 'flex items-center justify-center'}">
         ${hasIcon
-          ? `<img src="/icons/states/${state.code}.png" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
+          ? `<img src="/icons/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
           : `<span class="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">&#128123;</span>`
         }
       </div>
@@ -1062,7 +1062,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
         extend: {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -1096,7 +1096,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       pointer-events: none;
     }
     html {
-      background: #0a0a0f;
+      background: #0a0c12;
       overflow-x: hidden;
     }
     @media (max-width: 768px) {

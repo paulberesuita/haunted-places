@@ -193,7 +193,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -229,7 +229,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
       pointer-events: none;
     }
     html {
-      background: #0a0a0f;
+      background: #0a0c12;
       overflow-x: hidden;
     }
     /* Hide scrollbar for state filters */
@@ -462,7 +462,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
     #vhs-glitch .glitch-overlay {
       position: absolute;
       inset: 0;
-      background: #0a0a0f;
+      background: #0a0c12;
     }
     #vhs-glitch.active {
       display: block !important;

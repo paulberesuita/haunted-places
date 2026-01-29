@@ -84,7 +84,7 @@ function renderHead(title, description, canonicalUrl, baseUrl) {
         extend: {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -209,7 +209,7 @@ function renderCategoriesIndexPage(categories, baseUrl) {
       z-index: -1;
       pointer-events: none;
     }
-    html { background: #0a0a0f; }
+    html { background: #0a0c12; }
     .place-img {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
@@ -366,7 +366,7 @@ function renderCategoryDetailPage(categoryKey, places, baseUrl) {
       z-index: -1;
       pointer-events: none;
     }
-    html { background: #0a0a0f; }
+    html { background: #0a0c12; }
     .place-img {
       filter: grayscale(70%);
       transition: filter 0.5s ease;
@@ -502,7 +502,7 @@ function render404() {
         extend: {
           fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',

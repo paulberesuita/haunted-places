@@ -66,7 +66,7 @@ function renderContactPage(baseUrl, success = false, error = null) {
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -80,7 +80,7 @@ function renderContactPage(baseUrl, success = false, error = null) {
   </script>
   <style>
     html {
-      background: #0a0a0f;
+      background: #0a0c12;
     }
     @media (max-width: 768px) {
       nav a {

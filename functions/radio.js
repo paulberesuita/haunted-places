@@ -52,7 +52,7 @@ function renderRadioPage(places, baseUrl) {
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #0a0a0f; font-family: 'Inter', sans-serif; overflow: hidden; height: 100vh; }
+    body { background: #0a0c12; font-family: 'Inter', sans-serif; overflow: hidden; height: 100vh; }
 
     /* Video Background */
     .video-bg {

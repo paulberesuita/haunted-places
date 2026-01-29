@@ -66,7 +66,7 @@ function renderAboutPage(stats, baseUrl) {
   </script>
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -76,7 +76,7 @@ function renderAboutPage(stats, baseUrl) {
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -90,7 +90,7 @@ function renderAboutPage(stats, baseUrl) {
   </script>
   <style>
     html {
-      background: #0a0a0f;
+      background: #0a0c12;
     }
     @media (max-width: 768px) {
       nav a {
@@ -173,8 +173,15 @@ function renderAboutPage(stats, baseUrl) {
       top: 0;
       left: 0;
       right: 0;
-      height: 200px;
-      background: linear-gradient(180deg, rgba(10,10,15,1) 0%, rgba(10,10,15,0.7) 40%, transparent 100%);
+      height: 500px;
+      background: linear-gradient(180deg,
+        rgba(10,12,18,1) 0%,
+        rgba(10,12,18,0.98) 10%,
+        rgba(10,12,18,0.9) 25%,
+        rgba(10,12,18,0.7) 40%,
+        rgba(10,12,18,0.4) 60%,
+        rgba(10,12,18,0.15) 80%,
+        transparent 100%);
       z-index: 1;
       pointer-events: none;
     }
@@ -219,7 +226,7 @@ function renderAboutPage(stats, baseUrl) {
     <h1 id="glitch-headline" class="glitch-text text-4xl md:text-5xl lg:text-6xl text-center mb-16" style="font-family: 'Creepster', cursive;" data-text="About SpookFinder">About SpookFinder</h1>
 
     <!-- Prose -->
-    <article class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300">
+    <article class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300 font-light">
 
       <p>
         Every haunted place has a story.

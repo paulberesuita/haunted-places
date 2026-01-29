@@ -13,7 +13,7 @@ Dark, spooky but modern aesthetic. Tailwind CSS CDN with custom colors. No gradi
 Add to `<head>` in every SSR function:
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -23,7 +23,7 @@ Add to `<head>` in every SSR function:
           sans: ['Inter', 'system-ui', 'sans-serif'],
         },
         colors: {
-          'dark': '#0a0a0f',
+          'dark': '#0a0c12',
           'dark-card': '#141419',
           'dark-border': '#2a2a35',
           'accent': '#e94560',
@@ -41,7 +41,7 @@ Add to `<head>` in every SSR function:
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `dark` | `#0a0a0f` | Page background (`bg-dark`) |
+| `dark` | `#0a0c12` | Page background (`bg-dark`) |
 | `dark-card` | `#141419` | Card/section backgrounds |
 | `dark-border` | `#2a2a35` | Borders, dividers |
 | `accent` | `#e94560` | Primary action, links, highlights |
@@ -59,7 +59,8 @@ Add to `<head>` in every SSR function:
 | H1 (hero) | `font-['Bebas_Neue'] text-5xl md:text-7xl text-white` | Bebas Neue |
 | H2 | `text-2xl font-semibold text-white` | Inter |
 | H3 | `text-xl font-semibold text-white` | Inter |
-| Body | `text-base text-ghost` | Inter |
+| Body | `text-base text-ghost` | Inter 400 |
+| Body (prose) | `text-lg md:text-xl font-light text-gray-300` | Inter 300 |
 | Helper | `text-sm text-muted` | Inter |
 
 ## Page Layout
@@ -153,6 +154,28 @@ No borders on cards. Use background color contrast and shadow glow on hover.
   }
   ```
 - Hero images use full-width with dark gradient overlay for text readability
+- **Image-to-background blending** — Use tall, gradual gradients with many stops:
+  ```css
+  .image-blend::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background: linear-gradient(180deg,
+      rgba(10,12,18,1) 0%,
+      rgba(10,12,18,0.98) 10%,
+      rgba(10,12,18,0.9) 25%,
+      rgba(10,12,18,0.7) 40%,
+      rgba(10,12,18,0.4) 60%,
+      rgba(10,12,18,0.15) 80%,
+      transparent 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  ```
+  Note: RGB values `10,12,18` = `#0a0c12` (dark background color)
 - Lazy loading: `loading="lazy"` on card images
 - Error handling: hide broken images gracefully
 

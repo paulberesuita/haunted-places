@@ -252,7 +252,7 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
@@ -777,7 +777,7 @@ function render404Page() {
             sans: ['Inter', 'system-ui', 'sans-serif'],
           },
           colors: {
-            'dark': '#0a0a0f',
+            'dark': '#0a0c12',
             'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
