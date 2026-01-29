@@ -265,13 +265,13 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
     }
   </script>
   <style>
-    /* Image filter - grayscale */
+    /* Image filter - full color by default, ghostly desaturation on hover */
     .place-img {
-      filter: grayscale(70%);
+      filter: none;
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: grayscale(70%) sepia(20%) brightness(0.9);
+      filter: saturate(0.4) contrast(1.1);
     }
     .place-card {
       position: relative;

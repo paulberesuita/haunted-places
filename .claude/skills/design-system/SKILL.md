@@ -143,16 +143,17 @@ No borders on cards. Use background color contrast and shadow glow on hover.
 
 - Served from R2 via `/images/places/[slug].jpg`
 - Cards use `aspect-[4/3]` with `object-cover`
-- **Grayscale filter** on all place images (adds to spooky vibe):
+- **Full color by default, ghostly desaturation on hover** (reveals haunted atmosphere on interaction):
   ```css
   .place-img {
-    filter: grayscale(70%);
+    filter: none;
     transition: filter 0.5s ease;
   }
-  .place-img:hover, .place-card:hover .place-img {
-    filter: grayscale(70%) sepia(20%) brightness(0.9);
+  .place-img:hover, .place-card:hover .place-img, .group:hover .place-img {
+    filter: saturate(0.4) contrast(1.1);
   }
   ```
+  Note: On pages with SVG grain filter (homepage, state pages), use `filter: url(#grain)` for default and `filter: url(#grain) saturate(0.4) contrast(1.1)` for hover.
 - Hero images use full-width with dark gradient overlay for text readability
 - **Image-to-background blending** — Use tall, gradual gradients with many stops:
   ```css
@@ -183,7 +184,7 @@ No borders on cards. Use background color contrast and shadow glow on hover.
 
 1. **Dark theme only** — `bg-dark` page background, `text-gray-100` body text
 2. **No borders on cards** — Use background color contrast (`bg-dark-card` on `bg-dark`) and `hover:shadow-lg hover:shadow-accent/10` for depth
-3. **Grayscale images** — All place images use `place-img` class with grayscale filter
+3. **Full color images, ghostly on hover** — All place images use `place-img` class with desaturation on hover
 4. **Use custom color tokens** — `accent`, `ghost`, `muted`, `dark-card`, `dark-border`
 5. **Mobile-first** — Base is mobile, `md:` for desktop
 6. **Every list needs a ghost emoji placeholder** for items without images

@@ -315,13 +315,13 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
       100% { transform: translate(0); }
     }
 
-    /* Image filter - grayscale with subtle grain */
+    /* Image filter - full color by default, ghostly desaturation on hover */
     .place-img {
-      filter: url(#grain) grayscale(70%);
+      filter: url(#grain);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: url(#grain) grayscale(70%) sepia(20%) brightness(0.9);
+      filter: url(#grain) saturate(0.4) contrast(1.1);
     }
 
     /* Card with animated smoke effect */

@@ -310,13 +310,13 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
       100% { transform: translate(0); }
     }
 
-    /* Image filter - ghostly desaturated look */
+    /* Image filter - full color by default, ghostly desaturation on hover */
     .place-img {
-      filter: url(#grain) saturate(0.3) contrast(1.1);
+      filter: url(#grain);
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: url(#grain) saturate(0.5) contrast(1.15) brightness(1.05);
+      filter: url(#grain) saturate(0.4) contrast(1.1);
     }
 
     /* Card with animated smoke effect */

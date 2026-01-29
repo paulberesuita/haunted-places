@@ -200,11 +200,11 @@ function renderToursIndexPage(cities, baseUrl) {
     }
     html { background: #0a0c12; }
     .place-img {
-      filter: grayscale(70%);
+      filter: none;
       transition: filter 0.5s ease;
     }
     .place-img:hover {
-      filter: grayscale(70%) sepia(20%) brightness(0.9);
+      filter: saturate(0.4) contrast(1.1);
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
@@ -354,11 +354,11 @@ function renderCityPage(city, state, operators, nearbyPlaces, baseUrl) {
     }
     html { background: #0a0c12; }
     .place-img {
-      filter: grayscale(70%);
+      filter: none;
       transition: filter 0.5s ease;
     }
     .place-card:hover .place-img {
-      filter: grayscale(70%) sepia(20%) brightness(0.9);
+      filter: saturate(0.4) contrast(1.1);
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }

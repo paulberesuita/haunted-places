@@ -7,6 +7,708 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-29
 
 ### Changed
+- **Batch Deep Research: California Places** — Expanded 21 places with 5+ sources each, completing California coverage
+  - Hollywood Forever Cemetery (Los Angeles) — 785 → 2,346 chars, 7 sources (Valentino, Virginia Rappe, Clifton Webb)
+  - Mission Inn Hotel & Spa (Riverside) — 782 → 2,229 chars, 6 sources (Frank & Alice Miller, Bridal Suite, Catacombs)
+  - El Campo Santo Cemetery (San Diego) — 778 → 2,355 chars, 7 sources (Yankee Jim Robinson, Antonio Garra, 1996 exorcism)
+  - Hollywood Pantages Theatre (Los Angeles) — 769 → 2,422 chars, 6 sources (Howard Hughes, Alexander Pantages, 1932 death)
+  - Calico Ghost Town (Yermo) — 749 → 2,297 chars, 6 sources (Lucy Lane, Tumbleweed Harris, schoolhouse)
+  - Mission San Juan Capistrano (San Juan Capistrano) — 733 → 2,067 chars, 7 sources (1812 earthquake, Magdalena, Los Rios Street)
+  - Hearst Castle (San Simeon) — 723 → 2,176 chars, 5 sources (Marion Davies, phantom parties, Thomas Ince)
+  - Big Yellow House (Summerland) — 728 → 2,239 chars, 5 sources (Hector the Ghost, spiritualist town)
+  - Cosmopolitan Hotel (San Diego) — 718 → 2,125 chars, 6 sources (Ysidora Bandini/Lady in Red, Ghost Adventures)
+  - Old Orange County Courthouse (Santa Ana) — 686 → 2,240 chars, 5 sources (Judge ghost, basement prisoners)
+  - Monterey Hotel (Monterey) — 682 → 2,057 chars, 6 sources (Fred/Maintenance Ghost, Room 217, architect ghost)
+  - Leland Stanford Mansion (Sacramento) — 653 → 2,286 chars, 6 sources (Leland Jr., Stanford University origin, orphanage)
+  - Delta King Riverboat Hotel (Sacramento) — 651 → 2,151 chars, 6 sources (blonde ghost girl, captain, Pierre)
+  - Arana Gulch (Santa Cruz) — 636 → 2,140 chars, 6 sources (Andrew Jackson Sloan murder 1865, sightings 1895-present)
+  - Ghost Tree/17-Mile Drive (Pebble Beach) — 611 → 2,210 chars, 5 sources (Lady in Lace, La Llorona, deadly surf break)
+  - Marsh Road (Milpitas) — 610 → 2,137 chars, 6 sources (Marcy Conrad murder 1981, River's Edge film)
+  - Santa Teresa County Park (San Jose) — 608 → 2,157 chars, 5 sources (Dottie's Pond, Ohlone burial ground)
+  - Agnews State Hospital Site (Santa Clara) — 596 → 2,264 chars, 6 sources (1906 earthquake, 117 deaths, Green Day video)
+  - Ocean Street/White Lady (Santa Cruz) — 585 → 2,301 chars, 6 sources (murdered mail-order bride, ax-throwing ghost)
+  - Mission Santa Clara de Asis (Santa Clara) — 1,135 → 2,251 chars, 5 sources (Ohlone burials, EMF investigations)
+  - Star of India (San Diego) — 1,114 → 2,267 chars, 6 sources (John Campbell stowaway, Chinese sailor, Ghost Adventures)
+
+
+- **Deep Research: Wadsworth Atheneum Museum of Art** (Hartford, CT) — Expanded ghost story from 1,152 to 4,433 characters with 9 verified sources
+  - Museum history: America's oldest continuously operating public art museum; opened July 31, 1844; founded by Daniel Wadsworth, patron of American arts who married Faith Trumbull (niece of painter John Trumbull)
+  - Architecture: Gothic Revival castle designed by Ithiel Town and Alexander Jackson Davis; Connecticut granite with crenelated towers and pointed arches
+  - Ghost identity: Rev. Thomas Robbins (1777-1856), Congregational minister, bibliophile, and first librarian of the Connecticut Historical Society (housed in the Atheneum from 1844)
+  - Robbins background: Kept diary from 1796-1854; amassed 4,000+ volumes including 385-volume Journal des scavans (earliest scholarly periodical); bequeathed entire collection and $3,000 to the society
+  - 1891 haunting: Staff first identified mysterious phenomena as Robbins; by 1891 employees were convinced the building was haunted by the scholarly librarian
+  - 1911 newspaper story: The Bridgeport Times and Evening Farmer (July 10, 1911) gathered past and present employees including Caroline Hewins (Hartford Library), Frank Gay (curator), Alfred Bates (CHS librarian), and Alfred Clifford (superintendent)
+  - Phenomena: Footsteps walking toward basement with no one there; slamming doors; rustling newspaper sounds in empty reading room; patrons complaining of strange noises
+  - Caroline Hewins testimony: Confessed to being nervous working late afternoon or closing time, especially during winter months in the Gothic building
+  - Portrait incident (1892): During renovations, worker was warned Robbins' portrait was "the building's ghost"; he smiled, lifted the painting, and dropped it — canvas tumbled from frame and curled on floor; employees claim the ghost was never seen again
+  - Museum legacy: First American museum to purchase Caravaggio and Salvador Dali; 50,000 works spanning 5,000 years; five connected buildings (1844-1969)
+  - Sources: New England Legends podcast, Wikipedia (Thomas Robbins), Wikipedia (Wadsworth Atheneum), Connecticut History, Wadsworth Atheneum official, Britannica, Wikipedia (Daniel Wadsworth), CTvisit
+
+- **Deep Research: Harriet Beecher Stowe Center** (Hartford, CT) — Expanded ghost story from 1,132 to 5,690 characters with 12 verified sources
+  - House history: 1871 Gothic Revival home where Stowe lived final 23 years; five deaths occurred within its walls including Stowe herself (July 1, 1896)
+  - Family tragedy: Stowe lost four of seven children — Charley (18 months, cholera 1849), Henry Ellis (19, drowned), Frederick (30, disappeared after Gettysburg head wound), Georgianna May (47, morphine addiction)
+  - Spiritualism: Stowe attended seances, consulted mediums, experimented with the planchette (precursor to Ouija board)
+  - Charlotte Bronte ghost: May 11, 1872 letter to George Eliot described watching medium contact Bronte's spirit; Bronte still upset critics called her work "coarse"; Stowe wrote: "That spirits unseen have communicated with me I cannot doubt"
+  - Calvin Stowe: Husband had visions since childhood including tiny fairies dancing on windowsill; believed "some peculiarity in the nervous system" brought him into contact with spirit world
+  - Nook Farm neighborhood: Hartford's spiritualist hub; Isabella Beecher Hooker (half-sister) hosted seances with Mark Twain and wife Olivia attending; one New Year's Eve ended when medium channeled Indian warrior and beat on John Hooker
+  - Current phenomena: Window shades in parlor open by themselves; disembodied footsteps throughout building; unexplained light flashes in bedrooms; apparition in visitor's center
+  - Children's spirits: Pattering of small feet reported; mischievous specters believed to be Stowe children taunt tour guides; twins' bedroom creates feelings of anger
+  - Guest room death: Young English visitor died unexpectedly in his sleep; K-2 meter consistently reacts near this room
+  - Ghost Hunters: TAPS investigated Season 6, Episode 3 ("Shamrock Spirits"); investigators recorded spirit voices and concluded "definitely haunted"
+  - Literary connection: Uncle Tom's Cabin Chapter XLII titled "An Authentic Ghost Story"; Stowe also wrote eight supernatural short stories
+  - Final years: Suffered severe dementia (possibly Alzheimer's); by 1888 was rewriting Uncle Tom's Cabin believing it was first composition; Mark Twain wrote "her mind was decayed"
+  - Sources: CT Insider, CT Haunted Houses, HauntedPlaces.org, Chris Wolak, US Ghost Adventures, JSTOR Daily, CT Explored, Art of Mediumship, Wikipedia, Nature/Palgrave, POG Design, Stowe Center
+
+- **Deep Research: Downs Road** (Hamden, CT) — Expanded ghost story from 337 to 4,382 characters with 12 verified sources
+  - Road history: Named for Samuel Downs who settled the area south of Mad Mare's Hill in 1717; once a colonial thoroughfare connecting Hamden to Bethany
+  - Abandonment: Bypass redirected traffic about a century ago; mile-long unpaved stretch now gated at both ends; crumbling foundations and overgrown cellar holes remain
+  - Ownership: Property managed by South Central Regional Water Authority; Quinnipiac Trail (oldest Blue-Blazed Trail in CT) runs along the abandoned road; permit required
+  - Downs Road Monster: Four-to-five-foot-tall yeti-like creature, white as a sheet; skeptics suggest albino horse escaped from nearby farm; "Mad Mare Ridge" lends weight to horse theory
+  - Melon Heads connection: Bulbous-skulled humanoids from CT folklore; two origin theories: (1) colonial family banished for witchcraft, deformed by inbreeding; (2) escaped Fairfield Hills Hospital patients who resorted to cannibalism
+  - Claw marks: Visitors report long scratch marks on parked cars; attributed to Melon Heads or unknown creatures
+  - September 2005 encounter: Elizabeth Sullivan saw injured boy on bicycle who vanished; bike itself faded before her eyes; on separate visit, teen with glowing blue eyes appeared carrying gun
+  - Charles Sanford murders (1847): 26-year-old Hamden man with history of institutionalizations killed Enoch Sperry at Sperry Falls and Ichabod Umberfield at corner of Brooks and Downs Road with axe; Umberfield's gravestone reads "Killed by a madman"; Sanford died of smallpox before execution
+  - Local testimony: Resident Maria Case (since 2001): "As you're walking you can kind of feel the eeriness"; watched people come running out in panic
+  - Phenomena: Rocks thrown by unseen hands, rustling leaves, child-sized figures chasing visitors, glowing orbs, apparitions that materialize and vanish, overwhelming dread, UFO sightings over reservoir ridge
+  - High school investigation: Four students collectively saw "four-foot tall, hairy kind of a Big Foot" roaming the woods
+  - Sources: Damned Connecticut, New England Legends podcast, Ghost Village, CT Haunted Houses, i95 Rock, Bethwood Patch (2), HauntedPlaces.org, Abandoned Wonders, New England Historical Society, Wikipedia (Melon heads), Regional Water Authority
+
+- **Deep Research: Devil's Hopyard State Park** (East Haddam, CT) — Expanded ghost story from 377 to 5,334 characters with 12 verified sources
+  - Park overview: 860-acre wilderness along the Eightmile River; Chapman Falls drops 60+ feet over ancient Scotland schist stone formations
+  - Name origins: "Devil's Hopyard" first connected to Devil's Kettle (circular hole on Kettle Hill) and Devil's Oven/Cave (cavelike opening across river)
+  - Puritan obsession: Author David Phillips notes 34 Satan-named places in Connecticut including five Devil's Dens, four Backbones, two Kitchens, and two Satan's Kingdoms
+  - Primary legend: Satan sits atop boulder playing violin while the Black Witches of Haddam stir "hell broth for a charm of powerful trouble" in the cauldron-like potholes below
+  - Pothole geology: Cylindrical formations ranging from inches to 6+ feet in diameter, up to 25 feet deep; UConn professor Norman Gray explained they were created by sand in swirling eddies (like tornado currents)
+  - Native American connection: Area used as sacred gathering place for centuries; Puritan settlers likely misinterpreted indigenous rituals as satanic worship
+  - Moodus Noises: Wangunk people called region "Machimoodus" ("place of bad noises"); believed sounds came from god Hobomoko on sapphire throne beneath Mt. Tom
+  - Moodus science: First recorded 1702; Rev. Stephen Hosmer wrote of "fearful and dreadful" sounds (1729); now known as micro-earthquakes (100+ tremors in 1980s alone)
+  - Revolutionary War: 1775 Sons of Liberty tarred Loyalist Abner Beebe, threw millstone down falls; Louis Sorrentino found portion of millstone in 2002
+  - H.P. Lovecraft: Used Moodus Noises as inspiration for "The Dunwich Horror" (1929)
+  - Modern reports: Dark shadows, phantoms, orbs, mists, demonic voices, maniacal laughter; feelings of foreboding
+  - EVP evidence: Investigator captured "human sounding grunt" upon entering; described intense "feeling of being watched the whole time"
+  - Vehicle incident: Car shut down at night with no cell service; scratching sounds and laughter all night; started normally at dawn
+  - Video evidence: Paranormal investigators captured "misty figure moving" and "misty figure running" through darkness (no fog/smoke present)
+  - Connecticut Ghost Seekers: Officially investigated the park
+  - Cult activity: Reports of robed figures building bonfires and chanting in unknown tongues
+  - Physical symptoms: Visitors report crushing chest discomfort and disorientation that resolves inside park, returns upon leaving
+  - Sources: Wikipedia, Damned Connecticut, HauntedPlaces.org, CT Haunted Houses, i95 Rock, Patch, Hartford Courant, CTMQ, New England Historical Society, Atlas Obscura, Lou Sorrentino, CT State Parks
+
+- **Deep Research: New Haven Green** (New Haven, CT) — Expanded ghost story from 414 to 4,926 characters with 12 verified sources
+  - Colonial history: Founded April 25, 1638 by Rev. John Davenport and Theophilus Eaton; central square of America's first planned city (nine-square grid)
+  - Burial ground: 5,000-10,000 bodies buried 1638-1797; yellow fever epidemics 1794-1795 overwhelmed the cemetery with stacked corpses
+  - Grove Street transition: When cemetery moved in 1797-1821, only headstones were relocated; all bodies remained beneath the Green
+  - Center Church crypt: Built 1812-1814 on pillars over burial ground; 137 marked graves dating to 1687 plus estimated 1,000+ unidentified remains
+  - Notable burials: Theophilus Eaton (first governor, died 1657); Rev. James Pierpont (Yale co-founder); Margaret Arnold (Benedict Arnold's first wife); Hayes family
+  - Hurricane Sandy revelation: October 30, 2012, Lincoln Oak toppled exposing human remains; Katie Carbo discovered skull in roots; Yale anthropologists identified at least 3 children and 1 adult
+  - Hurricane Esther: Same tree exposed bones in 1961; Lincoln Oak planted 1909 for Lincoln centennial grew roots through colonial dead
+  - Theophilus Eaton ghost: Parishioners dozing in services hear voice asking "Have you been saved?" and see face they recognize as the Puritan founder
+  - Benedict Arnold apparition: Though buried in England, his conflicted spirit haunts the Green where his first wife lies; appears uncertain which side to fight for
+  - Shadow phenomena: Visitors report silhouettes walking grounds who vanish when acknowledged, transforming to mist; feeling drained of energy
+  - Ghost tour evidence: Orbs captured in photos; dowsing rods identify "energy vortexes" near colonial markers; disembodied voices
+  - Crypt tours: Available second Sunday of each month; visitors descend among 340-year-old headstones in presence of New Haven's founders
+  - Sources: Ghosts of New Haven, Center Church official, Wikipedia, Atlas Obscura, Smithsonian, Yale News, Yale Daily News, Damned Connecticut, New England Historical Society, Grove Street Cemetery, Connecticut History, US Ghost Adventures
+
+- **Deep Research: The Griswold Inn** (Essex, CT) — Expanded ghost story from 379 to 3,818 characters with 12 verified sources
+  - Inn history: Opened 1776 by Sala Griswold to serve shipbuilders constructing the Oliver Cromwell, Connecticut's first Revolutionary War warship (launched June 13, 1776)
+  - Architecture: Richard Hayden expanded in 1801, creating the first three-story building in the lower Connecticut River Valley
+  - Tap Room: Originally a 1735 schoolhouse, rolled down Main Street on logs by oxen and attached to the inn; ceiling of crushed clamshell and horsehair plaster survives
+  - War of 1812: April 7, 1814, 136 British Royal Marines captured inn as headquarters; burned 27 ships (largest American shipping loss until Pearl Harbor); consumed town's rum supply
+  - Hunt Breakfast: Sunday tradition begun by British occupiers continues today as the famous Hunt Breakfast
+  - Ghost of Clarence: Young man who died at the inn; blamed for glasses falling off tables; Kate Savage (Essex Historical Society): "They named a cocktail after him"
+  - Spectral sea captain: Appears near Tap Room fireplace gazing toward river "as if waiting for a ship that will never return"
+  - Other phenomena: Footsteps in empty hallways, faint music from Tap Room after closing, portrait with eyes that follow visitors
+  - 2024 Ghosts Be Gone investigation: Team sensed female spirit "in a beautiful dress flitting around showing it off, literally saying 'Look at me!'" plus shy male companion
+  - Dark Shadows: Inn featured as "Collinsport Inn" in 1960s gothic soap opera
+  - Famous guests: Mark Twain, George Washington, Albert Einstein, Katharine Hepburn, Frank Sinatra
+  - Current: 34 guest rooms, largest private collection of Antonio Jacobsen maritime paintings
+  - Sources: Griswold Inn official, Wikipedia, Atlas Obscura, Clio, FOX61, Shoreline Connecticut, Ghosts Be Gone, War of 1812 CT, Historic Buildings CT, National Trust, Haunted Rooms America, The E List
+
+- **Deep Research: Lake Compounce** (Bristol, CT) — Expanded ghost story from 424 to 5,268 characters with 11 verified sources
+  - Park history: Oldest continuously operating amusement park in North America; opened October 6, 1846 after scientist Samuel Botsford's electrical demonstration drew thousands
+  - Founding: Gad Norton inspired to create picnic park; partnered with Isaac Pierce in 1851
+  - Chief John Compound legend: Mattatuck-Tunxis chief who signed over 28 acres, a lake, and mountain on December 2, 1684 for coins, trinkets, and a brass kettle
+  - Three death legends: Drowned trying to cross lake in the kettle as a boat; deliberately tied kettle around neck and jumped; murdered by tribe for surrendering sacred land
+  - Curse: "When Chief Compound's blood seeped into the lake's waters, it cursed the land forever"
+  - Starlite Ballroom history: Opened 1937; record 5,000 dancers in spring 1941 when Tommy Dorsey's band featured young Frank Sinatra; hosted Glenn Miller, Benny Goodman, Billie Holiday, Cab Calloway
+  - Notable rides: Carousel (1911), Green Dragon coaster (1914), Wildcat wooden coaster (1927 - 14th oldest operating in world), Boulder Dash (2000 - world's best wooden coaster 2004, 2013-2016)
+  - Documented deaths: Michele Johnson (16, fell from coaster 1981); Matthew Henne (16, employee crushed by Tornado 1999); Devon Alexander (6, drowned Lake Plunge 2000 - 25 min to recover); Wilfredo Martinez (23, struck by Boulder Dash 2001); Sean Rice (5, killed by falling tree branch 2004)
+  - Death rate: Three deaths in 22 months — "unmatched by any other American amusement park"
+  - Starlite Ballroom hauntings: Honky tonk piano playing "Oh Susanna"; period-appropriate 1800s conversations; dark shadowy shapes; owner refuses to enter alone after being touched
+  - Housekeeping account: "Every night we felt like someone was behind us. Footsteps near dressing rooms, on stage, around ballroom floors"
+  - Security guard: Quit same day after phantom scuffling sounds in locked parkside diner
+  - Employee phenomena: Kiddie rides activating at midnight with no explanation; voices above clock-in area with no one present; water puddles appearing in empty buildings
+  - Visitor experiences: Orbs seen while driving past at night; feeling of being watched near old ski lift; 2015 Boulder Dash rider and companion both saw "something crossing over track really fast"
+  - Other phenomena: Young girl in old-fashioned dress near carousel who vanishes; lifeguards tugged by invisible presences; popcorn smell from closed concessions
+  - Sources: Damned Connecticut, CT Haunted Houses, HauntedPlaces.org, Connecticut History, Lake Compounce Official, Phantasma Forum, Wikipedia, Hartford Courant, Middletown Press, Connecticut Lifestyles, i95 Rock
+
+- **Deep Research: Little People's Village** (Middlebury, CT) — Expanded ghost story from 786 to 7,142 characters with 12 verified sources
+  - True history: Built 1924-1930s by William Joseph Lannen (1886-1958), a master electrician from Naugatuck who purchased land for a gas station
+  - Business failure: New highway route blasted through Pine Rock in 1928 bypassed his station, stranding him on a forgotten road
+  - Transformation: Lannen built miniature brick/concrete houses (3-4 feet tall), a church, lighthouse, winding paths, stone steps, rainwater pools, and electric lights
+  - Gift shop and throne: Adjacent stone building was a gift shop; the famous "throne" was actually part of an elaborate fountain/water distribution system
+  - Abandonment: By 1939 a newspaper reporter wrote the site "looks like somebody's dream crumbling to dust"; Lannen married Elizabeth Kennedy in 1936 and took job at CT Light & Power
+  - "Throne of the Damned" legend: Local folklore claims anyone who sits on the throne will die within seven years; many have tested it and survived
+  - Legend variations: Stories describe a couple driven mad by fairy voices, or a solitary man commanded to build for woodland spirits until he killed himself
+  - Paranormal reports: Visitors describe feeling "a ghost pass directly through me," tingly energy, white noise, visual static; others report hearing disembodied voices and laughter
+  - Location confusion: Actually sits a few feet over the border into Waterbury, not Middlebury; the "castle" structure with barred windows is just his old gas station garage
+  - Quassy trolley myth debunked: Director of marketing Ron Gustafson confirmed: "It was never associated with Quassy Amusement Park"
+  - Preservation threat: I-84 Exit 17 interchange construction may destroy remaining structures
+  - Current status: Overgrown and heavily vandalized; throne "almost totally intact" as of 2008 reports; state-owned land, private access
+  - Sources: Middlebury Historical Society, Damned Connecticut, CT Insider, The Ghost In My Machine, Freaklore, Roadside America, Abandoned Wonders, USC Digital Folklore Archives, i95 Rock, Bee-News, Ghosttowns.com, NBC Connecticut
+
+- **Deep Research: Gunntown Cemetery** (Naugatuck, CT) — Expanded ghost story from 767 to 5,849 characters with 15 verified sources
+  - Cemetery history: Founded 1790; holds Revolutionary War, War of 1812, and Civil War veterans; 376 marked graves within stone walls
+  - Gunn family: Descended from Scottish-born Jasper Gunn (arrived 1635); Nathaniel Gunn established 800-acre Gunntown settlement in 1733 with sawmill, store, blacksmith, distillery
+  - Dark history: Family held Tory sympathies; 1780 kidnapping of patriot Chauncey Judd — held captive in Gunn barn before enslaved man Tobiah rescued him at gunpoint
+  - Warren investigation: Ed and Lorraine Warren (NESPR founders) officially declared cemetery haunted; Lorraine warned dark energy comes from visitors with dark purposes, not the dead
+  - Phantom Child: Little boy plays near back wall before vanishing; EVP captured child's voice saying "look it mommy" when doll placed on grave
+  - Lantern Man: Spectral figure with lantern leads phantom horse across grounds; red-outlined figure captured on video; hooves and chains heard at night
+  - Black Ghost Dog: English folklore omen of death; seen trotting between headstones before vanishing; deep guttural growl described as "evil and not any animal noise from our realm"
+  - Children's laughter: Most common phenomenon; sound moves from field beyond back wall to inside cemetery; ragtime/calliope music heard but source never located
+  - Shadow figures: "Two huge black figures on back wall"; "very tall white figures" near graves; shadows dart at night; 1982 witness saw green glowing eyes in bush
+  - Physical phenomena: Visitors scratched by unseen forces (claw marks on arms); cars won't start; phones malfunction; overwhelming dread
+  - EVP evidence: July 2009 session captured gun cocking/firing sounds and voice saying "KA-Bang"; English-accented woman saying "That's not an Escape"; spirit said "yes" when asked if annoyed
+  - Surrounding woods: Equally haunted; rustling sounds, voices calling visitors to back of cemetery, screams, full-body manifestations
+  - Episcopal church: Jobamah Gunn helped establish church near cemetery (completed 1806); dismantled and moved 2+ miles away in 1831 — as if faithful couldn't endure the ground
+  - Sources: Wikipedia, Damned Connecticut, HauntedPlaces.org, CT Haunted Houses, Ghosts Be Gone, Only In Your State, A Haunted World, Ghost Village (2004 encounter), Storyteller, Naugatuck Patch, The Grim, Veil Walker Tours, Naugatuck Historical Society, Connecticut History, Find a Grave
+
+- **Deep Research: Hearthstone Castle** (Danbury, CT) — Expanded ghost story from 764 to 4,431 characters with 12 verified sources
+  - Builder: E. Starr Sanford (1862-1917), celebrated society portrait photographer whose Davis & Sanford studio on Fifth Avenue served the Astors and Vanderbilts
+  - Architect: Ernest George Washington Dietrich (1857-1924), later collaborated with Gustav Stickley on Craftsman cottage designs
+  - Construction: 1895-1899; stone quarried on-site and transported via small railroad built for the project; woodwork imported from Italy; chandeliers by Cephas B. Rogers Co. of Danbury
+  - Original purpose: Sixteen-room "honeymoon cottage" for Sanford's wife Emma
+  - Tragic death: In 1914, Sanford was on a ship struck by lightning while traveling to Texas; the electrical shock badly damaged the arteries in his eyes; he died partially blind in 1917
+  - Ownership: Sanford (1899-1902) -> Victor Buck "Buck Castle" (1902-1918) -> Charles Darling Parks (1918) as wedding gift for daughter Irene; renamed "Hearthstone Castle" after its eight stone fireplaces
+  - Irene Parks Jennings lived there until her death in 1982; heirs sold to City of Danbury in 1987 for $4.7 million
+  - National Register of Historic Places (1987); roof collapsed under city neglect; 2008 vandalism by five Ridgefield teenagers who posted YouTube video
+  - Phantom black dog: Most frequently reported entity; panting breath heard in darkness; glowing eyes that vanish when illuminated
+  - Full moon basement experience: Visitor reported extreme temperature drop, shivering, and pair of glowing eyes staring from corner; one visitor claims photo shows "black dog directly next to me staring right at the camera"
+  - Glowing man: Explorer saw luminous figure running beneath them through broken floorboard
+  - Rocks and sticks: Hikers on surrounding trails pelted by unseen hands
+  - Hooded figure: Hiker heard flute-like music, then saw person in long dark hooded cape watching from distance before vanishing
+  - Shadowy figures and glowing orbs drift past boarded windows at night
+  - Current status: City invested $1.14 million since 2020 for stabilization; Director Antonio Iadarola envisions observation deck
+  - Sources: Wikipedia, Friends of Tarrywile Park, Damned Connecticut, Atlas Obscura, CT Haunted Houses, Long Island Paranormal Investigators, Haunt Scout, Danbury Patch, NewsTimes, Broadway Photographs, Cabinet Card Gallery, Tarrywile Park Official
+
+- **Image Filter Flip** — All pages now show full-color images by default with subtle grain. On hover, images become desaturated (ghostly reveal effect). Previously: images were grayscale by default and slightly less grayscale on hover.
+  - Updated: homepage, state pages, place detail, hotels, tours, cities, category pages
+  - Design system documentation updated
+
+- **Deep Research: Yankee Pedlar Inn** (Torrington, CT) — Expanded ghost story from 353 to 5,673 characters with 12 verified sources
+  - Inn history: Built 1891 by Irish immigrant Frank Conley and wife Alice; designed by architect Robert Wakeman Hill; pallet brick with Vermont marble trim
+  - Original cost: $8,000 for lot (November 1890), plus $40,000 for elegant Victorian interior with marble, oak furniture, 52 rooms with hot water
+  - Opened July 28, 1891 as Conley Inn; became one of finest destinations in Connecticut under Alice's management
+  - Frank died March 17, 1910; Alice died August 22, 1910 in Room 353 — marking the start of paranormal activity
+  - Alice Conley ghost: Roams halls checking on guests; rocking chair in lobby moves by itself; apparition in Victorian dress seen folding linens
+  - Room 353: Focal point for activity; phantom smells, cold spots, apparitions of male and female couple; college students checked out early in terror
+  - Room 295: Guests feel presence climb into bed with them; lights flicker; spirits seen
+  - Physical phenomena: Doors open/close independently, elevators operate without passengers, guests pushed/tugged/kicked/pinched by invisible forces
+  - Shared dreams: Groups of guests report same dream — being given tour by grey-haired man with deep voice (believed to be Frank Conley)
+  - Other spirits: Man in top hat in lobby; little girl on third floor searching for mother; shadowy figures in restaurant
+  - Paranormal investigations: Northwest Connecticut Paranormal Society captured spirit orb; Glory Haunt Hounds 2013 overnight with EMF, Laser Grid, full-spectrum cameras
+  - Secret areas: Manager Sanjay Patel opened basement, attic, and secret staircase for investigations — all particularly active locations
+  - Ti West film connection: Director stayed at inn 2008 while filming "The House of the Devil"; witnessed TVs/doors/lights behaving strangely
+  - Sara Paxton: Would wake at night convinced someone was in her room; entire cast and crew had collective vivid nightmares
+  - Remarkable coincidence: Room West chose as most haunted in film (based on size) turned out to be Room 353 — the actual haunted room
+  - "The Innkeepers" (2012): Horror film starring Paxton, Pat Healy, Kelly McGillis; fictional ghost Madeline O'Malley (bride who hanged herself)
+  - Current status: Closed December 1, 2015 for renovations; never reopened; Torrington Development Corporation gained receivership July 2024
+  - Sources: Wikipedia, Damned Connecticut, FrightFind, HauntedPlaces.org, Historic Buildings of Connecticut, CT Haunted Houses, Collider, Register Citizen, The Innkeepers Wikipedia, CT Insider, i95 Rock, Grokipedia
+
+- **Deep Research: Sterling Opera House** (Derby, CT) — Expanded ghost story from 358 to 5,506 characters with 12 verified sources
+  - Building history: Designed by H. Edwards Ficken (co-architect of Carnegie Hall), opened April 2, 1889
+  - Charles Sterling: Piano manufacturer who funded the building but died in 1887, two years before completion; his ghost seen on balcony in brown suit
+  - Multi-purpose building: Opera house, city hall, police station, and jail cells beneath the stage
+  - Famous performers: Harry Houdini (had trap door built for escapes), Enrico Caruso, John Philip Sousa, George Burns, Bob Hope, Red Skelton, Lon Chaney, the Barrymores, Amelia Earhart (March 16, 1936)
+  - Final show: "Ye Olde Time Minstrel" November 30-December 1, 1945, honoring WWII soldiers
+  - Notorious prisoners: Lydia Sherman "The Poison Fiend" (serial killer who murdered 10 with arsenic), members of La Mano Nera (Black Hand)
+  - Andy (child spirit): Most active entity, responds to EVPs with singing, rolls balls and moves toys, no documented death explains his presence
+  - Green Lady "Hattie": Woman from Brooklyn in green dress who managed female performers; follows investigators to jail cells warning them to "be careful"
+  - Lady in White: Seen on second tier balcony, always seated right of second column
+  - Sterling's widow: Appears beside Charles on balcony; "the common denominator" per Rich DiCarlo (Derby Cultural Commission)
+  - Ghost Hunters (TAPS) April 2011: Captured child's voice EVP, moaning from dressing rooms, groaning sounds; found elevated EMF despite no electricity
+  - "Haunted chair" in balcony beside pole on middle level; glowing white light descends/ascends central staircase
+  - First Connecticut building on National Register of Historic Places (November 8, 1968)
+  - Restoration: Save Our Sterling organization, $100,000 state grant (2024), tours planned for Derby's 350th anniversary (2025)
+  - Sources: Wikipedia, Damned Connecticut, Atlas Obscura, Ghost Hunters Wiki, CT Haunted Houses, The Paranormal, NBC Connecticut, Derby Historical Society, Buildings of New England, Cinema Treasures, Valley Independent Sentinel, i95 Rock
+
+- **Deep Research: Norwich State Hospital** (Preston, CT) — Expanded ghost story from 806 to 8,250 characters with 15 verified sources
+  - Hospital history: Opened October 1904 on 172 acres along Thames River; land originally gifted by Mohegan Tribe to Jonathan Brewster in 1650
+  - Peak capacity: 3,184 patients in 1955 across 30+ buildings connected by underground tunnels; self-contained world with power plant, farm, theater, bowling alley
+  - Salmon Building: Maximum-security forensic unit for criminally insane; barred windows, steel doors, prison-like cells; housed 700+ patients adjudicated "not guilty by reason of insanity"
+  - Controversial treatments: Early "water therapy" (packing patients in ice), sheet restraints, prolonged solitary confinement
+  - Eugenics program: 559 forced sterilizations from 1909-1963 under Connecticut's law (second state to legalize); vasectomies and ovariectomies performed on "defective" patients
+  - Electroshock therapy: Nurse Judith A. Riley testified it was "done inhumanely" with patients not properly anesthetized
+  - Lobotomies: Performed in Abraham Ribicoff Research Center; hospital "only denounced lobotomies after many failed attempts on both adults and children"
+  - Children housed with criminally insane; unwed mothers confined (deemed "insane" to spare family shame), their children taken away
+  - 1939 Barker Commission investigation: Found facility 18% over capacity, inadequate medical records, 1 physician per 200 patients (required 1:150)
+  - Documented deaths (13+): Edward K. Arvine (1914 suicide by hanging), Rachel Brooks (1918 murder by escaped husband), Fred Ladd & Thomas Duggan (1919 boiler explosion), Sheriff Michael Carroll (1934 shooting), Robert Layne killed 2 police officers after 1971 escape
+  - Ghost Hunters investigation (May 5, 2010): TAPS described EVP recordings as "out of control"; captured door opening/closing on video, dog whimpering, footsteps, figure 3-4 feet tall
+  - Nurse sightings: While still operational, nurses saw children on second floor where none were assigned; screaming from Salmon Building
+  - Security guard encounter: Guard felt hand brush his head while searching empty building
+  - Underground tunnels: Especially active paranormal hotspot; investigators report cold rooms, shadow figures, claims patients were chained there
+  - Mohegan cleansing ceremony: March 1, 2018, Chief Lynn "Many Hearts" Malerba lit ceremonial fire burning four days to cleanse land and spirits; tobacco offerings at cardinal directions
+  - Current status: Closed 1996; most buildings demolished; grounds closed to public, patrolled; recent fires July/October 2025
+  - Sources: Wikipedia, Damned Connecticut, Haunted Rooms America, The Paranormal, Atlas Obscura, Ghost Hunters (IMDB), Patch Montville, Juliane Mangin, Only In Your State CT, Beyond Haunted, CT Haunted Houses, Otis Library Norwich, UVM CT Eugenics, The Day, Abandoned America
+
+- **Deep Research: Seaside Sanatorium** (Waterford, CT) — Expanded ghost story from 321 to 4,437 characters with 12 verified sources
+  - Built 1934 by architect Cass Gilbert (designer of U.S. Supreme Court, Woolworth Building); Tudor Revival style on 36-acre bluff overlooking Long Island Sound
+  - First institution in America designed for heliotropic treatment of children with tuberculosis
+  - Heliotherapy treatment: Children ages 5-14 wore bathing suits year-round (even winter with just hats and gloves), sunbathed on 1,700-foot beach; 70-90% cure rates for bone/glandular TB
+  - Stephen J. Maher Building named after Dr. Stephen Maher who led 20-year campaign to establish the facility
+  - Timeline: TB sanatorium (1934-1958), geriatric center (1959-1961), Seaside Regional Center for Mentally Retarded (1961-1996)
+  - 1970s abuse allegations: Superintendent Fred Finn accused of mismanaging funds and patient abuse; some staff violently mistreating patients
+  - 1990s: Facility became notorious for unnaturally high mortality rate — patients turning up dead at alarming frequency; state refused to release investigation findings even to families
+  - Closed 1996 officially due to deinstitutionalization policies; buildings abandoned ever since (nearly 30 years)
+  - New England Paranormal Video Research Group (2007): Captured EVPs and spirit orb photographs
+  - Phantom dog: Team heard dog barking inside building; security guard searched interior, found nothing
+  - Connecticut Ghost Seekers: Captured EVP of male voice "wasn't happy they were there"
+  - Shadow figures: Most common phenomena — misty apparitions of patients and staff seen walking grounds, passing building-to-building as if doing daily routines
+  - Children's voices: Disembodied laughter and cries heard echoing through crumbling halls
+  - Pair of eyes: Visitor's companion saw eyes staring from end of hallway filled with cubicles
+  - Trespasser death: Vagrant found dead after falling through two floors — testament to structural decay
+  - Current status: Seaside State Park (designated 2014 by Gov. Malloy); grounds open but buildings fenced off
+  - Demolition planned: $7.1M American Rescue Plan funds; Towers Golde designing passive park; demolition expected 2026
+  - Developer Mark Steiner fought to save buildings through lawsuits; final case dismissed December 2024
+  - Listed on National Register of Historic Places (1995)
+  - Sources: Connecticut History, Damned Connecticut, HauntedUS, Ghost of New England, HauntedPlaces.org, Cass Gilbert Society, CT Insider, CT Mirror, Scenes from the Trail, Waterford Patch, Buildings of New England, Atlas Obscura
+
+- **Deep Research: Captain Daniel Packer Inne** (Mystic, CT) — Expanded ghost story from 308 to 5,518 characters with 12 verified sources
+  - Inn history: Captain Daniel Packer (born January 31, 1732) purchased land in 1754, completed construction 1756 as Dutch colonial tavern
+  - Family: Married Hannah Burrows December 26, 1754; seven children; Packer died December 27, 1825 at age 93
+  - Rope ferry: Packer operated ferry across Mystic River at Packer Landing, transporting travelers between New York and Boston
+  - Revolutionary War: Served in Continental forces, earned captain rank twice (at sea and in war); swore he would never leave his inn
+  - Iron chain link: Remnant of rope ferry still attached to stone wall near front door; visitors lift and drop it to "connect" with captain's spirit
+  - Property lineage: Remained in Packer/Keeler family until late 1970s; Richard and Lulu Kiley purchased 1979, restored over 4 years
+  - Ada Clift: Captain's great-great-granddaughter, died 1874 from scarlet fever in second-floor bedroom at age 7
+  - Ada's activity: Disembodied giggling, spotted running through hallways, waving from bedroom window (second-floor, far left); fingerprints appear mysteriously on window
+  - Hide-and-seek account: Visitor's young daughter played with unseen companion who called herself "Ada"
+  - Ghost book 2008 entry: "Lawrence was standing here, front door. I heard footsteps running up and down the third-floor stairs. In the dining room, Sean also heard the footsteps, he went to check the dining room and there was no one there."
+  - Manager Hedi Talmich: "I think she just likes this place a lot and likes to play jokes"
+  - Robert Wiley (maintenance worker): "One morning, I walked through the captain, or the captain walked through me"; also discovered mysterious handprint on window at 4:30 AM
+  - Poltergeist activity: Doors slam, glasses fly off shelves, mugs move, heavy boot sounds in empty rooms, chandelier flickers
+  - Mystic Massacre (1637): Inn sits near site where 400-700 Pequot people killed; possible contribution to spiritual energy
+  - Seaside Shadows ghost tours (Courtney McInvale): Include inn on Haunted Mystic walks with dinner events
+  - Called "one of the most haunted restaurants in the world"
+  - Sources: Damned Connecticut, FOX61 (2), See Mystic CT, Daniel Packer official, US Ghost Adventures, WikiTree, Seaside Shadows, CT Insider, Shoreline Connecticut, Mystic History, Wikipedia (Mystic Massacre)
+
+- **Deep Research: University of Virginia** (Charlottesville, VA) — Expanded ghost story from 332 to 6,989 characters with 10 verified sources
+  - Founded by Thomas Jefferson in 1819; he considered it his greatest achievement, requesting "Father of the University of Virginia" on his tombstone
+  - Jefferson's ghost: Spirit seen near Rotunda (modeled after Rome's Pantheon); footsteps echo through empty Dome Room late at night
+  - Alderman Library: Most haunted building on campus, officially lists "Ghosts reported: 2" in published statistics
+  - Dr. Bennett Wood Green: Confederate surgeon (died 1913) whose medical book collection was donated; ghost followed books from Rotunda to Alderman in late 1930s
+  - Garnett Room ghost: Physician who visited Muscoe Russell Hunter Garnett family in Fredericksburg; collection remained mysteriously immaculate despite abandoned estate
+  - 2015 encounter: Library staff member Will Wyatt saw "short, older woman with long fluffy white hair" who said: "It's very quiet up here. This would be a great place to murder somebody."
+  - Edgar Allan Poe Room 13 West Range: Poe studied at UVA February-December 1826; left allegedly cryptic windowpane inscription before departing deep in debt
+  - Raven Society (founded 1904) conducts midnight initiations; room contains Poe's childhood bed, taxidermied raven, Latin plaque "A small room for a giant poet"
+  - Pavilion VI (Romance Pavilion): Mid-1800s professor's widow allegedly propped husband's corpse in rocking chair, changed clothes daily to avoid eviction; her weeping heard at night
+  - Pavilion X: History professor Edward Younger's mother-in-law and a visiting professor both saw identical apparition in colonial-era attire in first-floor room (1946-1974 period)
+  - Old Cabell Hall: "Perfume ghost" manifests as sudden women's fragrance; "Mean Jean" (housekeeper found dead in uniform) slams doors, turns off lights, produces unexplained laughter
+  - Joel Jacobus (music production director since 2004): Experienced lights going off while alone closing building
+  - University Cemetery: 1828 typhoid epidemic claimed first victims; became infamous for grave robbing to supply medical school cadavers
+  - 1834 incident: Medical student A.F.E. Robertson shot in back during grave raid but survived
+  - Mock funerals: Families buried logs/rocks in daylight, returned secretly at night to inter loved ones
+  - "Stiff Hall" behind Peabody Hall processed bodies until 1929; 1997 archaeological dig found bone fragments of dissected cadaver (age 18-24)
+  - UVA ranked among America's ten most haunted college campuses
+  - Sources: UVA Magazine (4 articles), UVA Today/News (2), Richmond Ghosts, Cville Ghosts, Encyclopedia Strange, US Ghost Adventures
+
+- **Deep Research: The Cavalier Hotel** (Virginia Beach, VA) — Expanded ghost story from 351 to 6,023 characters with 10 verified sources
+  - Hotel history: Opened 1927, Art Deco with half-million red bricks, 10 U.S. presidents stayed (Truman, Kennedy, Roosevelt)
+  - Celebrity guests: F. Scott Fitzgerald (swam laps, may have been inspired to write Gatsby), Judy Garland, Bette Davis, Al Capone
+  - Adolph Coors Sr. death: June 5, 1929, fell from Room 606 (6th floor) while recuperating from influenza
+  - Mystery unsolved: Coroner R.W. Woodhouse declined autopsy; suicide, accident, or murder never determined
+  - Coors sightings: Guests witness replay of fatal plunge, hear body hitting pavement; cigar smoke on 6th floor despite non-smoking policy since 2018
+  - Wedding photo incident: 1970s guest recognized Coors in her wedding photos — an older man no one recognized appeared in multiple shots
+  - Phantom calls: Front desk receives calls from empty 6th floor rooms; only silence or faint jazz music on the line
+  - 2016-2017 renovations: Calls continued from sealed, uninhabited 6th floor
+  - African American bellman: Appears at stairs to 6th floor warning "there are ghosts ahead," vanishes when questioned; no matching employment records for decades
+  - WWII soldier: Navy commandeered hotel 1941 as radar training facility; soldiers lived in rooms and stables; apparition seen on 3rd floor
+  - Little girl and cat: Both drowned in saltwater pool; guests hear meowing and scratching; mysterious paw prints in fresh concrete during renovations
+  - Lady in White: Appears in 3rd floor hallways and at foot of beds; possibly Ida Harrington (founder's wife) or Jazz Age socialite; haunts basement "Ghost Bar"
+  - Ghost dog lady: Elderly woman with spectral dog frequents Becca Restaurant seeking dining without reservation
+  - Crystal Ballroom: Piano plays itself, keys moving with no one seated
+  - Room 606 spirit box: Entity "Mike" stated there are "multiple" ghosts including murder victims; chandelier rocked during recording
+  - Room 712: Guests feel hand on shoulder, overwhelming sense of being watched
+  - Elevators: Move independently between floors without button activation; occurred during renovation when hotel was closed
+  - Eastern Paranormal Investigators Co-Op Conference: March 2010, 3-day event; producer Teddy Skyler chose venue for "historical value" and "haunted history"
+  - National Register of Historic Places; reopened 2018 as Marriott Autograph Collection with 85 rooms
+  - Sources: Visit Virginia Beach, Neptune Ghosts (2), FrightFind, Virginia Haunted Houses, TheParanormal.net, Encyclopedia Strange, Coastal Virginia Magazine, 13NewsNow, Virginian-Pilot
+
+- **Deep Research: Governor's Palace** (Williamsburg, VA) — Expanded ghost story from 314 to 4,904 characters with 10 verified sources
+  - Palace history: Original built 1706-1722 under Lt. Governor Alexander Spotswood; housed 9 governors total including Patrick Henry and Thomas Jefferson
+  - Three governors died in building: Hugh Drysdale (July 22, 1726), Francis Fauquier (March 3, 1768), Baron de Botetourt (October 15, 1770)
+  - Baron de Botetourt's deathbed quote: "leaving his Palace comforts with as much Composure as I enjoyed them"; 2,820 bottles in his cellar
+  - Revolutionary War hospital: After capital moved to Richmond (1780), Palace became hospital for Yorktown wounded; burned December 22, 1781 (possible arson)
+  - 1930 excavation discovery: 156 soldiers and 2 women buried in garden orchard; musket balls with teeth marks found (origin of "bite the bullet")
+  - Reconstruction: Rockefeller-funded, opened April 23, 1934 on original foundations; architect Prentice Duell (borrowed from Sakkarah Expedition)
+  - Hedge maze murder legend (c. 1918): William & Mary female student killed by escaped Eastern State Hospital patient with scythe; body never found, killer never caught
+  - Maze paranormal activity: Black shadows moving through hedges, disembodied footsteps, whispers, ghost of murdered girl with cut throat
+  - Security guard encounter: Guard shouted "Come on out, let's get this over with!" and turned on flashlight - no one there, yet footsteps continued approaching, passed by, then continued behind him
+  - Third floor candle: Security responded to reports of candlelight; found strong candle scent but no candles, no alarm triggers, no entry detected
+  - Photographed apparitions: Colonial figure in tri-corner hat and cape; ghostly face with white wig at entry; dark figure near entrance
+  - Third floor lantern: Visitors report seeing lantern passing behind windows at night - possibly surgeon or soldier from hospital days
+  - SAR ceremony: Williamsburg Sons of American Revolution places wreath at Revolutionary War Cemetery on Veterans Day
+  - Sources: Williamsburg Ghost Tour, Colonial Ghosts, Wikipedia, Daily Press, Spooks and Legends, Encyclopedia Virginia, Colonial Williamsburg Digital Library, Colonial Williamsburg Foundation, WeJunket, Find A Grave
+
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
+- **Deep Research: Ferry Plantation House** (Virginia Beach, VA) — Expanded ghost story from 325 to 6,103 characters with 10 verified sources
+  - Site history: Dates to 1642 when Savill Gaskin established second ferry service in Hampton Roads; cannon signaled arrivals at 11 stops
+  - Oldest structure built 1735 as Princess Anne County's third courthouse, first brick courthouse
+  - Grace Sherwood "Witch of Pungo": Only person in Virginia tried by water (July 10, 1706); floated, imprisoned nearly 8 years; exonerated by Governor Tim Kaine on 300th anniversary (July 10, 2006) at this house
+  - Current house built 1830 from salvaged bricks of Walke Manor (burned 1828)
+  - 11 distinct spirits identified by volunteers
+  - Henry (most active): Enslaved man born on plantation, showed courage in 1828 fire; family gave him upstairs room after Civil War
+  - 1980s sightings: Caretakers saw elderly African-American man emerge from basement Saturday evenings, kneel at west wall; hidden fireplace discovered behind wall years later
+  - EVPs revealed Henry's name, that he was content, "had nowhere better to go," favorite pastime "goin' fishin'"; "H" etched under paint layers near his quarters
+  - Sally Rebecca Walke: Mourns Confederate officer fiance John; planted magnolia April 6, 1863 in his memory (still stands)
+  - Lady in White: Died 1826 falling down stairs, broke neck; seen tumbling repeatedly
+  - General Thomas H. Williamson: Toddler described "man with beard, dirty shirt, painting on second floor landing"; staff later found matching photograph
+  - McIntosh family: Captain Charles F. died May 13, 1862 (ironclad Louisiana destroyed); wife Isabella 8 months pregnant; daughter Bessie died day after 5th birthday (1860)
+  - Bessie sightings: Little girl with ringlets in Mary Jane shoes; described as "trickster spirit"; pulled Navy visitor through house
+  - Eric: Boy who fell from Conference Room window; children's voices captured via EVP; toys move on their own
+  - Stella Barnett: Died from poisoned mushrooms; raised investigator up and down while sleeping, followed by audible giggle
+  - 1810 shipwreck victims: Perished at ferry landing; spirits counted among the 11
+  - Two unidentified child apparitions: Boy and girl seen pressed against wall at top of stairs, then vanish
+  - 600+ paranormal investigators have visited; Port City Paranormal captured anomaly in Green Room window
+  - Cody Green (vice president, Friends of Ferry Plantation House): "It's super active, but it's super positive. There's nothing negative here."
+  - Lights turn on in unoccupied third floor despite staff shutting off; neighbors saw "strange balls of light dancing around roof" before development
+  - Virginia Historic Landmark 2004, National Register of Historic Places 2005
+  - Paranormal nights fully booked through 2026
+  - Sources: Colonial Ghosts, Neptune Ghosts, Ferry Plantation official, WHRO, Wikipedia, Virginia Haunted Houses, HauntedPlaces.org, 13NewsNow, WAVY, Ferry Plantation witch page
+
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 7,131 characters with 17 verified sources
+  - Full 1927 opening history: $2.5M, founders Louis B. Mayer, Mary Pickford, Douglas Fairbanks, Sid Grauman
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 270 guests, 15-minute ceremony, Wings won Best Picture
+  - Famous guests: Charlie Chaplin, Clark Gable, Carole Lombard, Errol Flynn, F. Scott Fitzgerald, Hemingway, Shirley Temple
+  - Marilyn Monroe: lived in poolside cabana 2 years (1940s), first photo shoot at Tropicana Pool, haunts Suite 1200
+  - The Mirror: December 1985, Suzanne Leonard saw blonde reflection; mirror moved to lobby, sightings continue
+  - Montgomery Clift: Room 928, 3 months filming From Here to Eternity (1953), practiced trumpet; Peter James saw ghost in chair
+  - Caroline: child ghost allegedly drowned with brother; wears blue dress, calls guests from lobby phone
+  - Gable-Lombard Penthouse: 12th floor, $5/night secret affair spot; both ghosts seen separately
+  - Blossom Ballroom ghosts: man in tuxedo (Oscar nominee), man in white suit at piano (possibly Errol Flynn)
+  - 1984 renovation: $12M, ghosts awakened; Alan Russell found cold spot December 1985
+  - Peter James 1992 investigation: detected Clift, Caroline, Monroe's presence at Tropicana Bar
+  - Sources: Wikipedia, Atlas Obscura, LAist, Historic Hotels, US Ghost Adventures, Center for Inquiry, and 11 more
+
+- **Deep Research: Bara-Hack** (Pomfret, CT) — Expanded ghost story from 706 to 4,475 characters with 12 verified sources
+  - Full history: Founded 1778 by Jonathan Randall and Obadiah Higginbotham, Welsh settlers fleeing British advances during Battle of Rhode Island
+  - Randall purchased 220 acres in 1776; Higginbotham bought adjoining land from John Trowbridge in 1778
+  - Settlement: Waterwheel-powered gristmill on Nightingale Brook, Higginbotham Linen Wheels spinning wheel company
+  - Slave quarters and shared Randall-Botham cemetery with family members and enslaved workers in unmarked graves
+  - First hauntings: Randall family's enslaved workers saw ghostly figures in elm tree near cemetery at dusk; refused to go out after dark
+  - Phantom infant in elm tree became local legend for over two centuries
+  - Nipmuc curse legend: Native people allegedly cursed land after being driven out; tried chanting and whooping to frighten settlers first
+  - Abandoned by 1890; Betty Randall died 1893, last person buried in cemetery
+  - Auditory phenomena: Children laughing, mothers calling, dogs barking, cows lowing, wagon wheels rumbling on vanished roads
+  - Odell Shepard (1927 Pulitzer winner): "Although there is no human habitation for a long distance round about... there is always a hum and stir of human life"
+  - Paul F. Eno investigation 1971-72: Seminary student led four visits over two years with Harry Chase (Pomfret resident) as guide
+  - Eno's team felt overwhelming depression, heard voices over a mile from any home, attempted to record children's laughter but tape captured nothing
+  - Eno quote from Fate magazine (1985): "For more than seven minutes we watched a bearded face suspended in the air over the cemetery's western wall, while in an elm tree over the northern wall we clearly saw a baby-like figure reclining"
+  - Eno later worked with Ed and Lorraine Warren in early 1970s; began 50+ year paranormal research career here
+  - Current status: Private property owned by Townshend family; closed to public due to ghost hunter trespassing; rare permits through Pomfret Town Hall
+  - Sources: Atlas Obscura, The Ghost in My Machine, Astonishing Legends, Digging History, Damned Connecticut, Anomalien, Boston Globe, TreasureNet, CT Visit, Ghostly Podcast
+
+- **Deep Research: Dudleytown** (Cornwall, CT) — Expanded ghost story from 413 to 4,413 characters with 15 verified sources
+  - Settlement history: Founded 1747 by Gideon Dudley, brothers Barzillai and Abiel followed; only 26 families at 1854 peak
+  - Dark Entry Forest: So named because tree canopy so thick darkness fell at midday; between three mountains
+  - English curse legend: Edmund Dudley beheaded 1510 for treason; son John Duke of Northumberland executed with son Guilford
+  - Debunked by Rev. Gary P. Dudley: 2001 genealogical research found no connection to English nobility
+  - Cornwall Historical Society confirmed: Swift never lived there, Mary Greeley never set foot there, Harriet Clarke died in NYC
+  - Alleged curse victims: Gershon Hollister (1792 death), William Tanner (insanity), Sarah Faye (lightning 1804), General Herman Swift (madness)
+  - John Patrick Brophy: Last resident; wife died of TB, two children vanished into woods, set fire to home, walked into forest never seen again
+  - Dr. William Clarke 1918: Wife Harriet found hysterical after 36 hours alone, raving about creatures from Dark Entry Forest; later suicide
+  - Ed and Lorraine Warren: 1970s televised Halloween special, declared area "demonically possessed," Ed called it "controlled by something terrifying"
+  - Dan Aykroyd: 1993 Playboy interview called it "most haunted place on earth" (mistakenly said Massachusetts)
+  - Paranormal claims: Disembodied voices, shadow figures, dark creatures, scratches/bruises, complete silence (no wildlife sounds)
+  - Dark Entry Forest Association: Founded by Dr. Clarke 1924 after remarrying; closed to public after 1999 Blair Witch Project sparked trespassing
+  - Current status: State police patrol, $110 fines, arrests; former Historical Society president: "There are no ghosts, no spirits and no curse"
+  - Economic explanation: Bessemer steelmaking eliminated charcoal demand; families left for better opportunities out West
+  - Sources: Wikipedia, New England Historical Society, Damned CT, American Hauntings Ink, US Ghost Adventures, Haunted Rooms, Hartford Courant, Register Citizen, Paranormal Traveler, Listverse, Gary Dudley book (Amazon), CT Insider (Warren archive), and more
+
+- **Deep Research: Mark Twain House** (Hartford, CT) — Expanded ghost story from 469 to 5,265 characters with 13 verified sources
+  - Full history: Built 1874 by Edward Tuckerman Potter in American High Gothic style; 25 rooms, 11,500 sq ft
+  - Justin Kaplan quote: "part steamboat, part medieval fortress, and part cuckoo clock"
+  - Louis Comfort Tiffany: Hired 1881 after Tom Sawyer success; stencil work, decorative paneling, stained-glass staircase window
+  - Literary significance: Where Twain wrote Huckleberry Finn, Connecticut Yankee, Prince and the Pauper
+  - Susy Clemens tragedy: August 18, 1896, age 24, spinal meningitis; died in parents' mahogany bed with angel posts
+  - Parents racing across Atlantic arrived too late; Katy Leary (servant) was with Susy at the end
+  - Family never returned — sold 1903; Olivia refused to step foot in it again
+  - Cigar smoke: Billiards room where Twain wrote; firefighters confirmed smell that triggered alarms; Twain smoked 40 cigars/day
+  - Pool ball sounds: Heard dropping and rolling, but nothing moved when investigated
+  - Lady in White: Semi-transparent woman in period dress, believed to be Susy; seen on stairs and hallways
+  - Susy's bedroom: Childlike giggles, gentle tugs on clothing
+  - Library: Women report playful tugs on jewelry, bracelets slipping off
+  - George Griffin: Butler for 17 years, may have inspired Jim in Huckleberry Finn; born enslaved in Maryland
+  - Griffin sightings: African American man behind tour guides on third floor (near his bedroom); phantom knocks and bangs
+  - 1967 basement incident: Security guard saw silver tray launch across room, hit pipe
+  - Ed and Lorraine Warren: Investigated the house
+  - Ghost Hunters (TAPS): Three visits — 2009 investigation, Ghost Hunters Academy, Christmas special
+  - TAPS findings: Loud bangs on second floor, vibrations on staircase, orb moving from master bedroom to Susy's room
+  - EVPs captured including child's voice; most evidence lost in computer malfunction; concluded house filled with paranormal activity
+  - Twain's supernatural interest: Joined Society for Psychical Research 1884, read journals "cover to cover"
+  - Prophetic dream: Foresaw brother's steamboat explosion death
+  - After Susy's death: Wife Olivia retreated into Spiritualism; couple attended seances to contact daughter
+  - Conde Nast: Named one of most haunted places in America
+  - Sources: Mark Twain House official, Wikipedia (house, Susy, George Griffin), Locations of Lore, The Dead History, CT Post, CT Insider, HauntedPlaces.org, Ghost Hunters Wiki, American Hauntings, PSI Encyclopedia, IMDB
+
+- **Deep Research: Peyton Randolph House** (Williamsburg, VA) — Expanded ghost story from 393 to 4,677 characters with 10 verified sources
+  - House history: Built 1715 by William Robertson, purchased by Sir John Randolph 1724, expanded with eastern wing; Peyton inherited 1745
+  - Peyton Randolph: First President of Continental Congress, died October 22, 1775 from stroke in Philadelphia while dining with Jefferson
+  - Enslaved household: 27 enslaved people including Eve (valued at 100 pounds), at least 4 died from smallpox
+  - Eve's story: Escaped to British in 1781, sold for "bad behavior," fate unknown; son George may have died of smallpox during siege
+  - Peachy family tragedies (1802-1858): Boy fell from tree, girl fell from 2nd-story window, male relative suicide in drawing room, TB death
+  - Additional deaths: Confederate veteran died mysteriously, two visitors shot each other during argument, Mary Monro Peachy died 1836
+  - Field hospital: Served as hospital during both Revolutionary and Civil Wars; Battle of Williamsburg (May 5, 1862) left blood in foundations
+  - Lafayette's 1824 account: "I felt a hand on my shoulder...nudging me from entering...voices kept me awake for most of my stay"
+  - Security guard basement incident: Growl, legs grabbed, feet held down, shutter doors slammed, flashlight died
+  - Woman in White: Young woman in white nightgown appears in oak-paneled bedroom; 13-year-old guest saw teenage girl, heard boot stomps
+  - Lady Peachy (Mary Monro): Calls visitors by name, appears increasingly distressed
+  - Colonial man: Shook finger at maintenance worker with loud mumbling, vanished when addressed
+  - 2014 fire extinguisher: Fully discharged in unconnected eastern section, no mechanical cause, safety pin never found
+  - Firefighter quote: "the only thing I can deem it to be is a paranormal ghost experience"
+  - Ghost Adventures denied: Colonial Williamsburg refused multiple "lock-in" requests
+  - L.B. Taylor (Ghosts of Williamsburg author): Interviewed CW employees who "confronted apparitional figures"
+  - Sources: Colonial Ghosts, Williamsburg Ghost Tour, Ghost City Tours, US Ghost Adventures, Daily Press, The Ghostographer, Colonial Williamsburg Journal, Mount Vernon, Wikipedia, Flat Hat News
+
+- **Deep Research: Monticello** (Charlottesville, VA) — Expanded ghost story from 325 to 4,445 characters with 12 verified sources
+  - Historical context: Jefferson spent 56 years designing estate, died July 4, 1826 (50th anniversary of Declaration), 5 hours before John Adams
+  - Last words: "Is it the Fourth?" — lingered until 12:50 PM; final words to enslaved servants that morning, unrecorded
+  - Enslaved population: 400 people enslaved during Jefferson's lifetime, 130 at any given time; became second-largest slaveholder in Albemarle County by 1782
+  - Sally Hemings: Room discovered 2017 by archaeologists — 14'8" x 13', no windows, "dark, damp and uncomfortable," adjacent to Jefferson's bedroom
+  - Room converted to men's bathroom 1941 — "the final insult to Hemings' legacy"; now restored for public viewing
+  - Architectural denial: Subterranean passageways, hidden staircases, dumbwaiters behind fireplaces to render enslaved labor invisible
+  - Mabel O. Wilson quote: "Jefferson never reconciled those two sides of himself — his democratic ideals and his position as a slave owner"
+  - Mulberry Row: 1,300-foot hub with 20+ workshops, 87 enslaved individuals identified; nailery boys (ages 10-16) pounded 1,000 nails daily
+  - Jefferson's ghost: Phantom whistling on grounds (his daily habit), shadowy figure in halls and gardens, presence strongest in study/library
+  - Visitor physical reactions: Chest pressure and "great despair" in personal quarters; one visitor lost hearing/vision in parlor room
+  - 2013 experience: Hair lifted and tugged while exiting Jefferson's bedroom; force tried to enter visitor's body in study
+  - Apparitions: Late 1980s — girl in white dress with blue apron on stairway; father saw two blonde girls (ages 4 and 6) playing in roped-off area
+  - Sally Hemings apparition: Woman in white dress in enslaved quarters, "heaviness or discomfort" felt in those areas
+  - Getting Word project: 25+ years documenting enslaved family descendants, fundamentally altered site interpretation
+  - Burial ground: 40+ graves, dedicated 2001 with NAACP President Julian Bond
+  - Sources: HauntedPlaces.org, US Ghost Adventures, Virginia Haunted Houses, PANICd, Monticello.org (5 pages), NBC News, Atlas Obscura, Columbia News, ArchEyes
+
+- **Deep Research: Hollywood Cemetery** (Richmond, VA) — Expanded ghost story from 327 to 4,734 characters with 12 verified sources
+  - Cemetery history: Founded 1847 by William Haxall and Joshua Fry, designed by John Notman, 135 acres overlooking James River
+  - Notable burials: Presidents James Monroe and John Tyler, Confederate President Jefferson Davis, generals J.E.B. Stuart and George Pickett, 18,000 Confederate soldiers
+  - Richmond Vampire legend: October 2, 1925 Church Hill Tunnel collapse, 3:20 p.m., 200 workers trapped
+  - Benjamin F. Mosby: 28-year-old fireman, steam explosion flayed skin and shattered teeth, died 11:40 p.m. at Grace Hospital
+  - W.W. Pool mausoleum: Legend claims vampire fled here; Pool was actually an 80-year-old accountant who died 1922
+  - Mausoleum door welded shut, remains relocated to undisclosed location; 1960s-70s satanic cult rumors unsubstantiated
+  - Confederate Pyramid: 90-foot granite monument by Captain Charles H. Dimmock (1869), memorializes 11,000 unidentified soldiers
+  - Pyramid paranormal: Cold blasts along rear wall, disembodied moans at dawn/dusk, EVP captured ("No!" followed by "It's OK")
+  - Iron Dog of Hollywood: Cast-iron Newfoundland guards Florence Rees grave (died February 1862, age 2, scarlet fever)
+  - Placed by photographer uncle Charles R. Rees to save from Confederate bullet requisition (cemetery monuments exempt)
+  - Dog activity: Random barking, guttural growling at dark-hearted visitors, statue position reportedly changes direction
+  - Sheriff deputy encounters: Fly swarm attack at Monroe's tomb, persistent cold spot at Confederate Monument, footsteps in maintenance shed
+  - Sources: Wikipedia (2), Colonial Ghosts, The Line-Up, RVA Ghosts, America's Most Haunted, WRIC, Southern Spirit Guide, TheParanormal.net, The Richmonder, Find A Grave
+
+- **Deep Research: Edgar Allan Poe Museum** (Richmond, VA) — Expanded ghost story from 335 to 3,443 characters with 8 verified sources
+  - Old Stone House history: Built circa 1740 by German immigrant Jacob Ege, oldest original residential building in Richmond
+  - Ege family owned for 150+ years until 1911; Preservation Virginia saved it, opened as Poe Museum in 1922
+  - Poe connection: Stood guard as 15-year-old Junior Morgan Rifleman when Marquis de Lafayette visited Ege family in 1824
+  - Named ghost "Jonathan": Playful Ege family child with racing footsteps, seen in knee-length pants and light shirt
+  - Mysterious woman comforts Jonathan, has appeared to startled staff
+  - Two blonde ghost boys in Enchanted Garden: Photobomb wedding photos, play with museum cats Edgar and Pluto
+  - Mischievous activity: Nail thrown at visitor's head, guests pinched by unseen force, bobbleheads unpacked and lined up
+  - Shadow figure believed to be Poe: Lingers near walking stick and Virginia's hand mirror, captured in tour photos
+  - Man in top hat walks through garden at night; pen on Poe's desk moves to center of papers every morning
+  - Haunted staircase from John Allan's home: Visitors feel hand pressing on back, one woman nearly pushed down
+  - John Allan's hostile spirit: Angry that people celebrate the foster son he disinherited
+  - Museum cats (found 2012): Nuzzle at empty air as if petted by invisible hands; some say they are Poe and Virginia
+  - Sources: Richmond Ghosts, US Ghost Adventures, Virginia Haunted Houses, Rails to Trails, Wikipedia, Haunts of Richmond, VA Dogwood, HauntedPlaces.org
+
+- **Deep Research: Fort Monroe** (Hampton, VA) — Expanded ghost story from 329 to 5,805 characters with 10 verified sources
+  - Full history: Largest stone fort in US, hexagonal moat-surrounded fortress, continuously occupied since 1823, completed 1834
+  - Civil War significance: One of only four Southern forts never captured, "Freedom's Fortress" for escaped slaves, housed 5,000 troops
+  - U.S. Army officially recognizes the fort as haunted
+  - Lady in White (Camille Kirtz): Wife shot by husband for affair with French soldier, wanders oak groves on Ghost Alley/Matthews Lane
+  - Jefferson Davis: Imprisoned May 25, 1865 - May 13, 1867 in Casemate Number 2, wrongly accused of Lincoln assassination plot
+  - Davis ghost walks ramparts at night; wife Varina's ghost causes windows to vibrate in house across from casemate
+  - Quarters Number 1: Lincoln (May 1862 visit), Grant, and Marquis de Lafayette reviewing papers; EVP of girl calling cat "Greta"
+  - Edgar Allan Poe: Sergeant major of artillery 1829, wrote "Cask of Amontillado" here, ghost in top hat at Chamberlin Hotel
+  - Boy living above Casemate Museum identified Poe sketch as "the man in my closet"
+  - Chamberlin Hotel: Esmeralda (ship captain's daughter) haunts 8th floor so intensely it was closed to guests; Room 301 daytime office only
+  - Jane Polonsky documented accounts in "The Ghosts of Fort Monroe" (1972); saw arrogant 18th-century soldier vanish in dining room
+  - Deputy PAO Heather McCann: "I've got to tell you guys, and I mean this. I don't come through here at night"
+  - Phenomena: phantom gray cat, horse hooves, orbs, Confederate soldiers (one startled guard into spilling coffee), furniture moving
+  - Sources: U.S. Army official, Colonial Ghosts, Neptune Ghosts, Occult World, HauntedPlaces.org, WAVY, 13NewsNow, SOFREP, US Ghost Adventures
+
+- **Deep Research: Linda Vista Community Hospital** (Los Angeles, CA) — Expanded ghost story from 756 to 4,965 characters with 8 verified sources
+  - Full history: Opened Nov 1, 1905 as Santa Fe Coast Lines Hospital, designed by Charles Whittlesey
+  - H.L. Gilman (Union Station designer) built 1925 replacement and 1938 additions ($300,000)
+  - 1970s-80s decline: Gang violence overwhelmed ER, uninsured patients, rising death rates
+  - California Health Law News: Cost cuts led to negligent care rumors, closed ER 1988, closed 1991
+  - Three main spirits: little girl (surgical room, EVPs of laughing/singing), spectral orderly (still checking rooms), third-floor woman (walks through walls)
+  - Ghost Adventures 2009: 6ft white misty figure on camera, surgeon's chair moved, EVPs "ready or not...here I come", "don't leave me"
+  - Ghost Adventures 2012 return: Apparition covered in blood, Chad Lindberg got 3 scratch marks, Spirit Box said "nurse"
+  - 60+ film productions: Addams Family Values, L.A. Confidential, End of Days, Insidious 2 & 3, ER, Buffy, Dexter
+  - National Register of Historic Places 2006, now Hollenbeck Terrace senior housing
+
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 5,360 characters with 10 verified sources
+  - Full history: Opened May 15, 1927, financed by Douglas Fairbanks, Mary Pickford, Louis B. Mayer, Sid Grauman ($2.5M)
+  - First Academy Awards: May 16, 1929 in Blossom Ballroom, 270 guests at $5 each, Douglas Fairbanks presented all awards in 15 minutes
+  - Wings won Best Picture (only silent film to ever win); "Oscar" nickname invented 4 years later
+  - Marilyn Monroe: Lived in Suite 1200 for 2 years in late 1940s, shot first magazine cover at pool
+  - Marilyn's mirror: Staff member Suzanne Leonard saw blonde reflection December 1985; sightings so frequent mirror was moved multiple times
+  - Montgomery Clift: Room 928, stayed 3 months in 1952 filming From Here to Eternity; trumpet sounds at night
+  - Psychic Peter James: Watched Clift's ghost sitting in chair for several minutes; concluded spirit frustrated at dying before comeback
+  - Caroline: Little girl (~5 years old), first encountered by Peter James 1992; drowned in pool with brother; wears pink jacket/jeans
+  - Peter James also detected: Humphrey Bogart near elevator, Carmen Miranda on 3rd floor, Betty Grable and Edward Arnold in Blossom Room, Errol Flynn in bar
+  - Blossom Ballroom: Man in white tuxedo at piano, 10 degrees colder than rest of hotel
+  - Pool: Security guards see swimmer on CCTV during closed hours, find only ripples
+  - 1984-85 restoration ($35M) awakened spirits after hotel hit 5% occupancy
+
+### Fixed
+- **Image: Grandview Restaurant** (San Jose, CA) — Replaced incorrect image (person with chicken) with panoramic view from Mount Hamilton overlooking Silicon Valley, matching the ghost story about the girl gazing at "the hazy yellow glow of San Jose far below"
+  - Source: Wikimedia Commons (CC-BY-SA 4.0) by Thomson200, August 2019
+
+### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
+- **Deep Research: Hotel del Coronado** (San Diego, CA) — Expanded ghost story from 1,119 to 4,663 characters with 12 verified sources
+  - Hotel history: 1888 opening by Babcock & Story, $1M cost, largest resort at opening, second-largest wooden structure in US
+  - Famous guests: 16 presidents (Harrison to Obama), Nixon's 1970 state dinner (first outside White House)
+  - "Some Like It Hot" (1958): Billy Wilder filmed with Marilyn Monroe, Tony Curtis, Jack Lemmon
+  - Kate Morgan "Beautiful Stranger": born Katie K. Farmer 1864 Iowa, married con artist Tom Morgan at 16
+  - Arrival Nov 24, 1892 as "Lottie A. Bernard, Detroit"; found dead Nov 29 on beach steps
+  - Murder evidence: bullet didn't match gun caliber, no suicide note, missing money/belongings
+  - Room 3327 haunting: lights/TVs, doors, initials "KM" or "LB" appearing on ceiling, covers ripped off (Valentine's Day 2002)
+  - San Diego Magazine writer: ceiling fan spun on its own "as though a hand had given it one gentle push"
+  - Room 3519: maid who assisted Kate, disappeared after funeral, never collected pay; Secret Service agent demanded room change 1983
+  - Room 3502: woman connected to Babcock, suicide while pregnant; gurgling sounds in bathroom
+  - Gift shop Est. 1888: items fly off shelves, fall upright/unbroken; Marilyn/Kate "fighting for space"
+  - Beach apparition: woman in white with large-brimmed hat (clothing 20 years after Kate's death)
+  - Christopher Chacon 1992 investigation: 12 months, 10,000 hours, 1,100 interviews
+  - Room 3519: 400 equipment triggers in 365 days, 37 abnormalities in single 24-hour period
+  - Christine Donovan quote: "non-dramatic aspects of most stories made a believer out of me"
+  - Sources: Official hotel site (multiple pages), Historic Hotels, Ghost City Tours, Wikipedia, San Diego Magazine, FrightFind, Haunted Rooms, Tripster, Historic Mysteries
+
+- **Deep Research: Cecil Hotel** (Los Angeles, CA) — Expanded ghost story from 807 to 7,311 characters with 23 verified sources
+  - Full 1924 opening history: $1.5M Beaux Arts design by Loy Lester Smith, grand marble lobby, stained glass
+  - Great Depression decline into Skid Row, nicknamed "The Suicide" by 1950s residents
+  - Documented deaths chronologically: Percy Cook (1927, first suicide), W.K. Norton (1931), Benjamin Dodich (1932), Sgt. Louis Borden (1934), Grace Magro (1937), Dorothy Seger (1940)
+  - Pauline Otton (1962): jumped from 9th floor, killed pedestrian George Gianinni below
+  - "Pigeon Goldie" Osgood murder (June 4, 1964): raped, stabbed, beaten; case unsolved; friends planted flowers in Pershing Square
+  - Richard Ramirez "Night Stalker" (1985): lived on 14th floor during murder spree; walked through hotel in blood-soaked underwear per Kim Cooper
+  - Jack Unterweger (1991): Austrian serial killer killed 3 sex workers (Shannon Exley, Irene Rodriguez, Peggy Jean Booth) with signature bra knot
+  - Elisa Lam (2013): viral elevator footage, body found in rooftop water tank; "Door Hold" button explanation
+  - Ghost Adventures investigation: EVP of Elisa Lam's name, equipment malfunctions in elevator
+  - 2021 conversion to 600-unit affordable housing; 2023 LA Times reported deteriorating conditions
+  - Sources: Wikipedia, PBS SoCal, LAist, Ghost City Tours, Travel Channel, CBS LA, and 17 more
+
+- **Deep Research: Winchester Mystery House** (Santa Clara, CA) — Expanded ghost story from 1,240 to 4,948 characters with 12 verified sources
+  - Full Sarah Winchester biography: Belle of New Haven, married 1862, daughter Annie died at 5 weeks (1866), husband William died 1881
+  - Inherited $20M and 50% of Winchester fortune; purchased 8-room farmhouse 1886
+  - Final mansion stats: 160 rooms, 950 doors, 10,000 windows, 47 stairways, 47 fireplaces, 6 kitchens, 3 elevators
+  - Architectural oddities: stairs to ceilings, doors to walls/drops, trap doors, floor skylights, obsession with number 13
+  - 1906 earthquake: 7.9-magnitude collapse, Sarah trapped in Daisy Bedroom, freed with crowbar, sealed damaged sections
+  - Named ghost "Clyde": mustached 19th-century worker with wheelbarrow in basement/ballroom; visitors mistake for actor
+  - Maintenance worker Denny: footsteps in water tower always one floor ahead, no one found on roof
+  - Daisy Bedroom: tour guide heard sigh, saw "small shadowy figure moving away" — believed to be Sarah's displeasure
+  - Walter Magnuson (Executive Director) quote: "windows slamming as exclamation points, doors opening, voices when alone"
+  - Ghost Adventures 2011: blue orb photo, temp drop 72°F→65°F, investigation cut short (Zak's grandmother died)
+  - Ghost Adventures 2016: figure in hat/white overalls at window, SLS figure on séance room chair, Zak pushed on staircase (2 weeks back pain), EVP "I want to go home" and spirit "Russell"
+  - Most Haunted Live 2007: 7-hour live investigation with thermal imaging
+  - Harry Houdini visited 1924, toured séance room, suggested "Mystery House" name
+  - Time Magazine "Top 10 Most Haunted Houses in America"; 12M+ visitors since 1923
+  - Sources: Official site, History.com, SF Ghosts, US Ghost Adventures, Ghost Adventures Wiki (both episodes), Biography.com, Horror Collection, Mental Floss, Wikipedia, IMDB, official timeline
+
+- **Deep Research: Alcatraz Island** (San Francisco, CA) — Expanded ghost story from 798 to 6,967 characters with 23 verified sources
+  - Added Ohlone mythology: evil spirits inhabited island, used for banishing tribal members who violated laws
+  - Prison history: 1934-1963, housed Al Capone, Machine Gun Kelly, Robert Stroud; 36 escape attempts, 7 shot, 3 drowned
+  - Cell 14D legend: 1940s prisoner found strangled after screaming about glowing red eyes; appeared in morning count then vanished
+  - Cell consistently 20 degrees colder than surrounding cells
+  - Al Capone's ghost: banjo music in shower room and Cell B-181; formed "Rock Islanders" band with Machine Gun Kelly on drums
+  - Battle of Alcatraz (May 2-4, 1946): Bernard Coy, Joseph Cretzer, Marvin Hubbard killed; 2 guards died; utility corridor haunted
+  - Abie Maldowitz "The Butcher": Murder Inc hitman killed in laundry room; 1984 Sylvia Brown investigation for CBS
+  - Night watchman Rex Norman documented repeated door disturbances in C-Block
+  - 1940s Christmas ghost: Victorian man with mutton-chops appeared at Warden Johnston's party, may be Michael Mann (drowned 1857)
+  - TAPS Ghost Hunters (2010): captured voice identifying as "Harry Brunette 3-7-4" — prisoner #374 confirmed
+  - 2023 climate researchers: heard furniture moving and piano playing while sleeping in D-Block cells
+  - Sources: SF Ghosts, Legends of America, Ghost City Tours, CBS SF, Wikipedia, Travel Channel, SyFy, and 16 more
+
+- **Deep Research: Griffith Park** (Los Angeles, CA) — Expanded ghost story from 760 to 4,036 characters with 10 verified sources
+  - Full curse origin: 1863 deathbed scheme, Don Antonio Feliz tricked into excluding blind niece Dona Petronilla from will
+  - Petronilla's curse quoted: "The cattle shall sicken...I see the grand oaks wither in tongues of flames"
+  - Curse victims documented: Coronel's family, dairy farmer (flood/debt), water rights man (killed in saloon), next owner (murdered in Mexico)
+  - Colonel Griffith: self-bestowed title, shot wife Christina at Arcadia Hotel 1903, accused her of papal conspiracy
+  - Christina's escape: jumped from window, landed on awning, crawled to safety, left disfigured and blind in one eye
+  - 1933 fire tragedy: October 3, 3,700+ workers at 40¢/hour, 29 killed (some claim 58), California's deadliest wildfire until 2018
+  - Peg Entwistle: September 16, 1932 suicide from Hollywood Sign "H"; after death, letter arrived offering suicide role
+  - Ranger John Arbogast quote: "motion detectors say someone is standing five feet away...only there's nobody there"
+  - Don Feliz ghost appeared at 1896 dedication: "I come to invite you to dine with me in hell" (per folklorist Horace Bell)
+  - Named witnesses: Honorary Mayor Luis Alvarado (vanishing man at merry-go-round stairs), Syfy's Paranormal Witness friends
+  - Sources: LA Ghost Tour, Creepy LA, Patch, US Ghost Adventures, LA Almanac, Wikipedia (1933 fire), LAist, California Curiosities
+
+- **Deep Research: Santa Clara University** (Santa Clara, CA) — Expanded ghost story from 560 to 4,029 characters with 9 verified sources
+  - Added mission history: founded January 12, 1777, 8th mission, first named for a woman (St. Claire of Assisi)
+  - Five relocations due to flood/fire/earthquake before settling in 1822; 1926 fire destroyed church
+  - 7,500+ Native individuals (Ohlone, Yokuts, Miwok) buried beneath campus
+  - Three graveyards: 20 bodies (400 BC-800 AD), ~1,000 19th century burials, 2,000 more near The Alameda
+  - Father Magin Catala "The Holy Man" (1796-1830): levitated during prayer, Christ figure detached hands from crucifix
+  - Catala prophesied SF: "a great city will arise" but "will be completely destroyed by earthquake and fire" — 1906 proved him right
+  - Catala's body missing: after 1926 fire, "No one knows what happened to Father Catala. So we are missing a priest who may be a saint."
+  - Named ghost "Buddy": American Indian child in Walsh/McLaughlin Residence Halls; sounds of furniture moving, marbles rolling
+  - Campus ministry Matt Smith confirmed encounters as resident minister
+  - Jesuit priests in robes seen praying in bell tower; moaning from cemetery; students feel watched
+  - Sources: The Santa Clara, California Catholic Daily, SCU Mission Church, SFGate, SCU Magazine
+
+- **Deep Research: Hollywood Knickerbocker Hotel** (Los Angeles, CA) — Expanded ghost story from 730 to 4,999 characters with 10 verified sources
+  - Added full history: 1929 opening, $1.5M cost, 500 rooms, "Hotel of the Stars" and "Home of the Famous"
+  - Celebrity guests: Bette Davis, Cary Grant, Howard Hughes, Frank Sinatra, Lana Turner, Mae West, Orson Welles, Elvis (Room 1016)
+  - Marilyn Monroe/Joe DiMaggio: secret kitchen entrance dates, alleged 1954 honeymoon
+  - D.W. Griffith death: July 23, 1948 stroke in lobby; Frances Marion quote about him "hovering at the edge of the crowd" at Grauman's
+  - Irene Lentz suicide: November 15, 1962, jumped from 11th floor after slitting wrists; suicide note: "Sorry I had to drink so much"
+  - Houdini seance (October 31, 1936): 300 guests on rooftop, Judge Charles Fricke witness, "Rosabelle/Believe" code word
+  - Bess Houdini's declaration: "Houdini did not come through. My last hope is gone... spirit communication in any form is impossible"
+  - Griffith's ghost: elderly man in old-fashioned clothing, swinging cane, humming; staff say "That's just old Mr. Griffith"
+  - Marilyn's ghost: blonde face in ladies' room mirror, seated at bar with lipstick-smudged glass
+  - Irene's ghost: eerie chill, urge to jump near window, reenacts plunge before vanishing
+  - Shep the dog: English Setter taught elevator etiquette, ghost paws padding down hallways
+  - Ironic twist: Valentino's ghost reported despite dying 3 years before hotel opened
+  - Sources: LA Ghost Tour, Dead History, PBS SoCal, Ranker, Clio, Library of Congress, Wild About Harry
+
+- **Deep Research: Hicks Road** (San Jose, CA) — Expanded ghost story from 600 to 3,904 characters with 10 verified sources
+  - Added historical context: Road borders Almaden Quicksilver County Park with 100+ miles of abandoned mercury mine tunnels
+  - "Blood Albinos" legend: Pale, red-eyed beings emerge from darkness, move with unnatural speed, produce bone-chilling shrieks
+  - Witness account: 3 pale figures rapidly dragged struck deer down hillside and vanished
+  - Cursed bridge: Writing someone's name supposedly causes their death
+  - Origin theories: Swedish community at Uvas Canyon Park, United Technologies genetic experiments, Holy City cult (1919 William Riker)
+  - San Hauntse podcast: 3-part series, original song by Manuel Ávalos, interview with director Julian P. Flores
+  - 2009 student horror film "Hicks Road" (Blair Witch style)
+  - Twin Creeks "Albino Camp" at Hicks/Alamitos Road intersection — documented by Chill Seekers/BASS Paranormal
+  - Rational explanations: Barn owls, coyotes, homeless encampments ("The Jungle" with 300+ residents)
+  - Paranormal theories: Ghosts/ectoplasm, "flesh-and-blood creatures from another dimension"
+  - Sources: Weird Darkness, USC Folklore Archives, Ranker, San Jose Inside, SJToday, Mercury News, Wikipedia
+
+- **Deep Research: Grandview Restaurant** (San Jose, CA) — Expanded ghost story from 588 to 2,888 characters with 7 verified sources
+  - Added full history: 1884 stagecoach hotel/tavern for Mount Hamilton route to Lick Observatory, burned 1942, rebuilt, burned 1956, rebuilt
+  - James Lick connection: negotiated 1876 "first-class road" to summit, buried beneath telescope in 1887
+  - Ghost girl with "intense green eyes" appears as smoky silhouette on balcony overlooking Silicon Valley, vanishes when approached
+  - Surveillance footage: chef's cellphone picked up and thrown aggressively across kitchen by invisible force
+  - Waitress witnessed balcony doors randomly open and slam shut during closing; staff avoid closing alone
+  - Missing children legend (1954): unconfirmed number of children vanished, parents blamed "semi-local cult," accusations of ritual sacrifice
+  - Mystery noted: no documented deaths at property, ghost's identity remains unknown
+  - **Image replaced:** Inappropriate chicken photo → aerial view of Mount Hamilton and Lick Observatory (Wikimedia Commons)
+  - Sources: Visit San Jose, Backpackerverse, HauntedPlaces.org, BayArea.com, Metro Silicon Valley, Content Magazine, San Jose Spotlight
+
 - **Deep Research: Whaley House** (San Diego, CA) — Expanded ghost story from 820 to 3,218 characters with 6 sources
   - Yankee Jim Robinson execution: September 18, 1852, botched hanging, 45 minutes strangling to death
   - Thomas Whaley's 1860 journal documenting "eerie footsteps"
@@ -330,6 +1032,16 @@ What we shipped. Builder appends here after each feature.
   - Ensures backlog items have enough detail to execute later
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **SEO Agent Expanded** — Now owns data research + content + SEO pages
   - Triggers: "seo", "research", "data", "city pages", "sitemap"
   - Goals: Data coverage (40+ places/state), image coverage (80%+), technical SEO, programmatic pages
@@ -459,6 +1171,16 @@ What we shipped. Builder appends here after each feature.
   - Deduplicate Plant Hall / Plant Museum (same building, same address)
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **Researcher Agent** — Updated to collect and store multiple source URLs per place
   - New seed file template includes `sources` and `source_count` fields
   - Quality thresholds now require `source_count >= 2` for completeness
@@ -496,6 +1218,16 @@ What we shipped. Builder appends here after each feature.
   - Spec: `specs/boo-map.md`, added to backlog Inbox
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **Planner Agent** — Removed `AskUserQuestion` from tools list (not available to subagents at runtime)
 
 ---
@@ -523,6 +1255,16 @@ What we shipped. Builder appends here after each feature.
   - Indexes on state and city for efficient filtering
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **Place Detail Page Navigation**
   - Moved breadcrumb from separate section into hero area (above title)
   - Category pill now appears inline with title instead of separate row above
@@ -841,6 +1583,16 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-16
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **Louisiana Images Fixed with Wikipedia/Wikimedia Commons**
   - Used Wikipedia API to source 37 authentic images for Louisiana haunted places
   - Replaced previous Library of Congress/Unsplash images with actual Wikipedia photos of the locations
@@ -939,6 +1691,16 @@ What we shipped. Builder appends here after each feature.
   - 148 places now display images correctly (49 GA + 49 CA + 50 TX)
 
 ### Changed
+- **Deep Research: Hollywood Roosevelt Hotel** (Los Angeles, CA) — Expanded ghost story from 809 to 6,357 characters with 12 verified sources
+  - Hotel history: May 15, 1927 opening, financed by Fairbanks/Pickford/Grauman, $2.5M cost
+  - First Academy Awards: May 16, 1929, Blossom Ballroom, 12 awards in 15 minutes
+  - Marilyn Monroe: Lived 2 years, haunted mirror moved to lobby after Suzanne Leonard sighting Dec 1985
+  - Montgomery Clift: Room 928, trumpet at night, psychic Peter James saw him in chair corner
+  - Caroline child ghost: Drowned in pool 1930s-40s with brother; Peter James communicated 1992
+  - Blossom Ballroom: Tuxedoed Oscar nominee, piano player, 1920s jazz when empty
+  - Peter James findings: Bogart, Carmen Miranda, Betty Grable, Gable/Lombard, Errol Flynn
+  - Sources: Haunted Rooms, US Ghost Adventures, LA Ghost Tour, Ghost City Tours, Wikipedia, more
+
 - **Homepage Redesign (Minimal Gallery Style)**
   - Complete SSR (Server-Side Rendering) homepage for SEO — all content now in HTML, no JavaScript-loaded skeletons
   - New design inspired by Minimal.gallery and Godly.website:

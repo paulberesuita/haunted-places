@@ -211,11 +211,11 @@ function renderCategoriesIndexPage(categories, baseUrl) {
     }
     html { background: #0a0c12; }
     .place-img {
-      filter: grayscale(70%);
+      filter: none;
       transition: filter 0.5s ease;
     }
     .group:hover .place-img {
-      filter: grayscale(70%) sepia(20%) brightness(0.9);
+      filter: saturate(0.4) contrast(1.1);
     }
     .line-clamp-2 {
       display: -webkit-box;
@@ -368,11 +368,11 @@ function renderCategoryDetailPage(categoryKey, places, baseUrl) {
     }
     html { background: #0a0c12; }
     .place-img {
-      filter: grayscale(70%);
+      filter: none;
       transition: filter 0.5s ease;
     }
     .group:hover .place-img {
-      filter: grayscale(70%) sepia(20%) brightness(0.9);
+      filter: saturate(0.4) contrast(1.1);
     }
     .line-clamp-2 {
       display: -webkit-box;
