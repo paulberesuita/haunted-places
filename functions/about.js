@@ -15,11 +15,13 @@ function renderAboutPage(stats, baseUrl) {
   <meta property="og:description" content="Learn about America's most comprehensive haunted places directory.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${baseUrl}/about">
+  <meta property="og:image" content="${baseUrl}/about-ghosts.png">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About SpookFinder">
   <meta name="twitter:description" content="Learn about America's most comprehensive haunted places directory.">
+  <meta name="twitter:image" content="${baseUrl}/about-ghosts.png">
 
   <!-- Canonical -->
   <link rel="canonical" href="${baseUrl}/about">
@@ -64,7 +66,7 @@ function renderAboutPage(stats, baseUrl) {
   </script>
 
   <!-- Fonts & Tailwind -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Creepster&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -87,6 +89,9 @@ function renderAboutPage(stats, baseUrl) {
     }
   </script>
   <style>
+    html {
+      background: #0a0a0f;
+    }
     @media (max-width: 768px) {
       nav a {
         padding: 12px 8px;
@@ -94,19 +99,110 @@ function renderAboutPage(stats, baseUrl) {
         display: inline-flex;
         align-items: center;
       }
-      nav[aria-label="Breadcrumb"] a {
-        padding: 8px 4px;
-        min-height: 44px;
-      }
+    }
+
+    /* Glitch text effect */
+    .glitch-text {
+      position: relative;
+      animation: flicker 4s infinite;
+    }
+    .glitch-text::before,
+    .glitch-text::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    .glitch-text::before {
+      color: #ff0040;
+      z-index: -1;
+    }
+    .glitch-text::after {
+      color: #00ffff;
+      z-index: -2;
+    }
+    .glitch-text.glitching::before {
+      animation: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      opacity: 0.8;
+    }
+    .glitch-text.glitching::after {
+      animation: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+      opacity: 0.8;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.8; }
+      94% { opacity: 1; }
+      95% { opacity: 0.9; }
+      96% { opacity: 1; }
+      97% { opacity: 0.7; }
+      98% { opacity: 1; }
+    }
+    @keyframes glitch-1 {
+      0% { transform: translate(0); }
+      20% { transform: translate(-3px, 2px); }
+      40% { transform: translate(-3px, -2px); }
+      60% { transform: translate(3px, 2px); }
+      80% { transform: translate(3px, -2px); }
+      100% { transform: translate(0); }
+    }
+    @keyframes glitch-2 {
+      0% { transform: translate(0); }
+      20% { transform: translate(3px, -2px); }
+      40% { transform: translate(3px, 2px); }
+      60% { transform: translate(-3px, -2px); }
+      80% { transform: translate(-3px, 2px); }
+      100% { transform: translate(0); }
+    }
+
+    /* Ghost illustration - full-width bleed */
+    .ghost-illustration {
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 4rem;
+    }
+    .ghost-illustration::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(180deg, rgba(10,10,15,1) 0%, rgba(10,10,15,0.7) 40%, transparent 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .ghost-illustration img {
+      width: 100%;
+      max-width: none;
+      display: block;
+      opacity: 0.9;
+    }
+    footer {
+      position: relative;
+      z-index: 2;
+      margin-top: -60px !important;
+      padding-top: 0;
+      background: rgba(10,10,15,1);
+    }
+    footer > div.py-8 {
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
     }
   </style>
 </head>
-<body class="bg-dark text-gray-100 min-h-screen">
+<body class="text-gray-100 min-h-screen">
 
   <!-- Header -->
-  <header class="border-b border-dark-border">
-    <div class="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places</a>
+  <header>
+    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
       <nav class="flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
@@ -116,155 +212,81 @@ function renderAboutPage(stats, baseUrl) {
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="max-w-4xl mx-auto px-4 pt-4 pb-2" aria-label="Breadcrumb">
-    <ol class="flex items-center gap-2 text-sm text-muted">
-      <li>
-        <a href="/" class="hover:text-accent transition-colors">Home</a>
-      </li>
-      <li class="text-dark-border">/</li>
-      <li class="text-ghost">About</li>
-    </ol>
-  </nav>
-
   <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-4 py-12">
+  <main class="max-w-2xl mx-auto px-6 py-16 md:py-24">
 
-    <!-- Hero -->
-    <section class="mb-16">
-      <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">About SpookFinder</h1>
-      <p class="text-xl text-ghost leading-relaxed">
-        SpookFinder is a comprehensive directory of haunted places across America.
-        We document ghost stories, paranormal history, and haunted locations to help
-        enthusiasts, researchers, and curious travelers discover the supernatural side of the USA.
+    <!-- Title -->
+    <h1 id="glitch-headline" class="glitch-text text-4xl md:text-5xl lg:text-6xl text-center mb-16" style="font-family: 'Creepster', cursive;" data-text="About SpookFinder">About SpookFinder</h1>
+
+    <!-- Prose -->
+    <article class="space-y-8 text-lg md:text-xl leading-relaxed text-gray-300">
+
+      <p>
+        Every haunted place has a story.
       </p>
-    </section>
 
-    <!-- Stats -->
-    <section class="mb-16">
-      <div class="grid grid-cols-3 gap-4">
-        <div class="bg-dark-card rounded-xl p-6 text-center">
-          <div class="text-3xl font-bold text-accent mb-1">${stats.totalPlaces}</div>
-          <div class="text-sm text-ghost">Haunted Places</div>
-        </div>
-        <div class="bg-dark-card rounded-xl p-6 text-center">
-          <div class="text-3xl font-bold text-accent mb-1">${stats.totalStates}</div>
-          <div class="text-sm text-ghost">States Covered</div>
-        </div>
-        <div class="bg-dark-card rounded-xl p-6 text-center">
-          <div class="text-3xl font-bold text-accent mb-1">${stats.totalCities}</div>
-          <div class="text-sm text-ghost">Cities</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="mb-16">
-      <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
-      <div class="prose prose-invert max-w-none text-ghost space-y-4">
-        <p>
-          Every haunted place has a story. Behind the ghost sightings and paranormal activity
-          lies history - tales of love, tragedy, mystery, and the unexplained. Our mission is
-          to preserve and share these stories.
-        </p>
-        <p>
-          We research and document haunted locations across America, from famous haunted hotels
-          and historic mansions to lesser-known cemeteries and battlefields. Each entry includes
-          the location's history, reported paranormal activity, and practical information for visitors.
-        </p>
-      </div>
-    </section>
-
-    <!-- What We Cover -->
-    <section class="mb-16">
-      <h2 class="text-2xl font-semibold mb-6">What We Cover</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#127976;</span>
-          <h3 class="font-medium mb-1">Haunted Hotels</h3>
-          <p class="text-sm text-ghost">Historic hotels with ghostly guests</p>
-        </div>
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#127962;&#65039;</span>
-          <h3 class="font-medium mb-1">Mansions</h3>
-          <p class="text-sm text-ghost">Grand estates with dark histories</p>
-        </div>
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#129702;</span>
-          <h3 class="font-medium mb-1">Cemeteries</h3>
-          <p class="text-sm text-ghost">Resting places of the restless</p>
-        </div>
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#9939;&#65039;</span>
-          <h3 class="font-medium mb-1">Prisons</h3>
-          <p class="text-sm text-ghost">Cells that still hold spirits</p>
-        </div>
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#127973;</span>
-          <h3 class="font-medium mb-1">Hospitals</h3>
-          <p class="text-sm text-ghost">Asylums and medical facilities</p>
-        </div>
-        <div class="bg-dark-card rounded-lg p-4">
-          <span class="text-2xl mb-2 block">&#9876;&#65039;</span>
-          <h3 class="font-medium mb-1">Battlefields</h3>
-          <p class="text-sm text-ghost">Sites of historic conflict</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Data Sources -->
-    <section class="mb-16">
-      <h2 class="text-2xl font-semibold mb-4">Our Sources</h2>
-      <div class="prose prose-invert max-w-none text-ghost space-y-4">
-        <p>
-          Our data comes from a variety of sources including historical records, local
-          historical societies, paranormal research organizations, and firsthand accounts.
-          We cross-reference multiple sources to ensure accuracy and provide attribution
-          where available.
-        </p>
-        <p>
-          We're always looking to expand our database. If you know of a haunted location
-          that should be included, or if you have corrections to existing entries, we'd
-          love to hear from you.
-        </p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="bg-dark-card rounded-xl p-8 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Start Exploring</h2>
-      <p class="text-ghost mb-6">
-        Ready to discover haunted places near you? Browse by state or explore our featured locations.
+      <p>
+        Behind the ghost sightings and paranormal activity lies history—tales of love, tragedy, mystery, and the unexplained. SpookFinder exists to preserve and share these stories.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/states" class="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg transition-colors">
-          Browse by State
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
-        <a href="/" class="inline-flex items-center justify-center gap-2 bg-dark-card hover:bg-dark-border text-white font-medium px-6 py-3 rounded-lg transition-colors">
-          Featured Places
-        </a>
-      </div>
-    </section>
+
+      <p>
+        We're building a comprehensive directory of haunted places across America. From the infamous hotels where guests check in but never leave, to forgotten cemeteries where the restless still wander, to Civil War battlefields where soldiers march through the mist—we document them all.
+      </p>
+
+      <p class="text-ghost text-base md:text-lg border-l-2 border-accent pl-6 my-12">
+        Currently cataloging <span class="text-white font-medium">${stats.totalPlaces}</span> haunted locations across <span class="text-white font-medium">${stats.totalStates}</span> states and <span class="text-white font-medium">${stats.totalCities}</span> cities.
+      </p>
+
+      <p>
+        Each entry includes the location's history, reported paranormal activity, and practical information for visitors. Whether you're a paranormal investigator, a history buff, or just someone who enjoys a good ghost story, SpookFinder helps you discover the supernatural side of America.
+      </p>
+
+      <p>
+        Our data comes from historical records, local historical societies, paranormal research organizations, and firsthand accounts. We cross-reference multiple sources to ensure accuracy.
+      </p>
+
+      <p>
+        Know of a haunted location we're missing? <a href="/contact" class="text-accent hover:text-accent-hover transition-colors">Submit it here</a>.
+      </p>
+
+      <!-- Ghost Illustration -->
+      <figure class="ghost-illustration mt-16">
+        <img src="/about-ghosts.png" alt="Three ethereal ghosts emerging from mist">
+      </figure>
+
+    </article>
 
   </main>
 
   <!-- Footer -->
-  <footer class="mt-16 border-t border-dark-border">
-    <div class="max-w-4xl mx-auto px-4 py-8">
-      <div class="text-center">
-        <a href="/" class="text-lg font-semibold hover:text-accent transition-colors">Haunted Places Directory</a>
-        <a href="/radio" class="block text-ghost hover:text-white text-sm transition-colors mt-2">Ghost Story Radio</a>
-        <p class="text-muted text-sm mt-2">
-          Documenting America's most haunted locations, one ghost story at a time.
-        </p>
+  <footer class="mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
+          <p class="text-muted text-sm mt-1">
+            Documenting America's most haunted locations, one ghost story at a time.
+          </p>
+        </div>
+        <a href="/radio" class="text-ghost hover:text-white text-sm transition-colors">Ghost Story Radio</a>
       </div>
     </div>
   </footer>
 
   <script>(function(){if(sessionStorage.getItem('_gh'))return;sessionStorage.setItem('_gh','1');setTimeout(function(){console.log("%c    .-.\\n   (o o)\\n   | O |\\n   |   |\\n   '~~~'\\n\\n  You shouldn't be here.","color:#e94560;font-size:14px;font-family:monospace;line-height:1.4;")},3e3)})()</script>
+  <script>
+    // Periodic glitch effect on headline
+    (function() {
+      const headline = document.getElementById('glitch-headline');
+      if (!headline) return;
+      setInterval(function() {
+        headline.classList.add('glitching');
+        setTimeout(function() {
+          headline.classList.remove('glitching');
+        }, 300);
+      }, 4000);
+    })();
+  </script>
 </body>
 </html>`;
 }
