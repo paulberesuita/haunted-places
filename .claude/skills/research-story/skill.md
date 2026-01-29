@@ -77,6 +77,31 @@ Search for detailed accounts using these source types (in priority order):
 - Witness accounts (direct quotes if available)
 - Investigation findings (EVPs, photos, equipment readings)
 
+### Source Tracking (CRITICAL)
+
+**You MUST save EVERY source URL that contributed ANY information to the final story.**
+
+As you research, maintain a running list of sources:
+```
+## Sources Used
+1. https://example.com/ghost-story - [ghost name, death date]
+2. https://wikipedia.org/wiki/Place - [historical context, year built]
+3. https://paranormal-team.com/report - [EVP findings]
+...
+```
+
+**What counts as "used":**
+- You pulled a fact, date, name, or quote from it
+- You used it to verify/corroborate another source
+- It appeared in search results and you read content from it
+
+**The `sources` JSON array must include ALL of these URLs, not just the "main" ones.**
+
+This is important for:
+- Credibility (readers can verify claims)
+- Future research (knowing where info came from)
+- Legal protection (proper attribution)
+
 ### Step 3: Compile the Expanded Story
 
 Structure the expanded ghost_story with these sections (not as headers, but as narrative flow):
@@ -123,7 +148,9 @@ WHERE slug = '[slug]';"
 **Important:**
 - Escape single quotes in the story by doubling them (`'` → `''`)
 - Keep the sources JSON array format: `["url1","url2","url3"]`
+- **Include ALL sources consulted** — every URL you pulled information from
 - Preserve existing sources, add new ones
+- `source_count` must match the actual number of URLs in the `sources` array
 
 ### Step 5: Verify and Report
 
