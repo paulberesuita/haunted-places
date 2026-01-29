@@ -7,6 +7,70 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-29
 
 ### Changed
+- **Deep Research: Queen Anne Hotel** (San Francisco, CA) — Expanded ghost story from 560 to 4,805 characters with 10 verified sources
+  - Added complete history: Senator James "Slippery Jim" Fair funded 1890 mansion for Miss Mary Lake's School for Girls
+  - Documented scandal: Chronicle's "Cupid and Mr. Fair" article, secret marriage rumors, Mary's denial
+  - School closure: Fair's 1894 death, daughters evicted school, Panic of 1896, Mary's heartbroken quote to SF Call
+  - Building's later uses: Cosmos Gentleman's Club, Episcopal Girls Friendly Society Lodge, 1980 restoration by 50 preservationists
+  - Room 410 paranormal: mysteriously unpacked luggage, clothes hung up, guests tucked in, cool cloth on sick guest's forehead
+  - TripAdvisor witness quote: "I half awoke to experience a feeling like someone was tucking me in and gently pushing on my collarbone"
+  - Hotel management quote: "Only truly gifted people seem to experience her at all"
+  - Other activity: spectral figure in mirrors, piano playing in lobby, cold spots on grand staircase, footsteps in empty halls
+  - TV coverage: Travel Channel's "Haunted Hotels"; YouTube EVPs include "little girl singing" sounds
+  - Mary Lake's benevolent nature: "one of the friendliest and most conscientious ghosts around"
+  - Sources: SFist, SFGate, Haunted Rooms, Weird California, TripAdvisor, Amy's Crypt
+
+- **Deep Research: California's Great America** (Santa Clara, CA) — Expanded ghost story from 550 to 4,305 characters with 9 verified sources
+  - Added park history: Marriott opened March 20, 1976 on former pear orchards, groundbreaking October 24, 1973
+  - Willard's Whizzer tragedy: March 29, 1980, 13-year-old killed when trains collided; CPSC found 11 unreported incidents 1976-1979, braking defects
+  - Documented all 5 park deaths: 1980 (Whizzer), 1989 (Logger's Run, age 9), 1998 (Flight Deck), 1999 (Drop Tower, age 12), 2007 (wave pool, age 4)
+  - Named witnesses with dates: Al (1980s freezer warehouse ghost), Karen & Stephanie (May 2015 theater "Fire! Fire! Get out!"), Justine (2009 wave pool shadow), Kerry (1981 carousel red eyes), Jared Coronado (2015 Drop Zone screaming)
+  - Blue shirt freezer ghost: worker allegedly froze to death, appears 10 PM-midnight screaming; Al saw him walk through pallets
+  - Carousel paranormal: glowing red eyes on horse, organ pipe from closed unmanned ride
+  - Sources: HauntedPlaces.org, CPSC, Mercury News, Coaster Kings, Coasterpedia, Blooloop
+
+- **Deep Research: The Presidio** (San Francisco, CA) — Expanded ghost story from 751 to 2,868 characters with 6 sources
+  - Added historical context: 218 years as military fortress (1776-1994), three nations, 1922 unearthing of 38 Spanish conquistadores
+  - Named ghosts: Pauline Cushman (Union spy, "Spy of the Cumberland"), Spanish Sentry (leather armor, dissolves into mist), Lady in Black (Officers' Club ballroom), Lady of the Officers' Quarters (Victorian woman)
+  - TAPS Ghost Hunters investigation (2007): Dr. Thomas Smith, captured dark female figure in banquet room, EVP of third voice, Kris Williams' leg went cold
+  - 1992 Army inspection report: Letterman Hospital staff "sane and sober" swore hospital haunted
+  - Muni bus driver account: uniformed soldier vanished before leaving Presidio
+  - LucasFilm/Letterman Digital Arts Center: hauntings continue in new buildings using 50% recycled hospital concrete
+  - Sources: SF Ghosts, Ghost City Tours, SF Ghost Hunt, Ghost Hunters Wiki, HauntedPlaces.org
+
+- **Deep Research: RMS Queen Mary** (Long Beach, CA) — Expanded ghost story from 1,161 to 3,884 characters with 12 verified sources
+  - Added HMS Curacoa disaster details: October 2, 1942 collision killed 329 sailors, Ernest Watson's warning "She's going to ram us!"
+  - Documented Stateroom B340: Walter J. Adamson death (1948), room sealed 30 years, reopened Friday April 13, 2018 with paranormal package
+  - Named spirits: John Pedder "Half Hatch Harry" (Door 13, 1966), William Eric Stark (poisoned 1949), Woman in White (Queen's Salon), Jackie (pool)
+  - Specific paranormal behaviors: Pedder whistles, asks about wrench then vanishes; Stark makes choking sounds; Jackie giggles in drained pool
+  - Night watchman's German Shepherd refused to pass Door 13, cowered before metallic clanging echoed
+  - Time magazine "Top 10 Haunted Places on Earth" (2008); Ghost Adventures EVPs: "What anger," "Oh, I f***n hate them"
+  - 49 documented deaths, estimated 150 spirits; "Grey Ghost" WWII service transported 800,000+ troops
+  - Sources: Ghost City Tours, US Ghost Adventures, Legends of America, Time, The Dead History, America's Most Haunted, Haunted Rooms America, Ghost Adventures Wiki
+
+- **Deep Research: Camarillo State Mental Hospital** (Camarillo, CA) — Expanded ghost story from 785 to 3,092 characters with 12 verified sources
+  - Added dark institutional history: 7,000+ patients at 1957 peak, 79 suspicious deaths investigated by grand jury (1976-77)
+  - Documented "Number 1" sedation cocktail (Thorazine, Stelazine, Hyoscine) discontinued March 1976 after patient deaths
+  - Named victims: Jacob Honigsfeld (hanged), Jack Moore (burned in incinerator), Thomas Riddle (shackled, asphyxia)
+  - Named witnesses: Nurse Debbie (grabbed/shaken by invisible force), Sheryl Downey (10-year employee saw patient in old uniform)
+  - 65-year-old nurse yanked from chair by hair while alone; 1962 night shift fired over poltergeist activity
+  - Bell tower hauntings: woman in white (nurse), elderly woman asking for chapel directions, screaming woman in hospital gown
+  - Charlie Parker connection: 7 months in 1947, saxophone heard at night, recorded "Relaxing at Camarillo"
+  - Hotel Camarillo documentary (2014): decade of investigations, Unit 44 most active location
+  - Sources: Weird California, HauntedPlaces.org, Dread Central, CI View, Mental Policies, API Reloaded, CSUCI Library
+  - **Image replaced:** Generic coronavirus image → actual bell tower exterior (Wikimedia Commons)
+
+- **Deep Research: Brookdale Lodge** (Brookdale, CA) — Expanded ghost story from 1,057 to 4,511 characters with 10 verified sources
+  - Added comprehensive Sarah Logan legend with skeptical notes (no death record found, brook installed later by Dr. Camp)
+  - Documented 1972 pool drowning and Mermaid Room hauntings — wet footprints, floating apparition, self-playing jukebox
+  - Named ghosts: Sarah Logan (blonde girl in blue/white dress), George the lumberjack (conference room), unnamed pool girl
+  - Room 46 (now 2209/123) poltergeist activity: flying objects, ballroom dancers, disturbing apparitions, physical contact
+  - Prohibition-era mob connections: Al Capone visits, tunnel under Highway 9, "Meat Locker" murder room, bodies under floorboards
+  - Psychic investigations: Sylvia Browne identified 60+ spirits; 1991 assessment found 49 resident spirits
+  - TV coverage: Ghost Adventures (2012), Unexplained Mysteries with Sylvia Browne (2003)
+  - Owner Pravin Patel's firsthand account of hearing disembodied child laughter
+  - Sources: Lookout Santa Cruz, ABC7, LocalWiki, SLV Post, IMDB, Wikipedia, SFGate
+
 - **Deep Research: Preston Castle** (Ione, CA) — Expanded ghost story from 936 to 4,404 characters with 12 verified sources
   - Added brutal reform school history: 1894-1960, children as young as 8, public lashings, starvation, isolation
   - Documented cemetery with 17+ ward graves including Samuel Goins (shot 1918), Grant Walker (age 8), Nicholas Hamilton (age 20)
