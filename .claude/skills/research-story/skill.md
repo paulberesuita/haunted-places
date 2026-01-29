@@ -211,6 +211,33 @@ Report:
 - [Status and reasoning]
 ```
 
+### Step 7: Update CHANGELOG.md
+
+**Always log your research in CHANGELOG.md** so there's a record of content improvements.
+
+Add an entry under the current date's `### Changed` section (or create the date header if needed):
+
+```markdown
+## [YYYY-MM-DD]
+
+### Changed
+- Expanded ghost story for [Place Name] ([City], [State]) — [X] → [Y] chars, [N] sources
+```
+
+**If you also replaced the image, add under `### Changed`:**
+```markdown
+- Updated image for [Place Name] — [reason, e.g., "replaced generic photo with historical exterior"]
+```
+
+**Example entry:**
+```markdown
+## 2026-01-29
+
+### Changed
+- Expanded ghost story for USS Hornet Museum (Alameda, CA) — 650 → 3,125 chars, 7 sources
+- Expanded ghost story for Eastern State Penitentiary (Philadelphia, PA) — 280 → 2,100 chars, 5 sources
+```
+
 ## Research Tips
 
 **DO:**
@@ -245,4 +272,4 @@ Report:
 - Always verify claims with at least 2 sources before including
 - The goal is to make visitors want to read AND visit
 - **Always verify the image** — the photo should match and enhance the story
-- Update CHANGELOG.md when done with significant research
+- **Always update CHANGELOG.md** — keep a record of content improvements
