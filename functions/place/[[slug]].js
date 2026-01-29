@@ -508,17 +508,72 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
         </div>
 
         <!-- Source Attribution -->
-        ${place.source_url ? `
+        ${(function() {
+          // Parse sources JSON array
+          let sourcesArray = [];
+          if (place.sources) {
+            try {
+              sourcesArray = JSON.parse(place.sources);
+            } catch (e) {
+              sourcesArray = [];
+            }
+          }
+          // Fall back to source_url if no sources array
+          if (sourcesArray.length === 0 && place.source_url) {
+            sourcesArray = [place.source_url];
+          }
+
+          if (sourcesArray.length === 0) return '';
+
+          const sourceCount = sourcesArray.length;
+
+          return `
         <div class="bg-dark-card rounded-xl p-6">
-          <h3 class="font-semibold mb-3 text-sm text-muted">Source</h3>
-          <a href="${escapeHtml(place.source_url)}" target="_blank" rel="noopener noreferrer" class="text-sm text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+          <h3 class="font-semibold mb-3 text-sm text-muted">Sources</h3>
+          <button onclick="document.getElementById('sources-modal').classList.remove('hidden')" class="text-sm text-accent hover:text-accent-hover transition-colors flex items-center gap-2 cursor-pointer">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
             </svg>
-            View original source
-          </a>
+            View ${sourceCount} source${sourceCount === 1 ? '' : 's'}
+          </button>
         </div>
-        ` : ''}
+
+        <!-- Sources Modal -->
+        <div id="sources-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="document.getElementById('sources-modal').classList.add('hidden')"></div>
+          <div class="relative bg-dark-card rounded-xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto border border-dark-border shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Sources (${sourceCount})</h3>
+              <button onclick="document.getElementById('sources-modal').classList.add('hidden')" class="text-muted hover:text-white transition-colors p-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            <ul class="space-y-3">
+              ${sourcesArray.map((source, i) => {
+                // Extract domain for display
+                let domain = '';
+                try {
+                  domain = new URL(source).hostname.replace('www.', '');
+                } catch (e) {
+                  domain = source;
+                }
+                return `
+              <li class="flex items-start gap-3 text-sm">
+                <span class="text-muted flex-shrink-0">${i + 1}.</span>
+                <a href="${escapeHtml(source)}" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover transition-colors break-all flex items-center gap-2">
+                  <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                  ${escapeHtml(domain)}
+                </a>
+              </li>`;
+              }).join('')}
+            </ul>
+          </div>
+        </div>`;
+        })()}
 
         <!-- Ghost Tours Callout -->
         ${tourCount > 0 ? `
@@ -638,6 +693,16 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
       scareVideo.addEventListener('ended', hideScare);
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideScare(); });
     })();
+
+    // Sources modal keyboard support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('sources-modal');
+        if (modal && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+        }
+      }
+    });
 
     // The Watcher Easter Egg
     (function() {
