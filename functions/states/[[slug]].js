@@ -1016,16 +1016,16 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     count: s.place_count
   })).sort((a, b) => b.count - a.count);
 
-  // States with woodcut etching icons
-  const stateIcons = ['CA', 'FL', 'GA', 'LA', 'MA', 'NC', 'PA', 'TX', 'VA'];
+  // States with card preview images
+  const statesWithImages = ['CA', 'CT', 'FL', 'GA', 'IL', 'KY', 'LA', 'MA', 'MD', 'NC', 'NJ', 'NY', 'OH', 'PA', 'SC', 'TN', 'TX', 'VA'];
 
   const stateCardsHtml = statesWithData.map(state => {
-    const hasIcon = stateIcons.includes(state.code);
+    const hasImage = statesWithImages.includes(state.code);
     return `
     <a href="/states/${state.url}" class="group">
-      <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg ${hasIcon ? '' : 'flex items-center justify-center'}">
-        ${hasIcon
-          ? `<img src="/icons/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
+      <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg ${hasImage ? '' : 'flex items-center justify-center'}">
+        ${hasImage
+          ? `<img src="/images/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
           : `<span class="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">&#128123;</span>`
         }
       </div>

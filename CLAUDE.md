@@ -59,7 +59,7 @@ Skills are **detailed instructions** for specific tasks. Agents invoke skills wh
 **Agent-owned skills:**
 | Agent | Skills |
 |-------|--------|
-| **seo** | `/research-places`, `/research-images`, `/verify-data`, `/query-data`, `/build-seo-page`, `/optimize-seo` |
+| **seo** | `/research-places`, `/research-images`, `/research-story`, `/verify-data`, `/query-data`, `/build-seo-page`, `/optimize-seo` |
 | **mini-apps** | `/build-tool` |
 | **outreach** | `/cold-campaign` |
 | **product** | *(builds directly, no special skills)* |
@@ -165,23 +165,21 @@ functions/
 
 | Environment | URL |
 |-------------|-----|
-| Local | `localhost:8788` |
 | Preview | `spookfinder.pages.dev` |
 | Production | `spookfinder.com` |
 
 **Single deploy** updates both Preview and Production.
+
+**No local testing.** We deploy to preview/production and test there. Fast iteration > local parity issues.
 
 ---
 
 ## Deploy Commands
 
 ```bash
-# Local dev
-wrangler pages dev ./public --d1=DB=haunted-places-db --local
-
 # Run migration
 npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
-# Deploy
+# Deploy (updates BOTH preview and production)
 wrangler pages deploy ./public --project-name=spookfinder
 ```

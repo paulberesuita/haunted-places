@@ -4,6 +4,34 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-29
+
+### Added
+- **Image Research Batch 3** — Added 21 images from multiple sources
+  - **From Wikimedia Commons (12):**
+    - GA: St. James Episcopal Cemetery
+    - IL: Galena & U.S. Grant Museum
+    - KY: Louisville Bourbon Inn
+    - LA: Central Station Shreveport, Steel Magnolias House
+    - OH: Rider's Inn, Sandusky County Jail, Wolcott House
+    - PA: Gettysburg Hotel, Hummelbaugh House
+    - TN: First Methodist Church Gatlinburg, Mallory-Neely House
+  - **From Find A Grave (5):**
+    - CT: Evergreen Cemetery (New Haven)
+    - FL: Lake Helen-Cassadaga Cemetery
+    - NC: Christ Church Cemetery (New Bern)
+    - SC: Quaker Cemetery (Camden), Graniteville Cemetery
+  - **From Yelp user photos (2):**
+    - KY: DuPont Mansion
+    - NJ: Angel of the Sea B&B
+  - **From official websites (2):**
+    - KY: Maple Hill Manor B&B
+    - NC: Zebulon Latimer House (Latimer House Museum)
+  - Image coverage: 91.2% → 93.6% (820/876 places)
+  - 56 places still missing images (ghost lights, closed businesses, private residences)
+
+---
+
 ## 2026-01-27
 
 ### Added

@@ -22,10 +22,9 @@ Deploy commands for Spookfinder.
 
 ## Commands
 
-```bash
-# Local dev
-wrangler pages dev ./public --d1=DB=haunted-places-db --local
+**No local dev.** We deploy to preview/production and test there.
 
+```bash
 # Run a migration (remote)
 npx wrangler d1 execute haunted-places-db --file=./migrations/XXX.sql --remote
 
