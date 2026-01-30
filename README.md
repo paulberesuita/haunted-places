@@ -23,7 +23,6 @@ wrangler pages deploy ./public --project-name=PROJECT
 ├── public/                 # Static assets
 ├── functions/              # Cloudflare Pages Functions
 ├── specs/                  # Feature specifications
-├── examples/               # Starter templates
 ├── .claude/
 │   ├── agents/             # planner, builder, researcher
 │   └── skills/             # design-system, coding-standards, cloudflare-deploy
