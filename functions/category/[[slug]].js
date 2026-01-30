@@ -587,7 +587,14 @@ export async function onRequestGet(context) {
         ORDER BY place_count DESC
       `).all();
 
-      const html = renderCategoriesIndexPage(categories || [], baseUrl);
+      // Sort categories: by place_count DESC, but put "other" at the end
+      const sortedCategories = (categories || []).sort((a, b) => {
+        if (a.category === 'other') return 1;
+        if (b.category === 'other') return -1;
+        return b.place_count - a.place_count;
+      });
+
+      const html = renderCategoriesIndexPage(sortedCategories, baseUrl);
       return new Response(html, {
         headers: {
           'Content-Type': 'text/html; charset=utf-8',
