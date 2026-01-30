@@ -1242,9 +1242,9 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     });
   </script>
 
-  <section class="py-12 text-center">
-    <h1 id="glitch-headline" class="glitch-text text-3xl md:text-4xl lg:text-5xl" style="font-family: 'Creepster', cursive;" data-text="Browse by State">Browse by State</h1>
-    <p class="text-ghost text-sm mt-2">${totalPlaces} haunted locations across ${states.length} states</p>
+  <section class="pt-16 pb-12 text-center">
+    <h1 id="glitch-headline" class="glitch-text text-5xl md:text-7xl" style="font-family: 'Creepster', cursive;" data-text="Browse by State">Browse by State</h1>
+    <p class="text-ghost text-lg mt-3">${totalPlaces} haunted locations across ${states.length} states</p>
   </section>
   <main class="max-w-7xl mx-auto px-4 py-8">
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
