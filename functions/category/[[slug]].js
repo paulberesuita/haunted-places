@@ -22,21 +22,22 @@ const stateNames = {
   'VA': 'Virginia'
 };
 
-// Category display names and URL slugs
+// Category display names, URL slugs, and brand images
+// Brand images are custom illustrations stored in R2 at /categories/[key].jpg
 const categoryConfig = {
-  'mansion': { slug: 'haunted-mansions', display: 'Haunted Mansions', singular: 'Mansion', description: 'Grand estates with restless spirits, hidden rooms, and tragic histories' },
-  'hotel': { slug: 'haunted-hotels', display: 'Haunted Hotels', singular: 'Hotel', description: 'Lodgings where ghostly guests never check out' },
-  'cemetery': { slug: 'haunted-cemeteries', display: 'Haunted Cemeteries', singular: 'Cemetery', description: 'Graveyards with wandering apparitions and unexplained phenomena' },
-  'museum': { slug: 'haunted-museums', display: 'Haunted Museums', singular: 'Museum', description: 'Collections guarded by spirits from the past' },
-  'restaurant': { slug: 'haunted-restaurants', display: 'Haunted Restaurants', singular: 'Restaurant', description: 'Dining establishments with spectral servers and phantom patrons' },
-  'theater': { slug: 'haunted-theaters', display: 'Haunted Theaters', singular: 'Theater', description: 'Stages where ghostly performers still take their bows' },
-  'hospital': { slug: 'haunted-hospitals', display: 'Haunted Hospitals', singular: 'Hospital', description: 'Medical facilities haunted by patients who never left' },
-  'battlefield': { slug: 'haunted-battlefields', display: 'Haunted Battlefields', singular: 'Battlefield', description: 'Historic grounds where fallen soldiers still march' },
-  'prison': { slug: 'haunted-prisons', display: 'Haunted Prisons', singular: 'Prison', description: 'Penitentiaries where inmates remain locked in the afterlife' },
-  'lighthouse': { slug: 'haunted-lighthouses', display: 'Haunted Lighthouses', singular: 'Lighthouse', description: 'Coastal beacons with keepers who never abandoned their posts' },
-  'university': { slug: 'haunted-universities', display: 'Haunted Universities', singular: 'University', description: 'Academic halls with scholarly spirits and dormitory hauntings' },
-  'plantation': { slug: 'haunted-plantations', display: 'Haunted Plantations', singular: 'Plantation', description: 'Southern estates haunted by their troubled past' },
-  'other': { slug: 'other-haunted-places', display: 'Other Haunted Places', singular: 'Place', description: 'Unique haunted locations that defy categorization' }
+  'mansion': { slug: 'haunted-mansions', display: 'Haunted Mansions', singular: 'Mansion', description: 'Grand estates with restless spirits, hidden rooms, and tragic histories', brandImage: 'categories/mansion.jpg' },
+  'hotel': { slug: 'haunted-hotels', display: 'Haunted Hotels', singular: 'Hotel', description: 'Lodgings where ghostly guests never check out', brandImage: 'categories/hotel.jpg' },
+  'cemetery': { slug: 'haunted-cemeteries', display: 'Haunted Cemeteries', singular: 'Cemetery', description: 'Graveyards with wandering apparitions and unexplained phenomena', brandImage: 'categories/cemetery.jpg' },
+  'museum': { slug: 'haunted-museums', display: 'Haunted Museums', singular: 'Museum', description: 'Collections guarded by spirits from the past', brandImage: 'categories/museum.jpg' },
+  'restaurant': { slug: 'haunted-restaurants', display: 'Haunted Restaurants', singular: 'Restaurant', description: 'Dining establishments with spectral servers and phantom patrons', brandImage: 'categories/restaurant.jpg' },
+  'theater': { slug: 'haunted-theaters', display: 'Haunted Theaters', singular: 'Theater', description: 'Stages where ghostly performers still take their bows', brandImage: 'categories/theater.jpg' },
+  'hospital': { slug: 'haunted-hospitals', display: 'Haunted Hospitals', singular: 'Hospital', description: 'Medical facilities haunted by patients who never left', brandImage: 'categories/hospital.jpg' },
+  'battlefield': { slug: 'haunted-battlefields', display: 'Haunted Battlefields', singular: 'Battlefield', description: 'Historic grounds where fallen soldiers still march', brandImage: 'categories/battlefield.jpg' },
+  'prison': { slug: 'haunted-prisons', display: 'Haunted Prisons', singular: 'Prison', description: 'Penitentiaries where inmates remain locked in the afterlife', brandImage: 'categories/prison.jpg' },
+  'lighthouse': { slug: 'haunted-lighthouses', display: 'Haunted Lighthouses', singular: 'Lighthouse', description: 'Coastal beacons with keepers who never abandoned their posts', brandImage: 'categories/lighthouse.jpg' },
+  'university': { slug: 'haunted-universities', display: 'Haunted Universities', singular: 'University', description: 'Academic halls with scholarly spirits and dormitory hauntings', brandImage: 'categories/university.jpg' },
+  'plantation': { slug: 'haunted-plantations', display: 'Haunted Plantations', singular: 'Plantation', description: 'Southern estates haunted by their troubled past', brandImage: 'categories/plantation.jpg' },
+  'other': { slug: 'other-haunted-places', display: 'Other Haunted Places', singular: 'Place', description: 'Unique haunted locations that defy categorization', brandImage: 'categories/other.jpg' }
 };
 
 // Reverse lookup: slug -> category key
@@ -183,28 +184,34 @@ function renderCategoriesIndexPage(categories, baseUrl) {
     const config = categoryConfig[cat.category] || {
       slug: cat.category,
       display: cat.category.charAt(0).toUpperCase() + cat.category.slice(1),
-      description: `Haunted ${cat.category} locations`
+      description: `Haunted ${cat.category} locations`,
+      brandImage: null
     };
-    const imageUrl = cat.sample_image ? `${baseUrl}/images/${cat.sample_image}` : null;
+    // Use brand image if available, fall back to sample_image
+    const imageUrl = config.brandImage
+      ? `${baseUrl}/images/${config.brandImage}`
+      : (cat.sample_image ? `${baseUrl}/images/${cat.sample_image}` : null);
 
     return `
-      <a href="/category/${config.slug}" class="group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
-        <div class="aspect-[4/3] overflow-hidden">
-          ${imageUrl
-            ? `<img src="${imageUrl}" alt="${escapeHtml(config.display)}" class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
-            : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
-                <span class="text-4xl opacity-30">&#128123;</span>
-              </div>`
-          }
-        </div>
-        <div class="p-4">
-          <div class="flex items-start justify-between gap-2 mb-2">
-            <h3 class="font-semibold text-white group-hover:text-accent transition-colors">${escapeHtml(config.display)}</h3>
-            <span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent whitespace-nowrap flex-shrink-0">
-              ${cat.place_count} ${cat.place_count === 1 ? 'place' : 'places'}
-            </span>
+      <a href="/category/${config.slug}" class="group block">
+        <!-- Card with layered white borders -->
+        <div class="category-card relative bg-white/10 p-[3px] rounded-lg">
+          <div class="bg-white/5 p-[3px] rounded-md">
+            <div class="bg-dark-card rounded overflow-hidden">
+              <div class="aspect-[4/5] overflow-hidden">
+                ${imageUrl
+                  ? `<img src="${imageUrl}" alt="${escapeHtml(config.display)}" class="category-img w-full h-full object-cover" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
+                  : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                      <span class="text-4xl opacity-30">&#128123;</span>
+                    </div>`
+                }
+              </div>
+              <div class="p-4 text-center">
+                <h3 class="font-semibold text-white group-hover:text-accent transition-colors text-lg">${escapeHtml(config.display)}</h3>
+                <span class="text-sm text-accent">${cat.place_count} ${cat.place_count === 1 ? 'place' : 'places'}</span>
+              </div>
+            </div>
           </div>
-          <p class="text-sm text-ghost line-clamp-2">${escapeHtml(config.description)}</p>
         </div>
       </a>`;
   }).join('\n');
@@ -232,18 +239,18 @@ function renderCategoriesIndexPage(categories, baseUrl) {
       pointer-events: none;
     }
     html { background: #0a0c12; }
-    .place-img {
-      filter: none;
-      transition: filter 0.5s ease;
+    .category-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .group:hover .place-img {
-      filter: saturate(0.4) contrast(1.1);
+    .group:hover .category-card {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.15);
     }
-    .line-clamp-2 {
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+    .category-img {
+      transition: transform 0.5s ease;
+    }
+    .group:hover .category-img {
+      transform: scale(1.05);
     }
     @media (max-width: 768px) {
       nav a { padding: 12px 8px; min-height: 44px; display: inline-flex; align-items: center; }
