@@ -7,6 +7,751 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-29
 
 ### Changed
+- **Deep Research: Florida COMPLETE (55 places)** — All 55 Florida haunted places now verified with 6+ sources each
+  - **Phase 1 (29 places):** St. Augustine Lighthouse, Castillo de San Marcos, Artist House (Robert the Doll), Biltmore Hotel, Fort East Martello, Captain Tony's Saloon, Cassadaga Spiritualist Camp, Devil's Chair, and more
+  - **Phase 2 (26 places):** Cassadaga Hotel, Capitol Theatre Clearwater, Kingsley Plantation, Key West Cemetery, Hard Rock Cafe Key West, Villa Paula, Vizcaya Museum, Sunland Hospital Site, Casa Monica, Huguenot Cemetery, Spanish Military Hospital, Henry B Plant Museum, Ybor City Museum, and more
+  - Key cities: St. Augustine (12 places), Key West (10 places), Tampa (6 places), Pensacola (5 places), Miami (5 places), Cassadaga (4 places), Orlando (2 places)
+  - Notable hauntings: Robert the Doll at Fort East Martello, Captain Tony's morgue history, Fatty Walsh gangster murder at Biltmore, Sunland Hospital abuse scandal, Judge Stickney's stolen gold teeth at Huguenot Cemetery
+  - Ghost stories expanded from ~400 chars to ~1,200-1,900 chars each with historical context, named ghosts, and witness accounts
+  - Florida now 100% verified — all 55 places tracked in VERIFIED.md
+
+- **Deep Research: Harrie's Jailhouse** (Middletown, CT) — Expanded ghost story from 306 to 4,789 characters with 9 verified sources
+  - Building history: Former Pameacha Jail built 1846 on grounds of Middletown Alms House; twelve brownstone cells held minor offenders
+  - Alms House (1814): Connecticut's first state welfare facility; oldest surviving poorhouse building in the state
+  - Tragic conditions: Over 100 orphans crowded into attic; insane shackled in basement; death count in the hundreds
+  - Ghost Hunters S11E10 "Stone Cold Colonists" (October 2016): TAPS investigated after tenants reported activity
+  - Investigation evidence: EVP captured child's voice saying "play dress up"; verified apparitions of children, shadow figures
+  - Reported phenomena: Gentleman in top hat, scratched bedframes, heavy medicine ball rolling six feet on its own, doors slamming
+  - Current owner Lee Godburn: Purchased and renovated both buildings starting 1999; sought TAPS help understanding spirits
+  - Sarah (primary ghost): Young girl between 8-10 years old from 1800s; possibly one of the Alms House orphans
+  - Sarah's activity: Flickering lights, sudden drafts, objects knocked off tables and bar, TV remote flew across bar
+  - Mocktail tradition: Staff prepares mocktails for Sarah when activity increases to make her "feel included"
+  - Restaurant opened March 2021 by Carrie Carella and Heather Kelly in the historic 1850s building
+  - Sources: CT Insider, SyFy Ghost Hunters, The Yankee Express, Middletown Press, Historic Buildings CT, Haddam Historical Society, Wikipedia, I95 Rock
+
+- **Deep Research: George Wythe House** (Williamsburg, VA) — Expanded ghost story from 266 to 5,180 characters with 12 verified sources
+  - Building history: Built 1752-1754 by Richard Taliaferro, Virginia's "most skillful architect"; Georgian mansion given to George Wythe as wedding gift in 1755
+  - George Wythe: America's first law professor at William & Mary; first Virginia signer of Declaration of Independence; mentor to Thomas Jefferson, John Marshall, Henry Clay
+  - Revolutionary headquarters: George Washington used house as headquarters September 14-28, 1781 while planning Siege of Yorktown; Comte de Rochambeau stayed nine months after British surrender
+  - National Historic Landmark since April 15, 1970; restored by Colonial Williamsburg Foundation in 1940
+  - Lady Ann Skipwith (primary ghost): Died 1779, buried in Bruton Parish churchyard; legend claims she fled Governor's Palace ball after discovering husband with her sister, losing one red shoe
+  - Multiple death theories: Miscarriage, suicide, murder by husband; historical records indicate she died at Hog Island during childbirth
+  - Skipwith phenomena: Sound of woman running up stairs (heel click followed by bare foot thud); closet in her room swings open; faint lavender scent; apparition in cream satin dress with single red shoe gazing blankly into mirror
+  - Red shoe tradition: William & Mary students bring red shoe to door, shout "Lady Skipwith! I found your red shoe!" to provoke spirit
+  - Staff sighting: Reenactors see beautiful woman in blue satin gown in first-floor mirrors; when they turn, she vanishes; co-worker replied "Oh yeah, that happens all the time"
+  - George Wythe's murder (1806): At age 80, poisoned by grandnephew George Wythe Sweeney via arsenic in coffee; Lydia Broadnax (freed woman) witnessed but legally barred from testifying against white man; Sweeney acquitted
+  - Wythe's ghost: Returns annually on June 8 (death anniversary); guests in his bedroom feel firm cold hand press on foreheads; also taps shoulders playfully
+  - Elizabeth Wythe: Possible third ghost; items from employees' bags removed and aesthetically arranged on chairs (known for excessive organizing)
+  - Security guard account: "We heard a lady singing... just as happy as could be... stood for about two to three minutes listening to her sing and then slowly faded out"
+  - Locked door mystery: Staff found every entrance secured from inside by thumb-turn bolts requiring deliberate force; security footage showed no one entering
+  - "Spectral gentlemen" seen sitting in wingback chairs by unlit fireplace in study
+  - Sources: Colonial Ghosts, US Ghost Adventures, Williamsburg Ghost Tour, Encyclopedia Virginia, William & Mary Law School, Virginia DHR, Flat Hat News, WHRO, Daily Press, Historical Marker Database, Wythepedia
+
+- **Deep Research: Carlyle House** (Alexandria, VA) — Expanded ghost story from 290 to 4,978 characters with 12 verified sources
+  - Building history: Georgian stone manor built 1751-1753 by Scottish merchant John Carlyle; one of Alexandria oldest structures
+  - John Carlyle (1720-1780): Married Sarah Fairfax (1747); wealthy merchant with three plantations
+  - Tragic marriages: Sarah died in childbirth 1761 (five of seven children died young); Sybil West married 1761, died 1769
+  - Congress of Alexandria (April 15, 1755): General Braddock met five colonial governors; early seeds of Revolutionary tensions
+  - Hotel era: Mansion House Hotel built 1848; became Civil War hospital (500 beds, depicted in PBS Mercy Street)
+  - The Falling Ghosts: Three men died falling - Union soldier (1862), Samuel Markell (1905), Pat Buckley (1912)
+  - Sybil ghost: Apparition seen screaming in garden; allegedly burned first wife Sarah possessions out of jealousy
+  - 1970s discoveries: Mummified cat in chimney foundation with rosemary; witch bottles with pins
+  - Sources: Alexandria Ghosts, M.A. Kleen, US Ghost Adventures, NOVA Parks, Wikipedia, Encyclopedia Virginia, History.com, WJLA, Alexandria Times, City of Alexandria
+
+&
+  - Bonaventure Cemetery, Sorrel-Weed House, Moon River Brewing Company, Andersonville Prison
+  - Colonial Park Cemetery, The Marshall House, 17Hundred90 Inn, Mercer-Williams House
+  - The Olde Pink House, The Pirates' House, Fox Theatre, Old Candler Hospital
+  - The Kehoe House, Hamilton-Turner Inn, St. Simons Lighthouse, Lake Lanier
+  - Oakland Cemetery, Rhodes Hall, Kennesaw Mountain Battlefield, Springer Opera House
+  - Central State Hospital, Jekyll Island Club Hotel, Hay House, The Ellis Hotel
+  - Barnsley Gardens Resort, Savannah Theatre, Kennesaw House, Roswell Mill Ruins
+  - Windsor Hotel, The Partridge Inn, Surrency Poltergeist Site, Tybee Island Lighthouse
+  - The Public House, Six Flags Over Georgia, Dahlonega Gold Museum, Fitzpatrick Hotel, Stone Mountain
+
+---
+
+## 2026-01-30
+
+### Changed
+- **Deep Research: Norfolk Naval Shipyard** (Portsmouth, VA) — Expanded ghost story from 243 to 3,735 characters with 8 verified sources
+  - Building history: Oldest continuously operating naval shipyard in America, founded November 1, 1767 by Scottish merchant Andrew Sprowle as Gosport Shipyard
+  - Four flags: British, Commonwealth of Virginia, Confederate States of America, and United States have flown over the facility
+  - "John Paul Ghost" (primary ghost): Most prominent spirit named after John Paul Jones; appears vividly in 18th-century naval attire descending stairway at Building 33 (commander's quarters)
+  - 1918 incident: Sailor witnessed the specter so vividly he fell and broke his leg trying to flee; documented by naval scholar Alan Flanders
+  - "OCD Ghost": Playful spirit with compulsion to rearrange keys on pegboard near doors; reported by multiple workers over the years
+  - Three British soldiers: Apparitions from Revolutionary War or War of 1812; began appearing in 1971 when construction disturbed their forgotten graves; seen at Dry Docks 1 and 2
+  - Ship timber theory: Author Eric Mills speculates in "The Spectral Tide" that spirits remain connected to timbers from old sailing ships incorporated into dry dock buildings
+  - Dry Dock One: First functional dry dock in Western Hemisphere (completed 1833); site where USS Merrimack was converted into CSS Virginia (1862)
+  - Civil War significance: Union forces abandoned shipyard April 1861; Confederates raised and converted Merrimack into revolutionary ironclad that changed naval warfare
+  - Unexplained phenomena: Hammering and welding sounds from empty work areas late at night; phantom footsteps on metal decks; sensation of being watched
+  - Sources: LoveToKnow Paranormal, The Spectral Tide (Eric Mills), Colonial Ghosts, Virginian-Pilot, Wikipedia, NAVSEA History, MATPRA, VisitNorfolk
+
+- **Deep Research: Ash Lawn-Highland** (Charlottesville, VA) — Expanded ghost story from 324 to 4,013 characters with 8 verified sources
+  - Building history: James Monroe purchased 1,000-acre property in 1793 at Thomas Jefferson's urging; completed main house 1799; lived here 24 years
+  - Tragic loss: 16-month-old son James Spence Monroe died September 1800 after teething complications; Monroe arrived by horseback the night he died
+  - Monroe's letter to Madison: Son "practically died in his arms" and was "the worst loss he'd ever experienced"; Elizabeth developed epilepsy from grief
+  - "The Ghost of Ash Lawn" poem: Handwritten verses hang near staff office describing "eerie presence" that "gently rocks, a chair, or crib, As though a child to soothe"
+  - Rocking chair phenomenon: Most frequently reported paranormal activity; chair sways on its own without wind or vibration
+  - Architectural ghost: Original 1799 house burned down ~1829; standing white guesthouse was misidentified as Monroe's home for 180+ years until 2016 archaeological discovery
+  - Enslaved craftsmen: Peter Mallory and George Williams built the 1818 guesthouse; George and wife Phebe escaped July 3, 1826 (fate unknown)
+  - Monroe enslaved ~250 people over his lifetime; staff encourage visitors to "interrogate ghostliness as a charged metaphor" for histories of enslavement
+  - Site renamed from "Ash Lawn-Highland" to "Highland" in 2016; visitors still ask "is this Ash Lawn?" ("mighty specter" in Virginia's collective memory)
+  - Sources: American Historical Association, Cabin Creekwood, Highland.org, UMW Monroe Papers, Encyclopedia Virginia, UVA Today, FrightFind
+
+- **Deep Research: Cape Henry Lighthouse** (Virginia Beach, VA) — Expanded ghost story from 287 to 3,758 characters with 8 verified sources
+  - Building history: First federally funded public works project under U.S. Constitution (1792); authorized by George Washington, overseen by Alexander Hamilton
+  - Construction: 72-foot octagonal sandstone tower built from Aquia stone (same quarries as Mount Vernon, U.S. Capitol, White House)
+  - Maritime tragedy: 57 ships wrecked off Cape Henry shores before lighthouse was built
+  - William Lewis (first keeper): Virginia naval captain rewarded for Revolutionary War service; died within a month of appointment (possibly heart attack en route)
+  - Lemuel Cornick (second keeper): Oversaw lighthouse construction but abandoned position within a year; string of keepers followed as if post carried dark omen
+  - Willis Augustus Hodges: First African American lighthouse keeper (1870); abolitionist who published newspaper with Frederick Douglass, lived next to John Brown, conducted Underground Railroad, served as Union spy
+  - Battle of the Capes (September 5, 1781): Pivotal naval battle fought just offshore; French Admiral de Grasse defeated British fleet, sealing Cornwallis fate at Yorktown
+  - Paranormal activity: Figure in old uniform on spiral staircase, sailor spirit from shipwrecks, unexplained cold spots, orbs photographed in daylight
+  - Battle residual: Sensitives report visions of cannon fire, screams of wounded sailors, presence of combatants still fighting; one investigator claimed contact with Admiral de Grasse
+  - Sources: Haunt Scout, Ellicott City Ghostly Happenings, Lighthousefriends.com, Preservation Virginia, Chesapeake Chapter USLHS, NPS, Histories and Haunts, Wikipedia
+
+- **Deep Research: Agecroft Hall** (Richmond, VA) — Expanded ghost story from 326 to 5,418 characters with 7 verified sources
+  - Building history: Late 15th-century Tudor manor originally built in Pendlebury, Lancashire, England; dismantled 1925-1926 and shipped to Richmond, Virginia
+  - Relocation: Thomas C. Williams Jr. purchased at auction for $19,000; reassembled overlooking James River 1926-1928 at cost of $250,000; opened as museum July 5, 1969
+  - Sir Thomas Tyldesley (primary ghost): Royalist commander killed at Battle of Wigan Lane August 25, 1651; visitors report his apparition and sounds of battle echoing through estate
+  - Babes in the Wood legend: Cyril Bracegirdle claims tale originated at Agecroft in 1374 when young Roger Langley and sister fled Robert de Holland; John of Gaunt rescued them
+  - John of Gaunt Window: Built by Roger Langley as tribute to his rescuer; still exists in Virginia reconstruction
+  - Apotropaic marks: Dr. Ian Tyers discovered daisy wheel hex mark in 2016 on George Poulet portrait (1593) near fireplace; additional hexfoils found throughout downstairs rooms
+  - Scorch marks: Deliberately burned into wood before mantle installation to "fight hellfire with fire" and ward off witches
+  - Cardinal's Curse: Thomas Langley, Cardinal Bishop of Durham, allegedly cursed Dauntsey family for "deserting the old faith"; line of succession repeatedly broken
+  - Priest hole: Replica hidden space in servants' quarters represents Lancashire Catholic heritage; many priests died in such hiding spots
+  - Current phenomena: Visitors report cold spots, feeling watched, glimpses of figures in period dress who vanish when approached
+  - Sources: Wikipedia, Higgypop Haunted Manchester, Agecroft Hall official, Atlas Obscura, 100 Halls Around Manchester, British History Online, Cyril Bracegirdle's "Dark River: Irwell"
+
+- **Deep Research: Mary Washington House** (Fredericksburg, VA) — Expanded ghost story from 265 to 4,256 characters with 7 verified sources
+  - Building history: George Washington purchased house for his mother in 1772 for 275 pounds; she lived here final 17 years until death from breast cancer August 25, 1789
+  - Mary Ball Washington (c. 1707-1789): Mother of George Washington; treated by physicians Elisha Hall and Charles Mortimer with arsenic, opium, camphor, hemlock
+  - Grave mystery: Buried near Meditation Rock at Kenmore but exact location unknown; George never placed gravestone; deed to house lost
+  - Mary's ghost: Appears as benign but determined spirit in colonial attire; docents hear swishing of skirts; doors close on their own to keep warmth in rooms
+  - Garden sightings: Passersby report seeing ghostly figure tending garden or sitting by window after hours
+  - George Washington's spirit: Returns to search frantically through papers looking for missing deed; book cabinet doors fly open playfully during tours
+  - Mike Ricksecker investigation: Haunted Road Media captured evidence; medium Vanessa Hogle remotely perceived Mary showing children and books, smelled 18th-century wig powder, heard man pacing upstairs
+  - Emotional quality: Unlike fearful hauntings, witnesses describe warmth and tranquility, maternal presence
+  - Ghost tour stop: Featured on Fredericksburg Frights, UMW Ghost Walk, and self-guided haunted history tours
+  - Mary's Ribbons: Annual October breast cancer awareness event honoring Mary's battle with disease
+  - Preservation: Saved from relocation to 1893 Chicago World's Fair by APVA; now National Historic Landmark
+  - Sources: Fredericksburg Guidebook, US Ghost Adventures, HauntedHouses.com, Go Fredericksburg, Mount Vernon, Wikipedia, FXBG.com
+
+
+- **Deep Research: Georgia (50 places)** — Complete batch research of all 50 Georgia haunted places; all now verified with 5-7 sources each
+  - Key cities: Savannah (22 places), Atlanta (4 places), Marietta (5 places), Macon (4 places)
+  - Notable places: Bonaventure Cemetery (Little Gracie Watson), Sorrel-Weed House (Ghost Hunters/Ghost Adventures), Andersonville Prison (13,000 deaths), Moon River Brewing Company (Toby ghost)
+  - Civil War battlefields: Chickamauga (America's bloodiest two-day battle), Kennesaw Mountain, Kolb Farm
+  - Famous hauntings: Marshall House (amputations/bones under floorboards), 17Hundred90 Inn (Anna Room 204), Mercer-Williams House (Midnight in the Garden), Wren's Nest (Joel Chandler Harris)
+  - Ghost stories expanded from ~350 chars to ~1,650-1,850 chars each with historical context, named ghosts, witness accounts
+  - All 50 verified places now tracked in VERIFIED.md Georgia section
+
+- **Deep Research: Maymont Mansion** (Richmond, VA) — Expanded ghost story from 285 to 5,426 characters with 12 verified sources
+  - Building history: 33-room Richardsonian Romanesque mansion completed 1893; designed by Edgerton Stewart Rogers; 12,000 square feet overlooking James River
+  - James Dooley (1841-1922): Georgetown College valedictorian (first to rank top of class all four years); Confederate veteran wounded at Battle of Williamsburg; built fortune in railroads controlling 9,000-mile network
+  - Virginia Legislator 1871-1877; one of Richmond's greatest philanthropists; gave $3 million to St. Joseph's Orphanage (largest private Catholic bequest at time)
+  - Sallie May Dooley (1846-1925): Lunenburg County native with royal governor ancestry; founding regent of Virginia's first DAR chapter; avid horticulturist and writer
+  - Domestic staff: 7-10 workers including two butlers, cook, three maids, laundress; 13-hour workdays; mostly African Americans from Richmond area
+  - Dooley deaths: James died November 16, 1922 at Grace Hospital; initially interred Hollywood Cemetery, reinterred Maymont mausoleum March 1924; Sallie died September 5, 1925 at Swannanoa Palace
+  - Legacy: Both interred in granite mausoleum on Maymont grounds; estate given to City of Richmond as public park and museum
+  - Swannanoa paranormal: Dooleys' summer palace on Afton Mountain heavily haunted; Sallie's spirit wanders corridors; owner's cats refuse third floor (she despised cats)
+  - Twisted Paranormal Society (2013): Captured spectral orbs, ghostly voices responding to questions; returned 2014 with "The R.I.P. Files" TV show
+  - Servant ghost "Anthony": Fell from central tower to death; communicates via dowsing rods and flashlight manipulation; library is most haunted of 52 rooms
+  - James Dooley EVP: When asked via spirit box why he remained, replied simply "Beauty"
+  - Maymont reports: Staff describe maternal presence watching over home; occasional perfume scent in upstairs rooms
+  - Sources: Maymont official, Colonial Ghosts, Haunts of Richmond, VA Dictionary of Biography, RVA Mag, Richmond Tour Guys, The Paranormal, Wikipedia, AOH Richmond, Find a Grave
+
+- **Deep Research: Bruton Parish Church** (Williamsburg, VA) — Expanded ghost story from 314 to 4,721 characters with 10 verified sources
+  - Building history: Parish established 1674; current cruciform brick structure designed by Governor Alexander Spotswood, completed 1715; served as Virginia's "court church"
+  - Founding fathers: George Washington, Thomas Jefferson, Patrick Henry, George Wythe, George Mason worshipped here during House of Burgesses sessions
+  - Dr. James Blair: Rector from 1710-1743; also president of William & Mary; oversaw construction of current building
+  - Mrs. Jones (primary ghost): Wife of Reverend Scervant Jones died in childbirth; he promised to wait for her in heaven, then remarried three months later
+  - Betrayal in death: Jones had second wife buried between him and first wife; broken-hearted spirit transformed from peaceful to weeping/wailing
+  - Paranormal phenomena: Church organ plays by itself late at night; disembodied sobs echo through cemetery at dusk; curtains move without explanation
+  - Civil War hospital: After Battle of Williamsburg (May 5, 1862), church treated wounded from both armies; ~100 Confederate soldiers buried in churchyard mass grave
+  - Security guard encounter: Two guards saw tall shadowy figure with elongated neck and glowing red eyes approach from Palace Green
+  - Flying hymnals: Guards inside church witnessed hymnals levitating from pews, flying across room, slamming into walls ("whoosh-thud" sound)
+  - Charles's apparition: Former security guard saw rarer "construction paper black" colonial figure with ponytail, knickers, vest; vanished near tree at church entrance
+  - Video evidence: April 10, 2014, 11:30 PM footage captured organ playing by itself in locked, empty church
+  - Cemetery history: Oldest dated tombstone is Thomas Ludwell (1678); John Blair (Constitution signer), Cyrus Griffin (last Continental Congress president), Martha Washington's infant children all buried here
+  - Sources: US Ghost Adventures, Williamsburg Ghost Tour, Wikipedia, Encyclopedia Virginia, Virginia DHR, Daily Press, Colonial Ghosts, Colonial Williamsburg
+
+- **Deep Research: Michie Tavern** (Charlottesville, VA) — Expanded ghost story from 310 to 5,345 characters with 9 verified sources
+  - Building history: Colonial tavern built ca. 1772-1784 by Corporal William Michie after inheriting land from father "Scotch" John Michie following Valley Forge service
+  - Revolutionary significance: William Michie signed Albemarle Declaration of Independence (April 21, 1779) and persuaded patrons to support American cause
+  - Presidential connection: Located on "Presidents' Route" between homes of Thomas Jefferson, James Madison, and James Monroe
+  - Assembly Room: Two-story inn's grand upstairs space served as social heart of countryside for dances, church services, traveling performers
+  - 1927 relocation: Josephine Henderson purchased deteriorating tavern and moved it 17 miles from Earlysville to current location near Monticello; reopened as museum in 1928
+  - Virginia Historic Landmark; largest grouping of reassembled buildings in Albemarle County
+  - Hans Holzer investigation: Famous paranormal investigator visited with medium Ingrid; documented in "Ghosts: True Encounters with the World Beyond" chapter "Michie Tavern, Jefferson, and the Boys"
+  - Medium's findings: Ingrid saw spirits "still partying in the ballroom"—people dancing and enjoying life, colonial revelry continuing two centuries later
+  - CPRI investigation: Central Paranormal Research Institute (Virginia's oldest paranormal society) documented unexplained whistling in basement when no one present
+  - Staff experiences: Owner reported "multiple occasions heard and seen ghosts"; all staff assured visiting contractor the "guests" were friendly
+  - Closing time phenomena: Objects moved when backs turned; voices and footsteps in socializing room when building empty; occasional cheerful humming
+  - Phantom party sounds: Late night reports of laughter, glasses clinking, dancing from empty assembly room
+  - Michie Tavern Cookbook includes ghost stories in back pages—official acknowledgment of supernatural reputation
+  - Sources: PANICd Database, Southern Spirit Guide, Internet Archive (Holzer book), Michie Tavern official, Journey Through Hallowed Ground, Monticello.org, Virginia DHR, Wikipedia, Shop Michie Tavern
+
+- **Deep Research: Virginia State Capitol** (Richmond, VA) — Expanded ghost story from 288 to 6,022 characters with 10 verified sources
+  - Building history: Designed by Thomas Jefferson and Charles-Louis Clerisseau (1785-1788); modeled after Maison Carree in Nimes, France; served as Confederate capitol during Civil War
+  - Houdon's Washington statue: Jean-Antoine Houdon's 1796 life-size marble statue of George Washington stands in the grand rotunda
+  - Capitol Disaster (April 27, 1870): Gallery collapsed during Supreme Court hearing on mayoral dispute; floor gave way sending spectators 40 feet into House of Delegates chamber
+  - Casualties: 62 killed, 251 injured; victims "launched into eternity" mingled with "bricks, mortar, splinters, beams, iron bars, desks, and chairs"
+  - Notable victims: Patrick Henry Aylett Jr. (great-grandson of Patrick Henry), State Senator J.W.D. Bland, Fire Chief William Charters, John Turner (13-year-old page)
+  - L.B. Taylor Jr. documentation: Virginia's premier supernatural chronicler noted "eerie cry of mournful voices, muted under tons of debris, can still be heard in the hallowed corridors"
+  - Paul Hope's book "Policing the Paranormal" (2013): Capitol Police officer documented regular paranormal activity kept secret from public
+  - Old House of Delegates Chamber: Maintains constant mysterious chill; Hope and training officer witnessed dark shadow moving in gallery while reading 1870 memorial plaque
+  - Emma's 2003 encounter: Capitol Police officer saw apparition of elderly man with scruffy brown hair and brown suit in sixth-floor vending machine reflection; refused to re-enter building
+  - Hope's cigar ghost: Smelled phantom cigar smoke while patrolling alone; felt "chillingly cold static electricity charge" that made body hair stand on end
+  - Executive Mansion ghosts: Lady in Taffeta seen by Governor Philip McKinney (1890s); chased by Governor Montague's brother (1902-1906); moved paintings reported by Governor Holton (1973)
+  - Sources: Southern Spirit Guide, Library of Virginia, Colonial Ghosts, Nerdy Minds Magazine, Amazon (Policing the Paranormal), Martinsville Bulletin, Haunts of Richmond, US Ghost Adventures, Virginia General Assembly, Richmond Magazine
+
+- **Deep Research: Twisted Vine** (Derby, CT) — Expanded ghost story from 326 to 4,783 characters with 12 verified sources
+  - Building history: Former Birmingham National Bank built 1892-93; designed by Warren R. Briggs in Sullivanesque and Richardsonian Romanesque Revival styles
+  - Bank origins: Chartered 1848 as Manufacturers Bank of Birmingham; became national bank 1865; original chrome steel vault still in dining room
+  - Edward N. Shelton (primary ghost): Bank's first president (1848-1894); helped design the 1892 building; seen on upper balcony and dance floor
+  - Samuel H. Lessey (basement ghost): Head cashier in 1913; shot himself at Oak Cliff Cemetery after forged check passed under his watch; communicates through lights
+  - 1955 flood morgue: Hurricanes Connie and Diane destroyed Union Cemetery in Seymour; 50+ caskets swept into Naugatuck River; basement served as makeshift morgue for recovered bodies
+  - Ghost child: Little girl apparition seen by customers and investigator Nick Grossman who felt a poke during investigation
+  - Staff experiences: Owner Michael Picone witnessed cloud of smoke emerge from wall during band performance; bartender Stacy had glasses and sugar containers thrown at her
+  - Kindred Spirits S4E5 "Vaulted Secrets" (January 31, 2020): Amy Bruni, Adam Berry, and Chip Coffey investigated morgue connection and documented intelligent haunting
+  - Food Network recognition: Named one of "Most Haunted Restaurants in Every State"
+  - Ghost Storm investigation: Captured video of spirit "Sam" responding to bartender's questions through light bulb flickering
+  - Sources: US Ghost Adventures, Historic Buildings CT, New Haven Register, Middletown Press, CT Insider, i95 Rock, Travel Channel, IMDB, Twisted Vine official, Only In Your State, Wikipedia
+
+- **Deep Research: Exchange Hotel** (Gordonsville, VA) — Expanded ghost story from 288 to 6,318 characters with 10 verified sources
+  - Building history: Built 1860 as elegant railroad hotel at junction of Virginia Central and Orange & Alexandria Railways; became Gordonsville Receiving Hospital June 1862
+  - Civil War significance: America's first triage hospital; treated 70,000+ soldiers (mostly Confederate, some Union); over 700 died; only surviving Civil War receiving hospital in Virginia
+  - Post-war: Served as Freedmen's Bureau Hospital for newly freed slaves before returning to hotel operations
+  - National recognition: A&E/History Channel ranked 15th most haunted place in America (1997); 80+ recorded incidents since 1989; 1,000+ EVP recordings collected
+  - Anna (primary ghost): Former slave and close friend of Margaret "Meg" Crank; diary entries describe her as 4'11" with "irascible nature and ungovernable temper"; apparition seen walking between summer kitchen and main house
+  - Major Quartermaster Richards (malevolent spirit): Murdered wife for affair with surgeon, buried her in woods, hanged himself; physically assaults visitors—pinned museum president against wall twice, pushed investigator down stairs
+  - Civil War nurse ghosts: Two of four confirmed suicides during hospital era; seen dressed in black, climbing stairs, going room to room as if still making rounds
+  - Tragic child spirit: Young boy who worked at hospital hanged himself from upstairs window; visitors hear sobs, small footsteps near old operating rooms
+  - Emma: Little girl spirit frequently photographed by paranormal investigators
+  - Major Cornelius Boyle: Confederate post commander's ghost reported by longtime museum volunteer
+  - Confederate soldier encounter: Bandaged head, missing one leg, carried on 15-minute conversation with visitors before vanishing
+  - Investigation teams: Shenandoah Valley Paranormal Society (Investigation #28, August 2009), Black Raven Paranormal (encountered "shadow person"), Tennessee Wraith Chasers (Ghost Asylum, Haunted Towns), R.I.P. Richmond (The Twisted Realm TV series)
+  - Reported phenomena: Doors opening/closing, heavy objects dragged and dropped, cold spots, footsteps in empty hallways, full-bodied apparitions, screams/moans, singing woman, items unplugging, medicinal herb scents
+  - Current status: Exchange Hotel Civil War Medical Museum; public paranormal investigations on select Friday nights; 250+ investigators across 45 weekends
+  - Sources: C-VILLE Weekly, Exchange Hotel Museum official, Colonial Ghosts, HauntScout, Southern Spirit Guide, Soul Sisters Paranormal, Alexandria Ghosts, Williamsburg Ghost Tour, Haunted Places, Virginia Paranormal Events
+
+
+- **Deep Research: Linden Row Inn** (Richmond, VA) — Expanded ghost story from 264 to 5,884 characters with 12 verified sources
+  - Building history: Seven Greek Revival townhouses built 1847-1853; architect Otis Manson; Fleming James built first five houses, Samuel and Alexander Rutherfoord completed the row
+  - Poe connection: Before construction, Charles Ellis maintained formal garden famous for roses and linden trees; young Edgar Allan Poe played here with Ellis children and courted first love Sarah Elmira Royster
+  - "To Helen" inspiration: Garden immortalized in Poe's 1848 poem as "an enchanted garden, Where no wind dared to stir, unless on tiptoe"; Poe Museum curator confirms connection
+  - Three girls' schools: Southern Female Institute (1853-1865) with Parisian French instructors; Mrs. Pegram's School (1856-1866); Miss Virginia Ellett's School (1895-1906)
+  - Confederate tragedy: Mrs. Virginia Johnson Pegram opened school after husband killed in 1844 steamboat explosion; sons General John Pegram and Colonel Willie Pegram both killed in 1865, weeks apart
+  - Famous alumnae: Irene Langhorne (the "Gibson Girl") and Nancy Langhorne (first female British Parliament member) attended Miss Ellett's school
+  - Mary Johnston: Bestselling novelist and suffragist lived in one townhouse; wrote "Lewis Rand" (1908) while residing there
+  - Slave quarters: Former slave dwellings still stand behind main structures
+  - Elizabeth Poe ghost legend: Guests report seeing woman in period dress searching room to room; hotel director debunks myth since buildings not built until decades after her 1811 death
+  - Staff experiences: Employee admits "There is one room that gives me an eerie feeling whenever I go in"; guests who check in reportedly "leave right quick"
+  - Paranormal investigation: Ghosthunters "did pick up something" in dining room (converted from original stables)
+  - Guest phenomena: Alarm clocks going off unset; unexplained noises; eerie feelings in certain rooms
+  - Preservation: Mary Wingfield Scott saved buildings from demolition 1950-1957; donated to Historic Richmond Foundation 1980; opened as inn 1988
+  - National Register: Virginia Landmark and National Register since 1971; "nation's finest surviving row of Greek Revival architecture"
+  - Ghost tours: Featured on Phantoms of Franklin Ghost Tour through downtown Richmond
+  - Sources: Denver Post, Washington Post, Linden Row Inn official, Clio, Virginia DHR, SAH Archipedia, Historic Richmond, Wikipedia, Brown Eyed Flower Child, Haunts of Richmond, Poe Museum, Encyclopedia Virginia
+
+- **Deep Research: Texas (30 places)** — Expanded ghost stories for 30 Texas haunted locations with 6+ verified sources each
+  - **San Antonio (8 places):** The Alamo, Menger Hotel, Emily Morgan Hotel, San Fernando Cathedral, St. Anthony Hotel, Crockett Hotel, Ghost Tracks
+  - **Galveston (7 places):** Hotel Galvez, Ashton Villa, Tremont House, Moody Mansion, Bishop's Palace, 1894 Grand Opera House, Battleship Texas
+  - **Austin (3 places):** The Driskill Hotel, Texas Governor's Mansion, Texas State Capitol
+  - **Dallas (3 places):** Lady of White Rock Lake, Adolphus Hotel, Majestic Theatre
+  - **Fort Worth (2 places):** Miss Molly's Hotel, Thistle Hill Mansion
+  - **Jefferson (2 places):** The Grove, Excelsior House Hotel
+  - **Other Texas cities (5 places):** USS Lexington (Corpus Christi), Baker Hotel (Mineral Wells), Marfa Lights (Marfa), Yorktown Memorial Hospital (Yorktown), Catfish Plantation (Waxahachie), Fort Phantom Hill (Abilene)
+  - Average story length: ~2,000 chars (up from ~500 chars)
+  - Notable highlights: Theodore Roosevelt's ghost at Menger Hotel, Steven Spielberg's encounter at Excelsior House, Ghost Adventures at Yorktown Hospital, the 1836 Battle of the Alamo hauntings
+
+- **Deep Research: Garde Arts Center** (New London, CT) — Expanded ghost story from 328 to 4,227 characters with 10 verified sources
+  - Building history: Built 1926 as Moroccan-revival movie palace; designed by architect Arland W. Johnson under direction of Arthur S. Friend (Cecil B. DeMille's early partner)
+  - Site history: Built on land of Thomas Wheeler Williams (U.S. Congressman 1839-1843), New London's most prominent whaling merchant who launched the industry in 1819 with the brig Mary
+  - Williams family tragedy: Five of his nine children died before adulthood within the mansion walls; first wife Lucretia died in 1829 at age 32
+  - Art and architecture: Vera Leeper of Denver painted Moroccan murals using unique knife application technique (first in American theaters); opened September 22, 1926 with silent film "The Marriage Clause"
+  - Warner Bros. era: Purchased theater for $1 million in 1929 to introduce "talking pictures" technology; operated until 1977 decline
+  - The girl with the balloon: Most frequently witnessed apparition; little girl often seen wandering the balcony area; possibly one of the Williams children
+  - Man hunched in chair: Full-body apparition of man watching eternal performance witnessed by visitors and staff
+  - Ladder rescue: Employee fell from ladder and claims unseen force caught him before impact; possibly spirit of lighting employee who died at theater
+  - Ghost Hunters S11E11 "The Haunting of the Garde" (2016): Jason Hawes captured disembodied voices on catwalk; TAPS concluded intelligent haunting with spirits interacting with investigators
+  - John Zaffis events: "The Haunted Collector" (nephew of Ed and Lorraine Warren) leads annual paranormal investigations with Seaside Shadows founder Courtney McInvale
+  - Restoration: $15 million restoration by Centerbrook Architects completed 1999; named 2022 Outstanding Historic Theatre in America by League of Historic American Theatres
+  - Sources: Wikipedia (2), IMDB, Garde Arts Center official (2), Cinema Treasures, Find a Grave, Hartford Courant, Thames River Heritage Park, Centerbrook Architects
+
+- **Deep Research: Belle Grove Plantation** (Middletown, VA) — Expanded ghost story from 283 to 5,675 characters with 9 verified sources
+  - Building history: Built 1794-1797 for Revolutionary War veteran Major Isaac Hite Jr. and wife Nelly Conway Madison (sister of President James Madison); Thomas Jefferson contributed to design
+  - Estate scale: Hite family controlled 7,500 acres by 1836; enslaved over 270 people between 1783-1851; operated distillery and mills
+  - Hetty Cooley murder (February 26, 1861): Free woman of color Harriet Robinson attacked and beat Hettie Cooley with iron shovel, dragged her body to smokehouse where she died
+  - Murder trial: Harriet convicted of first-degree murder but escaped execution by claiming pregnancy; fled when Union forces occupied Shenandoah Valley
+  - Hetty's ghost: For decades, white mist observed emerging from basement fireplace and floating toward smokehouse; Hetty seen in hallways, kitchen, walking paths outside
+  - Carpet businessman encounter: Sunday visitor met silent woman in period dress who showed him where carpet should go; museum director said house was closed that day
+  - Battle of Cedar Creek (October 19, 1864): General Philip Sheridan headquarters; nearly 6,000 casualties in fighting around plantation
+  - General Stephen Ramseur death: 27-year-old Confederate Major General shot through both lungs; died in Hite nursery room surrounded by West Point classmates including George Custer
+  - Ramseur's last words: "Bear this message to my precious wife—I die a Christian and hope to meet her in heaven"
+  - Spectral tableau: Visitor saw Civil War soldiers in blue and grey standing around dying man in bed; staff confirmed no reenactment was occurring
+  - Woman in black: Female apparition in black dress with veil seen standing in uppermost room window; room always empty when investigated
+  - Physical phenomena: Doors opening by itself, table flipping over at indoor event, feelings of heaviness and sadness, sound of rustling heavy skirt
+  - Slave cemetery singing: Musical phenomena reported from enslaved burial ground on property
+  - Staff silence: Docents reportedly discouraged from discussing resident spirits
+  - Current status: National Historic Landmark; part of Cedar Creek and Belle Grove National Historical Park since 2002
+  - Sources: Southern Spirit Guide, HauntedPlaces.org, Virginia Haunted Houses, M.A. Kleen, NV Daily, Shenandoah at War, Belle Grove official, NPS, Wikipedia
+
+- **Deep Research: Saybrook Inn** (Old Saybrook, CT) — Expanded ghost story from 316 to 4,645 characters with 10 verified sources
+  - Site history: Algonquin homeland; Fort Saybrook established 1635 as one of Connecticut's oldest settlements
+  - Lady Alice Fenwick: Wife of first Governor of Saybrook Colony; arrived May 1638; died 1645 after childbirth; described as "most magical and mysterious woman in Connecticut River history"
+  - 1870 disinterment: Railroad construction exhumed her grave after 225 years; remains remarkably preserved including distinctive red hair; locks distributed among onlookers
+  - 1900 railroad haunting: Night watchman Arthur Beebe witnessed six locomotive bells ring by themselves "gradually increasing in speed"; heard phantom "clog dance" on boiler jackets
+  - Station agent Charles Beecher: Account books "lifted from desk and slammed upon the floor" then returned "of their own volition"
+  - Terra Mar era (1957-1975): Glamorous hotel hosted Frank Sinatra, Rat Pack, Jayne Mansfield, Tom Jones; raided by FBI for illegal gambling; demolished 1980s
+  - Modern resort: Opened 1989 by Tagliatela family on same grounds
+  - Woman in white: Translucent figure in wedding gown appears near docks; legend says she was "buried alive somewhere in the area"
+  - Guest room activity: Visitors feel presence sitting on beds; one 2018 guest felt bed sink and was shoved on back by unseen force
+  - Phantom bride in photos: Spectral woman in bridal attire captured in wedding photographs though no one saw her during ceremony
+  - Wrought-iron fence: Erected around Lady Fenwick's gravestone to protect from visitors chipping pieces seeking her "magical powers"
+  - Sources: Haunted Rooms America, HauntedPlaces.org, CT Haunted Houses, FrightFind, New England Legends, Cypress Cemetery, Estuary Magazine, Brom Bones Books, Saybrook Resort, NY Lifestyles Magazine
+
+- **Deep Research: Palace and Majestic Theaters** (Bridgeport, CT) — Expanded ghost story from 316 to 4,925 characters with 12 verified sources
+  - Building history: Poli Palace Theatre opened September 4, 1922 as Connecticut's largest theater (3,642 seats); designed by Thomas W. Lamb for theater mogul Sylvester Z. Poli
+  - Architecture: Beaux Arts style with vaulted ceilings, gilded hand-carved moldings, giant Hall theater organ
+  - Notable performers: Eddie Cantor served as Master of Ceremonies at opening; Mae West appeared in 1927
+  - Adjacent buildings: Majestic Theatre (opened November 4, 1922 with "Make It Snappy") and 109-room Savoy Hotel ($1.50/night)
+  - Native American burial ground: Artifacts discovered during construction; Golden Hill Paugussett tribe had nearby settlement for centuries
+  - Dutch Schultz connection: Prohibition-era gangster (Public Enemy No. 1) lived at Stratfield Hotel across street from April-September 1935
+  - Savoy Hotel murders: Two men killed in second-floor lobby during Schultz's stay; no one ever charged
+  - Schultz's fate: Gunned down in Newark one month after leaving Bridgeport (October 23, 1935)
+  - Decline: Majestic closed 1971; Palace closed 1975 (after brief run as adult cinema); National Register 1979
+  - Lorraine Warren connection: Ed Warren worked at Poli as teenager; Warren began showing Sgt. James Myers's orb photos in lectures nationwide
+  - 826 Paranormal: Bridgeport Police Sgt. James Myers founded team (badge number 826) after meeting Lorraine Warren; calls complex "my baby"
+  - East Coast Paranormal Police: Myers and partner Martin Vincze documented dark shadows descending staircases, muffled hum of phantom crowds
+  - EVP evidence: Young girl's voice clearly answered "Hello!" when investigators asked "Is anyone here?"
+  - Shadow figures: Seen moving through walls; orb photographs number in dozens
+  - 2015 recognition: Bridgeport voted one of America's most haunted cities; Poli-Palace complex cited as primary reason
+  - Failed restoration: $400 million Exact Capital deal (2017) quietly killed during COVID-19 pandemic
+  - Sources: Damned Connecticut, CT Haunted Houses, HauntedPlaces.org, Historic Buildings of Connecticut, Bridgeport History Center, CT Post, Cinema Treasures, Wikipedia, CT Insider, NBC Connecticut, 826 Paranormal, New England Historical Society
+
+- **Deep Research: The Lighthouse Inn** (New London, CT) — Expanded ghost story from 319 to 4,735 characters with 9 verified sources
+  - Building history: Built 1902 as "Meadow Court" summer estate by steel magnate Charles Strong Guthrie, president of Republic Iron and Steel Corporation
+  - Architecture: Designed by renowned architect William Ralph Emerson (father of Shingle Style); Olmsted Brothers landscaped 12 acres including six-acre wildflower meadow overlooking Long Island Sound
+  - National Register: Listed 1996; 40,000-square-foot Mission/Spanish Revival mansion with Florentine fountain, tennis court, greenhouses, boathouse
+  - Guthrie death: Charles died prematurely in 1906 at age 46; widow Frances sold estate in 1925; converted to inn 1927
+  - Celebrity guests: Hollywood retreat in 1940s; Bette Davis and Joan Crawford among famous visitors
+  - The bride legend: In 1930, a bride allegedly fell down the winding central staircase, broke her neck, and died at feet of her groom
+  - Bride sightings: Staff see woman in white gown descending stairs; guests report her hovering in dark corners, appearing in window reflections, leaving perfume scent near staircase
+  - Room 26 activity: Door opens by itself; electronics malfunction; guest reported being violently shaken awake by "jealous bride"
+  - Victorian ladies: Two additional ghostly women in period dress walk the halls at night
+  - Hurricane children: Stories of two children killed in Hurricane of 1938 (September 21); New London devastated by 7-hour fires, floods, and wind
+  - Ghost Hunters S1E3 (October 20, 2004): TAPS investigated with Jason Hawes, Grant Wilson, Steve Gonsalves, Brian Harnois
+  - Steve Gonsalves experience: In basement tunnels, touched by unseen force applying 15 pounds of pressure to his back; Kristin documented 20-30 degree temperature drop
+  - Thermal anomaly: Camera detected warm mist passing before lens (unusual since paranormal mists typically cold)
+  - EVP evidence: Recording captured words "We're not"
+  - Investigation verdict: Deemed inconclusive; TAPS requested to return for more research
+  - Historian debunking: Sally Ryan, city historian who grew up two blocks away, told New York Times (2007): "There was no bride" and no children died in hurricane
+  - Fire history: July 5, 1979 three-alarm fire destroyed upper floors two months after Arthur and Jean Valis purchased; $600,000 damage; reopened within six months with community help
+  - Closure and restoration: Closed 2008; purchased 2016 by Alwyn Christy for $260,000; five-year restoration led by craftsman Robert Duleau
+  - 2022 fire: Reopened April 2022; damaged by fire one week later (May 5) when contractor's drill sparked insulation; third fire in century-long history
+  - Ronnick era (1945+): Under William and Albert Ronnick ownership, "inn's reputation reached new heights" per National Register
+  - Sources: Haunted Rooms America, Ghost Hunters Wiki, The Day (2), Syfy Ghost Hunters recap, Buildings of New England, CT Haunted Houses, Shoreline Connecticut, IMDb
+
+- **Deep Research: Lee-Fendall House** (Alexandria, VA) — Expanded ghost story from 294 to 4,201 characters with 8 verified sources
+  - Building history: Built 1785 by Philip Richard Fendall using enslaved laborers; telescope-style Maryland architecture; 37 Lee family members lived here 1785-1903
+  - Light Horse Harry Lee: Revolutionary War hero sold lot to father-in-law Fendall for 300 pounds on December 4, 1784
+  - Presidential connections: George Washington visited seven times; John Quincy Adams and Woodrow Wilson also visited
+  - Robert E. Lee connection: Grew up directly across the street; cousin Cassius Francis Lee, Sr. lived at house for decades
+  - Civil War hospital (1863-1865): Grosvenor Branch Hospital under Dr. Edwin Bentley; 146-156 beds; 1,700 soldiers treated; 100 confirmed deaths
+  - Medical breakthrough: Site of first successful blood transfusion of Civil War, performed by Dr. Bentley on Private George Cross
+  - Dead house: Morgue built at back of property; 51 soldiers buried at Alexandria National Cemetery (first government cemetery, established July 1862)
+  - John L. Lewis era (1937-1969): Powerful labor leader and UMW president; died in house June 11, 1969, age 89
+  - Primary apparitions: Female ghost in period dress; woman with child on back servants stairs
+  - Phantom telephone: Staff heard 1930s-style telephone jingling during meeting; no working antique phone exists in building
+  - Second floor dread: Overwhelming feelings of being watched on staircase
+  - TAPS investigation (September 2009): "Civil War Spirits" episode; documented high EMF readings throughout house; exposed basement wiring partially explained some phenomena
+  - Grief and Ghosts tours: Museum hosts Victorian mourning tradition tours with seances, hair jewelry, mirror draping customs
+  - Current status: Virginia Trust for Historic Preservation; museum since 1974; one of Alexandria's most haunted alongside Gadsby's Tavern
+  - Sources: Wikipedia, Atlas Obscura, Emerging Civil War, Virginia Haunted Houses, Haunted Places, Syfy Ghost Hunters recap, Lee-Fendall House Museum, Visit Alexandria
+- **Deep Research: Stonewall Jackson House** (Lexington, VA) — Expanded ghost story from 273 to 4,604 characters with 10 verified sources
+  - House history: Built 1800 by Cornelius Dorman; Dr. Archibald Graham expanded it in 1845; Jackson purchased November 4, 1858 for $3,000
+  - Only home Jackson ever owned: Lived there with second wife Mary Anna Morrison from 1858-1861 while teaching Natural Philosophy at VMI
+  - First wife tragedy: Elinor Junkin died in childbirth October 1854 along with their stillborn child; Jackson wrote "I desire no more days on Earth"
+  - Infant daughter: Mary Graham Jackson died at three weeks old in May 1858
+  - Hospital era (1907-1954): Served as Stonewall Jackson Memorial Hospital; many residents born and died within walls
+  - Jackson's death: Shot by own troops (18th North Carolina) at Chancellorsville on May 2, 1863; arm amputated and buried at Ellwood Manor; died May 10 at Guinea Station
+  - Famous last words: "Let us cross over the river, and rest under the shade of the trees"
+  - House phenomena: Stern military presence in study; heavy footsteps in empty rooms; objects moving without explanation
+  - VMI connection: Mysterious blue light witnessed since early 1900s entering Jackson's former classroom before vanishing
+  - Oak Grove Cemetery: Formerly Stonewall Jackson Memorial Cemetery; unexplained phenomena occurring nightly for over 100 years
+  - 1999 witness account: Four people in vehicle heard something charging toward them "getting louder and louder" with sounds of soldiers yelling
+  - Ghost tour: Haunting Tales (since 1996) passes by house; includes "window that will not stay closed" at nearby location
+  - Ellwood Manor: Jackson's arm burial site; visitors report strange lights and unexplained music on grounds
+  - Current status: Jackson House Museum operated by Virginia Military Institute; 1979 restoration to 1858 appearance
+  - Sources: Wikipedia, Virginia Haunted Houses, VMI Jackson House Museum, Virginia Tourism, Roanoke Times (1996), VMI News, American Ghost Stories, Daily Press, Find a Grave
+
+- **Deep Research: Whitehall Mansion** (Mystic, CT) — Expanded ghost story from 328 to 4,574 characters with 12 verified sources
+  - Building history: Built 1771-1775 by Dr. Dudley Woodbridge on site where Lieutenant William Gallup constructed original homestead circa 1680
+  - Dr. Woodbridge: Harvard-educated minister who abandoned theology for medicine in 1739; served as Groton's representative to General Assembly; named to Committee for Inspection December 1775
+  - Architecture: Georgian mansion with gambrel roof, twelve-over-twelve windows, unusual brick chimney construction; designed by Dr. Woodbridge himself
+  - Family tragedy: Nine children raised at mansion; Benjamin died at age 12; Lucy never married and likely spent entire life at property
+  - Whitehall Burial Ground: Adjacent cemetery (oldest in Mystic, established 1644) contains 175 graves including Dr. Woodbridge, wife Sarah Sheldon, and children William, Benjamin, and Lucy
+  - Lucy Woodbridge (primary ghost): Spinster daughter responsible for disembodied laughter echoing through rooms; doors opening and closing on their own
+  - Benjamin's ghost: TV cabinet in room named for him repeatedly unlocks and opens by itself; tour guide Courtney McInvale documents children ages 11-14 capturing anomalies in photographs at his gravestone
+  - Guest experiences: Apparitions of woman and young boy; objects moving in rooms; footsteps on creaky colonial stairs when no one present
+  - Paranormal investigation: "Ghost Magnets with a Twist" team booked overnight stay to document activity
+  - Underground Railroad legends: Post-Civil War whispers of secret passages to Mystic River and hidden attic spaces; no evidence found during I-95 excavation
+  - Preservation: Nearly demolished for Interstate 95 in 1962; saved by Florence Grace Keach's donation to Stonington Historical Society; moved 100 yards to current site
+  - National Register: Added 1979; now operates as Whitehall Mansion Inn (bed and breakfast since 1996)
+  - Seaside Shadows tours: Regular ghost tours and paranormal investigations at adjacent burial ground; visitors report footsteps, voices, full-bodied apparitions
+  - Sources: Wikipedia, US Ghost Adventures, CTvisit, Stonington Borough CT, Historic Buildings CT, Clio, Geni.com, Damned Connecticut, Seaside Shadows, Tripadvisor, Halloween New England, Arcadia Publishing
+
+- **Deep Research: Virginia Military Institute** (Lexington, VA) — Expanded ghost story from 283 to 7,926 characters with 14 verified sources
+  - Founding: America's oldest state-supported military college, opened November 1839 in Lexington, Shenandoah Valley
+  - Stonewall Jackson connection: Professor of Natural Philosophy and Artillery from 1851-1861; cadets nicknamed him "Tom Fool" for rigid teaching style; his effects and horse Little Sorrel's skeleton displayed in chapel
+  - Battle of New Market (May 15, 1864): Only time in American history a school's student body deployed as organized combat unit; 257 cadets marched 85 miles in four days; 60 casualties, 10 killed including 17-year-old Thomas Garland Jefferson (President Jefferson's great-grand-nephew)
+  - "Field of Lost Shoes": Cadets lost footwear in rain-soaked plowed field; annual May 15th ceremony since 1866 with seniors leaving shoes on parade deck
+  - Hunter's Raid (June 12, 1864): Union General David Hunter burned VMI in retaliation; Gothic Revival Barracks destroyed; Corps furloughed until war's end
+  - The Yellow Peril: Most feared spirit, dating to late 1800s; cadet in grey blouse with yellow face and gash; appears at 3:30 a.m. (drum-out ceremony hour); 1923 cadet letter and "Echoes of VMI" document legend; early cadets kept revolvers under pillows
+  - Turret rooms: Above Washington Arch; former Honor Court penalty chambers with "Death before dishonor" carved in stone; flying objects, moving shades, windows slamming, shoulder touches before sleep
+  - Shadow of hanged man: Sentries report shadow on exterior walls; Alumnus Robert Rainer among dozens of witnesses; VMI found no evidence of hangings
+  - The spectral sentinel: Helpful ghost knocks three times before guard duty; Trey Copenhaver '12 saved from punishment in 2011, Room 104; Tim Frederickson credited ghost when alarm failed
+  - Blue light: Mysterious ball of light since early 1900s; enters Jackson's former classroom and vanishes
+  - Underground tunnels: Rebuilt after 1865; "ghost cadet" captured on security cameras near "Bear Den" entrance; seen watching cadets study at night
+  - "Virginia Mourning Her Dead" statue: Bronze by Moses Ezekiel (class of 1866); dedicated 1903; six New Market cadets buried beneath including Thomas Jefferson who died in Ezekiel's arms; moans, cries, and real tears reported from bronze eyes
+  - Guard duty encounters: Doug Wainwright '83 saw mounted rider with cowboy hat and sword (November 1979); George Mayforth '82 experienced statue's gaze shifting, decomposing figure in room
+  - New Market Battlefield: Phantom apples thrown from empty orchard near cannons; cadets camping overnight targeted by invisible forces
+  - Sources: VMI News, The Cadet (2), Anomalien, HauntedPlaces.org, Virginia Haunted Houses, Wikipedia (2), Encyclopedia Virginia, VMI Archives, American Battlefield Trust, Ramblings of a Cadet blog
+
+- **Deep Research: Hartford Elks Lodge** (Hartford, CT) — Expanded ghost story from 347 to 4,900 characters with 12 verified sources
+  - Building history: Built 1903 as first structure in America constructed exclusively as an Elks Lodge; designed by Hartford architect John J. Dwyer in Classical Revival style
+  - National Register of Historic Places since 1984; interior features oak/mahogany finishes, octagonal lodge room with domed ceiling, gilded moldings
+  - Pre-lodge history: Kitchen remodel discovered stone foundation of 19th-century house that burned down before Elks acquired property
+  - Samuel D. Chamberlain: Key founder who inspired lodge's construction; president of S. D. Chamberlain & Sons; died 1938; ballroom named "Chamberlin Room" in his honor
+  - Chamberlain's ghost: Believed hostile to women (Elks was formerly all-male); investigators found he "would not have been happy to have women in the Elks"
+  - Female bartender Kelly Wolf: Felt presence behind her while counting money; hair pulled by unseen hands; told entity "Please get away from me, you're scaring me"
+  - Aggressive apparition told member's daughter to "Get out!"; all reported voices distinctly male
+  - Robert Taylor: 26-year-old man fell to death from fire escape in 1972; unclear if fell, pushed, or jumped
+  - Paranormal activity: Glasses fly off bar "as if thrown at bartender"; footsteps in empty hallways; tables move; lights switch on/off; cold hands touch people in basement
+  - Ghost Hunters S7E24 "Membership Denied" (November 30, 2011): Jason Hawes heard his name called by disembodied voice in basement
+  - TAPS evidence: EMF detector spiked when Steve and Tango read letter from Chamberlain's widow aloud—directly under plaque bearing Samuel's name; repeated reading produced identical spike
+  - Karen Hollis / G.O.N.E.R.S. investigation: Captured EVP responding "secret" when asked about lodge room password; concluded multiple former members remain "because they find it a welcoming environment"
+  - 1980s member account: "I went up there once when there was no one there and had an un-welcoming feeling so needless to say I ran back down stairs"
+  - Bob Benigni (lodge president): "Some people won't venture into the lodge's basement or upstairs alone"
+  - Sources: CT Insider, Damned Connecticut, CT Haunted Houses, HauntedPlaces.org, Hartford Courant, Ghost Hunters Wiki, Wikipedia, Historic Buildings of Connecticut, Readings by Karen, Lost New England, US Ghost Adventures, Elks.org
+
+- **Deep Research: Blackberry River Inn** (Norfolk, CT) — Expanded ghost story from 358 to 4,892 characters with 10 verified sources
+  - Building history: Colonial mansion built 1763 along Greenwoods Turnpike; extensively renovated 1920s by architect Alfredo S.G. Taylor in Georgian Revival style
+  - National Register: Listed 1984 as part of Alfredo S.G. Taylor Thematic District; 9 acres in Norfolk, 1 acre in North Canaan
+  - Moseley ownership: Seth H. Moseley (also owned Collingwood Hotel/Hotel Metro in NYC) ran as gentleman's farm until death December 7, 1938; Dorothea and James Schwarzhaupt converted to inn 1939
+  - Underground Railroad: Large tunnels in basement suggest use as station on the freedom network; Norfolk sheltered James Mars family fleeing enslavement
+  - Francis (Lady in White): Primary ghost haunts second floor; seen entering through back entrance, walking to empty house at rear of property; brings profound sense of calm
+  - Paranormal activity: Guests tapped on head by unseen force; sense of being watched in upstairs rooms; apparition follows same route nightly
+  - 1990s worker account: Spent two years nearby, sensed "dark presence" so unsettling they refused to return
+  - 1970s visitor: Documented encounters but provided few specifics
+  - Current status: Operates as B&B with 14 guest rooms on 27 acres; maintains reputation as one of Connecticut's most haunted hotels
+  - Sources: Wikipedia, HauntedPlaces.org, CT Haunted Houses, Haunted Rooms America, FrightFind, Only In Your State, Clio, Norfolk Historical Society (2), Connecticut History
+
+- **Deep Research: Byrd Theatre** (Richmond, VA) — Expanded ghost story from 283 to 5,932 characters with 13 verified sources
+  - Building history: Named after William Byrd II, founder of Richmond; opened Christmas Eve 1928 with "Waterfront"; cost $900,000 ($12+ million today); first Virginia theater equipped with sound system
+  - Architecture: Designed by Fred Bishop in French Empire style; built by Walter Coulter and Charles Somma; interior by Arthur Brunet Studios of New York
+  - Opulent features: Eleven Czechoslovak crystal chandeliers including 18-foot, 2.5-ton centerpiece with 5,000+ crystals and 500 red/blue/green/amber lights; Italian and Turkish marble; hand-sewn velvet drapes; gilded archways; Greek mythology murals
+  - Mighty Wurlitzer: Hope-Jones Unit Orchestra Opus 1948 with four manuals and 17 ranks; one of fewer than 40 surviving Wurlitzer organs in original installation
+  - Robert Coulter (primary ghost): General manager 1928-1971 (43 years); descendant of original architect; died 1978 at age 76; visited daily even after retirement
+  - Coulter's habits: Legendarily devoted to energy conservation, constantly switching off lights; apparition appears in balcony watching films
+  - Balcony sightings: Former manager Todd Schall-Vess confirmed ghost "seen in a number of places but mostly spotted in the balcony"; patrons report grotesque faces in balcony shadows that disappear when lights come on
+  - CBS incident: Late 1990s, while CBS crew discussed Coulter's light-switching habits, entire building suddenly went dark
+  - Dennis Estlock investigation: Commonwealth Researchers of the Paranormal reported shadow figure sitting in Coulter's favored balcony seat; Coulter allegedly communicated his last movie was "Gone with the Wind" — and he hated it
+  - The Laughing Girl (second ghost): Little girl's giggles echo through women's restroom; identity unknown
+  - 2012 Transcend Paranormal investigation: Steve Dills captured EVP of little girl talking in women's bathroom, plus older gentleman saying team member's name
+  - Samuel Hatcher experiences: Operations manager witnessed backstage door swing open and slam shut while alone; video captured alley doors blowing open with no breeze; film in projection booth fluttered as if someone walked by
+  - Staff atmosphere: Hatcher describes "feeling like there's someone watching" and "aura of energy in this building"
+  - Historic status: Virginia Historic Landmark 1978; National Register of Historic Places 1979; operated continuously as movie theater for 90+ years
+  - Current: Bob Gulledge plays Wurlitzer before every Saturday showing (since 1996); theater embraces haunted reputation and offers overnight investigations
+  - Sources: RVA Ghosts, University of Richmond Collegian, Wikipedia, Byrd Theatre Official (2), Style Weekly, Our Community Now, Richmond Magazine, Architecture Richmond, Discover Richmond Tours, VPM, Haunted Rooms America, LocalWiki Richmond
+
+- **Deep Research: Fredericksburg Battlefield** (Fredericksburg, VA) — Expanded ghost story from 294 to 6,762 characters with 14 verified sources
+  - Battle history: December 13, 1862; Union General Ambrose Burnside ordered 14 assaults up Marye's Heights against Confederates behind stone wall at Sunken Road
+  - Casualties: Nearly 8,000 Union soldiers fell in front of the wall, none closer than 50 yards; total battle casualties exceeded 17,000
+  - Irish Brigade: Of 1,200 men, 545 killed, wounded, or missing; 69th New York lost 16 of 18 officers; Captain Nagle wrote "We are slaughtered like sheep"
+  - Aurora borealis: Night of December 14, 1862; rare phenomenon seen so far south; Union Colonel Joshua Lawrence Chamberlain described "fiery lances of gold—all pointing and beckoning upward"
+  - Both sides interpreted aurora as divine omen; civilian woman told Elizabeth Lyle Saxon "Such lights never burn, save for kings' and heroes' deaths"
+  - Angel of Marye's Heights: Confederate Sergeant Richard Rowland Kirkland climbed over stone wall to give water to dying Union soldiers; statue now stands at battlefield
+  - Fredericksburg National Cemetery: Established July 1865 on Marye's Heights; over 15,000 Union soldiers reinterred 1866-1868; only 20% identified
+  - Sunken Road hauntings: Visitors report echoes of war cries, spectral soldiers marching in formation, cannon smoke, smell of gunpowder, screams of dying
+  - Cemetery phenomena: Soldier apparitions, unexplained cold spots, strange cries, feeling of being watched, whispered voices "recounting final moments"
+  - Mark Nesbitt investigations: 300+ EVP recordings from Virginia battlefields; responses from spirits claiming 15th New Jersey and Ohio troops; founded Ghosts of Fredericksburg Tours 2006
+  - Psychic medium Patty Wilson: Encountered "young Confederate who died under a tree" with descriptions matching historical records
+  - Chatham Manor ghost: The Lady in White, English woman sent to break up romance, intercepted by George Washington; returns every seven years on June 21
+  - L.B. Taylor Jr.: Featured Fredericksburg in 25+ Virginia ghost story collections; established city as having "more ghosts than any other city in America"
+  - Sources: Wikipedia, NPS (2), Fredericksburg Guidebook, PANICd, US Ghost Adventures, Colonial Ghosts, Belle on the Battlefield, Atlas Obscura, Light Force Network, Mark Nesbitt, Occult World, Goodreads, FXBG
+
+- **Deep Research: Captain Grant's 1754 Inn** (Preston, CT) — Expanded ghost story from 354 to 4,041 characters with 12 verified sources
+  - Building history: Built 1754 by Captain William Grant in Poquetanuck Village for wife Mercy Adelaide and their children; captain died at sea, Mercy lived into her eighties waiting for his return
+  - Wartime service: Continental Army soldiers garrisoned during Revolutionary War; served as Underground Railroad stop sheltering escaped slaves during Civil War
+  - Primary haunting: Mercy Adelaide Avery haunts the Adelaide Room; seen in Colonial-era clothing with two ghostly children at foot of beds; pulls down shower curtains even when glued and nailed; TVs switch on/off; guests feel invisible hands caressing their faces
+  - Cemetery spirits: Adjacent Old Poquetanuck Cemetery (graves dating to 1700s); Deborah Adams walked through an employee converting skeptic to believer; John Mason (4-year-old boy died 1865) responds to investigators
+  - Owner Carol Matsumoto: Purchased dilapidated property mid-1990s; claims 300+ catalogued spirits; wrote "The Ghosts of Captain Grant's Inn" documenting twelve primary spirits communicated via dowsing rods and crystals
+  - Netflix "28 Days Haunted" (2022): Investigators Sean Austin and Aaron Thompson lived in inn 28 days following Ed and Lorraine Warren theories; Thompson admitted he "questioned if he'd ever leave alive"; captured "best EVP" they'd ever recorded
+  - Travel Channel "Portals to Hell": Jack Osbourne and Katrina Weidman documented experiment where Matsumoto appeared to channel multiple entities, leaving team "speechless"
+  - A&E "Psychic Kids: Children of the Paranormal" (2010): Featured intuitive children communicating with inn spirits
+  - Paranormal phenomena: Phantom footsteps in attic; doors open/close on their own; objects vanish and reappear; loud bangs in empty hallways; children's laughter at 4 AM (documented peak activity hour)
+  - National Register: Contributing building to Poquetanuck Village Historic District; featured in Yankee Magazine, CNN, USA Today as haunted destination
+  - Owner perspective: Spirits described as "protective" and have never caused harm
+  - Sources: Damned Connecticut, Haunted Rooms America, The Lineup, FrightFind, Captain Grant's official, Higgypop, CT Insider, Travel Channel, HauntedPlaces.org, America's Most Haunted, Find a Grave, Barnes & Noble
+
+- **Deep Research: Curtis House Inn (1754 House)** (Woodbury, CT) — Expanded ghost story from 356 to 4,884 characters with 14 verified sources
+  - Building history: Built 1736 by Reverend Anthony Stoddard; converted to roadside inn by Curtiss family circa 1754; Connecticut's oldest continuously operating inn
+  - Listed on National Register of Historic Places; member of Historic Hotels of America since 2021
+  - Lucius Foot: Former owner (1852-1857) found frozen to death in St. Paul's Episcopal Church cemetery work barn on a winter night after winning high-stakes poker game; winnings never recovered; apparition stomps into Room 1 removing boots, proclaiming "I've had a rough ride" before fading into walls
+  - Sally: Young female spirit haunts second floor, especially Room 16; pulls covers off female guests, shoved one woman out of bed; tucks in male guests and crawls into bed beside them
+  - Anthony Stoddard III (grandson): Portrait in foyer caused staff to feel "unseen but strong presence radiating from the eyes"; relocated to dining room, activity subsided
+  - Joe: Dishwasher who died 1985, asked to be buried on property (wish honored); apparition seen eating mashed potatoes in basement; employee recognized him years later from memorial plaque
+  - Matronly woman: Period-dressed entity watches over dining room, provides emotional support during events
+  - Room 23: Investigator felt covers pulled down and unseen presence join her in bed
+  - Lorraine Warren: "I have been aware of the haunting of the Curtis House for a very long time. There is a bedroom upstairs, that first bedroom, that room always seems to be very active"
+  - Ed and Lorraine Warren both confirmed hauntings; recommended inn for authentic haunted experience
+  - Donna Kent's Cosmic Society Investigation Team documented EVPs, orbs, and personal experiences; published in "Ghost Stories and Legends of Southwestern Connecticut"
+  - Hardisty family: Four generations operated inn 1954-2018; TJ Brennan stated "This inn is haunted. I would walk by a table and two minutes later, a plate would fly off that table"
+  - Staff accounts: Waitress Juanita Chappell saw chairs rocking continuously with no one present; housekeeper witnessed apparitions; diner heard phantom horses and stagecoach (confirmed historic stagecoach stop)
+  - Hotel Hell (2014): Gordon Ramsay featured inn, had difficulty exiting his room; read from Donna Kent's book about Room 16 on camera
+  - Thrillist named Curtis House the scariest place in Connecticut
+  - Now operates as 1754 House after Bates-Walsh family renovation in 2020
+  - Sources: TheHauntedPlaces, Hauntworld, HauntedHouses.com, CT Haunted Houses, HauntedPlaces.org, Joni Mayhan (paranormal investigator), Naugatuck Patch, Historic Hotels of America, Reality TV Updates, i95 Rock, My Family Travels, CT Insider, IMDB, Cosmic Society
+
+- **Deep Research: Chatham Manor** (Fredericksburg, VA) — Expanded ghost story from 307 to 5,944 characters with 10 verified sources
+  - Construction: Georgian brick mansion built 1768-1771 by 28-year-old William Fitzhugh on bluff overlooking Rappahannock River; estate encompassed 1,200+ acres worked by approximately 100 enslaved people
+  - Presidential visits: Only private residence in America visited by four presidents: George Washington, Thomas Jefferson, Abraham Lincoln, and Dwight D. Eisenhower; one of only three houses where both Washington and Lincoln set foot
+  - The Lady in White: Young English aristocrat fell in love with drysalter (cloth dyer) below her station; father sent her to Chatham to find suitable match; lover followed to America and they planned to elope
+  - George Washington intercept: Servant reported elopement plans to Washington who was visiting; on planned escape night, woman found Washington waiting instead of her lover; suitor arrested, woman shipped back to England
+  - Deathbed vow: Forced into approved marriage, bore ten children, "never smiled again"; vowed on deathbed June 21, 1790 to return to "the only place she was ever truly happy"
+  - Apparition pattern: Lady in White appears once every seven years on June 21 between noon and midnight; first documented sighting by visiting Frenchman in 1800s; next appearance June 21, 2028
+  - "Ghost Walk" path: Glowing apparition in long white colonial gown walks the route from manor to river where she planned to meet her lover
+  - 1805 slave rebellion: Overseer Mr. Starke cut Christmas break short; enslaved workers seized, bound, and whipped him; Philip killed in confrontation, James drowned in Rappahannock, Abraham executed for "conspiracy and insurrection," Robin and Cupid deported to Caribbean
+  - Civil War hospital: December 1862 Battle of Fredericksburg produced 9,000+ Union wounded; Chatham served as HQ for General Edwin Sumner and field hospital simultaneously
+  - Lincoln visit: May 23, 1862, President Lincoln conferred with commanders at Chatham overlooking the battlefield
+  - Notable medical personnel: Dr. J. Franklin Dyer (surgeon in charge), Dr. Mary Walker (only woman awarded Medal of Honor for Civil War service), Clara Barton, Isabella Fogg
+  - Walt Whitman: Arrived December 1862 searching for wounded brother George; witnessed "heap of amputated feet, legs, arms, hands" buried on grounds; horrors influenced his poetry
+  - Death toll: 130+ soldiers died at Chatham; bodies temporarily buried on grounds, later moved to Fredericksburg National Cemetery; patients placed on porches and ground, doors used as stretchers
+  - Soldier spirits: Shadowy figures in tattered Union uniforms standing silently in corners or patrolling river's edge; cold spots and electronic malfunctions near former surgery room; sounds of crying and moaning through hospital rooms
+  - 1986 NPS vigil: National Park Service staff held vigil on June 21st but Lady in White did not appear; some speculate she senses when people are actively searching
+  - Historian skepticism: John Hennessy states "Nobody has ever seen anything. No thumps in the night"
+  - Sources: Colonial Ghosts, NPS (Chatham Hospital, Slave Revolt), US Ghost Adventures, Virginia Haunted Houses, HauntedPlaces.org, Virginian-Pilot, Fredericksburg.com, M.A. Kleen, Encyclopedia Virginia
+
+- **Deep Research: Gadsby's Tavern** (Alexandria, VA) — Expanded ghost story from 331 to 5,759 characters with 14 verified sources
+  - Tavern history: Georgian brick complex comprising circa 1785 tavern and 1792 City Tavern and Hotel; named after John Gadsby who operated 1796-1808
+  - Founding Fathers: George Washington celebrated last two birthday balls here (1798, 1799); Thomas Jefferson held 1801 inaugural banquet; John Adams, James Madison, James Monroe, Lafayette, Benjamin Franklin, Alexander Hamilton all visited
+  - The Female Stranger: October 1816, mysterious veiled woman arrived from West Indies with husband, French-speaking valet and maid; gravely ill with suspected typhoid or yellow fever
+  - Dr. Richards and nurse Elizabeth Steuart attended her; both sworn to secrecy about identity
+  - Death: October 14, 1816, age 23 years and 8 months; husband sealed coffin personally, allowed no one to view remains
+  - Gravestone: Costly $1,500 marble table-top monument at St. Paul's Episcopal Church; inscription from Alexander Pope's "Elegy to the Memory of an Unfortunate Lady" and Acts 10:43
+  - The husband, valet, and maid vanished after burial; English bank note later discovered to be a forgery
+  - Identity theories: Theodosia Burr Alston (Aaron Burr's daughter lost at sea 1813), Alexander Hamilton's illegitimate child from Reynolds Affair, wealthy English heiress who eloped; husband allegedly spotted later in Sing Sing Prison under alias "Claremont"
+  - Second ghost: Anne Brunton Merry Wignell Warren, most celebrated actress in America, died in same Room 8 in June 1808 after delivering stillborn son
+  - Paranormal activity: Veiled woman in black holding candle, pale apparition in Room 8 window, candles lit and extinguished in sealed room, soft crying, icy drafts with faint perfume, footsteps in empty hallways
+  - Staff accounts: Museum Director Liz Williams documented candle phenomena; summer employee encountered ghost face-to-face in kitchen, quit on the spot
+  - Guest at ball followed mysterious woman into Room 8, found only lit candle with impossibly white wick as if never burned
+  - St. Paul's Cemetery: Visitors report overwhelming grief at grave, some have seen Female Stranger standing beside her own monument
+  - Annual events: "Death at the City Hotel" held every October 14th; Port City Brewing releases "Long Black Veil" black IPA in her honor
+  - National Historic Landmark since 1963; original ballroom woodwork now at Metropolitan Museum of Art
+  - Sources: City of Alexandria official, Wikipedia (2), WETA Boundary Stones, Northern Virginia Magazine, AARP Virginia, Gravestone Stories, Alexandria Ghosts (2), US Ghost Adventures, Ghost City Tours, Alexandria Times, National Park Service, Alexandria Living Magazine
+
+---
+
+## 2026-01-29
+
+### Changed
+- **Deep Research: Vanderbilt Hall** (New Haven, CT) — Expanded ghost story from 384 to 4,172 characters with 10 verified sources
+  - Building history: Completed 1894 at cost of $1 million (~$30 million today); gift of railroad tycoon Cornelius Vanderbilt II to memorialize son William Henry Vanderbilt II who died of typhoid fever in 1892 during junior year at Yale
+  - William's death: Contracted typhoid from contaminated water pump while touring American West; died at age 21 at family's Fifth Avenue home
+  - Architecture: Designed by Charles C. Haight in Collegiate Gothic/Tudor gatehouse style; Springfield Republican called it "the costliest and most magnificent college dormitory in America"
+  - Interior luxury: Marble and iron staircases with artistic railings, white enameled brick walls, mosaic tiled floors, gray marble bathrooms with porcelain tubs, oak-paneled rooms with large fireplaces, trunk elevators through all floors
+  - Notable early residents: Cornelius "Neily" Vanderbilt III and Alfred Gwynne Vanderbilt (who later died heroically on Lusitania 1915 giving his lifejacket to young mother); Cole Porter lived in Suite 31 during senior year (Yale Class of 1913)
+  - First women: In 1969 when Yale became coeducational, Vanderbilt Hall housed the university's first class of freshman women
+  - Vanderbilt Suite (VC-22): Located above the archway, features chandelier suspended from molded ceilings, red marble fireplace with fleur-de-lis patterns, mahogany paneled walls, parquet flooring of three stained woods
+  - Sealed door legend: Door on first floor allegedly remains perpetually sealed, opened only when Vanderbilt descendant is admitted to Yale
+  - Anderson Cooper: When enrolled in 1985, reportedly declined the suite to experience Yale as "normal" student, moved into Trumbull Hall instead
+  - Rooftop apparition: Throughout the years students have reported seeing large man strolling the roof of Vanderbilt Hall; tour guides suspect Cornelius Vanderbilt checking on students
+  - Temperature drops: Sudden and bizarre drops into freezing cold with no logical explanation, especially during summer months
+  - Dream visitations: Vanderbilt descendants claim patriarch appears in dreams to share wisdom; some report nightmares when he chides them for poor academic performance
+  - Ghost Walk: New Haven Ghost Walk begins at Vanderbilt Hall as "Yale's spookiest residence hall"; guides claim Cornelius "hops Metro North" from Grand Central Terminal to visit descendants
+  - Sources: Ghosts of New Haven, FrightFind, Historic Buildings CT, Lost New England, Yale Daily News (2), US Ghost Adventures, Buildings of New England, Roger Sherman House, Wikipedia
+
+- **Deep Research: Kenmore Plantation** (Fredericksburg, VA) — Expanded ghost story from 337 to 5,639 characters with 14 verified sources
+  - Construction: Completed 1775 as Georgian mansion for Colonel Fielding Lewis and Betty Washington Lewis (George Washington's only sister)
+  - Architecture: Ornate plasterwork ceilings by unknown "Stucco Man" who also decorated Mount Vernon; considered among finest colonial interiors in America
+  - Revolutionary War connection: Lewis helped establish Fredericksburg Gun Manufactory in 1775 to supply Continental Army; advanced 7,000 pounds personal funds
+  - Financial ruin: Lewis and Betty borrowed 30,000-40,000 pounds for war supplies; Virginia never repaid debts; Lewis died virtually bankrupt
+  - Fielding Lewis death: December 7, 1781 from tuberculosis, six weeks after Yorktown surrender; age 56; buried at unknown site in Frederick County
+  - Ghost of Fielding Lewis: Apparition in Revolutionary-era clothing seen at upstairs desk, intensely studying papers with sour expression
+  - First-floor phenomena: Fireplace tools found in disarray; heavy footsteps pacing when no one present; doorknobs turn by themselves
+  - Dining room: Napkins found mysteriously tossed about; cold breezes felt even in humid summer
+  - Activity period: Strongest from 1920s until 2001 restoration began
+  - Civil War: Battle of Fredericksburg (December 13, 1862) produced 17,000 casualties, half within sight of Kenmore; at least 11 cannonballs struck mansion
+  - Cannon damage: Kitchen and laundry buildings destroyed; one shell damaged famous Drawing Room plasterwork; 1989 restoration found live Borman-fuzed shell
+  - Field hospital (May 1864): After Battle of Wilderness; Officer Amos Rood described receiving "grog and opium pills" for infected leg wound
+  - Burials: 100+ Union soldiers buried in shallow graves on grounds; remains discovered in 1929 and 1935; reinterred at Fredericksburg National Cemetery
+  - Late-night accounts: Visitors report small footsteps inside empty house around 2 AM; whispered voices with no one present
+  - L.B. Taylor Jr.: Featured in "The Ghosts of Fredericksburg and Nearby Environs"; basis for UMW annual Ghost Walk
+  - Current: National Historic Landmark celebrating 250th anniversary; modern cannonballs mark artillery strike locations
+  - Sources: Virginia Haunted Houses, Occult World, US Ghost Adventures, Weekly Ringer, Hauntworld, M.A. Kleen, Mount Vernon, Encyclopedia Virginia, Wikipedia, Lives & Legacies Blog, NPS, Kenmore.org, Fredericksburg.com, Loudoun History
+
+- **Deep Research: Palace Theatre** (Stamford, CT) — Expanded ghost story from 771 to 3,858 characters with 10 verified sources
+  - Mary Vuono biography: Born Maria Miceli in Potenza, Italy, March 23, 1882; arrived in America as infant 1883; married Charles D. Vuono (co-founder of Vuono Construction Company) at age 19
+  - Strand Theatre success: Opened 1915; Stamford's first "talkie" movie house; husband purchased entire Burlington Arcade Building in 1920
+  - Palace Theatre opening: June 2, 1927; designed by Thomas W. Lamb (architect of Madison Square Garden and 300+ theaters); Stamford Advocate headline: "HUNDREDS TURNED AWAY, UNABLE TO OBTAIN TICKETS"
+  - Architecture: Terra cotta facade, domed auditorium, glittering chandeliers; Renaissance Revival style; originally 1,900 seats; "Connecticut's Most Magnificent"
+  - Famous performers: The Three Stooges, Lucille Ball, Bill "Bojangles" Robinson, Hattie McDaniel, Red Skelton, Jimmy Dorsey, Ed Sullivan, Blackstone the Magician
+  - Vuono's Palace: Theater renamed 1934-1936 in honor of Mary's dominance; she lived in apartment directly above auditorium for 51 years
+  - Death: October 1978 at age 96; died in her apartment above the theater
+  - Balcony ghost: Multiple sightings of Mary's ghost in her "traditional perch" in the balcony after her death; staff quote: "She's been very friendly, just making sure that we're taking good care of her home"
+  - Paranormal phenomena: Persistent whistling follows workers through building after hours; theater seats flip up and down rapidly with no one near; dark shadows slide along walls moving against light sources
+  - Ghost light tradition: Executive director: "One story is that all theaters are haunted, and they leave on a light for the ghosts so they can come out. We believe this is one of those theaters"
+  - 2012 RISEUP Paranormal investigation: 40 participants, four-hour investigation, $100 tickets; documented cold spots near apartment stairwell; captured unexplained audio; produced case report
+  - Sources: Hey Stamford (3), Stamford Advocate/CTInsider, Palace Theatre Official, Cinema Treasures (2), Stamford Patch, Wikipedia (Thomas W. Lamb, Ghost light), The Hour, Connecticut Visitor Guide, Westfair Online
+
+- **Deep Research: The Chamberlin** (Hampton, VA) — Expanded ghost story from 271 to 3,301 characters with 10 verified sources
+  - Site history: Fourth hotel at Old Point Comfort; Hygeia Hotel (1821) hosted Edgar Allan Poe's final poetry reading September 17, 1849; current building completed 1928 in Beaux Arts style by architect Marcellus Wright
+  - 1920 fire: March 7, 1920 at 4:45 PM, 400 guests and 200 employees escaped devastating blaze; 20,000 spectators watched five-story landmark burn through night; $43 million in damages (2014 dollars)
+  - Esmeralda ghost: Young woman haunts 8th floor Roof Garden ballroom waiting for her father (ship captain/fisherman) who never returned from sea; plays piano when no one is present; knocks items off shelves
+  - 1980s elevator operator account: "I was doing a walk through around 10 PM... I heard running behind me and turned to see wtf and was knocked flat on my back"
+  - Fire victim: Teenage girl who died in fire haunts 7th floor near where she perished; seen peering from windows, banging on walls
+  - Confederate soldier: Materializes in lobby wearing full uniform, gaze fixed on Fort Monroe; vanishes if approached
+  - Edgar Allan Poe apparition: Figure in top hat appears on veranda where Poe gave his final reading of "The Raven," "Ulalume," and "Annabel Lee"
+  - 2008 renovations: Contractor heard footsteps on plastic flooring, door opening/closing despite locked units; officer in Room 300 found briefcase moved repeatedly
+  - Mary's Kitchen: 1980s banquet staff encountered objects flying through basement kitchen
+  - General Manager testimony (2002): Lynda Ratliff: "I heard the story about the young girl's ghost almost as soon as I came here...and I still hear about it all the time from our guests"
+  - Current status: Luxury retirement community since 2008; top floor reportedly restricted due to persistent activity
+  - Sources: HauntedPlaces.org, Virginia Haunted Houses, Daily Press (3), US Army, US Ghost Adventures, Neptune Ghosts, Colonial Ghosts, AllStays
+
+- **Deep Research: Evergreen Cemetery** (New Haven, CT) — Expanded ghost story from 373 to 5,275 characters with 12 verified sources
+  - The legend of "Midnight Mary" (Mary E. Hart, 1824-1872): Collapsed at noon, died at midnight on October 15, 1872
+  - Buried alive legend: Aunt's nightmare prompted exhumation; allegedly found bloody fingernails and claw marks inside coffin
+  - Tombstone inscription: "THE PEOPLE SHALL BE TROUBLED AT MIDNIGHT AND PASS AWAY" (Job 34:20) interpreted as a curse
+  - Curse stories: College students allegedly found dead on her grave, three sailors impaled on fence spikes
+  - Vanishing hitchhiker legend: Mary's spirit seen on Winthrop Avenue asking for rides home
+  - Cemetery manager Dale Fiore: Unexplained security alarm incidents attributed to Midnight Mary
+  - Cemetery history: 85 acres, 85,000+ burials, founded 1848 by prominent citizens
+  - Notable neighbors: Sarah Winchester (Winchester Mystery House) buried nearby
+  - Ghost tours: New Haven Museum offers annual lantern-lit "Legends of Evergreen" tours
+  - Sources: Damned Connecticut, Atlas Obscura, Roadside America, New Haven Independent, Daily Nutmeg, My Dark Path, Wikipedia, Find a Grave, Evergreen Cemetery official, CT Haunted Houses, Yale Inscriptions, New Haven Museum
+
+- **Deep Research: College of William & Mary** (Williamsburg, VA) — Expanded ghost story from 316 to 5,912 characters with 14 verified sources
+  - Founded 1693 by royal charter from King William III and Queen Mary II; second-oldest institution of higher learning in America
+  - Wren Building: Oldest academic building in continuous use in America (completed 1700); survived three fires (1705, 1859, 1862 arson by Fifth Pennsylvania Cavalry)
+  - Wartime hospital: Served as field hospital during both Revolutionary War (French soldiers) and Civil War (Confederate soldiers); classes interrupted by screams of agony
+  - Crypt beneath chapel: Built 1729; contains Sir John Randolph, Peyton Randolph (twice president of Continental Congress), Bishop James Madison, Lord Botetourt; tombs desecrated after 1859 fire and robbed by Union soldiers in 1862
+  - Lord Botetourt statue: Students rub bronze foot for exam luck; original marble mutilated by Revolutionary-era student Benjamin Howard
+  - Brafferton Building (Indian School): Built 1723 to house Native American boys forcibly taken from tribes; first students were prisoners of war (1707); many died from disease or abuse
+  - The Running Ghost: Most commonly witnessed spirit on campus; Native American boy murdered in Sunken Garden by rival tribal student; seen sprinting elevated above current ground level (garden was excavated and lowered in 1935)
+  - Tucker Hall: Former library (1909), now English Department; 1980s legend of female student suicide on third floor; ghost asks students about exams, throws books if they say studying is going well; apparition seen in windows during 2009-2013 renovations
+  - Phi Beta Kappa Memorial Hall: Two spirits — Lucinda (lead actress who died before 1963 Our Town opening night, never performed since) and Miss Hunt (theater department founder who demands formal address)
+  - President's House (1732): Used by Cornwallis 1781, as French hospital, as Union headquarters 1862; door refused to close until unidentified bones discovered bricked into wall
+  - 2020 haunting map: Alumna Margot Baden created interactive map with 36+ paranormal accounts from students and alumni
+  - Sources: Colonial Ghosts, Williamsburg Ghost Tour (4), US Ghost Adventures, Virginia Haunted Houses, W&M Alumni Magazine, Daily Press, Flat Hat News (3), Ghost City Tours, Wikipedia
+
+- **Deep Research: Remington Arms Factory** (Bridgeport, CT) — Expanded ghost story from 366 to 4,582 characters with 12 verified sources
+  - Factory origins: Union Metallic Cartridge Company opened 1867; merged with Remington Arms 1912; expanded to 73-acre complex of 38 buildings in just 12 months
+  - Scale: New York Times called it "the greatest small arms and ammunition plant in the world"; employed over 17,000 workers; produced ammunition for both World Wars
+  - Shot tower: 190-foot tall, ten stories, once tallest building in Connecticut; molten lead dropped 133 feet through sieves to form perfect spheres; one of fewer than a dozen surviving worldwide
+  - 1905 explosion: April 4th, entire building destroyed, three workers killed instantly
+  - 1906 explosion: Sixteen tons of gunpowder detonated; damage as far as Long Island; miraculously no deaths
+  - 1914 labor violence: Frank Monte, 18-year-old striking worker, shot and killed by Remington security and Bridgeport police during strike suppression
+  - 1942 disaster: March 28th explosion killed four women and three men, injured 80; caused by nail falling into cartridge primer box; sent bullets whizzing through neighborhood
+  - Molten metal deaths: Two workers fell into giant kettles of molten metal, bodies liquified
+  - Ghost Adventures (Season 3, Episode 4): Executive producer Daniel Schwartz called it "right at the top" of eeriest locations; captured EVPs ("help," "not so hard"), partial leg/foot manifestation, battery failures
+  - Paranormal activity: Shadowy figures (believed to be 1942 victims unaware of their deaths), phantom factory sounds, gunshots, lights in tower despite no electricity
+  - Local testimony: "Lights in the tower turned on... you could see something shadowy moving"
+  - St. Augustine Cemetery: Adjacent cemetery where Hungarian woman was allegedly buried alive
+  - Closure: Production moved to Arkansas 1970; abandoned 1988; demolition began April 2023; shot tower preserved
+  - Sources: Damned Connecticut, Haunted Rooms America, Ghost Adventures Wiki, New England Historical Society, Abandoned America, SAH Archipedia, CT Haunted Houses, HauntedPlaces.org, Wikipedia, IMDB, Travel Channel, CT Post
+
+- **Deep Research: Church Hill Tunnel** (Richmond, VA) — Expanded ghost story from 308 to 5,187 characters with 13 verified sources
+  - Tunnel history: 4,000-foot C&O Railway tunnel built 1871-1873 beneath Church Hill; one of longest in US at completion; at least 9 workers died during construction in blue marl clay
+  - October 2, 1925 collapse: 190-foot section caved in on work train with locomotive 231 and ten flatcars; approximately 200 workers escaped through eastern portal
+  - Thomas Mason: Engineer pinned in cab by reverse lever and debris; body recovered October 10th; buried in coffin painted with "231"
+  - Benjamin Mosby: 28-year-old fireman scalded by ruptured boiler; emerged with broken teeth and skin hanging in ribbons; died at Grace Hospital; his appearance spawned Richmond Vampire legend
+  - Richard Lewis and H. Smith: Two African American laborers whose bodies were never recovered; remain entombed with locomotive beneath Jefferson Park
+  - Richmond Vampire legend: Urban legend first appeared online 2001, published 2007 in "Haunted Richmond: The Shadows of Shockoe"; creature allegedly fled to W.W. Pool's mausoleum in Hollywood Cemetery
+  - W.W. Pool: Respectable accountant (1840s-1922) who died three years before collapse; had no connection to disaster; remains vandalized and removed from mausoleum
+  - 1926 sealing: C&O filled tunnel with sand, sealed both portals with concrete; locomotive 231 and flatcars remain entombed
+  - 2006 exhumation attempt: Virginia Historical Society drilled boreholes; discovered flooded tunnel; $5 million cost ended project
+  - Paranormal activity: Muffled locomotive whistles, screams of "Get me out!", knocking from sealed entrance, digging sounds, shadowy figures near anniversary
+  - Current: Western portal visible beside Atrium Lofts at Cold Storage; owned by CSX Transportation; popular ghost tour stop
+  - Sources: Wikipedia (2), RVA Ghosts, US Ghost Adventures, WTVR, The Richmonder, Atlas Obscura, David Castleton, CHPN, 12 On Your Side, VPM, Find a Grave, Richmond Magazine
+
+- **Deep Research: Grove Street Cemetery** (New Haven, CT) — Expanded ghost story from 398 to 4,546 characters with 12 verified sources
+  - Cemetery history: America's first chartered burial ground, organized 1796 after yellow fever epidemics overwhelmed New Haven Green where 10,000 souls lay stacked
+  - Founding: Senator James Hillhouse led prominent families to create unprecedented planned "city of the dead" with named avenues and permanent family plots
+  - First burial: November 9, 1797; incorporated by State of Connecticut October 1797
+  - Egyptian Revival gate: Designed by architect Henry Austin in 1845, took three years to complete; Austin borrowed from temples at Dendera and Esna
+  - Gate inscription: "THE DEAD SHALL BE RAISED" carved in bold letters across the lintel; winged orb (symbol of immortality) adorns the top
+  - Austin and Augur: Both the architect (Henry Austin, 1804-1891) and sculptor (Hezekiah Augur) who created the gate are buried within the cemetery they designed
+  - 1824 body snatching riot: 19-year-old Bathsheba Smith's corpse stolen from West Haven, found "doubled up in a heap" in Yale medical school cellar; 600 armed townspeople besieged building for two days; Governor Wolcott called militia
+  - Tunnel legend: Persistent rumors of underground tunnels connecting Yale medical school to cemetery; guides claim two tunnels survive, one containing jars of preserved brains; chief docent denies existence
+  - Notable burials: Roger Sherman (only man to sign all four founding documents), Eli Whitney, Noah Webster, Walter Camp ("Father of American Football"), Bart Giamatti, 14 Yale presidents
+  - Roger Sherman tomb: Five-legged table design—four legs for each document signed, one center leg for tenure as New Haven's first mayor
+  - Secret societies: Book and Snake tomb stands directly across Grove Street with metal serpent fences; Skull and Bones "Tomb" nearby with similar Egyptian Revival architecture
+  - Geronimo skull legend: 2005 Yale historian discovered 1918 letter suggesting Skull and Bones members believed fellows had stolen "the skull of the worthy Geronimo"
+  - Ghost tours: New Haven Ghost Walk culminates at cemetery with tales of restless spirits and "phantom of Geronimo"
+  - Paranormal reports: Visitors report eerie presence felt among tombstones, sensation of being watched by countless eyes, heavy atmosphere near dusk
+  - National Historic Landmark designation: 2000
+  - Sources: Grove Street Cemetery official, Wikipedia, SAH Archipedia, Yale Peabody Echoes of Egypt, New Haven Preservation Trust, CTvisit, Yale Daily News, CT Insider, Today in CT History, Ghosts of New Haven (2), Viator
+
+- **Deep Research: Boothe Memorial Park** (Stratford, CT) — Expanded ghost story from 378 to 4,621 characters with 12 verified sources
+  - Property history: Richard Boothe laid foundation in 1663; 32-acre estate along Housatonic River continuously occupied for 360+ years by twelve generations
+  - The Boothe brothers: David Beach Boothe (1867-1949) and Stephen Nichols Boothe (1869-1948) were eccentric wealthy entrepreneurs who transformed property starting 1929
+  - Unusual buildings: Over 20 structures including miniature lighthouse (miles from sea), 44-sided blacksmith shop (to outdo Henry Ford), clock tower whose Westminster chimes confused neighbors' chickens
+  - Spiritualism: Brothers deeply interested in spiritualism and world religions; built shrines throughout property; hosted Easter sunrise services drawing 4,000+ attendees until 1938
+  - Technocratic Cathedral: 1933-1934 redwood structure built without a single nail; monument to their unconventional beliefs
+  - John Zaffis investigation: The "Godfather of the Paranormal" (Ed and Lorraine Warren's nephew) documented extensive activity; captured photo of coffee pot levitating off wood stove; colleague Mike Roberge touched by unseen hands twice
+  - Civil War Room: So notorious that park officials keep chair by door for fainting visitors; first-grader felt sudden chills on 90-degree day; elderly woman fainted upon entering
+  - "Old Man Boothe" apparition: Multiple witnesses observed spirit of one of the brothers walking through house and ascending stairs
+  - Silhouette in window: Longtime neighbor reported seeing woman's figure at upstairs window "as visible as you or I" — building was empty
+  - Mrs. Boothe's bedroom: Staff member working alone heard woman's voice from upstairs; called hello from staircase; no one answered
+  - Boothe Cemetery: Visitors report sudden temperature drops, breath on neck, overwhelming doom; photographers capture orbs and mist; some claim spirits followed them home
+  - Ghost Storm investigation: Norwalk team led by Nick Grossman investigated for nearly a decade; captured entity "zooming past" investigator's head on video; recorded Class A EVPs
+  - Poltergeist activity: Non-working grandfather clock chimes on its own; disconnected antique telephone heard ringing; unexplained power surges
+  - Legacy: Brothers bequeathed estate to Stratford upon deaths in late 1940s; National Register of Historic Places 1985
+  - Sources: Damned Connecticut, HauntedPlaces.org, CT Haunted Houses, Occult World, PRSNE (John Zaffis), Friends of Boothe Park, Daily Nutmeg, CTMQ, Wikipedia, CT Post, CT Real Estate History, Stratford CT official
+
+- **Deep Research: Fort Nathan Hale** (New Haven, CT) — Expanded ghost story from 328 to 4,908 characters with 14 verified sources
+  - Site history: Fortifications since 1659; Black Rock Fort built 1775-1776 for Revolutionary War; Fort Nathan Hale constructed 1807-1812; Civil War fort (Fort Nathan Hale II) built 1863-1866
+  - Battle of New Haven (July 5, 1779): 19 patriots under Lieutenant Daniel Bishop defended against 2,600 British troops led by Major General William Tryon and Commodore Sir George Collier
+  - Heroic defense: Militia held back British for hours until ammunition ran dry; spiked their cannons rather than surrender them; all 19 defenders captured
+  - British aftermath: Tryon's forces burned barracks, marched into New Haven, burned homes, killed patriots, became drunk on local rum; declared city "too pretty to burn"; 23 Americans killed, 15 wounded, 12 captured
+  - War of 1812: Federal guns kept British warships out of harbor
+  - Civil War fort: Earthen ramparts, five bombproof bunkers, moat with drawbridge, 18 heavy-caliber guns; completed 1866 but never saw combat
+  - Named after Nathan Hale: Connecticut's martyred spy hero executed September 22, 1776
+  - Paranormal activity: Green glowing orbs reported for over 100 years; apparitions of soldiers in Continental blue and Civil War gray
+  - Phenomena: Phantom footsteps on drawbridge, unexplained voices in tunnels, shadowy figures on battlements, faint musket fire sounds
+  - EVP evidence: May 9, 2015 visitor captured male voice whispering their name and spirit responding "La Bamba" to question about songs
+  - Local testimony: "I go camping there sometimes... I've seen and heard voices and the green orb"
+  - Cosmic Society: Documented location with "psychic photos"; investigation pending
+  - Garrison Leykam book: "Haunted New Haven" asks "What are those unexplained voices trying to tell us at Fort Nathan Hale?"
+  - Layered haunting: Revolutionary War and Civil War soldiers coexisting in same space
+  - Current: 20-acre park, over 7,000 annual visitors, National Register of Historic Places (1970)
+  - Sources: Wikipedia, Fort-Nathan-Hale.org, HauntedPlaces.org, CT Haunted Houses, SAR Connecticut (2), CTMQ, Community Foundation for Greater New Haven, Clio, Cosmic Society, US Ghost Adventures, Haunted New Haven book, Historical Marker Database, CT Visit
+
+- **Deep Research: Sheffield Island Lighthouse** (Norwalk, CT) — Expanded ghost story from 430 to 3,814 characters with 11 verified sources
+  - Captain Robert Sheffield: Revolutionary War veteran, escaped British prison ship 1778, bought island 1804 for $6,000, known for playing "long spell" (oversized violin) with porcupine quills
+  - Lexington disaster (January 13, 1840): Steamship caught fire near island, 139 of 143 passengers died, survivor David Crowley drifted 43 hours on cotton bale
+  - Keeper deaths: Gershom Smith served 1827-1845 raising 12 children; Noah Mosher Sr. "fell dead from his chair" in July 1872 while watching ships with spyglass
+  - 1991 archaeologist incident: Karen Orawsky heard "hypnotic and mystical" music, phantom foghorn (no foghorn exists), and distant cries for help
+  - 2006 investigation: Christine Kaczynski led 18 CTPRI investigators, detected three spirits including young girl named "Abby" trapped on island
+  - Recognition: Conde Nast Traveler named it one of 32 most haunted places in America (2023)
+  - Current: Norwalk Seaport Association offers ferry tours May-September and "Haunted Lighthouse" events
+  - Sources: Patch, Lighthousefriends, Connecticut History, Moon Mausoleum, CT Haunted Houses, CT Insider, i95 Rock, Seaport Association, NELights, Wikipedia
+
+- **Deep Research: Old State House** (Hartford, CT) — Expanded ghost story from 408 to 4,430 characters with 12 verified sources
+  - Building history: Designed by Charles Bulfinch (his first public commission), completed May 1796; Oliver Wolcott (Declaration signer) was first Governor to serve there
+  - Witch trial site: Alse Young became first person executed for witchcraft in colonial America on May 26, 1647 at Meeting House Square where building now stands; Hartford witch trials predated Salem by nearly 50 years
+  - Hartford Convention (1814): Twenty-six Federalist delegates met in secret for three weeks to discuss secession from the United States during War of 1812; ultimately rejected separation
+  - Amistad Trial (1839): Cinque and 52 Mende people illegally kidnapped from Sierra Leone faced murder/mutiny charges in Senate chamber; Roger Sherman Baldwin argued they were free men; case reached Supreme Court with John Quincy Adams
+  - Joseph Steward ghost: Minister, portrait painter, museum curator who opened one of America's first museums (Museum of Natural and Other Curiosities) on third floor in 1796; collection included two-headed calf, two-headed pig, 18-foot Egyptian crocodile, narwhal tusk labeled "unicorn horn"; his shadowy figure reported in windows where museum once stood
+  - Ghost Hunters investigation: TAPS investigated December 2009 (Season 5, Episode 24); captured audio of doorknob turning in empty Senate Room and woman sighing in Steward Museum
+  - Desk incident: Staff arrived one morning to find all House Chamber desks (40 lbs each) moved to center of room blocking aisle; took two staff members two hours to return them; building had been locked overnight
+  - Other phenomena: Footsteps in empty hallways, ghostly assembly meetings, elevator operates on its own, EMF activity near town green entrance
+  - Sources: Wikipedia (Old State House, Alse Young, Hartford Convention, Joseph Steward), FOX61, CT Haunted Houses, US Ghost Adventures, Connecticut History (2), Damned Connecticut, Historic Buildings CT, CT General Assembly
+
 - **Batch Deep Research: California Places** — Expanded 21 places with 5+ sources each, completing California coverage
   - Hollywood Forever Cemetery (Los Angeles) — 785 → 2,346 chars, 7 sources (Valentino, Virginia Rappe, Clifton Webb)
   - Mission Inn Hotel & Spa (Riverside) — 782 → 2,229 chars, 6 sources (Frank & Alice Miller, Bridal Suite, Catacombs)
