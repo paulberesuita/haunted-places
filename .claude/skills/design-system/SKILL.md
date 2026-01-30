@@ -26,6 +26,7 @@ Add to `<head>` in every SSR function:
           'dark': '#0a0c12',
           'dark-card': '#141419',
           'dark-border': '#2a2a35',
+          'dark-teal': '#0f1d24',
           'accent': '#e94560',
           'accent-hover': '#ff6b6b',
           'muted': '#6b7280',
@@ -44,6 +45,7 @@ Add to `<head>` in every SSR function:
 | `dark` | `#0a0c12` | Page background (`bg-dark`) |
 | `dark-card` | `#141419` | Card/section backgrounds |
 | `dark-border` | `#2a2a35` | Borders, dividers |
+| `dark-teal` | `#0f1d24` | Image overlay gradients, blends with photography |
 | `accent` | `#e94560` | Primary action, links, highlights |
 | `accent-hover` | `#ff6b6b` | Hover state for accent |
 | `muted` | `#6b7280` | Secondary text, labels |

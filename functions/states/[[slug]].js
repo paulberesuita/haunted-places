@@ -188,6 +188,7 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
             'dark': '#0a0c12',
             'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
+            'dark-teal': '#0f1d24',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
             'muted': '#6b7280',
@@ -1052,15 +1053,26 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   const stateCardsHtml = statesWithData.map(state => {
     const hasImage = statesWithImages.includes(state.code);
     return `
-    <a href="/states/${state.url}" class="group">
-      <div class="aspect-[4/3] overflow-hidden bg-dark-card mb-3 rounded-lg ${hasImage ? '' : 'flex items-center justify-center'}">
-        ${hasImage
-          ? `<img src="/assets/states/${state.code}.jpg" alt="${state.name}" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" loading="lazy">`
-          : `<span class="text-5xl opacity-30 group-hover:opacity-50 transition-opacity">&#128123;</span>`
-        }
+    <a href="/states/${state.url}" class="group block">
+      <!-- Card with layered white borders -->
+      <div class="state-card relative bg-white/10 p-[3px] rounded-lg">
+        <div class="bg-white/5 p-[3px] rounded-md">
+          <div class="bg-dark-card rounded overflow-hidden">
+            <div class="aspect-square overflow-hidden">
+              ${hasImage
+                ? `<img src="/assets/states/${state.code}.jpg" alt="${state.name}" class="state-img w-full h-full object-cover" loading="lazy">`
+                : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                    <span class="text-4xl opacity-30">&#128123;</span>
+                  </div>`
+              }
+            </div>
+            <div class="p-4 text-center bg-gradient-to-t from-dark via-dark-teal/80 to-transparent -mt-8 pt-12 relative">
+              <h3 class="font-semibold text-white group-hover:text-accent transition-colors text-lg">${state.name}</h3>
+              <span class="text-sm text-accent">${state.count} ${state.count === 1 ? 'place' : 'places'}</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <h3 class="text-sm font-medium group-hover:text-accent transition-colors">${state.name}</h3>
-      <p class="text-xs text-ghost">${state.count} haunted ${state.count === 1 ? 'place' : 'places'}</p>
     </a>`;
   }).join('\n');
 
@@ -1095,6 +1107,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
             'dark': '#0a0c12',
             'dark-card': '#1a1a2e',
             'dark-border': '#2a2a35',
+            'dark-teal': '#0f1d24',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
             'muted': '#6b7280',
@@ -1183,6 +1196,19 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     }
     #dust-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
     #fog-canvas { position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.3; }
+    .state-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .group:hover .state-card {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.15);
+    }
+    .state-img {
+      transition: transform 0.5s ease;
+    }
+    .group:hover .state-img {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body class="text-gray-100 min-h-screen">
@@ -1247,7 +1273,7 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
     <p class="text-ghost text-lg mt-3">${totalPlaces} haunted locations across ${states.length} states</p>
   </section>
   <main class="max-w-7xl mx-auto px-4 py-8">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       ${stateCardsHtml}
     </div>
   </main>
