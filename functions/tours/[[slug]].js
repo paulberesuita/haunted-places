@@ -241,15 +241,6 @@ function renderToursIndexPage(cities, baseUrl) {
   ${renderHeader('tours')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
-      <!-- Breadcrumbs -->
-      <nav class="mb-6" aria-label="Breadcrumb">
-        <ol class="flex items-center gap-2 text-sm text-muted">
-          <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
-          <li class="text-dark-border">/</li>
-          <li class="text-ghost">Ghost Tours</li>
-        </ol>
-      </nav>
-
       <!-- Page Header -->
       <div class="mb-10">
         <div class="flex items-center gap-3 mb-2">

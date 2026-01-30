@@ -265,15 +265,6 @@ function renderCategoriesIndexPage(categories, baseUrl) {
   ${renderHeader('category')}
 
   <main class="max-w-7xl mx-auto px-4 py-8">
-    <!-- Breadcrumbs -->
-    <nav class="mb-6" aria-label="Breadcrumb">
-      <ol class="flex items-center gap-2 text-sm text-muted">
-        <li><a href="/" class="hover:text-accent transition-colors">Home</a></li>
-        <li class="text-dark-border">/</li>
-        <li class="text-ghost">Categories</li>
-      </ol>
-    </nav>
-
     <!-- Hero Section -->
     <div class="mb-10">
       <h1 class="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-3">Browse by Category</h1>
