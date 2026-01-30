@@ -4,6 +4,61 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-01-30
+
+### Changed
+- **Deep Research: Illinois (44 places)** — Expanded ghost stories for all 44 Illinois haunted places with 6 sources each
+  - **Chicago (14 places):** Bachelor's Grove Cemetery, Resurrection Cemetery, Congress Plaza Hotel, H.H. Holmes Murder Castle Site, Biograph Theater, St. Valentine's Day Massacre Site, Jane Addams Hull-House, Graceland Cemetery, The Drake Hotel, Red Lion Pub, Lincoln Park Zoo, Holy Name Cathedral, Wrigley Field, Iroquois Theatre Site, Hooters River North, Fireside Restaurant, The Golden Dagger
+  - **Alton (5 places):** McPike Mansion, Mineral Springs Hotel, Milton Schoolhouse, Jacoby Arts Center, First Unitarian Church
+  - **Springfield (5 places):** Lincoln Home, Lincoln's Tomb, Dana-Thomas House, Illinois Executive Mansion, Springfield Theatre Centre
+  - **Galena (5 places):** DeSoto House Hotel, Turner Hall, Galena & U.S. Grant Museum, Dowling House, Ryan Mansion
+  - **Joliet (2 places):** Old Joliet Prison, Rialto Square Theatre
+  - **Decatur (2 places):** Avon Theatre, Greenwood Cemetery
+  - **Other Illinois (11 places):** Peoria State Hospital (Bartonville), Elgin State Hospital, Hotel Baker (St. Charles), Two Brothers Roundhouse (Aurora), Ruebel Hotel (Grafton), Raven's Grin Inn (Mount Carroll), The Great Escape Restaurant (Schiller Park), The Irish Legend (Willow Springs)
+  - Key findings: Resurrection Mary is America's most famous vanishing hitchhiker ghost, H.H. Holmes Murder Castle had secret rooms and chutes, Bachelor's Grove is one of America's most haunted cemeteries with 100+ documented phenomena, Old Joliet Prison featured in Blues Brothers and Prison Break
+  - Ghost stories expanded from ~400-640 chars to ~1,600-2,400 chars each
+  - All 44 Illinois places now verified with 6 sources each
+
+- **Deep Research: Pennsylvania PHASE 1 (31 places)** — Expanded ghost stories for 31 Pennsylvania haunted places with 6+ sources each
+  - **Philadelphia (6 places):** Eastern State Penitentiary, Fort Mifflin, Independence Hall, Baleroy Mansion, Betsy Ross House, Laurel Hill Cemetery
+  - **Gettysburg Area (13 places):** Devil's Den, Little Round Top, Jennie Wade House, Sachs Covered Bridge, Triangular Field, Iverson's Pits, Pennsylvania Hall, The Slaughter Pen, Gettysburg Hotel, Farnsworth House Inn, Cashtown Inn, Dobbin House Tavern, Doubleday Inn, General Lee's Headquarters
+  - **Pittsburgh Area (4 places):** Omni William Penn Hotel, Allegheny County Jail, Green Man's Tunnel, Dead Man's Hollow
+  - **Other Pennsylvania (8 places):** Pennhurst Asylum (Spring City), Centralia, Hill View Manor (New Castle), Fulton Theatre (Lancaster), Jean Bonnet Tavern (Bedford), Nemacolin Castle (Brownsville), Seven Gates of Hell (Hellam)
+  - Key findings: Al Capone haunted by St. Valentine's Day Massacre victim at Eastern State, Death Chair at Baleroy Mansion kills those who sit in it, Raymond "Green Man" Robinson was a real disfigured person not a ghost, Centralia's underground fire will burn 250 more years
+  - Ghost stories expanded from ~350-500 chars to ~2,000-2,300 chars each
+  - 31 Pennsylvania places now verified — 20 remaining for Phase 2
+
+- **Deep Research: The Wayside Inn** (Ellicott City, MD) — Expanded ghost story from 919 to 5,347 characters with 9 verified sources
+  - Building history: Three-story granite Federalist structure built c. 1780 as farmhouse on tobacco plantation in Anne Arundel County (now Howard County)
+  - Notable guests: Local lore claims George Washington and John Quincy Adams lodged here; Washington's name appears on ledger at nearby Elkridge tavern
+  - Civil War: Ellicott City's strategic B&O Railroad position made it Union outpost; inn may have sheltered soldiers as makeshift hospitals sprang up throughout town
+  - The Candle Legend: Mother lit candle as son departed for Civil War, vowed to keep it burning until he returned; he never came home, she kept vigil anyway; previous owners maintained electric candles in all 35 windows (allegedly featured in "Ripley's Believe It or Not")
+  - Jenny (primary ghost): Housekeeping spirit who tidied third floor; former guests report woman's face emerging from wallpaper before receding; Osantowskis may have disturbed her when renovating third floor in 1980
+  - Paranormal phenomena: Deliberate footsteps in empty rooms, doors swinging open on ancient hinges, woman's perfume drifting through hallways, glimpse of white dress in peripheral vision
+  - Witness account: Visitor heard door open clearly followed by approaching footsteps, turned to greet newcomer but no one was there
+  - Stone Tape Theory: Ellicott City built on granite/quartz bedrock believed to attract and channel spiritual energy; Tiber River flows beneath buildings conducting paranormal energy; overhead transformers and electrical cables as additional conduits
+  - Ownership history: Shapiros, Hodges, Parletts let it deteriorate; Hartkopfs purchased 1963 and secured first historical designation; Gerards (1976), Osantowskis (1980, opened B&B), Baldersons (1998, paid $400,000, reopened 1999)
+  - Ellicott City reputation: "Most haunted town on the East Coast" with 250+ years of tragedy, floods, fires, executions, and Civil War casualties
+  - Sources: Haunted Rooms America, Wayside Inn Blog, Washingtonian, FrightFind, Baltimore Sun, Visit Howard County, HauntedPlaces.org, Southern Spirit Guide, Maryland Haunted Houses
+
+- **Deep Research: Maryland State House** (Annapolis, MD) — Expanded ghost story from 840 to 5,020 characters with 9 verified sources
+  - Building history: Completed 1779; oldest state capitol in continuous legislative use; only state house to serve as nation's capitol (November 1783 - August 1784)
+  - Architect: Joseph Horatio Anderson (main building); Joseph Clark (iconic wooden dome, 1785-1797)
+  - Historic dome: 121 feet tall; largest wooden dome in US constructed without nails; held by wooden pegs and iron straps; 28-foot lightning rod designed per Benjamin Franklin's specifications
+  - George Washington's resignation: December 23, 1783 in Old Senate Chamber; resigned as commander-in-chief before Congress; established civilian authority over military
+  - Treaty of Paris: Ratified January 14, 1784 in same chamber; officially ended Revolutionary War
+  - Thomas Dance (primary ghost): English plasterer who fell nearly 100 feet from dome scaffolding February 1793; per Maryland Gazette: "making a false step, fell to the floor and died a few hours afterward"
+  - Dance's tragic aftermath: Employer refused wages stating "Dance was dead, and dead men don't get paid"; also refused to return tools; widow and children deported to England
+  - Dance sightings: Colonial-garbed figure prowling balconies; seen walking balustrade inside dome after hours; photographed as man in tricorn hat on balcony railing
+  - Thomas Stone (ghost): Maryland signer of Declaration of Independence (died 1787); presence felt in Old Senate Chamber especially around December 23 anniversary
+  - Lady in Black: Veiled woman in 1800s mourning garments seen in lower level; stands motionless by grand staircase; brings rush of cold air and overwhelming sadness
+  - Revolutionary soldier: Full military attire, seen wandering grounds
+  - Paranormal activity: Rushing winds and cold blasts in sealed rooms; disembodied voices in Old Senate Chamber; water pitchers toppling; furniture moving; papers shuffling; gavel sounds in empty rooms
+  - Investigations: Local paranormal groups captured EMF spikes, temperature drops, bizarre audio; intelligent responses via spirit boxes when asking about Washington, Stone, Treaty of Paris
+  - Sources: Chesapeake Ghosts, Capital Gazette, Paranormal Traveler, Haunted Rooms America, Maryland State Archives, Wikipedia, Let's Roam, US Ghost Adventures
+
+---
+
 ## 2026-01-29
 
 ### Changed
@@ -74,6 +129,255 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-30
 
 ### Changed
+- **Deep Research: Surratt House Museum** (Clinton, MD) — Expanded ghost story from 974 to 3,880 characters with 11 verified sources
+  - Building history: Ten-room farmhouse built 1852 by John and Mary Surratt; served as tavern, post office, and polling place; area named Surrattsville in their honor
+  - Lincoln assassination connection: Mary's son John was Confederate courier and Booth's right-hand man; weapons and supplies hidden in second-floor room from September 1864; Booth's first stop after shooting Lincoln on April 14, 1865
+  - John Lloyd's testimony: Renter who testified Mary told him to have "the shooting irons" ready three days before assassination; sealed her fate
+  - Mary Surratt's execution (July 7, 1865, 1:22 PM): First woman executed by US federal government; hanged at Old Arsenal Penitentiary (now Fort McNair); final words: "Please don't let me fall"; President Andrew Johnson: "She kept the nest that hatched the egg"
+  - Director Laurie Verge (25+ years): Self-described skeptic who "can't explain the footsteps"; felt man's presence walking from bedroom and staring at her; staff meeting where 5-6 employees heard footsteps walk in front door, down hall, out back door — no one there
+  - Tour guide Julia Cowdery: Mysterious whistle "come here" signal; teacup rattled in exhibit "as if someone had picked it up and returned it to its saucer" while alone
+  - Visitor sightings: Bearded man in rocking chair reflected in mirror (vanishes when observed); child in period clothing under bed during tour (no children present)
+  - Hans Holzer investigation (1950s): Famous ghost hunter visited with medium Sybil Leek; featured in 1969 book "Windows to the Past"; case reopened for Travel Channel's "The Holzer Files"
+  - Lloyd's ghost theory: Verge believes heavy footsteps are John Lloyd "doing penance for getting his landlady hanged"
+  - Mary Surratt apparition: Floating around staircase, appearing on porch; men's apparitions on back stairs; muffled voices in empty halls
+  - Fort McNair hauntings: Soldiers see Mary in dark cloak walking from prison building to gallows site (now tennis court); officer heard woman scream "Don't let me fall!"; windows fog up in building where daughter Anna watched execution
+  - Sources: CNS Maryland, DC Ghosts, Maryland Haunted Houses, Wikipedia (Mary Surratt, Surratt House, John Lloyd, Hans Holzer), National Women's History Museum, History.com, Washingtonian, Famous Trials
+
+- **Deep Research: Maryland State House** (Annapolis, MD) — Expanded ghost story from 840 to 5,020 characters with 9 verified sources
+  - Building history: Completed 1779; oldest state capitol in continuous legislative use; only state house to serve as nation's capitol (November 1783 - August 1784)
+  - Architect: Joseph Horatio Anderson (main building); Joseph Clark (iconic wooden dome, 1785-1797)
+  - Historic dome: 121 feet tall; largest wooden dome in US constructed without nails; held by wooden pegs and iron straps; 28-foot lightning rod designed per Benjamin Franklin's specifications
+  - George Washington's resignation: December 23, 1783 in Old Senate Chamber; resigned as commander-in-chief before Congress; established civilian authority over military
+  - Treaty of Paris: Ratified January 14, 1784 in same chamber; officially ended Revolutionary War
+  - Thomas Dance (primary ghost): English plasterer who fell nearly 100 feet from dome scaffolding February 1793; per Maryland Gazette: "making a false step, fell to the floor and died a few hours afterward"
+  - Dance's tragic aftermath: Employer refused wages stating "Dance was dead, and dead men don't get paid"; also refused to return tools; widow and children deported to England
+  - Dance sightings: Colonial-garbed figure prowling balconies; seen walking balustrade inside dome after hours; photographed as man in tricorn hat on balcony railing
+  - Thomas Stone (ghost): Maryland signer of Declaration of Independence (died 1787); presence felt in Old Senate Chamber especially around December 23 anniversary
+  - Lady in Black: Veiled woman in 1800s mourning garments seen in lower level; stands motionless by grand staircase; brings rush of cold air and overwhelming sadness
+  - Revolutionary soldier: Full military attire, seen wandering grounds
+  - Paranormal activity: Rushing winds and cold blasts in sealed rooms; disembodied voices in Old Senate Chamber; water pitchers toppling; furniture moving; papers shuffling; gavel sounds in empty rooms
+  - Investigations: Local paranormal groups captured EMF spikes, temperature drops, bizarre audio; intelligent responses via spirit boxes when asking about Washington, Stone, Treaty of Paris
+  - Sources: Chesapeake Ghosts, Capital Gazette, Paranormal Traveler, Haunted Rooms America, Maryland State Archives, Wikipedia, Let's Roam, US Ghost Adventures
+
+---
+
+## 2026-01-30
+
+### Changed
+- **Deep Research: Surratt House Museum** (Clinton, MD) — Expanded ghost story from 974 to 3,880 characters with 11 verified sources
+  - Building history: Ten-room farmhouse built 1852 by John and Mary Surratt; served as tavern, post office, and polling place; area named Surrattsville in their honor
+  - Lincoln assassination connection: Mary's son John was Confederate courier and Booth's right-hand man; weapons and supplies hidden in second-floor room from September 1864; Booth's first stop after shooting Lincoln on April 14, 1865
+  - John Lloyd's testimony: Renter who testified Mary told him to have "the shooting irons" ready three days before assassination; sealed her fate
+  - Mary Surratt's execution (July 7, 1865, 1:22 PM): First woman executed by US federal government; hanged at Old Arsenal Penitentiary (now Fort McNair); final words: "Please don't let me fall"; President Andrew Johnson: "She kept the nest that hatched the egg"
+  - Director Laurie Verge (25+ years): Self-described skeptic who "can't explain the footsteps"; felt man's presence walking from bedroom and staring at her; staff meeting where 5-6 employees heard footsteps walk in front door, down hall, out back door — no one there
+  - Tour guide Julia Cowdery: Mysterious whistle "come here" signal; teacup rattled in exhibit "as if someone had picked it up and returned it to its saucer" while alone
+  - Visitor sightings: Bearded man in rocking chair reflected in mirror (vanishes when observed); child in period clothing under bed during tour (no children present)
+  - Hans Holzer investigation (1950s): Famous ghost hunter visited with medium Sybil Leek; featured in 1969 book "Windows to the Past"; case reopened for Travel Channel's "The Holzer Files"
+  - Lloyd's ghost theory: Verge believes heavy footsteps are John Lloyd "doing penance for getting his landlady hanged"
+  - Mary Surratt apparition: Floating around staircase, appearing on porch; men's apparitions on back stairs; muffled voices in empty halls
+  - Fort McNair hauntings: Soldiers see Mary in dark cloak walking from prison building to gallows site (now tennis court); officer heard woman scream "Don't let me fall!"; windows fog up in building where daughter Anna watched execution
+  - Sources: CNS Maryland, DC Ghosts, Maryland Haunted Houses, Wikipedia (Mary Surratt, Surratt House, John Lloyd, Hans Holzer), National Women's History Museum, History.com, Washingtonian, Famous Trials
+
+- **Deep Research: High Street Historic District** (Cambridge, MD) — Expanded ghost story from 829 to 6,181 characters with 12 verified sources
+  - "Most haunted street in America" according to Mindie Burgoyne (Chesapeake Ghost Tours) — 14 haunted sites in two city blocks
+  - Bloody Henny (Henny Insley): Enslaved woman executed June 1831 for allegedly killing enslaver's wife; hanged by oxcart method ("long, slow, horrible death"); children's chant "What'd they hang you for, Bloody Henny?" still heard at night near Spring Valley Park fountain
+  - The LeCompte Curse: 1659 Choptank Indian curse on Antoine LeCompte — "Because he was blind to the ways of peace, his sons will suffer blindness"; over 40 descendants went blind including 19 documented in 1819; blindness still affects male line today
+  - Josiah Bayly House (oldest house in Cambridge): Built 1750 Annapolis, barged across Chesapeake Bay; floating British redcoat ghost traveled with house; little girl spirit appears in antique cheval mirror; shackles found in attic and basement; Smithsonian excavated slave cabin
+  - George Woolford (suicidal banker): Bank president hanged himself after 1929 crash; footsteps heard pacing Richardson Maritime Museum attic
+  - Christ Church singing tree: 200-year-old yew encroaching Ann Weller's 1817 grave; tree "sings" and vibrates when touched; four Maryland governors buried in churchyard
+  - Cambridge House murder (112 High Street): Violent foyer confrontation with "umbrella and fireplace poker" ending in gunfire; objects mysteriously disappear
+  - Other spirits: One-legged sea captain, eccentric cat lady, dying daughter, oystermen, pirates and phantom ships at Long Wharf
+  - Historical context: Founded 1684 as plantation port; town pier was regional slave market; became Underground Railroad stop; center of oyster industry
+  - Sources: Chesapeake Ghost Tours (4 articles), My Eastern Shore MD, What's Up Mag, Bay to Bay News, WMDT, Visit Dorchester, Visit Maryland, Wikipedia, Caroline County Historical Society
+
+- **Deep Research: Burnside Bridge** (Sharpsburg, MD) — Expanded ghost story from 1,170 to 4,021 characters with 10 verified sources
+  - Bridge history: Three-arched limestone bridge built 1836 by master bridge builder John Weaver for $3,200; originally called Rohrbach's Bridge
+  - Battle of Antietam (September 17, 1862): Bloodiest single day in American history; 23,100 casualties
+  - Confederate defense: 450 Georgian soldiers from 2nd and 20th Georgia regiments held off nearly 14,000 Union troops for four hours
+  - Key figures: Brigadier General Robert Toombs, Colonel Henry Benning, Lt. Col. William R. Holmes (killed), General Ambrose Burnside
+  - Lee's praise: "General Toombs' small command repulsed five different assaults made by greatly superior officers"
+  - Benning's tribute: "During that long and terrible fire, not a man, except a wounded one, fell out and went to the rear"
+  - Unmarked burials: Many fallen soldiers hastily buried in unknown locations near the bridge
+  - Blue light phenomena: Mysterious balls of blue light float across the water and among the trees at night
+  - Phantom drummer: Sound of a drum beating out a cadence echoes across the creek, then fades into silence
+  - Blue-uniformed apparitions: Witnesses describe seeing soldiers crossing in formation before vanishing mid-span
+  - Sensory experiences: Visitors report smelling tobacco and gunpowder while standing on the bridge
+  - Ghost photograph: Famous image captured faces in water beneath center arch; Park Ranger Stephanie Gray and staff examined it
+  - Cold spots and emotional residue: Sudden overwhelming fear or despair felt on the bridge itself
+  - Anniversary intensification: Phenomena said to intensify each September 17th
+  - Sharpsburg Ghost Tours: Founded 2008 by Meredith Moore; candlelit tours past the bridge sharing four decades of paranormal experiences
+  - Sources: FHWA, Moon Mausoleum, American Battlefield Trust, Lores and Legends, Dixie Spirits, The Clio, Antietam Voices, C.A.S.P.E.R., NPS, Small Town Ghost Tours
+
+- **Deep Research: Westminster Hall and Burying Ground** (Baltimore, MD) — Expanded ghost story from 426 to 4,752 characters with 9 verified sources
+  - Cemetery history: Established 1786 by First Presbyterian Church; church built on brick piers over graves in 1852, creating the "Baltimore Catacombs"
+  - Nearly 300 Revolutionary War and War of 1812 veterans buried, including fifteen generals; National Register of Historic Places (1974)
+  - Edgar Allan Poe (primary ghost): Died mysteriously October 7, 1849 after being found delirious, repeatedly crying "Reynolds\!"; medical records lost
+  - Death theories: Cooping (election fraud kidnapping), rabies, murder by fiancee's brothers, brain tumor
+  - Poe's burial: Originally unmarked grave; marble headstone destroyed when train derailed through stonecutter's yard; reburied 1875 via "Pennies for Poe" campaign; Walt Whitman attended dedication
+  - Poe's ghost: Appears in period dress with dark matted hair and sorrowful expression at grave, altar, and catacombs
+  - The Poe Toaster (1930s-2009): Black-clad figure with silver-tipped cane left three roses and Martell cognac each January 19th; roses represented Poe, wife Virginia, mother-in-law Maria Clemm
+  - Poe Toaster revival (2016): Maryland Historical Society held auditions; new anonymous Toaster plays Danse Macabre on violin
+  - Lucia Watson Taylor (ghost): Died 1816 at age 16; appears in white gown kneeling at her grave in prayer before vanishing
+  - Screaming Skull of Cambridge: Murdered minister's skull allegedly filled with cement; piercing screams reported from burial area
+  - Groundskeeper ghost: White-haired elderly man patrols graves; chases loud visitors with shovel
+  - Straightjacket woman: Allegedly buried bound; crazed laughter echoes through catacombs
+  - Media: Featured on "Sightings - The Ghost Report," "Creepy Canada," and "Scariest Places on Earth"; named Maryland's most haunted cemetery in national poll
+  - Sources: Tour Baltimore Ghosts, FrightFind, Baltimore Heritage, Wikipedia, Edgar Allan Poe Society, WETA Boundary Stones
+
+- **Deep Research: Patapsco Female Institute** (Ellicott City, MD) — Expanded ghost story from 831 to 4,028 characters with 9 verified sources
+  - Building history: Greek Revival structure designed by Robert Cary Long Jr., built 1837 atop Mount Misery; rare yellow-tinted granite donated by Ellicott brothers
+  - Educational significance: First school in America to teach math to girls; under headmistress Almira Hart Lincoln Phelps (1841-1856), trained women in chemistry, botany, philosophy
+  - Famous alumni: Jefferson Davis's daughter Winnie, Thomas Jefferson's great-granddaughter Sally Randolph (later headmistress)
+  - Building timeline: School closed 1891; became Burg Alnwick Hotel, WWI veterans' hospital (50 beds), Hill Top Theatre (1930s), nursing home; left as ruin when Howard County ordered wood removal 1958
+  - Annie (primary ghost): Teenage girl in Victorian clothing — day dress, nightgown, or ball gown; legend says Annie Van Derlot was plantation owner's daughter who died of pneumonia waiting for family to arrive
+  - 1980s witness: Man sledding as child saw Annie standing near trees watching his family, radiating "sadness and despair"
+  - The Gentleman: Residual haunting in 1940s clothing; walks across non-existent second floor, gazes from windows; Chesapeake Shakespeare production manager felt overwhelming dread, colleague saw stern man vanish
+  - The Shadow: Rare phenomenon — shadow of man appears beside witnesses with no physical form to cast it
+  - Miss Margaret (headmistress ghost): Appears in white at grand staircase, accompanied by lavender scent
+  - 2021 investigation: Spirit communicated through dowsing rods that she "had been quite happy at the school but had died there"
+  - Paranormal theory: Tiber River crosses Patapsco River at this location (liminal space); composite granite with crystal quartz "holds and absorbs energy"
+  - Sources: Baltimore Banner, DC Ghosts, MidAtlantic Daytrips, MD Historic District, MD State Archives, BellaOnline, Maryland Paranormal Research, MD Historical Trust, The Clio
+
+- **Deep Research: Old White Marsh Church** (Trappe, MD) — Expanded ghost story from 799 to 4,025 characters with 10 verified sources
+  - Building history: One of Marylands oldest churches, erected between 1662-1665; predated every other church on Eastern Shore save Christ Church Kent Island
+  - St. Peters Parish: Designated one of thirty original parishes when Maryland Assembly established Church of England in 1692
+  - Reverend Daniel Maynadier: Huguenot refugee who fled French persecution c.1690; rector 1711-1745; married Hannah Martin (widow Hannah Parrott) in 1720
+  - The Premature Burial: Hannah declared dead and buried with jewel-studded wedding ring; grave robbers attempted to cut off her finger to steal ring
+  - Hannahs Awakening: Knife blade piercing flesh awakened her from comatose state; she screamed, thieves fled; she walked a mile home in burial shroud
+  - Reverends Shock: Daniel was by fireplace when he heard moan at door; opened to find fainting wife he had buried that day; she recovered and bore more children
+  - Burial Location: Both Daniel and Hannah buried beneath the chancel; road named Manadier Road (simplified spelling) passes the church
+  - Ghost Sightings: Hannah seen on moonlit nights walking Manadier Road clutching burial shroud; both Maynadiers spotted near empty graves and church ruins
+  - Paranormal Activity: Whispers on wind, strange musical sounds, bluish-white light near treeline, breathing difficulties reported deeper in cemetery
+  - Author Mindie Burgoyne describes site as a thin place, where the veil between this world and the next is transparent
+  - Church Fire: Burned January 1897 when farmers brush clearing ignited structure; only brick walls remain; partially restored 1977
+  - Notable Burials: Robert Morris Sr. (father of Revolutionary financier, died 1750 from infected cannon wound); Thomas John Claggett (first US Episcopal Bishop) officiated confirmation 1793
+  - Rev. Thomas Bacon (rector 1764-1768): Compiled Bacons Laws, authoritative compendium of Maryland colonial statutes
+  - Sources: Whats Up Media, Southern Maryland Chronicle, Talbot County Free Library, Chesapeake Country Roads, Find a Grave (2), Wikipedia, Maryland State Archives, MarylandHauntedHouses.com, Ancestry.com
+
+- **Deep Research: Antietam National Battlefield** (Sharpsburg, MD) — Expanded ghost story from 371 to 6,566 characters with 11 verified sources
+  - Battle context: Bloodiest single day in American history — September 17, 1862; 23,000 casualties in 12 hours (one every two seconds)
+  - Bloody Lane: 5,500 men fell in under four hours; phantom gunfire, gunpowder smell, Confederate soldiers who vanish when approached
+  - Irish Brigade (69th New York): Suffered 60% casualties, eight color-bearers shot; schoolboys heard Gaelic battle cry mistaken for Christmas caroling
+  - Reenactor account: Group camping at Bloody Lane fled one by one; last volunteer felt arm pressing on chest from blood-soaked earth
+  - Burnside Bridge: Blue orbs of light, phantom drummer, apparitions crossing in formation before vanishing mid-span
+  - Pry House: General Richardson died Nov 3, 1862; 1976 firefighters saw woman in window after floor collapsed; ghost is wife Fannie
+  - Piper House (Confederate HQ): Three dead soldiers removed from under parlor piano
+  - Dunker Church and St. Paul Episcopal Church: Hospital spirits, bloodstains that wont sand out
+  - Activity intensifies every September 17th anniversary
+  - Sources: FHWA, Annapolis Ghosts, Moon Mausoleum, Lores and Legends, Civil War Medicine Museum, and 6 more
+
+
+
+### Changed
+- **Deep Research: B&O Railroad Station Museum** (Ellicott City, MD) — Expanded ghost story from 1,088 to 3,606 characters with 10 verified sources
+  - Historical significance: Oldest surviving railroad station in America, built 1831 as terminus of first 13 miles of B&O Railroad; National Historic Landmark since 1968
+  - Tom Thumb connection: Site of Peter Cooper's famous 1830 locomotive demonstration and race against a horse (lost due to mechanical failure but proved steam power's viability)
+  - Charlie the ghost: Station agent who never stopped working; employees for decades have reported hearing boxes being slid across upper floors when no one is there
+  - Charles Harvey discovery: Staff named the ghost "Charlie" only to later discover a man named Charles Harvey had worked for the B&O and was its oldest employee at time of death
+  - 1885 Freight House: Designed by noted B&O architect E. Francis Baldwin; now houses model train diorama and is Charlie's primary haunt; investigators using EMF/dowsing rods report "conversations" with the spirit
+  - Civil War ghosts: Union soldier apparition seen during reenactments; Confederate prisoners were held here before transport to prison camps; escaped prisoner's footsteps still heard running down steps near former Railroad Hotel
+  - Lady in White: Wanders the station halls; one of Ellicott City's most famous spectral figures
+  - Granite theory: Town built on granite bedrock which mediums say attracts and channels spiritual energy; buildings constructed from rock blasted from bedrock they sit upon
+  - Ed Lilley quote: "For many years, people that have worked there have talked about being on the lower level, the main street level, and hearing boxes being slid around upstairs and there's nobody up there"
+  - Sources: Baltimore Fishbowl, MidAtlantic Daytrips, Visit Howard County, OutLook by the Bay, Howard County Government, SAH Archipedia, Historical Marker Database, Patapsco Heritage Greenway, Maryland History Tours
+
+- **Deep Research: Miller's Church** (Hagerstown, MD) — Expanded ghost story from 727 to 5,467 characters with 6 verified sources
+  - Historical context: Area has deeper roots than legends suggest; Jacob's Lutheran Church (originally "Friedens Kirche"/Peace Church) organized nearby c. 1791, dismantled 1841; founded by German Lutheran families including members with surname Hell
+  - Local names: Site variously known as "Peace Chapel," "Piece Chapel," and Miller's Church; some identify it as Mennonite rather than Catholic
+  - Central legend: 1930s church allegedly taken over by Satanic cult performing ritual sacrifices; subsequently burned down under mysterious circumstances
+  - Hanging girlfriend legend: Couple's car stalled, boyfriend left for help, returned to find girlfriend hanging from oak tree despite locked doors; locals from 1960s-70s insist "the story about the girl hanging from a tree is an urban legend—never happened"
+  - Phantom hearse: Most frequently reported phenomenon; large black old-fashioned vehicle pursues visitors aggressively before vanishing; local skeptic revealed it was driven by "a local who also had a grim reaper costume" to deter trespassers
+  - 1988 witnesses: Saw "13 hooded figures carrying candles" at 3 AM; encountered car with passengers having "extremely pale white" faces and "piercing black eyes"
+  - Physical phenomena: Handprint embedded between window panes (January 2021) that faded days later; invisible "stone wall" that stalled engines; child-sized handprint appearing on visitor's face
+  - Joseph sighting: Witness encountered pale boy in 1920s-30s clothing; later found grave marked "Joseph," age 12
+  - Skeptical perspective: 1992 North Hagerstown High graduate claims satanic graffiti was "kids who would go to smoke pot during the Satanic Panic in the 80s"
+  - Sources: Maryland Haunted Houses, HauntedPlaces.org, BUNOW, German Marylanders, GAMEO, Hagerstown Ghost Tour
+
+- **Deep Research: Old Princess Anne Jail** (Princess Anne, MD) — Expanded ghost story from 792 to 4,005 characters with 10 verified sources
+  - Building history: "The Grey Eagle" built 1857 with three-foot-thick Port Deposit granite walls after prisoners burned original jail; served as Somerset County Jail for 130 years until 1987
+  - George Armwood lynching (October 18, 1933): 22-year-old Black man with cognitive disabilities dragged from jail by mob of 2,000+; ears cut off, gold teeth ripped out, hanged, body burned; Maryland's last recorded lynching
+  - Failed justice: 42 witnesses testified, state police identified 9 mob leaders by name, yet no convictions; four men tried and acquitted by all-white juries
+  - 2003 renovation activity: Construction workers refused to work alone; tools flew across rooms, windows opened/closed on their own, phantom footsteps and disembodied voices; no one would stay after dark
+  - Police/dispatcher experiences: TVs turn on by themselves, shadows appear on walls with nothing to cast them, phantom voices on interview recordings
+  - Child's encounter: Dispatcher's son met "a lady" who appeared "sick" on second floor where no one was present; believed to be former inmate who died in custody
+  - Phantom face photo (2012): Guest photographed distinct face of small boy in window — hairline, eyebrows, nose, mouth clearly visible; window has no flooring behind it
+  - Mindie Burgoyne quote: "A lot of jails are haunted, but think of all the negative energy inside a jail"; Princess Anne tour is her "most disturbing" with children not permitted
+  - Sources: Chesapeake Ghosts, WMDT, Wikipedia (Armwood lynching), Maryland State Archives, Boundary Stones WETA, EJI Calendar, US Ghost Adventures, MD Historical Trust, Visit Somerset
+
+- **Deep Research: Teackle Mansion** (Princess Anne, MD) — Expanded ghost story from 818 to 3,573 characters with 8 verified sources
+  - Building history: 10,000 sq ft Neoclassical mansion built 1802-1819 by merchant Littleton Dennis Teackle; modeled after Scottish aristocratic estates
+  - Littleton Dennis Teackle: President of Bank of Somerset, Maryland House of Delegates member (1824-1836), traded local grain for Caribbean goods
+  - Elizabeth Upshur Teackle (1783-1836): Married Littleton 1800; called it "the house of her dreams"; managed extensive estate operations
+  - Financial ruin: Failed shipbuilding ventures, Navy contracts, and banking; sold Elizabeth's Virginia inheritance 1808; temporarily lost mansion title 1812
+  - Estate divided 1852 (two years after Littleton's death): Main block and south wing to Robert Dashiell, north wing to Francis Barnes
+  - Elizabeth's ghost: Most famous specter in Princess Anne; seen as candle flame moving past second-floor windows; silhouette standing motionless at windows
+  - Witness account: Former tenant "woke up in the middle of the night and a woman in a long white dress walked through his door and over to the window... he gathered his things and he left and he never came back"
+  - Police reports: Officers on patrol see "figure in the window in that top second floor moving from left to right"; security alarms trigger constantly with no intrusion
+  - Paranormal investigation: Temperature drops, investigators felt spiritual presence, all camera batteries drained in cold spots
+  - Secret tunnels: Legends of underground passages from mansion to Manokin River, possibly connected to pre-Civil War activities
+  - Literary connection: George Alfred Townsend's 1884 novel "The Entailed Hat" set at Teackle Mansion
+  - National Register of Historic Places: Added 1971; now Somerset County Historical Society headquarters
+  - Princess Anne Ghost Walk: Starts and ends at Teackle; Mindie Burgoyne calls it "our most disturbing tour"
+  - Sources: WMDT, Chesapeake Ghost Tours, TravelHag, Voices of Eastern Shore, SAH Archipedia, Digital Maryland, Find A Grave, NPS
+
+- **Deep Research: The Maryland Inn** (Annapolis, MD) — Expanded ghost story from 449 to 3,595 characters with 9 verified sources
+  - Building history: Built 1772 by Thomas Hyde, merchant and civic leader; America's longest-running continuously operating hotel
+  - Historical significance: Hosted delegates for Washington's resignation (December 1783) and Treaty of Paris ratification (January 1784); guests included Benjamin Franklin, Thomas Jefferson, Alexander Hamilton, Marquis de Lafayette
+  - Ownership: Thomas Hyde (1772-1784), Sarah Ball (1784+, former manager), Maryland Hotel Company (1868), restored 1953, Treaty of Paris Restaurant added 1970s
+  - Captain Charles Campbell and "The Bride" (primary ghosts): Legend says Campbell proposed around 1805, went to sea for 12 years; returning in 1817, he was crushed by runaway horse-drawn cart on Main Street while looking up at his bride in the window; she threw herself to death in grief
+  - Room 405 activity: Anxious footsteps pacing on hardwood floors; presence sitting at foot of bed; The Bride's weight leaning into mattress; tapping foot sounds; window flies open or slams shut; wispy apparition of The Bride pacing
+  - Drummer's Lot Pub basement: Captain Campbell appears in naval uniform with beer by fireplace or smoking pipe alone before vanishing; tobacco scent lingers after closing; Revolutionary soldier singing sea shanties
+  - Referenced in "Haunted Annapolis: Ghosts of the Capital City" by Mike Carter and Julia Dray: The lovers' spirits are never seen together — tragic reminder they remain separated even in death
+  - Other spirits: Woman in black (fell to death on staircase), giggling children in hallways, rowdy drunken Union soldiers (Annapolis was key Civil War disembarkation point), shadowy figures in Revolutionary War uniforms
+  - Witness accounts: Phantom tobacco smoke in empty dining room, rocking chair moving on porch, phantom cat curling at guests' feet, woman crawling across bed, TVs turning on and switching channels, figures emerging from iron-gated wine cellar
+  - Julia (40-year bartender): Confirmed guest reports of paranormal activity
+  - Sources: US Ghost Adventures, Annapolis Ghosts, Haunted Rooms America, Historic Hotels of America, HauntedPlaces.org, Maryland Haunted Houses, Chesapeake Living, Wikipedia, What's Up Media
+
+- **Deep Research: Barbara Fritchie House** (Frederick, MD) — Expanded ghost story from 342 to 3,755 characters with 10 verified sources
+  - Historical figure: Barbara Fritchie (1766-1862), 95-year-old widow immortalized in John Greenleaf Whittier's 1864 poem for allegedly waving Union flag at Stonewall Jackson's troops on September 10, 1862
+  - Famous quote: "Shoot, if you must, this old gray head, but spare your country's flag!"
+  - Historical dispute: Historians note Jackson's column never passed her house; the true heroine may have been Mary Quantrell, a 38-year-old mother whose confrontation had seven witnesses
+  - Notable connections: Close friend of Francis Scott Key; staged George Washington memorial service together in 1799; father-in-law executed for treason in 1781
+  - Winston Churchill visit (1943): Stopped at house with FDR and recited all 60 lines of the poem from memory
+  - House history: Original destroyed by Carroll Creek flood (1868); current structure is 3/4 scale reproduction built 1927; now operates as historic Airbnb guesthouse
+  - Primary ghost: Barbara Fritchie herself — impression of woman found on her bed each morning; rocking chair moves by itself
+  - Paranormal phenomena: Staff saw disembodied feet beneath quilt draped over rocking chair; lights flicker in main house and basement of adjacent Hauer House
+  - Most famous haunting: Barbara allegedly drops buckets of water on passersby wearing gray (Confederate colors)
+  - Frederick context: Known as "most haunted city in Maryland"; witnessed 3 Confederate invasions, 38 skirmishes; Antietam (23,000 casualties) just 19 miles west
+  - Sources: Maryland Haunted Houses, US Ghost Adventures, HauntedPlaces.org, Wikipedia, Find A Grave, The Clio, American Battlefield Trust, Frederick News-Post, Emerging Revolutionary War, Visit Frederick
+
+- **Deep Research: Reynolds Tavern** (Annapolis, MD) — Expanded ghost story from 312 to 4,319 characters with 8 verified sources
+  - Building history: Built 1747 by William Reynolds, a hatter who named it "The Beaver and Lac'd Hat"; Reynolds suffered tragedy before opening—wife Deborah Harper died 1746, two sons John and Thomas drowned July 1747
+  - Notable visitors: George Washington; meeting place for Corporation of the City of Annapolis and Mayor's Court
+  - Ownership timeline: William Reynolds (1747-1777), wife Mary Reynolds (1777-1785), daughter Magrette (1785-1796), Farmers National Bank (1812), Annapolis Public Library (1936-1974), restored as tavern in 2000
+  - John Shaw alterations (1812): Renowned Annapolis cabinetmaker added pedimented entrance porch and Georgian "bowfat" cupboard for Farmers Bank
+  - Primary ghost: Mary Reynolds, William's third wife; protective spirit who maintains order in the establishment she once managed
+  - Discipline methods: Locks drunk patrons in bathrooms; spills drinks in laps of disorderly guests; stacks silverware when tables aren't set properly
+  - Thief exposed: Employee's backpack strap mysteriously snapped, sending stolen frozen filet mignons flying across the room
+  - 2002 renovation activity: When Jill and Andrew Petit renovated after purchasing for $825,000, power drill moved on its own, objects disappeared and reappeared days later, dishes floated off tables, glassware exploded spontaneously
+  - Ghostly singing: Woman's voice heard singing Christmas carols from upstairs bedroom at all hours; human-shaped indentations appear in beds
+  - 2004 investigation: Maryland Ghost and Spirit Society led by sensitive Beverly Litsinger conducted overnight investigation; discovered not one but five spirits; monitoring equipment detected activity throughout building; plate broke mysteriously in kitchen
+  - Investigation aftermath: Energy stirred up was so intense owners discontinued further public paranormal investigations
+  - Sources: Annapolis Ghosts, Southern Spirit Guide, Maryland Haunted Houses, Reynolds Tavern official site, National Trust for Historic Preservation, Creative Travel Guide, Library of Congress, Capital Gazette
+
+- **Deep Research: Poplar Hill Mansion** (Salisbury, MD) — Expanded ghost story from 371 to 3,509 characters with 11 verified sources
+  - Building history: Federal-style mansion built 1795-1805; oldest building in Salisbury; served as Dr. John Huston's medical practice (Salisbury's first hospital)
+  - War of 1812: British spared the house during Chesapeake Bay raids because wounded soldiers could receive medical care here
+  - Sara (enslaved woman, age 19): Died in nursery fire while tending Huston children; skirt caught flames near fireplace; scorch marks still visible on floor
+  - Sara's activity: Opens dresser drawers, arranges clothing, pulls apart bed linens as if still serving the house
+  - Samuel (Sam): Enslaved man listed in 1828 inventory at $250; considers himself estate keeper; hums while working; was trapped in basement for years before release
+  - Sam's personality: "Many of the ghosts here are quite happy and pleasant, except for Samuel" — alerts mediums saying "Ma'am, there are people here"
+  - Two young girls: Believed to be Dr. Huston's daughters Sally and Elizabeth; EVP captured: "Mama, mama, are you there, mama can you hear me?"
+  - Children's room: Rocking chair repeatedly turns to face wall; toys rearrange themselves
+  - Dr. Huston: Apparition seen on main stairs holding medical bag
+  - Mrs. Sarah Huston: Recently manifesting; stern presence watching visitors carefully
+  - Spiritual portal: Dining room produces "sonic boom" sounds (rapport) when doorway between realms opens; transient spirits pass through
+  - Grandfather clock incident: Curator asked spirits about Christmas tree while alone; clock that "doesn't work, never worked, but chimed" responded
+  - Underground Railroad: Basement holds spirits of freedom seekers who died before reaching Pocomoke River
+  - International mediums (including one from Portugal) all report consistent phenomena
+  - National Register of Historic Places since October 7, 1971; museum allows paranormal investigations with strict protocols
+  - Sources: Poplar Hill Mansion official site, Shorebread, WMDT, Maryland Haunted Houses, Maryland Paranormal Research, Wikipedia, SAH Archipedia, US Ghost Adventures
+
 - **Deep Research: First Landing State Park** (Virginia Beach, VA) — Expanded ghost story from 302 to 5,203 characters with 11 verified sources
   - Historical significance: Site where English colonists first landed April 26, 1607; first violent clash with Native Americans wounded two colonists
   - Chesapeake Indian tragedy: Tribe annihilated by Powhatan before 1607 based on prophecy; 64 remains excavated in 1970s-80s sat on shelves for decades

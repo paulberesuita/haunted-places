@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 327 | 876 |
+| 443 | 876 |
 
 ---
 
@@ -346,6 +346,137 @@ Places that have been deeply researched with multiple independent sources, expan
 | [The Wren's Nest](https://spookfinder.com/place/wrens-nest-atlanta) | Atlanta | ~1,700 chars | 6 |
 | [Scull Shoals](https://spookfinder.com/place/scull-shoals) | Greensboro | ~1,650 chars | 6 |
 | [Georgia Guidestones Site](https://spookfinder.com/place/georgia-guidestones-site) | Elberton | ~1,700 chars | 6 |
+
+### Pennsylvania
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Jean Bonnet Tavern](https://spookfinder.com/place/jean-bonnet-tavern) | Bedford | 2,059 chars | 6 |
+| [Nemacolin Castle](https://spookfinder.com/place/nemacolin-castle) | Brownsville | 2,138 chars | 6 |
+| [Cashtown Inn](https://spookfinder.com/place/cashtown-inn) | Cashtown | 2,009 chars | 6 |
+| [Centralia](https://spookfinder.com/place/centralia) | Centralia | 2,296 chars | 6 |
+| [Devil's Den](https://spookfinder.com/place/devils-den) | Gettysburg | 2,164 chars | 6 |
+| [Dobbin House Tavern](https://spookfinder.com/place/dobbin-house-tavern) | Gettysburg | 2,102 chars | 6 |
+| [Doubleday Inn](https://spookfinder.com/place/doubleday-inn) | Gettysburg | 2,028 chars | 6 |
+| [Farnsworth House Inn](https://spookfinder.com/place/farnsworth-house-inn) | Gettysburg | 2,064 chars | 6 |
+| [General Lee's Headquarters](https://spookfinder.com/place/general-lees-headquarters) | Gettysburg | 2,089 chars | 6 |
+| [Gettysburg Hotel](https://spookfinder.com/place/gettysburg-hotel) | Gettysburg | 2,067 chars | 6 |
+| [Iverson's Pits](https://spookfinder.com/place/iversons-pits) | Gettysburg | 2,182 chars | 6 |
+| [Jennie Wade House](https://spookfinder.com/place/jennie-wade-house) | Gettysburg | 2,118 chars | 6 |
+| [Little Round Top](https://spookfinder.com/place/little-round-top) | Gettysburg | 1,968 chars | 6 |
+| [Pennsylvania Hall](https://spookfinder.com/place/pennsylvania-hall-gettysburg) | Gettysburg | 2,177 chars | 6 |
+| [Sachs Covered Bridge](https://spookfinder.com/place/sachs-covered-bridge) | Gettysburg | 2,111 chars | 6 |
+| [The Slaughter Pen](https://spookfinder.com/place/slaughter-pen) | Gettysburg | 2,120 chars | 6 |
+| [Triangular Field](https://spookfinder.com/place/triangular-field) | Gettysburg | 1,969 chars | 6 |
+| [The Seven Gates of Hell](https://spookfinder.com/place/seven-gates-of-hell) | Hellam | 2,061 chars | 6 |
+| [Fulton Theatre](https://spookfinder.com/place/fulton-theatre) | Lancaster | 2,076 chars | 6 |
+| [Dead Man's Hollow](https://spookfinder.com/place/dead-mans-hollow) | McKeesport | 2,073 chars | 6 |
+| [Hill View Manor](https://spookfinder.com/place/hill-view-manor) | New Castle | 2,076 chars | 6 |
+| [Baleroy Mansion](https://spookfinder.com/place/baleroy-mansion) | Philadelphia | 2,168 chars | 6 |
+| [Betsy Ross House](https://spookfinder.com/place/betsy-ross-house) | Philadelphia | 2,061 chars | 6 |
+| [Eastern State Penitentiary](https://spookfinder.com/place/eastern-state-penitentiary) | Philadelphia | 2,285 chars | 8 |
+| [Fort Mifflin](https://spookfinder.com/place/fort-mifflin) | Philadelphia | 2,136 chars | 6 |
+| [Independence Hall](https://spookfinder.com/place/independence-hall) | Philadelphia | 2,123 chars | 6 |
+| [Laurel Hill Cemetery](https://spookfinder.com/place/laurel-hill-cemetery) | Philadelphia | 2,162 chars | 6 |
+| [Allegheny County Jail](https://spookfinder.com/place/allegheny-county-jail) | Pittsburgh | 2,078 chars | 6 |
+| [Omni William Penn Hotel](https://spookfinder.com/place/omni-william-penn-hotel) | Pittsburgh | 2,192 chars | 6 |
+| [Green Man's Tunnel](https://spookfinder.com/place/green-mans-tunnel) | South Park | 1,997 chars | 6 |
+| [Pennhurst Asylum](https://spookfinder.com/place/pennhurst-asylum) | Spring City | 2,325 chars | 6 |
+
+### Illinois
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [First Unitarian Church](https://spookfinder.com/place/first-unitarian-church-alton) | Alton | 1,938 chars | 6 |
+| [Jacoby Arts Center](https://spookfinder.com/place/jacoby-arts-center) | Alton | 1,931 chars | 6 |
+| [McPike Mansion](https://spookfinder.com/place/mcpike-mansion) | Alton | 2,080 chars | 6 |
+| [Milton Schoolhouse](https://spookfinder.com/place/milton-schoolhouse) | Alton | 1,976 chars | 6 |
+| [Mineral Springs Hotel](https://spookfinder.com/place/mineral-springs-hotel) | Alton | 2,262 chars | 6 |
+| [Two Brothers Roundhouse](https://spookfinder.com/place/two-brothers-roundhouse) | Aurora | 2,077 chars | 6 |
+| [Peoria State Hospital](https://spookfinder.com/place/peoria-state-hospital) | Bartonville | 2,298 chars | 6 |
+| [Biograph Theater](https://spookfinder.com/place/biograph-theater) | Chicago | 2,200 chars | 6 |
+| [Congress Plaza Hotel](https://spookfinder.com/place/congress-plaza-hotel) | Chicago | 2,175 chars | 6 |
+| [Fireside Restaurant and Lounge](https://spookfinder.com/place/fireside-restaurant-lounge) | Chicago | 1,599 chars | 6 |
+| [Graceland Cemetery](https://spookfinder.com/place/graceland-cemetery) | Chicago | 2,133 chars | 6 |
+| [H.H. Holmes Murder Castle Site](https://spookfinder.com/place/hh-holmes-murder-castle-site) | Chicago | 2,257 chars | 6 |
+| [Holy Name Cathedral](https://spookfinder.com/place/holy-name-cathedral) | Chicago | 2,124 chars | 6 |
+| [Hooters River North](https://spookfinder.com/place/hooters-river-north) | Chicago | 1,722 chars | 6 |
+| [Iroquois Theatre Site (Death Alley)](https://spookfinder.com/place/iroquois-theatre-site) | Chicago | 1,944 chars | 6 |
+| [Jane Addams Hull-House Museum](https://spookfinder.com/place/jane-addams-hull-house) | Chicago | 2,182 chars | 6 |
+| [Lincoln Park Zoo](https://spookfinder.com/place/lincoln-park-zoo) | Chicago | 2,146 chars | 6 |
+| [Red Lion Pub](https://spookfinder.com/place/red-lion-pub) | Chicago | 2,038 chars | 6 |
+| [St. Valentine's Day Massacre Site](https://spookfinder.com/place/st-valentines-day-massacre-site) | Chicago | 2,297 chars | 6 |
+| [The Drake Hotel](https://spookfinder.com/place/the-drake-hotel) | Chicago | 2,090 chars | 6 |
+| [The Golden Dagger](https://spookfinder.com/place/golden-dagger) | Chicago | 1,929 chars | 6 |
+| [Wrigley Field](https://spookfinder.com/place/wrigley-field) | Chicago | 2,080 chars | 6 |
+| [Avon Theatre](https://spookfinder.com/place/avon-theatre-decatur) | Decatur | 1,996 chars | 6 |
+| [Greenwood Cemetery](https://spookfinder.com/place/greenwood-cemetery-decatur) | Decatur | 2,000 chars | 6 |
+| [Elgin State Hospital](https://spookfinder.com/place/elgin-state-hospital) | Elgin | 1,950 chars | 6 |
+| [DeSoto House Hotel](https://spookfinder.com/place/desoto-house-hotel) | Galena | 2,138 chars | 6 |
+| [Dowling House](https://spookfinder.com/place/dowling-house-galena) | Galena | 1,978 chars | 6 |
+| [Galena & U.S. Grant Museum](https://spookfinder.com/place/galena-history-museum) | Galena | 1,871 chars | 6 |
+| [Ryan Mansion](https://spookfinder.com/place/ryan-mansion) | Galena | 2,102 chars | 6 |
+| [Turner Hall](https://spookfinder.com/place/turners-hall) | Galena | 2,022 chars | 6 |
+| [Ruebel Hotel](https://spookfinder.com/place/ruebel-hotel) | Grafton | 1,903 chars | 6 |
+| [Old Joliet Prison](https://spookfinder.com/place/old-joliet-prison) | Joliet | 2,268 chars | 6 |
+| [Rialto Square Theatre](https://spookfinder.com/place/rialto-square-theatre) | Joliet | 1,962 chars | 6 |
+| [Resurrection Cemetery](https://spookfinder.com/place/resurrection-cemetery) | Justice | 2,370 chars | 6 |
+| [Bachelor's Grove Cemetery](https://spookfinder.com/place/bachelors-grove-cemetery) | Midlothian | 2,148 chars | 6 |
+| [Raven's Grin Inn](https://spookfinder.com/place/ravens-grin-inn) | Mount Carroll | 1,998 chars | 6 |
+| [The Great Escape Restaurant](https://spookfinder.com/place/great-escape-restaurant) | Schiller Park | 2,027 chars | 6 |
+| [Dana-Thomas House](https://spookfinder.com/place/dana-thomas-house) | Springfield | 2,074 chars | 6 |
+| [Illinois Executive Mansion](https://spookfinder.com/place/illinois-executive-mansion) | Springfield | 1,831 chars | 6 |
+| [Lincoln Home](https://spookfinder.com/place/lincoln-home) | Springfield | 2,032 chars | 6 |
+| [Lincoln's Tomb](https://spookfinder.com/place/lincolns-tomb) | Springfield | 2,133 chars | 6 |
+| [Springfield Theatre Centre](https://spookfinder.com/place/springfield-theatre-centre) | Springfield | 2,069 chars | 6 |
+| [Hotel Baker](https://spookfinder.com/place/hotel-baker) | St. Charles | 1,910 chars | 6 |
+| [The Irish Legend](https://spookfinder.com/place/irish-legend-willow-springs) | Willow Springs | 1,910 chars | 6 |
+
+### Maryland
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Governor Calvert House](https://spookfinder.com/place/governor-calvert-house) | Annapolis | 4,062 chars | 7 |
+| [Maryland State House](https://spookfinder.com/place/maryland-state-house) | Annapolis | 5,020 chars | 9 |
+| [Middleton Tavern](https://spookfinder.com/place/middleton-tavern) | Annapolis | 4,609 chars | 9 |
+| [Reynolds Tavern](https://spookfinder.com/place/reynolds-tavern) | Annapolis | 4,319 chars | 8 |
+| [The Maryland Inn](https://spookfinder.com/place/maryland-inn-annapolis) | Annapolis | 3,595 chars | 9 |
+| [Admiral Fell Inn](https://spookfinder.com/place/admiral-fell-inn) | Baltimore | 5,006 chars | 9 |
+| [Fort McHenry](https://spookfinder.com/place/fort-mchenry) | Baltimore | 4,897 chars | 7 |
+| [Lord Baltimore Hotel](https://spookfinder.com/place/lord-baltimore-hotel) | Baltimore | 4,790 chars | 10 |
+| [Max's Taphouse](https://spookfinder.com/place/maxs-taphouse) | Baltimore | 3,612 chars | 10 |
+| [The Horse You Came In On Saloon](https://spookfinder.com/place/horse-you-came-in-on-saloon) | Baltimore | 4,034 chars | 9 |
+| [Westminster Hall and Burying Ground](https://spookfinder.com/place/westminster-hall-burying-ground) | Baltimore | 4,752 chars | 9 |
+| [Rackliffe House](https://spookfinder.com/place/rackliffe-house) | Berlin | 4,054 chars | 6 |
+| [High Street Historic District](https://spookfinder.com/place/high-street-cambridge) | Cambridge | 6,181 chars | 12 |
+| [National Road Inn](https://spookfinder.com/place/national-road-inn) | Clear Spring | 3,237 chars | 7 |
+| [Surratt House Museum](https://spookfinder.com/place/surratt-house-museum) | Clinton | 3,880 chars | 11 |
+| [Old Denton Jail](https://spookfinder.com/place/denton-old-jail) | Denton | 4,474 chars | 9 |
+| [B&O Railroad Station Museum](https://spookfinder.com/place/bo-railroad-station-ellicott-city) | Ellicott City | 3,606 chars | 10 |
+| [Lilburn Mansion](https://spookfinder.com/place/lilburn-mansion) | Ellicott City | 4,293 chars | 10 |
+| [Mt. Ida](https://spookfinder.com/place/mt-ida-mansion) | Ellicott City | 3,736 chars | 7 |
+| [Patapsco Female Institute](https://spookfinder.com/place/patapsco-female-institute) | Ellicott City | 4,028 chars | 9 |
+| [The Wayside Inn](https://spookfinder.com/place/wayside-inn-ellicott-city) | Ellicott City | 5,347 chars | 9 |
+| [Barbara Fritchie House](https://spookfinder.com/place/barbara-fritchie-house) | Frederick | 3,755 chars | 10 |
+| [Glenn Dale Hospital](https://spookfinder.com/place/glenn-dale-hospital) | Glenn Dale | 3,666 chars | 8 |
+| [Jonathan Hager House](https://spookfinder.com/place/jonathan-hager-house) | Hagerstown | 3,241 chars | 8 |
+| [Miller's Church](https://spookfinder.com/place/millers-church) | Hagerstown | 5,467 chars | 6 |
+| [Concord Point Lighthouse](https://spookfinder.com/place/concord-point-lighthouse) | Havre de Grace | 4,809 chars | 11 |
+| [Rodgers House](https://spookfinder.com/place/rodgers-house-havre-de-grace) | Havre de Grace | 4,891 chars | 8 |
+| [Ocean City Life-Saving Station Museum](https://spookfinder.com/place/ocean-city-life-saving-station) | Ocean City | 4,603 chars | 9 |
+| [Shenanigan's/Shoreham Hotel](https://spookfinder.com/place/shoreham-hotel) | Ocean City | 4,158 chars | 8 |
+| [Old Princess Anne Jail](https://spookfinder.com/place/old-jail-princess-anne) | Princess Anne | 4,005 chars | 10 |
+| [Teackle Mansion](https://spookfinder.com/place/teackle-mansion) | Princess Anne | 3,573 chars | 8 |
+| [Poplar Hill Mansion](https://spookfinder.com/place/poplar-hill-mansion) | Salisbury | 3,509 chars | 11 |
+| [Point Lookout Lighthouse](https://spookfinder.com/place/point-lookout-lighthouse) | Scotland | 3,991 chars | 8 |
+| [Point Lookout State Park](https://spookfinder.com/place/point-lookout-state-park) | Scotland | 4,610 chars | 9 |
+| [Antietam National Battlefield](https://spookfinder.com/place/antietam-national-battlefield) | Sharpsburg | 6,566 chars | 11 |
+| [Burnside Bridge](https://spookfinder.com/place/burnside-bridge-antietam) | Sharpsburg | 4,021 chars | 10 |
+| [Pry House Field Hospital Museum](https://spookfinder.com/place/pry-house-field-hospital) | Sharpsburg | 4,767 chars | 10 |
+| [St. Paul Episcopal Church](https://spookfinder.com/place/st-paul-episcopal-church-sharpsburg) | Sharpsburg | 3,664 chars | 8 |
+| [Furnace Town Living Heritage Village](https://spookfinder.com/place/furnace-town) | Snow Hill | 3,137 chars | 9 |
+| [Kemp House Inn](https://spookfinder.com/place/old-brick-inn-st-michaels) | St. Michaels | 2,587 chars | 8 |
+| [Old White Marsh Church](https://spookfinder.com/place/old-white-marsh-church) | Trappe | 4,025 chars | 10 |
 
 ---
 
