@@ -371,14 +371,44 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
   <header class="max-w-7xl mx-auto px-4">
     <div class="h-14 flex items-center justify-between">
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
-      <nav class="flex gap-6 text-sm text-ghost">
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex gap-6 text-sm text-ghost">
         <a href="/states" class="hover:text-white transition-colors">States</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-ghost hover:text-white" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-dark/95 backdrop-blur-sm" onclick="document.getElementById('mobile-menu').classList.add('hidden')"></div>
+    <nav class="absolute top-0 right-0 w-64 h-full bg-dark-card border-l border-dark-border p-6">
+      <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="absolute top-4 right-4 p-2 text-ghost hover:text-white" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="mt-12 flex flex-col gap-6 text-lg">
+        <a href="/states" class="text-ghost hover:text-white transition-colors">States</a>
+        <a href="/category" class="text-ghost hover:text-white transition-colors">Categories</a>
+        <a href="/tours" class="text-ghost hover:text-white transition-colors">Tours</a>
+        <a href="/about" class="text-ghost hover:text-white transition-colors">About</a>
+      </div>
+    </nav>
+  </div>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('hidden');
+    });
+  </script>
 
   <!-- Framed Container -->
   <div class="frame-container">
@@ -1173,14 +1203,45 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   <header>
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="text-2xl tracking-widest" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
-      <nav class="flex gap-6 text-sm text-ghost">
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex gap-6 text-sm text-ghost">
         <a href="/states" class="text-white">States</a>
         <a href="/category" class="hover:text-white transition-colors">Categories</a>
         <a href="/tours" class="hover:text-white transition-colors">Tours</a>
         <a href="/about" class="hover:text-white transition-colors">About</a>
       </nav>
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-ghost hover:text-white" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-dark/95 backdrop-blur-sm" onclick="document.getElementById('mobile-menu').classList.add('hidden')"></div>
+    <nav class="absolute top-0 right-0 w-64 h-full bg-dark-card border-l border-dark-border p-6">
+      <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="absolute top-4 right-4 p-2 text-ghost hover:text-white" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="mt-12 flex flex-col gap-6 text-lg">
+        <a href="/states" class="text-white">States</a>
+        <a href="/category" class="text-ghost hover:text-white transition-colors">Categories</a>
+        <a href="/tours" class="text-ghost hover:text-white transition-colors">Tours</a>
+        <a href="/about" class="text-ghost hover:text-white transition-colors">About</a>
+      </div>
+    </nav>
+  </div>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('hidden');
+    });
+  </script>
+
   <section class="py-12 text-center">
     <h1 id="glitch-headline" class="glitch-text text-3xl md:text-4xl lg:text-5xl" style="font-family: 'Creepster', cursive;" data-text="Browse by State">Browse by State</h1>
     <p class="text-ghost text-sm mt-2">${totalPlaces} haunted locations across ${states.length} states</p>

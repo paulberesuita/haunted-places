@@ -346,14 +346,36 @@ function renderPlacePage(place, relatedPlaces, statePlaces, categoryPlaces, base
   <header class="nav-header" id="nav-header">
     <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
       <a href="/" class="text-2xl tracking-widest hover:text-accent transition-colors" style="font-family: 'Bebas Neue', sans-serif;">SPOOKFINDER</a>
-      <nav class="flex gap-6 text-sm text-white">
+      <nav class="hidden md:flex gap-6 text-sm text-white">
         <a href="/states" class="hover:text-accent transition-colors">States</a>
         <a href="/category" class="hover:text-accent transition-colors">Categories</a>
         <a href="/tours" class="hover:text-accent transition-colors">Tours</a>
         <a href="/about" class="hover:text-accent transition-colors">About</a>
       </nav>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-ghost hover:text-white" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
     </div>
   </header>
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/80" onclick="document.getElementById('mobile-menu').classList.add('hidden')"></div>
+    <div class="absolute right-0 top-0 h-full w-64 bg-dark-card border-l border-dark-border p-6">
+      <button onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="absolute top-4 right-4 p-2 text-ghost hover:text-white" aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <nav class="mt-12 flex flex-col gap-4">
+        <a href="/states" class="text-lg text-ghost hover:text-white transition-colors">States</a>
+        <a href="/category" class="text-lg text-ghost hover:text-white transition-colors">Categories</a>
+        <a href="/tours" class="text-lg text-ghost hover:text-white transition-colors">Tours</a>
+        <a href="/about" class="text-lg text-ghost hover:text-white transition-colors">About</a>
+      </nav>
+    </div>
+  </div>
+  <script>document.getElementById('mobile-menu-btn').addEventListener('click',function(){document.getElementById('mobile-menu').classList.remove('hidden')});</script>
 
   <!-- Hero Image -->
   ${imageUrl ? `
