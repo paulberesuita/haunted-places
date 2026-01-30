@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 321 | 876 |
+| 327 | 876 |
 
 ---
 
@@ -125,6 +125,8 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Gadsby's Tavern](https://spookfinder.com/place/gadsbys-tavern) | Alexandria | 5,759 chars | 14 |
 | [Lee-Fendall House](https://spookfinder.com/place/lee-fendall-house) | Alexandria | 4,201 chars | 8 |
 | [The Lyceum](https://spookfinder.com/place/alexandria-lyceum) | Alexandria | 3,799 chars | 12 |
+| [Ramsay House](https://spookfinder.com/place/ramsey-house) | Alexandria | 4,261 chars | 9 |
+| [Swope's Townhouse](https://spookfinder.com/place/swopes-townhouse) | Alexandria | 4,412 chars | 11 |
 | [Michie Tavern](https://spookfinder.com/place/michie-tavern) | Charlottesville | 5,345 chars | 9 |
 | [Monticello](https://spookfinder.com/place/monticello) | Charlottesville | 4,445 chars | 12 |
 | [University of Virginia](https://spookfinder.com/place/university-of-virginia) | Charlottesville | 6,989 chars | 10 |
@@ -145,8 +147,10 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Linden Row Inn](https://spookfinder.com/place/linden-row-inn) | Richmond | 5,884 chars | 12 |
 | [Maymont Mansion](https://spookfinder.com/place/maymont-mansion) | Richmond | 5,426 chars | 12 |
 | [Virginia State Capitol](https://spookfinder.com/place/virginia-state-capitol) | Richmond | 6,022 chars | 10 |
+| [Old City Hall](https://spookfinder.com/place/old-city-hall-richmond) | Richmond | 5,192 chars | 10 |
 | [Ferry Plantation House](https://spookfinder.com/place/ferry-plantation-house) | Virginia Beach | 6,103 chars | 10 |
 | [The Cavalier Hotel](https://spookfinder.com/place/cavalier-hotel) | Virginia Beach | 6,023 chars | 10 |
+| [First Landing State Park](https://spookfinder.com/place/first-landing-state-park) | Virginia Beach | 5,203 chars | 11 |
 | [College of William & Mary](https://spookfinder.com/place/william-and-mary-college) | Williamsburg | 5,912 chars | 14 |
 | [George Wythe House](https://spookfinder.com/place/george-wythe-house) | Williamsburg | 5,180 chars | 12 |
 | [Governor's Palace](https://spookfinder.com/place/colonial-williamsburg-governors-palace) | Williamsburg | 4,904 chars | 10 |
@@ -165,6 +169,9 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Natural Bridge](https://spookfinder.com/place/natural-bridge) | Natural Bridge | 4,499 chars | 8 |
 | [Public Hospital of 1773](https://spookfinder.com/place/public-hospital-williamsburg) | Williamsburg | 5,828 chars | 10 |
 | [Hotel 24 South](https://spookfinder.com/place/hotel-24-south) | Staunton | 2,802 chars | 7 |
+| [Princess Anne Country Club](https://spookfinder.com/place/princess-anne-country-club) | Virginia Beach | 3,499 chars | 8 |
+| [Historic Albemarle County Jail](https://spookfinder.com/place/albemarle-county-jail) | Charlottesville | 5,009 chars | 9 |
+| [Byrd Park Pump House](https://spookfinder.com/place/byrd-park-pump-house) | Richmond | 4,608 chars | 12 |
 
 ### Texas
 

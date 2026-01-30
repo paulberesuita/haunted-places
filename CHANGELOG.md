@@ -74,6 +74,99 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-30
 
 ### Changed
+- **Deep Research: First Landing State Park** (Virginia Beach, VA) — Expanded ghost story from 302 to 5,203 characters with 11 verified sources
+  - Historical significance: Site where English colonists first landed April 26, 1607; first violent clash with Native Americans wounded two colonists
+  - Chesapeake Indian tragedy: Tribe annihilated by Powhatan before 1607 based on prophecy; 64 remains excavated in 1970s-80s sat on shelves for decades
+  - 1997 repatriation: Nansemond Chief Emeritus Oliver Perry led effort; remains reburied April 26, 1997 in sacred ceremony exactly 390 years after colonists' arrival
+  - Burial ground: 20-foot circle near parking lot; visitors report eerie feelings, distant drumming and chanting at night
+  - Blackbeard's treasure: Pirate used Cape Henry as lookout ("Pirate's Hill"); men scanned Chesapeake Bay for merchant ships to plunder
+  - Treasure legend: Blackbeard buried plunder in dunes before escaping to North Carolina; captured and beheaded November 22, 1718 at Ocracoke
+  - Headless ghost: Blackbeard's specter seen after dusk wandering dunes, searching for treasure; prospectors claim ghost chases them away and moves treasure
+  - Crew ghosts: Ship said to have sunk offshore; ghostly voices, shadowy figures, and disturbing presence reported near water at night
+  - Colonial spirits: Figures in period dress vanish into trees; strange lights hover over ancient cypress swamps
+  - Park history: Built 1933-1940 by all-African American CCC crews; dedicated June 15, 1936 as Seashore State Park; renamed 1997
+  - National Natural Landmark: Northernmost point where subtropical and temperate plants grow together on East Coast
+  - Sources: Neptune Ghosts, Visit Virginia Beach, Abandoned Country, Virginia-Pilot Archives, US Ghost Adventures, Only In Your State, Wikipedia (Chesapeake, Blackbeard), DCR Virginia, Preservation Virginia
+
+- **Deep Research: Byrd Park Pump House** (Richmond, VA) — Expanded ghost story from 287 to 4,608 characters with 12 verified sources
+  - Building history: Gothic Revival masterpiece built 1881-1883 by Colonel Wilfred Emory Cutshaw (Richmond city engineer, Confederate artillery veteran with recommendation from Robert E. Lee)
+  - Unique municipal building: Drew water from James River and Kanawha Canal to Byrd Park Reservoir; also featured open-air dance hall above machinery room
+  - Gilded Age glamour: Debutantes in Victorian hoop skirts arrived by mule-drawn bateaux from Seventh and Canal Streets to dance on pine dance floor overlooking James River rapids
+  - Decline: Ceased operations 1924; machinery scrapped before WWII; slated for demolition 1950s; saved when First Presbyterian Church purchased for $1
+  - National Register of Historic Places: Added 2002; Friends of Pump House began restoration 2017; needs $8-12 million for full rehabilitation
+  - Robert Bess investigation: Founder of Foundation for Paranormal Research; inventor of Parabot (featured on Ghost Adventures); rates location "extremely haunted"
+  - Portal theory: Combination of running water, steel, slate roof, and iron throughout creates "conductor" acting as portal; March 2010 investigation drew 100+ participants
+  - Daniel Tetweiler (ghost): Man who allegedly hanged himself inside; sorrowful presence with figures seen dangling or drifting in shadows
+  - Elizabeth (ghost): Appears as floating orb of light, described as "most fantastic orb you will see"
+  - Spectra (ghost): Woman in white who "cuts loose with her energy force"; allegedly has 23 different spiritual groups traveling in her aura
+  - Volunteer account: Workers on second floor heard conversations below; flashlight extinguished on descent, voices ceased; light relit on retreat, pattern repeated
+  - Skeptical note: Friends of Pump House officially states they've found no evidence of haunting despite spending extensive time there
+  - Sources: Richmond Ghosts, Explanders, Our Community Now, Style Weekly, NBC12, Friends of Pump House, Richmond Magazine, Napier ERA, Wikipedia, Richmond On The James, Haunted Rooms America
+
+- **Deep Research: Historic Albemarle County Jail** (Charlottesville, VA) — Expanded ghost story from 270 to 5,009 characters with 9 verified sources
+  - Building history: Two-story stone structure built 1876 by architect G. Wallace Spooner; 20x68 feet with 3-foot-thick walls; used stones from earlier 1749 jail
+  - Prison conditions: One meal per day; up to four prisoners per cramped cell; brick annex added 1880; jailer's residence added 1886
+  - Samuel McCue case: Former three-term Charlottesville mayor (1896-1904); wife Fannie found strangled, clubbed, shot, and drowned in bathtub September 4, 1904
+  - Murder trial: McCue claimed burglars attacked them; teenage son testified home life was "a perfect hell on earth"; conviction for first-degree murder
+  - Last execution in Albemarle County: McCue hanged February 10, 1905 at 7:34 AM; botched execution — struggled 19 minutes before strangling to death
+  - Deathbed confession: Signed by three witnesses; McCue admitted he "alone is responsible for the deed, impelled to it by an evil power beyond his control"
+  - Hanging rope: Now preserved in UVA's Alderman Library archives
+  - Ironic burial: Brother Harry reinterred McCue in Riverview Cemetery in 1908 — next to murdered wife Fannie
+  - Spirit Walk employee "Paul": Playing role of jailer in dark breezeway, heard phantom footsteps approaching — no one there
+  - Paranormal activity: Phantom footsteps heard year-round pacing breezeway; overwhelming chill upon entering; unsettling presence in abandoned corridors
+  - Current status: Closed to public since 1974; museum conversion efforts failed; $1 million restoration estimate (2014)
+  - Sources: US Ghost Adventures, Cvillepedia, Executed Today, Daily Progress, Library of Congress, The Clio, CBS19 News
+
+- **Deep Research: Old City Hall** (Richmond, VA) — Expanded ghost story from 275 to 5,192 characters with 10 verified sources
+  - Building history: High Victorian Gothic masterpiece built 1886-1894; designed by Elijah E. Myers (architect of five state capitols including Michigan, Texas, Colorado)
+  - Construction troubles: $1,500 bribe scandal; 400% cost overrun ($300,000 to $1.3 million); almost 2 million cubic feet of James River granite quarried
+  - Black laborers: Building constructed primarily by Black workers under supervision of City Engineer Colonel Wilfred E. Cutshaw
+  - Site's tragic past: Occupies ground of former City Hall (1818) and Edmund Randolph House; original City Hall demolished after 1870 gallery collapse
+  - Capitol Disaster connection (April 27, 1870): 62 killed, 251 injured when Capitol courtroom gallery collapsed; victims included Patrick Henry's great-grandson, Fire Chief William Charters, State Senator J.W.D. Bland, and 13-year-old page John Turner
+  - Architectural features: 195-foot clock tower, three-foot granite walls, four corner towers of varying designs, three-story cast-iron atrium by Asa Snyder
+  - Primary hauntings: Chains rattling and desperate pleas from empty basement cells where prisoners were once held; cries come from nowhere and everywhere
+  - Female ghost: Victorian woman drifting through upper floors, believed to be employee who died during building's years as city hall (1894-1971); appears near grand staircase
+  - Dark presence: Building described as having "unsettling dark presence that seems to watch visitors from the shadows, leaving an eerie feeling hard to shake"
+  - Preservation: Saved from demolition twice (1915 and 1970) by Historic Richmond Foundation; National Historic Landmark 1971
+  - Current status: Private offices; first floor open to public Monday-Friday; featured on Richmond ghost tours alongside Virginia State Capitol
+  - Sources: Let's Roam, Wikipedia, Historic Richmond, The Clio, Library of Virginia/UncommonWealth, Virginia DHR, Architecture Richmond, Richmond Tour Guys, US Ghost Adventures, RVA Ghosts
+
+- **Deep Research: Ramsay House** (Alexandria, VA) — Expanded ghost story from 258 to 4,261 characters with 9 verified sources
+  - Building history: Alexandria's oldest structure, built c. 1724; legend says William Ramsay floated house up Potomac from Dumfries on barge c. 1749
+  - William Ramsay (1716-1785): Scottish merchant, city founder, first postmaster, first and only Lord Mayor of Alexandria (1761); married George Washington's cousin Ann Ball McCarty
+  - George Washington connection: Walked in both William's and Ann's Masonic funeral processions (February and April 1785)
+  - Dennis Ramsay (1756-1810): Son inherited property; Revolutionary War Captain rising to Colonel; later Mayor of Alexandria; pallbearer at Washington's funeral 1799
+  - Colorful history: Served as tavern, grocery, cigar factory, and WWII brothel for torpedo factory workers; 1942 fire left only one wall surviving
+  - Restoration: City purchased 1944 to prevent demolition; architect Milton L. Grigg restored 1946-1955; Visitor Center opened 1956
+  - Primary ghost: William Ramsay himself — shadowy colonial figure seen at upstairs window gazing at Potomac view he ensured for his family
+  - Female spirits: Women in period dress seen in basement, believed to be wives of Ramsay men (Ann Ball McCarty Ramsay or Dennis's wife Jane Allen Tayler)
+  - "Latte-loving ghost" incident: Staff prepared coffee maker at closing; first arrival found it already brewed overnight — attributed to hospitable William or tavern-keeper Dennis
+  - 2004 investigation: D.C. Metro Area Ghost Watchers allowed to investigate with infrared cameras, motion detectors, heat sensors by Convention and Visitors Association
+  - Current status: Ghost tours depart from gardens; visitors report strange noises, sudden chills, glimpses of colonial gentleman
+  - Sources: Alexandria Ghosts, Virginia Haunted Houses, HauntedPlaces.org, ALXnow, Washington Post, Alexandria Living Magazine, SAR Patriots, HauntedHouses.com, Visit Alexandria
+
+- **Deep Research: Swope's Townhouse** (Alexandria, VA) — Expanded ghost story from 267 to 4,412 characters with 11 verified sources
+  - Building history: Georgian townhouse at 210 Prince Street built 1784-1786 by Colonel Michael Swope and wife Eva Kuhn Swope
+  - Revolutionary War service: Swope led 1st (York) Regiment of Pennsylvania Flying Camp; captured at Fort Washington November 16, 1776
+  - Historic prisoner exchange: Swope traded one-for-one for William Franklin (Benjamin Franklin's loyalist son, last colonial Governor of New Jersey) in January 1781
+  - Post-war life: Moved to Alexandria 1784; operated ship chandlery at wharf; house remained in family until 1823
+  - Haunting origin: 1859 yellow fever epidemic in Philadelphia caused health officials to disinter Swope family vault; ghost sightings began immediately after
+  - English woman encounter: British visitor touring house to purchase felt icy hand on shoulder stopping her ascent to third floor; claimed Swope's spirit told her he despised her British roots
+  - Paranormal activity: Full-body apparition in Revolutionary War uniform answering front door; phantom piano music from empty house; tobacco smoke scent; bone-chilling cold spots on stairwell
+  - Second ghost: American spy John Dixon (allegedly executed by British) also haunts garden and attic; both spirits act as protective guardians
+  - Historic recognition: Documented by HABS in 1933; listed on National Register of Historic Places
+  - Book source: Michael Lee Pope's "Ghosts of Alexandria" describes Swope as "a true Patriot...a real hero of his day"
+  - Sources: Alexandria Ghosts, US Ghost Adventures, HauntedHouses.com, Library of Congress, HMDB, American Battlefield Trust, RevWarTalk, Find a Grave, Wikipedia
+
+- **Deep Research: Princess Anne Country Club** (Virginia Beach, VA) — Expanded ghost story from 1,116 to 3,499 characters with 8 verified sources
+  - Building history: Founded 1916 by Norfolk businessmen; golf course opened 1921; original clubhouse underwent 16 architectural changes before $12 million replacement in 2005
+  - The Spectral Bride: Young woman married at club in 1920s; appears in old-fashioned white dress near clubhouse and golf courses late at night; some accounts suggest she died in car accident near club
+  - Phantom jazz music: Witnesses hear 1920s jazz band playing in bar area whenever the bride spirit appears
+  - Malevolent male spirits: Multiple phantom men aggressively chase visitors away from property; most intimidating is caped figure suggesting military or aristocratic background
+  - Construction phenomena (2005): Workers heard phantom dinner service sounds — jangling silverware and clinking glasses — in empty construction site as if ghost staff were preparing for guests
+  - Ongoing activity: Lights flashing in unoccupied rooms, unexplained sounds, cold drafts throughout property
+  - Exclusivity factor: Members-only access limits documentation; hauntings passed down through member families; "once you join, you remain a member forever, perhaps even after death"
+  - Sources: Neptune Ghosts, Haunted Rooms America, US Ghost Adventures, Atlantic Wildfowl Heritage Museum, Colonial Ghosts, Jackrabbit Storage, Explore The South, Club + Resort Business
 - **Deep Research: Hotel 24 South** (Staunton, VA) — Expanded ghost story from 261 to 2,802 characters with 7 verified sources
   - Building history: Originally Stonewall Jackson Hotel, opened May 1924; designed by H.L. Stevens & Company in Georgian Revival style; cost $440,000 to build
   - Alexander Tobie Moore: "One of the best-known hotel men of the South"; drove hotel construction; died tragically in automobile accident 1935
