@@ -266,8 +266,8 @@ function renderCategoriesIndexPage(categories, baseUrl) {
 
   <main class="max-w-7xl mx-auto px-4 py-8">
     <!-- Hero Section -->
-    <div class="mb-10">
-      <h1 class="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-3">Browse by Category</h1>
+    <div class="mb-10 text-center">
+      <h1 style="font-family: 'Creepster', cursive;" class="text-5xl md:text-7xl text-white mb-3">Browse by Category</h1>
       <p class="text-ghost text-lg">${totalPlaces} haunted places across ${totalCategories} categories</p>
     </div>
 

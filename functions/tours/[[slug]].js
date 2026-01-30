@@ -242,11 +242,8 @@ function renderToursIndexPage(cities, baseUrl) {
 
   <main class="max-w-7xl mx-auto px-4 py-8">
       <!-- Page Header -->
-      <div class="mb-10">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-3xl">&#128123;</span>
-          <h1 class="text-3xl md:text-4xl font-bold text-white">Ghost Tours Directory</h1>
-        </div>
+      <div class="mb-10 text-center">
+        <h1 style="font-family: 'Creepster', cursive;" class="text-5xl md:text-7xl text-white mb-3">Ghost Tours</h1>
         <p class="text-ghost text-lg">${totalOperators} tour operators across ${cities.length} haunted cities</p>
       </div>
 
