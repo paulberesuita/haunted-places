@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 289 | 876 |
+| 321 | 876 |
 
 ---
 
@@ -124,6 +124,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Carlyle House](https://spookfinder.com/place/carlyle-house) | Alexandria | 4,978 chars | 12 |
 | [Gadsby's Tavern](https://spookfinder.com/place/gadsbys-tavern) | Alexandria | 5,759 chars | 14 |
 | [Lee-Fendall House](https://spookfinder.com/place/lee-fendall-house) | Alexandria | 4,201 chars | 8 |
+| [The Lyceum](https://spookfinder.com/place/alexandria-lyceum) | Alexandria | 3,799 chars | 12 |
 | [Michie Tavern](https://spookfinder.com/place/michie-tavern) | Charlottesville | 5,345 chars | 9 |
 | [Monticello](https://spookfinder.com/place/monticello) | Charlottesville | 4,445 chars | 12 |
 | [University of Virginia](https://spookfinder.com/place/university-of-virginia) | Charlottesville | 6,989 chars | 10 |
@@ -151,11 +152,19 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Governor's Palace](https://spookfinder.com/place/colonial-williamsburg-governors-palace) | Williamsburg | 4,904 chars | 10 |
 | [Peyton Randolph House](https://spookfinder.com/place/peyton-randolph-house) | Williamsburg | 4,677 chars | 10 |
 | [Bruton Parish Church](https://spookfinder.com/place/bruton-parish-church) | Williamsburg | 4,721 chars | 10 |
+| [King's Arms Tavern](https://spookfinder.com/place/kings-arms-tavern) | Williamsburg | 6,035 chars | 9 |
 | [Exchange Hotel](https://spookfinder.com/place/exchange-hotel) | Gordonsville | 6,318 chars | 10 |
 | [Mary Washington House](https://spookfinder.com/place/mary-washington-house) | Fredericksburg | 4,256 chars | 7 |
 | [Agecroft Hall](https://spookfinder.com/place/agecroft-hall) | Richmond | 5,418 chars | 7 |
 | [Cape Henry Lighthouse](https://spookfinder.com/place/cape-henry-lighthouse) | Virginia Beach | 3,758 chars | 8 |
 | [Ash Lawn-Highland](https://spookfinder.com/place/ash-lawn-highland) | Charlottesville | 4,013 chars | 8 |
+| [Shields Tavern](https://spookfinder.com/place/shields-tavern) | Williamsburg | 4,699 chars | 8 |
+| [Moses Myers House](https://spookfinder.com/place/moses-myers-house) | Norfolk | 4,617 chars | 9 |
+| [Elmwood Cemetery](https://spookfinder.com/place/elmwood-cemetery-norfolk) | Norfolk | 3,687 chars | 8 |
+| [St. George's Episcopal Church](https://spookfinder.com/place/st-georges-church-fredericksburg) | Fredericksburg | 4,042 chars | 10 |
+| [Natural Bridge](https://spookfinder.com/place/natural-bridge) | Natural Bridge | 4,499 chars | 8 |
+| [Public Hospital of 1773](https://spookfinder.com/place/public-hospital-williamsburg) | Williamsburg | 5,828 chars | 10 |
+| [Hotel 24 South](https://spookfinder.com/place/hotel-24-south) | Staunton | 2,802 chars | 7 |
 
 ### Texas
 
@@ -191,6 +200,30 @@ Places that have been deeply researched with multiple independent sources, expan
 | [The Alamo](https://spookfinder.com/place/the-alamo) | San Antonio | 2,256 chars | 6 |
 | [Catfish Plantation](https://spookfinder.com/place/catfish-plantation) | Waxahachie | 2,089 chars | 6 |
 | [Yorktown Memorial Hospital](https://spookfinder.com/place/yorktown-memorial-hospital) | Yorktown | 2,096 chars | 6 |
+| [Austin State Hospital](https://spookfinder.com/place/austin-state-hospital) | Austin | 2,072 chars | 5 |
+| [Littlefield House](https://spookfinder.com/place/littlefield-house-austin) | Austin | 2,137 chars | 5 |
+| [Millermore Mansion](https://spookfinder.com/place/millermore-mansion-dallas) | Dallas | 2,006 chars | 5 |
+| [Sons of Hermann Hall](https://spookfinder.com/place/sons-of-hermann-hall) | Dallas | 1,913 chars | 5 |
+| [Camino Real Hotel](https://spookfinder.com/place/camino-real-hotel) | El Paso | 1,910 chars | 5 |
+| [Concordia Cemetery](https://spookfinder.com/place/concordia-cemetery) | El Paso | 1,854 chars | 5 |
+| [El Paso High School](https://spookfinder.com/place/el-paso-high-school) | El Paso | 1,860 chars | 5 |
+| [El Paso Main Library](https://spookfinder.com/place/el-paso-main-library) | El Paso | 1,885 chars | 5 |
+| [Plaza Theatre](https://spookfinder.com/place/plaza-theatre-el-paso) | El Paso | 1,869 chars | 5 |
+| [Julia Ideson Building](https://spookfinder.com/place/julia-ideson-building) | Houston | 2,093 chars | 5 |
+| [Spaghetti Warehouse](https://spookfinder.com/place/spaghetti-warehouse-houston) | Houston | 2,040 chars | 5 |
+| [Gage Hotel](https://spookfinder.com/place/gage-hotel) | Marathon | 1,864 chars | 5 |
+| [Hotel Gibbs](https://spookfinder.com/place/hotel-gibbs) | San Antonio | 1,833 chars | 5 |
+| [Mission Espada](https://spookfinder.com/place/mission-espada) | San Antonio | 1,897 chars | 5 |
+| [Mission San Jose](https://spookfinder.com/place/mission-san-jose) | San Antonio | 1,881 chars | 5 |
+| [Old Bexar County Jail](https://spookfinder.com/place/old-bexar-county-jail) | San Antonio | 1,851 chars | 5 |
+| [San Antonio State Hospital](https://spookfinder.com/place/san-antonio-state-hospital) | San Antonio | 1,888 chars | 5 |
+| [Spanish Governor's Palace](https://spookfinder.com/place/spanish-governors-palace) | San Antonio | 1,910 chars | 5 |
+| [Terlingua Ghost Town](https://spookfinder.com/place/terlingua-ghost-town) | Terlingua | 1,831 chars | 5 |
+| [ALICO Building](https://spookfinder.com/place/alico-building-waco) | Waco | 1,896 chars | 5 |
+| [Armstrong Browning Library](https://spookfinder.com/place/armstrong-browning-library) | Waco | 1,933 chars | 5 |
+| [Cameron Park](https://spookfinder.com/place/cameron-park-waco) | Waco | 1,795 chars | 5 |
+| [Dr Pepper Museum](https://spookfinder.com/place/dr-pepper-museum) | Waco | 1,848 chars | 5 |
+| [Waco Hippodrome Theatre](https://spookfinder.com/place/waco-hippodrome-theatre) | Waco | 1,731 chars | 5 |
 
 ### Florida
 

@@ -49,7 +49,7 @@ export async function onRequestGet(context) {
   try {
     // Get all places
     const { results: places } = await env.DB.prepare(`
-      SELECT slug, state, created_at
+      SELECT slug, state, updated_at
       FROM places
       ORDER BY state, slug
     `).all();
@@ -206,8 +206,8 @@ export async function onRequestGet(context) {
 `;
 
     for (const place of places) {
-      const lastmod = place.created_at
-        ? new Date(place.created_at).toISOString().split('T')[0]
+      const lastmod = place.updated_at
+        ? new Date(place.updated_at).toISOString().split('T')[0]
         : today;
 
       xml += `  <url>

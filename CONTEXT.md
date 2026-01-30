@@ -4,6 +4,44 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-30
+
+### Sitemap lastmod Strategy — SEO Learning
+
+**Problem discovered:**
+After batch-updating 50 Georgia places with expanded ghost stories, we checked how long Google would take to re-index. Found that our sitemap uses `created_at` for `<lastmod>` dates, meaning Google has no signal that content was updated.
+
+**Why "use today's date for everything" is wrong:**
+1. Google crawls the page and compares to their cached version
+2. If content hasn't actually changed, they notice the mismatch
+3. They learn your `lastmod` dates are unreliable
+4. Over time, Google ignores your `lastmod` signals entirely
+5. John Mueller (Google Search Advocate) has explicitly said they treat `lastmod` as a "hint" and will distrust sites that abuse it
+
+**What Google actually does:**
+- Sees `lastmod` → prioritizes crawling that URL
+- Crawls page → compares to cached version
+- No real change? → loses trust in your sitemap signals
+- This is called "lastmod spamming" and Google has addressed it
+
+**Correct approach:**
+Only update `lastmod` when content actually changes. This builds trust, so when you *do* batch-update content, Google takes the signal seriously and prioritizes re-crawling.
+
+**Fix needed:**
+1. Add `updated_at` column to places table
+2. Update sitemap.xml.js to use `updated_at` instead of `created_at`
+3. When doing batch research, update `updated_at` alongside content changes
+
+**Indexing timeline expectations:**
+- Already-indexed pages with updates: 1-2 weeks
+- New pages on established sites: 4 days to 4 weeks
+- Can accelerate via Google Search Console "Request Indexing"
+
+**Key takeaway:**
+Honest signaling to Google pays dividends. Don't try to game the system with fake freshness dates.
+
+---
+
 ## 2026-01-27
 
 ### Image Research Batch 2 — Process Optimization

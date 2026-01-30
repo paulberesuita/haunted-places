@@ -74,6 +74,126 @@ What we shipped. Builder appends here after each feature.
 ## 2026-01-30
 
 ### Changed
+- **Deep Research: Hotel 24 South** (Staunton, VA) — Expanded ghost story from 261 to 2,802 characters with 7 verified sources
+  - Building history: Originally Stonewall Jackson Hotel, opened May 1924; designed by H.L. Stevens & Company in Georgian Revival style; cost $440,000 to build
+  - Alexander Tobie Moore: "One of the best-known hotel men of the South"; drove hotel construction; died tragically in automobile accident 1935
+  - Original features: Grand two-story lobby with walnut furniture, Fountain Dining Room with crystal chandeliers, Colonnade Ballroom, custom 1924 Wurlitzer organ (only one of its kind still operational)
+  - Gold Star Mothers: Hosted gathering in 1936 of mothers who lost sons in WWI
+  - Decline and revival: Hotel closed 1968; Persinger family converted to assisted living; $21.1 million restoration 2005; renamed Hotel 24 South in 2020
+  - Staunton context: Called "the most haunted town in Virginia"; limestone bedrock and underground water theorized to contribute to paranormal activity
+  - Ghost tour landmark: Black Raven Paranormal tours begin at parking garage beside hotel; alleged "ectoplasm" photograph taken outside
+  - Reported phenomena: Phantom big band music in Colonnade Ballroom, woman in white on upper floors, unseen presence sitting on guests' beds
+  - Sources: Wikipedia, Valley of the Shadow Archive, SAH Archipedia, Visit Staunton, Only in Your State, Angels & Ghosts, Historic Hotels of America
+
+- **Deep Research: The Lyceum** (Alexandria, VA) — Expanded ghost story from 266 to 3,799 characters with 12 verified sources
+  - Building history: Greek Revival masterpiece built 1839 by Quaker schoolmaster Benjamin Hallowell; two-story Doric portico; bricks recycled from original St. Mary's Chapel
+  - Pre-war cultural center: Lecture hall welcomed John Quincy Adams, Daniel Webster, and Caleb Cushing; intellectual heart of Alexandria for two decades
+  - Civil War hospital: Seized May 1861 when Federal troops occupied Alexandria (first Confederate city to fall); Lyceum Hall Hospital held 80 beds as ward of Baptist Church General Hospital
+  - Clarissa Jones (nurse, 1862): Found "60 badly wounded men without a nurse, without comforts of any kind...The smell arising from the undressed wounds was perfectly dreadful"
+  - Jones witnessed 1-3 funerals daily; performed "last sad office of kindness for the dead"; nursed Sergeant Orville Wheelock (amputee whose wife arrived days after his death)
+  - Alexandria hospital network: Over 40 buildings converted; 30 hospitals with 6,500 beds by war's end; thousands of soldiers died in hastily converted facilities
+  - Paranormal activity: Cold spots throughout building, moaning and crying especially at night, apparition of Union soldier seen at windows awaiting news of war's end
+  - Post-war transformation: Sold 1868, became residence then offices; nearly demolished in 1960s; saved by 4-3 City Council vote in 1969 after preservation campaign led by Jean Keith
+  - Current status: Virginia's first Bicentennial Center (1974); Alexandria History Museum since 1985; hosts "Poe in Alexandria" Halloween performances by actor David Keltz
+  - Sources: Wikipedia, City of Alexandria (multiple pages), Ghost City Tours, The Clio, Virginia DHR, National Museum of Civil War Medicine, Paula Whitacre, The Zebra, Old Town Crier
+
+- **Deep Research: Public Hospital of 1773** (Williamsburg, VA) — Expanded ghost story from 290 to 5,828 characters with 10 verified sources
+  - Building history: America's first institution dedicated solely to the care and treatment of the mentally ill; proposed by Lt. Governor Francis Fauquier in 1766; admitted first patient October 12, 1773
+  - Designed by Philadelphia architect Robert Smith: 24 cells with barred windows, reinforced doors, straw mattresses, chamber pots, and iron shackles; dungeon cells added beneath first floor in 1799
+  - Cruel treatments: Ice baths, bloodletting with lancers and scarificators, Dr. Benjamin Rush's tranquilizing chair (restrained patients for days/weeks while depriving sight and restricting blood flow)
+  - Dr. John Minson Galt II: Superintendent 1841-1862; introduced Moral Treatment practices; advocated for patient dignity; decreased restraints
+  - Civil War tragedy: Union troops captured hospital May 6, 1862; found 252 patients locked in without food; Dr. Galt devastated, overdosed on laudanum May 17-18, 1862; found dead in pool of blood (vessels burst in brain)
+  - 1885 fire: June 7 electrical fire destroyed original 1773 building and five other structures; two patients died; 224 displaced; nearest fire engine was in Richmond (50 miles away)
+  - 1985 reconstruction: Colonial Williamsburg Foundation rebuilt on original foundations; $12 million donation from DeWitt and Lila Wallace of Reader's Digest
+  - Dr. Galt's ghost: Most prominent spirit; bloodstain on floorboards could not be removed; Lee family reported stain reappeared on new flooring; children claimed "a man is in the upstairs room where Doctor Galt died"
+  - Chained patient ghost: Male patient who spent 20 years chained to wall; dragging chains heard echoing through halls; appears as emaciated figure with eternal wounds on wrists/ankles
+  - Amy Billings (employee): "Tourists complain of sudden gusts of wind sweeping through the halls... sometimes when we arrive in the mornings, the bed in the exhibition room looks as if it's been slept in"
+  - Cindy Franklin (employee): Items disappear then reappear same day; "Sometimes I think our ghost is a practical joker"
+  - Maintenance worker: Claimed to see "shadow of a wheelchair" moving through corridors; muffled voices and wall knocking especially evenings/weekends
+  - Museum closed to interior tours September 2022; exterior grounds still accessible
+  - Sources: Colonial Ghosts, US Ghost Adventures, Ghost City Tours, Ranker, The Lineup, Wikipedia, VA DBHDS, Hektoen International, Colonial Williamsburg, Weird Darkness
+
+- **Deep Research: Natural Bridge** (Natural Bridge, VA) — Expanded ghost story from 287 to 4,499 characters with 8 verified sources
+  - Sacred site: Monacan Indians called it "Mohomony" (Bridge of God); oral tradition claims bridge manifested through divine intervention when tribe fleeing Algonquin attackers prayed to Great Spirit; 10,000+ years of spiritual significance
+  - Founding fathers: George Washington carved initials "G.W." 23 feet up south wall in 1750 as surveyor's assistant; Thomas Jefferson purchased bridge and 157 acres from King George III in 1774 for 20 shillings; called it "most sublime of Nature's works"
+  - Natural Bridge Hotel (built 1890): Local legend of owner who murdered wife and children; family's apparitions seen throughout property
+  - Lady in Red (primary ghost): Ethereal woman in flowing crimson gown drifts through hallways; appeared at foot of guest's bed, filling room with overwhelming sadness before fading
+  - Room 360 activity: Black shadowy figures, dark forms over beds, female child's voice saying "Cathy, look at me! Look at me!", children's footsteps in empty hallways
+  - Native American spirit: Guest saw glowing figure of Native American man on room floor, suggesting Monacan spiritual energy persists
+  - Caverns at Natural Bridge: Discovered 1890s, 347 feet deep; during early exploration, men dropped pots into bottomless pit and heard woman's loud groan rising from darkness, followed by heavy breathing; explorers fled
+  - Sources: Encyclopedia Strange, Virginia Haunted Houses, Colonial Ghosts, Only In Your State, Wikipedia, Monticello.org, SouthSide Daily, Roanoke Times
+- **Deep Research: Elmwood Cemetery** (Norfolk, VA) — Expanded ghost story from 274 to 3,687 characters with 8 verified sources
+  - Building history: Established 1853 as Victorian garden cemetery on 50-acre tract known as Farmingdale; designed in mid-nineteenth century grid style
+  - 1855 Yellow Fever Epidemic: The Summer of the Pestilence claimed nearly 3,000 lives in Norfolk/Portsmouth (10% of population); over 80 deaths per day at peak; coffins ran out, victims buried in unmarked mass graves
+  - Father Ryan Lot: Poet-Priest of the Confederacy purchased lot for 60 unknown Confederate soldiers; inscription reads "We know not who they were. But the whole world knows what they were."
+  - Colonel William Lamb: Hero of Fort Fisher buried here; commanded 1,900 men against 10,000 Federal troops; spirit reportedly seen in Confederate officer attire
+  - Recording Angel: 8-foot bronze sculpture by Norfolk sculptor William Couper watches over his mother Euphania's grave; mysterious orbs photographed at dusk
+  - Paranormal activity: Shadowy figures among Victorian funerary art, unexplained cold spots, disembodied footsteps on oyster shell paths, weeping near mass graves
+  - Woman in mourning dress: Seen visiting particular grave at twilight, sobbing for lost love before dissolving into shadows
+  - NSCC leads haunted tours each October; cemetery listed on National Register of Historic Places (2013)
+  - Sources: Wikipedia, Virginia DHR, VisitNorfolk, NSCC, Colonial Ghosts, Historic Forrest, Elephants March blog
+
+- **Deep Research: King's Arms Tavern** (Williamsburg, VA) — Expanded ghost story from 280 to 6,035 characters with 9 verified sources
+  - Building history: Opened February 6, 1772 by Jane Vobe on East Duke of Gloucester Street; one of Colonial Williamsburg's most refined dining establishments
+  - Famous patrons: George Washington often "supped" there attending General Assembly; Thomas Jefferson, Patrick Henry, Colonel William Byrd, Baron von Steuben among regulars
+  - Jane Vobe: Shrewd businesswoman who targeted genteel politicians; lost business when capital moved to Richmond in 1780; died December 8, 1786
+  - Reconstruction: Current building opened March 1, 1951 by Colonial Williamsburg Foundation based on archaeological excavation
+  - Irma (primary ghost): Either 1700s live-in manager killed by candle fire or 1950s CW employee who died of heart attack in upstairs room
+  - Irma's activity: Notorious for extinguishing candles (reliving traumatic fire death); servers blow out candles at closing, find room lit again minutes later
+  - Former Assistant Manager Jeffrey Pilley: Experienced intense chills, shouted "Irma leave me alone!" and chills ceased immediately; found windows mysteriously locked
+  - Staff rituals: "You have to really greet the ghost and acknowledge them. If you don't, they will cause mischief"; workers bid Irma goodnight before closing
+  - Gowan Pamphlet (second ghost): Enslaved by Jane Vobe; one of America's first ordained Black ministers; founded First Baptist Church of Williamsburg 1776
+  - Pamphlet's presence: Softly sung spirituals in empty rooms; "flamboyant Black man with reassuring smile" whose appearance induces calm
+  - 1778 Duel ghost: Young gentleman died in parlor after duel over a woman; blood stains on floorboards refuse to stay clean; appears at sunset calling for "Catherine"
+  - Jane Vobe's ghost: Appears checking table settings, correcting service; voice saying "That's not proper" when standards slip
+  - Staff encounters: Hostess saw woman in period attire in mirror who vanished; another felt gentle shove at top of stairs; colonial woman walked through doorway then disappeared
+  - Visitor reports: Bathroom door locks mysteriously unlatching; flat tire changed without human explanation during 25-minute closing shift
+  - Sources: Colonial Ghosts, Ghost City Tours, Neptune Ghosts, Virginia Haunted Houses, Haunted Places, US Ghost Adventures, Encyclopedia Virginia, Colonial Williamsburg Research, Wikipedia (Gowan Pamphlet)
+
+- **Deep Research: St. George's Episcopal Church** (Fredericksburg, VA) — Expanded ghost story from 281 to 4,042 characters with 10 verified sources
+  - Building history: Third church on site designated for worship since 1720; current Romanesque Revival building designed by Robert Cary Long Jr. in 1849
+  - The "Gentle Ghost" (1858): Ella McCarty (age 17) saw Lady in White kneeling at altar with "sad expression" before figure evaporated; documented by L.B. Taylor
+  - Civil War hospital (1862, 1864): Served as Irish Brigade hospital; Major General Mulholland described "eight operating tables in full blast"
+  - Battle damage: Building hit at least 25 times by cannon fire; dead bodies piled "as high as the top step"
+  - Police experiences: K-9 units especially nervous at balcony door; officer stated "There aren't too many police officers who haven't had an experience"
+  - Ongoing phenomena: Doors found unlocked after being secured; footsteps in empty sanctuary; pews creak with unseen occupants; mysterious red room appears then vanishes
+  - Elizabeth Roberson (35-year secretary): Attributed activity to Hattie Tackett; reported deceased person speaking to her while alone with casket
+  - Sources: St. George's History, Alexandria Ghosts, Emerging Civil War, L.B. Taylor, Margaret Dupont, Mark Nesbitt "Civil War Ghost Trails"
+
+- **Deep Research: Moses Myers House** (Norfolk, VA) — Expanded ghost story from 252 to 4,617 characters with 9 verified sources
+  - Building history: Federal-style brick mansion built 1792 for Moses Myers (1753-1835), one of America's first millionaires; Norfolk's first permanent Jewish resident
+  - Moses Myers: Shipping merchant who did business in Europe, West Indies, and South America; clients included Thomas Jefferson and John Quincy Adams; served as consul to France and Netherlands
+  - Five generations of Myers family lived in house from 1795-1931; 70% of furnishings original to first generation
+  - Richard Bowden murder (May 1811): Business partner publicly beat Moses in market square over debt dispute; Samuel Myers (William & Mary's first Jewish graduate) shot and killed Bowden believing his father dead; charged with manslaughter but acquitted
+  - Richard Bowden ghost: Paces garden endlessly in top hat and dark cloak, head bowed, hands behind back; reportedly forbidden from entering house by Myers family spirits
+  - Adeline Myers: Eldest daughter, fiance Solomon Nones died days before 1819 wedding; never married, managed household until death in 1832; believed to manifest as both adult and blonde-haired girl in summer dress
+  - Scott Wolff sighting (Fall 2003): Chrysler Museum photographer opened third-floor bedroom door, found blonde girl sitting in chair; "She looked at me like she was surprised, and then vanished"
+  - Eliza Myers: Wife died in Montreal 1823, broken by successive deaths of sons Abram (1821) and Henry (1822, yellow fever at sea); believed to have returned seeking closeness to children
+  - Moses Myers: Died 1835; credited with cold air pockets and sensation of being watched throughout house
+  - "Lady in Black": Norfolk's most famous ghost; figure in dark formal dress seen wandering halls before vanishing
+  - 757 Teen Correspondent investigation (October 3, 2008): Unexplained orbs in photographs, "smoky, irregular-shaped figure" at 4:30 a.m., cool currents on service stairs
+  - Phenomena: Hot breath on necks, doors slamming, blue taffeta dress moving independently, tingling on service stairs, white vapor in bedroom corners
+  - House now operated by Chrysler Museum; listed on National Register of Historic Places February 16, 1970
+  - Sources: Neptune Ghosts, Virginian-Pilot, Colonial Ghosts, Coastal Virginia Magazine, Chrysler Museum, Virginia DHR, VisitNorfolk, MATPRA, Loeb Jewish Portrait Database
+
+- **Deep Research: Shields Tavern** (Williamsburg, VA) — Expanded ghost story from 292 to 4,699 characters with 8 verified sources
+  - Building history: Jean Marot opened Marot's Ordinary in 1708; murdered by rival tavern keeper Francis Sharpe in November 1717; Sharpe arrested but acquitted
+  - Family succession: Widow Anne remarried Timothy Sullivant; tavern passed to daughter Anne and husband James Shields in the 1740s
+  - By 1750: One of seven licensed taverns in Williamsburg serving lower gentry and upper middle class
+  - Two fires: 1754 (considerable damage) and 1858 (complete destruction); reconstructed 1989 by Colonial Williamsburg Foundation
+  - Jean Marot's ghost: French Huguenot victim wanders tavern checking if all is in order, unable to rest knowing his killer went free
+  - James Shields (primary ghost): Flicks lights on and off, rummages through rooms; former plantation owner
+  - Little boy ghost: Phantom child seen hiding under dining tables, vanishes when approached; possibly one of the enslaved people Shields owned
+  - Frances Shields (daughter): Excluded from father's will; staff contacted her via improvised spirit board on second floor
+  - Dr. Kelly Brennan Arehart account: 12-year Colonial Williamsburg historian heard her own voice from basement saying "I thought you would have known by now"; staff later heard her voice/footsteps where she wasn't present
+  - Girl killed by carriage: Struck in front of tavern; visitors photograph mysterious black mist in exterior photos
+  - John Lowe (reenactor ghost): Portrayed James Shields for years during in-tavern performances; presence felt by colleagues and visitors after his death, especially in restroom
+  - Revolutionary War soldiers: Mysterious noises, flickering lights; fascinated by modern amenities like running water and electricity
+  - Unexplained faucet/shower phenomena: Staff find water running with no explanation
+  - Tavern Ghost Walk: Popular tour starts at Shields Tavern, based on actual documented experiences rather than book legends
+  - Sources: Colonial Ghosts, Williamsburg Ghost Tour, US Ghost Adventures, True Ghost Tales, Visit Williamsburg, WikiTree, Colonial Williamsburg Digital Library, Historical Marker Database
+
+
 - **Deep Research: Norfolk Naval Shipyard** (Portsmouth, VA) — Expanded ghost story from 243 to 3,735 characters with 8 verified sources
   - Building history: Oldest continuously operating naval shipyard in America, founded November 1, 1767 by Scottish merchant Andrew Sprowle as Gosport Shipyard
   - Four flags: British, Commonwealth of Virginia, Confederate States of America, and United States have flown over the facility
@@ -266,6 +386,16 @@ What we shipped. Builder appends here after each feature.
   - **Other Texas cities (5 places):** USS Lexington (Corpus Christi), Baker Hotel (Mineral Wells), Marfa Lights (Marfa), Yorktown Memorial Hospital (Yorktown), Catfish Plantation (Waxahachie), Fort Phantom Hill (Abilene)
   - Average story length: ~2,000 chars (up from ~500 chars)
   - Notable highlights: Theodore Roosevelt's ghost at Menger Hotel, Steven Spielberg's encounter at Excelsior House, Ghost Adventures at Yorktown Hospital, the 1836 Battle of the Alamo hauntings
+
+- **Deep Research: Texas COMPLETE (24 remaining places)** — All 54 Texas haunted places now verified with 5+ sources each
+  - **El Paso (5 places):** Camino Real Hotel (Woman in White bride), Concordia Cemetery (John Wesley Hardin), El Paso High School (Ghost Girl 1985 yearbook), Plaza Theatre (The Smoking Man), El Paso Main Library (built on cemetery)
+  - **San Antonio (6 places):** Hotel Gibbs (Battle of the Alamo ground), Spanish Governor's Palace (Tree of Sorrows), Mission Espada (conquistador apparitions), Mission San Jose (Rose Window legend), Old Bexar County Jail (Holiday Inn), San Antonio State Hospital
+  - **Waco (5 places):** ALICO Building (1953 tornado, Wailing Woman), Cameron Park (Witch's Castle, Lindsay brothers), Dr Pepper Museum (certified paranormal), Armstrong Browning Library (Elizabeth Barrett Browning), Waco Hippodrome Theatre (1928 fire)
+  - **Dallas (2 places):** Millermore Mansion (woman in brown dress), Sons of Hermann Hall (Victorian couple)
+  - **Houston (2 places):** Julia Ideson Building (caretaker Jacob Cramer and dog Petey), Spaghetti Warehouse (pharmacist elevator death)
+  - **Austin (2 places):** Austin State Hospital (1856 asylum, Lady in White), Littlefield House (Alice Littlefield piano)
+  - **Other Texas (2 places):** Gage Hotel Marathon (Alfred Gage ghost, Rooms 10 and 39), Terlingua Ghost Town (quicksilver miners)
+  - Texas now 100% verified — all 54 places tracked in VERIFIED.md
 
 - **Deep Research: Garde Arts Center** (New London, CT) — Expanded ghost story from 328 to 4,227 characters with 10 verified sources
   - Building history: Built 1926 as Moroccan-revival movie palace; designed by architect Arland W. Johnson under direction of Arthur S. Friend (Cecil B. DeMille's early partner)
