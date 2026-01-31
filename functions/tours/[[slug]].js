@@ -84,9 +84,13 @@ function renderHead(title, description, canonicalUrl, baseUrl) {
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${canonicalUrl}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${baseUrl}/assets/states/LA.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(title)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${baseUrl}/assets/states/LA.jpg">
   <link rel="canonical" href="${canonicalUrl}">
   <script async src="https://plausible.io/js/pa-U75YbwDcDaK8C53IH8RVe.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -175,28 +179,50 @@ function renderToursIndexPage(cities, baseUrl) {
     ]
   };
 
+  // Custom city images (hand-picked illustrations)
+  const cityImages = {
+    'charleston-sc': 'assets/tours/charleston-sc.jpg',
+    'chicago-il': 'assets/tours/chicago-il.jpg',
+    'franklin-tn': 'assets/tours/franklin-tn.jpg',
+    'gettysburg-pa': 'assets/tours/gettysburg-pa.jpg',
+    'key-west-fl': 'assets/tours/key-west-fl.jpg',
+    'nashville-tn': 'assets/tours/nashville-tn.jpg',
+    'new-orleans-la': 'assets/tours/new-orleans-la.jpg',
+    'salem-ma': 'assets/tours/salem-ma.jpg',
+    'san-antonio-tx': 'assets/tours/san-antonio-tx.jpg',
+    'savannah-ga': 'assets/tours/savannah-ga.jpg',
+    'st-augustine-fl': 'assets/tours/st-augustine-fl.jpg'
+  };
+
   const cityCardsHtml = cities.map(city => {
     const slug = makeCitySlug(city.city, city.state);
     const stateName = stateNames[city.state] || city.state;
+    // Use custom image if available, otherwise fall back to sample from places
+    const customImage = cityImages[slug];
+    const imageUrl = customImage
+      ? `${baseUrl}/${customImage}`
+      : (city.sample_image ? `${baseUrl}/images/${city.sample_image}` : null);
     return `
-      <a href="/tours/${slug}" class="group block bg-dark-card rounded-xl p-6 hover:shadow-lg hover:shadow-accent/10 transition-all duration-300">
-        <div class="flex items-start justify-between mb-3">
-          <div>
-            <h3 class="text-lg font-semibold text-white group-hover:text-accent transition-colors">${escapeHtml(city.city)}</h3>
-            <p class="text-sm text-muted">${stateName}</p>
+      <a href="/tours/${slug}" class="group block">
+        <!-- Card with layered white borders -->
+        <div class="city-card relative bg-white/10 p-[3px] rounded-lg">
+          <div class="bg-white/5 p-[3px] rounded-md">
+            <div class="bg-dark-card rounded overflow-hidden">
+              <div class="aspect-[4/5] overflow-hidden">
+                ${imageUrl
+                  ? `<img src="${imageUrl}" alt="Ghost tours in ${escapeHtml(city.city)}" class="city-img w-full h-full object-cover" loading="lazy">`
+                  : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
+                      <span class="text-4xl opacity-30">&#128123;</span>
+                    </div>`
+                }
+              </div>
+              <div class="p-4 text-center">
+                <h3 class="font-semibold text-white group-hover:text-accent transition-colors text-lg">${escapeHtml(city.city)}</h3>
+                <p class="text-sm text-muted mb-1">${stateName}</p>
+                <span class="text-sm text-accent">${city.operator_count} ${city.operator_count === 1 ? 'tour' : 'tours'}</span>
+              </div>
+            </div>
           </div>
-          <span class="text-xs font-medium px-2 py-1 rounded-full bg-accent/10 text-accent">
-            ${city.operator_count} ${city.operator_count === 1 ? 'tour' : 'tours'}
-          </span>
-        </div>
-        <p class="text-sm text-ghost">
-          Explore ghost tours in ${escapeHtml(city.city)} with prices and booking links.
-        </p>
-        <div class="mt-4 text-sm text-accent group-hover:text-accent-hover transition-colors flex items-center gap-1">
-          View Tours
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
         </div>
       </a>`;
   }).join('\n');
@@ -209,18 +235,49 @@ function renderToursIndexPage(cities, baseUrl) {
   ${JSON.stringify(breadcrumbSchema)}
   </script>
   <style>
-    .smoke-video {
+    .tombstones-bg {
       position: fixed;
-      top: 0;
+      bottom: -20px;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      height: 100dvh;
-      object-fit: cover;
+      width: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .tombstones-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clouds-bg {
+      position: fixed;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
       z-index: -1;
       pointer-events: none;
     }
+    .clouds-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+    }
     html { background: #0a0c12; }
+    .city-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .group:hover .city-card {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(233, 69, 96, 0.15);
+    }
+    .city-img {
+      transition: transform 0.5s ease;
+    }
+    .group:hover .city-img {
+      transform: scale(1.05);
+    }
     .place-img {
       filter: none;
       transition: filter 0.5s ease;
@@ -234,9 +291,15 @@ function renderToursIndexPage(cities, baseUrl) {
   </style>
 </head>
 <body class="text-gray-100 min-h-screen font-sans">
-  <video class="smoke-video" autoplay muted loop playsinline>
-    <source src="/smoke-bg.mp4" type="video/mp4">
-  </video>
+  <!-- Tombstones behind fog -->
+  <div class="tombstones-bg">
+    <img src="/overlay-tombstones.png" alt="">
+  </div>
+
+  <!-- Background clouds at bottom of page -->
+  <div class="clouds-bg">
+    <img src="/overlay-clouds.png" alt="">
+  </div>
 
   ${renderHeader('tours')}
 
@@ -248,7 +311,7 @@ function renderToursIndexPage(cities, baseUrl) {
       </div>
 
       <!-- City Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         ${cityCardsHtml}
       </div>
     </main>
@@ -476,10 +539,17 @@ export async function onRequestGet(context) {
   if (!slugParts || slugParts.length === 0) {
     try {
       const { results: cities } = await env.DB.prepare(`
-        SELECT city, state, COUNT(*) as operator_count
-        FROM tour_operators
-        GROUP BY city, state
-        ORDER BY city
+        SELECT
+          t.city,
+          t.state,
+          COUNT(*) as operator_count,
+          (SELECT p.image_url FROM places p
+           WHERE p.city = t.city AND p.state = t.state
+           AND p.image_url IS NOT NULL AND p.image_url != ''
+           LIMIT 1) as sample_image
+        FROM tour_operators t
+        GROUP BY t.city, t.state
+        ORDER BY operator_count DESC, t.city
       `).all();
 
       const html = renderToursIndexPage(cities || [], baseUrl);
