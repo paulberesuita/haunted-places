@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 443 | 876 |
+| 486 | 876 |
 
 ---
 
@@ -355,33 +355,53 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Nemacolin Castle](https://spookfinder.com/place/nemacolin-castle) | Brownsville | 2,138 chars | 6 |
 | [Cashtown Inn](https://spookfinder.com/place/cashtown-inn) | Cashtown | 2,009 chars | 6 |
 | [Centralia](https://spookfinder.com/place/centralia) | Centralia | 2,296 chars | 6 |
+| [The Old Jail](https://spookfinder.com/place/old-jail-chambersburg) | Chambersburg | 1,363 chars | 6 |
 | [Devil's Den](https://spookfinder.com/place/devils-den) | Gettysburg | 2,164 chars | 6 |
 | [Dobbin House Tavern](https://spookfinder.com/place/dobbin-house-tavern) | Gettysburg | 2,102 chars | 6 |
 | [Doubleday Inn](https://spookfinder.com/place/doubleday-inn) | Gettysburg | 2,028 chars | 6 |
 | [Farnsworth House Inn](https://spookfinder.com/place/farnsworth-house-inn) | Gettysburg | 2,064 chars | 6 |
 | [General Lee's Headquarters](https://spookfinder.com/place/general-lees-headquarters) | Gettysburg | 2,089 chars | 6 |
 | [Gettysburg Hotel](https://spookfinder.com/place/gettysburg-hotel) | Gettysburg | 2,067 chars | 6 |
+| [Hummelbaugh House](https://spookfinder.com/place/hummelbaugh-house) | Gettysburg | 1,386 chars | 6 |
 | [Iverson's Pits](https://spookfinder.com/place/iversons-pits) | Gettysburg | 2,182 chars | 6 |
 | [Jennie Wade House](https://spookfinder.com/place/jennie-wade-house) | Gettysburg | 2,118 chars | 6 |
 | [Little Round Top](https://spookfinder.com/place/little-round-top) | Gettysburg | 1,968 chars | 6 |
 | [Pennsylvania Hall](https://spookfinder.com/place/pennsylvania-hall-gettysburg) | Gettysburg | 2,177 chars | 6 |
 | [Sachs Covered Bridge](https://spookfinder.com/place/sachs-covered-bridge) | Gettysburg | 2,111 chars | 6 |
+| [Soldiers National Museum](https://spookfinder.com/place/soldiers-national-museum) | Gettysburg | 1,382 chars | 6 |
 | [The Slaughter Pen](https://spookfinder.com/place/slaughter-pen) | Gettysburg | 2,120 chars | 6 |
 | [Triangular Field](https://spookfinder.com/place/triangular-field) | Gettysburg | 1,969 chars | 6 |
+| [Fort Hunter Mansion](https://spookfinder.com/place/fort-hunter-mansion) | Harrisburg | 1,402 chars | 6 |
+| [Accomac Inn](https://spookfinder.com/place/accomac-inn) | Hellam | 1,569 chars | 6 |
 | [The Seven Gates of Hell](https://spookfinder.com/place/seven-gates-of-hell) | Hellam | 2,061 chars | 6 |
 | [Fulton Theatre](https://spookfinder.com/place/fulton-theatre) | Lancaster | 2,076 chars | 6 |
 | [Dead Man's Hollow](https://spookfinder.com/place/dead-mans-hollow) | McKeesport | 2,073 chars | 6 |
 | [Hill View Manor](https://spookfinder.com/place/hill-view-manor) | New Castle | 2,076 chars | 6 |
 | [Baleroy Mansion](https://spookfinder.com/place/baleroy-mansion) | Philadelphia | 2,168 chars | 6 |
 | [Betsy Ross House](https://spookfinder.com/place/betsy-ross-house) | Philadelphia | 2,061 chars | 6 |
+| [Carpenter's Hall](https://spookfinder.com/place/carpenters-hall) | Philadelphia | 1,291 chars | 6 |
+| [City Tavern](https://spookfinder.com/place/city-tavern) | Philadelphia | 1,404 chars | 6 |
+| [Congress Hall](https://spookfinder.com/place/congress-hall) | Philadelphia | 1,356 chars | 6 |
 | [Eastern State Penitentiary](https://spookfinder.com/place/eastern-state-penitentiary) | Philadelphia | 2,285 chars | 8 |
+| [First Bank of the United States](https://spookfinder.com/place/first-bank-united-states) | Philadelphia | 1,449 chars | 6 |
 | [Fort Mifflin](https://spookfinder.com/place/fort-mifflin) | Philadelphia | 2,136 chars | 6 |
 | [Independence Hall](https://spookfinder.com/place/independence-hall) | Philadelphia | 2,123 chars | 6 |
 | [Laurel Hill Cemetery](https://spookfinder.com/place/laurel-hill-cemetery) | Philadelphia | 2,162 chars | 6 |
 | [Allegheny County Jail](https://spookfinder.com/place/allegheny-county-jail) | Pittsburgh | 2,078 chars | 6 |
+| [Carnegie Library of Pittsburgh](https://spookfinder.com/place/carnegie-library-oakland) | Pittsburgh | 1,493 chars | 6 |
+| [Church Brew Works](https://spookfinder.com/place/church-brew-works) | Pittsburgh | 1,476 chars | 6 |
+| [Clayton (The Frick Mansion)](https://spookfinder.com/place/clayton-frick-mansion) | Pittsburgh | 1,509 chars | 6 |
+| [National Aviary](https://spookfinder.com/place/national-aviary) | Pittsburgh | 1,525 chars | 6 |
 | [Omni William Penn Hotel](https://spookfinder.com/place/omni-william-penn-hotel) | Pittsburgh | 2,192 chars | 6 |
+| [Troy Hill Firehouse](https://spookfinder.com/place/troy-hill-firehouse) | Pittsburgh | 1,458 chars | 6 |
+| [AV Restaurant & Lounge](https://spookfinder.com/place/av-restaurant-lounge) | Scranton | 1,520 chars | 6 |
+| [Albright Memorial Library](https://spookfinder.com/place/scranton-public-library) | Scranton | 1,488 chars | 6 |
+| [Catlin House](https://spookfinder.com/place/catlin-house-scranton) | Scranton | 1,567 chars | 6 |
+| [Houdini Museum](https://spookfinder.com/place/houdini-museum) | Scranton | 1,508 chars | 6 |
+| [The Ritz Theater](https://spookfinder.com/place/ritz-theater-scranton) | Scranton | 1,415 chars | 6 |
 | [Green Man's Tunnel](https://spookfinder.com/place/green-mans-tunnel) | South Park | 1,997 chars | 6 |
 | [Pennhurst Asylum](https://spookfinder.com/place/pennhurst-asylum) | Spring City | 2,325 chars | 6 |
+| [Golden Plough Tavern](https://spookfinder.com/place/golden-plough-tavern) | York | 1,554 chars | 6 |
 
 ### Illinois
 
@@ -432,6 +452,33 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Hotel Baker](https://spookfinder.com/place/hotel-baker) | St. Charles | 1,910 chars | 6 |
 | [The Irish Legend](https://spookfinder.com/place/irish-legend-willow-springs) | Willow Springs | 1,910 chars | 6 |
 
+### Massachusetts
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Boston Common](https://spookfinder.com/place/boston-common) | Boston | 5,310 chars | 8 |
+| [Copp's Hill Burying Ground](https://spookfinder.com/place/copps-hill-burying-ground) | Boston | 4,721 chars | 8 |
+| [Fenway Park](https://spookfinder.com/place/fenway-park) | Boston | 4,712 chars | 8 |
+| [Fort Warren](https://spookfinder.com/place/fort-warren) | Boston | 4,538 chars | 8 |
+| [Granary Burying Ground](https://spookfinder.com/place/granary-burying-ground) | Boston | 4,589 chars | 8 |
+| [Omni Parker House](https://spookfinder.com/place/omni-parker-house) | Boston | 4,134 chars | 8 |
+| [USS Constitution](https://spookfinder.com/place/uss-constitution) | Boston | 5,245 chars | 8 |
+| [Longfellow House](https://spookfinder.com/place/longfellow-house) | Cambridge | 4,532 chars | 8 |
+| [Concord's Colonial Inn](https://spookfinder.com/place/concords-colonial-inn) | Concord | 4,476 chars | 8 |
+| [Danvers State Hospital](https://spookfinder.com/place/danvers-state-hospital) | Danvers | 4,414 chars | 8 |
+| [Lizzie Borden House](https://spookfinder.com/place/lizzie-borden-house) | Fall River | 4,263 chars | 10 |
+| [Freetown-Fall River State Forest](https://spookfinder.com/place/freetown-state-forest) | Freetown | 5,127 chars | 8 |
+| [Hammond Castle](https://spookfinder.com/place/hammond-castle) | Gloucester | 4,708 chars | 9 |
+| [Hoosac Tunnel](https://spookfinder.com/place/hoosac-tunnel) | North Adams | 4,271 chars | 8 |
+| [Houghton Mansion](https://spookfinder.com/place/houghton-mansion) | North Adams | 4,758 chars | 8 |
+| [Taunton State Hospital](https://spookfinder.com/place/taunton-state-hospital) | Taunton | 5,638 chars | 8 |
+| [Gallows Hill Park](https://spookfinder.com/place/gallows-hill-park) | Salem | 3,901 chars | 8 |
+| [Hawthorne Hotel](https://spookfinder.com/place/hawthorne-hotel) | Salem | 4,257 chars | 8 |
+| [House of Seven Gables](https://spookfinder.com/place/house-of-seven-gables) | Salem | 4,177 chars | 8 |
+| [Joshua Ward House](https://spookfinder.com/place/joshua-ward-house) | Salem | 4,004 chars | 8 |
+| [Murphy Funeral Home](https://spookfinder.com/place/murphy-funeral-home) | Salem | 2,919 chars | 7 |
+| [Witch Dungeon Museum](https://spookfinder.com/place/witch-dungeon-museum) | Salem | 3,278 chars | 9 |
+
 ### Maryland
 
 | Place | City | Story Length | Sources |
@@ -477,6 +524,13 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Furnace Town Living Heritage Village](https://spookfinder.com/place/furnace-town) | Snow Hill | 3,137 chars | 9 |
 | [Kemp House Inn](https://spookfinder.com/place/old-brick-inn-st-michaels) | St. Michaels | 2,587 chars | 8 |
 | [Old White Marsh Church](https://spookfinder.com/place/old-white-marsh-church) | Trappe | 4,025 chars | 10 |
+
+### Kentucky
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [The Carneal House](https://spookfinder.com/place/carneal-house) | Covington | 3,167 chars | 8 |
+| [Louisville Bourbon Inn](https://spookfinder.com/place/louisville-bourbon-inn) | Louisville | 3,263 chars | 6 |
 
 ---
 

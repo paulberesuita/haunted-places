@@ -4,6 +4,264 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-02-01
+
+### Changed
+- **Deep Research: Longfellow House** (Cambridge, MA) — Expanded ghost story from 396 to 4,532 characters with 8 verified sources
+  - Building history: Built 1759 by John Vassall; George Washington's headquarters July 1775-April 1776 directing Siege of Boston
+  - Longfellow's tenure: Lived 1837-1882; wrote "Paul Revere's Ride," "Song of Hiawatha," "Evangeline" in Washington's former chambers
+  - Literary salon: Hawthorne, Emerson, and Charles Dickens all visited the house
+  - Fanny's tragic death: July 9, 1861 — dress caught fire while sealing children's hair keepsakes; died the next morning at age 44
+  - Longfellow's beliefs: Wrote "all houses wherein men have lived and died are haunted houses" (1858); attempted to contact spirits
+  - NPS tours: Rangers offer special Halloween tours exploring "19th century America's fascination with death and mourning"
+  - Sources: NPS, National Parks Traveler, Wikipedia, Sharon Wray, Needless Narratives, Poets.org, Cambridge Day
+
+- **Deep Research: Fenway Park** (Boston, MA) — Expanded ghost story from 384 to 4,712 characters with 8 verified sources
+  - Building history: Opened April 20, 1912 (5 days after Titanic sank); oldest active MLB ballpark at 113 years
+  - Curse of the Bambino: Owner Harry Frazee sold Babe Ruth to Yankees for $100,000 (Dec 26, 1919) to finance Broadway play
+  - 86-year drought: Red Sox lost World Series in Game 7 four times (1946, 1967, 1975, 1986) before 2004 championship
+  - Night crew experiences: Hear phantom batting practice, wailing from Green Monster, cheering from empty stands
+  - Babe Ruth's ghost: "The rumor is Babe Ruth walks the stadium at night" — never seen but heard taking batting practice
+  - Sherm Feller's booth: PA announcer (1967-1992) haunts broadcast booth; objects fly off desk, things disappear
+  - Tom Yawkey's reincarnations: Bill "Spaceman" Lee claims deceased owner appears as pigeons, crows, hawks
+  - Sources: Ghost Hunting in New England, PRWeb, MLB.com, Wikipedia (Curse), Boston Herald, Britannica, Babe Ruth Central
+
+- **Deep Research: Copp's Hill Burying Ground** (Boston, MA) — Expanded ghost story from 437 to 4,721 characters with 8 verified sources
+  - Building history: Founded February 20, 1659; Boston's second-oldest cemetery; over 10,000 buried
+  - Cotton Mather's crypt: Puritan minister (Salem Witch Trials) — investigators report "terrifying presence," frightening apparitions
+  - Revolutionary War desecration: British soldiers used headstones for musket target practice; damage still visible on Daniel Malcolm's stone
+  - Battle of Bunker Hill: Generals Gage and Burgoyne watched from Copp's Hill as artillery bombarded and burned Charlestown
+  - Notable burials: Robert Newman (hung lanterns for Paul Revere), Prince Hall (Black Masonic Lodge founder), Edmund Hartt (built USS Constitution)
+  - Paranormal activity: Orbs, shadow figures, full-body apparitions, spectral guardian who patrols grounds, woman in dark dress at wall
+  - H.P. Lovecraft connection: Set a story at Copp's Hill — "When cosmic horror author uses a cemetery, you know the place is special"
+  - Sources: Ghost City Tours, American Battlefield Trust, Boston.gov, Trolley Tours, Wikipedia, NPS, Freedom Trail, Salem Witch Museum
+
+- **Deep Research: Granary Burying Ground** (Boston, MA) — Expanded ghost story from 431 to 4,589 characters with 8 verified sources
+  - Building history: Founded 1660; 2,345 headstones but estimated 5,000+ buried; hidden crypt discovered 2009
+  - Famous burials: Samuel Adams, John Hancock, Robert Treat Paine (3 Declaration signers), Paul Revere, Benjamin Franklin's parents
+  - Boston Massacre victims: Crispus Attucks, Samuel Gray, James Caldwell, Samuel Maverick, Patrick Carr — all rest here
+  - Judge Samuel Sewall: Salem Witch Trial magistrate seen pacing near his grave, tormented by innocent blood on his hands
+  - James Otis Jr.: Most famous ghost — lawyer who suffered head trauma, prayed to be struck by lightning, and was (1783)
+  - Paranormal activity: Orbs, shadow figures, full-body apparitions, EMF spikes, EVP recordings, Paul Revere on horseback
+  - Lady in white: Woman in flowing dress glides between headstones searching for lost child; vanishes when approached
+  - Sources: Boston Ghosts, US Ghost Adventures, Ghost City Tours, Boston.gov, Ghosts and Gravestones, Wikipedia, NPS, Nightly Spirits
+
+- **Deep Research: Freetown-Fall River State Forest** (Freetown, MA) — Expanded ghost story from 432 to 5,127 characters with 8 verified sources
+  - Location: Heart of the Bridgewater Triangle, 5,441 acres; named by cryptozoologist Loren Coleman after Bermuda Triangle
+  - Native American curse: Wampanoag sacred land; King Philip's War (1675-78) killed 3,000+ Native Americans; lost Wampum Belt cursed the land
+  - Profile Rock: 50-foot granite formation resembling human face; ghost of Chief Massasoit seen sitting cross-legged with arms outstretched
+  - Mary Lou Arruda murder (1978): 15-year-old cheerleader kidnapped, found tied to tree; James Kater convicted
+  - 1980s cult activity: Fall River Cult Killings (3 victims), animal mutilations, alleged "torture bunker," blood rituals
+  - Assonet Ledge: 80-foot quarry with overwhelming dread; apparitions jumping to vanish; Lady of the Ledge; 2004 unexplained suicide
+  - UFO sightings: Governor Ronald Reagan reported lights tailing his Cessna in 1974 with Air Force Col. Bill Paynter
+  - Pukwudgies: 3-foot Wampanoag trickster creatures that push hikers off trails and lure travelers to death
+  - Sources: Boston Ghosts, US Ghost Adventures, Vocal Media, Moon Mausoleum, Salem Ghosts, Only In Your State, IMDB, Wikipedia
+
+- **Deep Research: Boston Common** (Boston, MA) — Expanded ghost story from 448 to 5,310 characters with 8 verified sources
+  - Building history: America's oldest public park, established 1634; served as execution ground for 175 years until 1817
+  - The Great Elm: Massive hanging tree on southeast corner; pirates, murderers, witches hung until 1876 windstorm destroyed it
+  - Pre-Salem witches: Ann Hibbins hanged 1656 for "more wit than her neighbors"; Goody Glover hanged 1688 (spirit still seen weeping)
+  - Native American massacre: Tantamous (Nipmuc medicine man) executed 1676; 50+ Native Americans hanged during King Philip's War
+  - Quaker martyrs: Mary Dyer hanged 1660; her execution prompted King Charles II to ban executing Quakers
+  - Central Burying Ground: ~5,000 bodies with only 487 tombstones; 910 bodies unearthed during 1894 subway construction
+  - Paranormal activity: Apparitions hanging from trees, rope creaking, British redcoat on subway tracks, women in 19th-century dress
+  - Sources: Boston Ghosts, Ghost City Tours, Nightly Spirits, Very Local, CelebrateBoston, Boston.gov, New England Historical Society
+
+- **Deep Research: USS Constitution** (Boston, MA) — Expanded ghost story from 423 to 5,245 characters with 8 verified sources
+  - Building history: Launched October 21, 1797; one of six original frigates; copper bolts by Paul Revere; 204 feet, 450 crew, 50+ guns
+  - War of 1812 glory: "Old Ironsides" nickname from August 19, 1812 defeat of HMS Guerriere when cannonballs bounced off 21-inch oak hull
+  - First fallen Marine: Lt. William Bush, first Marine Corps officer killed in combat, fell during Guerriere engagement
+  - Crew testimony: PO1 Pete Robertson "people were terrified to stand watch"; Seaman Allie Thorpe felt presence "blowing on your neck"
+  - Rolling cannonball: 24-pound ball rolled left, right, back to start while ship sat perfectly still — "moving in ways a cannonball shouldn't move"
+  - 1997 Boy Scout encounter: Scout awakened by sailor in ragged period clothing ordering him to duty; sailor was a ghost
+  - Haunted barracks: Rocking chairs in Navy Yard barracks 100 yards away rock "from completely still to full on rock on its own"
+  - Ghost Hunters (S10E12): "Rockets Red Scare" documented whispers, footsteps, rolling objects; Navy granted access before restoration
+  - Sources: All That's Interesting, NPS, American Battlefield Trust, Britannica, Greensboro News, Wikipedia, IMDB, ShermansTravel
+
+- **Deep Research: Taunton State Hospital** (Taunton, MA) — Expanded ghost story from 459 to 5,638 characters with 8 verified sources
+  - Building history: Opened April 7, 1854 as Massachusetts' second state lunatic asylum; Kirkbride-style with 70-foot dome on 154 acres
+  - Decline: Overcrowding, lobotomies, electroshock therapy, ice baths; Governor Curley called it "horrible places to put animals"
+  - Serial killer #1: Anthony Santo confessed 1908 to murdering 2 cousins and a 6-year-old girl; claimed "mad-spells" from scarlet fever
+  - Serial killer #2: Jane Toppan "Jolly Jane" — nurse who confessed to 31 murders (possibly 100+); derived sexual pleasure watching victims die
+  - The Shadow Man: Grotesquely stretched figure crawling walls and ceilings, glaring at terrified patients; originated from basement
+  - Basement horrors: Satanic cult rumors, symbols appearing/reappearing on walls, staff blocked from descending stairs by invisible force
+  - 2006 fire: Five-alarm blaze, 100+ firefighters, one of largest fires in Massachusetts history; governor ordered demolition
+  - Sources: Boston Ghosts, US Ghost Adventures, Abandoned America, NPS, Anomalien, Wikipedia (Jane Toppan), Wikipedia (Taunton State), New England Historical Society
+
+- **Deep Research: Hammond Castle** (Gloucester, MA) — Expanded ghost story from 358 to 4,708 characters with 9 verified sources
+  - Building history: Built 1926-1929 by John Hays Hammond Jr., "Father of Radio Control" with 437 patents; protégé of Bell and Edison
+  - Architecture: Medieval-style castle on Atlantic cliffs; houses 15th-18th century European artifacts, church doors, 13th century French storefronts
+  - Great Hall: 8,400-pipe organ (Gershwin performed here); Disney screened Fantasia (1940); over 50 funerary headstones throughout
+  - ESP experiments: 1951-52 Faraday cage telepathy tests with psychic Eileen Garrett; faded floor marks reportedly still visible
+  - Hammond's promise: Declared he would return as a black cat; buried on castle grounds alongside his cat with poison ivy over grave
+  - Ghost Hunters (Season 8, Episode 23): Voice whispering "Hammond" captured; chandelier swinging with no explanation
+  - Three spirits: Hammond (devilish smile, uses secret passages), wife Irene (floating sadly), former groundskeeper (trims hedges, pulls hair)
+  - Black cat mystery: Unidentifiable black cat seen roaming castle grounds; many believe Hammond kept his word
+  - Sources: History of Massachusetts, Official Site, Harvard Magazine, Ghost Hunters Wiki, Haunted Places, Locations of Lore, Discover Gloucester, IMDB
+
+- **Deep Research: Concord's Colonial Inn** (Concord, MA) — Expanded ghost story from 389 to 4,476 characters with 8 verified sources
+  - Building history: Original structure built 1716; half mile from North Bridge where Revolutionary War began April 19, 1775
+  - Revolutionary War hospital: Dr. Timothy Minot converted building to treat wounded; Room 24 = operating room, Room 27 = morgue
+  - Thoreau connection: Henry David Thoreau's grandfather bought property 1799; Thoreau lived here 1835-37 while at Harvard
+  - 1966 letter: Newlywed Judith Fellenz wrote to innkeeper describing greyish glowing figure that floated to foot of bed and vanished into fireplace
+  - Room 24: Most sought-after room; lights turn on by themselves, whispers from closet, guests feel tucked into bed, wounded soldiers appear
+  - Named ghosts: "Rosemary" (middle-aged nurse), Dr. Minot (checking on patients), young girl in bonnet greeting guests
+  - Hallway spirits: Older woman and tall slim man in tophat in sitting room; bartender reports "whispers, voices, someone calling your name"
+  - Patriots' Day: Still commemorated annually at North Bridge; for soldiers who died here, the war never ended
+  - Sources: Colonial Inn official, Wikipedia, US Ghost Adventures, Salem Ghosts, Historic Hotels, Atlas Obscura, Concord Bridge, Visit Concord
+
+- **Deep Research: Houghton Mansion** (North Adams, MA) — Expanded ghost story from 420 to 4,758 characters with 8 verified sources
+  - Building history: Built 1890s by A.C. Houghton, North Adams' first mayor (1896-97); president of Arnold Print Works
+  - The tragedy: August 1, 1914 — Pierce-Arrow touring car accident killed daughter Mary and Sybil Hutton; A.C. died 10 days later of broken heart
+  - John Widders: Chauffeur of 42 years shot himself in basement cellar 13 hours after Mary's death; buried in Houghton family plot
+  - Real name revealed: Estate claim revealed his name was actually John Winters; mysterious background involving circus runaway story
+  - Three spirits: A.C. (bedroom EVP "get out"), Mary (overwhelming sadness, apparition), Widders (shadow figure on servant stairs)
+  - Ghost child "Laura": Little girl giggling in basement; responds to name of Houghton daughter who died as toddler
+  - Skeptic converted: 20-year Mason heard door open, boots stomping, footsteps approaching in snowstorm — no footprints outside
+  - Featured on Ghost Hunters and Ghost Adventures; sold to hotel developer 2017, no longer open to public
+  - Sources: Boston Ghosts, Wikipedia, Salem Ghosts, Enchanted New England, Travel Channel, Williams Record, Buildings of New England, The Nabokovian
+
+- **Deep Research: Joshua Ward House** (Salem, MA) — Expanded ghost story from 408 to 4,004 characters with 8 verified sources
+  - Building history: Built 1784 on exact footprint of Sheriff George Corwin's home; one of Salem's first brick buildings
+  - George "The Strangler" Corwin: Sheriff during witch trials who tortured suspects until blood flowed; earned his nickname
+  - Giles Corey execution: Corwin personally pressed 81-year-old Corey to death over 2 days; Corey's last words: "More weight"
+  - Corwin's burial: Died suddenly 1696 at age 30; family buried him in basement fearing desecration by victims' families
+  - Three spirits: Corwin (strangling visitors), Giles Corey (books thrown, candles melting into S-shapes), unnamed female victim
+  - Famous 1981 photo: Polaroid captured pale dark-haired woman in black dress instead of light-haired coworker; published in "Ghostly Haunts"
+  - Lady in Black: Male visitors wake with scratches on chests; throat-closing sensations on second floor
+  - Current: Now The Merchant boutique hotel; registered historic landmark
+  - Sources: Salem Ghosts, Ghost City Tours, Spellbound Tours, FrightFind, Nightly Spirits, History of Massachusetts, Mass Historical Society, Epic Spooky Adventures
+
+- **Deep Research: Hoosac Tunnel** (North Adams, MA) — Expanded ghost story from 372 to 4,271 characters with 8 verified sources
+  - Construction: 4.75 miles through Hoosac Mountain; took 24 years (1851-1875), cost $21M vs estimated $2M
+  - Death toll: At least 196 workers killed — black powder, nitroglycerin, cave-ins, drownings; dubbed "The Bloody Pit"
+  - 1867 disaster: Gasometer explosion trapped 13 miners 538 feet down; built raft to survive but suffocated; bodies recovered after 1 year
+  - Ringo Kelley murder: Set off blast early, killed Brinkman and Nash (1865); found strangled to death exactly 1 year later at same spot; no suspects
+  - Paul Travers account: Civil War cavalry officer heard "man groaning in pain" with site manager in 1868; "Haven't been this frightened since Shiloh"
+  - Dr. Owens sighting: Skeptical doctor and superintendent saw headless apparition (1872); hunter Frank Webster claimed ghostly voices ordered him inside (1874)
+  - Still active: Freight trains 24/7; entering extremely dangerous
+  - Sources: Boston Ghosts, Wikipedia, New England Historical Society, Atlas Obscura, US Ghost Adventures, Museum Hack, Hoosac Tunnel Archive, Restoration Obscura
+
+- **Deep Research: Danvers State Hospital** (Danvers, MA) — Expanded ghost story from 406 to 4,414 characters with 8 verified sources
+  - Land history: Built on Hathorne Hill, former home of Judge John Hathorne who presided over Salem Witch Trials
+  - Building: 313,000 sq ft Kirkbride asylum opened 1878; designed for 500 patients, held 2,000+ by 1940s
+  - Dark history: "Birthplace of the prefrontal lobotomy"; 278 deaths in 1939 alone; patients walked naked, lived in filth
+  - First-person account: Administrator's daughter Jeralyn Levasseur saw scowling elderly woman ghost pulling covers off her bed
+  - Session 9: Horror film shot on location 2001; David Caruso called it "a place you never got comfortable in"
+  - Cultural impact: Inspired H.P. Lovecraft's Arkham Sanitarium → DC Comics' Arkham Asylum in Batman
+  - Current: Demolished 2007, now Bradlee Danvers apartments; residents hear moans and screams; 770 graves in two cemeteries remain
+  - 120+ trespassers arrested 2000-2007 trying to see ghostly patients
+  - Sources: Boston Ghosts, Wikipedia, All That's Interesting, History of Massachusetts, Haunted Rooms, Salem Ghosts, US Ghost Adventures, Atlas Obscura
+
+- **Deep Research: Omni Parker House** (Boston, MA) — Expanded ghost story from 482 to 4,134 characters with 8 verified sources
+  - Building history: Oldest continuously operating hotel in US (1855); birthplace of Boston cream pie and Parker House rolls
+  - Famous guests: Saturday Club (Emerson, Longfellow, Hawthorne); John Wilkes Booth stayed 8 days before Lincoln assassination
+  - Charles Dickens: Lived in Suites 138-139 for 6 months (1867-68); practiced readings in mirror; condensation appears on glass "as if someone breathing"
+  - Charlotte Cushman: Famous actress died of pneumonia 1876 on third floor; elevator still stops there unprompted hundreds of times annually
+  - Room 303: Liquor salesman suicide 1949; smell of whisky, disembodied voices, banging on door; converted to storage closet
+  - Harvey Parker: Founder's ghost seen on 10th floor; guest in Room 1012 saw bearded man who vanished, later identified him from portrait
+  - Stephen King "1408" rumor: Said to be based on Room 303, but King's representatives deny connection
+  - Sources: Boston Ghosts, Ghost City Tours, History of Massachusetts, Ghosts & Gravestones, Nightly Spirits, Historic Hotels, Literary Traveler, Women History Blog
+
+- **Deep Research: Fort Warren** (Boston, MA) — Expanded ghost story from 466 to 4,538 characters with 8 verified sources
+  - Building history: Granite fortress built 1833-1860; one of most humane Civil War prisons with only 13 deaths among 2,300+ prisoners
+  - Notable prisoner: Confederate Vice President Alexander Stephens held May-October 1865; kept diary of imprisonment
+  - Lady in Black origin: Legend created by Edward Rowe Snow in 1944 book "The Romance of Boston Bay" — admittedly fiction to save fort from becoming landfill
+  - The legend: Melanie Lanier allegedly rowed to fort to rescue husband, accidentally killed him, hanged in black robes; no historical evidence exists
+  - Continuing sightings: Despite debunking, soldiers court-martialed for shooting at phantom; one broke ankle fleeing her
+  - Modern witnesses: Police, MIT researchers, army personnel report encounters within last 40 years
+  - Activity: Shadow figures in Civil War uniforms, vintage perfume smell, footsteps, Corridor of Dungeons most active
+  - Status: National Historic Site 1958; part of Boston Harbor Islands National Park since 1996
+  - Sources: Boston Ghosts, Historical Digression, Ghost City Tours, Nightly Spirits, Caught In Southie, NPS, Celebrate Boston, When In Your State
+
+- **Deep Research: Hawthorne Hotel** (Salem, MA) — Expanded ghost story from 392 to 4,257 characters with 8 verified sources
+  - Building history: Colonial Revival hotel built 1925; named after author Nathaniel Hawthorne
+  - Bridget Bishop connection: First woman executed in witch trials (June 10, 1692) owned apple orchard on or near this site; guests report unexplained scent of apples
+  - Salem Marine Society: Sea captains met here since 1830; rooftop cabin replica where they still meet today
+  - Ship's wheel: In restaurant Nathaniel's, wheel turns on its own; when physically stopped, resumes spinning
+  - Room 325: Most haunted room — phantom baby crying, lights/faucets turn on/off, guests feel touched
+  - Room 612: Spectral woman in white dress wandering hallway, pauses at door; icy cold hands touch guests
+  - Notable events: Bewitched filmed in elevator (1970); Harry Houdini séance (1990); Ghost Hunters investigation (2007)
+  - Celebrity guests: President Bill Clinton, Vanessa Redgrave; filming location for "Joy" (2015)
+  - Sources: Salem Ghosts, Haunted Rooms America, Historic Hotels, History of Massachusetts, Ghost City Tours, US Ghost Adventures, Amy's Crypt, ToSalem
+
+- **Deep Research: House of Seven Gables** (Salem, MA) — Expanded ghost story from 410 to 4,177 characters with 8 verified sources
+  - Building history: Built 1668 for Captain John Turner; secret staircase added during witch trials to hide his sisters from magistrates
+  - Hawthorne connection: Author visited cousin Susanna Ingersoll here; added "w" to surname out of shame for ancestor Judge John Hathorne's role in witch trials
+  - Judge Hathorne: Great-great-grandfather was aggressive interrogator who never apologized; became villain Judge Pyncheon in the novel
+  - Primary ghost: Susanna Ingersoll — only person born and died in house; seen peering from windows before dissolving; moves through rooms doing housework
+  - Phantom boy: Unidentified child haunts attic and gardens; soft laughter and light footsteps; psychic claimed to photograph him
+  - Secret staircase: Spectral man seen ascending/descending; one witness choked by invisible hands in attic above
+  - Electronic disturbances: Lights flicker, faucets turn on, staff feel watched; clusters near areas of sightings
+  - Sources: Salem Ghosts, Ghost City Tours, Amy's Crypt, Love of Gothic, Wikipedia, 7Gables.org, History of Massachusetts, Salem Witch Museum
+
+- **Deep Research: Lizzie Borden House** (Fall River, MA) — Expanded ghost story from 368 to 4,263 characters with 10 verified sources
+  - Building history: Greek Revival house built 1845, home of wealthy businessman Andrew Jackson Borden
+  - The murders: August 4, 1892 — Abby struck 19 times with hatchet, Andrew 11 times; Lizzie acquitted 1893 but remains prime suspect
+  - Apparitions: Abby Borden seen as older woman in Victorian dress on second floor; guests mistake her for staff; bedsheets tighten around sleepers in her murder room
+  - Andrew's aggressive spirit: Tour guides report being punched in the back; guests advised to leave monetary tribute
+  - Children's ghosts: Laughing and running on third floor — believed to be children of previous resident killed in murder-suicide
+  - Ghost Lab EVP: Male voice answered "You got that right!" to question "Did Lizzie kill you for your money?"
+  - Amy Bruni (Kindred Spirits): Concluded the activity is "highly residual haunting" fed by notoriety of case
+  - Statistics: 100+ documented EVPs, 134 reports of physical sensations, 162 accounts of unexplained sounds over 25 years
+  - Current: Operates as B&B and museum since 1996; owned by US Ghost Adventures since 2021
+  - Sources: Official site, Boston Ghosts, Country Living, Smithsonian, History.com, US Ghost Adventures, Novel Suspects, Haunt Jaunts, Lizzie Andrew Borden Virtual Museum
+
+---
+
+## 2026-01-31
+
+### Changed
+- **Deep Research: Louisville Bourbon Inn** (Louisville, KY) — Expanded ghost story from 346 to 3,263 characters with 6 verified sources
+  - Building history: Russell Houston Mansion built 1887 by architect Mason Maury; 8,800-square-foot Richardsonian Romanesque residence for Tennessee Supreme Court justice and L&N Railroad president
+  - Annie Whipple legend: Nanny attempted to save child from yellow fever by contacting deceased doctor through automatic writing at the infamous Witches' Tree; received chilling response "You fool, I am not the doctor" and died suddenly
+  - Tour guide sighting: Angelique X Stacy reported "full-body apparition of a lady in a black dress with a bun on her head" on front steps
+  - TV investigation: Haunted Discoveries documented evidence that investigator Mustafa Gatollari said "will defy what people believe hauntings to be"
+  - David Domine connection: Annie Whipple featured in annual Victorian Ghost Walk as "governess whose spirit returns to warn against communicating with the dead"
+  - Location: Old Louisville, the third-largest National Preservation District in the US, dubbed "America's Most Haunted Neighborhood"
+  - Sources: Louisville Bourbon Inn, Gothic Horror Stories, WDRB News, Haunted Discoveries, Louisville Historic Tours, Wikipedia
+
+- **Deep Research: Witch Dungeon Museum** (Salem, MA) — Expanded ghost story from 460 to 3,278 characters with 9 verified sources
+  - Building history: Stick Style chapel built 1897 for East Church; Church of Christ Scientist until 1979; site of 1629 colonial fort
+  - Original jail beam: Museum houses one of three surviving beams from 1692 Old Witch Jail dungeon, discovered in 1956 excavation
+  - Jail history: Built 1684, held up to 150 accused witches in appalling conditions; prisoners charged for their chains and fed salted foods to induce confessions
+  - Sarah Good connection: Museum reenacts her trial using actual 1692 transcripts; she was hanged July 19, 1692, her 4-year-old daughter Dorcas chained in dungeon
+  - Paranormal activity: Cold spots in dungeon area, unexplained sounds when empty, actors feel presence during reenactments, visitors report weight of collective suffering
+  - Also displays original sign from Goodall family's "Old Witch Jail and Dungeon" (Salem's first witch tourism attraction, 1935)
+  - Sources: witchdungeon.com, Salem Heritage Trail, History of Massachusetts, Salem Witch Museum, ToSalem, Salem Haunted Adventures, Roadside America, Clio, TripAdvisor
+
+- **Deep Research: Murphy Funeral Home** (Salem, MA) — Expanded ghost story from 419 to 2,919 characters with 7 verified sources
+  - Founded 1893 by Patrick W. Murphy on site where Hawthorne Hotel now stands (built over Bridget Bishop's apple orchard)
+  - Five generations of Murphy family have prepared thousands of Salem's deceased
+  - Connection to Federal Street, location of original Salem Witch Jail where accused witches were chained in dungeons
+  - Paranormal activity: Apparitions of adults and children, unexplained footsteps, doors opening/closing, cold spots, disembodied weeping
+  - Paranormal theory: Funeral homes become "grief vortexes" where accumulated emotional energy allows spirits to manifest
+  - Sources: Murphy Funeral Home website, Salem Links and Lore, Salem News, Ghost City Tours, Haunted Rooms America, ToSalem, History of Massachusetts
+
+- **Deep Research: Gallows Hill Park** (Salem, MA) — Expanded ghost story from 351 to 3,901 characters with 8 verified sources
+  - Building history: Site believed for centuries to be where 19 innocent people were hanged during Salem Witch Trials of 1692
+  - 2016 Discovery: Gallows Hill Project confirmed actual execution site was nearby Proctor's Ledge; hill was route the condemned walked to their deaths
+  - The 19 victims: Bridget Bishop (June 10), Rebecca Nurse et al (July 19), Rev. George Burroughs and John Proctor (August 19), Martha Corey et al (September 22)
+  - Execution method: No gallows was built (Puritans refused to labor for witches); victims hanged from gnarled tree, left to swing as warnings, then cast into shallow rock crevices
+  - Paranormal activity: Full-bodied apparitions in woods, Lady in White specter, disembodied shrieking at night, unexplained dread overwhelming visitors who burst into tears
+  - Dark history: Site became common location for suicides in subsequent centuries, believed to fuel paranormal cycle
+  - 1992 Spiritual cleansing: Nearly 200 people from area churches gathered for exorcism on 300th anniversary, chanting "The curse over Salem with witchcraft is broken"
+  - Bone fragments allegedly found on grounds; CBS News listed among "America's 5 Most Haunted Places" (2017)
+  - Sources: Ghost City Tours, History of Massachusetts, US Ghost Adventures, Salem Ghosts, Moon Mausoleum, Wikipedia, Smithsonian, University of Virginia
+  - First Massachusetts place added to VERIFIED.md
+
+- **Deep Research: Pennsylvania PHASE 2 (20 places)** — Completed remaining Pennsylvania haunted places with 6 sources each
+  - **Philadelphia (4 places):** Carpenter's Hall, City Tavern, Congress Hall, First Bank of the United States
+  - **Pittsburgh (5 places):** Carnegie Library, Church Brew Works, Clayton (Frick Mansion), National Aviary, Troy Hill Firehouse
+  - **Scranton (5 places):** AV Restaurant & Lounge (PA's most haunted restaurant per Food Network), Albright Memorial Library, Catlin House, Houdini Museum, The Ritz Theater
+  - **Gettysburg (2 places):** Hummelbaugh House, Soldiers National Museum (orphanage with dungeon)
+  - **Other PA (4 places):** The Old Jail (Chambersburg), Fort Hunter Mansion (Harrisburg), Accomac Inn (Hellam), Golden Plough Tavern (York)
+  - Key findings: National Aviary built on Western Penitentiary site visited by Charles Dickens who later wrote Marley's ghost, Hummelbaugh House features legendary howling hound ghost, Accomac Inn murder victim Emily Myers has table permanently set for her
+  - Ghost stories expanded from ~350-500 chars to ~1,300-1,600 chars each
+  - All 51 Pennsylvania places now verified with 6 sources each
+
+---
+
 ## 2026-01-30
 
 ### Changed
