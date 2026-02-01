@@ -4,6 +4,40 @@ Key decisions, insights, and lessons learned. Update this when making significan
 
 ---
 
+## 2026-01-31
+
+### Homepage Atmospheric Overlays — Design Decision
+
+**What we're building:**
+Replacing the video background with layered PNG overlays that create depth. Content scrolls *behind* the overlay elements, making them feel like part of the environment rather than a static background.
+
+**Assets:**
+- `overlay-hand.png` — Grainy hand reaching from bottom-left
+- `overlay-tree.png` — Spooky tree branches from top-right
+- (Future: fog layer at bottom)
+
+**Behavior:**
+- **Tree**: Always visible, positioned top-right, subtle opacity (70%)
+- **Hand**: Hidden initially, slides in slowly from left after user scrolls ~150px
+
+**Sizing (current):**
+- Hand: 18vw (max 280px)
+- Tree: 12vw (max 180px)
+- Mobile: slightly larger proportionally
+
+**Why separate images instead of one composite:**
+1. Independent animation control (hand slides in on scroll)
+2. Can add parallax effects per element
+3. Easier to adjust individual positions/sizes
+4. Future: can animate subtle movement on each
+
+**Technical notes:**
+- z-index: 50 (above content, below grain texture at 9999)
+- pointer-events: none (clicks pass through to cards)
+- Hand transition: 2s cubic-bezier for slow, smooth entrance
+
+---
+
 ## 2026-01-30
 
 ### Sitemap lastmod Strategy — SEO Learning

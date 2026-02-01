@@ -206,20 +206,71 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
       inset: 0;
       z-index: 9999;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-      opacity: 0.03;
+      opacity: 0.06;
       pointer-events: none;
     }
-    /* Smoke background video */
-    .smoke-video {
+    /* Foreground overlays */
+    .overlay-hand {
       position: fixed;
-      top: 0;
+      bottom: 12vh;
+      left: -50%;
+      width: 14vw;
+      max-width: 220px;
+      height: auto;
+      z-index: 50;
+      pointer-events: none;
+      transition: left 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .overlay-hand.visible {
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      height: 100dvh;
-      object-fit: cover;
+    }
+    .overlay-tree {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 25vw;
+      max-width: 350px;
+      height: auto;
       z-index: -1;
       pointer-events: none;
+      opacity: 0.8;
+    }
+    .tombstones-bg {
+      position: fixed;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .tombstones-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clouds-bg {
+      position: fixed;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .clouds-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+    }
+    @media (max-width: 768px) {
+      .overlay-hand {
+        width: 20vw;
+      }
+      .overlay-tree {
+        width: 30vw;
+      }
     }
     html {
       background: #0a0c12;
@@ -352,10 +403,19 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
   </style>
 </head>
 <body class="text-gray-100 min-h-screen">
-  <!-- Smoke Background Video -->
-  <video class="smoke-video" autoplay muted loop playsinline>
-    <source src="/smoke-bg.mp4" type="video/mp4">
-  </video>
+  <!-- Foreground Overlays -->
+  <img src="/overlay-hand.png" alt="" class="overlay-hand" id="overlay-hand">
+  <img src="/overlay-tree.png" alt="" class="overlay-tree">
+
+  <!-- Tombstones behind fog -->
+  <div class="tombstones-bg">
+    <img src="/overlay-tombstones.png" alt="">
+  </div>
+
+  <!-- Background clouds at bottom of page -->
+  <div class="clouds-bg">
+    <img src="/overlay-clouds.png" alt="">
+  </div>
 
   <!-- SVG Grain Filter -->
   <svg style="position:absolute;width:0;height:0;">
@@ -666,15 +726,26 @@ function renderStatePage(stateCode, stateName, places, allStates, baseUrl, tourC
     })();
   </script>
 
-  <!-- Scroll-based state filter background -->
+  <!-- Scroll-based effects -->
   <script>
     (function() {
       const filters = document.getElementById('state-filters');
+      const hand = document.getElementById('overlay-hand');
+
       window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
+
+        // State filter background
         const opacity = Math.min(scrollY / 200, 0.9);
         filters.style.background = \`rgba(10, 10, 15, \${opacity})\`;
         filters.style.backdropFilter = scrollY > 50 ? 'blur(8px)' : 'none';
+
+        // Hand appears after scrolling 150px
+        if (scrollY > 150) {
+          hand.classList.add('visible');
+        } else {
+          hand.classList.remove('visible');
+        }
       });
     })();
   </script>
@@ -1088,8 +1159,12 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   <meta property="og:description" content="Explore ${totalPlaces} haunted places across ${states.length} US states.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${baseUrl}/states">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${baseUrl}/assets/states/GA.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Haunted Places by State | SpookFinder">
+  <meta name="twitter:image" content="${baseUrl}/assets/states/GA.jpg">
   <link rel="canonical" href="${baseUrl}/states">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"${baseUrl}"},{"@type":"ListItem","position":2,"name":"States"}]}
@@ -1127,16 +1202,34 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
       opacity: 0.03;
       pointer-events: none;
     }
-    .smoke-video {
+    .tombstones-bg {
       position: fixed;
-      top: 0;
+      bottom: -20px;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      height: 100dvh;
-      object-fit: cover;
+      width: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .tombstones-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clouds-bg {
+      position: fixed;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
       z-index: -1;
       pointer-events: none;
+    }
+    .clouds-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
     }
     html {
       background: #0a0c12;
@@ -1212,9 +1305,16 @@ function renderStatesIndexPage(states, totalPlaces, baseUrl) {
   </style>
 </head>
 <body class="text-gray-100 min-h-screen">
-  <video class="smoke-video" autoplay muted loop playsinline>
-    <source src="/smoke-bg.mp4" type="video/mp4">
-  </video>
+  <!-- Tombstones behind fog -->
+  <div class="tombstones-bg">
+    <img src="/overlay-tombstones.png" alt="">
+  </div>
+
+  <!-- Background clouds at bottom of page -->
+  <div class="clouds-bg">
+    <img src="/overlay-clouds.png" alt="">
+  </div>
+
   <svg style="position:absolute;width:0;height:0;">
     <defs>
       <filter id="grain" x="0%" y="0%" width="100%" height="100%">

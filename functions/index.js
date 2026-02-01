@@ -137,8 +137,8 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
     const stateName = stateNames[place.state] || place.state;
 
     return `
-            <a href="/place/${place.slug}" class="group">
-              <div class="place-card aspect-[4/3] overflow-hidden bg-dark-card mb-3">
+            <a href="/place/${place.slug}" class="group block bg-dark-card overflow-hidden relative" style="z-index: 10000;">
+              <div class="place-card aspect-[4/3] overflow-hidden">
                 ${imageUrl
                   ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover" loading="lazy">`
                   : `<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark">
@@ -146,8 +146,10 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
                     </div>`
                 }
               </div>
-              <h3 class="text-sm font-medium group-hover:text-accent transition-colors">${escapeHtml(place.name)}</h3>
-              <p class="text-xs text-ghost">${escapeHtml(place.city)}, ${stateName}</p>
+              <div class="p-3">
+                <h3 class="text-sm font-medium group-hover:text-accent transition-colors">${escapeHtml(place.name)}</h3>
+                <p class="text-xs text-ghost">${escapeHtml(place.city)}, ${stateName}</p>
+              </div>
             </a>`;
   }).join('\n');
 
@@ -194,7 +196,7 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
           },
           colors: {
             'dark': '#0a0c12',
-            'dark-card': '#1a1a2e',
+            'dark-card': '#141419',
             'dark-border': '#2a2a35',
             'accent': '#e94560',
             'accent-hover': '#ff6b6b',
@@ -213,20 +215,71 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
       inset: 0;
       z-index: 9999;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-      opacity: 0.03;
+      opacity: 0.06;
       pointer-events: none;
     }
-    /* Smoke background video */
-    .smoke-video {
+    /* Foreground overlays - content scrolls behind these */
+    .overlay-hand {
       position: fixed;
-      top: 0;
+      bottom: 12vh;
+      left: -50%;
+      width: 14vw;
+      max-width: 220px;
+      height: auto;
+      z-index: 10001;
+      pointer-events: none;
+      transition: left 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .overlay-hand.visible {
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      height: 100dvh;
-      object-fit: cover;
+    }
+    .overlay-tree {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 25vw;
+      max-width: 350px;
+      height: auto;
       z-index: -1;
       pointer-events: none;
+      opacity: 0.8;
+    }
+    .tombstones-bg {
+      position: fixed;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .tombstones-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clouds-bg {
+      position: fixed;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .clouds-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+    }
+    @media (max-width: 768px) {
+      .overlay-hand {
+        width: 25vw;
+      }
+      .overlay-tree {
+        width: 18vw;
+      }
     }
     html {
       background: #0a0c12;
@@ -372,10 +425,19 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
   </style>
 </head>
 <body class="text-gray-100 min-h-screen">
-  <!-- Smoke Background Video -->
-  <video class="smoke-video" autoplay muted loop playsinline>
-    <source src="/smoke-bg.mp4" type="video/mp4">
-  </video>
+  <!-- Foreground Overlays - cards scroll behind these -->
+  <img src="/overlay-hand.png" alt="" class="overlay-hand" id="overlay-hand">
+  <img src="/overlay-tree.png" alt="" class="overlay-tree">
+
+  <!-- Tombstones behind fog -->
+  <div class="tombstones-bg">
+    <img src="/overlay-tombstones.png" alt="">
+  </div>
+
+  <!-- Background clouds at bottom of page -->
+  <div class="clouds-bg">
+    <img src="/overlay-clouds.png" alt="">
+  </div>
 
   <!-- SVG Grain Filter -->
   <svg style="position:absolute;width:0;height:0;">
@@ -656,15 +718,26 @@ function renderHomepage(places, states, baseUrl, selectedState = null, totalPlac
     })();
   </script>
 
-  <!-- Scroll-based state filter background -->
+  <!-- Scroll-based effects -->
   <script>
     (function() {
       const filters = document.getElementById('state-filters');
+      const hand = document.getElementById('overlay-hand');
+
       window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
+
+        // State filter background
         const opacity = Math.min(scrollY / 200, 0.9);
         filters.style.background = \`rgba(10, 10, 15, \${opacity})\`;
         filters.style.backdropFilter = scrollY > 50 ? 'blur(8px)' : 'none';
+
+        // Hand appears after scrolling 150px
+        if (scrollY > 150) {
+          hand.classList.add('visible');
+        } else {
+          hand.classList.remove('visible');
+        }
       });
     })();
   </script>

@@ -1,0 +1,30 @@
+-- Deep research update for Michie Tavern
+UPDATE places SET
+ghost_story = 'Michie Tavern stands as one of Virginia''s most atmospheric haunted landmarks, a colonial-era inn where the spirits of Revolutionary-era revelers still gather for eternal celebrations in the upstairs assembly room.
+
+The tavern''s origins trace to tragedy and duty. In 1777, Corporal William Michie was serving at Valley Forge during George Washington''s brutal winter encampment when he received word that his father, "Scotch" John Michie, had died. The elder Michie had immigrated from Scotland and amassed over 10,000 acres of prime Virginia land, including property in Buck Mountain fed by natural springs. William returned home to inherit the land and began constructing his tavern beside Buck Mountain Road.
+
+By 1784, William obtained a license to operate an "Ordinary" under the new American government. But he had been serving travelers unofficially for years—and in 1779, when local countrymen wavered in their support for independence, William Michie signed the Albemarle Declaration of Independence and persuaded his patrons to follow suit. The tavern became a crucible of revolutionary sentiment, located midway between the homes of Thomas Jefferson, James Madison, and James Monroe on what would become known as the Presidents'' Route.
+
+The two-story inn''s crown jewel was its upstairs Assembly Room, a grand space that served as the social heart of the countryside. Large enough for dances and church services, it hosted traveling magicians, itinerant doctors, and dentists who shared their profits with the innkeeper. The room witnessed courtships, political debates, and celebrations that shaped the young nation.
+
+The tavern remained in the Michie family until 1910, when Sally Michie—the last family owner—was institutionalized and the property passed to state control. In 1927, businesswoman Josephine Henderson recognized the structure''s potential despite its deteriorating condition in remote Earlysville. Over three months, workers painstakingly numbered each piece, dismantled the entire building, and moved it seventeen miles by horse, wagon, and truck to its current location near Monticello. The move itself became a historic event, ultimately leading to the tavern''s designation as a Virginia Historic Landmark. It reopened as a museum in 1928.
+
+The supernatural reputation of Michie Tavern attracted the attention of Hans Holzer, one of America''s most famous paranormal investigators. Holzer visited the tavern with his psychic medium, Ingrid, and documented their findings in his book "Ghosts: True Encounters with the World Beyond" in the chapter titled "Michie Tavern, Jefferson, and the Boys." Through Ingrid''s psychic abilities, Holzer discovered spirits still celebrating in the assembly room—she described seeing people dancing and enjoying life, their colonial revelry continuing two centuries after their deaths. The medium could see and communicate with numerous ghosts within the tavern''s walls, all appearing happy and engaged in the pleasures of their era.
+
+Staff members have since confirmed Holzer''s findings through their own experiences. Late at night, after the restaurant closes, employees report hearing the sounds of a party emanating from the assembly room—laughter, glasses clinking, and the unmistakable rhythm of dancing. These phantom celebrations occur when the building is empty and locked.
+
+The Central Paranormal Research Institute (CPRI), Virginia''s oldest paranormal research society, has also investigated Michie Tavern. Their team documented unexplained whistling in the basement when no one was present—a phenomenon that has been experienced multiple times.
+
+Perhaps most compelling are the accounts from owners and long-term staff. One owner confided to a contractor that she had "on multiple occasions heard and seen ghosts within the house," going into great detail about each encounter. Other staff members joined in, sharing their own experiences. All assured him that these "guests" were friendly spirits who seemed to genuinely enjoy their eternal presence in the tavern.
+
+While staff members close up shop, there have been reports of objects being moved when backs are turned. Voices and footsteps echo through the socializing room when no guests remain in the building. Over the years, minor but persistent incidents include the occasional sound of someone cheerfully humming—a contented spirit going about their business.
+
+The Michie Tavern Cookbook, sold in the gift shop, includes a history of the tavern and "a few ghost stories from the Tavern" in its back pages—official acknowledgment that the management takes the supernatural reputation seriously.
+
+Today, Michie Tavern operates as a museum and restaurant where servers in period costume serve traditional Southern fare. Guests can tour the original tavern, visit the assembly room where so many spirits still gather, and dine in an atmosphere thick with colonial history. The property includes additional historic buildings relocated to the site, creating the largest grouping of reassembled buildings in Albemarle County.
+
+Whether the spirits are original patrons who loved the tavern so much they never left, or echoes of the countless celebrations held in the assembly room over two centuries, Michie Tavern remains one of Virginia''s most authentically haunted destinations—a place where the party truly never ends.',
+sources = '["https://www.panicd.com/miche-tavern.html", "https://www.southernspiritguide.org/haunted-virginia-briefly-noted/", "https://archive.org/details/ghoststrueencoun0000holz", "https://www.michietavern.com/the-tavern-history/", "https://www.hallowedground.org/site-locations/michie-tavern/", "https://www.monticello.org/research-education/thomas-jefferson-encyclopedia/michie-tavern/", "https://www.dhr.virginia.gov/historic-registers/002-0093/", "https://en.wikipedia.org/wiki/Michie_Tavern", "http://www.shopmichietavern.com/viewitem.php?productid=3"]',
+source_count = 9
+WHERE slug = 'michie-tavern';

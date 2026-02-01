@@ -71,9 +71,13 @@ function renderHead(title, description, canonicalUrl, baseUrl) {
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${canonicalUrl}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${baseUrl}/images/categories/mansion.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(title)}">
   <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${baseUrl}/images/categories/mansion.jpg">
   <link rel="canonical" href="${canonicalUrl}">
   <script async src="https://plausible.io/js/pa-U75YbwDcDaK8C53IH8RVe.js"></script>
   <script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
@@ -195,9 +199,9 @@ function renderCategoriesIndexPage(categories, baseUrl) {
     return `
       <a href="/category/${config.slug}" class="group block">
         <!-- Card with layered white borders -->
-        <div class="category-card relative bg-white/10 p-[3px] rounded-lg">
-          <div class="bg-white/5 p-[3px] rounded-md">
-            <div class="bg-dark-card rounded overflow-hidden">
+        <div class="category-card relative bg-white/10 p-[3px]">
+          <div class="bg-white/5 p-[3px]">
+            <div class="bg-dark-card overflow-hidden">
               <div class="aspect-[4/5] overflow-hidden">
                 ${imageUrl
                   ? `<img src="${imageUrl}" alt="${escapeHtml(config.display)}" class="category-img w-full h-full object-cover" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
@@ -227,16 +231,34 @@ function renderCategoriesIndexPage(categories, baseUrl) {
   ${JSON.stringify(itemListSchema)}
   </script>
   <style>
-    .smoke-video {
+    .tombstones-bg {
       position: fixed;
-      top: 0;
+      bottom: -20px;
       left: 0;
-      width: 100vw;
-      height: 100vh;
-      height: 100dvh;
-      object-fit: cover;
+      width: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .tombstones-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .clouds-bg {
+      position: fixed;
+      bottom: -70px;
+      left: 0;
+      width: 100%;
       z-index: -1;
       pointer-events: none;
+    }
+    .clouds-bg img {
+      width: 100%;
+      height: auto;
+      display: block;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 40%);
     }
     html { background: #0a0c12; }
     .category-card {
@@ -258,9 +280,15 @@ function renderCategoriesIndexPage(categories, baseUrl) {
   </style>
 </head>
 <body class="text-gray-100 min-h-screen font-sans">
-  <video class="smoke-video" autoplay muted loop playsinline>
-    <source src="/smoke-bg.mp4" type="video/mp4">
-  </video>
+  <!-- Tombstones behind fog -->
+  <div class="tombstones-bg">
+    <img src="/overlay-tombstones.png" alt="">
+  </div>
+
+  <!-- Background clouds at bottom of page -->
+  <div class="clouds-bg">
+    <img src="/overlay-clouds.png" alt="">
+  </div>
 
   ${renderHeader('category')}
 
@@ -347,7 +375,7 @@ function renderCategoryDetailPage(categoryKey, places, baseUrl) {
     const stateName = stateNames[place.state] || place.state;
 
     return `
-      <a href="/place/${place.slug}" class="group block bg-dark-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 place-card" data-state="${place.state}">
+      <a href="/place/${place.slug}" class="group block bg-dark-card overflow-hidden hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 place-card" data-state="${place.state}">
         <div class="aspect-[4/3] overflow-hidden">
           ${imageUrl
             ? `<img src="${imageUrl}" alt="${escapeHtml(place.name)}" class="place-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'w-full h-full flex items-center justify-center bg-gradient-to-br from-dark-card to-dark\\'><span class=\\'text-4xl opacity-30\\'>&#128123;</span></div>'">`
@@ -444,7 +472,7 @@ function renderCategoryDetailPage(categoryKey, places, baseUrl) {
     ${states.length > 1 ? `
     <div class="mb-8">
       <label for="state-filter" class="sr-only">Filter by state</label>
-      <select id="state-filter" class="bg-dark-card border border-dark-border rounded-lg px-4 py-2 text-white focus:border-accent focus:outline-none">
+      <select id="state-filter" class="bg-dark-card border border-dark-border px-4 py-2 text-white focus:border-accent focus:outline-none">
         <option value="">All States</option>
         ${stateOptionsHtml}
       </select>
