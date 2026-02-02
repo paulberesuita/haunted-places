@@ -7,6 +7,52 @@ What we shipped. Builder appends here after each feature.
 ## 2026-02-02
 
 ### Changed
+- **Deep Research: Camp Nelson National Monument** (Nicholasville, KY) — Expanded ghost story from 333 to 3,294 characters with 8 verified sources
+  - Building history: Established 1863; named for Union General William "Bull" Nelson (murdered by fellow Union officer)
+  - Black soldier recruitment: Nation's third-largest recruitment center for U.S. Colored Troops; 23,000+ enlisted from Kentucky
+  - The 1864 tragedy: November 22 expulsion of refugees into freezing temperatures; 102 women and children died from exposure
+  - Archaeological evidence: Necklace beads, doll parts, protective charms (X-marked button, pierced coin) found at burned camp
+  - Ranger apparition sighting: Park ranger saw African American family in Civil War clothing who vanished before his eyes
+  - Legacy: Tragedy led Congress to emancipate families of all USCT soldiers; descendants still live in Hall, KY
+  - Sources: NPS, Explore KY History, Kentucky Archaeology, Reconstruction Era, Kentucky Monthly
+
+- **Deep Research: Frankfort Cemetery** (Frankfort, KY) — Expanded ghost story from 324 to 3,267 characters with 8 verified sources
+  - Building history: Kentucky's first rural garden-style cemetery; established 1840s; second incorporated memorial park in America
+  - Daniel Boone mystery: Remains moved from Missouri 1845; controversy over whether correct body was exhumed
+  - Forensic evidence: 1983 analysis of skull cast suggested remains might be African American, not Boone
+  - Missouri dispute: Both Frankfort and Missouri maintain graves for Boone; neither will concede
+  - Ghost literature: "Haunted Houses and Family Ghosts of Kentucky" tells of Boone's ghost visiting dying Henry Clay
+  - Nearby haunts: Liberty Hall with "Gray Lady" and disappeared Spanish opera singer
+  - Sources: Wikipedia, Frankfort Cemetery official, Atlas Obscura, Roadside America, Kentucky Press
+
+- **Deep Research: DuPont Mansion** (Louisville, KY) — Expanded ghost story from 326 to 3,104 characters with 8 verified sources
+  - Building history: Built 1879 by DuPont family; three-story Italianate-Renaissance mansion in Old Louisville
+  - Alfred DuPont: Allegedly murdered by pregnant mistress; ghost returned to mansion and never left
+  - "Uncle Fred" activity: Female guests report being goosed, hot breath blown in ears; cigar smoke smells
+  - Interior decorator incident: Felt hot breath in ear while alone on main staircase
+  - Old Louisville: David Dominé documented 100+ hauntings in "the most haunted neighborhood in America"
+  - Ghost packages: B&B offers "Ghosts of Old Louisville" book and haunted neighborhood tour
+  - Sources: KET, Haunted Rooms, HauntedHouses.com, Gothic Horror Stories, GoToLouisville
+
+- **Deep Research: Conrad-Caldwell House** (Louisville, KY) — Expanded ghost story from 335 to 3,734 characters with 8 verified sources
+  - Building history: Built 1893; limestone mansion (stone associated with paranormal activity); seven hardwood types
+  - Theophile Conrad: Died of heart attack on stairs 1905; appears as misty man with goatee and bowler hat wagging finger
+  - The Caldwells: Elaine (d.1925) brings flower scents; William (d.1938) seen in library with cigar smoke
+  - Three Presbyterian widows: Spirits from Rose Anna Hughes Home era gather in second-floor sitting room
+  - Ball of light: Beth Caldwell (great-granddaughter) witnessed two orbs during tour
+  - Disembodied voice: Housekeeper alone heard "Hurry, close the window, it's raining"—found open window
+  - Six documented entities: Most thoroughly documented haunted location in Old Louisville
+  - Sources: Conrad-Caldwell official, KET, Haunted Kentucky Road Trip, WDRB, GoToLouisville, PBS
+
+- **Deep Research: Pioneer Cemetery** (Bardstown, KY) — Expanded ghost story from 323 to 3,370 characters with 8 verified sources
+  - Building history: Founded 1789; 15.5 acres with 3,100+ interments; also called Old Jail Cemetery
+  - Buried alive: Caretakers buried the living—twice; full story revealed only on ghost tours
+  - Confederate soldiers: Many Civil War dead buried here after nearby battles
+  - Jailer's Inn connection: Cemetery sits behind Travel Channel's "10 Most Haunted Places in America"
+  - Ghost Trek tours: 25 years of paranormal tours ending in cemetery; visitors capture orbs, mists, shadows
+  - Bardstown context: Kentucky's second-oldest town; Bourbon Capital with 200+ years of haunted history
+  - Sources: Kentucky Tourism, Visit Bardstown, Bourbon Manor, Haunted Places, Distillery Trail, TripAdvisor
+
 - **Deep Research: Lexington Opera House** (Lexington, KY) — Expanded ghost story from 301 to 3,202 characters with 8 verified sources
   - Building history: Built 1886 after fire destroyed predecessor on January 15, 1886; designed by Chicago architect Oscar Cobb
   - Grand opening: July 19, 1887 with Cincinnati Symphony concert

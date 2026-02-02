@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 496 | 876 |
+| 501 | 876 |
 
 ---
 
@@ -535,12 +535,17 @@ Places that have been deeply researched with multiple independent sources, expan
 | Place | City | Story Length | Sources |
 |-------|------|--------------|---------|
 | [My Old Kentucky Home](https://spookfinder.com/place/my-old-kentucky-home) | Bardstown | 3,295 chars | 8 |
+| [Pioneer Cemetery](https://spookfinder.com/place/pioneer-cemetery-bardstown) | Bardstown | 3,370 chars | 8 |
 | [Lost River Cave](https://spookfinder.com/place/lost-river-cave) | Bowling Green | 3,449 chars | 8 |
 | [The Carneal House](https://spookfinder.com/place/carneal-house) | Covington | 3,167 chars | 8 |
+| [Frankfort Cemetery](https://spookfinder.com/place/frankfort-cemetery) | Frankfort | 3,267 chars | 8 |
 | [Lexington Opera House](https://spookfinder.com/place/lexington-opera-house) | Lexington | 3,202 chars | 8 |
 | [Belle of Louisville](https://spookfinder.com/place/belle-of-louisville) | Louisville | 3,350 chars | 8 |
+| [Conrad-Caldwell House](https://spookfinder.com/place/conrad-caldwell-house) | Louisville | 3,734 chars | 8 |
+| [DuPont Mansion](https://spookfinder.com/place/dupont-mansion) | Louisville | 3,104 chars | 8 |
 | [Louisville Bourbon Inn](https://spookfinder.com/place/louisville-bourbon-inn) | Louisville | 3,263 chars | 6 |
 | [Louisville Palace Theatre](https://spookfinder.com/place/louisville-palace-theatre) | Louisville | 3,157 chars | 8 |
+| [Camp Nelson National Monument](https://spookfinder.com/place/camp-nelson) | Nicholasville | 3,294 chars | 8 |
 
 ---
 
