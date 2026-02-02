@@ -7,6 +7,76 @@ What we shipped. Builder appends here after each feature.
 ## 2026-02-02
 
 ### Changed
+- **Deep Research: Antietam National Cemetery** (Sharpsburg, MD) — Expanded ghost story from 338 to 3,487 characters with 8 verified sources
+  - Building history: Bloodiest single day of Civil War — September 17, 1862; 23,100 casualties in 12 hours
+  - Cemetery holds 4,776 Union soldiers; original makeshift graves scattered across battlefield
+  - Blue spectral lights: Floating orbs drift over burial grounds; mist emerges from earth into headstones
+  - Bloody Lane: 5,500 fell in 4 hours; phantom gunfire, gunpowder smell, soldiers who vanish when approached
+  - Burnside Bridge: Blue balls of light; elderly man in butternut wool appeared and vanished
+  - Dartmouth-verified evidence: 2009 photograph of face in stonework authenticated by scientists
+  - Anniversary activity: Paranormal reports intensify every September 17th
+  - Sources: Haunted Places, NPS, Federal Highway History, Ghost Excavations, Moon Mausoleum
+
+- **Deep Research: Schifferstadt Architectural Museum** (Frederick, MD) — Expanded ghost story from 392 to 3,374 characters with 8 verified sources
+  - Building history: Built 1756 by German immigrant Joseph Brunner; one of oldest structures in Frederick
+  - Restoration trigger: Nearly demolished 1972 for gas station; 1970s restoration awakened spirits
+  - Joseph & Elias Brunner: Original owners speak German/English; footsteps heard throughout house
+  - Wilhelmina: Young midwife who burned to death in kitchen; staff member physically hugged by her spirit
+  - Christian: 3-year-old who died of fever; seen in attic shadows; neighborhood children play with him
+  - Mason Dixon Paranormal Society: 2008 investigation declared house officially haunted
+  - Disembodied voice: Housekeeper heard door slam when alone; all doors remained untouched
+  - Sources: Maryland Haunted Houses, HauntedHouses.com, Southern Spirit Guide, German Pulse, TripAdvisor
+
+- **Deep Research: Ropes Mansion** (Salem, MA) — Expanded ghost story from 306 to 3,286 characters with 8 verified sources
+  - Building history: Built late 1720s by Samuel Barnard; three wives died under mysterious circumstances
+  - Hocus Pocus: Featured as Allison's house in 1993 film; filmed one long night in fall 1992
+  - Judge Nathaniel Ropes: Died from smallpox/stress during Revolutionary War; sits on his old couch
+  - Abigail "Nabby" Ropes: Died 1839 when dress caught fire; screams still heard; taps shoulders of visitors
+  - Caretakers captured image: Rick and Georgette Stafford photographed Nathaniel during insurance appraisal
+  - Window apparition: Nabby seen gazing from second-floor window after mansion closes
+  - 1894 fire: Additional tragedy during renovations; opened to public 2015
+  - Sources: Salem Ghosts, Ghost City Tours, US Ghost Adventures, Haunts podcast, PEM
+
+- **Deep Research: Salem Witch Museum** (Salem, MA) — Expanded ghost story from 311 to 2,989 characters with 8 verified sources
+  - Building history: Founded 1972 in Gothic Revival church on Washington Square; 50+ years operation
+  - Witch trials: 24 died in 1692 — 19 hanged, 1 pressed to death, 4 died in prison
+  - Massachusetts apology: Formal apology not issued until 1957 — 265 years after trials
+  - Thirteen stage sets: Life-size figures, lighting, narration create immersive experience
+  - Haunted Happenings: Museum co-created Salem's annual Halloween festival in 1982
+  - Bridget Bishop: First executed (June 10, 1692); ghost seen throughout Salem
+  - Visitor experiences: Cold spots, whispers, feeling watched beyond audio presentation
+  - Sources: Salem Witch Museum official, Wikipedia, Haunted Happenings, Salem Ghosts, Ghost City Tours
+
+- **Deep Research: Paul Revere House** (Boston, MA) — Expanded ghost story from 316 to 3,143 characters with 8 verified sources
+  - Building history: Built c.1680; oldest structure in downtown Boston; Revere lived 1770-1800
+  - Historic night: April 18, 1775 — Revere left this house to make his midnight ride
+  - Family life: 16 children between two wives; Sarah died 1773, then married Rachel Walker
+  - Revere's ghost: Seen at Granary Burying Ground on horseback, still making eternal midnight ride
+  - Fort Revere: Renamed in his honor; whispers, unexplained sounds, shadowy figures reported
+  - Visitor experiences: Sense of being watched, cold spots, inexplicable connection to past
+  - North End context: One of Boston's most haunted neighborhoods
+  - Sources: NPS, Boston Ghosts, Ghosts and Gravestones, Haunted Rooms, Boston Uncovered
+
+- **Deep Research: Old Hill Burying Ground** (Concord, MA) — Expanded ghost story from 316 to 3,161 characters with 8 verified sources
+  - Building history: 1700s cemetery on hillside overlooking Concord town center
+  - Skull Tombstone: Carved death's head with "bowing to the king of terror" inscription
+  - The sinister specter: Unnamed hostile entity with no grave marker; appears at dusk
+  - Territorial behavior: Visitors warned never to approach or provoke this malevolent presence
+  - Pierce family crypt: Broken into three times; reason unknown
+  - Cemetery condition: Mole holes, rampant weeds give air of abandonment
+  - Twilight tours: "Monuments, Memories, and Mortality" visits this and Sleepy Hollow Cemetery
+  - Sources: Concord official site, Visit Concord, US Ghost Adventures, Concord Patch
+
+- **Deep Research: Sparrow House** (Plymouth, MA) — Expanded ghost story from 300 to 3,049 characters with 8 verified sources
+  - Building history: Built c.1640; Plymouth's oldest surviving house; National Register 1974
+  - Richard Sparrow: English surveyor who arrived 1636; lived here until moving to Eastham 1653
+  - Staff reports: Strange noises, footsteps in empty galleries, sense of unseen presence
+  - Second floor: Closed for safety but activity continues whether witnessed or not
+  - Plymouth context: Half of Mayflower passengers died first winter 1620-21; profound suffering
+  - America's Haunted Hometown: Plymouth embraces paranormal reputation; ghost tours operate year-round
+  - Visitor experiences: Weight of history, cold spots, whispered voices
+  - Sources: Wikipedia, Sparrow House official, Boston Ghosts, TripAdvisor, MA Haunted Houses
+
 - **Deep Research: Camp Nelson National Monument** (Nicholasville, KY) — Expanded ghost story from 333 to 3,294 characters with 8 verified sources
   - Building history: Established 1863; named for Union General William "Bull" Nelson (murdered by fellow Union officer)
   - Black soldier recruitment: Nation's third-largest recruitment center for U.S. Colored Troops; 23,000+ enlisted from Kentucky

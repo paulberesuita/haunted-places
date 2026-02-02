@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 501 | 876 |
+| 508 | 876 |
 
 ---
 
@@ -465,9 +465,11 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Granary Burying Ground](https://spookfinder.com/place/granary-burying-ground) | Boston | 4,589 chars | 8 |
 | [King's Chapel Burying Ground](https://spookfinder.com/place/kings-chapel-burying-ground) | Boston | 4,411 chars | 8 |
 | [Omni Parker House](https://spookfinder.com/place/omni-parker-house) | Boston | 4,134 chars | 8 |
+| [Paul Revere House](https://spookfinder.com/place/paul-revere-house) | Boston | 3,143 chars | 8 |
 | [USS Constitution](https://spookfinder.com/place/uss-constitution) | Boston | 5,245 chars | 8 |
 | [Longfellow House](https://spookfinder.com/place/longfellow-house) | Cambridge | 4,532 chars | 8 |
 | [Concord's Colonial Inn](https://spookfinder.com/place/concords-colonial-inn) | Concord | 4,476 chars | 8 |
+| [Old Hill Burying Ground](https://spookfinder.com/place/old-hill-burying-ground) | Concord | 3,161 chars | 8 |
 | [Danvers State Hospital](https://spookfinder.com/place/danvers-state-hospital) | Danvers | 4,414 chars | 8 |
 | [Lizzie Borden House](https://spookfinder.com/place/lizzie-borden-house) | Fall River | 4,263 chars | 10 |
 | [Freetown-Fall River State Forest](https://spookfinder.com/place/freetown-state-forest) | Freetown | 5,127 chars | 8 |
@@ -475,6 +477,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Hammond Castle](https://spookfinder.com/place/hammond-castle) | Gloucester | 4,708 chars | 9 |
 | [Hoosac Tunnel](https://spookfinder.com/place/hoosac-tunnel) | North Adams | 4,271 chars | 8 |
 | [Houghton Mansion](https://spookfinder.com/place/houghton-mansion) | North Adams | 4,758 chars | 8 |
+| [Sparrow House](https://spookfinder.com/place/sparrow-house) | Plymouth | 3,049 chars | 8 |
 | [Taunton State Hospital](https://spookfinder.com/place/taunton-state-hospital) | Taunton | 5,638 chars | 8 |
 | [Gallows Hill Park](https://spookfinder.com/place/gallows-hill-park) | Salem | 3,901 chars | 8 |
 | [Hawthorne Hotel](https://spookfinder.com/place/hawthorne-hotel) | Salem | 4,257 chars | 8 |
@@ -482,6 +485,8 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Howard Street Cemetery](https://spookfinder.com/place/howard-street-cemetery) | Salem | 4,254 chars | 8 |
 | [Joshua Ward House](https://spookfinder.com/place/joshua-ward-house) | Salem | 4,004 chars | 8 |
 | [Murphy Funeral Home](https://spookfinder.com/place/murphy-funeral-home) | Salem | 2,919 chars | 7 |
+| [Ropes Mansion](https://spookfinder.com/place/ropes-mansion) | Salem | 3,286 chars | 8 |
+| [Salem Witch Museum](https://spookfinder.com/place/salem-witch-museum) | Salem | 2,989 chars | 8 |
 | [Witch Dungeon Museum](https://spookfinder.com/place/witch-dungeon-museum) | Salem | 3,278 chars | 9 |
 
 ### Maryland
@@ -510,6 +515,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Patapsco Female Institute](https://spookfinder.com/place/patapsco-female-institute) | Ellicott City | 4,028 chars | 9 |
 | [The Wayside Inn](https://spookfinder.com/place/wayside-inn-ellicott-city) | Ellicott City | 5,347 chars | 9 |
 | [Barbara Fritchie House](https://spookfinder.com/place/barbara-fritchie-house) | Frederick | 3,755 chars | 10 |
+| [Schifferstadt Architectural Museum](https://spookfinder.com/place/schifferstadt) | Frederick | 3,374 chars | 8 |
 | [Glenn Dale Hospital](https://spookfinder.com/place/glenn-dale-hospital) | Glenn Dale | 3,666 chars | 8 |
 | [Jonathan Hager House](https://spookfinder.com/place/jonathan-hager-house) | Hagerstown | 3,241 chars | 8 |
 | [Miller's Church](https://spookfinder.com/place/millers-church) | Hagerstown | 5,467 chars | 6 |
@@ -523,6 +529,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Point Lookout Lighthouse](https://spookfinder.com/place/point-lookout-lighthouse) | Scotland | 3,991 chars | 8 |
 | [Point Lookout State Park](https://spookfinder.com/place/point-lookout-state-park) | Scotland | 4,610 chars | 9 |
 | [Antietam National Battlefield](https://spookfinder.com/place/antietam-national-battlefield) | Sharpsburg | 6,566 chars | 11 |
+| [Antietam National Cemetery](https://spookfinder.com/place/antietam-national-cemetery) | Sharpsburg | 3,487 chars | 8 |
 | [Burnside Bridge](https://spookfinder.com/place/burnside-bridge-antietam) | Sharpsburg | 4,021 chars | 10 |
 | [Pry House Field Hospital Museum](https://spookfinder.com/place/pry-house-field-hospital) | Sharpsburg | 4,767 chars | 10 |
 | [St. Paul Episcopal Church](https://spookfinder.com/place/st-paul-episcopal-church-sharpsburg) | Sharpsburg | 3,664 chars | 8 |
