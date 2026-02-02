@@ -4,6 +4,61 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-02-02
+
+### Changed
+- **Deep Research: Dogtown Common** (Gloucester, MA) — Expanded ghost story from 416 to 4,815 characters with 8 verified sources
+  - Building history: Abandoned 18th-century settlement; once thriving community of 100+ families, deserted by 1830s
+  - Witches of Dogtown: Thomazine "Tammy" Younger and Peg Wesson — local women who sold hexes and potions
+  - James Merry: Killed by a bull in 1892; witnesses heard him screaming as he was gored to death
+  - Werewolf legend: One of the witches allegedly cursed a man to transform; seen prowling the woods
+  - Suspicious deaths: Several unexplained deaths including a man found bludgeoned with no killer identified
+  - Babson Boulders: 24 boulders carved with inspirational messages by Roger Babson during Great Depression
+  - Paranormal activity: Apparitions in colonial clothing, spectral lights, disembodied screams, overwhelming dread
+  - Sources: NewEngland.com, Legends of America, Atlas Obscura, Cape Ann Museum, Only In Your State
+
+- **Deep Research: King's Chapel Burying Ground** (Boston, MA) — Expanded ghost story from 426 to 4,411 characters with 8 verified sources
+  - Building history: Boston's oldest cemetery, founded 1630; first burial was Isaac Johnson who chose this spot
+  - Notable burials: Governor John Winthrop, William Dawes (Paul Revere's companion), Mary Chilton (first Pilgrim woman ashore)
+  - Elizabeth Pain: Inspiration for Hester Prynne in "The Scarlet Letter"; convicted of adultery, possibly murdered her child
+  - Captain Kidd connection: Legend says treasure buried here; pirate executed 1701
+  - Lady in White: Elizabeth Pain's ghost seen near her gravestone; leaves footprints in snow
+  - Paranormal activity: Orbs, shadow figures, cold spots, spectral faces in photos, whispered voices
+  - Nathaniel Hawthorne's visits: Drew inspiration from the cemetery for "The Scarlet Letter"
+  - Sources: Ghost City Tours, US Ghost Adventures, Nightly Spirits, Boston.gov, Freedom Trail, CelebrateBoston
+
+- **Deep Research: Howard Street Cemetery** (Salem, MA) — Expanded ghost story from 310 to 4,254 characters with 8 verified sources
+  - Building history: Founded 1801 as Salem's third public burying ground; contains over 1,000 interments
+  - Giles Corey: Not buried here but pressed to death nearby in 1692; refused to plead, said "More weight"
+  - Corey's curse: Before dying, cursed Salem's sheriff; legend says sheriffs die in office
+  - Sheriff connections: Multiple sheriffs allegedly suffered heart attacks or died prematurely
+  - Hannah Corey: Giles's wife hanged as a witch; her spirit reportedly seen wandering the grounds
+  - Paranormal activity: Giles seen as a hunched figure, unexplained mists, equipment malfunctions, EVP recordings
+  - Ghost Adventures investigation: Featured the cemetery's connections to the witch trials
+  - Sources: Salem Ghosts, Atlas Obscura, Haunted Salem, History of Massachusetts, Wikipedia, Only In Your State
+
+- **Deep Research: Boston Athenaeum** (Boston, MA) — Expanded ghost story from 427 to 3,292 characters with 8 verified sources
+  - Building history: Founded 1807; one of America's oldest independent libraries with 600,000+ volumes
+  - George Washington's library: Houses books from Washington's personal collection
+  - Nathaniel Hawthorne's encounter: 1842 — saw Reverend Thaddeus Mason Harris reading in his usual alcove
+  - Ghost revealed: Hawthorne discovered Harris had died; he'd been reading alongside a ghost for weeks
+  - Harris's devotion: Minister was longtime trustee; spirit returned to continue scholarly pursuits
+  - Human skin book: "Narrative of the Life of James Allen" — highway man's memoir bound in his own skin (1837)
+  - Elevator anomalies: Staff report unexplained malfunctions attributed to Harris's ghost navigating the building
+  - Sources: Boston Athenaeum, NewEngland.com, Atlas Obscura, American Ghost Tours, WBUR, Smithsonian
+
+- **Deep Research: Charlesgate Hotel** (Boston, MA) — Expanded ghost story from 370 to 4,523 characters with 8 verified sources
+  - Building history: Built 1891 by J. Pickering Putnam; luxury hotel, then BU dorm (1947-73), Emerson dorm (1981-95)
+  - Legend of Elsa: Architect's 7-year-old daughter allegedly fell down elevator shaft chasing her ball
+  - Historical note: Research revealed real Elsa Putnam lived until 1979; legend persists nonetheless
+  - The Man in Black: Dark figure seen near elevators; attributed to alleged mafia execution victims
+  - Ouija board sessions: 1990s students contacted "Elsa" who spelled "ha ha ha"; entity "Zena" claimed protective role
+  - Hidden rooms: Secret chambers found behind walls; blueprints show many inconsistencies
+  - Paranormal activity: Black fog, slamming doors, toilets flushing alone, music from unplugged machines
+  - Sources: Boston Ghosts, Emerson Today, Tripping on Legends, CelebrateBoston, BU Alumni, Nightly Spirits
+
+---
+
 ## 2026-02-01
 
 ### Changed

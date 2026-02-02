@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 486 | 876 |
+| 491 | 876 |
 
 ---
 
@@ -456,11 +456,14 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Place | City | Story Length | Sources |
 |-------|------|--------------|---------|
+| [Boston Athenaeum](https://spookfinder.com/place/boston-athenaeum) | Boston | 3,292 chars | 8 |
 | [Boston Common](https://spookfinder.com/place/boston-common) | Boston | 5,310 chars | 8 |
+| [Charlesgate Hotel](https://spookfinder.com/place/charlesgate-hotel) | Boston | 4,523 chars | 8 |
 | [Copp's Hill Burying Ground](https://spookfinder.com/place/copps-hill-burying-ground) | Boston | 4,721 chars | 8 |
 | [Fenway Park](https://spookfinder.com/place/fenway-park) | Boston | 4,712 chars | 8 |
 | [Fort Warren](https://spookfinder.com/place/fort-warren) | Boston | 4,538 chars | 8 |
 | [Granary Burying Ground](https://spookfinder.com/place/granary-burying-ground) | Boston | 4,589 chars | 8 |
+| [King's Chapel Burying Ground](https://spookfinder.com/place/kings-chapel-burying-ground) | Boston | 4,411 chars | 8 |
 | [Omni Parker House](https://spookfinder.com/place/omni-parker-house) | Boston | 4,134 chars | 8 |
 | [USS Constitution](https://spookfinder.com/place/uss-constitution) | Boston | 5,245 chars | 8 |
 | [Longfellow House](https://spookfinder.com/place/longfellow-house) | Cambridge | 4,532 chars | 8 |
@@ -468,6 +471,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Danvers State Hospital](https://spookfinder.com/place/danvers-state-hospital) | Danvers | 4,414 chars | 8 |
 | [Lizzie Borden House](https://spookfinder.com/place/lizzie-borden-house) | Fall River | 4,263 chars | 10 |
 | [Freetown-Fall River State Forest](https://spookfinder.com/place/freetown-state-forest) | Freetown | 5,127 chars | 8 |
+| [Dogtown Common](https://spookfinder.com/place/dogtown-common) | Gloucester | 4,815 chars | 8 |
 | [Hammond Castle](https://spookfinder.com/place/hammond-castle) | Gloucester | 4,708 chars | 9 |
 | [Hoosac Tunnel](https://spookfinder.com/place/hoosac-tunnel) | North Adams | 4,271 chars | 8 |
 | [Houghton Mansion](https://spookfinder.com/place/houghton-mansion) | North Adams | 4,758 chars | 8 |
@@ -475,6 +479,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Gallows Hill Park](https://spookfinder.com/place/gallows-hill-park) | Salem | 3,901 chars | 8 |
 | [Hawthorne Hotel](https://spookfinder.com/place/hawthorne-hotel) | Salem | 4,257 chars | 8 |
 | [House of Seven Gables](https://spookfinder.com/place/house-of-seven-gables) | Salem | 4,177 chars | 8 |
+| [Howard Street Cemetery](https://spookfinder.com/place/howard-street-cemetery) | Salem | 4,254 chars | 8 |
 | [Joshua Ward House](https://spookfinder.com/place/joshua-ward-house) | Salem | 4,004 chars | 8 |
 | [Murphy Funeral Home](https://spookfinder.com/place/murphy-funeral-home) | Salem | 2,919 chars | 7 |
 | [Witch Dungeon Museum](https://spookfinder.com/place/witch-dungeon-museum) | Salem | 3,278 chars | 9 |
