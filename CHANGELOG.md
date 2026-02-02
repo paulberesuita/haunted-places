@@ -7,6 +7,57 @@ What we shipped. Builder appends here after each feature.
 ## 2026-02-02
 
 ### Changed
+- **Deep Research: Lexington Opera House** (Lexington, KY) — Expanded ghost story from 301 to 3,202 characters with 8 verified sources
+  - Building history: Built 1886 after fire destroyed predecessor on January 15, 1886; designed by Chicago architect Oscar Cobb
+  - Grand opening: July 19, 1887 with Cincinnati Symphony concert
+  - Famous performers: All the Barrymores, Sarah Bernhardt, Houdini, Al Jolson, Will Rogers, Helen Hayes, W.C. Fields
+  - Spectacular productions: "Henley Regatta" flooded stage for rowboat performances; "Ben Hur" required remodeling for chariot race
+  - The Man in Gray: Mysterious spectral figure appears in balcony during rehearsals, vanishes when approached
+  - Phantom applause: Sound of enthusiastic clapping heard when theater is empty
+  - Sources: Wikipedia, Central Bank Center, Bluegrass Extended Stay, US Ghost Adventures, Kentucky After Dark
+
+- **Deep Research: Louisville Palace Theatre** (Louisville, KY) — Expanded ghost story from 319 to 3,157 characters with 8 verified sources
+  - Building history: Opened 1928 as Loew's Theater; seats 2,700; Spanish Baroque and Art Deco design
+  - The Lady in Gray: Residual haunting in 1940s dress with hair in bun, holding a program; appears repeatedly in same manner
+  - Faceless woman: 1940s-era apparition climbs mezzanine stairs; features obscured in shadow
+  - Ferdinand Frisch: Named employee who died 1965, appears throughout the building
+  - Projectionist ghost: Died of heart attack in projection booth, still haunts his workplace
+  - Protective spirit: Flickered lights to warn manager Johnny Downs about a leaking pipe
+  - 2022 witness: Visitor physically touched twice during Jeff Beck concert
+  - Sources: Kentucky Haunted Houses, Haunted Places, Haunted Rooms, GoToLouisville, Louisville Ghost Hunters
+
+- **Deep Research: Belle of Louisville** (Louisville, KY) — Expanded ghost story from 340 to 3,350 characters with 8 verified sources
+  - Building history: Built Pittsburgh 1914 as "Idlewild"; renamed "Avalon" 1948; "Belle of Louisville" 1962
+  - Captain Ben Winters: Died of heart attack 1948 in captain's quarters; seen in dress uniform roaming decks
+  - Pilot house activity: Main wheel moves on its own despite bridge being locked; Captain Mark Doty felt pants tugged
+  - Former employee encounter: Saw Captain Winters appear for several seconds while working alone late at night
+  - Two crew deaths: One crushed in mechanical accident, another killed during paddlewheel maintenance
+  - Floyd legend: Allegedly killed by Winters who ordered paddlewheel started while Floyd was working on it
+  - Ghost Hunters: Featured in 2013 episode; Louisville Ghost Hunters Society investigated multiple times
+  - Sources: Kentucky Haunted Houses, Haunted Kentucky Road Trip, Occult World, Haunted Places, WHAS11
+
+- **Deep Research: My Old Kentucky Home** (Bardstown, KY) — Expanded ghost story from 345 to 3,295 characters with 8 verified sources
+  - Building history: Federal Hill completed 1818 by Judge John Rowan; inspired Stephen Foster's 1853 song
+  - Distinguished visitors: President Andrew Jackson, Marquis de Lafayette
+  - 1833 cholera epidemic: 16 deaths in 36 hours — 8 family members, 8 enslaved workers; water from contaminated well
+  - Rowan family losses: Three children (William, Atkinson, Mary Jane), their spouses, granddaughter, sister Elizabeth
+  - John Rowan Jr.'s death: 1855 — fell from upstairs window while watching daughter play
+  - Haunted dining room: Shadows appear where cholera victims died; apparition ascends stairs
+  - Woman at window: Victorian-dressed figure gazes from upstairs window where Rowan Jr. fell
+  - Judge Rowan's grave: Marker frequently tumbles from base despite being replaced
+  - Sources: Visit My Old Kentucky Home, Wikipedia, Explore KY History, Southern Spirit Guide
+
+- **Deep Research: Lost River Cave** (Bowling Green, KY) — Expanded ghost story from 355 to 3,449 characters with 8 verified sources
+  - Building history: 250,000-year-old cave system; 7 miles long; only cave in Kentucky explored by boat
+  - Historic names: "Dead Man's Cave" and "Purgatory Cave"
+  - Civil War: Confederate campground then Union field hospital; 40,000 soldiers camped 1862-1865
+  - Soldier signatures: Names, ranks, and companies scrawled on limestone walls still visible today
+  - Outlaw legends: John Hunt Morgan allegedly hid here; Jesse James reputed to have holed up in cave
+  - 1930s nightclub: Dance floor and jazz stage built in cave mouth; Kentucky's only underground nightclub
+  - Toxic history: Later became one of largest illegal dump sites in Kentucky
+  - "Lost Tales" tour: Special Halloween tour reveals darker history and ghost stories
+  - Sources: Wikipedia, WBKO, BG KY Living, Haunt Jaunts, Lost River Cave official site
+
 - **Deep Research: Dogtown Common** (Gloucester, MA) — Expanded ghost story from 416 to 4,815 characters with 8 verified sources
   - Building history: Abandoned 18th-century settlement; once thriving community of 100+ families, deserted by 1830s
   - Witches of Dogtown: Thomazine "Tammy" Younger and Peg Wesson — local women who sold hexes and potions

@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 491 | 876 |
+| 496 | 876 |
 
 ---
 
@@ -534,8 +534,13 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Place | City | Story Length | Sources |
 |-------|------|--------------|---------|
+| [My Old Kentucky Home](https://spookfinder.com/place/my-old-kentucky-home) | Bardstown | 3,295 chars | 8 |
+| [Lost River Cave](https://spookfinder.com/place/lost-river-cave) | Bowling Green | 3,449 chars | 8 |
 | [The Carneal House](https://spookfinder.com/place/carneal-house) | Covington | 3,167 chars | 8 |
+| [Lexington Opera House](https://spookfinder.com/place/lexington-opera-house) | Lexington | 3,202 chars | 8 |
+| [Belle of Louisville](https://spookfinder.com/place/belle-of-louisville) | Louisville | 3,350 chars | 8 |
 | [Louisville Bourbon Inn](https://spookfinder.com/place/louisville-bourbon-inn) | Louisville | 3,263 chars | 6 |
+| [Louisville Palace Theatre](https://spookfinder.com/place/louisville-palace-theatre) | Louisville | 3,157 chars | 8 |
 
 ---
 
