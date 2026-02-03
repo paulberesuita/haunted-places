@@ -7,6 +7,70 @@ What we shipped. Builder appends here after each feature.
 ## 2026-02-03
 
 ### Changed
+- **Deep Research: Old Bernardsville Public Library** (Bernardsville, NJ) — Expanded ghost story from 578 to 4,631 characters with 10 verified sources
+  - Historical context: Built 1710 as Vealtown Tavern; Continental Army stopping point during 1779-1780 Morristown winter encampment; owned by Captain John Parker
+  - The tragedy: January 1777, General Anthony Wayne's classified documents stolen; Dr. Byram (Aaron Wilde, Tory spy) exposed, tried, and hanged; Phyllis Parker discovered lover's body in crate, went insane
+  - First hauntings: 1875 farmhouse residents reported footsteps, rustling clothes, windows opening; 1877 witness heard men carrying heavy object, wooden panels ripping, woman's screams
+  - Police encounters: 1940s-1950s almost every Bernardsville officer saw her; 1950 Officer John Maddaluna (future Police Chief) spotted white-dressed figure twice on midnight patrol
+  - 1974 renovations: Employees saw Phyllis's apparition; one saw 18th-century man through window; Martha Hamill heard voices; Maria Mandala heard humming, found all phone lines showing "in use"
+  - Investigations: 1987 seance (video in local history room); Ed and Lorraine Warren, Norm Gauthier visited; April 7, 1995 Randolph Liebeck investigation documented camera failure
+  - The library card: Staff issued Phyllis official library card; last sighting November 1989 when 3-year-old said hello to "the lady" in white dress
+  - Current status: Library moved to 1 Anderson Hill Road in 2000; old building at 2 Morristown Road privately owned; Eileen Luz Johnston wrote 46-page booklet about Phyllis
+  - Image added: Wikimedia Commons photo of actual John Parker Tavern building (National/State Register of Historic Places)
+  - Sources: Patch, Cryptoville, BibliOccult, HauntedPlaces.org, Anomalien, NJ Haunted Houses, Mr. Local History, OUP Blog, UIUC LibGuide, Basking Ridge Patch
+
+
+- **Deep Research: Princeton Cemetery** (Princeton, NJ) — Expanded ghost story from 460 to 4,436 characters with 11 verified sources
+  - Historical context: Established 1757, called "The Westminster Abbey of the United States" by historian John F. Hageman in 1878
+  - Notable burials: Aaron Burr Sr. (first burial, 1757), Aaron Burr Jr. (Vice President, killed Hamilton), President Grover Cleveland, Jonathan Edwards, John Witherspoon (only clergyman to sign Declaration of Independence), Kurt Godel, John von Neumann, Jose and Kitty Menendez
+  - Aaron Burr Jr. haunting: 1892 Nassau Literary Review account of student meeting Burr's ghost on McCosh Walk; Burr said he returns "always in Princeton for a while before examinations"
+  - 1940 tradition: Sophomores herding freshmen to cemetery on first rainy night to "see Aaron Burr arise from the goodly company of great Americans"
+  - Burr Sr. reportedly haunts Nassau Hall "checking up on the progress of his beloved college"
+  - Burr Jr. sighted in New York City at One if by Land, Two if by Sea (his former stables)
+  - Ghost tours: Princeton Tour Company uses EMF meters, dowsing rods, thermal meters outside gates; inside gates treated as final resting place
+  - Image replaced: Swapped incorrect rural cemetery photo with authentic historical photochrom of Presidents Row from Wikimedia Commons/Library of Congress
+  - Sources: Princeton Alumni Weekly, The Princetonian (2 articles), Princeton Tour Company, Wikipedia, Princeton Magazine, Best of NJ, US Ghost Adventures, NJ Monthly, Journey With Murphy, Wikimedia Commons
+
+- **Deep Research: Jockey Hollow** (Morristown, NJ) — Expanded ghost story from 580 to 3,831 characters with 8 verified sources
+  - Historical context: Winter encampment for 10,000+ Continental Army soldiers December 1779-June 1780; the "Hard Winter" worse than Valley Forge
+  - Weather: 28 snowstorms, drifts up to 15 feet, temperatures above freezing only once in January 1780
+  - Suffering: Soldiers ate tree bark, shoe leather, and pet dogs; Washington documented going "5-6 days without bread"
+  - Death toll: ~100 soldiers died (buried in mass grave marked by boulder); 1,062 deserted
+  - Apparitions: Colonial soldiers marching in lockstep through trees; translucent woman in white with lantern searching for loved ones
+  - Reenactor account: Heard fife and drum music late at night with no source; told "Welcome to Jockey Hollow, you've experienced your first haunting"
+  - Ghost dog: Homeowner reports brown dog chasing cats then vanishing; officers allegedly ate dogs during winter
+  - Tempe Wick legend: Hid horse in bedroom during Pennsylvania Line Mutiny January 1781; shadow figures still seen in Wick House
+  - Sources: American Battlefield Trust, Morristown Green, LiveJournal reenactor account, Wikipedia, NPS, History.com
+
+- **Deep Research: The Hermitage** (Ho-Ho-Kus, NJ) — Expanded ghost story from 555 to 3,574 characters with 10 verified sources
+  - Historical context: Original stone house built 1763; Gothic Revival renovation by architect William Ranlett in 1847-48; National Historic Landmark since 1970
+  - Revolutionary War: George Washington stayed July 10-14, 1778; Aaron Burr married Theodosia Prevost here July 2, 1782; guests included Hamilton, Lafayette, Monroe
+  - The Rosencrantz family: Owned property 1807-1970; four generations lived and died here
+  - Mary Elizabeth Rosencrantz: Last family member, born 1885 in the house, died March 1970 from infection after burning herself on coal stove
+  - Katie Zahner: Mary Elizabeth's companion for 25 years; died five days after her; both buried together in Valleau Cemetery, Ridgewood
+  - The 1917 tea room: Bess Rosencrantz opened it; newspaper headline within month read "Hohokus Ghost House Becomes Tea Resort"
+  - Early reports: When Friends of the Hermitage took over 1972, docents heard phantom singing and piano music (piano had been shipped to Ringwood Manor)
+  - Paranormal phenomena: Perfume smells in master bedroom, phantom footsteps in attic, objects moving, cold spots
+  - Full-body apparition: NJ Ghost Hunters Society captured photo of little girl on front lawn (2005); identified as Mary Warner Rosencrantz from portrait
+  - Mystery ghost: African American woman holding baby emerged from barn; identity unknown
+  - Three primary spirits: Elijah Rosencrantz II, wife Cornelia "Killie" Livingston Dayton, daughter Mary Elizabeth "Bess" Rosencrantz
+  - Current events: Medium Craig McManus hosts annual "Psychic Tea" events and Halloween ghost tours; seances held regularly
+  - Image verified: Shows actual Gothic Revival mansion with distinctive vergeboards and brownstone construction
+  - Sources: Craig McManus, Wikipedia, Jersey Digs, Central Jersey, Official Hermitage site, NJ History blog, Daily Voice, Revolutionary NJ, Visiting a Museum
+
+- **Deep Research: Ford Mansion (Washington's Headquarters)** (Morristown, NJ) — Expanded ghost story from 497 to 4,095 characters with 10 verified sources
+  - Historical context: Built 1774 by Colonel Jacob Ford Jr., iron manufacturer and militia commander; Georgian-style manor
+  - Jacob Ford Jr.'s death: Died of pneumonia January 11, 1777 in the house, witnessed by 35 Delaware troops; his father died 8 days later
+  - Theodosia Ford: Widow remained in house until her death in 1824 at age 83; confined herself and 4 children to 2 rooms while Washington occupied rest
+  - Washington's headquarters: December 1779 - June 1780 (200 days); Martha Washington, 5 aides-de-camp including Alexander Hamilton, 18 servants
+  - The Hard Winter: Coldest on record; Jockey Hollow soldiers suffered 20+ snowfalls, starvation; 96 died, 1,000+ deserted; some ate shoes and bark
+  - Gordon Ward EVP investigation: Recorded 5 spirits (2 male, 3 female); none were Washington; at least one female believed to be kitchen servant
+  - Famous EVP: Asked "What is your favorite memory?" — response clearly captured: "In the kitchen"
+  - Park Ranger Joni Rowe (since 1985): Confirms feeling presences; now says hello to spirits when entering mansion
+  - Hamilton-Schuyler romance: Alexander Hamilton met and fell in love with Elizabeth Schuyler here during the encampment
+  - Current status: Centerpiece of Morristown National Historical Park (America's first national historical park, 1933); guided tours available
+  - Sources: Morristown Green, Patch, Wikipedia, NPS, American Battlefield Trust, Crossroads of the American Revolution, Mr. Local History Project, Liberty Trail, Discover NJ History
+
 - **Deep Research: The Inn at Cape May** (Cape May, NJ) — Expanded ghost story from 500 to 4,739 characters with 10 verified sources
   - Historical context: Built 1894-1895 as Colonial Hotel by William H. and Charles S. Church; Second Empire style with French mansard roof
   - Features NJ's oldest working elevator: 1900 Otis "birdcage" lift with filigree metalwork and crystal dome light
