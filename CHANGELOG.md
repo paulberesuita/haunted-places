@@ -4,6 +4,342 @@ What we shipped. Builder appends here after each feature.
 
 ---
 
+## 2026-02-03
+
+### Changed
+- **Deep Research: The Inn at Cape May** (Cape May, NJ) — Expanded ghost story from 500 to 4,739 characters with 10 verified sources
+  - Historical context: Built 1894-1895 as Colonial Hotel by William H. and Charles S. Church; Second Empire style with French mansard roof
+  - Features NJ's oldest working elevator: 1900 Otis "birdcage" lift with filigree metalwork and crystal dome light
+  - The tragedy: Two children drowned in ocean after slipping away from nanny during hotel party; caretaker took own life from guilt
+  - Ghost girl "Annie": Child spirit who has identified herself by name; most active in rooms 88 and 92
+  - Children's activity: Running in hallways at night, bouncing balls, knocking on doors, calling each other's names
+  - Lady in Blue: Nanny's spirit seen gazing from upper-floor window toward ocean; appears in luminous blue dress
+  - Captain Jack: Kitchen spirit who plucks clothing off staff, knocks cups from shelves
+  - Craig McManus investigation: Detected voices on fifth floor (former servant quarters), saw light under door of empty room
+  - Photographer encounter: Felt unseen arm reach across bed while sleeping; fled to lobby for rest of night
+  - Current events: Cape May MAC hosts channeling dinners with Medium Craig McManus at the inn
+  - Sources: Haunted Houses, US Ghost Adventures, Cape May Magazine, CapeMay.com blog, Wildwood Video Archive, historic-structures.com, Best of NJ, Lizzie Borden Ghost Tours, Cape May MAC
+
+- **Deep Research: Essex County Hospital Center (Overbrook)** (Cedar Grove, NJ) — Expanded ghost story from 435 to 3,253 characters with 9 verified sources
+  - Historical context: Opened 1896 as Essex County Asylum for the Insane on 325 acres; self-contained city with railroad stop, bakery, firehouse, baseball team
+  - 1917 tragedy: Boiler failure during cold wave killed 24 patients who froze to death over 20 days; 32 more suffered frostbite
+  - Over 10,000 deaths during operation; 150 patients disappeared during WWII overcrowding
+  - Ghost nurse: Gray-haired woman in starched white cap and uniform seen in tunnels and corridors, disappearing into dead-end rooms
+  - Shadow figure: Large dark entity with visible spine darted in/out of patient rooms; videographer Christina Mathews witnessed "hunched over with a giant back"
+  - Film crew encounters: Chuck Palahniuk's "Choke" (2008) filming — Teamster refused to leave truck, crew member in Building Five saw something he won't discuss
+  - Ghost Adventures (2008): Captured EVPs of "Help me" and "Get out," shadow figures, floating orbs, Satanic markings
+  - Image flagged: Current image shows Thai hospital, not NJ asylum — needs replacement
+  - Sources: US Ghost Adventures, Weird NJ, Best of NJ, Wikipedia, IMDB (Ghost Adventures), Highland Echo, Montclair Local, AbandonedNYC, Flashbak
+
+- **Deep Research: The Spy House** (Port Monmouth, NJ) — Expanded ghost story from 658 to 6,033 characters with 12 verified sources
+  - Historical context: Built 1663 by Thomas Whitlock; expanded by Thomas Seabrook (NJ militia patriot); Seabrook family owned for 250 years
+  - National Register: Listed October 29, 1974; Forbes Magazine ranked it most haunted in NJ; U.S. News named it top 3 in America
+  - Gertrude Neidlinger: Former concert singer/curator who created spy legends in 1960s-70s to save building from demolition; ran candlelit ghost tours and seances until 1993 eviction
+  - The debunked spy story: No evidence house was tavern during Revolution; historians confirm Seabrook was patriot but not a spy
+  - TV appearance: Featured on Sightings (1993); appeared in two nationally distributed books
+  - 22 documented ghosts including: Lady in White (searches for crying baby), Abigail (woman in black skirt/red blouse staring at sea for lost sea captain husband), Captain Morgan (British soldier murdered in basement by fellow soldiers), Peter (mischievous British boy in knickers who interferes with cameras), Robert (Morgan's first mate), Rev. William Wilson (clutches Bible, conducts phantom funerals), Penelope Stout (holds infant), stern sea captain with telescope, ghostly dog
+  - Paranormal evidence: Psychic Jane Doherty visited during TV filming; her mother witnessed Abigail apparition; temperature drops in basement
+  - Current status: Bayshore Waterfront Park Activity Center since 2009 restoration; open Sundays April-October, 1-4 p.m.
+  - Sources: Weird NJ, Wikipedia, Caggiano's Corner, Middletown Patch, Jersey Shore Scene, NJ Haunted Houses, NJ Digest, 94.3 The Point, Best of NJ, Roadside America, Shore News Network, Highlands Blog
+
+- **Deep Research: Branch Brook Park** (Newark, NJ) — Expanded ghost story from 568 to 4,041 characters with 9 verified sources
+  - Historical context: America's first county park (1895), land formerly Old Blue Jay Swamp and Civil War training ground Camp Frelinghuysen (1862-1864)
+  - The White Lady / "Mary Yoo-Hoo": Bride killed in car crash on sharp curve, haunts the white-painted tree
+  - Multiple legend variants: 1976 wedding reception crash, prom night accident, wedding photo trip gone wrong
+  - Witness accounts: Generations of Newark residents did midnight drives to see her; one saw "her white flowing gown in the dark wandering looking for her dead husband"
+  - Paranormal investigation: L'Aura Hladik (NJ Ghost Hunters Society founder, author "Ghosthunting New Jersey") theorized swamp gases and atmospheric conditions
+  - Weird NJ coverage: Featured in issues 4, 12, 13, 15, 16, 17, and 27
+  - Current status: Original tree cut down, road rerouted, sightings have largely subsided
+  - Image: Kept existing aerial photo (shows park's 360-acre expanse)
+  - Sources: US Ghost Adventures, Wikipedia, Branch Brook Park Alliance, Scary For Kids, Weird NJ, NJ Haunted Houses, America's Haunted Roadtrip, Essex County Parks, Library of Congress
+
+- **Deep Research: Clinton Furnace** (West Milford, NJ) — Expanded ghost story from 457 to 3,696 characters with 8 verified sources
+  - Historical context: Built 1826 by William Jackson on 1,000 acres; iron smelting operation with 20+ ft conical stone structure
+  - National Register: Listed June 18, 1976; one of best-preserved ironworks in northern New Jersey
+  - Druidic Temple legend: Weird NJ readers claimed occult practitioners gathered for midnight rituals; legend warns terrible consequences for uninvited witnesses
+  - Clinton Road: Furnace sits on road ranked second most haunted in world by Sixt.com; 10-mile stretch through West Milford
+  - Historical accounts: 1905 J. Percy Crayon warned woods "never advisable to pass through after dark" due to witches holding "nightly dances"
+  - Ghost Boy Bridge: Nearby bridge where visitors throw coins hoping for response from drowned child
+  - Cross Castle connection: Nearby 1905 mansion ($1.5 million) demolished 1988; documented Satanist ceremonies, Lex Satanicus found on walls
+  - Jungle Habitat legends: 1976 closure of Warner Bros. safari park spawned hellhound crossbreeding myths
+  - Real crime: May 14, 1983 - cyclist found Daniel Deppner's body (murdered by "Iceman" Richard Kuklinski)
+  - Current state: Fenced off by Newark Watershed Commission; only lower portion remains
+  - Paranormal activity: Strange lights, sensation of being watched, glowing orbs, disembodied whispers
+  - Sources: NJ1015, Wikipedia, Weird NJ, FrightFind, NJ Haunted Houses, The Digest Online, Roadtrippers, OnlyNJ
+
+- **Deep Research: Angel of the Sea B&B** (Cape May, NJ) — Expanded ghost story from 575 to 3,494 characters with 8 verified sources
+  - Historical context: Built c.1850 for William Weightman Sr., the "Quinine King" who made fortune supplying quinine during Civil War
+  - House survived two dramatic relocations: 1881 (cut in half, moved by horse and log), 1962 (flatbed trucks after Ash Wednesday Storm)
+  - Sarah Brown tragedy: Irish exchange student working at Christian Admiral Hotel; fell to death in late 1960s while trying to reach locked room via window ledge
+  - Strict Bible conference rules: McIntire's religious requirements created the circumstances leading to her fatal accident
+  - Four distinct spirits reported: Sarah Brown, sea captain's daughter, tuberculosis victim, and prankster entity
+  - Sarah's manifestations: Electronics turn on/off, objects move between spots, items slide across surfaces
+  - Manager Chet Sherel sighting: Saw ghostly figure sitting in chair during night shift
+  - Guest accounts: 5-foot presence in room, sounds sliding across nightstand, bathroom lock jingling, laptop moving while asleep
+  - Second building (upper floors) identified as paranormal epicenter where Sarah died
+  - Restoration: $3.5 million, 103,000 labor hours in 1989-1991; won Historic Preservation Award from National Trust
+  - Sources: Haunted Rooms America, Cape May High Tide, Marlo Berliner, Angel of the Sea official, Cape May Magazine, Try To Scare Me, Wikipedia (Christian Admiral), Amazon (Cape May Ghost Stories book)
+
+- **Deep Research: Thomas Clarke House** (Princeton, NJ) — Expanded ghost story from 491 to 4,316 characters with 12 verified sources
+  - Historical context: Built 1772 as center of 200-acre Quaker farm; transformed into field hospital during Battle of Princeton, January 3, 1777
+  - General Hugh Mercer: Scottish physician and Washington's closest military ally; mistaken for Washington by British, refused surrender, beaten and bayoneted 7 times
+  - Nine days of agony: Dr. Benjamin Rush (Declaration signer) and Major George Lewis (Washington's nephew) tended Mercer in upstairs bedroom
+  - Mercer's fatal prediction: Pointed to bayonet wound under his arm and told Lewis it would prove fatal; died January 12, 1777 in Lewis's arms
+  - Rush's mysterious letters: Wrote on January 6 mourning Mercer as dead, then wrote January 7 saying he was recovering — discrepancy never explained
+  - The cravat connection: Custodians and visitors report unusual sensations around their necks in the upstairs bedroom; possibly connected to removal of Mercer's cravat during treatment
+  - 2023 ghost hunt: Investigators using EMF meters and dowsing rods communicated with apparent British soldier spirit who "was not a fan of his king"; temperatures dropped on command
+  - Approximately 50 soldiers from both armies buried in unmarked graves beneath battlefield grounds
+  - Sources: Princeton Magazine, US Ghost Adventures, American Battlefield Trust, Liberty Trail, NJ State Parks, American Philosophical Society, Wikipedia (Mercer Oak), Princeton Battlefield Society, Emerging Revolutionary War, MCCC Voice, Encyclopedia Virginia, Battlefield Trust (Mercer bio)
+
+- **Deep Research: Hotel Macomber** (Cape May, NJ) — Expanded ghost story from 500 to 3,302 characters with 8 verified sources
+  - Building history: Built 1916 as New Stockton Villa; largest frame structure east of Mississippi at time; founder Sarah Davis
+  - Sarah Davis tragedy: Daughter Cannell died of encephalitis from mosquito bite in 1920s; Sarah shot herself in 1934 after announcing inn open for business
+  - WWII history: Army/Navy leased building as soldiers' quarters in 1940s; "drunk tank" under front steps for intoxicated servicemen
+  - Irene Wright "The Trunk Lady": Elderly spinster who stayed Room 10 June-November with steamer trunk; died 1970s but never checked out
+  - Room 10 activity: Trunk scraping sounds, door banging, furniture rearranging, sensation of being watched; Craig McManus EVP captured "I'm still here"
+  - Child spirits: Cannell and playmates heard laughing in halls; Al Rauber EVP captured marbles dropping and voice saying "These are mine!"
+  - Depression-era waitress: Choked on chicken bone; flickers chandelier, moves silverware, floats through kitchen in ragged dress, pushes people into walk-in refrigerator
+  - The Growler: Basement spirit groans and growls while knocking things around, sounds like endless construction project
+  - Rooms 41 & 45: Increasing hostile activity with beds shaken and rocked by annoyed presences
+  - Other spirits: Friendly farmer greets arrivals; arguing couple in hallways; two WWII uniformed military figures
+  - Sources: CapeMay.com, Haunted Rooms America, NJ1015, 94.3 The Point, Cape May Magazine, US Ghost Adventures, Southern Mansion blog
+
+- **Deep Research: Barnegat Lighthouse** (Barnegat Light, NJ) — Expanded ghost story from 534 to 3,791 characters with 8 verified sources
+  - Historical context: "Old Barney" designed by Lt. George Meade (later Gettysburg commander); commissioned January 1, 1859
+  - Revolutionary War tragedy: Long Beach Island Massacre (October 25, 1782) — Captain John Bacon's Pine Robbers killed 21 sleeping sailors with knives and bayonets
+  - Victims' spirits: Tortured moaning and wailing from dunes; blurry apparitions of sailors in 18th-century clothing on foggy nights
+  - The Grieving Couple: Husband and wife froze to death during storm after sending infant daughter to safety; appear on cold January/February days to admire babies in strollers
+  - Keeper Applegate: Head Keeper Andrew E. Applegate drowned in 1928 while fishing; ghost said to climb 217-step staircase
+  - 1905 Jersey Devil sighting: Lighthouse keeper shot at creature perched atop tower
+  - Kept existing image: Excellent twilight shot with beacon illuminated
+  - Sources: US Ghost Adventures, Wikipedia (2), Lighthousefriends, Journal of the American Revolution, Historical Society of Riverton, MyHauntedSalem, Listverse
+
+- **Deep Research: Surf City Hotel** (Surf City, NJ) — Expanded ghost story from 483 to 3,154 characters with 9 verified sources
+  - Building history: Site of Mansion of Health (1822), LBI's grandest hotel with full-length top-floor balcony
+  - Powhattan disaster: April 16, 1854 shipwreck killed 250-311 German immigrants 100 yards offshore; worst NJ maritime loss
+  - Edward Jennings scandal: Wreckmaster/hotel manager robbed victims' money-belts; buried evidence found months later; fled to San Francisco, died in barroom brawl
+  - Original haunting: Mansion of Health emptied within a year; sobbing, shadowy figures on balcony
+  - 1861 witness account: Five young men saw transparent woman holding child on balcony, moonlight passing through both
+  - Modern activity: Woman with baby at window, screams of drowning passengers, cold spots, glasses flying off counters
+  - German-speaking ghost: Guest heard woman speaking German at 3:30 AM as if standing beside bed
+  - Additional spirits: Union soldier missing an arm near beach, four women arm-in-arm, glowing orbs
+  - Aftermath: Victims buried at 3 cemeteries (Manahawkin, Smithville, Absecon); NJ memorial erected 1904; Absecon Lighthouse built as result
+  - Sources: Scary For Kids, Anomalien, NJ Haunted Houses, HauntedPlaces.org, Haunted Rooms America, US Ghost Adventures, US Deadly Events, Maritime Heritage Project, Philly Ghosts
+
+- **Deep Research: The Barracks** (Princeton, NJ) — Expanded ghost story from 545 to 3,010 characters with 8 verified sources
+  - Historical context: Princeton's oldest surviving structure, portions dating to 1684; built by Daniel Brinson, passed to Stockton family in 1696
+  - Richard Stockton: Declaration of Independence signer owned property; quartered troops during French and Indian War (hence name "The Barracks")
+  - Hamilton/Madison: Both lodged here in 1783 when Continental Congress relocated to Princeton
+  - The Hessian ghost: Young German mercenary fled after Washington's Christmas Day Delaware crossing (1776); died of chest wound before fireplace
+  - Appearance: Described as "slight figure in huge burlap coat," looks more like a boy than soldier; appears every Christmas Eve at midnight
+  - 1939 exorcism: Rev. Arthur Kinsolving attempted exorcism with Church of England prayer book; ritual failed, ghost persisted
+  - Cuyler family: Princeton trustee Lewis B. Cuyler and wife Margery lived there, called him "an amiable ghost"
+  - Literary connection: Margery Cuyler wrote children's book "The Battlefield Ghost" (1999) inspired by living in the house
+  - Sources: Princeton Magazine, Princeton History, Princeton Alumni Weekly, US Ghost Adventures, Mount Vernon, USHistory.org, Goodreads, American Battlefield Trust
+
+- **Deep Research: Estell Manor** (Estell Manor, NJ) — Expanded ghost story from 575 to 3,830 characters with 12 verified sources
+  - Historical context: 1,700-acre Pine Barrens park; Estell family (French Huguenots) settled 1687; Estellville Glassworks employed 80 workers 1825-1877
+  - WWI ammunition plant: Bethlehem Loading Company built 1918; company town Belcoville housed thousands; 206 dwellings and 84 buildings abandoned by July 1919
+  - Paranormal investigations: Atlantic County Paranormal Director Dave Larcombe, James Maitland, and medium Stephen Edwards documented "orb activity like crazy," screams, disembodied conversations near Estellville Methodist Church (built 1834)
+  - Shadow people: Multiple investigators report shadow figures along Maple Avenue and near the park's lake
+  - Witness accounts: Hiker felt invisible hand slide down shoulder blade at Glassworks ruins; driver saw black figure emerge from woods on Route 50 at 2 AM, vanishing as vehicle passed through
+  - Smith-Ireland Cemetery: Revolutionary War soldier Japhet Ireland buried here (died 1810); graves sinking into spongy ground
+  - Jersey Devil connection: Pine Barrens legendary home of creature born 1735 when Mother Leeds cursed her 13th child
+  - Carranza Memorial: Mexican aviator crashed July 12, 1928; visitors report phantom aircraft lights when calling "Emilio" three times
+  - Sources: US Ghost Adventures, Press of Atlantic City, Philly Ghosts, Ghosts of America, Tourist Secrets, Shore Local News, Weird NJ, Atlas Obscura, Wikipedia, SNJ Today, NJ Historic Trust
+
+- **Deep Research: Rockefeller College (Rocky)** (Princeton, NJ) — Expanded ghost story from 483 to 3,222 characters with 8 verified sources
+  - Nathaniel FitzRandolph: 17th-century Quaker settler's son, donated original 4.5 acres for Nassau Hall in 1753, buried in family plot 1780
+  - 1909 excavation: Italian stonemasons discovered 32 unmarked FitzRandolph family graves during Holder Hall construction
+  - President Wilson's directive: Remains preserved in separate boxes, reinterred beneath eastern archway; memorial tablet with Latin epitaph
+  - Married couple account: Room above archway had couch and painting that moved independently — most documented supernatural incident
+  - Disturbed spirits: Students report difficulty sleeping, sensing heavy presence in archways, cold spots on warm evenings
+  - Weird NJ investigation: Team confirmed "unusual energetic activity" at Princeton's haunted locations
+  - "A Beautiful Mind" connection: Russell Crowe filmed many scenes here for 2001 Academy Award-winning film
+  - Sources: Princeton Magazine, Daily Princetonian, US Ghost Adventures, Princeton Alumni Weekly, Princetonian Museum, Princeton Companion (2), Best of NJ
+
+- **Deep Research: Resorts Casino Hotel** (Atlantic City, NJ) — Expanded ghost story from 550 to 3,539 characters with 10 verified sources
+  - Historical context: Originally Haddon House (1869), merged with Chalfonte Hotel in 1903; first ghost reports surfaced that year
+  - WWII history: Became Thomas England General Hospital 1943-1946 — largest hospital in the world, treating 61,000+ wounded servicemen
+  - Hospital morgue located on 12th floor (not basement); hundreds of soldiers died from wounds and infection
+  - Ocean Tower (built 1927, 260 feet tall) is the paranormal epicenter; Resorts spokeswoman Courtney Birmingham confirmed guest experiences
+  - Room 646 incident: Couple felt presence, heard bumping, door shook violently with empty hallway; "the sixth floor hallway just felt so creepy"
+  - South Tower: Multiple apparitions including older veteran and young boy approaching guest's bedside
+  - WWII soldier ghosts: Seen wandering halls in uniform, still seemingly preparing for battle
+  - Charlie Chaplin "Little Tramp" figure: Flips top hat at passersby in darkest casino corners, then vanishes
+  - Ghostly bride and groom: Walk arm-in-arm through solid walls on second floor
+  - The Cat Lady: Woman in black appears on Boardwalk at dawn, seemingly feeding stray cats
+  - Luminescent nurses push phantom children in wheelchairs near valet parking, vanish in puff of pale light
+  - Ranked Top 5 Most Haunted Casinos in the World by Casinos.com
+  - Sources: Philly Ghosts, US Ghost Adventures, Atlantic City Weekly, Casino City Times, NY Ghosts, NPS, ACFPL, Resorts AC official, Casinos.com, Shore Local News
+
+- **Deep Research: Ong's Hat Ghost Town** (Pemberton Township, NJ) — Expanded ghost story from 586 to 4,643 characters with 11 verified sources
+  - Origin legends: Jacob Ong's silk hat caught in pine tree at a dance; alternative "Ong's Hut" grain route theory from 1968 NYT letter
+  - Ong family: Quakers from Suffolk, England who arrived in Boston Harbor in 1631; settled Burlington County around 1688
+  - 1860s heyday: Lively social center known for alcohol, prizefighting, country dances; one of NJ's first bootlegger arrests
+  - Chininiski mystery: Polish couple vanished in early 1900s; female skeleton found by hunters years later
+  - Sheriff Ellis H. Parker: Kept skull on desk for years as reminder of unsolved case; tracked husband to NYC but couldn't prove anything
+  - Last resident: Eli Freed, 79-year-old Chicago farmer found by folklorist Henry Charlton Beck in late 1920s; departed 1936
+  - Beck's admission: In 1944's "Jersey Genesis," admitted he "fell for elaborate traps" and the stories were "fairy tales"
+  - Internet's first conspiracy theory: Joseph Matheny's 1980s ARG about Princeton professors discovering "cognitive chaos" and dimension travel
+  - "The Egg" device: Fictional sensory deprivation chamber that opened portals to parallel dimension; believers camped at Matheny's house
+  - Paranormal reports: Strange lights in Pine Barrens, disembodied voices, overwhelming sensation of being watched
+  - "Reality monitoring" effects: 1990s-2000s researchers reported synchronicities, vivid dreams, perceptual shifts after studying the legend
+  - Current status: Northern terminus of 53-mile Batona Trail; only scattered foundations and dilapidated structures remain
+  - Sources: Wikipedia (2 articles), Weird NJ, NJ Pine Barrens, US Ghost Towns, Gizmodo, AV Club, Incunabula.org, Ghost In My Machine, Shadow Frequency Podcast, Only In Your State
+
+- **Deep Research: Nassau Hall** (Princeton, NJ) — Expanded ghost story from 620 to 3,966 characters with 11 verified sources
+  - Historical context: Built 1756 as largest stone building in colonial America; Battle of Princeton 1777; U.S. Capitol June-November 1783
+  - Aaron Burr Sr.: Second president of Princeton haunts his former office, "checking up on the progress of his beloved college"
+  - Aaron Burr Jr. (Class of 1772): 1892 Nassau Literary Review account describes student meeting his ghost on McCosh Walk "during the moony time of evening"
+  - Late-1800s tradition: Sophomores led freshmen to cemetery during autumn rainstorms to witness "Aaron Burr arise"
+  - James Madison (Class of 1771): Also said to haunt campus; described as one of the "sweet" ghost stories
+  - Revolutionary War soldiers: Reported in tattered uniforms behind Nassau Hall where battle occurred; empaths report overwhelming sadness
+  - Battle damage: Cannonball dent still visible on south wall, carefully preserved in trimmed circle of ivy
+  - Alexander Hamilton connection: Fired cannonball that destroyed King George II portrait (earliest written account 1905)
+  - Two devastating fires (1802, 1855): First suspected arson by students; both destroyed interior
+  - Modern investigations: Weird NJ authenticated as paranormal "hot spot"; EMF meters, dowsing rods, thermal equipment used on tours
+  - Sources: Princeton Alumni Weekly, Daily Princetonian (2), Best of NJ, Princeton Magazine, US Ghost Adventures, Wikipedia, Historical Society of Princeton, American Battlefield Trust, Princeton University Archives, Princeton Tour Company
+
+- **Deep Research: The Chalfonte Hotel** (Cape May, NJ) — Expanded ghost story from 485 to 3,631 characters with 9 verified sources
+  - Historical context: Built 1876 by Civil War hero Colonel Henry Washington Sawyer; captured at Battle of Brandy Station 1863, imprisoned at Libby Prison, exchanged for General Lee's son
+  - 1878 fire hero: Sawyer spotted devastating fire from cupola, saving countless lives; visitors still feel watched from above
+  - Mr. Johnson: Former custodian haunts basement, seen going about maintenance duties as if still employed
+  - Woman with baby: Apparition clutches infant while gazing out at sea from the cupola tower
+  - Craig McManus investigation: Premier Cape May ghost hunter captured EVPs described as "plentiful and colorful" in hallways; hostile entity said "mad as hell"
+  - Guest experiences: Visitors report waking in unexpected places, being shaken awake by unseen hands, footsteps in empty corridors
+  - Wicker sofa incident: Off-season visitors heard distinct sound of someone sitting on wicker sofa in empty room
+  - Satterfield legacy: Southern hospitality family owned 1911-1978; staff from Virginia served for decades creating deep emotional bonds
+  - Sources: US Ghost Adventures (2), Cape May Magazine, Hotel-Online, Cape May.com, Literary Traveler, Press of Atlantic City, Craig McManus, Cape May MAC
+
+- **Deep Research: Nassau Inn** (Princeton, NJ) — Expanded ghost story from 541 to 2,920 characters with 8 verified sources
+  - Building history: Built 1756 by Judge Thomas Leonard; became College Inn after his death under Christopher Beekman
+  - Revolutionary War hub: Committee of Safety met here 1775; Continental Congress delegates stayed 1776; Declaration signers rested here
+  - Famous guests: Paul Revere, Robert Morris, Thomas Paine all stayed multiple nights
+  - British occupation: Accommodated soldiers from both sides during war; Treaty of Paris celebrated with inn's punchbowls 1783
+  - Revolutionary War soldier: Guests report seeing military figure with "curious expression" on various floors
+  - Woman in period dress: Seen ascending stairs from lobby to second floor meeting rooms, then vanishing
+  - Kurt Godel haunting: Mathematician's spirit believed to linger near iconic red chairs where he sat with Einstein for tea
+  - Paranormal investigation: Equipment responded intensely when photo of Godel's wife Adele was displayed
+  - Recognition: Named to 2025 Top 25 Historic Hotels of America Most Haunted Hotels list
+  - Sources: Princeton Magazine, US Ghost Adventures, Historic Hotels of America, Nassau Inn official, Palmer Square, Princeton Patch, Town Topics
+
+- **Deep Research: Congress Hall** (Cape May, NJ) — Expanded ghost story from 461 to 2,817 characters with 9 verified sources
+  - Historical context: Built 1816 by Congressman Thomas Hughes as "Tommy's Folly"; destroyed in 1878 Great Fire, rebuilt 1879; hosted 4 U.S. Presidents
+  - Child drowning: 10-year-old boy drowned in front of hotel in 1876; sounds of children playing heard when none present
+  - Third floor most haunted: Cleaning staff hear TVs/radios turn on by themselves in locked rooms; footsteps echo after hours
+  - Elizabeth ghost: Female spirit in bar area; kitchen staff and servers hear their names spoken aloud when no one present
+  - Water spirit: Psychic Gail Ferace identified "water spirit" — confirmed through research as drowned victim
+  - Victorian woman apparition: Psychic saw woman in late 18th century dress who pointed toward lobby; fire broke out next day in exact location
+  - Note: Carefully distinguished from Cabanas haunting (hanging story belongs to Cabanas, NOT Congress Hall)
+  - Sources: Southern Mansion, Cape May.com, US Ghost Adventures, Stockton Inns, Adventures in Cape May, Wildwood Video Archive, Lizzie Borden Tours
+
+- **Deep Research: Absecon Lighthouse** (Atlantic City, NJ) — Expanded ghost story from 538 to 4,049 characters with 11 verified sources
+  - Historical context: "Graveyard Inlet" saw 64+ shipwrecks 1847-1856; Powhatan disaster (1854) killed 311 passengers
+  - Construction: Built 1854-1857 under Lt. George Meade (later Gettysburg commander); 171 feet tall, 228 steps
+  - 1905 Jersey Devil sighting: Lighthouse keeper shot at creature perched atop tower; it howled and flew away
+  - Six head keepers served 1856-1933, including Abraham G. Wolf (1873-1896) who documented 1886 earthquake
+  - Paranormal activity: Phantom pipe/cigar smoke, footsteps on stairs, self-opening doors, children giggling
+  - Bearded apparition: Worker saw man in coveralls in oil house who vanished; legs photographed on empty staircase
+  - 2023 incident: Visitor recorded heavy breathing and Morse code-like tapping while climbing tower
+  - Ghost Hunters (TAPS) investigation March 2010: Captured female voice saying "I like you," shadow figure on wall, camera moved on its own
+  - Sources: Official lighthouse site, Wikipedia, Lighthousefriends, Press of Atlantic City (2), US Ghost Adventures, NJ Digest, Beyond Haunted, HauntedUS, NJ Haunted Houses, HauntedPlaces.org
+
+- **Deep Research: Union Cemetery** (Hackettstown, NJ) — Expanded ghost story from 483 to 2,973 characters with 2 verified sources
+  - Tillie Smith: 18-year-old kitchen maid at Centenary Collegiate Institute, murdered April 9, 1886
+  - James Titus: Janitor who attacked her when she asked to be let back in after 10 p.m. curfew; served 19 years
+  - Community memorial: Marble monument unveiled November 24, 1887, funded by townspeople donations
+  - Famous epitaph: "She died in defense of her honor"
+  - Killer buried nearby: Titus died June 1952 and was buried at same cemetery as his victim
+  - Lady in White: Young woman in flowing white dress seen at cemetery edge, enters cars then vanishes
+  - Summer 1975: Four independent witnesses reported same apparition
+  - Campus hauntings: Tillie also frequents Centenary University — walks among oak trees, floats in South Hall, appears backstage at theater
+  - Notable incident: Repair technician heard voice from swinging light fixture say "Get me out of here"
+  - Legacy: 2002 theatrical production, campus grill named "Tillie's," alleged sorority photo kept under lock and key
+  - Sources: NJ Haunted Houses, Weird NJ
+
+- **Deep Research: Dios Cafe** (Surf City, NJ) — Expanded ghost story from 410 to 2,598 characters with 8 verified sources
+  - **Location correction:** Changed city from Beach Haven to Surf City; corrected address to 512 Long Beach Boulevard
+  - The ghost: Deep-sea diver who perished over 100 years ago while treasure hunting; still wears decaying diving gear with corroded copper helmet
+  - Maritime context: Long Beach Island known as "Graveyard of the Atlantic" with 4,000+ recorded shipwrecks
+  - Treasure hunting history: The Betsey (1778) carried $1.5M in silver coins; numerous salvage diving operations in late 1800s/early 1900s
+  - Paranormal activity: Spectral figure lingers among tables, unexplained chills, presence watching from corners
+  - Local lore: "Come for the coffee but leave before dark" — ghost appears most commonly after dark
+  - Historical tragedies: Powhatan disaster (1854) killed 250+ immigrants; 1916 shark attacks began nearby in Beach Haven
+  - Sources: US Ghost Adventures, Lizzie Borden Ghost Tours, Lynda Lee Macken's "Haunted Long Beach Island" book, NJ Maritime Museum, LBI Views, NJ Scuba, Wikipedia, Echoes of LBI
+
+- **Deep Research: The Publick House** (Chester, NJ) — Expanded ghost story from 400 to 3,441 characters with 8 verified sources
+  - Building history: Built 1810 by Zephaniah Drake and Jacob Drake Jr. as Brick Tavern on Washington Turnpike stagecoach route
+  - National Register of Historic Places (1974); Federal-style architecture with Flemish bond brickwork
+  - Primary spirit: Zephaniah Drake's mother, wife of Mendham Methodist minister, killed by lightning during Sunday service
+  - Child spirits: "Playful yet naughty young spirits" roam the halls; girl ghost seen at empty table near broom closet
+  - Witness accounts: Visitor felt child touching arm, heard giggle; young boy saw ghost girl during dinner
+  - Upper floors especially active: Former employee confirms "absolutely haunted"; exit light cover slammed down inexplicably
+  - Angry man presence: Visitor sensed angry male spirit in upstairs room with fireplace, heard boy crying from closet area
+  - Weird NJ Issue 33: Documented ghostly faces, poltergeists, Santeria, temperature anomalies, phantom perfumes, spectral figures, mystery smoke, orbs
+  - Current status: Operates as Publick House Hotel and PH Steakhouse; 18,400 sq ft of haunted history
+  - Sources: NJ Haunted Houses, Weird NJ, FrightFind, HauntedPlaces.org, Chester Historical Society, Chester Library, Mendham Patch
+
+- **Deep Research: Gallows Hill Road** (Cranford, NJ) — Expanded ghost story from 439 to 2,999 characters with 8 verified sources
+  - **Location correction:** Changed city from Basking Ridge to Cranford (actual location of Gallows Hill Road / Brookside Place intersection)
+  - Building history: Intersection served as Revolutionary War execution site; massive oak tree used as gallows for an estimated ten British spies
+  - James Morgan: American sentry hanged January 29, 1782, for killing Rev. James Caldwell ("The Fighting Parson") on November 24, 1781
+  - Caldwell murder: Suspected British assassination plot; Caldwell famous for "Give 'em Watts, boys!" at Battle of Springfield
+  - Physical remains: Tree cut down but rusted iron post and concrete remnant still mark the spot
+  - Apparitions: Revolutionary War soldiers appear roadside when viewed from distance, vanish as drivers approach
+  - Cold spots: Frequent reports even on warm summer evenings
+  - Phantom yelling: Disembodied shouts prompt police calls; officers find no one at scene
+  - Witness account: Visitor saw "tall bushes swaying" that turned out to be empty, well-manicured lawn
+  - Sources: TryToScare.me, HauntedPlaces.org, NJ Haunted Houses, Morristown Green, RevolutionaryWarNewJersey.com, MrLocalHistory.org, Wikipedia, Find A Grave
+
+- **Deep Research: Southern Mansion** (Cape May, NJ) — Expanded ghost story from 500 to 2,987 characters with 8 verified sources
+  - Building history: Built 1863 by Philadelphia industrialist George Allen; designed by architect Samuel Sloan
+  - George Allen made fortune selling uniforms to both Union and Confederate armies during Civil War
+  - Notable guests: Prince of Wales, Duke and Duchess of Windsor, Gene Tunney, Will Rogers
+  - Esther Mercur: Great-niece inherited property, continued grand parties until death in 1946
+  - Decline: Sold for $8,000, converted to boarding house, fell into disrepair for 50 years
+  - Esther's ghost: Dances through rooms, distinctive perfume, rustle of petticoats, spotted in kitchen
+  - Wine glass phenomena: Glasses shatter for no reason, others found with red lipstick on rims
+  - Mary Curly: Boarding house owner also lingers; tour guide Terrie Rosania confirms both spirits
+  - Guest experiences: Sheets moving, toes tickled under blankets, cold spots, orbs photographed, EVPs captured
+  - Ghost Hunters (March 2010): TAPS investigated in "Touched by Evil" episode; Dave Tango called it "most active location he ever set foot in"
+  - Sources: Southern Mansion official, NJ Haunted Houses, FrightFind, US Ghost Adventures, Cape May Magazine, TMDB, Library of Congress, CapeMay.com
+
+- **Deep Research: Kendall Hall at TCNJ** (Ewing, NJ) — Expanded ghost story from 400 to 3,776 characters with 8 verified sources
+  - Building history: Built 1929 as main theater of New Jersey State Teachers College (now TCNJ)
+  - Sigrid Stevenson: 25-year-old piano prodigy murdered on stage September 4, 1977; case remains unsolved
+  - Crime scene details: Body found by Officer Thomas Kokotajlo at 11:30 PM; wrapped in piano cover from different building
+  - Evidence: Symmetrical ligature marks suggesting handcuffs; blood on sheet music; no fingerprints/footprints recovered
+  - Paranormal activity: Piano music heard late at night, paper towels floating, footsteps in empty halls, doors slamming
+  - 1999 seance: Theater scholars claimed radio static produced whispered "Get out!"
+  - 2024 developments: Netflix Unsolved Mysteries Vol. 4 Ep. 4; NJ Attorney General Cold Case Network reopened case; TCNJ dedicated piano practice room to her memory
+  - Sources: Weird NJ, Unsolved Mysteries Wiki, Solve the Case, Defrosting Cold Cases, Distractify, TCNJ News, Community News, Netflix Tudum
+
+- **Deep Research: Inn of the Hawke** (Lambertville, NJ) — Expanded ghost story from 483 to 4,463 characters with 8 verified sources
+  - Building history: Built early 1860s as residence of William McCready, owner of Perseverance Paper Mill; converted to inn early 1900s
+  - Revolutionary War context: Town was Coryell's Ferry where Washington and 13,000 troops crossed en route to Battle of Monmouth (June 1778)
+  - Jake the handyman: Basement spirit who guards property; blocked employee from stealing beer from cooler
+  - Third floor woman: Victorian-era spirit in dark high-necked dress with brooch; frequents Rooms 6 & 7, gazes out windows
+  - The Young Boy: Cherub-faced child with pink cheeks and wild hair; giggles heard throughout building
+  - Spectral dog: Border collie appears in doorways then vanishes
+  - Military figure: Revolutionary War soldier paces/marches behind the bar
+  - Kitchen poltergeist: Pots/pans lift off hooks and crash; photos knocked off walls; objects teleport across rooms
+  - City Lights Paranormal Society investigation (March 13, 2011): 60+ hours of evidence, captured flashlight responding to questions on video
+  - Family account: Descendant of 1892-1915 owners experienced tobacco smell haunting in second-floor room
+  - Sources: Haunted History Jaunts, CLPS, NJ Haunted Houses, FrightFind, HauntedPlaces.org, Lambertville Historical Society
+
+- **Deep Research: Jonathan Pitney House** (Absecon, NJ) — Expanded ghost story from 443 to 2,932 characters with 8 verified sources
+  - Building history: Built 1799, expanded 1848; home of the "Father of Atlantic City" from 1820 until his death Aug 7, 1869
+  - Caroline Fowler Pitney: Wife's spirit honors husband's promise she'd "live in their home forever"; most active in Caroline's Room
+  - Apparitions: Man in dark coat by fireplace, two ghostly men walking through walls, mysterious light from dresser drawer
+  - Electronic phenomena: Dr. Pitney communicates through speaker system, interrupting radio/music
+  - Bells ringing: Over 50 guests at Halloween event heard bells throughout the house with no bells present
+  - Victoria Room: Orbs of light, soft fife/flute music heard throughout property
+  - Named witnesses: David Perez (Nov 2018), Vonnie Clark (former owner), Ed/Wendie Fitzgerald (current owners)
+  - Sources: US Ghost Adventures, PhillyVoice, HauntedPlaces.org, NY Ghosts, NJ Haunted Houses, Find A Grave, Shore Local News, official site
+
+---
+
 ## 2026-02-02
 
 ### Changed

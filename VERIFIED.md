@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 558 | 876 |
+| 572 | 876 |
 
 ---
 
@@ -588,6 +588,38 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Old Ursuline Convent](https://spookfinder.com/place/old-ursuline-convent) | New Orleans | 2,954 chars | 8 |
 | [The Myrtles Plantation](https://spookfinder.com/place/myrtles-plantation) | St. Francisville | 2,950 chars | 8 |
 | [The Sultan's Palace](https://spookfinder.com/place/sultans-palace) | New Orleans | 2,924 chars | 8 |
+
+### New Jersey
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Absecon Lighthouse](https://spookfinder.com/place/absecon-lighthouse) | Atlantic City | 4,049 chars | 11 |
+| [Resorts Casino Hotel](https://spookfinder.com/place/resorts-casino-hotel) | Atlantic City | 3,539 chars | 10 |
+| [Barnegat Lighthouse](https://spookfinder.com/place/barnegat-lighthouse) | Barnegat Light | 3,791 chars | 8 |
+| [Angel of the Sea B&B](https://spookfinder.com/place/angel-of-the-sea) | Cape May | 3,494 chars | 8 |
+| [Congress Hall](https://spookfinder.com/place/congress-hall-cape-may) | Cape May | 2,817 chars | 9 |
+| [The Inn at Cape May](https://spookfinder.com/place/inn-at-cape-may) | Cape May | 4,739 chars | 10 |
+| [Jonathan Pitney House](https://spookfinder.com/place/jonathan-pitney-house) | Absecon | 2,932 chars | 8 |
+| [Southern Mansion](https://spookfinder.com/place/southern-mansion-cape-may) | Cape May | 2,987 chars | 8 |
+| [Kendall Hall at TCNJ](https://spookfinder.com/place/kendall-hall-trenton-state) | Ewing | 3,776 chars | 8 |
+| [Inn of the Hawke](https://spookfinder.com/place/inn-of-the-hawke) | Lambertville | 4,463 chars | 8 |
+| [Branch Brook Park](https://spookfinder.com/place/branch-brook-park) | Newark | 4,041 chars | 9 |
+| [The Publick House](https://spookfinder.com/place/publick-house-chester) | Chester | 3,441 chars | 8 |
+| [Gallows Hill Road](https://spookfinder.com/place/gallows-hill-road) | Cranford | 2,999 chars | 8 |
+| [Dios Cafe](https://spookfinder.com/place/dios-cafe) | Surf City | 2,598 chars | 8 |
+| [Surf City Hotel](https://spookfinder.com/place/surf-city-hotel) | Surf City | 3,154 chars | 9 |
+| [Estell Manor](https://spookfinder.com/place/estell-manor) | Estell Manor | 3,830 chars | 12 |
+| [Nassau Hall](https://spookfinder.com/place/nassau-hall-princeton) | Princeton | 3,966 chars | 11 |
+| [Nassau Inn](https://spookfinder.com/place/nassau-inn-princeton) | Princeton | 2,920 chars | 8 |
+| [Ong's Hat Ghost Town](https://spookfinder.com/place/ongs-hat) | Pemberton Township | 4,643 chars | 11 |
+| [The Spy House (Seabrook-Wilson House)](https://spookfinder.com/place/spy-house) | Port Monmouth | 6,033 chars | 12 |
+| [Rockefeller College (Rocky)](https://spookfinder.com/place/rockefeller-college-princeton) | Princeton | 3,222 chars | 8 |
+| [The Barracks](https://spookfinder.com/place/the-barracks-princeton) | Princeton | 3,010 chars | 8 |
+| [Thomas Clarke House](https://spookfinder.com/place/thomas-clarke-house) | Princeton | 4,316 chars | 12 |
+| [The Chalfonte Hotel](https://spookfinder.com/place/chalfonte-hotel) | Cape May | 3,631 chars | 9 |
+| [Hotel Macomber](https://spookfinder.com/place/hotel-macomber) | Cape May | 3,302 chars | 8 |
+| [Essex County Hospital Center (Overbrook)](https://spookfinder.com/place/essex-county-hospital-overbrook) | Cedar Grove | 3,253 chars | 9 |
+| [Clinton Furnace](https://spookfinder.com/place/clinton-furnace) | West Milford | 3,696 chars | 8 |
 
 ### North Carolina
 
