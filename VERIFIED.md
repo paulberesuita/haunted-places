@@ -8,7 +8,7 @@ Places that have been deeply researched with multiple independent sources, expan
 
 | Verified | Total Places |
 |----------|--------------|
-| 508 | 876 |
+| 558 | 876 |
 
 ---
 
@@ -458,6 +458,7 @@ Places that have been deeply researched with multiple independent sources, expan
 |-------|------|--------------|---------|
 | [Boston Athenaeum](https://spookfinder.com/place/boston-athenaeum) | Boston | 3,292 chars | 8 |
 | [Boston Common](https://spookfinder.com/place/boston-common) | Boston | 5,310 chars | 8 |
+| [Boston Massacre Site](https://spookfinder.com/place/boston-massacre-site) | Boston | 2,861 chars | 8 |
 | [Charlesgate Hotel](https://spookfinder.com/place/charlesgate-hotel) | Boston | 4,523 chars | 8 |
 | [Copp's Hill Burying Ground](https://spookfinder.com/place/copps-hill-burying-ground) | Boston | 4,721 chars | 8 |
 | [Fenway Park](https://spookfinder.com/place/fenway-park) | Boston | 4,712 chars | 8 |
@@ -467,7 +468,9 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Omni Parker House](https://spookfinder.com/place/omni-parker-house) | Boston | 4,134 chars | 8 |
 | [Paul Revere House](https://spookfinder.com/place/paul-revere-house) | Boston | 3,143 chars | 8 |
 | [USS Constitution](https://spookfinder.com/place/uss-constitution) | Boston | 5,245 chars | 8 |
+| [S.S. Pierce Building](https://spookfinder.com/place/s-s-pierce-building) | Brookline | 3,127 chars | 8 |
 | [Longfellow House](https://spookfinder.com/place/longfellow-house) | Cambridge | 4,532 chars | 8 |
+| [Old Burying Ground](https://spookfinder.com/place/old-burying-ground-cambridge) | Cambridge | 3,181 chars | 8 |
 | [Concord's Colonial Inn](https://spookfinder.com/place/concords-colonial-inn) | Concord | 4,476 chars | 8 |
 | [Old Hill Burying Ground](https://spookfinder.com/place/old-hill-burying-ground) | Concord | 3,161 chars | 8 |
 | [Danvers State Hospital](https://spookfinder.com/place/danvers-state-hospital) | Danvers | 4,414 chars | 8 |
@@ -477,6 +480,7 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Hammond Castle](https://spookfinder.com/place/hammond-castle) | Gloucester | 4,708 chars | 9 |
 | [Hoosac Tunnel](https://spookfinder.com/place/hoosac-tunnel) | North Adams | 4,271 chars | 8 |
 | [Houghton Mansion](https://spookfinder.com/place/houghton-mansion) | North Adams | 4,758 chars | 8 |
+| [Cole's Hill](https://spookfinder.com/place/coles-hill) | Plymouth | 3,246 chars | 8 |
 | [Sparrow House](https://spookfinder.com/place/sparrow-house) | Plymouth | 3,049 chars | 8 |
 | [Taunton State Hospital](https://spookfinder.com/place/taunton-state-hospital) | Taunton | 5,638 chars | 8 |
 | [Gallows Hill Park](https://spookfinder.com/place/gallows-hill-park) | Salem | 3,901 chars | 8 |
@@ -488,6 +492,17 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Ropes Mansion](https://spookfinder.com/place/ropes-mansion) | Salem | 3,286 chars | 8 |
 | [Salem Witch Museum](https://spookfinder.com/place/salem-witch-museum) | Salem | 2,989 chars | 8 |
 | [Witch Dungeon Museum](https://spookfinder.com/place/witch-dungeon-museum) | Salem | 3,278 chars | 9 |
+| [Derby Wharf](https://spookfinder.com/place/derby-wharf) | Salem | 3,376 chars | 8 |
+| [Burial Hill](https://spookfinder.com/place/burial-hill) | Plymouth | 2,902 chars | 8 |
+| [Central Burying Ground](https://spookfinder.com/place/central-burying-ground) | Boston | 2,721 chars | 8 |
+| [Cutler Majestic Theatre](https://spookfinder.com/place/cutler-majestic-theatre) | Boston | 2,811 chars | 8 |
+| [Daniels House](https://spookfinder.com/place/daniels-house) | Salem | 2,635 chars | 8 |
+| [Harvard Yard](https://spookfinder.com/place/harvard-yard) | Cambridge | 2,681 chars | 8 |
+| [Louisa May Alcott's Orchard House](https://spookfinder.com/place/orchard-house) | Concord | 2,684 chars | 8 |
+| [Lyceum Hall](https://spookfinder.com/place/lyceum-hall) | Salem | 2,697 chars | 8 |
+| [Mount Auburn Cemetery](https://spookfinder.com/place/mount-auburn-cemetery) | Cambridge | 2,655 chars | 8 |
+| [Old Burying Point Cemetery](https://spookfinder.com/place/old-burying-point-cemetery) | Salem | 2,496 chars | 8 |
+| [Old South Meeting House](https://spookfinder.com/place/old-south-meeting-house) | Boston | 2,554 chars | 8 |
 
 ### Maryland
 
@@ -553,6 +568,51 @@ Places that have been deeply researched with multiple independent sources, expan
 | [Louisville Bourbon Inn](https://spookfinder.com/place/louisville-bourbon-inn) | Louisville | 3,263 chars | 6 |
 | [Louisville Palace Theatre](https://spookfinder.com/place/louisville-palace-theatre) | Louisville | 3,157 chars | 8 |
 | [Camp Nelson National Monument](https://spookfinder.com/place/camp-nelson) | Nicholasville | 3,294 chars | 8 |
+
+### Louisiana
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Hotel Monteleone](https://spookfinder.com/place/hotel-monteleone) | New Orleans | 3,429 chars | 8 |
+| [Lafitte's Blacksmith Shop Bar](https://spookfinder.com/place/lafittes-blacksmith-shop) | New Orleans | 3,360 chars | 8 |
+| [LaLaurie Mansion](https://spookfinder.com/place/lalaurie-mansion) | New Orleans | 3,780 chars | 8 |
+| [Muriel's Jackson Square](https://spookfinder.com/place/muriels-jackson-square) | New Orleans | 3,227 chars | 8 |
+| [St. Louis Cemetery No. 1](https://spookfinder.com/place/st-louis-cemetery-no-1) | New Orleans | 3,517 chars | 8 |
+| [Antoine's Restaurant](https://spookfinder.com/place/antoines-restaurant) | New Orleans | 2,880 chars | 8 |
+| [Arnaud's Restaurant](https://spookfinder.com/place/arnauds-restaurant) | New Orleans | 2,955 chars | 8 |
+| [Bourbon Orleans Hotel](https://spookfinder.com/place/bourbon-orleans-hotel) | New Orleans | 2,942 chars | 8 |
+| [Hotel Provincial](https://spookfinder.com/place/hotel-provincial) | New Orleans | 3,106 chars | 8 |
+| [Le Pavillon Hotel](https://spookfinder.com/place/le-pavillon-hotel) | New Orleans | 2,843 chars | 8 |
+| [New Orleans Pharmacy Museum](https://spookfinder.com/place/pharmacy-museum) | New Orleans | 3,027 chars | 8 |
+| [Oak Alley Plantation](https://spookfinder.com/place/oak-alley-plantation) | Vacherie | 2,990 chars | 8 |
+| [Old Ursuline Convent](https://spookfinder.com/place/old-ursuline-convent) | New Orleans | 2,954 chars | 8 |
+| [The Myrtles Plantation](https://spookfinder.com/place/myrtles-plantation) | St. Francisville | 2,950 chars | 8 |
+| [The Sultan's Palace](https://spookfinder.com/place/sultans-palace) | New Orleans | 2,924 chars | 8 |
+
+### North Carolina
+
+| Place | City | Story Length | Sources |
+|-------|------|--------------|---------|
+| [Attmore-Oliver House](https://spookfinder.com/place/attmore-oliver-house) | New Bern | 2,650 chars | 8 |
+| [Balsam Mountain Inn](https://spookfinder.com/place/balsam-mountain-inn) | Balsam | 2,959 chars | 8 |
+| [Bath Historic District](https://spookfinder.com/place/bath-historic-district) | Bath | 2,993 chars | 8 |
+| [Battery Park Apartments](https://spookfinder.com/place/battery-park-hotel) | Asheville | 2,812 chars | 8 |
+| [Battleship North Carolina](https://spookfinder.com/place/battleship-north-carolina) | Wilmington | 2,897 chars | 8 |
+| [Bellamy Mansion](https://spookfinder.com/place/bellamy-mansion) | Wilmington | 3,157 chars | 8 |
+| [Biltmore Estate](https://spookfinder.com/place/biltmore-estate) | Asheville | 3,341 chars | 8 |
+| [Blandwood Mansion](https://spookfinder.com/place/blandwood-mansion) | Greensboro | 3,095 chars | 8 |
+| [Bodie Island Lighthouse](https://spookfinder.com/place/bodie-island-lighthouse) | Nags Head | 2,816 chars | 8 |
+| [Brown Mountain Lights](https://spookfinder.com/place/brown-mountain-lights) | Morganton | 3,181 chars | 8 |
+| [Burgwin-Wright House](https://spookfinder.com/place/burgwin-wright-house) | Wilmington | 3,041 chars | 8 |
+| [Cape Hatteras Lighthouse](https://spookfinder.com/place/cape-hatteras-lighthouse) | Buxton | 3,168 chars | 8 |
+| [Christ Church Cemetery](https://spookfinder.com/place/christ-church-cemetery) | New Bern | 2,505 chars | 8 |
+| [Crybaby Lane](https://spookfinder.com/place/crybaby-lane) | Raleigh | 2,513 chars | 8 |
+| [Currituck Beach Lighthouse](https://spookfinder.com/place/currituck-beach-lighthouse) | Corolla | 2,522 chars | 8 |
+| [Devil's Tramping Ground](https://spookfinder.com/place/devils-tramping-ground) | Bear Creek | 2,991 chars | 8 |
+| [Dorothea Dix Park](https://spookfinder.com/place/dorothea-dix-park) | Raleigh | 3,005 chars | 8 |
+| [Dr. Josephus Hall House](https://spookfinder.com/place/josephus-hall-house) | Salisbury | 2,718 chars | 8 |
+| [Fort Raleigh National Historic Site](https://spookfinder.com/place/roanoke-island) | Manteo | 2,711 chars | 8 |
+| [Gimghoul Castle](https://spookfinder.com/place/gimghoul-castle) | Chapel Hill | 2,665 chars | 8 |
 
 ---
 
