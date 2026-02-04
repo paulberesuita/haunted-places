@@ -11,6 +11,35 @@ You've been invoked to **run a cold outreach campaign** to get links, mentions, 
 
 **Workflow:** Cold Campaign (from growth agent)
 
+---
+
+## Quick Start with Instantly
+
+We have 40 pre-researched targets ready to load into Instantly.ai.
+
+**Files:**
+- `docs/outreach-targets.md` — 40 targets with pitches
+- `docs/instantly-import.csv` — CSV formatted for import
+- `.claude/config/instantly.md` — API credentials and campaign IDs
+- `.claude/skills/instantly-sync/SKILL.md` — Full Instantly API reference
+
+**To run a campaign:**
+
+1. **Create campaigns in Instantly** (if not done):
+   - "SpookFinder Backlinks - Resource Pages"
+   - "SpookFinder Backlinks - Tour Operators"
+   - "SpookFinder Backlinks - Tourism Boards"
+
+2. **Copy campaign IDs** to `.claude/config/instantly.md`
+
+3. **Add leads via API** — Use `/instantly-sync add [category]`
+
+4. **Set up email sequences** in Instantly using templates from config
+
+5. **Launch campaigns** in Instantly dashboard
+
+---
+
 ## Campaign Types
 
 | Type | Target | Goal |
@@ -217,3 +246,43 @@ Update tracking with outcomes:
 - Quality of pitch matters more than quantity
 - Partnerships are better than one-off links
 - Update CHANGELOG.md and CONTEXT.md when done
+
+---
+
+## Instantly.ai Integration
+
+### API Commands
+
+```bash
+# Set API key (get from .claude/config/instantly.md)
+API_KEY="[YOUR_API_KEY]"
+
+# List all campaigns
+curl -s "https://api.instantly.ai/api/v2/campaigns" \
+  -H "Authorization: Bearer $API_KEY" | jq '.items[] | {name, id, status}'
+
+# Add leads to campaign
+curl -s -X POST "https://api.instantly.ai/api/v2/leads/add" \
+  -H "Authorization: Bearer $API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "campaign_id": "[CAMPAIGN_ID]",
+    "leads": [
+      {"email": "contact@example.com", "first_name": "Name", "personalization": "detail"}
+    ]
+  }'
+
+# List leads in campaign
+curl -s "https://api.instantly.ai/api/v2/leads?campaign_id=[CAMPAIGN_ID]&limit=100" \
+  -H "Authorization: Bearer $API_KEY" | jq '.items[] | {email, status}'
+```
+
+### Pre-Built Lead Lists
+
+Run these to add all targets to campaigns:
+
+- **Resource Pages:** See `/instantly-sync add resource`
+- **Tour Operators:** See `/instantly-sync add tour`
+- **Tourism Boards:** See `/instantly-sync add tourism`
+
+Full scripts with all lead data are in `.claude/skills/instantly-sync/SKILL.md`
